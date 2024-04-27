@@ -838,7 +838,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.65x2.38mm"
 			(at 1.524 -39.37 0)
 			(effects
 				(font
@@ -885,8 +885,8 @@
 		)
 		(symbol "STC8G1K08A-36I-DFN8_0_1"
 			(rectangle
-				(start -40.64 15.24)
-				(end 40.64 -15.24)
+				(start -10.16 7.62)
+				(end 10.16 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -898,9 +898,9 @@
 		)
 		(symbol "STC8G1K08A-36I-DFN8_1_1"
 			(pin bidirectional line
-				(at -43.18 5.08 0)
+				(at 12.7 0 180)
 				(length 2.54)
-				(name "P5.4/CCP2_{2}/CCP2/MCLKO/RST/SCL_{2}/MOSI/RxD_{3}/T1CLKO/T0/INT2/ADC4"
+				(name "P5.4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -914,11 +914,18 @@
 						)
 					)
 				)
+				(alternate "CCP2" bidirectional line)
+				(alternate "CCP2_{2}" bidirectional line)
+				(alternate "MCLKO" output line)
+				(alternate "MOSI" output line)
+				(alternate "RST" input line)
+				(alternate "RxD" input line)
+				(alternate "SCL_{2}" bidirectional line)
 			)
 			(pin power_in line
-				(at 0 17.78 270)
+				(at 0 10.16 270)
 				(length 2.54)
-				(name "VCC/AVCC"
+				(name "VCC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -934,9 +941,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -43.18 0 0)
+				(at 12.7 -2.54 180)
 				(length 2.54)
-				(name "ECI_{2}/ECI/CCP2_{3}/SDA_2/SS/TxD_3/T0CLKO/T1/INT3/ADC5"
+				(name "P5.5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -950,11 +957,21 @@
 						)
 					)
 				)
+				(alternate "ADC5" input line)
+				(alternate "CCP2_{3}" bidirectional line)
+				(alternate "ECI" input line)
+				(alternate "ECI_{2}" input line)
+				(alternate "INT3" input line)
+				(alternate "SDA_{2}" bidirectional line)
+				(alternate "SS" bidirectional line)
+				(alternate "T0CLKO" output line)
+				(alternate "T1" bidirectional line)
+				(alternate "TxD_{3}" output line)
 			)
 			(pin power_in line
-				(at 0 -17.78 90)
+				(at 0 -10.16 90)
 				(length 2.54)
-				(name "GND/AGND"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -970,9 +987,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -43.18 -5.08 0)
+				(at -12.7 2.54 0)
 				(length 2.54)
-				(name "P3.0/ADC0/RxD/INT4"
+				(name "P3.0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -986,11 +1003,14 @@
 						)
 					)
 				)
+				(alternate "ADC0" input line)
+				(alternate "INT4" input line)
+				(alternate "RxD" input line)
 			)
 			(pin bidirectional line
-				(at -43.18 -7.62 0)
+				(at -12.7 0 0)
 				(length 2.54)
-				(name "P3.1/ADC1/TxD/CCP0_{2]/ECI_{3}"
+				(name "P3.1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1004,11 +1024,15 @@
 						)
 					)
 				)
+				(alternate "ADC1" input line)
+				(alternate "CCP0_{2]" input line)
+				(alternate "ECI_{3}" input line)
+				(alternate "TxD" output line)
 			)
 			(pin bidirectional line
-				(at 43.18 -10.16 180)
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "P3.2/ADC2/RxD_{2}/INT0/SCLK/SCL/CCP0/CCP0_{3}"
+				(name "P3.2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1022,11 +1046,18 @@
 						)
 					)
 				)
+				(alternate "ADC2" input line)
+				(alternate "CCP0" input line)
+				(alternate "CCP0_{3}" input line)
+				(alternate "INT0" output line)
+				(alternate "RxD_{2}" input line)
+				(alternate "SCL" input line)
+				(alternate "SCLK" input line)
 			)
-			(pin power_in line
-				(at 44.45 2.54 180)
+			(pin bidirectional line
+				(at 12.7 2.54 180)
 				(length 2.54)
-				(name "P3.3/ADC3/TxD_{2}/INT1/MISO/SDA/CCP1/CCP1_{2}/CCP1_{3}"
+				(name "P3.3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1040,6 +1071,14 @@
 						)
 					)
 				)
+				(alternate "ADC3" input line)
+				(alternate "CCP1" input line)
+				(alternate "CCP1_{2}" input line)
+				(alternate "CCP1_{3}" input line)
+				(alternate "INT1" input line)
+				(alternate "MISO" input line)
+				(alternate "SDA" bidirectional line)
+				(alternate "TxD_{2}" output line)
 			)
 		)
 	)
