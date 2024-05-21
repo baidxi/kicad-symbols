@@ -32171,7 +32171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=in+ 2=in- 3=vcc 4=vee 5=out"
+		(property "Sim.Pins" "3=in+ 2=in- 7=vcc 4=vee 6=out"
 			(at 0 0 0)
 			(effects
 				(font
@@ -32232,10 +32232,10 @@
 			)
 		)
 		(symbol "Opamp_StandardPinout_1_1"
-			(pin input line
-				(at -7.62 2.54 0)
-				(length 2.54)
-				(name "+"
+			(pin no_connect line
+				(at -5.08 0 0)
+				(length 3.81) hide
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -32268,10 +32268,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -2.54 7.62 270)
-				(length 3.81)
-				(name "V+"
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -32304,6 +32304,24 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at 0 -2.54 90)
+				(length 3.81) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output line
 				(at 7.62 0 180)
 				(length 2.54)
@@ -32314,7 +32332,43 @@
 						)
 					)
 				)
-				(number "5"
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 7.62 270)
+				(length 3.81)
+				(name "V+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 0 2.54 270)
+				(length 3.81) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
