@@ -1,13 +1,13 @@
 (kicad_symbol_lib
 	(version 20231120)
-	(generator "kicad_symbol_editor")
+	(generator "kicad-library-utils")
 	(generator_version "8.0")
 	(symbol "STM32C011D6Yx"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -20.32 13.97 0)
+			(at -12.7 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16,7 +16,7 @@
 			)
 		)
 		(property "Value" "STM32C011D6Yx"
-			(at 5.08 13.97 0)
+			(at 5.08 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25,7 +25,7 @@
 			)
 		)
 		(property "Footprint" "Package_CSP:ST_WLCSP-12_1.70x1.42mm_P0.35mm_Stagger"
-			(at -20.32 -10.16 0)
+			(at -12.7 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -80,8 +80,8 @@
 		)
 		(symbol "STM32C011D6Yx_0_1"
 			(rectangle
-				(start -20.32 -10.16)
-				(end 22.86 12.7)
+				(start -12.7 -10.16)
+				(end 15.24 10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -93,7 +93,7 @@
 		)
 		(symbol "STM32C011D6Yx_1_1"
 			(pin bidirectional line
-				(at -22.86 -2.54 0)
+				(at -15.24 0 0)
 				(length 2.54)
 				(name "PB6"
 					(effects
@@ -134,7 +134,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 2.54 0)
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "PC15"
 					(effects
@@ -157,7 +157,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 25.4 2.54 180)
+				(at 17.78 -2.54 180)
 				(length 2.54)
 				(name "PA13"
 					(effects
@@ -180,7 +180,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 5.08 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "PC14"
 					(effects
@@ -209,7 +209,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 25.4 0 180)
+				(at 17.78 -5.08 180)
 				(length 2.54)
 				(name "PA14"
 					(effects
@@ -238,7 +238,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin power_in line
-				(at 2.54 15.24 270)
+				(at 2.54 12.7 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -256,7 +256,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 5.08 180)
+				(at 17.78 0 180)
 				(length 2.54)
 				(name "PA8/PA9/PA11"
 					(effects
@@ -272,22 +272,38 @@
 						)
 					)
 				)
-				(alternate "ADC1_IN8" bidirectional line)
-				(alternate "I2S1_WS" bidirectional line)
-				(alternate "RCC_MCO" bidirectional line)
-				(alternate "RCC_MCO_2" bidirectional line)
-				(alternate "SPI1_NSS" bidirectional line)
-				(alternate "TIM14_CH1" bidirectional line)
-				(alternate "TIM1_CH1" bidirectional line)
-				(alternate "TIM1_CH2N" bidirectional line)
-				(alternate "TIM1_CH3N" bidirectional line)
-				(alternate "TIM3_CH3" bidirectional line)
-				(alternate "TIM3_CH4" bidirectional line)
-				(alternate "USART1_RX" bidirectional line)
-				(alternate "USART2_TX" bidirectional line)
+				(alternate "PA8" bidirectional line)
+				(alternate "ADC1_IN8 (PA8)" bidirectional line)
+				(alternate "I2S1_WS (PA8)" bidirectional line)
+				(alternate "RCC_MCO (PA8)" bidirectional line)
+				(alternate "RCC_MCO_2 (PA8)" bidirectional line)
+				(alternate "SPI1_NSS (PA8)" bidirectional line)
+				(alternate "TIM14_CH1 (PA8)" bidirectional line)
+				(alternate "TIM1_CH1 (PA8)" bidirectional line)
+				(alternate "TIM1_CH2N (PA8)" bidirectional line)
+				(alternate "TIM1_CH3N (PA8)" bidirectional line)
+				(alternate "TIM3_CH3 (PA8)" bidirectional line)
+				(alternate "TIM3_CH4 (PA8)" bidirectional line)
+				(alternate "USART1_RX (PA8)" bidirectional line)
+				(alternate "USART2_TX (PA8)" bidirectional line)
+				(alternate "PA9" bidirectional line)
+				(alternate "I2C1_SCL (PA9)" bidirectional line)
+				(alternate "RCC_MCO (PA9)" bidirectional line)
+				(alternate "TIM1_CH2 (PA9)" bidirectional line)
+				(alternate "TIM3_ETR (PA9)" bidirectional line)
+				(alternate "USART1_TX (PA9)" bidirectional line)
+				(alternate "PA11" bidirectional line)
+				(alternate "ADC1_EXTI11 (PA11)" bidirectional line)
+				(alternate "ADC1_IN11 (PA11)" bidirectional line)
+				(alternate "I2S1_MCK (PA11)" bidirectional line)
+				(alternate "SPI1_MISO (PA11)" bidirectional line)
+				(alternate "TIM1_BKIN2 (PA11)" bidirectional line)
+				(alternate "TIM1_CH4 (PA11)" bidirectional line)
+				(alternate "USART1_CTS (PA11)" bidirectional line)
+				(alternate "USART1_NSS (PA11)" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -5.08 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "PB7"
 					(effects
@@ -316,7 +332,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 25.4 7.62 180)
+				(at 17.78 2.54 180)
 				(length 2.54)
 				(name "PA7/PA10/PA12"
 					(effects
@@ -332,13 +348,29 @@
 						)
 					)
 				)
-				(alternate "ADC1_IN7" bidirectional line)
-				(alternate "I2S1_SD" bidirectional line)
-				(alternate "SPI1_MOSI" bidirectional line)
-				(alternate "TIM14_CH1" bidirectional line)
-				(alternate "TIM17_CH1" bidirectional line)
-				(alternate "TIM1_CH1N" bidirectional line)
-				(alternate "TIM3_CH2" bidirectional line)
+				(alternate "PA7" bidirectional line)
+				(alternate "ADC1_IN7 (PA7)" bidirectional line)
+				(alternate "I2S1_SD (PA7)" bidirectional line)
+				(alternate "SPI1_MOSI (PA7)" bidirectional line)
+				(alternate "TIM14_CH1 (PA7)" bidirectional line)
+				(alternate "TIM17_CH1 (PA7)" bidirectional line)
+				(alternate "TIM1_CH1N (PA7)" bidirectional line)
+				(alternate "TIM3_CH2 (PA7)" bidirectional line)
+				(alternate "PA10" bidirectional line)
+				(alternate "I2C1_SDA (PA10)" bidirectional line)
+				(alternate "RCC_MCO_2 (PA10)" bidirectional line)
+				(alternate "TIM17_BKIN (PA10)" bidirectional line)
+				(alternate "TIM1_CH3 (PA10)" bidirectional line)
+				(alternate "USART1_RX (PA10)" bidirectional line)
+				(alternate "PA12" bidirectional line)
+				(alternate "ADC1_IN12 (PA12)" bidirectional line)
+				(alternate "I2S1_SD (PA12)" bidirectional line)
+				(alternate "I2S_CKIN (PA12)" bidirectional line)
+				(alternate "SPI1_MOSI (PA12)" bidirectional line)
+				(alternate "TIM1_ETR (PA12)" bidirectional line)
+				(alternate "USART1_CK (PA12)" bidirectional line)
+				(alternate "USART1_DE (PA12)" bidirectional line)
+				(alternate "USART1_RTS (PA12)" bidirectional line)
 			)
 			(pin power_in line
 				(at 2.54 -12.7 90)
@@ -359,7 +391,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 10.16 180)
+				(at 17.78 5.08 180)
 				(length 2.54)
 				(name "PA3/PA4/PA5/PA6"
 					(effects
@@ -375,15 +407,41 @@
 						)
 					)
 				)
-				(alternate "ADC1_IN3" bidirectional line)
-				(alternate "TIM1_CH1N" bidirectional line)
-				(alternate "TIM1_CH4" bidirectional line)
-				(alternate "USART2_RX" bidirectional line)
+				(alternate "PA3" bidirectional line)
+				(alternate "ADC1_IN3 (PA3)" bidirectional line)
+				(alternate "TIM1_CH1N (PA3)" bidirectional line)
+				(alternate "TIM1_CH4 (PA3)" bidirectional line)
+				(alternate "USART2_RX (PA3)" bidirectional line)
+				(alternate "PA4" bidirectional line)
+				(alternate "ADC1_IN4 (PA4)" bidirectional line)
+				(alternate "I2S1_WS (PA4)" bidirectional line)
+				(alternate "PWR_WKUP2 (PA4)" bidirectional line)
+				(alternate "RTC_OUT1 (PA4)" bidirectional line)
+				(alternate "RTC_TS (PA4)" bidirectional line)
+				(alternate "SPI1_NSS (PA4)" bidirectional line)
+				(alternate "TIM14_CH1 (PA4)" bidirectional line)
+				(alternate "TIM17_CH1N (PA4)" bidirectional line)
+				(alternate "TIM1_CH2N (PA4)" bidirectional line)
+				(alternate "USART2_TX (PA4)" bidirectional line)
+				(alternate "PA5" bidirectional line)
+				(alternate "ADC1_IN5 (PA5)" bidirectional line)
+				(alternate "I2S1_CK (PA5)" bidirectional line)
+				(alternate "SPI1_SCK (PA5)" bidirectional line)
+				(alternate "TIM1_CH1 (PA5)" bidirectional line)
+				(alternate "TIM1_CH3N (PA5)" bidirectional line)
+				(alternate "USART2_RX (PA5)" bidirectional line)
+				(alternate "PA6" bidirectional line)
+				(alternate "ADC1_IN6 (PA6)" bidirectional line)
+				(alternate "I2S1_MCK (PA6)" bidirectional line)
+				(alternate "SPI1_MISO (PA6)" bidirectional line)
+				(alternate "TIM16_CH1 (PA6)" bidirectional line)
+				(alternate "TIM1_BKIN (PA6)" bidirectional line)
+				(alternate "TIM3_CH1 (PA6)" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 10.16 0)
+				(at 17.78 7.62 180)
 				(length 2.54)
-				(name "PF2/PA0/PA1/PA2"
+				(name "PA0/PA1/PA2/PF2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -397,8 +455,38 @@
 						)
 					)
 				)
-				(alternate "RCC_MCO" bidirectional line)
-				(alternate "TIM1_CH4" bidirectional line)
+				(alternate "PA0" bidirectional line)
+				(alternate "ADC1_IN0 (PA0)" bidirectional line)
+				(alternate "PWR_WKUP1 (PA0)" bidirectional line)
+				(alternate "TIM16_CH1 (PA0)" bidirectional line)
+				(alternate "TIM1_CH1 (PA0)" bidirectional line)
+				(alternate "USART1_TX (PA0)" bidirectional line)
+				(alternate "USART2_CTS (PA0)" bidirectional line)
+				(alternate "USART2_NSS (PA0)" bidirectional line)
+				(alternate "PA1" bidirectional line)
+				(alternate "ADC1_IN1 (PA1)" bidirectional line)
+				(alternate "I2C1_SMBA (PA1)" bidirectional line)
+				(alternate "I2S1_CK (PA1)" bidirectional line)
+				(alternate "SPI1_SCK (PA1)" bidirectional line)
+				(alternate "TIM17_CH1 (PA1)" bidirectional line)
+				(alternate "TIM1_CH2 (PA1)" bidirectional line)
+				(alternate "USART1_RX (PA1)" bidirectional line)
+				(alternate "USART2_CK (PA1)" bidirectional line)
+				(alternate "USART2_DE (PA1)" bidirectional line)
+				(alternate "USART2_RTS (PA1)" bidirectional line)
+				(alternate "PA2" bidirectional line)
+				(alternate "ADC1_IN2 (PA2)" bidirectional line)
+				(alternate "I2S1_SD (PA2)" bidirectional line)
+				(alternate "PWR_WKUP4 (PA2)" bidirectional line)
+				(alternate "RCC_LSCO (PA2)" bidirectional line)
+				(alternate "SPI1_MOSI (PA2)" bidirectional line)
+				(alternate "TIM16_CH1N (PA2)" bidirectional line)
+				(alternate "TIM1_CH3 (PA2)" bidirectional line)
+				(alternate "TIM3_ETR (PA2)" bidirectional line)
+				(alternate "USART2_TX (PA2)" bidirectional line)
+				(alternate "PF2" bidirectional line)
+				(alternate "RCC_MCO (PF2)" bidirectional line)
+				(alternate "TIM1_CH4 (PF2)" bidirectional line)
 			)
 		)
 	)
@@ -692,11 +780,21 @@
 						)
 					)
 				)
-				(alternate "I2C1_SCL" bidirectional line)
-				(alternate "RCC_MCO" bidirectional line)
-				(alternate "TIM1_CH2" bidirectional line)
-				(alternate "TIM3_ETR" bidirectional line)
-				(alternate "USART1_TX" bidirectional line)
+				(alternate "PA9" bidirectional line)
+				(alternate "I2C1_SCL (PA9)" bidirectional line)
+				(alternate "RCC_MCO (PA9)" bidirectional line)
+				(alternate "TIM1_CH2 (PA9)" bidirectional line)
+				(alternate "TIM3_ETR (PA9)" bidirectional line)
+				(alternate "USART1_TX (PA9)" bidirectional line)
+				(alternate "PA11" bidirectional line)
+				(alternate "ADC1_EXTI11 (PA11)" bidirectional line)
+				(alternate "ADC1_IN11 (PA11)" bidirectional line)
+				(alternate "I2S1_MCK (PA11)" bidirectional line)
+				(alternate "SPI1_MISO (PA11)" bidirectional line)
+				(alternate "TIM1_BKIN2 (PA11)" bidirectional line)
+				(alternate "TIM1_CH4 (PA11)" bidirectional line)
+				(alternate "USART1_CTS (PA11)" bidirectional line)
+				(alternate "USART1_NSS (PA11)" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 15.24 -7.62 180)
@@ -715,11 +813,21 @@
 						)
 					)
 				)
-				(alternate "I2C1_SDA" bidirectional line)
-				(alternate "RCC_MCO_2" bidirectional line)
-				(alternate "TIM17_BKIN" bidirectional line)
-				(alternate "TIM1_CH3" bidirectional line)
-				(alternate "USART1_RX" bidirectional line)
+				(alternate "PA10" bidirectional line)
+				(alternate "I2C1_SDA (PA10)" bidirectional line)
+				(alternate "RCC_MCO_2 (PA10)" bidirectional line)
+				(alternate "TIM17_BKIN (PA10)" bidirectional line)
+				(alternate "TIM1_CH3 (PA10)" bidirectional line)
+				(alternate "USART1_RX (PA10)" bidirectional line)
+				(alternate "PA12" bidirectional line)
+				(alternate "ADC1_IN12 (PA12)" bidirectional line)
+				(alternate "I2S1_SD (PA12)" bidirectional line)
+				(alternate "I2S_CKIN (PA12)" bidirectional line)
+				(alternate "SPI1_MOSI (PA12)" bidirectional line)
+				(alternate "TIM1_ETR (PA12)" bidirectional line)
+				(alternate "USART1_CK (PA12)" bidirectional line)
+				(alternate "USART1_DE (PA12)" bidirectional line)
+				(alternate "USART1_RTS (PA12)" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 15.24 -10.16 180)
@@ -1001,6 +1109,162 @@
 				(alternate "TIM1_CH3" bidirectional line)
 				(alternate "TIM3_ETR" bidirectional line)
 				(alternate "USART2_TX" bidirectional line)
+			)
+		)
+	)
+	(symbol "STM32C011F4Px"
+		(extends "STM32C011F_4-6_Px")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -10.16 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C011F4Px"
+			(at 5.08 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at -10.16 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f4.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STM32C011F6Px"
+		(extends "STM32C011F_4-6_Px")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -10.16 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C011F6Px"
+			(at 5.08 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at -10.16 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f6.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 	)
@@ -1238,11 +1502,21 @@
 						)
 					)
 				)
-				(alternate "I2C1_SCL" bidirectional line)
-				(alternate "RCC_MCO" bidirectional line)
-				(alternate "TIM1_CH2" bidirectional line)
-				(alternate "TIM3_ETR" bidirectional line)
-				(alternate "USART1_TX" bidirectional line)
+				(alternate "PA9" bidirectional line)
+				(alternate "I2C1_SCL (PA9)" bidirectional line)
+				(alternate "RCC_MCO (PA9)" bidirectional line)
+				(alternate "TIM1_CH2 (PA9)" bidirectional line)
+				(alternate "TIM3_ETR (PA9)" bidirectional line)
+				(alternate "USART1_TX (PA9)" bidirectional line)
+				(alternate "PA11" bidirectional line)
+				(alternate "ADC1_EXTI11 (PA11)" bidirectional line)
+				(alternate "ADC1_IN11 (PA11)" bidirectional line)
+				(alternate "I2S1_MCK (PA11)" bidirectional line)
+				(alternate "SPI1_MISO (PA11)" bidirectional line)
+				(alternate "TIM1_BKIN2 (PA11)" bidirectional line)
+				(alternate "TIM1_CH4 (PA11)" bidirectional line)
+				(alternate "USART1_CTS (PA11)" bidirectional line)
+				(alternate "USART1_NSS (PA11)" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 15.24 -7.62 180)
@@ -1261,11 +1535,21 @@
 						)
 					)
 				)
-				(alternate "I2C1_SDA" bidirectional line)
-				(alternate "RCC_MCO_2" bidirectional line)
-				(alternate "TIM17_BKIN" bidirectional line)
-				(alternate "TIM1_CH3" bidirectional line)
-				(alternate "USART1_RX" bidirectional line)
+				(alternate "PA10" bidirectional line)
+				(alternate "I2C1_SDA (PA10)" bidirectional line)
+				(alternate "RCC_MCO_2 (PA10)" bidirectional line)
+				(alternate "TIM17_BKIN (PA10)" bidirectional line)
+				(alternate "TIM1_CH3 (PA10)" bidirectional line)
+				(alternate "USART1_RX (PA10)" bidirectional line)
+				(alternate "PA12" bidirectional line)
+				(alternate "ADC1_IN12 (PA12)" bidirectional line)
+				(alternate "I2S1_SD (PA12)" bidirectional line)
+				(alternate "I2S_CKIN (PA12)" bidirectional line)
+				(alternate "SPI1_MOSI (PA12)" bidirectional line)
+				(alternate "TIM1_ETR (PA12)" bidirectional line)
+				(alternate "USART1_CK (PA12)" bidirectional line)
+				(alternate "USART1_DE (PA12)" bidirectional line)
+				(alternate "USART1_RTS (PA12)" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 15.24 -10.16 180)
@@ -1606,12 +1890,168 @@
 			)
 		)
 	)
+	(symbol "STM32C011F4Ux"
+		(extends "STM32C011F_4-6_Ux")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -10.16 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C011F4Ux"
+			(at 5.08 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:ST_UFQFPN-20_3x3mm_P0.5mm"
+			(at -10.16 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f4.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, UFQFPN20"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "ST*UFQFPN*3x3mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STM32C011F6Ux"
+		(extends "STM32C011F_4-6_Ux")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -10.16 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C011F6Ux"
+			(at 5.08 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:ST_UFQFPN-20_3x3mm_P0.5mm"
+			(at -10.16 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f6.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, UFQFPN20"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "ST*UFQFPN*3x3mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "STM32C011J_4-6_Mx"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -17.78 8.89 0)
+			(at -15.24 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1620,7 +2060,7 @@
 			)
 		)
 		(property "Value" "STM32C011J_4-6_Mx"
-			(at 5.08 8.89 0)
+			(at 5.08 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1629,7 +2069,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at -17.78 -7.62 0)
+			(at -15.24 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1684,8 +2124,8 @@
 		)
 		(symbol "STM32C011J_4-6_Mx_0_1"
 			(rectangle
-				(start -17.78 -7.62)
-				(end 20.32 7.62)
+				(start -15.24 -7.62)
+				(end 17.78 10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1697,9 +2137,9 @@
 		)
 		(symbol "STM32C011J_4-6_Mx_1_1"
 			(pin bidirectional line
-				(at -20.32 0 0)
+				(at -17.78 7.62 0)
 				(length 2.54)
-				(name "PC14/PB7"
+				(name "PB7/PC14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1713,20 +2153,33 @@
 						)
 					)
 				)
-				(alternate "I2C1_SDA" bidirectional line)
-				(alternate "IR_OUT" bidirectional line)
-				(alternate "RCC_OSCX_IN" bidirectional line)
-				(alternate "TIM17_CH1" bidirectional line)
-				(alternate "TIM1_BKIN2" bidirectional line)
-				(alternate "TIM1_ETR" bidirectional line)
-				(alternate "TIM3_CH2" bidirectional line)
-				(alternate "USART1_TX" bidirectional line)
-				(alternate "USART2_CK" bidirectional line)
-				(alternate "USART2_DE" bidirectional line)
-				(alternate "USART2_RTS" bidirectional line)
+				(alternate "PB7" bidirectional line)
+				(alternate "I2C1_SCL (PB7)" bidirectional line)
+				(alternate "I2C1_SDA (PB7)" bidirectional line)
+				(alternate "RTC_REFIN (PB7)" bidirectional line)
+				(alternate "TIM16_CH1 (PB7)" bidirectional line)
+				(alternate "TIM17_CH1N (PB7)" bidirectional line)
+				(alternate "TIM1_CH4 (PB7)" bidirectional line)
+				(alternate "TIM3_CH1 (PB7)" bidirectional line)
+				(alternate "TIM3_CH4 (PB7)" bidirectional line)
+				(alternate "USART1_RX (PB7)" bidirectional line)
+				(alternate "USART2_CTS (PB7)" bidirectional line)
+				(alternate "USART2_NSS (PB7)" bidirectional line)
+				(alternate "PC14" bidirectional line)
+				(alternate "I2C1_SDA (PC14)" bidirectional line)
+				(alternate "IR_OUT (PC14)" bidirectional line)
+				(alternate "RCC_OSCX_IN (PC14)" bidirectional line)
+				(alternate "TIM17_CH1 (PC14)" bidirectional line)
+				(alternate "TIM1_BKIN2 (PC14)" bidirectional line)
+				(alternate "TIM1_ETR (PC14)" bidirectional line)
+				(alternate "TIM3_CH2 (PC14)" bidirectional line)
+				(alternate "USART1_TX (PC14)" bidirectional line)
+				(alternate "USART2_CK (PC14)" bidirectional line)
+				(alternate "USART2_DE (PC14)" bidirectional line)
+				(alternate "USART2_RTS (PC14)" bidirectional line)
 			)
 			(pin power_in line
-				(at 2.54 10.16 270)
+				(at 2.54 12.7 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -1762,9 +2215,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -20.32 5.08 0)
+				(at 20.32 7.62 180)
 				(length 2.54)
-				(name "PF2/PA0/PA1/PA2"
+				(name "PA0/PA1/PA2/PF2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1778,11 +2231,41 @@
 						)
 					)
 				)
-				(alternate "RCC_MCO" bidirectional line)
-				(alternate "TIM1_CH4" bidirectional line)
+				(alternate "PA0" bidirectional line)
+				(alternate "ADC1_IN0 (PA0)" bidirectional line)
+				(alternate "PWR_WKUP1 (PA0)" bidirectional line)
+				(alternate "TIM16_CH1 (PA0)" bidirectional line)
+				(alternate "TIM1_CH1 (PA0)" bidirectional line)
+				(alternate "USART1_TX (PA0)" bidirectional line)
+				(alternate "USART2_CTS (PA0)" bidirectional line)
+				(alternate "USART2_NSS (PA0)" bidirectional line)
+				(alternate "PA1" bidirectional line)
+				(alternate "ADC1_IN1 (PA1)" bidirectional line)
+				(alternate "I2C1_SMBA (PA1)" bidirectional line)
+				(alternate "I2S1_CK (PA1)" bidirectional line)
+				(alternate "SPI1_SCK (PA1)" bidirectional line)
+				(alternate "TIM17_CH1 (PA1)" bidirectional line)
+				(alternate "TIM1_CH2 (PA1)" bidirectional line)
+				(alternate "USART1_RX (PA1)" bidirectional line)
+				(alternate "USART2_CK (PA1)" bidirectional line)
+				(alternate "USART2_DE (PA1)" bidirectional line)
+				(alternate "USART2_RTS (PA1)" bidirectional line)
+				(alternate "PA2" bidirectional line)
+				(alternate "ADC1_IN2 (PA2)" bidirectional line)
+				(alternate "I2S1_SD (PA2)" bidirectional line)
+				(alternate "PWR_WKUP4 (PA2)" bidirectional line)
+				(alternate "RCC_LSCO (PA2)" bidirectional line)
+				(alternate "SPI1_MOSI (PA2)" bidirectional line)
+				(alternate "TIM16_CH1N (PA2)" bidirectional line)
+				(alternate "TIM1_CH3 (PA2)" bidirectional line)
+				(alternate "TIM3_ETR (PA2)" bidirectional line)
+				(alternate "USART2_TX (PA2)" bidirectional line)
+				(alternate "PF2" bidirectional line)
+				(alternate "RCC_MCO (PF2)" bidirectional line)
+				(alternate "TIM1_CH4 (PF2)" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 5.08 180)
+				(at 20.32 5.08 180)
 				(length 2.54)
 				(name "PA8/PA9/PA11"
 					(effects
@@ -1798,22 +2281,38 @@
 						)
 					)
 				)
-				(alternate "ADC1_IN8" bidirectional line)
-				(alternate "I2S1_WS" bidirectional line)
-				(alternate "RCC_MCO" bidirectional line)
-				(alternate "RCC_MCO_2" bidirectional line)
-				(alternate "SPI1_NSS" bidirectional line)
-				(alternate "TIM14_CH1" bidirectional line)
-				(alternate "TIM1_CH1" bidirectional line)
-				(alternate "TIM1_CH2N" bidirectional line)
-				(alternate "TIM1_CH3N" bidirectional line)
-				(alternate "TIM3_CH3" bidirectional line)
-				(alternate "TIM3_CH4" bidirectional line)
-				(alternate "USART1_RX" bidirectional line)
-				(alternate "USART2_TX" bidirectional line)
+				(alternate "PA8" bidirectional line)
+				(alternate "ADC1_IN8 (PA8)" bidirectional line)
+				(alternate "I2S1_WS (PA8)" bidirectional line)
+				(alternate "RCC_MCO (PA8)" bidirectional line)
+				(alternate "RCC_MCO_2 (PA8)" bidirectional line)
+				(alternate "SPI1_NSS (PA8)" bidirectional line)
+				(alternate "TIM14_CH1 (PA8)" bidirectional line)
+				(alternate "TIM1_CH1 (PA8)" bidirectional line)
+				(alternate "TIM1_CH2N (PA8)" bidirectional line)
+				(alternate "TIM1_CH3N (PA8)" bidirectional line)
+				(alternate "TIM3_CH3 (PA8)" bidirectional line)
+				(alternate "TIM3_CH4 (PA8)" bidirectional line)
+				(alternate "USART1_RX (PA8)" bidirectional line)
+				(alternate "USART2_TX (PA8)" bidirectional line)
+				(alternate "PA9" bidirectional line)
+				(alternate "I2C1_SCL (PA9)" bidirectional line)
+				(alternate "RCC_MCO (PA9)" bidirectional line)
+				(alternate "TIM1_CH2 (PA9)" bidirectional line)
+				(alternate "TIM3_ETR (PA9)" bidirectional line)
+				(alternate "USART1_TX (PA9)" bidirectional line)
+				(alternate "PA11" bidirectional line)
+				(alternate "ADC1_EXTI11 (PA11)" bidirectional line)
+				(alternate "ADC1_IN11 (PA11)" bidirectional line)
+				(alternate "I2S1_MCK (PA11)" bidirectional line)
+				(alternate "SPI1_MISO (PA11)" bidirectional line)
+				(alternate "TIM1_BKIN2 (PA11)" bidirectional line)
+				(alternate "TIM1_CH4 (PA11)" bidirectional line)
+				(alternate "USART1_CTS (PA11)" bidirectional line)
+				(alternate "USART1_NSS (PA11)" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 2.54 180)
+				(at 20.32 2.54 180)
 				(length 2.54)
 				(name "PA10/PA12"
 					(effects
@@ -1829,14 +2328,24 @@
 						)
 					)
 				)
-				(alternate "I2C1_SDA" bidirectional line)
-				(alternate "RCC_MCO_2" bidirectional line)
-				(alternate "TIM17_BKIN" bidirectional line)
-				(alternate "TIM1_CH3" bidirectional line)
-				(alternate "USART1_RX" bidirectional line)
+				(alternate "PA10" bidirectional line)
+				(alternate "I2C1_SDA (PA10)" bidirectional line)
+				(alternate "RCC_MCO_2 (PA10)" bidirectional line)
+				(alternate "TIM17_BKIN (PA10)" bidirectional line)
+				(alternate "TIM1_CH3 (PA10)" bidirectional line)
+				(alternate "USART1_RX (PA10)" bidirectional line)
+				(alternate "PA12" bidirectional line)
+				(alternate "ADC1_IN12 (PA12)" bidirectional line)
+				(alternate "I2S1_SD (PA12)" bidirectional line)
+				(alternate "I2S_CKIN (PA12)" bidirectional line)
+				(alternate "SPI1_MOSI (PA12)" bidirectional line)
+				(alternate "TIM1_ETR (PA12)" bidirectional line)
+				(alternate "USART1_CK (PA12)" bidirectional line)
+				(alternate "USART1_DE (PA12)" bidirectional line)
+				(alternate "USART1_RTS (PA12)" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 0 180)
+				(at 20.32 0 180)
 				(length 2.54)
 				(name "PA13"
 					(effects
@@ -1859,9 +2368,9 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -20.32 -2.54 0)
+				(at 20.32 -2.54 180)
 				(length 2.54)
-				(name "PC15/PA14/PB6"
+				(name "PA14/PB6/PC15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1875,11 +2384,204 @@
 						)
 					)
 				)
-				(alternate "RCC_OSC32_EN" bidirectional line)
-				(alternate "RCC_OSCX_OUT" bidirectional line)
-				(alternate "RCC_OSC_EN" bidirectional line)
-				(alternate "TIM1_ETR" bidirectional line)
-				(alternate "TIM3_CH3" bidirectional line)
+				(alternate "PA14" bidirectional line)
+				(alternate "ADC1_IN14 (PA14)" bidirectional line)
+				(alternate "DEBUG_SWCLK (PA14)" bidirectional line)
+				(alternate "I2S1_WS (PA14)" bidirectional line)
+				(alternate "RCC_MCO_2 (PA14)" bidirectional line)
+				(alternate "SPI1_NSS (PA14)" bidirectional line)
+				(alternate "TIM1_CH1 (PA14)" bidirectional line)
+				(alternate "USART1_CK (PA14)" bidirectional line)
+				(alternate "USART1_DE (PA14)" bidirectional line)
+				(alternate "USART1_RTS (PA14)" bidirectional line)
+				(alternate "USART2_RX (PA14)" bidirectional line)
+				(alternate "USART2_TX (PA14)" bidirectional line)
+				(alternate "PB6" bidirectional line)
+				(alternate "I2C1_SCL (PB6)" bidirectional line)
+				(alternate "I2C1_SMBA (PB6)" bidirectional line)
+				(alternate "I2S1_CK (PB6)" bidirectional line)
+				(alternate "I2S1_MCK (PB6)" bidirectional line)
+				(alternate "I2S1_SD (PB6)" bidirectional line)
+				(alternate "PWR_WKUP3 (PB6)" bidirectional line)
+				(alternate "SPI1_MISO (PB6)" bidirectional line)
+				(alternate "SPI1_MOSI (PB6)" bidirectional line)
+				(alternate "SPI1_SCK (PB6)" bidirectional line)
+				(alternate "TIM16_BKIN (PB6)" bidirectional line)
+				(alternate "TIM16_CH1N (PB6)" bidirectional line)
+				(alternate "TIM17_BKIN (PB6)" bidirectional line)
+				(alternate "TIM1_CH2 (PB6)" bidirectional line)
+				(alternate "TIM1_CH3 (PB6)" bidirectional line)
+				(alternate "TIM3_CH1 (PB6)" bidirectional line)
+				(alternate "TIM3_CH2 (PB6)" bidirectional line)
+				(alternate "TIM3_CH3 (PB6)" bidirectional line)
+				(alternate "USART1_CK (PB6)" bidirectional line)
+				(alternate "USART1_CTS (PB6)" bidirectional line)
+				(alternate "USART1_DE (PB6)" bidirectional line)
+				(alternate "USART1_NSS (PB6)" bidirectional line)
+				(alternate "USART1_RTS (PB6)" bidirectional line)
+				(alternate "USART1_TX (PB6)" bidirectional line)
+				(alternate "PC15" bidirectional line)
+				(alternate "RCC_OSC32_EN (PC15)" bidirectional line)
+				(alternate "RCC_OSCX_OUT (PC15)" bidirectional line)
+				(alternate "RCC_OSC_EN (PC15)" bidirectional line)
+				(alternate "TIM1_ETR (PC15)" bidirectional line)
+				(alternate "TIM3_CH3 (PC15)" bidirectional line)
+			)
+		)
+	)
+	(symbol "STM32C011J4Mx"
+		(extends "STM32C011J_4-6_Mx")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -15.24 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C011J4Mx"
+			(at 5.08 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at -15.24 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011j4.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 6 GPIO, SO8N"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SO*3.9x4.9mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STM32C011J6Mx"
+		(extends "STM32C011J_4-6_Mx")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -15.24 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C011J6Mx"
+			(at 5.08 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at -15.24 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011j6.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 6 GPIO, SO8N"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SO*3.9x4.9mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 	)
@@ -1888,7 +2590,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -10.16 46.99 0)
+			(at -7.62 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1906,7 +2608,7 @@
 			)
 		)
 		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-			(at -10.16 -43.18 0)
+			(at -7.62 -43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1961,8 +2663,8 @@
 		)
 		(symbol "STM32C031C_4-6_Tx_0_1"
 			(rectangle
-				(start -10.16 -43.18)
-				(end 12.7 45.72)
+				(start -7.62 -43.18)
+				(end 10.16 45.72)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1974,7 +2676,7 @@
 		)
 		(symbol "STM32C031C_4-6_Tx_1_1"
 			(pin bidirectional line
-				(at -12.7 7.62 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "PC13"
 					(effects
@@ -1997,7 +2699,7 @@
 				(alternate "TIM1_ETR" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 33.02 0)
+				(at -10.16 33.02 0)
 				(length 2.54)
 				(name "PF2"
 					(effects
@@ -2017,7 +2719,7 @@
 				(alternate "TIM1_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 43.18 180)
+				(at 12.7 43.18 180)
 				(length 2.54)
 				(name "PA0"
 					(effects
@@ -2042,7 +2744,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 40.64 180)
+				(at 12.7 40.64 180)
 				(length 2.54)
 				(name "PA1"
 					(effects
@@ -2070,7 +2772,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 38.1 180)
+				(at 12.7 38.1 180)
 				(length 2.54)
 				(name "PA2"
 					(effects
@@ -2097,7 +2799,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 35.56 180)
+				(at 12.7 35.56 180)
 				(length 2.54)
 				(name "PA3"
 					(effects
@@ -2119,7 +2821,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 33.02 180)
+				(at 12.7 33.02 180)
 				(length 2.54)
 				(name "PA4"
 					(effects
@@ -2145,7 +2847,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 30.48 180)
+				(at 12.7 30.48 180)
 				(length 2.54)
 				(name "PA5"
 					(effects
@@ -2169,7 +2871,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 27.94 180)
+				(at 12.7 27.94 180)
 				(length 2.54)
 				(name "PA6"
 					(effects
@@ -2193,7 +2895,7 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 25.4 180)
+				(at 12.7 25.4 180)
 				(length 2.54)
 				(name "PA7"
 					(effects
@@ -2218,7 +2920,7 @@
 				(alternate "TIM3_CH2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 0 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "PB0"
 					(effects
@@ -2241,7 +2943,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 5.08 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "PC14"
 					(effects
@@ -2270,7 +2972,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -2.54 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(name "PB1"
 					(effects
@@ -2293,7 +2995,7 @@
 				(alternate "TIM3_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -5.08 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
 				(name "PB2"
 					(effects
@@ -2314,7 +3016,7 @@
 				(alternate "USART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -25.4 180)
+				(at 12.7 -25.4 180)
 				(length 2.54)
 				(name "PB10"
 					(effects
@@ -2333,7 +3035,7 @@
 				(alternate "ADC1_IN20" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -27.94 180)
+				(at 12.7 -27.94 180)
 				(length 2.54)
 				(name "PB11"
 					(effects
@@ -2353,7 +3055,7 @@
 				(alternate "ADC1_IN21" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -30.48 180)
+				(at 12.7 -30.48 180)
 				(length 2.54)
 				(name "PB12"
 					(effects
@@ -2374,7 +3076,7 @@
 				(alternate "TIM1_BKIN2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -33.02 180)
+				(at 12.7 -33.02 180)
 				(length 2.54)
 				(name "PB13"
 					(effects
@@ -2393,7 +3095,7 @@
 				(alternate "TIM1_CH1N" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -35.56 180)
+				(at 12.7 -35.56 180)
 				(length 2.54)
 				(name "PB14"
 					(effects
@@ -2412,7 +3114,7 @@
 				(alternate "TIM1_CH2N" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -38.1 180)
+				(at 12.7 -38.1 180)
 				(length 2.54)
 				(name "PB15"
 					(effects
@@ -2432,7 +3134,7 @@
 				(alternate "TIM1_CH3N" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 22.86 180)
+				(at 12.7 22.86 180)
 				(length 2.54)
 				(name "PA8"
 					(effects
@@ -2463,9 +3165,9 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 20.32 180)
+				(at 12.7 20.32 180)
 				(length 2.54)
-				(name "PA9/NC"
+				(name "PA9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2486,7 +3188,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 2.54 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "PC15"
 					(effects
@@ -2509,7 +3211,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 12.7 0)
+				(at -10.16 12.7 0)
 				(length 2.54)
 				(name "PC6"
 					(effects
@@ -2528,7 +3230,7 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 10.16 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(name "PC7"
 					(effects
@@ -2547,9 +3249,9 @@
 				(alternate "TIM3_CH2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 17.78 180)
+				(at 12.7 17.78 180)
 				(length 2.54)
-				(name "PA10/NC"
+				(name "PA10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2570,9 +3272,9 @@
 				(alternate "USART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 15.24 180)
+				(at 12.7 15.24 180)
 				(length 2.54)
-				(name "PA11/PA9"
+				(name "PA11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2596,9 +3298,9 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 12.7 180)
+				(at 12.7 12.7 180)
 				(length 2.54)
-				(name "PA12/PA10"
+				(name "PA12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2622,7 +3324,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 10.16 180)
+				(at 12.7 10.16 180)
 				(length 2.54)
 				(name "PA13"
 					(effects
@@ -2645,7 +3347,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 7.62 180)
+				(at 12.7 7.62 180)
 				(length 2.54)
 				(name "PA14"
 					(effects
@@ -2674,7 +3376,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 5.08 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
 				(name "PA15"
 					(effects
@@ -2700,7 +3402,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 25.4 0)
+				(at -10.16 25.4 0)
 				(length 2.54)
 				(name "PD0"
 					(effects
@@ -2719,7 +3421,7 @@
 				(alternate "TIM16_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 22.86 0)
+				(at -10.16 22.86 0)
 				(length 2.54)
 				(name "PD1"
 					(effects
@@ -2738,7 +3440,7 @@
 				(alternate "TIM17_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 30.48 0)
+				(at -10.16 30.48 0)
 				(length 2.54)
 				(name "PF3"
 					(effects
@@ -2756,7 +3458,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 20.32 0)
+				(at -10.16 20.32 0)
 				(length 2.54)
 				(name "PD2"
 					(effects
@@ -2776,7 +3478,7 @@
 				(alternate "TIM3_ETR" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 17.78 0)
+				(at -10.16 17.78 0)
 				(length 2.54)
 				(name "PD3"
 					(effects
@@ -2797,7 +3499,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -7.62 180)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(name "PB3"
 					(effects
@@ -2822,7 +3524,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -10.16 180)
+				(at 12.7 -10.16 180)
 				(length 2.54)
 				(name "PB4"
 					(effects
@@ -2846,7 +3548,7 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -12.7 180)
+				(at 12.7 -12.7 180)
 				(length 2.54)
 				(name "PB5"
 					(effects
@@ -2871,7 +3573,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -15.24 180)
+				(at 12.7 -15.24 180)
 				(length 2.54)
 				(name "PB6"
 					(effects
@@ -2912,7 +3614,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -17.78 180)
+				(at 12.7 -17.78 180)
 				(length 2.54)
 				(name "PB7"
 					(effects
@@ -2940,7 +3642,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -20.32 180)
+				(at 12.7 -20.32 180)
 				(length 2.54)
 				(name "PB8"
 					(effects
@@ -2963,7 +3665,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -22.86 180)
+				(at 12.7 -22.86 180)
 				(length 2.54)
 				(name "PB9"
 					(effects
@@ -2988,7 +3690,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin input line
-				(at -12.7 43.18 0)
+				(at -10.16 43.18 0)
 				(length 2.54)
 				(name "VREF+"
 					(effects
@@ -3042,7 +3744,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 38.1 0)
+				(at -10.16 38.1 0)
 				(length 2.54)
 				(name "PF0"
 					(effects
@@ -3062,7 +3764,7 @@
 				(alternate "TIM14_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 35.56 0)
+				(at -10.16 35.56 0)
 				(length 2.54)
 				(name "PF1"
 					(effects
@@ -3083,12 +3785,168 @@
 			)
 		)
 	)
+	(symbol "STM32C031C4Tx"
+		(extends "STM32C031C_4-6_Tx")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031C4Tx"
+			(at 5.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+			(at -7.62 -43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031c4.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 45 GPIO, LQFP48"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LQFP*7x7mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STM32C031C6Tx"
+		(extends "STM32C031C_4-6_Tx")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031C6Tx"
+			(at 5.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+			(at -7.62 -43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031c6.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 45 GPIO, LQFP48"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LQFP*7x7mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "STM32C031C_4-6_Ux"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -10.16 46.99 0)
+			(at -7.62 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3106,7 +3964,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm"
-			(at -10.16 -43.18 0)
+			(at -7.62 -43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3161,8 +4019,8 @@
 		)
 		(symbol "STM32C031C_4-6_Ux_0_1"
 			(rectangle
-				(start -10.16 -43.18)
-				(end 12.7 45.72)
+				(start -7.62 -43.18)
+				(end 10.16 45.72)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -3174,7 +4032,7 @@
 		)
 		(symbol "STM32C031C_4-6_Ux_1_1"
 			(pin bidirectional line
-				(at -12.7 7.62 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "PC13"
 					(effects
@@ -3197,7 +4055,7 @@
 				(alternate "TIM1_ETR" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 33.02 0)
+				(at -10.16 33.02 0)
 				(length 2.54)
 				(name "PF2"
 					(effects
@@ -3217,7 +4075,7 @@
 				(alternate "TIM1_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 43.18 180)
+				(at 12.7 43.18 180)
 				(length 2.54)
 				(name "PA0"
 					(effects
@@ -3242,7 +4100,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 40.64 180)
+				(at 12.7 40.64 180)
 				(length 2.54)
 				(name "PA1"
 					(effects
@@ -3270,7 +4128,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 38.1 180)
+				(at 12.7 38.1 180)
 				(length 2.54)
 				(name "PA2"
 					(effects
@@ -3297,7 +4155,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 35.56 180)
+				(at 12.7 35.56 180)
 				(length 2.54)
 				(name "PA3"
 					(effects
@@ -3319,7 +4177,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 33.02 180)
+				(at 12.7 33.02 180)
 				(length 2.54)
 				(name "PA4"
 					(effects
@@ -3345,7 +4203,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 30.48 180)
+				(at 12.7 30.48 180)
 				(length 2.54)
 				(name "PA5"
 					(effects
@@ -3369,7 +4227,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 27.94 180)
+				(at 12.7 27.94 180)
 				(length 2.54)
 				(name "PA6"
 					(effects
@@ -3393,7 +4251,7 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 25.4 180)
+				(at 12.7 25.4 180)
 				(length 2.54)
 				(name "PA7"
 					(effects
@@ -3418,7 +4276,7 @@
 				(alternate "TIM3_CH2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 0 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "PB0"
 					(effects
@@ -3441,7 +4299,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 5.08 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "PC14"
 					(effects
@@ -3470,7 +4328,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -2.54 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(name "PB1"
 					(effects
@@ -3493,7 +4351,7 @@
 				(alternate "TIM3_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -5.08 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
 				(name "PB2"
 					(effects
@@ -3514,7 +4372,7 @@
 				(alternate "USART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -25.4 180)
+				(at 12.7 -25.4 180)
 				(length 2.54)
 				(name "PB10"
 					(effects
@@ -3533,7 +4391,7 @@
 				(alternate "ADC1_IN20" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -27.94 180)
+				(at 12.7 -27.94 180)
 				(length 2.54)
 				(name "PB11"
 					(effects
@@ -3553,7 +4411,7 @@
 				(alternate "ADC1_IN21" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -30.48 180)
+				(at 12.7 -30.48 180)
 				(length 2.54)
 				(name "PB12"
 					(effects
@@ -3574,7 +4432,7 @@
 				(alternate "TIM1_BKIN2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -33.02 180)
+				(at 12.7 -33.02 180)
 				(length 2.54)
 				(name "PB13"
 					(effects
@@ -3593,7 +4451,7 @@
 				(alternate "TIM1_CH1N" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -35.56 180)
+				(at 12.7 -35.56 180)
 				(length 2.54)
 				(name "PB14"
 					(effects
@@ -3612,7 +4470,7 @@
 				(alternate "TIM1_CH2N" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -38.1 180)
+				(at 12.7 -38.1 180)
 				(length 2.54)
 				(name "PB15"
 					(effects
@@ -3632,7 +4490,7 @@
 				(alternate "TIM1_CH3N" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 22.86 180)
+				(at 12.7 22.86 180)
 				(length 2.54)
 				(name "PA8"
 					(effects
@@ -3663,9 +4521,9 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 20.32 180)
+				(at 12.7 20.32 180)
 				(length 2.54)
-				(name "PA9/NC"
+				(name "PA9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3686,7 +4544,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 2.54 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "PC15"
 					(effects
@@ -3709,7 +4567,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 12.7 0)
+				(at -10.16 12.7 0)
 				(length 2.54)
 				(name "PC6"
 					(effects
@@ -3728,7 +4586,7 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 10.16 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(name "PC7"
 					(effects
@@ -3747,9 +4605,9 @@
 				(alternate "TIM3_CH2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 17.78 180)
+				(at 12.7 17.78 180)
 				(length 2.54)
-				(name "PA10/NC"
+				(name "PA10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3770,9 +4628,9 @@
 				(alternate "USART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 15.24 180)
+				(at 12.7 15.24 180)
 				(length 2.54)
-				(name "PA11/PA9"
+				(name "PA11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3796,9 +4654,9 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 12.7 180)
+				(at 12.7 12.7 180)
 				(length 2.54)
-				(name "PA12/PA10"
+				(name "PA12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3822,7 +4680,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 10.16 180)
+				(at 12.7 10.16 180)
 				(length 2.54)
 				(name "PA13"
 					(effects
@@ -3845,7 +4703,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 7.62 180)
+				(at 12.7 7.62 180)
 				(length 2.54)
 				(name "PA14"
 					(effects
@@ -3874,7 +4732,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 5.08 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
 				(name "PA15"
 					(effects
@@ -3900,7 +4758,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 25.4 0)
+				(at -10.16 25.4 0)
 				(length 2.54)
 				(name "PD0"
 					(effects
@@ -3919,7 +4777,7 @@
 				(alternate "TIM16_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 22.86 0)
+				(at -10.16 22.86 0)
 				(length 2.54)
 				(name "PD1"
 					(effects
@@ -3938,7 +4796,7 @@
 				(alternate "TIM17_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 30.48 0)
+				(at -10.16 30.48 0)
 				(length 2.54)
 				(name "PF3"
 					(effects
@@ -3956,7 +4814,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 20.32 0)
+				(at -10.16 20.32 0)
 				(length 2.54)
 				(name "PD2"
 					(effects
@@ -3976,7 +4834,7 @@
 				(alternate "TIM3_ETR" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 17.78 0)
+				(at -10.16 17.78 0)
 				(length 2.54)
 				(name "PD3"
 					(effects
@@ -3997,7 +4855,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -7.62 180)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(name "PB3"
 					(effects
@@ -4022,7 +4880,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -10.16 180)
+				(at 12.7 -10.16 180)
 				(length 2.54)
 				(name "PB4"
 					(effects
@@ -4046,7 +4904,7 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -12.7 180)
+				(at 12.7 -12.7 180)
 				(length 2.54)
 				(name "PB5"
 					(effects
@@ -4071,7 +4929,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -15.24 180)
+				(at 12.7 -15.24 180)
 				(length 2.54)
 				(name "PB6"
 					(effects
@@ -4112,7 +4970,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -17.78 180)
+				(at 12.7 -17.78 180)
 				(length 2.54)
 				(name "PB7"
 					(effects
@@ -4140,7 +4998,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -20.32 180)
+				(at 12.7 -20.32 180)
 				(length 2.54)
 				(name "PB8"
 					(effects
@@ -4163,7 +5021,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -22.86 180)
+				(at 12.7 -22.86 180)
 				(length 2.54)
 				(name "PB9"
 					(effects
@@ -4206,7 +5064,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 43.18 0)
+				(at -10.16 43.18 0)
 				(length 2.54)
 				(name "VREF+"
 					(effects
@@ -4260,7 +5118,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 38.1 0)
+				(at -10.16 38.1 0)
 				(length 2.54)
 				(name "PF0"
 					(effects
@@ -4280,7 +5138,7 @@
 				(alternate "TIM14_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 35.56 0)
+				(at -10.16 35.56 0)
 				(length 2.54)
 				(name "PF1"
 					(effects
@@ -4298,6 +5156,162 @@
 				)
 				(alternate "RCC_OSC_EN" bidirectional line)
 				(alternate "RCC_OSC_OUT" bidirectional line)
+			)
+		)
+	)
+	(symbol "STM32C031C4Ux"
+		(extends "STM32C031C_4-6_Ux")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031C4Ux"
+			(at 5.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm"
+			(at -7.62 -43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031c4.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 45 GPIO, UFQFPN48"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "QFN*1EP*7x7mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STM32C031C6Ux"
+		(extends "STM32C031C_4-6_Ux")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031C6Ux"
+			(at 5.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm"
+			(at -7.62 -43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031c6.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 45 GPIO, UFQFPN48"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "QFN*1EP*7x7mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 	)
@@ -4591,11 +5605,21 @@
 						)
 					)
 				)
-				(alternate "I2C1_SCL" bidirectional line)
-				(alternate "RCC_MCO" bidirectional line)
-				(alternate "TIM1_CH2" bidirectional line)
-				(alternate "TIM3_ETR" bidirectional line)
-				(alternate "USART1_TX" bidirectional line)
+				(alternate "PA9" bidirectional line)
+				(alternate "I2C1_SCL (PA9)" bidirectional line)
+				(alternate "RCC_MCO (PA9)" bidirectional line)
+				(alternate "TIM1_CH2 (PA9)" bidirectional line)
+				(alternate "TIM3_ETR (PA9)" bidirectional line)
+				(alternate "USART1_TX (PA9)" bidirectional line)
+				(alternate "PA11" bidirectional line)
+				(alternate "ADC1_EXTI11 (PA11)" bidirectional line)
+				(alternate "ADC1_IN11 (PA11)" bidirectional line)
+				(alternate "I2S1_MCK (PA11)" bidirectional line)
+				(alternate "SPI1_MISO (PA11)" bidirectional line)
+				(alternate "TIM1_BKIN2 (PA11)" bidirectional line)
+				(alternate "TIM1_CH4 (PA11)" bidirectional line)
+				(alternate "USART1_CTS (PA11)" bidirectional line)
+				(alternate "USART1_NSS (PA11)" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 15.24 -7.62 180)
@@ -4614,11 +5638,21 @@
 						)
 					)
 				)
-				(alternate "I2C1_SDA" bidirectional line)
-				(alternate "RCC_MCO_2" bidirectional line)
-				(alternate "TIM17_BKIN" bidirectional line)
-				(alternate "TIM1_CH3" bidirectional line)
-				(alternate "USART1_RX" bidirectional line)
+				(alternate "PA10" bidirectional line)
+				(alternate "I2C1_SDA (PA10)" bidirectional line)
+				(alternate "RCC_MCO_2 (PA10)" bidirectional line)
+				(alternate "TIM17_BKIN (PA10)" bidirectional line)
+				(alternate "TIM1_CH3 (PA10)" bidirectional line)
+				(alternate "USART1_RX (PA10)" bidirectional line)
+				(alternate "PA12" bidirectional line)
+				(alternate "ADC1_IN12 (PA12)" bidirectional line)
+				(alternate "I2S1_SD (PA12)" bidirectional line)
+				(alternate "I2S_CKIN (PA12)" bidirectional line)
+				(alternate "SPI1_MOSI (PA12)" bidirectional line)
+				(alternate "TIM1_ETR (PA12)" bidirectional line)
+				(alternate "USART1_CK (PA12)" bidirectional line)
+				(alternate "USART1_DE (PA12)" bidirectional line)
+				(alternate "USART1_RTS (PA12)" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 15.24 -10.16 180)
@@ -4903,7 +5937,8 @@
 			)
 		)
 	)
-	(symbol "STM32C031G_4-6_Ux"
+	(symbol "STM32C031F4Px"
+		(extends "STM32C031F_4-6_Px")
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4916,7 +5951,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STM32C031G_4-6_Ux"
+		(property "Value" "STM32C031F4Px"
 			(at 5.08 21.59 0)
 			(effects
 				(font
@@ -4925,8 +5960,163 @@
 				(justify left)
 			)
 		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at -10.16 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031f4.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STM32C031F6Px"
+		(extends "STM32C031F_4-6_Px")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -10.16 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031F6Px"
+			(at 5.08 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at -10.16 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031f6.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STM32C031G_4-6_Ux"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031G_4-6_Ux"
+			(at 2.54 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Package_DFN_QFN:QFN-28_4x4mm_P0.5mm"
-			(at -10.16 -20.32 0)
+			(at -7.62 -20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4981,8 +6171,8 @@
 		)
 		(symbol "STM32C031G_4-6_Ux_0_1"
 			(rectangle
-				(start -10.16 -20.32)
-				(end 12.7 20.32)
+				(start -7.62 -20.32)
+				(end 7.62 20.32)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -4994,7 +6184,7 @@
 		)
 		(symbol "STM32C031G_4-6_Ux_1_1"
 			(pin bidirectional line
-				(at -12.7 10.16 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(name "PC14"
 					(effects
@@ -5023,7 +6213,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 7.62 180)
+				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "PA4"
 					(effects
@@ -5051,7 +6241,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 5.08 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "PA5"
 					(effects
@@ -5075,7 +6265,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 2.54 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "PA6"
 					(effects
@@ -5099,7 +6289,7 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 0 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "PA7"
 					(effects
@@ -5124,7 +6314,7 @@
 				(alternate "TIM3_CH2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 2.54 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "PB0"
 					(effects
@@ -5147,7 +6337,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "PB1"
 					(effects
@@ -5170,7 +6360,7 @@
 				(alternate "TIM3_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -2.54 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "PA8"
 					(effects
@@ -5201,7 +6391,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 12.7 0)
+				(at -10.16 12.7 0)
 				(length 2.54)
 				(name "PC6"
 					(effects
@@ -5220,9 +6410,9 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -5.08 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
-				(name "PA11/PA9"
+				(name "PA11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5246,9 +6436,9 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -7.62 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
-				(name "PA12/PA10"
+				(name "PA12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5272,7 +6462,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 7.62 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "PC15"
 					(effects
@@ -5295,7 +6485,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -10.16 180)
+				(at 10.16 -10.16 180)
 				(length 2.54)
 				(name "PA13"
 					(effects
@@ -5318,7 +6508,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -12.7 180)
+				(at 10.16 -12.7 180)
 				(length 2.54)
 				(name "PA14"
 					(effects
@@ -5347,7 +6537,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -15.24 180)
+				(at 10.16 -15.24 180)
 				(length 2.54)
 				(name "PA15"
 					(effects
@@ -5373,7 +6563,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -2.54 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "PB3"
 					(effects
@@ -5398,7 +6588,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -5.08 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "PB4"
 					(effects
@@ -5422,7 +6612,7 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -7.62 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "PB5"
 					(effects
@@ -5447,7 +6637,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -10.16 0)
+				(at -10.16 -10.16 0)
 				(length 2.54)
 				(name "PB6"
 					(effects
@@ -5488,7 +6678,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -12.7 0)
+				(at -10.16 -12.7 0)
 				(length 2.54)
 				(name "PB7"
 					(effects
@@ -5517,7 +6707,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -15.24 0)
+				(at -10.16 -15.24 0)
 				(length 2.54)
 				(name "PB8"
 					(effects
@@ -5540,7 +6730,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin power_in line
-				(at 2.54 22.86 270)
+				(at 0 22.86 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -5558,7 +6748,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -22.86 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -5576,7 +6766,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 17.78 0)
+				(at -10.16 17.78 0)
 				(length 2.54)
 				(name "PF2"
 					(effects
@@ -5596,7 +6786,7 @@
 				(alternate "TIM1_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 17.78 180)
+				(at 10.16 17.78 180)
 				(length 2.54)
 				(name "PA0"
 					(effects
@@ -5621,7 +6811,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 15.24 180)
+				(at 10.16 15.24 180)
 				(length 2.54)
 				(name "PA1"
 					(effects
@@ -5649,7 +6839,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 12.7 180)
+				(at 10.16 12.7 180)
 				(length 2.54)
 				(name "PA2"
 					(effects
@@ -5676,7 +6866,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 10.16 180)
+				(at 10.16 10.16 180)
 				(length 2.54)
 				(name "PA3"
 					(effects
@@ -5699,12 +6889,168 @@
 			)
 		)
 	)
+	(symbol "STM32C031G4Ux"
+		(extends "STM32C031G_4-6_Ux")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031G4Ux"
+			(at 2.54 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-28_4x4mm_P0.5mm"
+			(at -7.62 -20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031g4.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 26 GPIO, UFQFPN28"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "QFN*4x4mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STM32C031G6Ux"
+		(extends "STM32C031G_4-6_Ux")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031G6Ux"
+			(at 2.54 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-28_4x4mm_P0.5mm"
+			(at -7.62 -20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031g6.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 26 GPIO, UFQFPN28"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "QFN*4x4mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "STM32C031K_4-6_Tx"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -10.16 24.13 0)
+			(at -7.62 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5713,7 +7059,7 @@
 			)
 		)
 		(property "Value" "STM32C031K_4-6_Tx"
-			(at 5.08 24.13 0)
+			(at 2.54 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5722,7 +7068,7 @@
 			)
 		)
 		(property "Footprint" "Package_QFP:LQFP-32_7x7mm_P0.8mm"
-			(at -10.16 -22.86 0)
+			(at -7.62 -22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5777,8 +7123,8 @@
 		)
 		(symbol "STM32C031K_4-6_Tx_0_1"
 			(rectangle
-				(start -10.16 -22.86)
-				(end 12.7 22.86)
+				(start -7.62 -22.86)
+				(end 7.62 22.86)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -5790,7 +7136,7 @@
 		)
 		(symbol "STM32C031K_4-6_Tx_1_1"
 			(pin bidirectional line
-				(at -12.7 -17.78 0)
+				(at -10.16 -17.78 0)
 				(length 2.54)
 				(name "PB9"
 					(effects
@@ -5815,7 +7161,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 12.7 180)
+				(at 10.16 12.7 180)
 				(length 2.54)
 				(name "PA3"
 					(effects
@@ -5837,7 +7183,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 10.16 180)
+				(at 10.16 10.16 180)
 				(length 2.54)
 				(name "PA4"
 					(effects
@@ -5865,7 +7211,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 7.62 180)
+				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "PA5"
 					(effects
@@ -5889,7 +7235,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 5.08 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "PA6"
 					(effects
@@ -5913,7 +7259,7 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 2.54 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "PA7"
 					(effects
@@ -5938,7 +7284,7 @@
 				(alternate "TIM3_CH2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 5.08 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "PB0"
 					(effects
@@ -5961,7 +7307,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 2.54 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "PB1"
 					(effects
@@ -5984,7 +7330,7 @@
 				(alternate "TIM3_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "PB2"
 					(effects
@@ -6005,7 +7351,7 @@
 				(alternate "USART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 0 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "PA8"
 					(effects
@@ -6036,9 +7382,9 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -2.54 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "PA9/NC"
+				(name "PA9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6059,7 +7405,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 12.7 0)
+				(at -10.16 12.7 0)
 				(length 2.54)
 				(name "PC14"
 					(effects
@@ -6088,7 +7434,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 15.24 0)
+				(at -10.16 15.24 0)
 				(length 2.54)
 				(name "PC6"
 					(effects
@@ -6107,9 +7453,9 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -5.08 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
-				(name "PA10/NC"
+				(name "PA10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6130,9 +7476,9 @@
 				(alternate "USART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -7.62 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
-				(name "PA11/PA9"
+				(name "PA11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6156,9 +7502,9 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -10.16 180)
+				(at 10.16 -10.16 180)
 				(length 2.54)
-				(name "PA12/PA10"
+				(name "PA12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6182,7 +7528,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -12.7 180)
+				(at 10.16 -12.7 180)
 				(length 2.54)
 				(name "PA13"
 					(effects
@@ -6205,7 +7551,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -15.24 180)
+				(at 10.16 -15.24 180)
 				(length 2.54)
 				(name "PA14"
 					(effects
@@ -6234,7 +7580,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -17.78 180)
+				(at 10.16 -17.78 180)
 				(length 2.54)
 				(name "PA15"
 					(effects
@@ -6260,7 +7606,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -2.54 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "PB3"
 					(effects
@@ -6285,7 +7631,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -5.08 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "PB4"
 					(effects
@@ -6309,7 +7655,7 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -7.62 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "PB5"
 					(effects
@@ -6334,7 +7680,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 10.16 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(name "PC15"
 					(effects
@@ -6357,7 +7703,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -10.16 0)
+				(at -10.16 -10.16 0)
 				(length 2.54)
 				(name "PB6"
 					(effects
@@ -6398,7 +7744,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -12.7 0)
+				(at -10.16 -12.7 0)
 				(length 2.54)
 				(name "PB7"
 					(effects
@@ -6427,7 +7773,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -15.24 0)
+				(at -10.16 -15.24 0)
 				(length 2.54)
 				(name "PB8"
 					(effects
@@ -6450,7 +7796,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin power_in line
-				(at 2.54 25.4 270)
+				(at 0 25.4 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -6468,7 +7814,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -25.4 90)
+				(at 0 -25.4 90)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -6486,7 +7832,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 20.32 0)
+				(at -10.16 20.32 0)
 				(length 2.54)
 				(name "PF2"
 					(effects
@@ -6506,7 +7852,7 @@
 				(alternate "TIM1_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 20.32 180)
+				(at 10.16 20.32 180)
 				(length 2.54)
 				(name "PA0"
 					(effects
@@ -6531,7 +7877,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 17.78 180)
+				(at 10.16 17.78 180)
 				(length 2.54)
 				(name "PA1"
 					(effects
@@ -6559,7 +7905,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 15.24 180)
+				(at 10.16 15.24 180)
 				(length 2.54)
 				(name "PA2"
 					(effects
@@ -6587,12 +7933,168 @@
 			)
 		)
 	)
+	(symbol "STM32C031K4Tx"
+		(extends "STM32C031K_4-6_Tx")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031K4Tx"
+			(at 2.54 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-32_7x7mm_P0.8mm"
+			(at -7.62 -22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031k4.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 30 GPIO, LQFP32"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LQFP*7x7mm*P0.8mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STM32C031K6Tx"
+		(extends "STM32C031K_4-6_Tx")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32C031K6Tx"
+			(at 2.54 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-32_7x7mm_P0.8mm"
+			(at -7.62 -22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031k6.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 30 GPIO, LQFP32"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LQFP*7x7mm*P0.8mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "STM32C031K_4-6_Ux"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -10.16 24.13 0)
+			(at -7.62 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6601,7 +8103,7 @@
 			)
 		)
 		(property "Value" "STM32C031K_4-6_Ux"
-			(at 5.08 24.13 0)
+			(at 2.54 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6610,7 +8112,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm"
-			(at -10.16 -22.86 0)
+			(at -7.62 -22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6665,8 +8167,8 @@
 		)
 		(symbol "STM32C031K_4-6_Ux_0_1"
 			(rectangle
-				(start -10.16 -22.86)
-				(end 12.7 22.86)
+				(start -7.62 -22.86)
+				(end 7.62 22.86)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -6678,7 +8180,7 @@
 		)
 		(symbol "STM32C031K_4-6_Ux_1_1"
 			(pin bidirectional line
-				(at -12.7 -17.78 0)
+				(at -10.16 -17.78 0)
 				(length 2.54)
 				(name "PB9"
 					(effects
@@ -6703,7 +8205,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 12.7 180)
+				(at 10.16 12.7 180)
 				(length 2.54)
 				(name "PA3"
 					(effects
@@ -6725,7 +8227,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 10.16 180)
+				(at 10.16 10.16 180)
 				(length 2.54)
 				(name "PA4"
 					(effects
@@ -6753,7 +8255,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 7.62 180)
+				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "PA5"
 					(effects
@@ -6777,7 +8279,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 5.08 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "PA6"
 					(effects
@@ -6801,7 +8303,7 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 2.54 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "PA7"
 					(effects
@@ -6826,7 +8328,7 @@
 				(alternate "TIM3_CH2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 5.08 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "PB0"
 					(effects
@@ -6849,7 +8351,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 2.54 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "PB1"
 					(effects
@@ -6872,7 +8374,7 @@
 				(alternate "TIM3_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "PB2"
 					(effects
@@ -6893,7 +8395,7 @@
 				(alternate "USART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 0 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "PA8"
 					(effects
@@ -6924,9 +8426,9 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -2.54 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "PA9/NC"
+				(name "PA9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6947,7 +8449,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 12.7 0)
+				(at -10.16 12.7 0)
 				(length 2.54)
 				(name "PC14"
 					(effects
@@ -6976,7 +8478,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 15.24 0)
+				(at -10.16 15.24 0)
 				(length 2.54)
 				(name "PC6"
 					(effects
@@ -6995,9 +8497,9 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -5.08 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
-				(name "PA10/NC"
+				(name "PA10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7018,9 +8520,9 @@
 				(alternate "USART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -7.62 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
-				(name "PA11/PA9"
+				(name "PA11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7044,9 +8546,9 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -10.16 180)
+				(at 10.16 -10.16 180)
 				(length 2.54)
-				(name "PA12/PA10"
+				(name "PA12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7070,7 +8572,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -12.7 180)
+				(at 10.16 -12.7 180)
 				(length 2.54)
 				(name "PA13"
 					(effects
@@ -7093,7 +8595,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -15.24 180)
+				(at 10.16 -15.24 180)
 				(length 2.54)
 				(name "PA14"
 					(effects
@@ -7122,7 +8624,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 -17.78 180)
+				(at 10.16 -17.78 180)
 				(length 2.54)
 				(name "PA15"
 					(effects
@@ -7148,7 +8650,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -2.54 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "PB3"
 					(effects
@@ -7173,7 +8675,7 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -5.08 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "PB4"
 					(effects
@@ -7197,7 +8699,7 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -7.62 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "PB5"
 					(effects
@@ -7222,7 +8724,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 10.16 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(name "PC15"
 					(effects
@@ -7245,7 +8747,7 @@
 				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -10.16 0)
+				(at -10.16 -10.16 0)
 				(length 2.54)
 				(name "PB6"
 					(effects
@@ -7286,7 +8788,7 @@
 				(alternate "USART1_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -12.7 0)
+				(at -10.16 -12.7 0)
 				(length 2.54)
 				(name "PB7"
 					(effects
@@ -7315,7 +8817,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -12.7 -15.24 0)
+				(at -10.16 -15.24 0)
 				(length 2.54)
 				(name "PB8"
 					(effects
@@ -7338,7 +8840,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin passive line
-				(at 2.54 -25.4 90)
+				(at 0 -25.4 90)
 				(length 2.54) hide
 				(name "VSS"
 					(effects
@@ -7356,7 +8858,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 25.4 270)
+				(at 0 25.4 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -7374,7 +8876,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -25.4 90)
+				(at 0 -25.4 90)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -7392,7 +8894,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 20.32 0)
+				(at -10.16 20.32 0)
 				(length 2.54)
 				(name "PF2"
 					(effects
@@ -7412,7 +8914,7 @@
 				(alternate "TIM1_CH4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 20.32 180)
+				(at 10.16 20.32 180)
 				(length 2.54)
 				(name "PA0"
 					(effects
@@ -7437,7 +8939,7 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 17.78 180)
+				(at 10.16 17.78 180)
 				(length 2.54)
 				(name "PA1"
 					(effects
@@ -7465,7 +8967,7 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 15.24 15.24 180)
+				(at 10.16 15.24 180)
 				(length 2.54)
 				(name "PA2"
 					(effects
@@ -7493,1015 +8995,13 @@
 			)
 		)
 	)
-	(symbol "STM32C011F4Px"
-		(extends "STM32C011F_4-6_Px")
-		(property "Reference" "U"
-			(at -10.16 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C011F4Px"
-			(at 5.08 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at -10.16 -17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f4.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C011F4Ux"
-		(extends "STM32C011F_4-6_Ux")
-		(property "Reference" "U"
-			(at -10.16 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C011F4Ux"
-			(at 5.08 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:ST_UFQFPN-20_3x3mm_P0.5mm"
-			(at -10.16 -17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f4.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, UFQFPN20"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "ST*UFQFPN*3x3mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C011F6Px"
-		(extends "STM32C011F_4-6_Px")
-		(property "Reference" "U"
-			(at -10.16 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C011F6Px"
-			(at 5.08 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at -10.16 -17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f6.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C011F6Ux"
-		(extends "STM32C011F_4-6_Ux")
-		(property "Reference" "U"
-			(at -10.16 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C011F6Ux"
-			(at 5.08 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:ST_UFQFPN-20_3x3mm_P0.5mm"
-			(at -10.16 -17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011f6.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, UFQFPN20"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "ST*UFQFPN*3x3mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C011J4Mx"
-		(extends "STM32C011J_4-6_Mx")
-		(property "Reference" "U"
-			(at -17.78 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C011J4Mx"
-			(at 5.08 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at -17.78 -7.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011j4.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 6 GPIO, SO8N"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SO*3.9x4.9mm*P1.27mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C011J6Mx"
-		(extends "STM32C011J_4-6_Mx")
-		(property "Reference" "U"
-			(at -17.78 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C011J6Mx"
-			(at 5.08 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at -17.78 -7.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011j6.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 6KB RAM, 48 MHz, 2.0-3.6V, 6 GPIO, SO8N"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SO*3.9x4.9mm*P1.27mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C031C4Tx"
-		(extends "STM32C031C_4-6_Tx")
-		(property "Reference" "U"
-			(at -10.16 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031C4Tx"
-			(at 5.08 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-			(at -10.16 -43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031c4.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 45 GPIO, LQFP48"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "LQFP*7x7mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C031C4Ux"
-		(extends "STM32C031C_4-6_Ux")
-		(property "Reference" "U"
-			(at -10.16 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031C4Ux"
-			(at 5.08 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm"
-			(at -10.16 -43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031c4.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 45 GPIO, UFQFPN48"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "QFN*1EP*7x7mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C031C6Tx"
-		(extends "STM32C031C_4-6_Tx")
-		(property "Reference" "U"
-			(at -10.16 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031C6Tx"
-			(at 5.08 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-			(at -10.16 -43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031c6.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 45 GPIO, LQFP48"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "LQFP*7x7mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C031C6Ux"
-		(extends "STM32C031C_4-6_Ux")
-		(property "Reference" "U"
-			(at -10.16 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031C6Ux"
-			(at 5.08 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm"
-			(at -10.16 -43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031c6.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 45 GPIO, UFQFPN48"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "QFN*1EP*7x7mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C031F4Px"
-		(extends "STM32C031F_4-6_Px")
-		(property "Reference" "U"
-			(at -10.16 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031F4Px"
-			(at 5.08 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at -10.16 -17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031f4.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C031F6Px"
-		(extends "STM32C031F_4-6_Px")
-		(property "Reference" "U"
-			(at -10.16 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031F6Px"
-			(at 5.08 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at -10.16 -17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031f6.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 18 GPIO, TSSOP20"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C031G4Ux"
-		(extends "STM32C031G_4-6_Ux")
-		(property "Reference" "U"
-			(at -10.16 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031G4Ux"
-			(at 5.08 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28_4x4mm_P0.5mm"
-			(at -10.16 -20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031g4.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 26 GPIO, UFQFPN28"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "QFN*4x4mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C031G6Ux"
-		(extends "STM32C031G_4-6_Ux")
-		(property "Reference" "U"
-			(at -10.16 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031G6Ux"
-			(at 5.08 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28_4x4mm_P0.5mm"
-			(at -10.16 -20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031g6.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 26 GPIO, UFQFPN28"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "QFN*4x4mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "STM32C031K4Tx"
-		(extends "STM32C031K_4-6_Tx")
-		(property "Reference" "U"
-			(at -10.16 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031K4Tx"
-			(at 5.08 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_QFP:LQFP-32_7x7mm_P0.8mm"
-			(at -10.16 -22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031k4.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 16KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 30 GPIO, LQFP32"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "LQFP*7x7mm*P0.8mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(symbol "STM32C031K4Ux"
 		(extends "STM32C031K_4-6_Ux")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
 		(property "Reference" "U"
-			(at -10.16 24.13 0)
+			(at -7.62 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8510,7 +9010,7 @@
 			)
 		)
 		(property "Value" "STM32C031K4Ux"
-			(at 5.08 24.13 0)
+			(at 2.54 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8519,7 +9019,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm"
-			(at -10.16 -22.86 0)
+			(at -7.62 -22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8546,6 +9046,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
 			(at 0 0 0)
 			(effects
@@ -8565,77 +9073,13 @@
 			)
 		)
 	)
-	(symbol "STM32C031K6Tx"
-		(extends "STM32C031K_4-6_Tx")
-		(property "Reference" "U"
-			(at -10.16 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32C031K6Tx"
-			(at 5.08 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_QFP:LQFP-32_7x7mm_P0.8mm"
-			(at -10.16 -22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c031k6.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 30 GPIO, LQFP32"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "LQFP*7x7mm*P0.8mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(symbol "STM32C031K6Ux"
 		(extends "STM32C031K_4-6_Ux")
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
 		(property "Reference" "U"
-			(at -10.16 24.13 0)
+			(at -7.62 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8644,7 +9088,7 @@
 			)
 		)
 		(property "Value" "STM32C031K6Ux"
-			(at 5.08 24.13 0)
+			(at 2.54 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8653,7 +9097,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm"
-			(at -10.16 -22.86 0)
+			(at -7.62 -22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8678,6 +9122,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "Arm Cortex-M0+ STM32C0 STM32C0x1"
