@@ -292152,20 +292152,20 @@
 			)
 		)
 	)
-	(symbol "SD_Card_Layout"
+	(symbol "SD_Card_Device"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at -16.51 13.97 0)
+			(at -11.938 17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SD_Card_Layout"
-			(at 15.24 -13.97 0)
+		(property "Value" "SD_Card_Device"
+			(at 9.144 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292190,7 +292190,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SD Card Reader"
+		(property "Description" "SD card device/card "
 			(at 0 0 0)
 			(effects
 				(font
@@ -292217,10 +292217,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "SD_Card_Layout_0_1"
+		(symbol "SD_Card_Device_0_1"
 			(rectangle
-				(start -8.89 -9.525)
-				(end -6.35 -10.795)
+				(start -2.032 6.858)
+				(end -1.27 4.826)
 				(stroke
 					(width 0)
 					(type default)
@@ -292230,8 +292230,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 -6.985)
-				(end -6.35 -8.255)
+				(start -0.508 8.128)
+				(end 0.254 6.096)
 				(stroke
 					(width 0)
 					(type default)
@@ -292241,8 +292241,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 -4.445)
-				(end -6.35 -5.715)
+				(start 1.016 8.128)
+				(end 1.778 6.096)
 				(stroke
 					(width 0)
 					(type default)
@@ -292252,8 +292252,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 -1.905)
-				(end -6.35 -3.175)
+				(start 2.54 8.128)
+				(end 3.302 6.096)
 				(stroke
 					(width 0)
 					(type default)
@@ -292263,8 +292263,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 0.635)
-				(end -6.35 -0.635)
+				(start 4.064 8.128)
+				(end 4.826 6.096)
 				(stroke
 					(width 0)
 					(type default)
@@ -292274,8 +292274,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 3.175)
-				(end -6.35 1.905)
+				(start 5.588 8.128)
+				(end 6.35 6.096)
 				(stroke
 					(width 0)
 					(type default)
@@ -292285,8 +292285,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 5.715)
-				(end -6.35 4.445)
+				(start 7.112 8.128)
+				(end 7.874 6.096)
 				(stroke
 					(width 0)
 					(type default)
@@ -292296,8 +292296,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 8.255)
-				(end -6.35 6.985)
+				(start 8.636 8.128)
+				(end 9.398 6.096)
 				(stroke
 					(width 0)
 					(type default)
@@ -292307,8 +292307,8 @@
 				)
 			)
 			(rectangle
-				(start -7.62 10.795)
-				(end -5.08 9.525)
+				(start 10.16 8.128)
+				(end 10.922 6.096)
 				(stroke
 					(width 0)
 					(type default)
@@ -292318,11 +292318,10 @@
 				)
 			)
 		)
-		(symbol "SD_Card_Layout_1_1"
-			(polyline
-				(pts
-					(xy -10.16 8.89) (xy -7.62 11.43) (xy 20.32 11.43) (xy 20.32 -11.43) (xy -10.16 -11.43) (xy -10.16 8.89)
-				)
+		(symbol "SD_Card_Device_1_1"
+			(rectangle
+				(start -12.7 15.24)
+				(end 12.7 -15.24)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -292333,18 +292332,42 @@
 			)
 			(polyline
 				(pts
-					(xy 16.51 11.43) (xy 16.51 12.7) (xy -20.32 12.7) (xy -20.32 -12.7) (xy 16.51 -12.7) (xy 16.51 -11.43)
+					(xy -1.016 8.89) (xy 11.684 8.89) (xy 11.684 -9.144) (xy -2.794 -9.144) (xy -2.794 7.112) (xy -1.016 8.89)
 				)
 				(stroke
-					(width 0.254)
+					(width 0.3)
 					(type default)
 				)
 				(fill
 					(type none)
 				)
 			)
-			(pin input line
-				(at -22.86 7.62 0)
+			(text "1"
+				(at 0 4.826 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(text "8"
+				(at 10.668 4.826 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(text "9"
+				(at -1.778 3.556 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 2.54 0)
 				(length 2.54)
 				(name "CD/DAT3"
 					(effects
@@ -292361,8 +292384,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 5.08 0)
+			(pin bidirectional line
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "CMD"
 					(effects
@@ -292380,7 +292403,7 @@
 				)
 			)
 			(pin power_in line
-				(at -22.86 2.54 0)
+				(at 0 -17.78 90)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -292398,7 +292421,7 @@
 				)
 			)
 			(pin power_in line
-				(at -22.86 0 0)
+				(at 0 17.78 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -292416,7 +292439,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -2.54 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "CLK"
 					(effects
@@ -292433,9 +292456,9 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -22.86 -5.08 0)
-				(length 2.54)
+			(pin passive line
+				(at 0 -17.78 90)
+				(length 2.54) hide
 				(name "VSS"
 					(effects
 						(font
@@ -292451,8 +292474,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 -7.62 0)
+			(pin bidirectional line
+				(at -15.24 10.16 0)
 				(length 2.54)
 				(name "DAT0"
 					(effects
@@ -292469,8 +292492,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 -10.16 0)
+			(pin bidirectional line
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "DAT1"
 					(effects
@@ -292487,8 +292510,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 10.16 0)
+			(pin bidirectional line
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "DAT2"
 					(effects
@@ -292507,20 +292530,20 @@
 			)
 		)
 	)
-	(symbol "SD_Card_Slot"
+	(symbol "SD_Card_Receptacle"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at -16.51 13.97 0)
+			(at -11.684 17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SD_Card_Slot"
-			(at 15.24 -13.97 0)
+		(property "Value" "SD_Card_Receptacle"
+			(at 11.43 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292528,7 +292551,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 0 0)
+			(at 0 -3.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292545,7 +292568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SD Card Reader"
+		(property "Description" "SD card receptacle"
 			(at 0 0 0)
 			(effects
 				(font
@@ -292572,10 +292595,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "SD_Card_Slot_0_1"
+		(symbol "SD_Card_Receptacle_0_1"
 			(rectangle
-				(start -8.89 -9.525)
-				(end -6.35 -10.795)
+				(start -2.032 3.81)
+				(end -1.27 1.778)
 				(stroke
 					(width 0)
 					(type default)
@@ -292585,8 +292608,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 -6.985)
-				(end -6.35 -8.255)
+				(start -0.508 5.08)
+				(end 0.254 3.048)
 				(stroke
 					(width 0)
 					(type default)
@@ -292596,8 +292619,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 -4.445)
-				(end -6.35 -5.715)
+				(start 1.016 5.08)
+				(end 1.778 3.048)
 				(stroke
 					(width 0)
 					(type default)
@@ -292607,8 +292630,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 -1.905)
-				(end -6.35 -3.175)
+				(start 2.54 5.08)
+				(end 3.302 3.048)
 				(stroke
 					(width 0)
 					(type default)
@@ -292618,8 +292641,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 0.635)
-				(end -6.35 -0.635)
+				(start 4.064 5.08)
+				(end 4.826 3.048)
 				(stroke
 					(width 0)
 					(type default)
@@ -292629,8 +292652,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 3.175)
-				(end -6.35 1.905)
+				(start 5.588 5.08)
+				(end 6.35 3.048)
 				(stroke
 					(width 0)
 					(type default)
@@ -292640,8 +292663,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 5.715)
-				(end -6.35 4.445)
+				(start 7.112 5.08)
+				(end 7.874 3.048)
 				(stroke
 					(width 0)
 					(type default)
@@ -292651,8 +292674,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 8.255)
-				(end -6.35 6.985)
+				(start 8.636 5.08)
+				(end 9.398 3.048)
 				(stroke
 					(width 0)
 					(type default)
@@ -292662,8 +292685,8 @@
 				)
 			)
 			(rectangle
-				(start -7.62 10.795)
-				(end -5.08 9.525)
+				(start 10.16 5.08)
+				(end 10.922 3.048)
 				(stroke
 					(width 0)
 					(type default)
@@ -292673,11 +292696,10 @@
 				)
 			)
 		)
-		(symbol "SD_Card_Slot_1_1"
-			(polyline
-				(pts
-					(xy -10.16 8.89) (xy -7.62 11.43) (xy 20.32 11.43) (xy 20.32 -11.43) (xy -10.16 -11.43) (xy -10.16 8.89)
-				)
+		(symbol "SD_Card_Receptacle_1_1"
+			(rectangle
+				(start -12.7 15.24)
+				(end 12.7 -15.24)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -292688,18 +292710,42 @@
 			)
 			(polyline
 				(pts
-					(xy 16.51 11.43) (xy 16.51 12.7) (xy -20.32 12.7) (xy -20.32 -12.7) (xy 16.51 -12.7) (xy 16.51 -11.43)
+					(xy -1.016 5.842) (xy 11.684 5.842) (xy 11.684 -12.192) (xy -2.794 -12.192) (xy -2.794 4.064) (xy -1.016 5.842)
 				)
 				(stroke
-					(width 0.254)
+					(width 0.3)
 					(type default)
 				)
 				(fill
 					(type none)
 				)
 			)
-			(pin input line
-				(at -22.86 7.62 0)
+			(text "1"
+				(at 0 1.778 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(text "8"
+				(at 10.668 1.778 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(text "9"
+				(at -1.778 0.508 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 2.54 0)
 				(length 2.54)
 				(name "CD/DAT3"
 					(effects
@@ -292716,8 +292762,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 22.86 5.08 180)
+			(pin output line
+				(at 15.24 10.16 180)
 				(length 2.54)
 				(name "CARD_DETECT"
 					(effects
@@ -292734,8 +292780,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 22.86 2.54 180)
+			(pin output line
+				(at 15.24 7.62 180)
 				(length 2.54)
 				(name "WRITE_PROTECT"
 					(effects
@@ -292752,8 +292798,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 22.86 -2.54 180)
+			(pin passive line
+				(at -15.24 -10.16 0)
 				(length 2.54)
 				(name "SHELL1"
 					(effects
@@ -292770,8 +292816,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 22.86 -5.08 180)
+			(pin passive line
+				(at -15.24 -12.7 0)
 				(length 2.54)
 				(name "SHELL2"
 					(effects
@@ -292788,8 +292834,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 5.08 0)
+			(pin bidirectional line
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "CMD"
 					(effects
@@ -292807,7 +292853,7 @@
 				)
 			)
 			(pin power_in line
-				(at -22.86 2.54 0)
+				(at 0 -17.78 90)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -292825,7 +292871,7 @@
 				)
 			)
 			(pin power_in line
-				(at -22.86 0 0)
+				(at 0 17.78 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -292843,7 +292889,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -2.54 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "CLK"
 					(effects
@@ -292860,9 +292906,9 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -22.86 -5.08 0)
-				(length 2.54)
+			(pin passive line
+				(at 0 -17.78 90)
+				(length 2.54) hide
 				(name "VSS"
 					(effects
 						(font
@@ -292878,8 +292924,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 -7.62 0)
+			(pin bidirectional line
+				(at -15.24 10.16 0)
 				(length 2.54)
 				(name "DAT0"
 					(effects
@@ -292896,8 +292942,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 -10.16 0)
+			(pin bidirectional line
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "DAT1"
 					(effects
@@ -292914,8 +292960,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 10.16 0)
+			(pin bidirectional line
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "DAT2"
 					(effects
@@ -343069,70 +343115,6 @@
 			)
 		)
 		(property "ki_fp_filters" "4P4C* RJ9* RJ10* RJ22*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "SD_Card"
-		(extends "SD_Card_Slot")
-		(property "Reference" "J"
-			(at -16.51 13.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SD_Card_Slot"
-			(at 15.24 -13.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SD Card Reader"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "connector SD"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SD*"
 			(at 0 0 0)
 			(effects
 				(font
