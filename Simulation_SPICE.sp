@@ -47,9 +47,3 @@ X2 in2+ in2- vcc vee out2 kicad_builtin_opamp POLE={POLE} GAIN={GAIN} VOFF={VOFF
 X3 in3+ in3- vcc vee out3 kicad_builtin_opamp POLE={POLE} GAIN={GAIN} VOFF={VOFF} ROUT={ROUT}
 X4 in4+ in4- vcc vee out4 kicad_builtin_opamp POLE={POLE} GAIN={GAIN} VOFF={VOFF} ROUT={ROUT}
 .ends
-
-* Simple generic model for diode
-* Parameters are dc RS and capacitance CJO.
-.model kicad_builtin_generic_diode D RS=50m CJO=10p
-.ends
-
