@@ -3395,32 +3395,29 @@
 		)
 	)
 	(symbol "IIS3DWB"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 7.62 -12.7 0)
+			(at 10.16 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "IIS3DWB"
-			(at 7.62 -15.24 0)
+			(at 10.16 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y"
-			(at 0 0 0)
+			(at 0 -30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3430,7 +3427,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/iis3dwb.pdf"
-			(at 0 0 0)
+			(at 0 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3440,7 +3437,7 @@
 			)
 		)
 		(property "Description" "Ultra-wide bandwidth, low-noise, 3-axis digital vibration sensor"
-			(at 0 0 0)
+			(at 0 -25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3449,7 +3446,7 @@
 			)
 		)
 		(property "Manufacturer" "ST"
-			(at 0 0 0)
+			(at 0 -35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3458,7 +3455,7 @@
 			)
 		)
 		(property "MPN" "IIS3DWBTR"
-			(at 0 0 0)
+			(at 0 -33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3486,8 +3483,8 @@
 		)
 		(symbol "IIS3DWB_0_1"
 			(rectangle
-				(start -10.16 10.16)
-				(end 10.16 -12.7)
+				(start -7.62 10.16)
+				(end 10.16 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -3499,9 +3496,9 @@
 		)
 		(symbol "IIS3DWB_1_1"
 			(pin bidirectional line
-				(at -12.7 2.54 0)
+				(at -10.16 0 0)
 				(length 2.54)
-				(name "SDO/SA0"
+				(name "SDO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3517,7 +3514,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -10.16 -7.62 0)
+				(at 10.16 -5.08 180)
 				(length 2.54) hide
 				(name "RES"
 					(effects
@@ -3535,7 +3532,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -10.16 -10.16 0)
+				(at 10.16 -7.62 180)
 				(length 2.54) hide
 				(name "RES"
 					(effects
@@ -3553,7 +3550,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 2.54 180)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "CS"
 					(effects
@@ -3571,9 +3568,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "SPC/SCL"
+				(name "SCL/SPC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3589,9 +3586,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 -2.54 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "SDI/SDO/SDA"
+				(name "SDA/SDI"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3607,7 +3604,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -3625,7 +3622,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -3643,7 +3640,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -2.54 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(name "INT1"
 					(effects
@@ -3679,7 +3676,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -3697,7 +3694,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -3715,7 +3712,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 12.7 270)
+				(at 0 12.7 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -3733,7 +3730,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -5.08 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "INT2"
 					(effects
