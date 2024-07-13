@@ -21855,7 +21855,7 @@
 			(at 15.24 -33.02 0)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
@@ -21864,16 +21864,16 @@
 			(at 15.24 -35.56 0)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at -17.78 -45.72 0)
+			(at -2.54 -53.34 0)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify left)
 				(hide yes)
@@ -21937,9 +21937,29 @@
 				)
 			)
 		)
+		(symbol "W5100S_1_0"
+			(pin input line
+				(at -17.78 27.94 0)
+				(length 2.54)
+				(name "~{RST}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
 		(symbol "W5100S_1_1"
 			(pin power_in line
-				(at -1.27 -33.02 90)
+				(at -2.54 -33.02 90)
 				(length 2.54)
 				(name "GNDA"
 					(effects
@@ -21957,7 +21977,7 @@
 				)
 			)
 			(pin power_in line
-				(at 1.27 -33.02 90)
+				(at 2.54 -33.02 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -22065,7 +22085,7 @@
 				)
 			)
 			(pin passive line
-				(at -1.27 -33.02 90)
+				(at -2.54 -33.02 90)
 				(length 2.54) hide
 				(name "GNDA"
 					(effects
@@ -22209,7 +22229,7 @@
 				)
 			)
 			(pin passive line
-				(at 1.27 -33.02 90)
+				(at 2.54 -33.02 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -22405,6 +22425,7 @@
 						)
 					)
 				)
+				(alternate "ADDR0" input line)
 			)
 			(pin output line
 				(at -17.78 10.16 0)
@@ -22423,6 +22444,7 @@
 						)
 					)
 				)
+				(alternate "ADDR1" input line)
 			)
 			(pin input line
 				(at -17.78 0 0)
@@ -22659,7 +22681,7 @@
 				)
 			)
 			(pin passive line
-				(at 1.27 -33.02 90)
+				(at 2.54 -33.02 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -22713,24 +22735,6 @@
 				)
 			)
 			(pin input line
-				(at -17.78 27.94 0)
-				(length 2.54)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "59"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at 17.78 20.32 180)
 				(length 2.54)
 				(name "RXIP"
@@ -22749,7 +22753,7 @@
 				)
 			)
 			(pin passive line
-				(at -1.27 -33.02 90)
+				(at -2.54 -33.02 90)
 				(length 2.54) hide
 				(name "GNDA"
 					(effects
