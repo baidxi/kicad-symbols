@@ -3495,7 +3495,7 @@
 			)
 		)
 		(symbol "IIS3DWB_1_1"
-			(pin bidirectional line
+			(pin output line
 				(at -10.16 0 0)
 				(length 2.54)
 				(name "SDO"
@@ -3512,6 +3512,7 @@
 						)
 					)
 				)
+				(alternate "SA0" input line)
 			)
 			(pin no_connect line
 				(at 10.16 -5.08 180)
@@ -3570,7 +3571,7 @@
 			(pin input line
 				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "SCL/SPC"
+				(name "SPC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3584,11 +3585,12 @@
 						)
 					)
 				)
+				(alternate "SCL" input line)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "SDA/SDI"
+				(name "SDI"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3602,6 +3604,8 @@
 						)
 					)
 				)
+				(alternate "SDA" bidirectional line)
+				(alternate "SDO" output line)
 			)
 			(pin passive line
 				(at 0 -12.7 90)
