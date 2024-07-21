@@ -14939,7 +14939,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at 2.54 28.194 0)
+			(at 3.81 19.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14947,7 +14947,7 @@
 			)
 		)
 		(property "Value" "Flipper_Zero"
-			(at -5.588 28.194 0)
+			(at -4.318 19.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14955,7 +14955,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at -15.24 22.86 0)
+			(at -13.97 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14964,7 +14964,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.flipper.net/development"
-			(at -0.254 31.496 0)
+			(at 1.016 22.606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14973,7 +14973,7 @@
 			)
 		)
 		(property "Description" "Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body"
-			(at -0.254 -28.702 0)
+			(at -4.064 -21.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15001,7 +15001,7 @@
 		)
 		(symbol "Flipper_Zero_0_0"
 			(pin power_out line
-				(at 15.24 20.32 180)
+				(at 12.7 15.24 180)
 				(length 2.54)
 				(name "5V"
 					(effects
@@ -15018,44 +15018,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -27.94 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -27.94 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_out line
-				(at 15.24 17.78 180)
+				(at 12.7 12.7 180)
 				(length 2.54)
 				(name "3.3V"
 					(effects
@@ -15075,7 +15039,7 @@
 		)
 		(symbol "Flipper_Zero_1_0"
 			(pin bidirectional line
-				(at -15.24 -2.54 0)
+				(at -12.7 0 0)
 				(length 2.54)
 				(name "PA14"
 					(effects
@@ -15095,8 +15059,26 @@
 				(alternate "LPTIM1.OUT" output line)
 				(alternate "SWCLK" input line)
 			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
-				(at -15.24 -5.08 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "PA13"
 					(effects
@@ -15112,11 +15094,11 @@
 						)
 					)
 				)
-				(alternate "EXTI.13 (Back Key)" input line)
+				(alternate "EXTI.13" input line)
 				(alternate "SWDIO" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -15.24 -7.62 0)
+				(at -12.7 -5.08 0)
 				(length 2.54)
 				(name "PB6"
 					(effects
@@ -15133,13 +15115,13 @@
 					)
 				)
 				(alternate "COMP2.IN+" input line)
-				(alternate "EXTI.6 (Down Key)" input line)
+				(alternate "EXTI.6" input line)
 				(alternate "LPTIM1.ETR" bidirectional line)
 				(alternate "MCO" bidirectional line)
 				(alternate "USART1.TX" output line)
 			)
 			(pin bidirectional line
-				(at -15.24 -10.16 0)
+				(at -12.7 -7.62 0)
 				(length 2.54)
 				(name "PB7"
 					(effects
@@ -15157,11 +15139,12 @@
 				)
 				(alternate "COMP2.IN2" input line)
 				(alternate "EXTI.7" input line)
-				(alternate "LPTIM1.IN2/TIM1.MKIN" input line)
+				(alternate "LPTIM1.IN2" input line)
+				(alternate "TIM1.MKIN" input line)
 				(alternate "USART1.RX" input line)
 			)
 			(pin bidirectional line
-				(at -15.24 -12.7 0)
+				(at -12.7 -10.16 0)
 				(length 2.54)
 				(name "PC1"
 					(effects
@@ -15178,13 +15161,13 @@
 					)
 				)
 				(alternate "ADC1.2" input line)
-				(alternate "EXTI.1 (SubGHz shared)" input line)
+				(alternate "EXTI.1" input line)
 				(alternate "I2C3.SDA" bidirectional line)
 				(alternate "LPTIM1.OUT" output line)
 				(alternate "LPUART1.TX" output line)
 			)
 			(pin bidirectional line
-				(at -15.24 -15.24 0)
+				(at -12.7 -12.7 0)
 				(length 2.54)
 				(name "PC0"
 					(effects
@@ -15202,13 +15185,14 @@
 				)
 				(alternate "EXTI.0" input line)
 				(alternate "I2C3.SCL" output line)
-				(alternate "LPTIM1.IN/LPTIM2.IN" input line)
+				(alternate "LPTIM1.IN" input line)
+				(alternate "LPTIM2.IN" input line)
 				(alternate "LPUART1.RX" input line)
 			)
 			(pin bidirectional line
-				(at -15.24 -17.78 0)
+				(at -12.7 -15.24 0)
 				(length 2.54)
-				(name "PB14_(5V_pull-up_1k)"
+				(name "PB14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15223,12 +15207,30 @@
 					)
 				)
 				(alternate "EXTI.14" input line)
-				(alternate "I2C3.SDA (5V pull-up)" bidirectional line)
+				(alternate "I2C3.SDA" bidirectional line)
 				(alternate "TIM1.2N" bidirectional line)
 				(alternate "iButton" bidirectional line)
 			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
-				(at -15.24 20.32 0)
+				(at -12.7 15.24 0)
 				(length 2.54)
 				(name "PA7"
 					(effects
@@ -15248,10 +15250,11 @@
 				(alternate "COMP2 OUT" output line)
 				(alternate "EXTI 7" input line)
 				(alternate "SPI.MOSI" output line)
-				(alternate "TIM1.1N/TIM17.1" bidirectional line)
+				(alternate "TIM1.1N" bidirectional line)
+				(alternate "TIM17.1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -15.24 17.78 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "PA6"
 					(effects
@@ -15268,14 +15271,14 @@
 					)
 				)
 				(alternate "ADC1.11" input line)
-				(alternate "EXTI 6 (Dn Key)" input line)
+				(alternate "EXTI 6" input line)
 				(alternate "LPUART.CTS" output line)
 				(alternate "SPI1.MISO" input line)
 				(alternate "TIM1.BKIN" bidirectional line)
 				(alternate "TIM16.1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -15.24 15.24 0)
+				(at -12.7 10.16 0)
 				(length 2.54)
 				(name "PA4"
 					(effects
@@ -15291,14 +15294,15 @@
 						)
 					)
 				)
-				(alternate "ADC1.9" bidirectional line)
-				(alternate "COMP1/2.IN-" bidirectional line)
-				(alternate "EXTI 4" bidirectional line)
-				(alternate "LPTIM2.OUT" bidirectional line)
+				(alternate "ADC1.9" input line)
+				(alternate "COMP1.IN-" input line)
+				(alternate "COMP2.IN-" input line)
+				(alternate "EXTI 4" input line)
+				(alternate "LPTIM2.OUT" output line)
 				(alternate "SPI.CS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -15.24 12.7 0)
+				(at -12.7 7.62 0)
 				(length 2.54)
 				(name "PB3"
 					(effects
@@ -15322,7 +15326,7 @@
 				(alternate "USART1.DE/RTS" output line)
 			)
 			(pin bidirectional line
-				(at -15.24 10.16 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
 				(name "PB2"
 					(effects
@@ -15345,7 +15349,7 @@
 				(alternate "SPI1.CS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -15.24 7.62 0)
+				(at -12.7 2.54 0)
 				(length 2.54)
 				(name "PC3"
 					(effects
@@ -15363,10 +15367,11 @@
 				)
 				(alternate "ADC1.4" input line)
 				(alternate "EXTI.3" input line)
-				(alternate "LPTIM1.ETR/LPTIM2.ETR" bidirectional line)
+				(alternate "LPTIM1.ETR" bidirectional line)
+				(alternate "LPTIM2.ETR" bidirectional line)
 			)
 			(pin power_in line
-				(at -2.54 -27.94 90)
+				(at 0 -20.32 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -15386,8 +15391,8 @@
 		)
 		(symbol "Flipper_Zero_1_1"
 			(rectangle
-				(start -12.7 25.4)
-				(end 12.7 -25.4)
+				(start -10.16 17.78)
+				(end 10.16 -17.78)
 				(stroke
 					(width 0.254)
 					(type default)
