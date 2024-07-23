@@ -12611,8 +12611,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://read.pudn.com/downloads794/doc/project/3133918/PCIe_M.2_Electromechanical_Spec_Rev1.0_Final_11012013_RS_Clean.pdf#page=148"
-			(at 0 26.67 0)
+		(property "Datasheet" "https://members.pcisig.com/document/download/19525"
+			(at 0 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12620,8 +12620,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "M.2 Socket 1-DP Mechanical Key A"
-			(at 0 0 0)
+		(property "Description" "M.2 DisplayPort Based Socket 1 (Mechanical Key A)"
+			(at 0 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12680,7 +12680,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 25.4 -22.86 180)
+				(at 25.4 -27.94 180)
 				(length 2.54)
 				(name "~{LED_2}"
 					(effects
@@ -12697,10 +12697,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 -15.24 0)
+			(pin output line
+				(at 25.4 2.54 180)
 				(length 2.54)
-				(name "MLDIR_Sense"
+				(name "DP_MLDIR"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12716,9 +12716,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -48.26 90)
-				(length 2.54) hide
-				(name "GND"
+				(at 25.4 -43.18 180)
+				(length 2.54)
+				(name "VIO_CFG"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12734,7 +12734,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -10.16 180)
+				(at 25.4 12.7 180)
 				(length 2.54)
 				(name "DP_ML3n"
 					(effects
@@ -12752,7 +12752,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54)
 				(name "3.3V"
 					(effects
@@ -12770,7 +12770,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 10.16 180)
+				(at 25.4 43.18 180)
 				(length 2.54)
 				(name "DP_AUXn"
 					(effects
@@ -12788,7 +12788,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -12.7 180)
+				(at 25.4 10.16 180)
 				(length 2.54)
 				(name "DP_ML3p"
 					(effects
@@ -12806,7 +12806,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 7.62 180)
+				(at 25.4 40.64 180)
 				(length 2.54)
 				(name "DP_AUXp"
 					(effects
@@ -12860,7 +12860,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -5.08 180)
+				(at 25.4 20.32 180)
 				(length 2.54)
 				(name "DP_ML2n"
 					(effects
@@ -12878,7 +12878,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 0 180)
+				(at 25.4 27.94 180)
 				(length 2.54)
 				(name "DP_ML1n"
 					(effects
@@ -12896,7 +12896,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -7.62 180)
+				(at 25.4 17.78 180)
 				(length 2.54)
 				(name "DP_ML2p"
 					(effects
@@ -12914,7 +12914,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -2.54 180)
+				(at 25.4 25.4 180)
 				(length 2.54)
 				(name "DP_ML1p"
 					(effects
@@ -12950,7 +12950,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 10.16 0)
+				(at -25.4 -25.4 0)
 				(length 2.54)
 				(name "USB_D+"
 					(effects
@@ -12986,7 +12986,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -15.24 180)
+				(at 25.4 5.08 180)
 				(length 2.54)
 				(name "DP_HPD"
 					(effects
@@ -13004,7 +13004,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 5.08 180)
+				(at 25.4 35.56 180)
 				(length 2.54)
 				(name "DP_ML0n"
 					(effects
@@ -13040,7 +13040,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 2.54 180)
+				(at 25.4 33.02 180)
 				(length 2.54)
 				(name "DP_ML0p"
 					(effects
@@ -13057,8 +13057,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 33.02 0)
+			(pin input line
+				(at -25.4 7.62 0)
 				(length 2.54)
 				(name "PETp0"
 					(effects
@@ -13093,8 +13093,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 30.48 0)
+			(pin input line
+				(at -25.4 5.08 0)
 				(length 2.54)
 				(name "PETn0"
 					(effects
@@ -13112,7 +13112,7 @@
 				)
 			)
 			(pin passive line
-				(at 25.4 38.1 180)
+				(at -25.4 -38.1 0)
 				(length 2.54)
 				(name "VENDOR_DEFINED"
 					(effects
@@ -13148,7 +13148,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -13166,7 +13166,7 @@
 				)
 			)
 			(pin passive line
-				(at 25.4 35.56 180)
+				(at -25.4 -40.64 0)
 				(length 2.54)
 				(name "VENDOR_DEFINED"
 					(effects
@@ -13183,8 +13183,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 27.94 0)
+			(pin output line
+				(at -25.4 0 0)
 				(length 2.54)
 				(name "PERp0"
 					(effects
@@ -13202,7 +13202,7 @@
 				)
 			)
 			(pin passive line
-				(at 25.4 33.02 180)
+				(at -25.4 -43.18 0)
 				(length 2.54)
 				(name "VENDOR_DEFINED"
 					(effects
@@ -13219,8 +13219,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 25.4 0)
+			(pin output line
+				(at -25.4 -2.54 0)
 				(length 2.54)
 				(name "PERn0"
 					(effects
@@ -13238,7 +13238,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -38.1 180)
+				(at 25.4 -20.32 180)
 				(length 2.54)
 				(name "COEX3"
 					(effects
@@ -13273,10 +13273,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 25.4 -35.56 180)
+			(pin output line
+				(at 25.4 -17.78 180)
 				(length 2.54)
-				(name "COEX2"
+				(name "COEX_RXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -13291,8 +13291,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -35.56 0)
+			(pin input line
+				(at -25.4 33.02 0)
 				(length 2.54)
 				(name "REFCLKp0"
 					(effects
@@ -13309,10 +13309,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 25.4 -33.02 180)
+			(pin input line
+				(at 25.4 -15.24 180)
 				(length 2.54)
-				(name "COEX1"
+				(name "COEX_TXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -13327,8 +13327,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -38.1 0)
+			(pin input line
+				(at -25.4 30.48 0)
 				(length 2.54)
 				(name "REFCLKn0"
 					(effects
@@ -13346,7 +13346,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 7.62 0)
+				(at -25.4 -27.94 0)
 				(length 2.54)
 				(name "USB_D-"
 					(effects
@@ -13363,8 +13363,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 -27.94 180)
+			(pin input line
+				(at -25.4 -33.02 0)
 				(length 2.54)
 				(name "SUSCLK"
 					(effects
@@ -13399,7 +13399,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at -25.4 43.18 0)
 				(length 2.54)
 				(name "~{PERST0}"
@@ -13435,8 +13435,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 15.24 180)
+			(pin input line
+				(at 25.4 -35.56 180)
 				(length 2.54)
 				(name "~{W_DISABLE2}"
 					(effects
@@ -13471,8 +13471,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 17.78 180)
+			(pin input line
+				(at 25.4 -33.02 180)
 				(length 2.54)
 				(name "~{W_DISABLE1}"
 					(effects
@@ -13508,7 +13508,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 27.94 180)
+				(at 25.4 -5.08 180)
 				(length 2.54)
 				(name "I2C_DATA"
 					(effects
@@ -13525,8 +13525,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 22.86 0)
+			(pin input line
+				(at -25.4 -7.62 0)
 				(length 2.54)
 				(name "PETp1"
 					(effects
@@ -13544,7 +13544,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 25.4 -20.32 180)
+				(at 25.4 -25.4 180)
 				(length 2.54)
 				(name "~{LED_1}"
 					(effects
@@ -13561,8 +13561,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 25.4 180)
+			(pin input line
+				(at 25.4 -7.62 180)
 				(length 2.54)
 				(name "I2C_CLK"
 					(effects
@@ -13579,8 +13579,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 20.32 0)
+			(pin input line
+				(at -25.4 -10.16 0)
 				(length 2.54)
 				(name "PETn1"
 					(effects
@@ -13597,8 +13597,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 22.86 180)
+			(pin open_collector line
+				(at 25.4 -10.16 180)
 				(length 2.54)
 				(name "~{ALERT}"
 					(effects
@@ -13634,9 +13634,9 @@
 				)
 			)
 			(pin passive line
-				(at 25.4 43.18 180)
+				(at 2.54 48.26 270)
 				(length 2.54)
-				(name "RESERVED"
+				(name "VIO_1.8V/NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -13651,8 +13651,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 17.78 0)
+			(pin output line
+				(at -25.4 -15.24 0)
 				(length 2.54)
 				(name "PERp1"
 					(effects
@@ -13669,8 +13669,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -2.54 0)
+			(pin input line
+				(at -25.4 25.4 0)
 				(length 2.54)
 				(name "~{PERST1}"
 					(effects
@@ -13687,8 +13687,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 15.24 0)
+			(pin output line
+				(at -25.4 -17.78 0)
 				(length 2.54)
 				(name "PERn1"
 					(effects
@@ -13706,7 +13706,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -5.08 0)
+				(at -25.4 22.86 0)
 				(length 2.54)
 				(name "~{CLKREQ1}"
 					(effects
@@ -13760,7 +13760,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -7.62 0)
+				(at -25.4 20.32 0)
 				(length 2.54)
 				(name "~{PEWAKE1}"
 					(effects
@@ -13777,8 +13777,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -40.64 0)
+			(pin input line
+				(at -25.4 15.24 0)
 				(length 2.54)
 				(name "REFCLKp1"
 					(effects
@@ -13796,7 +13796,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -13813,8 +13813,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -43.18 0)
+			(pin input line
+				(at -25.4 12.7 0)
 				(length 2.54)
 				(name "REFCLKn1"
 					(effects
@@ -13832,7 +13832,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -13891,7 +13891,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 26.67 0)
+			(at 99.06 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13899,8 +13899,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://read.pudn.com/downloads794/doc/project/3133918/PCIe_M.2_Electromechanical_Spec_Rev1.0_Final_11012013_RS_Clean.pdf#page=154"
-			(at 0 26.67 0)
+		(property "Datasheet" "https://members.pcisig.com/document/download/19525"
+			(at 0 5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13908,7 +13908,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "M.2 Socket 2 Mechanical Key B"
+		(property "Description" "M.2 Socket 2 (Mechanical Key B)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13926,7 +13926,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*M*2*B*"
+		(property "ki_fp_filters" "*M*2*A*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13935,22 +13935,9 @@
 				(hide yes)
 			)
 		)
-		(symbol "Bus_M.2_Socket_B_0_1"
-			(rectangle
-				(start -22.86 45.72)
-				(end 22.86 -45.72)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "Bus_M.2_Socket_B_1_1"
-			(pin input line
-				(at 25.4 35.56 180)
+		(symbol "Bus_M.2_Socket_B_0_0"
+			(pin passive line
+				(at 25.4 -38.1 180)
 				(length 2.54)
 				(name "CONFIG_3"
 					(effects
@@ -13968,9 +13955,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -10.16 180)
+				(at -25.4 -33.02 0)
 				(length 2.54)
-				(name "GPIO_9/DAS/~{DSS}/~{LED1}"
+				(name "GPIO_9/DAS/DSS/~{LED_1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14003,26 +13990,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 48.26 270)
-				(length 2.54)
-				(name "3.3V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 25.4 0 180)
+				(at -25.4 -22.86 0)
 				(length 2.54)
 				(name "GPIO_5"
 					(effects
@@ -14039,8 +14008,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 43.18 180)
+			(pin passive line
+				(at 25.4 -30.48 180)
 				(length 2.54)
 				(name "CONFIG_0"
 					(effects
@@ -14058,7 +14027,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -2.54 180)
+				(at -25.4 -25.4 0)
 				(length 2.54)
 				(name "GPIO_6"
 					(effects
@@ -14076,7 +14045,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -15.24 180)
+				(at -25.4 -38.1 0)
 				(length 2.54)
 				(name "GPIO_11"
 					(effects
@@ -14094,7 +14063,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -5.08 180)
+				(at -25.4 -27.94 0)
 				(length 2.54)
 				(name "GPIO_7"
 					(effects
@@ -14111,8 +14080,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 -20.32 180)
+			(pin input line
+				(at 25.4 20.32 180)
 				(length 2.54)
 				(name "DPR"
 					(effects
@@ -14130,7 +14099,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -12.7 180)
+				(at -25.4 -35.56 0)
 				(length 2.54)
 				(name "GPIO_10"
 					(effects
@@ -14166,9 +14135,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -7.62 180)
+				(at -25.4 -30.48 0)
 				(length 2.54)
-				(name "GPIO_8"
+				(name "~{PLA_S2}/GPIO_8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14183,10 +14152,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 15.24 0)
+			(pin output line
+				(at -25.4 0 0)
 				(length 2.54)
-				(name "PERn1/USB3.0-Rx-/SSIC-RxN"
+				(name "PERn1/USB3.1-Rx-/SSIC-RxN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14219,10 +14188,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 -17.78 0)
+			(pin output line
+				(at 25.4 -17.78 180)
 				(length 2.54)
-				(name "UIM-RESET"
+				(name "UIM_RESET"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14237,10 +14206,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 17.78 0)
+			(pin output line
+				(at -25.4 2.54 0)
 				(length 2.54)
-				(name "PERp1/USB3.0-Rx+/SSIC-RxP"
+				(name "PERp1/USB3.1-Rx+/SSIC-RxP"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14255,10 +14224,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 -15.24 0)
+			(pin output line
+				(at 25.4 -22.86 180)
 				(length 2.54)
-				(name "UIM-CLK"
+				(name "UIM_CLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14292,9 +14261,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -12.7 0)
+				(at 25.4 -20.32 180)
 				(length 2.54)
-				(name "UIM-DATA"
+				(name "UIM_DATA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14309,10 +14278,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 20.32 0)
+			(pin input line
+				(at -25.4 7.62 0)
 				(length 2.54)
-				(name "PETn1/USB3.0-Tx-/SSIC-TxN"
+				(name "PETn1/USB3.1-Tx-/SSIC-TxN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14327,10 +14296,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 -10.16 0)
+			(pin power_out line
+				(at 25.4 -15.24 180)
 				(length 2.54)
-				(name "UIM-PWR"
+				(name "UIM_PWR"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14345,10 +14314,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 22.86 0)
+			(pin input line
+				(at -25.4 10.16 0)
 				(length 2.54)
-				(name "PETp1/USB3.0-Tx+/SSIC-TxP"
+				(name "PETp1/USB3.1-Tx+/SSIC-TxP"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14363,8 +14332,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -22.86 0)
+			(pin input line
+				(at -25.4 -5.08 0)
 				(length 2.54)
 				(name "DEVSLP"
 					(effects
@@ -14399,28 +14368,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 48.26 270)
-				(length 2.54) hide
-				(name "3.3V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 25.4 12.7 180)
+				(at -25.4 -10.16 0)
 				(length 2.54)
-				(name "GPIO_0"
+				(name "GPIO_0/SMB_CLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14435,8 +14386,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 25.4 0)
+			(pin output line
+				(at -25.4 15.24 0)
 				(length 2.54)
 				(name "PERn0/SATA-B+"
 					(effects
@@ -14454,9 +14405,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 10.16 180)
+				(at -25.4 -12.7 0)
 				(length 2.54)
-				(name "GPIO_1"
+				(name "GPIO_1/SMB_DATA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14471,8 +14422,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 27.94 0)
+			(pin output line
+				(at -25.4 17.78 0)
 				(length 2.54)
 				(name "PERp0/SATA-B-"
 					(effects
@@ -14490,9 +14441,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 7.62 180)
+				(at -25.4 -15.24 0)
 				(length 2.54)
-				(name "GPIO_2"
+				(name "GPIO_2/~{ALERT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14526,7 +14477,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 5.08 180)
+				(at -25.4 -17.78 0)
 				(length 2.54)
 				(name "GPIO_3"
 					(effects
@@ -14543,8 +14494,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 30.48 0)
+			(pin input line
+				(at -25.4 22.86 0)
 				(length 2.54)
 				(name "PETn0/SATA-A-"
 					(effects
@@ -14562,7 +14513,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 2.54 180)
+				(at -25.4 -20.32 0)
 				(length 2.54)
 				(name "GPIO_4"
 					(effects
@@ -14579,8 +14530,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 33.02 0)
+			(pin input line
+				(at -25.4 25.4 0)
 				(length 2.54)
 				(name "PETp0/SATA-A+"
 					(effects
@@ -14615,8 +14566,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 43.18 0)
+			(pin input line
+				(at -25.4 38.1 0)
 				(length 2.54)
 				(name "~{PERST}"
 					(effects
@@ -14669,8 +14620,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -38.1 0)
+			(pin input line
+				(at -25.4 30.48 0)
 				(length 2.54)
 				(name "REFCLKn"
 					(effects
@@ -14688,7 +14639,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 38.1 0)
+				(at -25.4 43.18 0)
 				(length 2.54)
 				(name "~{PEWAKE}"
 					(effects
@@ -14705,8 +14656,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -35.56 0)
+			(pin input line
+				(at -25.4 33.02 0)
 				(length 2.54)
 				(name "REFCLKp"
 					(effects
@@ -14724,7 +14675,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 -43.18 180)
+				(at 22.86 5.08 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -14760,7 +14711,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 -40.64 180)
+				(at 22.86 7.62 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -14777,8 +14728,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 30.48 180)
+			(pin output line
+				(at 25.4 43.18 180)
 				(length 2.54)
 				(name "ANTCTL0"
 					(effects
@@ -14795,8 +14746,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -27.94 0)
+			(pin input line
+				(at 25.4 30.48 180)
 				(length 2.54)
 				(name "~{FULL_CARD_POWER_OFF}"
 					(effects
@@ -14814,7 +14765,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -38.1 180)
+				(at 25.4 -10.16 180)
 				(length 2.54)
 				(name "COEX3"
 					(effects
@@ -14831,8 +14782,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 27.94 180)
+			(pin output line
+				(at 25.4 40.64 180)
 				(length 2.54)
 				(name "ANTCTL1"
 					(effects
@@ -14849,10 +14800,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 25.4 -35.56 180)
+			(pin input line
+				(at 25.4 -7.62 180)
 				(length 2.54)
-				(name "COEX2"
+				(name "COEX_TXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14867,8 +14818,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 25.4 180)
+			(pin output line
+				(at 25.4 38.1 180)
 				(length 2.54)
 				(name "ANTCTL2"
 					(effects
@@ -14885,10 +14836,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 25.4 -33.02 180)
+			(pin output line
+				(at 25.4 -5.08 180)
 				(length 2.54)
-				(name "COEX1"
+				(name "COEX_RXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14903,8 +14854,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 22.86 180)
+			(pin output line
+				(at 25.4 35.56 180)
 				(length 2.54)
 				(name "ANTCTL3"
 					(effects
@@ -14921,8 +14872,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -5.08 0)
+			(pin input line
+				(at 25.4 -25.4 180)
 				(length 2.54)
 				(name "SIM_DETECT"
 					(effects
@@ -14939,8 +14890,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -30.48 0)
+			(pin input line
+				(at 25.4 25.4 180)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
@@ -14957,8 +14908,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 -27.94 180)
+			(pin input line
+				(at -25.4 -43.18 0)
 				(length 2.54)
 				(name "SUSCLK"
 					(effects
@@ -14975,8 +14926,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 40.64 180)
+			(pin passive line
+				(at 25.4 -33.02 180)
 				(length 2.54)
 				(name "CONFIG_1"
 					(effects
@@ -14994,7 +14945,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 10.16 0)
+				(at 25.4 2.54 180)
 				(length 2.54)
 				(name "USB_D+"
 					(effects
@@ -15011,10 +14962,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 48.26 270)
-				(length 2.54) hide
-				(name "3.3V"
+			(pin power_in line
+				(at 2.54 48.26 270)
+				(length 2.54)
+				(name "3.3V/VBAT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15048,7 +14999,112 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at 25.4 -43.18 180)
+				(length 2.54)
+				(name "VIO_CFG/GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "73"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -35.56 180)
+				(length 2.54)
+				(name "CONFIG_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "75"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 25.4 27.94 180)
+				(length 2.54)
+				(name "~{W_DISABLE1}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 25.4 0 180)
+				(length 2.54)
+				(name "USB_D-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Bus_M.2_Socket_B_0_1"
+			(rectangle
+				(start -22.86 45.72)
+				(end 22.86 -45.72)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Bus_M.2_Socket_B_1_0"
+			(pin power_in line
+				(at -2.54 48.26 270)
+				(length 2.54)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -15057,7 +15113,1084 @@
 						)
 					)
 				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 48.26 270)
+				(length 2.54) hide
+				(name "3.3V/VBAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 				(number "72"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 48.26 270)
+				(length 2.54) hide
+				(name "3.3V/VBAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "74"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "Bus_M.2_Socket_C"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at -22.86 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Bus_M.2_Socket_C"
+			(at 16.51 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://members.pcisig.com/document/download/19525"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "M.2 Socket 2 (Mechanical Key C)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "M2 NGNF PCI-E"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*M*2*A*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Bus_M.2_Socket_C_0_0"
+			(pin power_in line
+				(at 0 -48.26 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -7.62 180)
+				(length 2.54)
+				(name "VENDOR_PORT_A_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -25.4 -40.64 0)
+				(length 2.54)
+				(name "DRP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -10.16 180)
+				(length 2.54)
+				(name "VENDOR_PORT_A_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -38.1 0)
+				(length 2.54)
+				(name "~{FULL_CARD_POWER_OFF}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -12.7 180)
+				(length 2.54)
+				(name "VENDOR_PORT_A_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 48.26 270)
+				(length 2.54)
+				(name "VIO_1.8V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -25.4 0 0)
+				(length 2.54)
+				(name "UIM1_RESET"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -25.4 2.54 0)
+				(length 2.54)
+				(name "UIM1_CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -25.4 -30.48 0)
+				(length 2.54)
+				(name "AUDIO1_I2S_RX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 5.08 0)
+				(length 2.54)
+				(name "UIM1_DATA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -48.26 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -33.02 0)
+				(length 2.54)
+				(name "AUDIO1_I2S_WS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at -25.4 7.62 0)
+				(length 2.54)
+				(name "UIM1_PWR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -25.4 -15.24 0)
+				(length 2.54)
+				(name "UIM2_RESET"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -25.4 -2.54 0)
+				(length 2.54)
+				(name "SIM_DETECT1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -25.4 -12.7 0)
+				(length 2.54)
+				(name "UIM2_CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -48.26 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -10.16 0)
+				(length 2.54)
+				(name "UIM2_DATA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -25.4 22.86 0)
+				(length 2.54)
+				(name "M/PETn0/SSIC-TxN/USB3.1-Tx-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at -25.4 -7.62 0)
+				(length 2.54)
+				(name "UIM2_PWR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -25.4 25.4 0)
+				(length 2.54)
+				(name "M/PETp0/SSIC-TxP/USB3.1-Tx+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -25.4 -17.78 0)
+				(length 2.54)
+				(name "SIM_DETECT2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -48.26 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "41"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -25.4 43.18 0)
+				(length 2.54)
+				(name "~{PERST}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "42"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -25.4 17.78 0)
+				(length 2.54)
+				(name "M/PERn0/SSIC-RxN/USB3.1-Rx-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "43"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 40.64 0)
+				(length 2.54)
+				(name "~{CLKREQ}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -25.4 15.24 0)
+				(length 2.54)
+				(name "M/PERp0/SSIC-RxP/USB3.1-Rx+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "45"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 38.1 0)
+				(length 2.54)
+				(name "~{PEWAKE}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -48.26 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "47"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -17.78 180)
+				(length 2.54)
+				(name "VENDOR_PORT_B_0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -25.4 30.48 0)
+				(length 2.54)
+				(name "M/REFCLKn"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 25.4 35.56 180)
+				(length 2.54)
+				(name "USB_D+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -20.32 180)
+				(length 2.54)
+				(name "VENDOR_PORT_B_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -25.4 33.02 0)
+				(length 2.54)
+				(name "M/REFCLKp"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "51"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -22.86 180)
+				(length 2.54)
+				(name "VENDOR_PORT_B_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -48.26 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "53"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -25.4 180)
+				(length 2.54)
+				(name "VENDOR_PORT_B_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "54"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -35.56 180)
+				(length 2.54)
+				(name "VENDOR_PORT_C_0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "55"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 22.86 27.94 180)
+				(length 2.54) hide
+				(name "RESERVED"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -48.26 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "59"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 48.26 270)
+				(length 2.54) hide
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -30.48 180)
+				(length 2.54)
+				(name "VENDOR_PORT_B_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "60"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -40.64 180)
+				(length 2.54)
+				(name "VENDOR_PORT_C_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "61"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 22.86 25.4 180)
+				(length 2.54) hide
+				(name "RESERVED"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "62"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -43.18 180)
+				(length 2.54)
+				(name "VENDOR_PORT_C_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "63"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 25.4 7.62 180)
+				(length 2.54)
+				(name "ANTCTL0/GPIO_0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "64"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -48.26 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "65"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 25.4 5.08 180)
+				(length 2.54)
+				(name "ANTCTL1/GPIO_1/RFFE_SDATA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "66"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 25.4 43.18 180)
+				(length 2.54)
+				(name "COEX_TXD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "67"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 25.4 2.54 180)
+				(length 2.54)
+				(name "ANTCTL2/GPIO_2/RFFE_SCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "68"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 25.4 40.64 180)
+				(length 2.54)
+				(name "COEX_RXD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "69"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 25.4 33.02 180)
+				(length 2.54)
+				(name "USB_D-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 25.4 0 180)
+				(length 2.54)
+				(name "ANTCTL3/GPIO_3/RFFE_VIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "70"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15084,27 +16217,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at 0 -48.26 90)
 				(length 2.54) hide
-				(name "3.3V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "74"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 25.4 38.1 180)
-				(length 2.54)
-				(name "CONFIG_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15119,10 +16234,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 17.78 180)
+			(pin passive line
+				(at 25.4 -5.08 180)
 				(length 2.54)
-				(name "~{W_DISABLE1}"
+				(name "VENDOR_PORT_A_0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15137,10 +16252,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -25.4 7.62 0)
-				(length 2.54)
-				(name "USB_D-"
+			(pin passive line
+				(at 0 -48.26 90)
+				(length 2.54) hide
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15148,6 +16263,183 @@
 					)
 				)
 				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Bus_M.2_Socket_C_0_1"
+			(rectangle
+				(start -22.86 45.72)
+				(end 22.86 -45.72)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Bus_M.2_Socket_C_1_0"
+			(pin power_in line
+				(at 2.54 48.26 270)
+				(length 2.54)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -25.4 0)
+				(length 2.54)
+				(name "AUDIO1_I2S_CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -27.94 0)
+				(length 2.54)
+				(name "AUDIO1_I2S_TX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 48.26 270)
+				(length 2.54) hide
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -38.1 180)
+				(length 2.54)
+				(name "VENDOR_PORT_C_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "57"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -27.94 180)
+				(length 2.54)
+				(name "VENDOR_PORT_B_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "58"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -43.18 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "71"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 48.26 270)
+				(length 2.54)
+				(name "3.3V/VBAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "72"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 48.26 270)
+				(length 2.54) hide
+				(name "3.3V/VBAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "74"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15187,8 +16479,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://read.pudn.com/downloads794/doc/project/3133918/PCIe_M.2_Electromechanical_Spec_Rev1.0_Final_11012013_RS_Clean.pdf#page=150"
-			(at 0 26.67 0)
+		(property "Datasheet" "https://members.pcisig.com/document/download/19525"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15196,7 +16488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "M.2 Socket 1-SD Mechanical Key E"
+		(property "Description" "M.2 SDIO Based Socket 1 (Mechanical Key E)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15235,8 +16527,50 @@
 					(type background)
 				)
 			)
+			(polyline
+				(pts
+					(xy -15.24 26.67) (xy -13.97 26.67) (xy -13.97 13.97) (xy -15.24 13.97)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -6.35) (xy -3.81 -6.35) (xy -3.81 -19.05) (xy -5.08 -19.05)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
 		(symbol "Bus_M.2_Socket_E_1_1"
+			(text "PCIe0 Lane 1"
+				(at -12.7 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "PCIe0 Lane 2/\nPCIe1 Lane 1"
+				(at -2.54 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
 			(pin power_in line
 				(at 0 -48.26 90)
 				(length 2.54)
@@ -15256,7 +16590,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 5.08 180)
+				(at 25.4 20.32 180)
 				(length 2.54)
 				(name "PCM_SYNC/I2S_WS"
 					(effects
@@ -15274,7 +16608,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -15.24 0)
+				(at -25.4 -25.4 0)
 				(length 2.54)
 				(name "SDIO_CMD"
 					(effects
@@ -15291,8 +16625,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 2.54 180)
+			(pin output line
+				(at 25.4 17.78 180)
 				(length 2.54)
 				(name "PCM_IN/I2S_SD_IN"
 					(effects
@@ -15310,7 +16644,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -17.78 0)
+				(at -25.4 -27.94 0)
 				(length 2.54)
 				(name "SDIO_DATA0"
 					(effects
@@ -15327,8 +16661,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 0 180)
+			(pin input line
+				(at 25.4 15.24 180)
 				(length 2.54)
 				(name "PCM_OUT/I2S_SD_OUT"
 					(effects
@@ -15346,7 +16680,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -20.32 0)
+				(at -25.4 -30.48 0)
 				(length 2.54)
 				(name "SDIO_DATA1"
 					(effects
@@ -15364,7 +16698,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 25.4 -22.86 180)
+				(at 25.4 -15.24 180)
 				(length 2.54)
 				(name "~{LED_2}"
 					(effects
@@ -15382,7 +16716,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -22.86 0)
+				(at -25.4 -33.02 0)
 				(length 2.54)
 				(name "SDIO_DATA2"
 					(effects
@@ -15400,9 +16734,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -48.26 90)
-				(length 2.54) hide
-				(name "GND"
+				(at 25.4 -43.18 180)
+				(length 2.54)
+				(name "VIO_CFG"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15418,7 +16752,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -25.4 0)
+				(at -25.4 -35.56 0)
 				(length 2.54)
 				(name "SDIO_DATA3"
 					(effects
@@ -15436,7 +16770,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54)
 				(name "3.3V"
 					(effects
@@ -15453,8 +16787,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 -5.08 180)
+			(pin output line
+				(at 25.4 10.16 180)
 				(length 2.54)
 				(name "~{UART_WAKE}"
 					(effects
@@ -15471,8 +16805,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 -27.94 0)
+			(pin output line
+				(at -25.4 -38.1 0)
 				(length 2.54)
 				(name "~{SDIO_WAKE}"
 					(effects
@@ -15489,8 +16823,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 -7.62 180)
+			(pin output line
+				(at 25.4 7.62 180)
 				(length 2.54)
 				(name "UART_RXD"
 					(effects
@@ -15507,8 +16841,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -30.48 0)
+			(pin input line
+				(at -25.4 -40.64 0)
 				(length 2.54)
 				(name "~{SDIO_RESET}"
 					(effects
@@ -15526,7 +16860,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 10.16 0)
+				(at 25.4 -5.08 180)
 				(length 2.54)
 				(name "USB_D+"
 					(effects
@@ -15543,8 +16877,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 -10.16 180)
+			(pin input line
+				(at 25.4 5.08 180)
 				(length 2.54)
 				(name "UART_TXD"
 					(effects
@@ -15579,8 +16913,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 -12.7 180)
+			(pin output line
+				(at 25.4 2.54 180)
 				(length 2.54)
 				(name "UART_CTS"
 					(effects
@@ -15597,8 +16931,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 33.02 0)
+			(pin input line
+				(at -25.4 25.4 0)
 				(length 2.54)
 				(name "PETp0"
 					(effects
@@ -15615,8 +16949,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 -15.24 180)
+			(pin input line
+				(at 25.4 0 180)
 				(length 2.54)
 				(name "UART_RTS"
 					(effects
@@ -15633,8 +16967,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 30.48 0)
+			(pin input line
+				(at -25.4 22.86 0)
 				(length 2.54)
 				(name "PETn0"
 					(effects
@@ -15652,7 +16986,7 @@
 				)
 			)
 			(pin passive line
-				(at 25.4 38.1 180)
+				(at 25.4 43.18 180)
 				(length 2.54)
 				(name "VENDOR_DEFINED"
 					(effects
@@ -15688,7 +17022,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -15706,7 +17040,7 @@
 				)
 			)
 			(pin passive line
-				(at 25.4 35.56 180)
+				(at 25.4 40.64 180)
 				(length 2.54)
 				(name "VENDOR_DEFINED"
 					(effects
@@ -15723,8 +17057,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 27.94 0)
+			(pin output line
+				(at -25.4 17.78 0)
 				(length 2.54)
 				(name "PERp0"
 					(effects
@@ -15742,7 +17076,7 @@
 				)
 			)
 			(pin passive line
-				(at 25.4 33.02 180)
+				(at 25.4 38.1 180)
 				(length 2.54)
 				(name "VENDOR_DEFINED"
 					(effects
@@ -15759,8 +17093,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 25.4 0)
+			(pin output line
+				(at -25.4 15.24 0)
 				(length 2.54)
 				(name "PERn0"
 					(effects
@@ -15778,7 +17112,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -38.1 180)
+				(at 25.4 -25.4 180)
 				(length 2.54)
 				(name "COEX3"
 					(effects
@@ -15813,10 +17147,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 25.4 -35.56 180)
+			(pin output line
+				(at 25.4 -22.86 180)
 				(length 2.54)
-				(name "COEX2"
+				(name "COEX_RXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15831,8 +17165,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -35.56 0)
+			(pin input line
+				(at -25.4 33.02 0)
 				(length 2.54)
 				(name "REFCLKp0"
 					(effects
@@ -15849,10 +17183,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 25.4 -33.02 180)
+			(pin input line
+				(at 25.4 -20.32 180)
 				(length 2.54)
-				(name "COEX1"
+				(name "COEX_TXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15867,8 +17201,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -38.1 0)
+			(pin input line
+				(at -25.4 30.48 0)
 				(length 2.54)
 				(name "REFCLKn0"
 					(effects
@@ -15886,7 +17220,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 7.62 0)
+				(at 25.4 -7.62 180)
 				(length 2.54)
 				(name "USB_D-"
 					(effects
@@ -15903,8 +17237,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 -27.94 180)
+			(pin input line
+				(at 25.4 -38.1 180)
 				(length 2.54)
 				(name "SUSCLK"
 					(effects
@@ -15939,7 +17273,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at -25.4 43.18 0)
 				(length 2.54)
 				(name "~{PERST0}"
@@ -15975,8 +17309,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 15.24 180)
+			(pin input line
+				(at 25.4 -33.02 180)
 				(length 2.54)
 				(name "~{W_DISABLE2}"
 					(effects
@@ -16011,8 +17345,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 17.78 180)
+			(pin input line
+				(at 25.4 -30.48 180)
 				(length 2.54)
 				(name "~{W_DISABLE1}"
 					(effects
@@ -16048,7 +17382,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 27.94 180)
+				(at 25.4 33.02 180)
 				(length 2.54)
 				(name "I2C_DATA"
 					(effects
@@ -16065,8 +17399,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 22.86 0)
+			(pin input line
+				(at -25.4 -7.62 0)
 				(length 2.54)
 				(name "RESERVED/PETp1"
 					(effects
@@ -16084,7 +17418,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 25.4 -20.32 180)
+				(at 25.4 -12.7 180)
 				(length 2.54)
 				(name "~{LED_1}"
 					(effects
@@ -16101,8 +17435,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 25.4 180)
+			(pin input line
+				(at 25.4 30.48 180)
 				(length 2.54)
 				(name "I2C_CLK"
 					(effects
@@ -16119,8 +17453,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 20.32 0)
+			(pin input line
+				(at -25.4 -10.16 0)
 				(length 2.54)
 				(name "RESERVED/PETn1"
 					(effects
@@ -16137,8 +17471,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 25.4 22.86 180)
+			(pin open_collector line
+				(at 25.4 27.94 180)
 				(length 2.54)
 				(name "~{ALERT}"
 					(effects
@@ -16174,9 +17508,9 @@
 				)
 			)
 			(pin passive line
-				(at 25.4 43.18 180)
+				(at 2.54 48.26 270)
 				(length 2.54)
-				(name "RESERVED"
+				(name "VIO_1.8V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -16191,8 +17525,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 17.78 0)
+			(pin output line
+				(at -25.4 -15.24 0)
 				(length 2.54)
 				(name "RESERVED/PERp1"
 					(effects
@@ -16209,8 +17543,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -2.54 0)
+			(pin bidirectional line
+				(at -25.4 10.16 0)
 				(length 2.54)
 				(name "UIM_SWP/~{PERST1}"
 					(effects
@@ -16227,8 +17561,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 15.24 0)
+			(pin output line
+				(at -25.4 -17.78 0)
 				(length 2.54)
 				(name "RESERVED/PERn1"
 					(effects
@@ -16246,7 +17580,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -5.08 0)
+				(at -25.4 7.62 0)
 				(length 2.54)
 				(name "UIM_POWER_SNK/~{CLKREQ1}"
 					(effects
@@ -16300,7 +17634,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -7.62 0)
+				(at -25.4 5.08 0)
 				(length 2.54)
 				(name "UIM_POWER_SRC/GPIO1/~{PEWAKE1}"
 					(effects
@@ -16317,8 +17651,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -40.64 0)
+			(pin input line
+				(at -25.4 0 0)
 				(length 2.54)
 				(name "RESERVED/REFCLKp1"
 					(effects
@@ -16336,7 +17670,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -16353,8 +17687,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -43.18 0)
+			(pin input line
+				(at -25.4 -2.54 0)
 				(length 2.54)
 				(name "RESERVED/REFCLKn1"
 					(effects
@@ -16372,7 +17706,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -16408,7 +17742,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 7.62 180)
+				(at 25.4 22.86 180)
 				(length 2.54)
 				(name "PCM_CLK/I2S_SCK"
 					(effects
@@ -16425,8 +17759,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -12.7 0)
+			(pin input line
+				(at -25.4 -22.86 0)
 				(length 2.54)
 				(name "SDIO_CLK"
 					(effects
@@ -16475,8 +17809,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://read.pudn.com/downloads794/doc/project/3133918/PCIe_M.2_Electromechanical_Spec_Rev1.0_Final_11012013_RS_Clean.pdf#page=155"
-			(at 0 26.67 0)
+		(property "Datasheet" "https://members.pcisig.com/document/download/19525"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16484,7 +17818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "M.2 Socket 3 Mechanical Key M"
+		(property "Description" "M.2 SSD Socket 3 (Mechanical Key M)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16511,20 +17845,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "Bus_M.2_Socket_M_0_1"
-			(rectangle
-				(start -22.86 45.72)
-				(end 22.86 -45.72)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "Bus_M.2_Socket_M_1_1"
+		(symbol "Bus_M.2_Socket_M_0_0"
 			(pin power_in line
 				(at 0 -48.26 90)
 				(length 2.54)
@@ -16544,9 +17865,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -10.16 180)
+				(at 25.4 -2.54 180)
 				(length 2.54)
-				(name "DAS/~{DSS}/~{LED1}"
+				(name "DAS/DSS/~{LED_1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -16561,8 +17882,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 0 0)
+			(pin input line
+				(at -25.4 -22.86 0)
 				(length 2.54)
 				(name "PETn3"
 					(effects
@@ -16580,7 +17901,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -16597,8 +17918,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 2.54 0)
+			(pin input line
+				(at -25.4 -20.32 0)
 				(length 2.54)
 				(name "PETp3"
 					(effects
@@ -16616,7 +17937,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -16652,7 +17973,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -16669,8 +17990,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 5.08 0)
+			(pin output line
+				(at -25.4 -15.24 0)
 				(length 2.54)
 				(name "PERn2"
 					(effects
@@ -16688,7 +18009,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -16705,8 +18026,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 7.62 0)
+			(pin output line
+				(at -25.4 -12.7 0)
 				(length 2.54)
 				(name "PERp2"
 					(effects
@@ -16724,7 +18045,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54)
 				(name "3.3V"
 					(effects
@@ -16742,7 +18063,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 2.54 180)
+				(at 22.86 17.78 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -16777,26 +18098,8 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 22.86 5.08 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -25.4 10.16 0)
+			(pin input line
+				(at -25.4 -7.62 0)
 				(length 2.54)
 				(name "PETn2"
 					(effects
@@ -16814,7 +18117,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 7.62 180)
+				(at 22.86 20.32 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -16831,8 +18134,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 12.7 0)
+			(pin input line
+				(at -25.4 -5.08 0)
 				(length 2.54)
 				(name "PETp2"
 					(effects
@@ -16850,7 +18153,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 10.16 180)
+				(at 22.86 22.86 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -16886,7 +18189,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 12.7 180)
+				(at 22.86 25.4 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -16903,8 +18206,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 15.24 0)
+			(pin output line
+				(at -25.4 0 0)
 				(length 2.54)
 				(name "PERn1"
 					(effects
@@ -16939,10 +18242,10 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 22.86 15.24 180)
-				(length 2.54) hide
-				(name "NC"
+			(pin passive line
+				(at 25.4 5.08 180)
+				(length 2.54)
+				(name "~{PLA_S3}/NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -16957,8 +18260,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 17.78 0)
+			(pin output line
+				(at -25.4 2.54 0)
 				(length 2.54)
 				(name "PERp1"
 					(effects
@@ -16968,24 +18271,6 @@
 					)
 				)
 				(number "31"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 22.86 17.78 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "32"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17011,26 +18296,8 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 22.86 20.32 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "34"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -25.4 20.32 0)
+			(pin input line
+				(at -25.4 7.62 0)
 				(length 2.54)
 				(name "PETn1"
 					(effects
@@ -17047,26 +18314,8 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 22.86 22.86 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "36"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -25.4 22.86 0)
+			(pin input line
+				(at -25.4 10.16 0)
 				(length 2.54)
 				(name "PETp1"
 					(effects
@@ -17076,24 +18325,6 @@
 					)
 				)
 				(number "37"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -25.4 -22.86 0)
-				(length 2.54)
-				(name "DEVSLP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "38"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17120,7 +18351,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -17137,10 +18368,10 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 22.86 25.4 180)
-				(length 2.54) hide
-				(name "NC"
+			(pin bidirectional line
+				(at 25.4 -17.78 180)
+				(length 2.54)
+				(name "SMB_CLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17155,8 +18386,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 25.4 0)
+			(pin output line
+				(at -25.4 15.24 0)
 				(length 2.54)
 				(name "PERn0/SATA-B+"
 					(effects
@@ -17173,10 +18404,10 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 22.86 27.94 180)
-				(length 2.54) hide
-				(name "NC"
+			(pin bidirectional line
+				(at 25.4 -15.24 180)
+				(length 2.54)
+				(name "SMB_DATA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17191,8 +18422,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 27.94 0)
+			(pin output line
+				(at -25.4 17.78 0)
 				(length 2.54)
 				(name "PERp0/SATA-B-"
 					(effects
@@ -17202,24 +18433,6 @@
 					)
 				)
 				(number "43"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 22.86 30.48 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "44"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17246,7 +18459,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 33.02 180)
+				(at 22.86 27.94 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -17263,8 +18476,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 30.48 0)
+			(pin input line
+				(at -25.4 22.86 0)
 				(length 2.54)
 				(name "PETn0/SATA-A-"
 					(effects
@@ -17282,7 +18495,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 35.56 180)
+				(at 22.86 30.48 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -17299,8 +18512,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 33.02 0)
+			(pin input line
+				(at -25.4 25.4 0)
 				(length 2.54)
 				(name "PETp0/SATA-A+"
 					(effects
@@ -17317,8 +18530,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 -5.08 0)
+			(pin output line
+				(at -25.4 -30.48 0)
 				(length 2.54)
 				(name "PERn3"
 					(effects
@@ -17335,8 +18548,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 43.18 0)
+			(pin input line
+				(at -25.4 38.1 0)
 				(length 2.54)
 				(name "~{PERST}"
 					(effects
@@ -17371,26 +18584,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -25.4 40.64 0)
-				(length 2.54)
-				(name "~{CLKREQ}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "52"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -25.4 -38.1 0)
+			(pin input line
+				(at -25.4 30.48 0)
 				(length 2.54)
 				(name "REFCLKn"
 					(effects
@@ -17407,26 +18602,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -25.4 38.1 0)
-				(length 2.54)
-				(name "~{PEWAKE}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "54"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -25.4 -35.56 0)
+			(pin input line
+				(at -25.4 33.02 0)
 				(length 2.54)
 				(name "REFCLKp"
 					(effects
@@ -17444,7 +18621,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 38.1 180)
+				(at 22.86 33.02 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -17480,7 +18657,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 40.64 180)
+				(at 22.86 35.56 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -17497,10 +18674,10 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 22.86 -2.54 180)
-				(length 2.54) hide
-				(name "NC"
+			(pin passive line
+				(at 25.4 12.7 180)
+				(length 2.54)
+				(name "PWRDIS/NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17516,7 +18693,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 -5.08 180)
+				(at 22.86 38.1 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -17533,8 +18710,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 25.4 -27.94 180)
+			(pin input line
+				(at -25.4 -43.18 0)
 				(length 2.54)
 				(name "SUSCLK"
 					(effects
@@ -17551,26 +18728,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 25.4 -20.32 180)
-				(length 2.54)
-				(name "PEDET"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "69"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -25.4 -2.54 0)
+			(pin output line
+				(at -25.4 -27.94 0)
 				(length 2.54)
 				(name "PERp3"
 					(effects
@@ -17588,7 +18747,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -17624,9 +18783,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
-				(name "3.3V"
+				(name "3.3v"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17642,25 +18801,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -48.26 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "73"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 48.26 270)
+				(at -2.54 48.26 270)
 				(length 2.54) hide
 				(name "3.3V"
 					(effects
@@ -17695,10 +18836,10 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 22.86 0 180)
-				(length 2.54) hide
-				(name "NC"
+			(pin passive line
+				(at 25.4 7.62 180)
+				(length 2.54)
+				(name "~{PLN}/NC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17729,6 +18870,236 @@
 							(size 1.27 1.27)
 						)
 					)
+				)
+			)
+		)
+		(symbol "Bus_M.2_Socket_M_0_1"
+			(rectangle
+				(start -22.86 45.72)
+				(end 22.86 -45.72)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 13.97 -33.02) (xy 8.255 -33.02) (xy 8.255 -38.1) (xy 9.525 -38.1)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Bus_M.2_Socket_M_1_0"
+			(pin passive line
+				(at 2.54 48.26 270)
+				(length 2.54)
+				(name "VIO_1.8V/NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NC" no_connect line)
+				(alternate "VIO_1.8V" power_in line)
+			)
+			(pin passive line
+				(at 25.4 -33.02 180)
+				(length 2.54)
+				(name "NC/GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GND" power_in line)
+				(alternate "NC" no_connect line)
+			)
+			(pin passive line
+				(at 25.4 -27.94 180)
+				(length 2.54)
+				(name "NC/USB_D+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NC" no_connect line)
+				(alternate "USB_D+" bidirectional line)
+			)
+			(pin passive line
+				(at 25.4 -30.48 180)
+				(length 2.54)
+				(name "NC/USB_D-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NC" no_connect line)
+				(alternate "USB_D-" bidirectional line)
+			)
+			(pin input line
+				(at 25.4 -38.1 180)
+				(length 2.54)
+				(name "DEVSLP/GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DEVSLP" input line)
+				(alternate "GND" power_in line)
+			)
+			(pin open_collector line
+				(at 25.4 -12.7 180)
+				(length 2.54)
+				(name "~{ALERT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -25.4 40.64 0)
+				(length 2.54)
+				(name "~{CLKREQ}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -25.4 43.18 0)
+				(length 2.54)
+				(name "~{PEWAKE}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "54"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -35.56 0)
+				(length 2.54)
+				(name "PEDET"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "69"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -43.18 180)
+				(length 2.54)
+				(name "VIO_CFG/GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "73"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GND" power_in line)
+				(alternate "VIO_CFG" open_collector line)
+			)
+		)
+		(symbol "Bus_M.2_Socket_M_1_1"
+			(text "Connect to \nGND if USB\nis supported"
+				(at 7.62 -33.02 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right top)
 				)
 			)
 		)
