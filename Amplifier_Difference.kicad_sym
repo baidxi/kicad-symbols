@@ -3010,7 +3010,7 @@
 			)
 		)
 	)
-	(symbol "INA500AIDBVR"
+	(symbol "INA500AxDBV"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3022,7 +3022,7 @@
 				)
 			)
 		)
-		(property "Value" "INA500AIDBVR"
+		(property "Value" "INA500AxDBV"
 			(at 8.128 5.588 0)
 			(effects
 				(font
@@ -3075,10 +3075,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "INA500AIDBVR_0_1"
+		(symbol "INA500AxDBV_0_1"
 			(polyline
 				(pts
-					(xy -8.89 8.89) (xy -8.89 -8.89) (xy 8.89 0) (xy -8.89 8.89)
+					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
 				)
 				(stroke
 					(width 0.254)
@@ -3089,11 +3089,11 @@
 				)
 			)
 		)
-		(symbol "INA500AIDBVR_1_1"
+		(symbol "INA500AxDBV_1_1"
 			(pin output line
-				(at 12.7 0 180)
-				(length 5.08)
-				(name "OUT"
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "~"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3109,12 +3109,12 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -10.16 90)
-				(length 4.445)
+				(at -2.54 -7.62 90)
+				(length 3.81)
 				(name "V-"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -3126,13 +3126,13 @@
 					)
 				)
 			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 3.81)
-				(name "IN+"
+			(pin passive line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -3144,13 +3144,13 @@
 					)
 				)
 			)
-			(pin input line
-				(at -12.7 2.54 0)
-				(length 3.81)
-				(name "IN-"
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "-"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -3162,13 +3162,13 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 -10.16 90)
-				(length 5.715)
+			(pin passive line
+				(at 0 -7.62 90)
+				(length 5.08)
 				(name "REF"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.508 0.508)
 						)
 					)
 				)
@@ -3181,12 +3181,12 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 10.16 270)
-				(length 4.445)
+				(at -2.54 7.62 270)
+				(length 3.81)
 				(name "V+"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -3200,20 +3200,20 @@
 			)
 		)
 	)
-	(symbol "INA500AIDCKR"
+	(symbol "INA500AxDCK"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 2.032 7.62 0)
+			(at 0.762 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "INA500AIDCKR"
-			(at 8.128 5.588 0)
+		(property "Value" "INA500AxDCK"
+			(at 6.858 5.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3221,7 +3221,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 0 0 0)
+			(at -1.27 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3230,7 +3230,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina500.pdf"
-			(at 0 0 0)
+			(at -1.27 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3239,7 +3239,7 @@
 			)
 		)
 		(property "Description" "Difference Amplifier, 1.7V to 5.5V, Gain x1, SC-70"
-			(at 0 0 0)
+			(at -1.27 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3265,46 +3265,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "INA500AIDCKR_0_1"
+		(symbol "INA500AxDCK_0_1"
 			(polyline
 				(pts
-					(xy -2.54 6.35) (xy -2.54 5.715)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 -5.715) (xy -2.54 -6.35) (xy -2.54 -5.715)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -6.35) (xy 0 -5.715) (xy 0 -4.445)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 8.89) (xy -8.89 -8.89) (xy 8.89 0) (xy -8.89 8.89)
+					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
 				)
 				(stroke
 					(width 0.254)
@@ -3315,14 +3279,14 @@
 				)
 			)
 		)
-		(symbol "INA500AIDCKR_1_1"
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 3.81)
-				(name "IN+"
+		(symbol "INA500AxDCK_1_1"
+			(pin passive line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -3335,12 +3299,12 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -10.16 90)
+				(at -2.54 -7.62 90)
 				(length 3.81)
 				(name "V-"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -3352,13 +3316,13 @@
 					)
 				)
 			)
-			(pin input line
-				(at -12.7 2.54 0)
-				(length 3.81)
-				(name "IN-"
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "-"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -3371,9 +3335,9 @@
 				)
 			)
 			(pin output line
-				(at 12.7 0 180)
-				(length 3.81)
-				(name "OUT"
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "~"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3388,13 +3352,13 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 -10.16 90)
-				(length 3.81)
+			(pin passive line
+				(at 0 -7.62 90)
+				(length 5.08)
 				(name "REF"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.508 0.508)
 						)
 					)
 				)
@@ -3407,12 +3371,12 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 10.16 270)
+				(at -2.54 7.62 270)
 				(length 3.81)
 				(name "V+"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -5311,8 +5275,8 @@
 			)
 		)
 	)
-	(symbol "INA500BIDBVR"
-		(extends "INA500AIDBVR")
+	(symbol "INA500BIDBV"
+		(extends "INA500AxDBV")
 		(property "Reference" "U"
 			(at 2.032 7.62 0)
 			(effects
@@ -5321,7 +5285,7 @@
 				)
 			)
 		)
-		(property "Value" "INA500BIDBVR"
+		(property "Value" "INA500BIDBV"
 			(at 8.128 5.588 0)
 			(effects
 				(font
@@ -5375,8 +5339,8 @@
 			)
 		)
 	)
-	(symbol "INA500BIDCKR"
-		(extends "INA500AIDCKR")
+	(symbol "INA500BIDCK"
+		(extends "INA500AxDCK")
 		(property "Reference" "U"
 			(at 2.032 7.62 0)
 			(effects
@@ -5385,7 +5349,7 @@
 				)
 			)
 		)
-		(property "Value" "INA500BIDCKR"
+		(property "Value" "INA500BIDCK"
 			(at 8.128 5.334 0)
 			(effects
 				(font
@@ -5439,8 +5403,8 @@
 			)
 		)
 	)
-	(symbol "INA500CIDBVR"
-		(extends "INA500AIDBVR")
+	(symbol "INA500CIDBV"
+		(extends "INA500AxDBV")
 		(property "Reference" "U"
 			(at 2.032 7.62 0)
 			(effects
@@ -5449,7 +5413,7 @@
 				)
 			)
 		)
-		(property "Value" "INA500CIDBVR"
+		(property "Value" "INA500CIDBV"
 			(at 8.128 5.588 0)
 			(effects
 				(font
@@ -5503,8 +5467,8 @@
 			)
 		)
 	)
-	(symbol "INA500CIDCKR"
-		(extends "INA500AIDCKR")
+	(symbol "INA500CIDCK"
+		(extends "INA500AxDCK")
 		(property "Reference" "U"
 			(at 2.032 7.62 0)
 			(effects
@@ -5513,7 +5477,7 @@
 				)
 			)
 		)
-		(property "Value" "INA500CIDCKR"
+		(property "Value" "INA500CIDCK"
 			(at 8.128 5.334 0)
 			(effects
 				(font
