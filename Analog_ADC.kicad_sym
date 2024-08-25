@@ -6054,6 +6054,8 @@
 			(rectangle
 				(start -15.24 27.94)
 				(end 15.24 -27.94)
+				(start -15.24 27.94)
+				(end 15.24 -27.94)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -6063,6 +6065,7 @@
 				)
 			)
 			(pin power_in line
+				(at 0 -30.48 90)
 				(at 0 -30.48 90)
 				(length 2.54)
 				(name "GND"
@@ -6154,6 +6157,8 @@
 			)
 			(pin passive line
 				(at 0 -30.48 90)
+			(pin passive line
+				(at 0 -30.48 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -6171,8 +6176,10 @@
 				)
 			)
 			(pin no_connect line
+			(pin no_connect line
 				(at 0 0 0)
 				(length 2.54) hide
+				(name "NC"
 				(name "NC"
 					(effects
 						(font
@@ -6188,6 +6195,8 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -30.48 90)
 			(pin passive line
 				(at 0 -30.48 90)
 				(length 2.54) hide
@@ -6226,6 +6235,7 @@
 			)
 			(pin output line
 				(at 17.78 12.7 180)
+				(at 17.78 12.7 180)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -6243,6 +6253,7 @@
 				)
 			)
 			(pin output line
+				(at 17.78 0 180)
 				(at 17.78 0 180)
 				(length 2.54)
 				(name "SDOA"
@@ -6262,6 +6273,7 @@
 			)
 			(pin power_in line
 				(at 2.54 30.48 270)
+				(at 2.54 30.48 270)
 				(length 2.54)
 				(name "V_{LOGIC}"
 					(effects
@@ -6279,6 +6291,7 @@
 				)
 			)
 			(pin output line
+				(at 17.78 -2.54 180)
 				(at 17.78 -2.54 180)
 				(length 2.54)
 				(name "SDOB"
@@ -6298,6 +6311,7 @@
 			)
 			(pin input line
 				(at 17.78 5.08 180)
+				(at 17.78 5.08 180)
 				(length 2.54)
 				(name "SDI"
 					(effects
@@ -6315,6 +6329,7 @@
 				)
 			)
 			(pin input line
+				(at 17.78 7.62 180)
 				(at 17.78 7.62 180)
 				(length 2.54)
 				(name "SCLK"
@@ -6334,6 +6349,7 @@
 			)
 			(pin output line
 				(at 17.78 -5.08 180)
+				(at 17.78 -5.08 180)
 				(length 2.54)
 				(name "SDOC"
 					(effects
@@ -6351,6 +6367,7 @@
 				)
 			)
 			(pin output line
+				(at 17.78 -7.62 180)
 				(at 17.78 -7.62 180)
 				(length 2.54)
 				(name "SDOD/~{ALERT}"
@@ -6389,6 +6406,25 @@
 				)
 			)
 			(pin passive line
+			(pin passive line
+				(at 0 -30.48 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at -17.78 -22.86 0)
 				(length 2.54)
 				(name "REGCAP"
@@ -6408,6 +6444,7 @@
 			)
 			(pin power_in line
 				(at -2.54 30.48 270)
+				(at -2.54 30.48 270)
 				(length 2.54)
 				(name "V_{CC}"
 					(effects
@@ -6424,6 +6461,8 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -30.48 90)
 			(pin passive line
 				(at 0 -30.48 90)
 				(length 2.54) hide
@@ -6538,6 +6577,7 @@
 		)
 		(property "Footprint" "Package_CSP:LFCSP-24-1EP_4x4mm_P0.5mm_EP2.3x2.3mm"
 			(at 0 1.27 0)
+			(at 0 1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6547,6 +6587,7 @@
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad7386-4-7387-4-7388-4.pdf"
 			(at 0 1.27 0)
+			(at 0 1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6554,7 +6595,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single-Ended Input, Quad, Simultaneous Sampling, 16-Bit/14-Bit/12-Bit, SAR ADC, LFCSP-24"
+		(property "Description" "Single-Ended Input, Quad, Simultaneous Sampling, 16-Bit/14-Bit/12-Bit, SAR ADC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -6585,6 +6626,8 @@
 			(rectangle
 				(start -15.24 27.94)
 				(end 15.24 -27.94)
+				(start -15.24 27.94)
+				(end 15.24 -27.94)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -6594,6 +6637,7 @@
 				)
 			)
 			(pin power_in line
+				(at 0 -30.48 90)
 				(at 0 -30.48 90)
 				(length 2.54)
 				(name "GND"
@@ -6685,6 +6729,8 @@
 			)
 			(pin passive line
 				(at 0 -30.48 90)
+			(pin passive line
+				(at 0 -30.48 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -6719,6 +6765,8 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -30.48 90)
 			(pin passive line
 				(at 0 -30.48 90)
 				(length 2.54) hide
@@ -6757,6 +6805,7 @@
 			)
 			(pin output line
 				(at 17.78 12.7 180)
+				(at 17.78 12.7 180)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -6774,6 +6823,7 @@
 				)
 			)
 			(pin output line
+				(at 17.78 0 180)
 				(at 17.78 0 180)
 				(length 2.54)
 				(name "SDOA"
@@ -6793,6 +6843,7 @@
 			)
 			(pin power_in line
 				(at 2.54 30.48 270)
+				(at 2.54 30.48 270)
 				(length 2.54)
 				(name "V_{LOGIC}"
 					(effects
@@ -6810,6 +6861,7 @@
 				)
 			)
 			(pin output line
+				(at 17.78 -2.54 180)
 				(at 17.78 -2.54 180)
 				(length 2.54)
 				(name "SDOB"
@@ -6829,6 +6881,7 @@
 			)
 			(pin input line
 				(at 17.78 5.08 180)
+				(at 17.78 5.08 180)
 				(length 2.54)
 				(name "SDI"
 					(effects
@@ -6846,6 +6899,7 @@
 				)
 			)
 			(pin input line
+				(at 17.78 7.62 180)
 				(at 17.78 7.62 180)
 				(length 2.54)
 				(name "SCLK"
@@ -6865,6 +6919,7 @@
 			)
 			(pin output line
 				(at 17.78 -5.08 180)
+				(at 17.78 -5.08 180)
 				(length 2.54)
 				(name "SDOC"
 					(effects
@@ -6882,6 +6937,7 @@
 				)
 			)
 			(pin output line
+				(at 17.78 -7.62 180)
 				(at 17.78 -7.62 180)
 				(length 2.54)
 				(name "SDOD/~{ALERT}"
@@ -6920,6 +6976,25 @@
 				)
 			)
 			(pin passive line
+			(pin passive line
+				(at 0 -30.48 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at -17.78 -22.86 0)
 				(length 2.54)
 				(name "REGCAP"
@@ -6939,6 +7014,7 @@
 			)
 			(pin power_in line
 				(at -2.54 30.48 270)
+				(at -2.54 30.48 270)
 				(length 2.54)
 				(name "V_{CC}"
 					(effects
@@ -6955,6 +7031,8 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -30.48 90)
 			(pin passive line
 				(at 0 -30.48 90)
 				(length 2.54) hide
@@ -14769,6 +14847,7 @@
 				)
 			)
 			(pin passive line
+			(pin passive line
 				(at 30.48 -50.8 180)
 				(length 2.54)
 				(name "DREGCAP"
@@ -15327,6 +15406,7 @@
 				)
 			)
 			(pin passive line
+			(pin passive line
 				(at -30.48 -53.34 0)
 				(length 2.54)
 				(name "AREG2CAP"
@@ -15470,6 +15550,7 @@
 					)
 				)
 			)
+			(pin passive line
 			(pin passive line
 				(at -30.48 -50.8 0)
 				(length 2.54)
@@ -50714,6 +50795,7 @@
 			)
 		)
 		(property "Value" "AD7387-4"
+		(property "Value" "AD7387-4"
 			(at 0 0 0)
 			(effects
 				(font
@@ -50777,6 +50859,7 @@
 				)
 			)
 		)
+		(property "Value" "AD7388-4"
 		(property "Value" "AD7388-4"
 			(at 0 0 0)
 			(effects
