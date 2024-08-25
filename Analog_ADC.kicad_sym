@@ -14452,15 +14452,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "adc"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "LFCSP-64-1EP_9x9mm_P0.5mm_EP5.21x5.21mm*"
 			(at 0 0 0)
 			(effects
@@ -14475,7 +14466,7 @@
 				(start -27.94 55.88)
 				(end 27.94 -55.88)
 				(stroke
-					(width 0.254)
+					(width 0)
 					(type default)
 				)
 				(fill
@@ -14575,6 +14566,26 @@
 				(alternate "MODE0" input line)
 			)
 			(pin bidirectional line
+				(at 30.48 45.72 180)
+				(length 2.54)
+				(name "MODE3/ALERT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ALERT" output line)
+				(alternate "MODE3" input line)
+			)
+			(pin bidirectional line
 				(at 30.48 50.8 180)
 				(length 2.54)
 				(name "MODE1/GPIO1"
@@ -14613,26 +14624,6 @@
 				)
 				(alternate "GPIO2" bidirectional line)
 				(alternate "MODE2" input line)
-			)
-			(pin bidirectional line
-				(at 30.48 45.72 180)
-				(length 2.54)
-				(name "MODE3/ALERT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "ALERT" output line)
-				(alternate "MODE3" input line)
 			)
 			(pin input line
 				(at 30.48 10.16 180)
@@ -14768,7 +14759,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_out line
 				(at 30.48 -50.8 180)
 				(length 2.54)
 				(name "DREGCAP"
@@ -15326,7 +15317,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_out line
 				(at -30.48 -53.34 0)
 				(length 2.54)
 				(name "AREG2CAP"
@@ -15470,7 +15461,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_out line
 				(at -30.48 -50.8 0)
 				(length 2.54)
 				(name "AREG1CAP"
