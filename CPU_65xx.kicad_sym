@@ -40,7 +40,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8–bit Microprocessor, DIP-40, https://www.princeton.edu/~mae412/HANDOUTS/Datasheets/6502.pdf"
+		(property "Description" "8–bit Microprocessor, DIP-40, Not in Production"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "More Info" "https://www.princeton.edu/~mae412/HANDOUTS/Datasheets/6502.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -58,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP*W15.24mm"
+		(property "ki_fp_filters" "DIP*W15.24mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -72,11 +81,29 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
 					(type background)
+				)
+			)
+			(pin power_in line
+				(at 0 -43.18 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 			(pin output line
@@ -295,10 +322,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 0 -43.18 90)
-				(length 2.54)
-				(name "1"
+				(length 2.54) hide
+				(name "VSS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -566,7 +593,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -583,8 +610,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 0 180)
+			(pin no_connect line
+				(at 0 5.08 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -691,8 +718,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 0 0 180)
+			(pin no_connect line
+				(at 0 0 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -821,7 +848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "65xx Dual Asynchronous Communications Interface Adapter (DACIA), DIP-40"
+		(property "Description" "65xx Dual Asynchronous Communications Interface Adapter (DACIA), DIP-40, Not in Production"
 			(at 0 0 0)
 			(effects
 				(font
@@ -853,7 +880,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -986,8 +1013,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 0 0)
+			(pin no_connect line
+				(at 0 2.54 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -1058,8 +1085,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 0 0)
+			(pin no_connect line
+				(at 0 5.08 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -1130,8 +1157,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 0 0)
+			(pin no_connect line
+				(at 0 7.62 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -1166,8 +1193,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 0 0)
+			(pin no_connect line
+				(at 0 10.16 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -1220,8 +1247,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 0 0)
+			(pin no_connect line
+				(at 0 12.7 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -1274,8 +1301,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 0 0)
+			(pin no_connect line
+				(at 0 15.24 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -1472,7 +1499,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin no_connect line
 				(at 0 0 0)
 				(length 2.54) hide
 				(name "NC"
@@ -1692,7 +1719,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "65xx Dual Asynchronous Communications Interface Adapter (DACIA), DIP-40"
+		(property "Description" "65xx Dual Asynchronous Communications Interface Adapter (DACIA), DIP-40, Not in Production"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1710,7 +1737,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP*W15.24mm"
+		(property "ki_fp_filters" "DIP*W15.24mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1724,7 +1751,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -1929,8 +1956,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 0 0)
+			(pin no_connect line
+				(at 0 2.54 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -2217,8 +2244,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 0 0)
+			(pin no_connect line
+				(at 0 5.08 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -2379,7 +2406,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin no_connect line
 				(at 0 0 0)
 				(length 2.54) hide
 				(name "NC"
@@ -2509,7 +2536,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP*W15.24mm"
+		(property "ki_fp_filters" "DIP*W15.24mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2523,7 +2550,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -2621,24 +2648,6 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -12.7 180)
-				(length 2.54)
-				(name "A14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
 				(at 12.7 10.16 180)
 				(length 2.54)
 				(name "A5"
@@ -2649,24 +2658,6 @@
 					)
 				)
 				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 12.7 -15.24 180)
-				(length 2.54)
-				(name "A15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2847,6 +2838,42 @@
 					)
 				)
 				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 -12.7 180)
+				(length 2.54)
+				(name "A14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 -15.24 180)
+				(length 2.54)
+				(name "A15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3322,7 +3349,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -3384,7 +3411,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 180)
+				(at 0 2.54 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -3599,7 +3626,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin passive line
 				(at 0 -43.18 90)
 				(length 2.54) hide
 				(name "VSS"
@@ -3617,7 +3644,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin passive line
 				(at 0 -43.18 90)
 				(length 2.54) hide
 				(name "VSS"
@@ -3906,7 +3933,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 180)
+				(at 0 0 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -4193,7 +4220,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -4669,7 +4696,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -5050,7 +5077,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP*W15.24mm"
+		(property "ki_fp_filters" "DIP*W15.24mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5064,7 +5091,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -5576,7 +5603,7 @@
 				)
 			)
 			(pin input line
-				(at -12.6355 10.2579 0)
+				(at -12.7 10.16 0)
 				(length 2.54)
 				(name "RS1"
 					(effects
@@ -5863,7 +5890,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -6069,7 +6096,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -6123,7 +6150,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 5.08 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -6213,7 +6240,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 7.62 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -6720,7 +6747,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP*W15.24mm"
+		(property "ki_fp_filters" "DIP*W15.24mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6734,7 +6761,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -7533,7 +7560,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -7577,7 +7604,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -7793,7 +7820,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 5.08 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -8009,7 +8036,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 7.62 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -8404,7 +8431,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -8538,7 +8565,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -8754,7 +8781,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 5.08 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -8862,7 +8889,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 0)
+				(at 0 7.62 0)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -9261,7 +9288,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP*W15.24mm"
+		(property "ki_fp_filters" "DIP*W15.24mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9275,7 +9302,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -9499,6 +9526,24 @@
 				)
 			)
 			(pin bidirectional line
+				(at -12.7 -25.4 0)
+				(length 2.54)
+				(name "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
 				(at -12.7 -27.94 0)
 				(length 2.54)
 				(name "D3"
@@ -9653,24 +9698,6 @@
 					)
 				)
 				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -12.7 -25.4 0)
-				(length 2.54)
-				(name "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "31"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9844,7 +9871,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*LQFP*7x7mm*P0.8mm"
+		(property "ki_fp_filters" "*LQFP*7x7mm*P0.8mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9858,7 +9885,7 @@
 				(start -10.16 40.64)
 				(end 10.16 -40.64)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -10154,7 +10181,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 180)
+				(at 0 2.54 180)
 				(length 2.54) hide
 				(name "NC"
 					(effects
