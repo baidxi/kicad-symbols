@@ -451,7 +451,7 @@
 			)
 		)
 	)
-	(symbol "Fan_IEC60617"
+	(symbol "Fan_IEC-60617"
 		(pin_names
 			(offset 0)
 		)
@@ -467,7 +467,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Fan_IEC60617"
+		(property "Value" "Fan_IEC-60617"
 			(at 3.81 2.54 0)
 			(effects
 				(font
@@ -495,7 +495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Fan (according to IEC-60617)"
+		(property "Description" "Fan according to IEC 60617"
 			(at 0 0 0)
 			(effects
 				(font
@@ -504,7 +504,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Fan Motor IEC-60617"
+		(property "ki_keywords" "fan motor iec 60617"
 			(at 0 0 0)
 			(effects
 				(font
@@ -522,7 +522,226 @@
 				(hide yes)
 			)
 		)
-		(symbol "Fan_IEC60617_0_1"
+		(symbol "Fan_IEC-60617_0_1"
+			(rectangle
+				(start -3.302 4.318)
+				(end 3.302 -2.286)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(arc
+				(start -0.762 1.778)
+				(mid -2.6016 1.016)
+				(end -0.762 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.762 0.254) (xy 0.762 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.762 1.778) (xy 0.762 0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -5.08) (xy 0 -4.572)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.2352) (xy 0 -2.6416)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 4.2672) (xy 0 4.6228)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 4.572) (xy 0 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0.762 0.254)
+				(mid 2.6016 1.016)
+				(end 0.762 1.778)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Fan_IEC-60617_1_1"
+			(pin passive line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "Fan_ISO-14617"
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "M"
+			(at 3.81 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fan_ISO-14617"
+			(at 3.81 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" ""
+			(at 1.27 -3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fan 2302 according to ISO 14617"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "fan motor iso 14617"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "PinHeader*P2.54mm* TerminalBlock*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Fan_ISO-14617_0_1"
 			(rectangle
 				(start -3.302 4.318)
 				(end 3.302 -2.286)
@@ -618,7 +837,7 @@
 				)
 			)
 		)
-		(symbol "Fan_IEC60617_1_1"
+		(symbol "Fan_ISO-14617_1_1"
 			(pin passive line
 				(at 0 7.62 270)
 				(length 2.54)
@@ -900,9 +1119,9 @@
 		)
 		(symbol "Fan_Tacho_1_1"
 			(pin passive line
-				(at -7.62 0 0)
+				(at 0 -7.62 90)
 				(length 2.54)
-				(name "Tacho"
+				(name "-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -936,9 +1155,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -7.62 90)
+				(at -7.62 0 0)
 				(length 2.54)
-				(name "-"
+				(name "Tacho"
 					(effects
 						(font
 							(size 1.27 1.27)
