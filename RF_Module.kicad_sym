@@ -9785,7 +9785,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 2.54 16.51 0)
+			(at 7.62 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9793,14 +9793,14 @@
 			)
 		)
 		(property "Value" "ESP32-C3-DevKitM-1"
-			(at 2.54 0 0)
+			(at 11.684 -16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Module:Espressif_ESP32-C3-DevKitM-1"
+		(property "Footprint" "RF_Module:ESP32-C3-DevKitM-1"
 			(at 0 -25.4 0)
 			(effects
 				(font
@@ -9847,8 +9847,8 @@
 		)
 		(symbol "ESP32-C3-DevKitM-1_1_1"
 			(rectangle
-				(start -7.62 15.24)
-				(end 7.62 -15.24)
+				(start -12.7 15.24)
+				(end 12.7 -15.24)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -9875,8 +9875,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -10.16 5.08 0)
+			(pin bidirectional line
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "IO1"
 					(effects
@@ -9895,8 +9895,8 @@
 				(alternate "ADC1_CH1" passive line)
 				(alternate "XTAL_32K_N" passive line)
 			)
-			(pin passive line
-				(at 10.16 -7.62 180)
+			(pin bidirectional line
+				(at 15.24 -7.62 180)
 				(length 2.54)
 				(name "IO10"
 					(effects
@@ -10004,8 +10004,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 10.16 -12.7 180)
+			(pin bidirectional line
+				(at 15.24 -12.7 180)
 				(length 2.54)
 				(name "IO19"
 					(effects
@@ -10023,8 +10023,8 @@
 				)
 				(alternate "USB_D+" passive line)
 			)
-			(pin passive line
-				(at 10.16 -10.16 180)
+			(pin bidirectional line
+				(at 15.24 -10.16 180)
 				(length 2.54)
 				(name "IO18"
 					(effects
@@ -10061,7 +10061,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 12.7 180)
+				(at 15.24 12.7 180)
 				(length 2.54)
 				(name "3V3"
 					(effects
@@ -10078,8 +10078,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 10.16 7.62 180)
+			(pin bidirectional line
+				(at 15.24 7.62 180)
 				(length 2.54)
 				(name "IO4"
 					(effects
@@ -10099,8 +10099,8 @@
 				(alternate "FSPIHD" passive line)
 				(alternate "MTMS" passive line)
 			)
-			(pin passive line
-				(at 10.16 5.08 180)
+			(pin bidirectional line
+				(at 15.24 5.08 180)
 				(length 2.54)
 				(name "IO5"
 					(effects
@@ -10120,8 +10120,8 @@
 				(alternate "FSPIWP" passive line)
 				(alternate "MTDI" passive line)
 			)
-			(pin passive line
-				(at 10.16 2.54 180)
+			(pin bidirectional line
+				(at 15.24 2.54 180)
 				(length 2.54)
 				(name "IO6"
 					(effects
@@ -10140,8 +10140,8 @@
 				(alternate "FSPICLK" passive line)
 				(alternate "MTCK" passive line)
 			)
-			(pin passive line
-				(at 10.16 0 180)
+			(pin bidirectional line
+				(at 15.24 0 180)
 				(length 2.54)
 				(name "IO7"
 					(effects
@@ -10178,8 +10178,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 10.16 -2.54 180)
+			(pin bidirectional line
+				(at 15.24 -2.54 180)
 				(length 2.54)
 				(name "IO8"
 					(effects
@@ -10196,8 +10196,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 10.16 -5.08 180)
+			(pin bidirectional line
+				(at 15.24 -5.08 180)
 				(length 2.54)
 				(name "IO9"
 					(effects
@@ -10232,8 +10232,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -10.16 -5.08 0)
+			(pin input line
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "RX"
 					(effects
@@ -10251,8 +10251,8 @@
 				)
 				(alternate "IO20" passive line)
 			)
-			(pin passive line
-				(at -10.16 -7.62 0)
+			(pin output line
+				(at -15.24 -7.62 0)
 				(length 2.54)
 				(name "TX"
 					(effects
@@ -10271,7 +10271,7 @@
 				(alternate "IO21" passive line)
 			)
 			(pin passive line
-				(at 10.16 12.7 180)
+				(at 15.24 12.7 180)
 				(length 2.54) hide
 				(name "3V3"
 					(effects
@@ -10306,8 +10306,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -10.16 2.54 0)
+			(pin bidirectional line
+				(at -15.24 2.54 0)
 				(length 2.54)
 				(name "IO2"
 					(effects
@@ -10326,8 +10326,8 @@
 				(alternate "ADC1_CH0" passive line)
 				(alternate "FSPIQ" passive line)
 			)
-			(pin passive line
-				(at -10.16 0 0)
+			(pin bidirectional line
+				(at -15.24 0 0)
 				(length 2.54)
 				(name "IO3"
 					(effects
@@ -10364,7 +10364,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -12.7 0)
+				(at -15.24 -12.7 0)
 				(length 2.54)
 				(name "RST"
 					(effects
@@ -10399,8 +10399,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -10.16 7.62 0)
+			(pin bidirectional line
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "IO0"
 					(effects
