@@ -72304,7 +72304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, +/-12V Output Voltage, DIP Package"
+		(property "Description" "±42mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, ±12V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -72640,7 +72640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, +/-12V Output Voltage, SIP3"
+		(property "Description" "±42mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, ±12V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -75417,6 +75417,1182 @@
 					)
 				)
 				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SIC437A"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC437A"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/75921/sic437.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "12A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SIC437A_0_1"
+			(rectangle
+				(start -8.89 19.05)
+				(end 8.89 -19.05)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "SIC437A_1_1"
+			(pin power_in line
+				(at 0 22.86 270)
+				(length 3.81)
+				(name "V_{IN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 2.54 180)
+				(length 3.81)
+				(name "GL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 2.54 180)
+				(length 3.81) hide
+				(name "GL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 -12.7 180)
+				(length 3.81)
+				(name "V_{DRV}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 3.81) hide
+				(name "P_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -12.7 10.16 0)
+				(length 3.81)
+				(name "P_{GOOD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at -12.7 0 0)
+				(length 3.81)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -22.86 90)
+				(length 3.81)
+				(name "A_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 3.81)
+				(name "FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -7.62 180)
+				(length 3.81)
+				(name "V_{OUT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 15.24 0)
+				(length 3.81)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 270)
+				(length 3.81) hide
+				(name "V_{IN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 3.81)
+				(name "MODE2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -7.62 0)
+				(length 3.81)
+				(name "MODE1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 270)
+				(length 3.81) hide
+				(name "V_{IN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 15.24 180)
+				(length 3.81)
+				(name "BOOT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 12.7 180)
+				(length 3.81)
+				(name "PHASE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -22.86 90)
+				(length 3.81) hide
+				(name "A_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 270)
+				(length 3.81) hide
+				(name "V_{IN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 3.81) hide
+				(name "P_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 2.54 180)
+				(length 3.81) hide
+				(name "GL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -22.86 90)
+				(length 3.81)
+				(name "P_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 3.81) hide
+				(name "P_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 7.62 180)
+				(length 3.81)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 3.81) hide
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 3.81) hide
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 3.81) hide
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 3.81) hide
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SIC437C"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC437C"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/75921/sic437.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "12A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SIC437C_0_1"
+			(rectangle
+				(start -8.89 19.05)
+				(end 8.89 -19.05)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "SIC437C_1_1"
+			(pin power_in line
+				(at 0 22.86 270)
+				(length 3.81)
+				(name "V_{IN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 2.54 180)
+				(length 3.81)
+				(name "GL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 2.54 180)
+				(length 3.81) hide
+				(name "GL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 5.08 0)
+				(length 3.81)
+				(name "V_{DRV}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 3.81) hide
+				(name "P_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -12.7 10.16 0)
+				(length 3.81)
+				(name "P_{GOOD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 2.54 0)
+				(length 3.81)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -22.86 90)
+				(length 3.81)
+				(name "A_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 3.81)
+				(name "FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -7.62 180)
+				(length 3.81)
+				(name "V_{OUT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 15.24 0)
+				(length 3.81)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 270)
+				(length 3.81) hide
+				(name "V_{IN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 3.81)
+				(name "MODE2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -7.62 0)
+				(length 3.81)
+				(name "MODE1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 270)
+				(length 3.81) hide
+				(name "V_{IN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 15.24 180)
+				(length 3.81)
+				(name "BOOT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 12.7 180)
+				(length 3.81)
+				(name "PHASE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -22.86 90)
+				(length 3.81) hide
+				(name "A_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 270)
+				(length 3.81) hide
+				(name "V_{IN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 3.81) hide
+				(name "P_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 2.54 180)
+				(length 3.81) hide
+				(name "GL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -22.86 90)
+				(length 3.81)
+				(name "P_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 3.81) hide
+				(name "P_{GND}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 7.62 180)
+				(length 3.81)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 3.81) hide
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 3.81) hide
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 3.81) hide
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 3.81) hide
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -79667,7 +80843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, +/-12V fixed Output Voltage, SIP-6"
+		(property "Description" "±42mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, ±12V fixed Output Voltage, SIP-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -79983,7 +81159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, +/-12V fixed Output Voltage, SMD"
+		(property "Description" "±42mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, ±12V fixed Output Voltage, SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -129833,7 +131009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-100mA Isolated 1W Dual output DC/DC Converter, 5V Input Voltage, +/-5V Output Voltage, DIP Package"
+		(property "Description" "±100mA Isolated 1W Dual output DC/DC Converter, 5V Input Voltage, ±5V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -129900,7 +131076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-100mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, +/-5V Output Voltage, SIP3"
+		(property "Description" "±100mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, ±5V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -129967,7 +131143,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-55mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, +/-9V Output Voltage, DIP Package"
+		(property "Description" "±55mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, ±9V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130034,7 +131210,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-55mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, +/-9V Output Voltage, SIP3"
+		(property "Description" "±55mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, ±9V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130101,7 +131277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, +/-15V Output Voltage, DIP Package"
+		(property "Description" "±33mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, ±15V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130168,7 +131344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, +/-15V Output Voltage, SIP3"
+		(property "Description" "±33mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, ±15V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130235,7 +131411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-100mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, +/-5V Output Voltage, DIP Package"
+		(property "Description" "±100mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, ±5V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130302,7 +131478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-100mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, +/-5V Output Voltage, SIP3"
+		(property "Description" "±100mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, ±5V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130369,7 +131545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-55mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, +/-9V Output Voltage, DIP Package"
+		(property "Description" "±55mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, ±9V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130436,7 +131612,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-55mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, +/-9V Output Voltage, SIP3"
+		(property "Description" "±55mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, ±9V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130503,7 +131679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, +/-12V Output Voltage, DIP Package"
+		(property "Description" "±42mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, ±12V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130570,7 +131746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, +/-12V Output Voltage, SIP3"
+		(property "Description" "±42mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, ±12V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130637,7 +131813,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, +/-15V Output Voltage, DIP Package"
+		(property "Description" "±33mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, ±15V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130704,7 +131880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, +/-15V Output Voltage, SIP3"
+		(property "Description" "±33mA Isolated 1W Dual output DC/DC Converter Module, 12V Input Voltage, ±15V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130771,7 +131947,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-100mA Isolated 1W Dual output DC/DC Converter Module, 15V Input Voltage, +/-5V Output Voltage, DIP Package"
+		(property "Description" "±100mA Isolated 1W Dual output DC/DC Converter Module, 15V Input Voltage, ±5V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130838,7 +132014,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-100mA Isolated 1W Dual output DC/DC Converter Module, 15V Input Voltage, +/-5V Output Voltage, SIP3"
+		(property "Description" "±100mA Isolated 1W Dual output DC/DC Converter Module, 15V Input Voltage, ±5V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130905,7 +132081,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Isolated 1W Dual output DC/DC Converter Module, 15V Input Voltage, +/-12V Output Voltage, DIP Package"
+		(property "Description" "±42mA Isolated 1W Dual output DC/DC Converter Module, 15V Input Voltage, ±12V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130972,7 +132148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Isolated 1W Dual output DC/DC Converter Module, 15V Input Voltage, +/-12V Output Voltage, SIP3"
+		(property "Description" "±42mA Isolated 1W Dual output DC/DC Converter Module, 15V Input Voltage, ±12V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -131039,7 +132215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, +/-15V Output Voltage, DIP Package"
+		(property "Description" "±33mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, ±15V Output Voltage, DIP Package"
 			(at 0 0 0)
 			(effects
 				(font
@@ -131106,7 +132282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, +/-15V Output Voltage, SIP3"
+		(property "Description" "±33mA Isolated 1W Dual output DC/DC Converter Module, 5V Input Voltage, ±15V Output Voltage, SIP3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -135855,6 +137031,408 @@
 			)
 		)
 	)
+	(symbol "SIC431A"
+		(extends "SIC437A")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC431A"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/74589/sic431.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "24A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIC431C"
+		(extends "SIC437C")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC431C"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/74589/sic431.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "24A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIC437B"
+		(extends "SIC437A")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC437B"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/75921/sic437.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "12A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIC437D"
+		(extends "SIC437C")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC437D"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/75921/sic437.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "12A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIC438A"
+		(extends "SIC437A")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC438A"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/75921/sic437.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "8A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIC438C"
+		(extends "SIC437C")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC438C"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/75921/sic437.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "8A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TDN_5-0911WISM"
 		(extends "TDN_5-0910WISM")
 		(property "Reference" "U"
@@ -137899,7 +139477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, +/-15V fixed Output Voltage, SIP-6"
+		(property "Description" "±33mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, ±15V fixed Output Voltage, SIP-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -137964,7 +139542,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, +/-15V fixed Output Voltage, SMD"
+		(property "Description" "±33mA Regulated 1W DC/DC converter with 1.5kV isolation, 4.5V-9V input, ±15V fixed Output Voltage, SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -138484,7 +140062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, +/-12V fixed Output Voltage, SIP-6"
+		(property "Description" "±42mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, ±12V fixed Output Voltage, SIP-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -138549,7 +140127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, +/-12V fixed Output Voltage, SMD"
+		(property "Description" "±42mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, ±12V fixed Output Voltage, SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -138614,7 +140192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, +/-15V fixed Output Voltage, SIP-6"
+		(property "Description" "±33mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, ±15V fixed Output Voltage, SIP-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -138679,7 +140257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, +/-15V fixed Output Voltage, SMD"
+		(property "Description" "±33mA Regulated 1W DC/DC converter with 1.5kV isolation, 9V-18V input, ±15V fixed Output Voltage, SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -139199,7 +140777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, +/-12V fixed Output Voltage, SIP-6"
+		(property "Description" "±42mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, ±12V fixed Output Voltage, SIP-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -139264,7 +140842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, +/-12V fixed Output Voltage, SMD"
+		(property "Description" "±42mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, ±12V fixed Output Voltage, SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -139329,7 +140907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, +/-15V fixed Output Voltage, SIP-6"
+		(property "Description" "±33mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, ±15V fixed Output Voltage, SIP-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -139394,7 +140972,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, +/-15V fixed Output Voltage, SMD"
+		(property "Description" "±33mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, ±15V fixed Output Voltage, SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -139914,7 +141492,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, +/-12V fixed Output Voltage, SIP-6"
+		(property "Description" "±42mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, ±12V fixed Output Voltage, SIP-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -139979,7 +141557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-42mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, +/-12V fixed Output Voltage, SMD"
+		(property "Description" "±42mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, ±12V fixed Output Voltage, SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -140044,7 +141622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, +/-15V fixed Output Voltage, SIP-6"
+		(property "Description" "±33mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, ±15V fixed Output Voltage, SIP-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -140109,7 +141687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "+/-33mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, +/-15V fixed Output Voltage, SMD"
+		(property "Description" "±33mA Regulated 1W DC/DC converter with 1.5kV isolation, 36V-75V input, ±15V fixed Output Voltage, SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -155090,6 +156668,274 @@
 			)
 		)
 		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIC431B"
+		(extends "SIC431A")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC431B"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/74589/sic431.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "24A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIC431D"
+		(extends "SIC431C")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC431D"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/74589/sic431.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "24A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIC438B"
+		(extends "SIC438A")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC438B"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/75921/sic437.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "8A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "SIC438D"
+		(extends "SIC438C")
+		(property "Reference" "U"
+			(at -7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SIC438D"
+			(at 5.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Vishay_PowerPAK_MLP44-24L_ThermalVias"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/75921/sic437.pdf"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "8A Step-Down DC/DC-Regulator, 300kHz-1MHz, 3..24Vin, 0.6..21.6Vout"
+			(at 5.08 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Buck Vishay Siliconix voltage-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Vishay?PowerPAK?MLP44?24L*"
 			(at 0 0 0)
 			(effects
 				(font
