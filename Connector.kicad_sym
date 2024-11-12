@@ -292802,7 +292802,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at -32.766 25.908 0)
+			(at -17.526 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292811,7 +292811,7 @@
 			)
 		)
 		(property "Value" "Raspberry_Pi_4"
-			(at 18.034 -26.924 0)
+			(at 3.302 -49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292820,7 +292820,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 13.208 -32.258 0)
+			(at 70.104 -47.498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292830,7 +292830,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-datasheet.pdf"
-			(at 18.034 -32.766 0)
+			(at 3.302 -55.118 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292840,7 +292840,7 @@
 			)
 		)
 		(property "Description" "Raspberry Pi 4 Model B"
-			(at 18.034 -30.226 0)
+			(at 3.302 -52.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292869,8 +292869,8 @@
 		)
 		(symbol "Raspberry_Pi_4_0_1"
 			(rectangle
-				(start -33.02 25.4)
-				(end 33.02 -25.4)
+				(start -17.78 48.26)
+				(end 17.78 -48.26)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -292882,7 +292882,7 @@
 		)
 		(symbol "Raspberry_Pi_4_1_1"
 			(pin power_out line
-				(at 35.56 20.32 180)
+				(at 20.32 43.18 180)
 				(length 2.54)
 				(name "3V3"
 					(effects
@@ -292900,9 +292900,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 12.7 180)
+				(at -20.32 -5.08 0)
 				(length 2.54)
-				(name "RXD_UART/GPIO15"
+				(name "GPIO15/UART_RXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -292918,9 +292918,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 5.08 180)
+				(at -20.32 -12.7 0)
 				(length 2.54)
-				(name "~{CE1}_SPI1/GPIO17"
+				(name "GPIO17/SPI1_~{CE1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -292936,9 +292936,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 2.54 180)
+				(at -20.32 -15.24 0)
 				(length 2.54)
-				(name "PWM0/CLK_PCM/~{CE0}_SPI1/GPIO18"
+				(name "GPIO18/SPI1_~{CE0}/PCM_CLK/PWM0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -292954,9 +292954,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 -22.86 180)
+				(at -20.32 -40.64 0)
 				(length 2.54)
-				(name "DAT3_SDIO/GPIO27"
+				(name "GPIO27/SDIO_DAT3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -292972,7 +292972,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 90)
+				(at 0 -50.8 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -292990,9 +292990,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 -10.16 180)
+				(at -20.32 -27.94 0)
 				(length 2.54)
-				(name "CLK_SDIO/GPIO22"
+				(name "GPIO22/SDIO_CLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293008,9 +293008,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 -12.7 180)
+				(at -20.32 -30.48 0)
 				(length 2.54)
-				(name "CMD_SDIO/GPIO23"
+				(name "GPIO23/SDIO_CMD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293026,7 +293026,7 @@
 				)
 			)
 			(pin passive line
-				(at 35.56 20.32 180)
+				(at 20.32 43.18 180)
 				(length 2.54) hide
 				(name "3V3"
 					(effects
@@ -293044,9 +293044,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 -15.24 180)
+				(at -20.32 -33.02 0)
 				(length 2.54)
-				(name "DAT0_SDIO/GPIO24"
+				(name "GPIO24/SDIO_DAT0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293062,7 +293062,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 -10.16 0)
+				(at -20.32 12.7 0)
 				(length 2.54)
 				(name "GPIO10/SPI0_MOSI"
 					(effects
@@ -293080,7 +293080,7 @@
 				)
 			)
 			(pin power_out line
-				(at 35.56 22.86 180)
+				(at 20.32 45.72 180)
 				(length 2.54)
 				(name "5V"
 					(effects
@@ -293098,7 +293098,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 90)
+				(at 0 -50.8 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -293116,7 +293116,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 -7.62 0)
+				(at -20.32 15.24 0)
 				(length 2.54)
 				(name "GPIO09/SPI0_MISO"
 					(effects
@@ -293134,9 +293134,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 -17.78 180)
+				(at -20.32 -35.56 0)
 				(length 2.54)
-				(name "DAT1_SDIO/GPIO25"
+				(name "GPIO25/SDIO_DAT1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293152,7 +293152,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 -12.7 0)
+				(at -20.32 10.16 0)
 				(length 2.54)
 				(name "GPIO11/SPI0_SCLK"
 					(effects
@@ -293170,7 +293170,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 -5.08 0)
+				(at -20.32 17.78 0)
 				(length 2.54)
 				(name "GPIO08/SPI0_~{CE0}"
 					(effects
@@ -293188,7 +293188,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 90)
+				(at 0 -50.8 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -293206,7 +293206,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 -2.54 0)
+				(at -20.32 20.32 0)
 				(length 2.54)
 				(name "GPIO07/SPI0_~{CE1}"
 					(effects
@@ -293224,7 +293224,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 22.86 0)
+				(at -20.32 45.72 0)
 				(length 2.54)
 				(name "GPIO00/I2C0_ID_SD"
 					(effects
@@ -293242,7 +293242,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 20.32 0)
+				(at -20.32 43.18 0)
 				(length 2.54)
 				(name "GPIO01/I2C0_ID_SC"
 					(effects
@@ -293260,7 +293260,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 5.08 0)
+				(at -20.32 27.94 0)
 				(length 2.54)
 				(name "GPIO05/GPCLK1"
 					(effects
@@ -293278,7 +293278,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 15.24 0)
+				(at -20.32 38.1 0)
 				(length 2.54)
 				(name "GPIO02/I2C1_SDA"
 					(effects
@@ -293296,7 +293296,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 90)
+				(at 0 -50.8 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -293314,7 +293314,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 2.54 0)
+				(at -20.32 25.4 0)
 				(length 2.54)
 				(name "GPIO06/GPCLK2"
 					(effects
@@ -293332,7 +293332,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 -17.78 0)
+				(at -20.32 5.08 0)
 				(length 2.54)
 				(name "GPIO12/PWM0"
 					(effects
@@ -293350,7 +293350,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 -20.32 0)
+				(at -20.32 2.54 0)
 				(length 2.54)
 				(name "GPIO13/PWM1"
 					(effects
@@ -293368,7 +293368,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 90)
+				(at 0 -50.8 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -293386,9 +293386,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 0 180)
+				(at -20.32 -17.78 0)
 				(length 2.54)
-				(name "FS_PCM/MISO_SPI1/GPIO19"
+				(name "GPIO19/SPI1_MISO/PCM_FS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293404,9 +293404,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 7.62 180)
+				(at -20.32 -10.16 0)
 				(length 2.54)
-				(name "~{CE2}_SPI1/GPIO16"
+				(name "GPIO16/SPI1_~{CE2}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293422,9 +293422,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 -20.32 180)
+				(at -20.32 -38.1 0)
 				(length 2.54)
-				(name "DAT2_SDIO/GPIO26"
+				(name "GPIO26/SDIO_DAT2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293440,9 +293440,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 -2.54 180)
+				(at -20.32 -20.32 0)
 				(length 2.54)
-				(name "PWM1/DIN_PCM/MOSI_SPI1/GPIO20"
+				(name "GPIO20/SPI1_MOSI/PCM_DIN/PWM1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293458,7 +293458,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 90)
+				(at 0 -50.8 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -293476,7 +293476,7 @@
 				)
 			)
 			(pin passive line
-				(at 35.56 22.86 180)
+				(at 20.32 45.72 180)
 				(length 2.54) hide
 				(name "5V"
 					(effects
@@ -293494,9 +293494,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 -5.08 180)
+				(at -20.32 -22.86 0)
 				(length 2.54)
-				(name "DOUT_PCM/SCLK_SPI1/GPIO21"
+				(name "GPIO21/SPI1_SCLK/PCM_DOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293512,7 +293512,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 12.7 0)
+				(at -20.32 35.56 0)
 				(length 2.54)
 				(name "GPIO03/I2C1_SCL"
 					(effects
@@ -293530,7 +293530,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -27.94 90)
+				(at 0 -50.8 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -293548,7 +293548,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -35.56 7.62 0)
+				(at -20.32 30.48 0)
 				(length 2.54)
 				(name "GPIO04/GPCLK0"
 					(effects
@@ -293566,9 +293566,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 35.56 15.24 180)
+				(at -20.32 -2.54 0)
 				(length 2.54)
-				(name "TXD_UART/GPIO14"
+				(name "GPIO14/UART_TXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -293584,7 +293584,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 90)
+				(at 0 -50.8 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
