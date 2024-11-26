@@ -5059,7 +5059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 9-36V input voltage, +/-5V output voltage, DIP"
+		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 9-36V input voltage, ±5V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12018,7 +12018,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed +-12V Output Voltage, 9-18V Input Voltage, 12W"
+		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed ±12V Output Voltage, 9-18V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12286,6 +12286,484 @@
 					)
 				)
 				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TEN20-11011WIRH"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN20-11011WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN20-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten20wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20W DC/DC railway converter regulated, 36-160V input, 5.1V fixed output voltage, 4A output, 3.0kVAC isolation, 1”x1.6”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated single 20W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN20*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TEN20-11011WIRH_0_0"
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "OnOff"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TEN20-11011WIRH_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 5.08) (xy 0 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TEN20-11011WIRH_1_0"
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "+Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "-Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "+Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "Trim"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TEN20-11021WIRH"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN20-11021WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN20-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten20wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20W DC/DC railway converter regulated, 36-160V input, ±5V fixed output voltage, 2A each output, 3.0kVAC isolation, 1”x1.6”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated dual 20W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN20*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TEN20-11021WIRH_0_0"
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "OnOff"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TEN20-11021WIRH_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 5.08) (xy 0 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TEN20-11021WIRH_1_0"
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "+Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "-Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "+Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "Com"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12672,7 +13150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2A Isolated DC/DC Dual Supply Converter Module, fixed +-5V Output Voltage, 9-36V Input Voltage"
+		(property "Description" "2A Isolated DC/DC Dual Supply Converter Module, fixed ±5V Output Voltage, 9-36V Input Voltage"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13855,7 +14333,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" " Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14135,7 +14613,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" " Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14998,7 +15476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" " 36-V, 2A input, stepdown, DC/DC converter, Texas B3QFN-14"
+		(property "Description" "36-V, 2A input, stepdown, DC/DC converter, Texas B3QFN-14"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38714,7 +39192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 9-36V input voltage, +/-5V output voltage, DIP"
+		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 9-36V input voltage, ±5V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38778,7 +39256,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 9-36V input voltage, +/-12V output voltage, DIP"
+		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 9-36V input voltage, ±12V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38842,7 +39320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 9-36V input voltage, +/-15V output voltage, DIP"
+		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 9-36V input voltage, ±15V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -39162,7 +39640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 18-75V input voltage, +/-5V output voltage, DIP"
+		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 18-75V input voltage, ±5V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -39226,7 +39704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 18-75V input voltage, +/-12V output voltage, DIP"
+		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 18-75V input voltage, ±12V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -39290,7 +39768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 18-75V input voltage, +/-15V output voltage, DIP"
+		(property "Description" "Isolated 15W 4:1 input DC/DC converter module, 18-75V input voltage, ±15V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -39610,7 +40088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 9-36V input voltage, +/-12V output voltage, DIP"
+		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 9-36V input voltage, ±12V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -39674,7 +40152,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 9-36V input voltage, +/-15V output voltage, DIP"
+		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 9-36V input voltage, ±15V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -39930,7 +40408,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 18-75V input voltage, +/-5V output voltage, DIP"
+		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 18-75V input voltage, ±5V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -39994,7 +40472,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 18-75V input voltage, +/-12V output voltage, DIP"
+		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 18-75V input voltage, ±12V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -40058,7 +40536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 18-75V input voltage, +/-15V output voltage, DIP"
+		(property "Description" "Isolated 20W 4:1 input DC/DC converter module, 18-75V input voltage, ±15V output voltage, DIP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -49862,6 +50340,461 @@
 			)
 		)
 	)
+	(symbol "TEC3-2410UI"
+		(extends "ITX0503SA-R")
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TEC3-2410UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec3ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3W DC/DC converter regulated, 9-75V input, 3.3V fixed output voltage, 700mA output, 2.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC converter regulated single 3W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC3-2411UI"
+		(extends "ITX0503SA-R")
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TEC3-2411UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec3ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3W DC/DC converter regulated, 9-75V input, 5V fixed output voltage, 600mA output, 2.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC converter regulated single 3W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC3-2412UI"
+		(extends "ITX0503SA-R")
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TEC3-2412UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec3ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3W DC/DC converter regulated, 9-75V input, 12V fixed output voltage, 250mA output, 2.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC converter regulated single 3W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC3-2413UI"
+		(extends "ITX0503SA-R")
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TEC3-2413UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec3ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3W DC/DC converter regulated, 9-75V input, 15V fixed output voltage, 200mA output, 2.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC converter regulated single 3W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC3-2421UI"
+		(extends "ITX0505S-R")
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TEC3-2421UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec3ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3W DC/DC converter regulated, 9-75V input, ±5V fixed output voltage, 300mA each output, 2.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC converter regulated dual 3W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC3-2422UI"
+		(extends "ITX0505S-R")
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TEC3-2422UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec3ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3W DC/DC converter regulated, 9-75V input, ±12V fixed output voltage, 125mA each output, 2.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC converter regulated dual 3W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC3-2423UI"
+		(extends "ITX0505S-R")
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TEC3-2423UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec3ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3W DC/DC converter regulated, 9-75V input, ±15V fixed output voltage, 100mA each output, 2.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC converter regulated dual 3W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TEL12-1212"
 		(extends "TEL12-1211")
 		(property "Reference" "U"
@@ -50098,7 +51031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed +-15V Output Voltage, 9-18V Input Voltage, 12W"
+		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed ±15V Output Voltage, 9-18V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -50692,7 +51625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed +-12V Output Voltage, 18-36V Input Voltage, 12W"
+		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed ±12V Output Voltage, 18-36V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -50758,7 +51691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed +-12V Output Voltage, 9-36V Input Voltage, 12W"
+		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed ±12V Output Voltage, 9-36V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -50824,7 +51757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed +-15V Output Voltage, 18-36V Input Voltage, 12W"
+		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed ±15V Output Voltage, 18-36V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -50890,7 +51823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed +-15V Output Voltage, 9-36V Input Voltage, 12W"
+		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed ±15V Output Voltage, 9-36V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51484,7 +52417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed +-12V Output Voltage, 36-75V Input Voltage, 12W"
+		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed ±12V Output Voltage, 36-75V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51550,7 +52483,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed +-12V Output Voltage, 18-75V Input Voltage, 12W"
+		(property "Description" "0.5A Isolated DC/DC Converter Module, fixed ±12V Output Voltage, 18-75V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51616,7 +52549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed +-15V Output Voltage, 36-75V Input Voltage, 12W"
+		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed ±15V Output Voltage, 36-75V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51682,7 +52615,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed +-15V Output Voltage, 18-75V Input Voltage, 12W"
+		(property "Description" "0.4A Isolated DC/DC Converter Module, fixed ±15V Output Voltage, 18-75V Input Voltage, 12W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51701,6 +52634,326 @@
 			)
 		)
 		(property "ki_fp_filters" "*TRACO*TEL12*xxxx*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN20-11012WIRH"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN20-11012WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN20-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten20wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20W DC/DC railway converter regulated, 36-160V input, 12V fixed output voltage, 1.67A output, 3.0kVAC isolation, 1”x1.6”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated single 20W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN20*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN20-11013WIRH"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN20-11013WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN20-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten20wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20W DC/DC railway converter regulated, 36-160V input, 15V fixed output voltage, 1.33A output, 3.0kVAC isolation, 1”x1.6”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated single 20W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN20*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN20-11015WIRH"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN20-11015WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN20-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten20wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20W DC/DC railway converter regulated, 36-160V input, 24V fixed output voltage, 833mA output, 3.0kVAC isolation, 1”x1.6”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated single 20W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN20*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN20-11022WIRH"
+		(extends "TEN20-11021WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN20-11022WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN20-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten20wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20W DC/DC railway converter regulated, 36-160V input, ±12V fixed output voltage, 833mA each output, 3.0kVAC isolation, 1”x1.6”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated dual 20W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN20*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN20-11023WIRH"
+		(extends "TEN20-11021WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN20-11023WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN20-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten20wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20W DC/DC railway converter regulated, 36-160V input, ±15V fixed output voltage, 667mA each output, 3.0kVAC isolation, 1”x1.6”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated dual 20W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN20*110xxWIRH*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51950,7 +53203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "835mA Isolated DC/DC Dual Supply Converter Module, fixed +-12V Output Voltage, 9-36V Input Voltage"
+		(property "Description" "835mA Isolated DC/DC Dual Supply Converter Module, fixed ±12V Output Voltage, 9-36V Input Voltage"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52017,7 +53270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "665mA Isolated DC/DC Dual Supply Converter Module, fixed +-15V Output Voltage, 9-36V Input Voltage"
+		(property "Description" "665mA Isolated DC/DC Dual Supply Converter Module, fixed ±15V Output Voltage, 9-36V Input Voltage"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52352,7 +53605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2A Isolated DC/DC Dual Supply Converter Module, fixed +-5V Output Voltage, 18-75V Input Voltage"
+		(property "Description" "2A Isolated DC/DC Dual Supply Converter Module, fixed ±5V Output Voltage, 18-75V Input Voltage"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52419,7 +53672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "835mA Isolated DC/DC Dual Supply Converter Module, fixed +-12V Output Voltage, 18-75V Input Voltage"
+		(property "Description" "835mA Isolated DC/DC Dual Supply Converter Module, fixed ±12V Output Voltage, 18-75V Input Voltage"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52486,7 +53739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "665mA Isolated DC/DC Dual Supply Converter Module, fixed +-15V Output Voltage, 18-75V Input Voltage"
+		(property "Description" "665mA Isolated DC/DC Dual Supply Converter Module, fixed ±15V Output Voltage, 18-75V Input Voltage"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52505,6 +53758,390 @@
 			)
 		)
 		(property "ki_fp_filters" "*TRACO*TEN20*xxxx*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN40-11011WIRH"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN40-11011WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN40-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten40wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" " 40W DC/DC railway converter regulated, 36-160V input, 5.1V fixed output voltage, 8A output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated single 40W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN40*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN40-11012WIRH"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN40-11012WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN40-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten40wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC railway converter regulated, 36-160V input, 12V fixed output voltage, 3.33A output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated single 40W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN40*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN40-11013WIRH"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN40-11013WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN40-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten40wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC railway converter regulated, 36-160V input, 15V fixed output voltage, 2.666A output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated single 40W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN40*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN40-11015WIRH"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN40-11015WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN40-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten40wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC railway converter regulated, 36-160V input, 24V fixed output voltage, 1.666A output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated single 40W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN40*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN40-11022WIRH"
+		(extends "TEN20-11021WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN40-11022WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN40-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten40wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC railway converter regulated, 36-160V input, ±12V fixed output voltage, 1.666A each output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated dual 40W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN40*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEN40-11023WIRH"
+		(extends "TEN20-11021WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEN40-11023WIRH"
+			(at 4.064 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEN40-110xxWIRH_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/ten40wirh.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC railway converter regulated, 36-160V input, ±15V fixed output voltage, 1.333A each output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated isolation dc-dc DC/DC railway converter regulated dual 40W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN40*110xxWIRH*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -53145,6 +54782,454 @@
 			)
 		)
 		(property "ki_fp_filters" "Converter*DCDC*TRACO*THB10*xxxx*Dual*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "THR40-7211WI"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "THR40-7211WI"
+			(at 2.286 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_THR40-72xxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/thr40wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC industrial converter regulated, 36-160V input, 5V fixed output voltage, 8A output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*THR40*72xxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "THR40-7212WI"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "THR40-7212WI"
+			(at 2.286 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_THR40-72xxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/thr40wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC industrial converter regulated, 36-160V input, 12V fixed output voltage, 3.33A output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*THR40*72xxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "THR40-7213WI"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "THR40-7213WI"
+			(at 2.286 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_THR40-72xxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/thr40wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC industrial converter regulated, 36-160V input, 15V fixed output voltage, 2.67A output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*THR40*72xxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "THR40-72154WI"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "THR40-72154WI"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_THR40-72xxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/thr40wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC industrial converter regulated, 36-160V input, 54V fixed output voltage, 741mA output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*THR40*72xxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "THR40-7215WI"
+		(extends "TEN20-11011WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "THR40-7215WI"
+			(at 2.286 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_THR40-72xxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/thr40wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC industrial converter regulated, 36-160V input, 24V fixed output voltage, 1.67A output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*THR40*72xxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "THR40-7222WI"
+		(extends "TEN20-11021WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "THR40-7222WI"
+			(at 2.286 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_THR40-72xxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/thr40wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC industrial converter regulated, 36-160V input, ±12V fixed output voltage, 1.67A each output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*THR40*72xxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "THR40-7223WI"
+		(extends "TEN20-11021WIRH")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "THR40-7223WI"
+			(at 2.286 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_THR40-72xxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/thr40wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40W DC/DC industrial converter regulated, 36-160V input, ±15V fixed output voltage, 1.33A each output, 3.0kVAC isolation, 2”x1”"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*THR40*72xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -58075,7 +60160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" " 36-V, 3A input, stepdown, DC/DC converter, Texas B3QFN-14"
+		(property "Description" "36-V, 3A input, stepdown, DC/DC converter, Texas B3QFN-14"
 			(at 0 0 0)
 			(effects
 				(font
@@ -58142,7 +60227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" " 36-V, 4A input, stepdown, DC/DC converter, Texas B3QFN-14"
+		(property "Description" "36-V, 4A input, stepdown, DC/DC converter, Texas B3QFN-14"
 			(at 0 0 0)
 			(effects
 				(font
