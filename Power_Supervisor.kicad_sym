@@ -8545,7 +8545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Microprocessor Supervisory Circuit, VCC / VBATT 1.0...5.5V, Guaranteed Reset Assertion with VCC >= 1V, Reset Threshold 4.65V, Reset Pulse Width 200ms, Watchdog Timeout 1.60s, DIP-8 / SOIC-8"
+		(property "Description" "Microprocessor Supervisory Circuit, Reset Threshold 4.65V, Reset Pulse Width 200ms, Watchdog Timeout 1.60s, DIP-8 / SOIC-8"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -10977,7 +10977,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Microprocessor Supervisory Circuit, VCC / VBATT 1.0...5.5V, Guaranteed Reset Assertion with VCC >= 1V, Reset Threshold 4.40V, Reset Pulse Width 200ms, Watchdog Timeout 1.60s, DIP-8 / SOIC-8"
+		(property "Description" "Microprocessor Supervisory Circuit, Reset Threshold 4.40V, Reset Pulse Width 200ms, Watchdog Timeout 1.60s, DIP-8 / SOIC-8"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -10996,6 +10996,71 @@
 			)
 		)
 		(property "ki_fp_filters" "DIP*W7.62mm* *SO*3.9*4.*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "MAX802L"
+		(extends "MAX690A")
+		(property "Reference" "U"
+			(at -9.144 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MAX802L"
+			(at 2.54 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.508 -12.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX690A-MAX805L.pdf"
+			(at 0.508 -8.128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Microprocessor Supervisory Circuit, Reset Threshold 4.65V, Reset Pulse Width 200ms, Watchdog Timeout 1.60s, Power-Fail Comparator accuracy ±2%, DIP-8 / SOIC-8"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Supervisor wdg"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*DIP*W7.62mm* *SO*3.9*4.*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
