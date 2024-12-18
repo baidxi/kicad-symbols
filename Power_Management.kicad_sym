@@ -8327,7 +8327,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Infineon_PG-DSO-20-32"
+		(property "Footprint" "Package_SO:Infineon_SOIC-20W_7.6x12.8mm_P1.27mm"
 			(at 0 -15.24 0)
 			(effects
 				(font
@@ -8345,7 +8345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Smart High-Side Power Switch, PROFET, 4 Channel, 90mOhm, 3.3A, 40V, DSO-20"
+		(property "Description" "Smart High-Side Power Switch, PROFET, 4 Channel, RON 90mOhm, IL(NOM) 3.3A, Vbb 5.5...40V, standby current 9 µA (Tj = -40...25°C), SOIC-20"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8354,7 +8354,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "High_Side_Switch Power"
+		(property "ki_keywords" "High_Side_Switch ESD CMOS"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8363,7 +8363,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Infineon*PG*DSO*"
+		(property "ki_fp_filters" "*SO*7.6*12.*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -29910,6 +29910,24 @@
 			)
 		)
 		(symbol "SN6507DGQ_1_0"
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
 				(at -10.16 2.54 0)
 				(length 2.54)
@@ -42223,6 +42241,134 @@
 			)
 		)
 	)
+	(symbol "BTS711L1"
+		(extends "BTS724G")
+		(property "Reference" "U"
+			(at -6.35 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BTS711L1"
+			(at 5.08 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:Infineon_SOIC-20W_7.6x12.8mm_P1.27mm"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BTS711L1-DS-v01_03-EN.pdf?fileId=5546d4625a888733015aa3bea285100c"
+			(at -1.905 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Smart High-Side Power Switch, PROFET, 4 Channel, RON 200mOhm, IL(NOM) 1.9A, Vbb 5.0...34V, standby current 28 µA (Tj = 25°C), SOIC-20"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "High_Side_Switch ESD CMOS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*SO*7.6*12.*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "BTS712N1"
+		(extends "BTS724G")
+		(property "Reference" "U"
+			(at -6.35 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BTS712N1"
+			(at 5.08 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:Infineon_SOIC-20W_7.6x12.8mm_P1.27mm"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BTS712N1-DS-v01_03-EN.pdf?fileId=5546d4625a888733015aa3be77471000"
+			(at -1.905 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Smart High-Side Power Switch, PROFET, 4 Channel, RON 200mOhm, IL(NOM) 1.9A, Vbb 5.0...34V, standby current 180 µA (Tj = 25°C), SOIC-20"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "High_Side_Switch ESD CMOS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*SO*7.6*12.*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "BTS716G"
 		(extends "BTS724G")
 		(property "Reference" "U"
@@ -42241,7 +42387,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Infineon_PG-DSO-20-32"
+		(property "Footprint" "Package_SO:Infineon_SOIC-20W_7.6x12.8mm_P1.27mm"
 			(at 0 -15.24 0)
 			(effects
 				(font
@@ -42259,7 +42405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Smart High-Side Power Switch, PROFET, 4 Channel, 140mOhm, 2.6A, 40V, DSO-20"
+		(property "Description" "Smart High-Side Power Switch, PROFET, 4 Channel, RON 140mOhm, IL(NOM) 2.6A, Vbb 5.5...40V, standby current 9 µA (Tj = -40...25°C), undervoltage switch off 4.5V, SOIC-20"
 			(at 0 0 0)
 			(effects
 				(font
@@ -42268,7 +42414,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "High_Side_Switch Power"
+		(property "ki_keywords" "High_Side_Switch ESD CMOS"
 			(at 0 0 0)
 			(effects
 				(font
@@ -42277,7 +42423,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Infineon*PG*DSO*"
+		(property "ki_fp_filters" "*SO*7.6*12.*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -42287,7 +42433,7 @@
 			)
 		)
 	)
-	(symbol "BTS716GB"
+	(symbol "BTS721L1"
 		(extends "BTS724G")
 		(property "Reference" "U"
 			(at -6.35 13.97 0)
@@ -42297,7 +42443,7 @@
 				)
 			)
 		)
-		(property "Value" "BTS716GB"
+		(property "Value" "BTS721L1"
 			(at 5.08 13.97 0)
 			(effects
 				(font
@@ -42305,7 +42451,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Infineon_PG-DSO-20-32"
+		(property "Footprint" "Package_SO:Infineon_SOIC-20W_7.6x12.8mm_P1.27mm"
 			(at 0 -15.24 0)
 			(effects
 				(font
@@ -42314,7 +42460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BTS716GB-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa3be94e21008"
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BTS721L1-DS-v01_03-EN.pdf?fileId=5546d4625a888733015aa3ac546f0ff9"
 			(at -1.905 2.54 0)
 			(effects
 				(font
@@ -42323,7 +42469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Smart High-Side Power Switch, PROFET, 4 Channel, 140mOhm, 2.6A, 40V, DSO-20"
+		(property "Description" "Smart High-Side Power Switch, PROFET, 4 Channel, RON 100mOhm, IL(NOM) 2.9A, Vbb 5.0...34V, standby current 28 µA (Tj = 25°C), SOIC-20"
 			(at 0 0 0)
 			(effects
 				(font
@@ -42332,7 +42478,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "High_Side_Switch Power"
+		(property "ki_keywords" "High_Side_Switch ESD CMOS"
 			(at 0 0 0)
 			(effects
 				(font
@@ -42341,7 +42487,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Infineon*PG*DSO*"
+		(property "ki_fp_filters" "*SO*7.6*12.*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -47741,6 +47887,70 @@
 			)
 		)
 		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "BTS716GB"
+		(extends "BTS716G")
+		(property "Reference" "U"
+			(at -6.35 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BTS716GB"
+			(at 5.08 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:Infineon_SOIC-20W_7.6x12.8mm_P1.27mm"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BTS716GB-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa3be94e21008"
+			(at -1.905 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Smart High-Side Power Switch, PROFET, 4 Channel, RON 140mOhm, IL(NOM) 2.6A, Vbb 5.5...40V, standby current 9 µA (Tj = -40...25°C), undervoltage switch off 3.2V, SOIC-20"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "High_Side_Switch ESD CMOS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*SO*7.6*12.*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
