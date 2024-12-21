@@ -49,7 +49,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Low-noise PLL Reference Clock"
+		(property "ki_keywords" "Low-noise PLL Reference"
 			(at 0 0 0)
 			(effects
 				(font
@@ -582,15 +582,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "XO VCXO"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*Abracon*ABLNO*"
 			(at 0 0 0)
 			(effects
@@ -702,14 +693,11 @@
 		)
 	)
 	(symbol "ACO-xxxMHz-A"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "Y"
-			(at -5.08 6.35 0)
+			(at -7.62 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -718,7 +706,7 @@
 			)
 		)
 		(property "Value" "ACO-xxxMHz-A"
-			(at 1.27 -6.35 0)
+			(at 3.81 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -753,15 +741,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*DIP*14*"
 			(at 0 0 0)
 			(effects
@@ -773,8 +752,8 @@
 		)
 		(symbol "ACO-xxxMHz-A_0_1"
 			(rectangle
-				(start -10.16 5.08)
-				(end 5.08 -5.08)
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -785,8 +764,8 @@
 			)
 			(polyline
 				(pts
-					(xy -6.985 2.54) (xy -6.35 2.54) (xy -6.35 3.81) (xy -5.715 3.81) (xy -5.715 2.54) (xy -5.08 2.54)
-					(xy -5.08 3.81) (xy -4.445 3.81) (xy -4.445 2.54)
+					(xy -4.445 2.54) (xy -3.81 2.54) (xy -3.81 3.81) (xy -3.175 3.81) (xy -3.175 2.54) (xy -2.54 2.54)
+					(xy -2.54 3.81) (xy -1.905 3.81) (xy -1.905 2.54)
 				)
 				(stroke
 					(width 0)
@@ -799,7 +778,7 @@
 		)
 		(symbol "ACO-xxxMHz-A_1_1"
 			(pin input line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "Tri-State"
 					(effects
@@ -853,7 +832,7 @@
 				)
 			)
 			(pin output line
-				(at 7.62 0 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "OUT"
 					(effects
@@ -913,15 +892,6 @@
 			)
 		)
 		(property "Description" "Crystal Clock Oscillator, Abracon ASCO"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1087,15 +1057,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "1.8-3.3V SMD Ultra Miniature Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*SMD*Abracon*ASDMB*2.5x2.0mm*"
 			(at 0 0 0)
 			(effects
@@ -1149,7 +1110,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -7.62 90)
+				(at 0 -7.62 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1185,7 +1146,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 7.62 270)
+				(at 0 7.62 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -1205,9 +1166,6 @@
 		)
 	)
 	(symbol "ASE-xxxMHz"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1248,15 +1206,6 @@
 			)
 		)
 		(property "Description" "3.3V CMOS SMD Crystal Clock Oscillator, Abracon"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "3.3V CMOS SMD Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1376,9 +1325,6 @@
 		)
 	)
 	(symbol "ASV-xxxMHz"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1419,15 +1365,6 @@
 			)
 		)
 		(property "Description" "3.3V HCMOS SMD Crystal Clock Oscillator, Abracon"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "3.3V HCMOS SMD Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1584,7 +1521,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500kHz-100MHz 5V Crystal Oscillator, IQD CFPS-72"
+		(property "Description" "500kHz-100MHz 5V Crystal Oscillator, IQD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1616,7 +1553,7 @@
 				(start -7.62 5.08)
 				(end 7.62 -5.08)
 				(stroke
-					(width 0.001)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -1761,7 +1698,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "VCXO VCO Crystek"
+		(property "ki_keywords" "VCXO VCO"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2134,9 +2071,6 @@
 		)
 	)
 	(symbol "CXO_DIP14"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2177,15 +2111,6 @@
 			)
 		)
 		(property "Description" "Crystal Clock Oscillator, DIP14-style metal package"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2305,9 +2230,6 @@
 		)
 	)
 	(symbol "CXO_DIP8"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2348,15 +2270,6 @@
 			)
 		)
 		(property "Description" "Crystal Clock Oscillator, DIP8-style metal package"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2476,9 +2389,6 @@
 		)
 	)
 	(symbol "DFA-S11"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2519,15 +2429,6 @@
 			)
 		)
 		(property "Description" "Temperature compensated Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Temperature compensated Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2647,9 +2548,6 @@
 		)
 	)
 	(symbol "DFA-S15"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2690,15 +2588,6 @@
 			)
 		)
 		(property "Description" "Temperature compensated Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Temperature compensated Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2818,9 +2707,6 @@
 		)
 	)
 	(symbol "DFA-S2"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2861,15 +2747,6 @@
 			)
 		)
 		(property "Description" "Temperature compensated Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Temperature compensated Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2989,9 +2866,6 @@
 		)
 	)
 	(symbol "DFA-S3"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3032,15 +2906,6 @@
 			)
 		)
 		(property "Description" "Temperature compensated Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Temperature compensated Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3160,9 +3025,6 @@
 		)
 	)
 	(symbol "DGOF5S3"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3203,15 +3065,6 @@
 			)
 		)
 		(property "Description" "HCMOS Crystal Clock Oscillator, DIP14-style metal package"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3371,15 +3224,6 @@
 			)
 		)
 		(property "Description" "HCMOS Crystal Clock Oscillator, 2.5x2.0 mm SMD"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Crystal Clock Oscillator ECS SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3831,9 +3675,6 @@
 		)
 	)
 	(symbol "IQXO-70"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3874,15 +3715,6 @@
 			)
 		)
 		(property "Description" "Crystal Clock Oscillator, SMD package 7.5x5.0mm²"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4800,15 +4632,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "oscillator fixed frequency divider silicon"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "TSOT?23?5*"
 			(at 0 0 0)
 			(effects
@@ -4936,9 +4759,6 @@
 		)
 	)
 	(symbol "MAX7375AXR805"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4987,7 +4807,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Silicon Clock Oscillator 8MHz 8000kHz"
+		(property "ki_keywords" "8000kHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5127,15 +4947,6 @@
 			)
 		)
 		(property "Description" "5/10 MHz Low Phase-Noise Precision OCXO, Morion MV267"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "OCXO"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5346,15 +5157,6 @@
 			)
 		)
 		(property "Description" "60, 80, 100, 120 & 122.76 MHz OCXO, Morion MV317"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "OCXO"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5575,7 +5377,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "oscillator clock multiplier PLL"
+		(property "ki_keywords" "oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5802,7 +5604,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "oscillator clock multiplier PLL"
+		(property "ki_keywords" "oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5981,14 +5783,11 @@
 		)
 	)
 	(symbol "OCXO-14"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "Y"
-			(at -5.08 6.35 0)
+			(at -7.62 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5997,7 +5796,7 @@
 			)
 		)
 		(property "Value" "OCXO-14"
-			(at 1.27 -6.35 0)
+			(at 3.81 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6032,15 +5831,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*DIP*14*"
 			(at 0 0 0)
 			(effects
@@ -6052,8 +5842,8 @@
 		)
 		(symbol "OCXO-14_0_1"
 			(rectangle
-				(start -10.16 5.08)
-				(end 5.08 -5.08)
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -6064,8 +5854,8 @@
 			)
 			(polyline
 				(pts
-					(xy -6.985 1.905) (xy -6.35 1.905) (xy -6.35 3.175) (xy -5.715 3.175) (xy -5.715 1.905) (xy -5.08 1.905)
-					(xy -5.08 3.175) (xy -4.445 3.175) (xy -4.445 1.905)
+					(xy -4.445 1.905) (xy -3.81 1.905) (xy -3.81 3.175) (xy -3.175 3.175) (xy -3.175 1.905) (xy -2.54 1.905)
+					(xy -2.54 3.175) (xy -1.905 3.175) (xy -1.905 1.905)
 				)
 				(stroke
 					(width 0)
@@ -6078,7 +5868,7 @@
 		)
 		(symbol "OCXO-14_1_1"
 			(pin input line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "Vcontrol"
 					(effects
@@ -6132,7 +5922,7 @@
 				)
 			)
 			(pin output line
-				(at 7.62 0 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "OUT"
 					(effects
@@ -6192,15 +5982,6 @@
 			)
 		)
 		(property "Description" "100MHz Sinewave output OCXO, low phase-noise, high stability, Connor-Winfield OH300"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "OCXO"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6409,9 +6190,6 @@
 		)
 	)
 	(symbol "SG-210SED"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6460,7 +6238,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Clock"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6580,9 +6358,6 @@
 		)
 	)
 	(symbol "SG-210STF"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6631,7 +6406,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Clock"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6799,7 +6574,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Clock"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6919,9 +6694,6 @@
 		)
 	)
 	(symbol "SG-5032CAN"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6970,7 +6742,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7090,9 +6862,6 @@
 		)
 	)
 	(symbol "SG-7050CAN"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7141,7 +6910,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7261,9 +7030,6 @@
 		)
 	)
 	(symbol "SG-8002CA"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7312,7 +7078,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7432,9 +7198,6 @@
 		)
 	)
 	(symbol "SG-8002CE"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7483,7 +7246,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7603,9 +7366,6 @@
 		)
 	)
 	(symbol "SG-8002DB"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7654,7 +7414,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7774,9 +7534,6 @@
 		)
 	)
 	(symbol "SG-8002DC"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7825,7 +7582,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7945,9 +7702,6 @@
 		)
 	)
 	(symbol "SG-8002JA"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7996,7 +7750,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8116,9 +7870,6 @@
 		)
 	)
 	(symbol "SG-8002JC"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -8167,7 +7918,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8287,9 +8038,6 @@
 		)
 	)
 	(symbol "SG-8002LB"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -8338,7 +8086,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8498,15 +8246,6 @@
 			)
 		)
 		(property "Description" "Dual frequency crystal oscillator (XO) 100 kHz to 250 MHz, Single-ended CMOS output"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Dual frequency crystal oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8710,15 +8449,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Dual frequency crystal oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*SMD*Silicon*Labs*LGA*2.5x3.2mm*P1.25mm*"
 			(at 0 0 0)
 			(effects
@@ -8912,7 +8642,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "CMOS Synth Oscillator I2C"
+		(property "ki_keywords" "Synth Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9369,7 +9099,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "CMOS Synth Oscillator I2C"
+		(property "ki_keywords" "Synth Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9630,7 +9360,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "CMOS Synth Oscillator I2C VCXO"
+		(property "ki_keywords" "Synth Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10087,7 +9817,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "CMOS Synth Oscillator I2C"
+		(property "ki_keywords" "Synth Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10498,9 +10228,6 @@
 		)
 	)
 	(symbol "Si570"
-		(pin_names
-			(offset 1.016)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -10547,7 +10274,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "10 MHZ TO 1.4 GHZ I2C PROGRAMMABLE XO/VCXO"
+		(property "ki_keywords" "XO/VCXO"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10739,9 +10466,6 @@
 		)
 	)
 	(symbol "Si571"
-		(pin_names
-			(offset 1.016)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -10780,15 +10504,6 @@
 			)
 		)
 		(property "Description" "10 MHZ TO 1.4 GHZ I2C PROGRAMMABLE XO/VCXO"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "10 MHZ TO 1.4 GHZ I2C PROGRAMMABLE XO/VCXO"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11524,7 +11239,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "LVDS LVPECL HCSL differential MEMS oscillatior"
+		(property "ki_keywords" "LVDS LVPECL HCSL MEMS oscillatior"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11726,7 +11441,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "LVDS LVPECL HCSL differential MEMS oscillatior"
+		(property "ki_keywords" "LVDS LVPECL HCSL MEMS oscillatior"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11922,15 +11637,6 @@
 			)
 		)
 		(property "Description" "Temperature compensated crystal oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Temperature compensated crystal oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12431,7 +12137,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Clock"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12551,9 +12257,6 @@
 		)
 	)
 	(symbol "TXC-7C"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -12594,15 +12297,6 @@
 			)
 		)
 		(property "Description" "CMOS SMD Crystal Clock Oscillator, TXC"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "CMOS SMD Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12722,14 +12416,11 @@
 		)
 	)
 	(symbol "VC-81"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "Y"
-			(at -5.08 6.35 0)
+			(at -7.62 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12738,7 +12429,7 @@
 			)
 		)
 		(property "Value" "VC-81"
-			(at 1.27 -6.35 0)
+			(at 3.81 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12773,15 +12464,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*DIP*8*"
 			(at 0 0 0)
 			(effects
@@ -12793,8 +12475,8 @@
 		)
 		(symbol "VC-81_0_1"
 			(rectangle
-				(start -10.16 5.08)
-				(end 5.08 -5.08)
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -12805,8 +12487,8 @@
 			)
 			(polyline
 				(pts
-					(xy -6.985 1.905) (xy -6.35 1.905) (xy -6.35 3.175) (xy -5.715 3.175) (xy -5.715 1.905) (xy -5.08 1.905)
-					(xy -5.08 3.175) (xy -4.445 3.175) (xy -4.445 1.905)
+					(xy -4.445 1.905) (xy -3.81 1.905) (xy -3.81 3.175) (xy -3.175 3.175) (xy -3.175 1.905) (xy -2.54 1.905)
+					(xy -2.54 3.175) (xy -1.905 3.175) (xy -1.905 1.905)
 				)
 				(stroke
 					(width 0)
@@ -12819,7 +12501,7 @@
 		)
 		(symbol "VC-81_1_1"
 			(pin input line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "Vcontrol"
 					(effects
@@ -12855,7 +12537,7 @@
 				)
 			)
 			(pin output line
-				(at 7.62 0 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "OUT"
 					(effects
@@ -12893,9 +12575,6 @@
 		)
 	)
 	(symbol "XO32"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -12944,7 +12623,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13064,9 +12743,6 @@
 		)
 	)
 	(symbol "XO53"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -13115,7 +12791,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13235,9 +12911,6 @@
 		)
 	)
 	(symbol "XO91"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -13286,7 +12959,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14260,15 +13933,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*DIP*14*"
 			(at 0 0 0)
 			(effects
@@ -14326,15 +13990,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*DIP*14*"
 			(at 0 0 0)
 			(effects
@@ -14384,15 +14039,6 @@
 			)
 		)
 		(property "Description" "Voltage-Controlled Crystal Clock Oscillator, DIP14-style metal package"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14655,15 +14301,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "oscillator fixed frequency divider silicon"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "TSOT?23?5*"
 			(at 0 0 0)
 			(effects
@@ -14720,15 +14357,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "oscillator fixed frequency divider silicon"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "TSOT?23?5*"
 			(at 0 0 0)
 			(effects
@@ -14777,15 +14405,6 @@
 			)
 		)
 		(property "Description" "2.7-5.5V 96MHz Precision Fixed Frequency Silicon Oscillator, TSOT-23-5"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "oscillator fixed frequency divider silicon"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14851,7 +14470,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Silicon Clock Oscillator 1MHz 1000kHz"
+		(property "ki_keywords" "1000kHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14917,7 +14536,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Silicon Clock Oscillator 1,84MHz 1840kHz"
+		(property "ki_keywords" "1840kHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14983,7 +14602,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Silicon Clock Oscillator 3.58MHz 3580kHz"
+		(property "ki_keywords" "3580kHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15049,7 +14668,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Silicon Clock Oscillator 3.69MHz 3690kHz"
+		(property "ki_keywords" "3690kHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15115,7 +14734,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Silicon Clock Oscillator 4MHz 4000kHz"
+		(property "ki_keywords" "4000kHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15181,7 +14800,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Silicon Clock Oscillator 4.19MHz 4190kHz"
+		(property "ki_keywords" "4190kHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15247,7 +14866,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Clock"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15313,7 +14932,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Clock"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15379,7 +14998,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Clock"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15445,7 +15064,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Clock"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15511,7 +15130,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Clock "
 			(at 0 0 0)
 			(effects
 				(font
@@ -15577,7 +15196,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15643,7 +15262,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15709,7 +15328,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15775,7 +15394,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15841,7 +15460,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
+		(property "ki_keywords" "Crystal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16673,7 +16292,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "LVDS LVPECL HCSL differential MEMS oscillatior"
+		(property "ki_keywords" "LVDS LVPECL HCSL MEMS oscillatior"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16737,7 +16356,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "LVDS LVPECL HCSL differential MEMS oscillatior"
+		(property "ki_keywords" "LVDS LVPECL HCSL MEMS oscillatior"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16801,7 +16420,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "LVDS LVPECL HCSL differential MEMS oscillatior"
+		(property "ki_keywords" "LVDS LVPECL HCSL MEMS oscillatior"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16865,7 +16484,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "LVDS LVPECL HCSL differential MEMS oscillatior"
+		(property "ki_keywords" "LVDS LVPECL HCSL MEMS oscillatior"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16931,15 +16550,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*DIP*14*"
 			(at 0 0 0)
 			(effects
@@ -16989,15 +16599,6 @@
 			)
 		)
 		(property "Description" "Crystal Clock Oscillator, DIP8-style metal package"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17063,15 +16664,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*DIP*14*"
 			(at 0 0 0)
 			(effects
@@ -17129,15 +16721,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_fp_filters" "Oscillator*DIP*8*"
 			(at 0 0 0)
 			(effects
@@ -17187,15 +16770,6 @@
 			)
 		)
 		(property "Description" "Voltage-Controlled Crystal Clock Oscillator, DIP14-style metal package"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Crystal Clock Oscillator"
 			(at 0 0 0)
 			(effects
 				(font
