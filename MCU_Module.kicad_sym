@@ -42041,7 +42041,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Common"
+		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
 			(at 0 -49.53 0)
 			(effects
 				(font
@@ -42059,7 +42059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash"
+		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
 			(at 0 -54.61 0)
 			(effects
 				(font
@@ -42068,7 +42068,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico microcontroller module RP2040 M0+ usb"
+		(property "ki_keywords" "RP2040 M0+ RP2350A M33 RISC-V Hazard3 usb"
 			(at 0 0 0)
 			(effects
 				(font
@@ -42077,7 +42077,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "RaspberryPi?Pico?Common* RaspberryPi?Pico?Original*"
+		(property "ki_fp_filters" "RaspberryPi?Pico?Common* RaspberryPi?Pico?SMD*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -42913,7 +42913,7 @@
 						)
 					)
 				)
-				(alternate "VBUS_HOST" power_in line)
+				(alternate "VBUS_IN" power_in line)
 			)
 			(pin bidirectional line
 				(at -22.86 15.24 0)
@@ -43052,7 +43052,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Original_SMD_HandSolder"
+		(property "Footprint" "Module:RaspberryPi_Pico_SMD_HandSolder"
 			(at 0 -49.53 0)
 			(effects
 				(font
@@ -43070,7 +43070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive microcontroller module (with debug pins) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash"
+		(property "Description" "Versatile and inexpensive microcontroller module (with debug pins) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
 			(at 0 -54.61 0)
 			(effects
 				(font
@@ -43079,7 +43079,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico microcontroller module RP2040 M0+ usb swd debug"
+		(property "ki_keywords" "RP2040 M0+ RP2350A M33 RISC-V Hazard3 usb swd"
 			(at 0 0 0)
 			(effects
 				(font
@@ -43088,7 +43088,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "RaspberryPi?Pico?Original?SMD*"
+		(property "ki_fp_filters" "RaspberryPi?Pico?SMD*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -43924,7 +43924,7 @@
 						)
 					)
 				)
-				(alternate "VBUS_HOST" power_in line)
+				(alternate "VBUS_IN" power_in line)
 			)
 			(pin bidirectional line
 				(at -22.86 15.24 0)
@@ -44036,7 +44036,7 @@
 				(alternate "UART1_CTS" input line)
 				(alternate "USB_OVCUR_DET" input line)
 			)
-			(pin input clock
+			(pin input line
 				(at -22.86 30.48 0)
 				(length 3.81)
 				(name "SWCLK"
@@ -44092,6 +44092,141 @@
 			)
 		)
 	)
+	(symbol "RaspberryPi_Pico_InternalPullUp-3V3_EN"
+		(pin_numbers hide)
+		(pin_names hide)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "#INT"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "InternalPullUp_3V3_EN"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Symbol for the internal pull-up resistor on the Raspberry Pi Pico 3V3_EN pin, to make ERC happy when connecting to open collectors"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "pull up error rule rules custom"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "RaspberryPi_Pico_InternalPullUp-3V3_EN_0_1"
+			(polyline
+				(pts
+					(xy 8.89 -2.54) (xy 12.065 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 5.715 -1.905)
+				(end 8.89 -3.175)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "RaspberryPi_Pico_InternalPullUp-3V3_EN_1_1"
+			(polyline
+				(pts
+					(xy 5.715 -2.54) (xy 5.08 -2.54) (xy 3.81 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "100k"
+				(at 7.3025 -2.54 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(text "VSYS"
+				(at 12.065 -1.905 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify right)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 3.81)
+				(name "INTERNAL_PULL_UP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "RaspberryPi_Pico_MultiPart-Module"
 		(pin_names
 			(offset 0.762)
@@ -44119,7 +44254,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Original_Virtual"
+		(property "Footprint" "Module:RaspberryPi_Pico_THT_Virtual"
 			(at 0 -49.53 0)
 			(effects
 				(font
@@ -44137,7 +44272,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash"
+		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
 			(at 0 -54.61 0)
 			(effects
 				(font
@@ -44146,7 +44281,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico microcontroller module RP2040 M0+ usb virtual"
+		(property "ki_keywords" "RP2040 M0+ RP2350A M33 RISC-V Hazard3 usb virtual custom"
 			(at 0 0 0)
 			(effects
 				(font
@@ -44155,7 +44290,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "RaspberryPi?Pico?Original?Virtual*"
+		(property "ki_fp_filters" "RaspberryPi?Pico?THT?Virtual*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -44315,7 +44450,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico connector socket"
+		(property "ki_keywords" "connector socket virtual custom"
 			(at 0 0 0)
 			(effects
 				(font
@@ -44891,7 +45026,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico connector socket"
+		(property "ki_keywords" "connector socket virtual custom"
 			(at 0 0 0)
 			(effects
 				(font
@@ -45238,7 +45373,7 @@
 						)
 					)
 				)
-				(alternate "VBUS_HOST" power_in line)
+				(alternate "VBUS_IN" power_in line)
 			)
 			(pin passive line
 				(at 0 -38.1 90)
@@ -45450,7 +45585,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico connector socket"
+		(property "ki_keywords" "connector socket debug virtual custom"
 			(at 0 0 0)
 			(effects
 				(font
@@ -45541,7 +45676,7 @@
 					(type none)
 				)
 			)
-			(pin input clock
+			(pin input line
 				(at -22.86 30.48 0)
 				(length 3.81)
 				(name "SWCLK"
@@ -45622,7 +45757,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Original_SMD"
+		(property "Footprint" "Module:RaspberryPi_Pico_SMD"
 			(at 0 -49.53 0)
 			(effects
 				(font
@@ -45640,7 +45775,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive microcontroller module (with full pinout for test point and debug connections) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash"
+		(property "Description" "Versatile and inexpensive microcontroller module (with full pinout for test point and debug connections) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
 			(at 0 -54.61 0)
 			(effects
 				(font
@@ -45649,7 +45784,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico microcontroller module RP2040 M0+ usb swd debug"
+		(property "ki_keywords" "RP2040 M0+ RP2350A M33 RISC-V Hazard3 usb swd"
 			(at 0 0 0)
 			(effects
 				(font
@@ -45658,7 +45793,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "RaspberryPi?Pico?Original?SMD RaspberryPi?Pico?Original?SMD?MoutingHoles RaspberryPi?Pico?Original?SMD?MoutingHoles?HandSolder?Castellated"
+		(property "ki_fp_filters" "RaspberryPi?Pico?SMD RaspberryPi?Pico?SMD*Castellated"
 			(at 0 0 0)
 			(effects
 				(font
@@ -46494,7 +46629,7 @@
 						)
 					)
 				)
-				(alternate "VBUS_HOST" power_in line)
+				(alternate "VBUS_IN" power_in line)
 			)
 			(pin bidirectional line
 				(at -22.86 15.24 0)
@@ -46606,7 +46741,7 @@
 				(alternate "UART1_CTS" input line)
 				(alternate "USB_OVCUR_DET" input line)
 			)
-			(pin input clock
+			(pin input line
 				(at -22.86 30.48 0)
 				(length 3.81)
 				(name "SWCLK"
@@ -46677,7 +46812,7 @@
 						)
 					)
 				)
-				(alternate "USB_HOST_GND" power_in line)
+				(alternate "USB_GND_IN" power_in line)
 			)
 			(pin bidirectional line
 				(at 22.86 27.94 180)
@@ -46793,7 +46928,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Common"
+		(property "Footprint" "Module:RaspberryPi_Pico_W_SMD_HandSolder"
 			(at 0 -49.53 0)
 			(effects
 				(font
@@ -46811,7 +46946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive wireless microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN"
+		(property "Description" "Versatile and inexpensive wireless microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN; also supports Raspberry Pi Pico 2 W"
 			(at 0 -54.61 0)
 			(effects
 				(font
@@ -46820,7 +46955,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico microcontroller module RP2040 M0+ usb CYW43439 wireless wifi bluetooth"
+		(property "ki_keywords" "RP2040 M0+ RP2350A M33 RISC-V Hazard3 usb CYW43439 wifi bluetooth"
 			(at 0 0 0)
 			(effects
 				(font
@@ -46829,7 +46964,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "RaspberryPi?Pico?Common* RaspberryPi?Pico?W*"
+		(property "ki_fp_filters" "RaspberryPi?Pico?Common* RaspberryPi?Pico?W?SMD*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -46859,7 +46994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_W_SMD"
+		(property "Footprint" "Module:RaspberryPi_Pico_W_SMD_HandSolder"
 			(at 0 -49.53 0)
 			(effects
 				(font
@@ -46877,7 +47012,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive wireless microcontroller module (with debug pins) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN"
+		(property "Description" "Versatile and inexpensive wireless microcontroller module (with debug pins) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN; also supports Raspberry Pi Pico 2 W"
 			(at 0 -54.61 0)
 			(effects
 				(font
@@ -46886,7 +47021,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico microcontroller module RP2040 M0+ usb swd debug CYW43439 wireless wifi bluetooth"
+		(property "ki_keywords" "RP2040 M0+ RP2350A M33 RISC-V Hazard3 usb swd CYW43439 wifi bluetooth"
 			(at 0 0 0)
 			(effects
 				(font
@@ -46927,7 +47062,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_W_Virtual"
+		(property "Footprint" "Module:RaspberryPi_Pico_W_THT_Virtual"
 			(at 0 -49.53 0)
 			(effects
 				(font
@@ -46945,7 +47080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive wireless microcontroller module (virtual representation) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN"
+		(property "Description" "Versatile and inexpensive wireless microcontroller module (virtual representation) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN; also supports Raspberry Pi Pico 2 W"
 			(at 0 -54.61 0)
 			(effects
 				(font
@@ -46954,7 +47089,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico microcontroller module RP2040 M0+ usb CYW43439 wireless wifi bluetooth virtual"
+		(property "ki_keywords" "RP2040 M0+ RP2350A M33 RISC-V Hazard3 usb CYW43439 wifi bluetooth virtual custom"
 			(at 0 0 0)
 			(effects
 				(font
@@ -46963,7 +47098,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "RaspberryPi?Pico?W?Virtual*"
+		(property "ki_fp_filters" "RaspberryPi?Pico?W?THT?Virtual*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -47011,7 +47146,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive wireless microcontroller module (with full pinout for test point and debug connections) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN"
+		(property "Description" "Versatile and inexpensive wireless microcontroller module (with full pinout for test point and debug connections) powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN; also supports Raspberry Pi Pico 2 W"
 			(at 0 -54.61 0)
 			(effects
 				(font
@@ -47020,7 +47155,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Raspberry Pi Pico microcontroller module RP2040 M0+ usb swd debug CYW43439 wireless wifi bluetooth"
+		(property "ki_keywords" "RP2040 M0+ RP2350A M33 RISC-V Hazard3 usb swd CYW43439 wifi bluetooth"
 			(at 0 0 0)
 			(effects
 				(font
@@ -47029,7 +47164,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "RaspberryPi?Pico?W?SMD RaspberryPi?Pico?W?SMD?MountingHoles RaspberryPi?Pico?W?SMD?MountingHoles?HandSolder?Castellated"
+		(property "ki_fp_filters" "RaspberryPi?Pico?W?SMD RaspberryPi?Pico?W?SMD*Castellated"
 			(at 0 0 0)
 			(effects
 				(font
