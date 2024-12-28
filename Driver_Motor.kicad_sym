@@ -12197,20 +12197,20 @@
 			)
 		)
 	)
-	(symbol "EMC2305"
+	(symbol "EMC2305-x-AP"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -9.652 16.256 0)
+			(at -9.652 16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "EMC2305"
-			(at 5.842 16.256 0)
+		(property "Value" "EMC2305-x-AP"
+			(at 8.382 16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12218,7 +12218,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at -1.016 27.178 0)
+			(at -1.016 24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12235,8 +12235,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Multiple RPM-Based PWM Fan Controller"
-			(at -1.27 32.766 0)
+		(property "Description" "Multiple RPM-Based PWM Fan Controller 3.3V QFN-16"
+			(at -1.27 30.226 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12244,7 +12244,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "DRIVER MOTOR"
+		(property "ki_keywords" "DRIVER MOTOR SMBus I2C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12253,7 +12253,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "QFN*16*1EP*4x4mm*P0.65mm*"
+		(property "ki_fp_filters" "*QFN*1EP*4x4mm*P0.65mm*EP2.1x2.1mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12262,10 +12262,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "EMC2305_1_1"
+		(symbol "EMC2305-x-AP_1_1"
 			(rectangle
 				(start -10.16 15.24)
-				(end 10.16 -15.24)
+				(end 10.16 -17.78)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -12275,7 +12275,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 12.7 0)
+				(at -12.7 10.16 0)
 				(length 2.54)
 				(name "SMDATA"
 					(effects
@@ -12293,7 +12293,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(name "TACH3"
 					(effects
@@ -12311,7 +12311,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 -10.16 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "CLK"
 					(effects
@@ -12328,8 +12328,8 @@
 					)
 				)
 			)
-			(pin output output_low
-				(at -12.7 7.62 0)
+			(pin open_collector output_low
+				(at -12.7 -6.35 0)
 				(length 2.54)
 				(name "~{ALERT}"
 					(effects
@@ -12347,7 +12347,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -2.54 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
 				(name "PWM4"
 					(effects
@@ -12365,7 +12365,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -5.08 180)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(name "TACH4"
 					(effects
@@ -12383,7 +12383,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -7.62 180)
+				(at 12.7 -10.16 180)
 				(length 2.54)
 				(name "PWM5"
 					(effects
@@ -12401,7 +12401,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -10.16 180)
+				(at 12.7 -12.7 180)
 				(length 2.54)
 				(name "TACH5"
 					(effects
@@ -12419,7 +12419,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -17.78 90)
+				(at 0 -20.32 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -12437,7 +12437,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 10.16 0)
+				(at -12.7 7.62 0)
 				(length 2.54)
 				(name "SMCLK"
 					(effects
@@ -12473,7 +12473,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -12.7 2.54 0)
 				(length 2.54)
 				(name "ADDR_SEL"
 					(effects
@@ -12491,7 +12491,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 12.7 180)
+				(at 12.7 10.16 180)
 				(length 2.54)
 				(name "PWM1"
 					(effects
@@ -12509,7 +12509,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 10.16 180)
+				(at 12.7 7.62 180)
 				(length 2.54)
 				(name "TACH1"
 					(effects
@@ -12527,7 +12527,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 7.62 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
 				(name "PWM2"
 					(effects
@@ -12545,7 +12545,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 5.08 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(name "TACH2"
 					(effects
@@ -12563,7 +12563,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 2.54 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "PWM3"
 					(effects
