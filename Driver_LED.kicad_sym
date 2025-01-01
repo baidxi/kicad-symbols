@@ -30290,12 +30290,12 @@
 			)
 		)
 	)
-	(symbol "STP16CPC26"
+	(symbol "STP16CPC26T"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 26.67 0)
+			(at -7.62 28.956 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30303,8 +30303,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STP16CPC26"
-			(at 1.27 26.67 0)
+		(property "Value" "STP16CPC26T"
+			(at 0.762 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30312,7 +30312,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -30330,7 +30330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16-bit constant current LED sink driver"
+		(property "Description" "16-bit constant current LED sink driver, Output current: 5 mA to 90 mA, 20 V current generators rated voltage, 3 - 5.5 V power supply, TSSOP-24"
 			(at 0 0 0)
 			(effects
 				(font
@@ -30339,7 +30339,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Shift Register LED driver 16 bit"
+		(property "ki_keywords" "Shift Register "
 			(at 0 0 0)
 			(effects
 				(font
@@ -30348,7 +30348,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "QSOP*3.9x8.7mm*P0.635mm* SOIC*7.5x15.4mm*P1.27mm* TSSOP*4.4x7.8mm*P0.65mm*"
+		(property "ki_fp_filters" "TSSOP*4.4x7.8mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -30357,9 +30357,9 @@
 				(hide yes)
 			)
 		)
-		(symbol "STP16CPC26_0_1"
+		(symbol "STP16CPC26T_0_1"
 			(rectangle
-				(start -7.62 25.4)
+				(start -7.62 27.94)
 				(end 7.62 -25.4)
 				(stroke
 					(width 0.254)
@@ -30370,7 +30370,7 @@
 				)
 			)
 		)
-		(symbol "STP16CPC26_1_1"
+		(symbol "STP16CPC26T_1_1"
 			(pin power_in line
 				(at 0 -27.94 90)
 				(length 2.54)
@@ -30389,7 +30389,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 10.16 180)
 				(length 2.54)
 				(name "~{OUT5}"
@@ -30407,7 +30407,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "~{OUT6}"
@@ -30425,7 +30425,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "~{OUT7}"
@@ -30443,7 +30443,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "~{OUT8}"
@@ -30461,7 +30461,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "~{OUT9}"
@@ -30479,7 +30479,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "~{OUT10}"
@@ -30497,7 +30497,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "~{OUT11}"
@@ -30515,7 +30515,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "~{OUT12}"
@@ -30533,7 +30533,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -10.16 180)
 				(length 2.54)
 				(name "~{OUT13}"
@@ -30551,7 +30551,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -12.7 180)
 				(length 2.54)
 				(name "~{OUT14}"
@@ -30587,7 +30587,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -15.24 180)
 				(length 2.54)
 				(name "~{OUT15}"
@@ -30606,7 +30606,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -2.54 0)
+				(at -10.16 12.7 0)
 				(length 2.54)
 				(name "~{OE}"
 					(effects
@@ -30642,7 +30642,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 12.7 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "R-EXT"
 					(effects
@@ -30660,7 +30660,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
+				(at 0 30.48 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -30696,7 +30696,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 17.78 0)
+				(at -10.16 15.24 0)
 				(length 2.54)
 				(name "LE"
 					(effects
@@ -30713,7 +30713,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 22.86 180)
 				(length 2.54)
 				(name "~{OUT0}"
@@ -30731,7 +30731,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 20.32 180)
 				(length 2.54)
 				(name "~{OUT1}"
@@ -30749,7 +30749,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 17.78 180)
 				(length 2.54)
 				(name "~{OUT2}"
@@ -30767,7 +30767,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 15.24 180)
 				(length 2.54)
 				(name "~{OUT3}"
@@ -30785,7 +30785,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 12.7 180)
 				(length 2.54)
 				(name "~{OUT4}"
@@ -30805,12 +30805,12 @@
 			)
 		)
 	)
-	(symbol "STP16CPC26XTR"
+	(symbol "STP16CPC26X"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 26.67 0)
+			(at -7.874 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30818,8 +30818,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STP16CPC26XTR"
-			(at 1.27 26.67 0)
+		(property "Value" "STP16CPC26X"
+			(at 1.27 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30827,7 +30827,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-24-1EP_4.4x7.8mm_P0.65mm_EP3.4x7.8mm_Mask2.4x4.68mm"
+		(property "Footprint" "Package_SO:TSSOP-24-1EP_4.4x7.8mm_P0.65mm_EP3.2x5mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -30845,7 +30845,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16-bit constant current LED sink driver, HTSSOP-24"
+		(property "Description" "16-bit constant current LED sink driver, Output current: 5 mA to 90 mA, 20 V current generators rated voltage, 3 - 5.5 V power supply, HTSSOP-24"
 			(at 0 0 0)
 			(effects
 				(font
@@ -30854,7 +30854,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Shift Register LED driver 16 bit"
+		(property "ki_keywords" "Shift Register"
 			(at 0 0 0)
 			(effects
 				(font
@@ -30863,7 +30863,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "HTSSOP*1EP*4.4x7.8mm*P0.65mm*EP3.4x7.8mm*"
+		(property "ki_fp_filters" "TSSOP*1EP*4.4x7.8mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -30872,9 +30872,9 @@
 				(hide yes)
 			)
 		)
-		(symbol "STP16CPC26XTR_0_1"
+		(symbol "STP16CPC26X_0_1"
 			(rectangle
-				(start -7.62 25.4)
+				(start -7.62 27.94)
 				(end 7.62 -25.4)
 				(stroke
 					(width 0.254)
@@ -30885,7 +30885,7 @@
 				)
 			)
 		)
-		(symbol "STP16CPC26XTR_1_1"
+		(symbol "STP16CPC26X_1_1"
 			(pin power_in line
 				(at 0 -27.94 90)
 				(length 2.54)
@@ -30904,7 +30904,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 10.16 180)
 				(length 2.54)
 				(name "~{OUT5}"
@@ -30922,7 +30922,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "~{OUT6}"
@@ -30940,7 +30940,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "~{OUT7}"
@@ -30958,7 +30958,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "~{OUT8}"
@@ -30976,7 +30976,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "~{OUT9}"
@@ -30994,7 +30994,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "~{OUT10}"
@@ -31012,7 +31012,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "~{OUT11}"
@@ -31030,7 +31030,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "~{OUT12}"
@@ -31048,7 +31048,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -10.16 180)
 				(length 2.54)
 				(name "~{OUT13}"
@@ -31066,7 +31066,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -12.7 180)
 				(length 2.54)
 				(name "~{OUT14}"
@@ -31102,7 +31102,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 -15.24 180)
 				(length 2.54)
 				(name "~{OUT15}"
@@ -31121,7 +31121,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -2.54 0)
+				(at -10.16 12.7 0)
 				(length 2.54)
 				(name "~{OE}"
 					(effects
@@ -31157,7 +31157,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 12.7 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "R-EXT"
 					(effects
@@ -31175,7 +31175,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
+				(at 0 30.48 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -31229,7 +31229,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 17.78 0)
+				(at -10.16 15.24 0)
 				(length 2.54)
 				(name "LE"
 					(effects
@@ -31246,7 +31246,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 22.86 180)
 				(length 2.54)
 				(name "~{OUT0}"
@@ -31264,7 +31264,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 20.32 180)
 				(length 2.54)
 				(name "~{OUT1}"
@@ -31282,7 +31282,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 17.78 180)
 				(length 2.54)
 				(name "~{OUT2}"
@@ -31300,7 +31300,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 15.24 180)
 				(length 2.54)
 				(name "~{OUT3}"
@@ -31318,7 +31318,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 12.7 180)
 				(length 2.54)
 				(name "~{OUT4}"
@@ -42545,6 +42545,138 @@
 			)
 		)
 		(property "ki_fp_filters" "TSOT?23*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STP16CPC26M"
+		(extends "STP16CPC26T")
+		(property "Reference" "U"
+			(at -7.62 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STP16CPC26T"
+			(at 0.762 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/STP16CPC26.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "16-bit constant current LED sink driver, Output current: 5 mA to 90 mA, 20 V current generators rated voltage, 3 - 5.5 V power supply, SOIC-24"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Shift Register "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOIC*7.5x15.4mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "STP16CPC26P"
+		(extends "STP16CPC26T")
+		(property "Reference" "U"
+			(at -7.62 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STP16CPC26P"
+			(at 0.762 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:QSOP-24_3.9x8.7mm_P0.635mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/STP16CPC26.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "16-bit constant current LED sink driver, Output current: 5 mA to 90 mA, 20 V current generators rated voltage, 3 - 5.5 V power supply, QSOP-24"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Shift Register "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "QSOP*3.9x8.7mm*P0.635mm*"
 			(at 0 0 0)
 			(effects
 				(font
