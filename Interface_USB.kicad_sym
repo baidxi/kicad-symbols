@@ -33461,7 +33461,7 @@
 			)
 		)
 		(property "Value" "HUSB238A"
-			(at 0 0 0)
+			(at 0 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33562,10 +33562,10 @@
 				)
 				(alternate "SNK_ISET" input line)
 			)
-			(pin bidirectional line
+			(pin open_collector line
 				(at 15.24 -2.54 180)
 				(length 2.54)
-				(name "INT_N"
+				(name "~{INT_N}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33583,7 +33583,7 @@
 			(pin input line
 				(at -15.24 -10.16 0)
 				(length 2.54)
-				(name "~{EN}"
+				(name "~{EN_N}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33598,10 +33598,10 @@
 					)
 				)
 			)
-			(pin output line
+			(pin bidirectional line
 				(at 15.24 2.54 180)
 				(length 2.54)
-				(name "FAULT"
+				(name "FAULT/OUT2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33615,7 +33615,6 @@
 						)
 					)
 				)
-				(alternate "OUT2" output line)
 			)
 			(pin input line
 				(at -15.24 -12.7 0)
@@ -33635,7 +33634,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 15.24 12.7 180)
 				(length 2.54)
 				(name "GATE"
@@ -33761,10 +33760,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin output line
 				(at 15.24 0 180)
 				(length 2.54)
-				(name "DEBUG_N"
+				(name "~{DEBUG_N}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33779,10 +33778,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at 15.24 5.08 180)
 				(length 2.54)
-				(name "EN_HVDCP"
+				(name "EN_HVDCP/OUT1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33796,12 +33795,11 @@
 						)
 					)
 				)
-				(alternate "OUT1" output line)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at 15.24 -5.08 180)
 				(length 2.54)
-				(name "ADDR"
+				(name "ADDR/ORIENT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33815,7 +33813,6 @@
 						)
 					)
 				)
-				(alternate "ORIENT" output line)
 			)
 			(pin bidirectional line
 				(at -15.24 -5.08 0)
