@@ -856,7 +856,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Chip MCU based on the 8051 architecture, 8KB Flash, 1.25KiB SRAM, 4KB EEPROM, DFN-8"
+		(property "Description" "Single Chip MCU based on the 8051 architecture, 8KiB Flash, 1.25KiB SRAM, 4KiB EEPROM, 1.9..5.5V, 36 MHz, 6 GPIO, DFN-8"
 			(at 3.81 -33.528 0)
 			(effects
 				(font
@@ -897,10 +897,10 @@
 			)
 		)
 		(symbol "STC8G1K08A-36I-DFN8_1_0"
-			(pin power_in line
+			(pin free line
 				(at 2.54 -10.16 90)
 				(length 2.54)
-				(name "EP"
+				(name "EPAD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -940,7 +940,7 @@
 				(alternate "INT2" input line)
 				(alternate "MCLKO" output line)
 				(alternate "MOSI" bidirectional line)
-				(alternate "RxD" input line)
+				(alternate "RxD_{3}" input line)
 				(alternate "SCL_{2}" bidirectional line)
 				(alternate "T0" input line)
 				(alternate "~{RST}" input line)
@@ -988,7 +988,7 @@
 				(alternate "SDA_{2}" bidirectional line)
 				(alternate "SS" bidirectional line)
 				(alternate "T0CLKO" output line)
-				(alternate "T1" bidirectional line)
+				(alternate "T1" input line)
 				(alternate "TxD_{3}" output line)
 			)
 			(pin power_in line
@@ -1048,7 +1048,7 @@
 					)
 				)
 				(alternate "ADC1" input line)
-				(alternate "CCP0_{2]" input line)
+				(alternate "CCP0_{2]" bidirectional line)
 				(alternate "ECI_{3}" input line)
 				(alternate "TxD" output line)
 			)
@@ -1070,12 +1070,12 @@
 					)
 				)
 				(alternate "ADC2" input line)
-				(alternate "CCP0" input line)
-				(alternate "CCP0_{3}" input line)
-				(alternate "INT0" output line)
+				(alternate "CCP0" bidirectional line)
+				(alternate "CCP0_{3}" bidirectional line)
+				(alternate "INT0" input line)
 				(alternate "RxD_{2}" input line)
-				(alternate "SCL" input line)
-				(alternate "SCLK" input line)
+				(alternate "SCL" bidirectional line)
+				(alternate "SCLK" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 12.7 2.54 180)
@@ -1095,11 +1095,11 @@
 					)
 				)
 				(alternate "ADC3" input line)
-				(alternate "CCP1" input line)
-				(alternate "CCP1_{2}" input line)
-				(alternate "CCP1_{3}" input line)
+				(alternate "CCP1" bidirectional line)
+				(alternate "CCP1_{2}" bidirectional line)
+				(alternate "CCP1_{3}" bidirectional line)
 				(alternate "INT1" input line)
-				(alternate "MISO" input line)
+				(alternate "MISO" bidirectional line)
 				(alternate "SDA" bidirectional line)
 				(alternate "TxD_{2}" output line)
 			)
