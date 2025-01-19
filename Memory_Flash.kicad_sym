@@ -14291,7 +14291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "32Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"
+		(property "Description" "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14321,7 +14321,7 @@
 		(symbol "W25Q32JVSS_0_1"
 			(rectangle
 				(start -7.62 10.16)
-				(end 7.62 -10.16)
+				(end 10.16 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -14353,7 +14353,7 @@
 			(pin bidirectional line
 				(at -10.16 0 0)
 				(length 2.54)
-				(name "DO(IO1)"
+				(name "DO/IO_{1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14371,7 +14371,7 @@
 			(pin bidirectional line
 				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "IO2"
+				(name "~{WP}/IO_{2}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14407,7 +14407,7 @@
 			(pin bidirectional line
 				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "DI(IO0)"
+				(name "DI/IO_{0}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14443,7 +14443,7 @@
 			(pin bidirectional line
 				(at -10.16 -5.08 0)
 				(length 2.54)
-				(name "IO3"
+				(name "~{HOLD}/~{RESET}/IO_{3}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14516,7 +14516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "32Mb Serial Flash Memory, Standard/Dual/Quad SPI, DFN-8"
+		(property "Description" "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7V-3.6V, WSON-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14578,7 +14578,7 @@
 			(pin bidirectional line
 				(at -10.16 0 0)
 				(length 2.54)
-				(name "DO(IO1)"
+				(name "DO/IO_{1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14596,7 +14596,7 @@
 			(pin bidirectional line
 				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "~{WP}(IO2)"
+				(name "~{WP}/IO_{2}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14632,7 +14632,7 @@
 			(pin bidirectional line
 				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "DI(IO0)"
+				(name "DI/IO_{0}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14668,7 +14668,7 @@
 			(pin bidirectional line
 				(at -10.16 -5.08 0)
 				(length 2.54)
-				(name "~{HOLD}/~{RESET}(IO3)"
+				(name "~{HOLD}/~{RESET}/IO_{3}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14823,7 +14823,7 @@
 			(pin bidirectional line
 				(at -10.16 0 0)
 				(length 2.54)
-				(name "DO(IO1)"
+				(name "DO/IO_{1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14877,7 +14877,7 @@
 			(pin bidirectional line
 				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "DI(IO0)"
+				(name "DI/IO_{0}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14971,7 +14971,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 10.16 0)
+			(at -7.62 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14980,7 +14980,7 @@
 			)
 		)
 		(property "Value" "W25X40CLSN"
-			(at 2.54 10.16 0)
+			(at 2.54 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15006,7 +15006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4Mbit Serial Flash memory, dual I/O SPI, SOIC-8"
+		(property "Description" "4Mbit / 512KiB Serial Flash memory, Standard/Dual I/O SPI, 2.3-3.6V, SOIC-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15068,7 +15068,7 @@
 			(pin bidirectional line
 				(at -10.16 0 0)
 				(length 2.54)
-				(name "DO(IO1)"
+				(name "DO/IO_{1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15122,7 +15122,7 @@
 			(pin bidirectional line
 				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "DI(IO0)"
+				(name "DI/IO_{0}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15140,7 +15140,7 @@
 			(pin input line
 				(at -10.16 5.08 0)
 				(length 2.54)
-				(name "SCK"
+				(name "CLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -16232,7 +16232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"
+		(property "Description" "128Mbit / 16MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8"
 			(at 0 27.94 0)
 			(effects
 				(font
@@ -16296,7 +16296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"
+		(property "Description" "16Mbit / 2MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16327,7 +16327,7 @@
 	(symbol "W25X20CLSN"
 		(extends "W25X40CLSN")
 		(property "Reference" "U"
-			(at -7.62 10.16 0)
+			(at -7.62 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16336,7 +16336,7 @@
 			)
 		)
 		(property "Value" "W25X20CLSN"
-			(at 2.54 10.16 0)
+			(at 2.54 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16362,7 +16362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2Mbit Serial Flash memory, dual I/O SPI, SOIC-8"
+		(property "Description" "2Mbit / 256KiB Serial Flash memory, Standard/Dual I/O SPI, 2.3-3.6V, SOIC-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16393,7 +16393,7 @@
 	(symbol "W25X40CLSS"
 		(extends "W25X40CLSN")
 		(property "Reference" "U"
-			(at -7.62 10.16 0)
+			(at -7.62 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16402,7 +16402,7 @@
 			)
 		)
 		(property "Value" "W25X40CLSS"
-			(at 2.54 10.16 0)
+			(at 2.54 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16428,7 +16428,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4Mbit Serial Flash memory, dual I/O SPI, SOIC-8 208mil"
+		(property "Description" "4Mbit / 512KiB Serial Flash memory, Standard/Dual I/O SPI, 2.3-3.6V, SOIC-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16459,7 +16459,7 @@
 	(symbol "W25X40CLSV"
 		(extends "W25X40CLSN")
 		(property "Reference" "U"
-			(at -7.62 10.16 0)
+			(at -7.62 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16468,7 +16468,7 @@
 			)
 		)
 		(property "Value" "W25X40CLSV"
-			(at 2.54 10.16 0)
+			(at 2.54 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16494,7 +16494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4Mbit Serial Flash memory, dual I/O SPI, VSOP-8"
+		(property "Description" "4Mbit / 512KiB Serial Flash memory, Standard/Dual I/O SPI, 2.3-3.6V, VSOP-8"
 			(at 0 0 0)
 			(effects
 				(font
