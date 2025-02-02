@@ -11485,17 +11485,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 3.81 -21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.intersil.com/content/dam/Intersil/documents/icl7/icl7667.pdf"
-			(at 5.08 -7.62 0)
+			(at 0 -18.288 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11503,8 +11493,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual Power MOSFET Driver, DIP-8/SOIC-8"
-			(at 0 0 0)
+		(property "Datasheet" "https://www.renesas.com/en/document/dst/icl7667-datasheet"
+			(at 0 -14.224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11512,7 +11502,16 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "MOSFET driver array"
+		(property "Description" "Dual Power MOSFET Driver, V+ = 4.5..15V, V- = -15..0V, TTL/CMOS compatible inputs, DIP-8/SOIC-8"
+			(at 0 -16.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "clock-driver"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11565,7 +11564,7 @@
 			(pin input line
 				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "INA"
+				(name "IN_A"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11601,7 +11600,7 @@
 			(pin input line
 				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "INB"
+				(name "IN_B"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11619,7 +11618,7 @@
 			(pin output line
 				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "~{OUTB}"
+				(name "~{OUT_B}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11655,7 +11654,7 @@
 			(pin output line
 				(at 10.16 2.54 180)
 				(length 2.54)
-				(name "~{OUTA}"
+				(name "~{OUT_A}"
 					(effects
 						(font
 							(size 1.27 1.27)
