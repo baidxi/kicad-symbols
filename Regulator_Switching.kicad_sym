@@ -41450,7 +41450,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -9.652 31.75 0)
+			(at -9.144 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41458,15 +41458,15 @@
 			)
 		)
 		(property "Value" "LT8705AxFE"
-			(at 4.572 31.75 0)
+			(at 4.064 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-38-1EP_4.4x9.7mm_P0.5mm_EP2.74x4.75mm"
-			(at -0.762 -46.228 0)
+		(property "Footprint" "Package_SO:Linear_HTSSOP-31-38-1EP_4.4x9.7mm_P0.5mm_EP2.74x4.75mm_ThermalVias"
+			(at 0 -49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41475,7 +41475,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/8705af.pdf"
-			(at -0.762 -46.228 0)
+			(at 0 -44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41483,8 +41483,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2.8-80Vin, 1.3-80Vout, Synchronous 4-Switch Buck-boost DC/DC Controller, TSSOP-38, 100-400kHz"
-			(at -0.762 -46.228 0)
+		(property "Description" "Synchronous 4-Switch Buck-Boost DC/DC Controller, 2.8..80V VIN, 1.3..80V VOUT, 100-400kHz, HTSSOP-38"
+			(at 0 -46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41492,7 +41492,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Analog"
+		(property "ki_keywords" "Analog-Devices Linear-Technology soft-start"
 			(at 0 0 0)
 			(effects
 				(font
@@ -41501,7 +41501,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*TSSOP*1EP*4.4*9.*P0.5mm*EP2.74x4.75mm*"
+		(property "ki_fp_filters" "*HTSSOP*1EP*4.4*9.7*P0.5mm*EP2.74x4.75mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -41558,7 +41558,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin output line
 				(at 12.7 -25.4 180)
 				(length 2.54)
 				(name "VC"
@@ -41576,7 +41576,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -12.7 -22.86 0)
 				(length 2.54)
 				(name "SS"
@@ -41738,7 +41738,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "BOOST2"
@@ -41774,7 +41774,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin power_out line
 				(at -12.7 10.16 0)
 				(length 2.54)
 				(name "SW2"
@@ -41792,25 +41792,7 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 10.16 10.16 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
+			(pin power_out line
 				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "SW1"
@@ -41821,24 +41803,6 @@
 					)
 				)
 				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 7.62 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "25"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -41864,25 +41828,7 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 10.16 5.08 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "27"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
+			(pin passive line
 				(at -12.7 -5.08 0)
 				(length 2.54)
 				(name "BOOST1"
@@ -41893,24 +41839,6 @@
 					)
 				)
 				(number "28"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 2.54 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "29"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -41954,24 +41882,6 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 7.62 -33.02 90)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "31"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at -12.7 17.78 0)
 				(length 2.54)
@@ -41990,24 +41900,6 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 5.08 -33.02 90)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "33"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at -12.7 15.24 0)
 				(length 2.54)
@@ -42019,24 +41911,6 @@
 					)
 				)
 				(number "34"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 2.54 -33.02 90)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "35"
 					(effects
 						(font
 							(size 1.27 1.27)
