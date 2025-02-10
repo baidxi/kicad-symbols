@@ -33453,7 +33453,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -11.43 16.51 0)
+			(at -11.43 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33461,7 +33461,7 @@
 			)
 		)
 		(property "Value" "HUSB238A"
-			(at 0 7.62 0)
+			(at 12.7 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33469,7 +33469,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm"
-			(at 0 0 0)
+			(at 0 -28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33478,7 +33478,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407031138_Hynetek-HUSB238A-BB001-QN16R_C24833806.pdf"
-			(at 0 0 0)
+			(at 0 -33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33487,7 +33487,7 @@
 			)
 		)
 		(property "Description" "USB-PD Sink IC Port Controller, QFN-16"
-			(at 0 0 0)
+			(at 0 -30.988 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33504,7 +33504,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "QFN*16*1EP*3x3mm*P0.5mm*EP1.7x1.7mm*"
+		(property "ki_fp_filters" "QFN*1EP*3x3mm*P0.5mm*EP1.7x1.7mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -33515,8 +33515,8 @@
 		)
 		(symbol "HUSB238A_1_1"
 			(rectangle
-				(start -12.7 15.24)
-				(end 12.7 -15.24)
+				(start -12.7 20.32)
+				(end 12.7 -17.78)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -33526,7 +33526,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 2.54 0)
+				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "D+"
 					(effects
@@ -33544,9 +33544,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 -2.54 0)
+				(at 15.24 5.08 180)
 				(length 2.54)
-				(name "SCL"
+				(name "SCL/SNK_ISET"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33560,10 +33560,11 @@
 						)
 					)
 				)
-				(alternate "SNK_ISET" input line)
+				(alternate "SCL" input line)
+				(alternate "SNK_ISET" output line)
 			)
 			(pin open_collector line
-				(at 15.24 -2.54 180)
+				(at 15.24 10.16 180)
 				(length 2.54)
 				(name "~{INT_N}"
 					(effects
@@ -33581,7 +33582,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -10.16 0)
+				(at -15.24 -12.7 0)
 				(length 2.54)
 				(name "~{EN_N}"
 					(effects
@@ -33598,8 +33599,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 15.24 2.54 180)
+			(pin output line
+				(at 15.24 -7.62 180)
 				(length 2.54)
 				(name "FAULT/OUT2"
 					(effects
@@ -33615,9 +33616,11 @@
 						)
 					)
 				)
+				(alternate "FAULT" output line)
+				(alternate "OUT2" output line)
 			)
 			(pin input line
-				(at -15.24 -12.7 0)
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "FLGIN"
 					(effects
@@ -33635,7 +33638,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 15.24 12.7 180)
+				(at 15.24 15.24 180)
 				(length 2.54)
 				(name "GATE"
 					(effects
@@ -33653,7 +33656,7 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 17.78 270)
+				(at -2.54 22.86 270)
 				(length 2.54)
 				(name "VBUS"
 					(effects
@@ -33671,7 +33674,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -17.78 90)
+				(at 0 -20.32 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -33689,7 +33692,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 5.08 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "D-"
 					(effects
@@ -33707,7 +33710,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 12.7 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "CC1"
 					(effects
@@ -33725,7 +33728,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 10.16 0)
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "CC2"
 					(effects
@@ -33743,7 +33746,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 17.78 270)
+				(at 2.54 22.86 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -33761,7 +33764,7 @@
 				)
 			)
 			(pin output line
-				(at 15.24 0 180)
+				(at 15.24 -12.7 180)
 				(length 2.54)
 				(name "~{DEBUG_N}"
 					(effects
@@ -33779,7 +33782,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 5.08 180)
+				(at 15.24 -5.08 180)
 				(length 2.54)
 				(name "EN_HVDCP/OUT1"
 					(effects
@@ -33795,9 +33798,11 @@
 						)
 					)
 				)
+				(alternate "EN_HVDCP" input line)
+				(alternate "OUT1" output line)
 			)
 			(pin bidirectional line
-				(at 15.24 -5.08 180)
+				(at 15.24 0 180)
 				(length 2.54)
 				(name "ADDR/ORIENT"
 					(effects
@@ -33815,9 +33820,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 -5.08 0)
+				(at 15.24 7.62 180)
 				(length 2.54)
-				(name "SDA"
+				(name "SDA/SNK_VSET"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33831,7 +33836,8 @@
 						)
 					)
 				)
-				(alternate "SNK_VSET" input line)
+				(alternate "SDA" bidirectional line)
+				(alternate "SNK_VSET" output line)
 			)
 		)
 	)
