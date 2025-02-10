@@ -33620,7 +33620,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407031138_Hynetek-HUSB238A-BB001-QN16R_C24833806.pdf"
+		(property "Datasheet" "https://www.hynetek.com/uploadfiles/site/219/news/24322c00-2276-4d74-98db-c74432318210.pdf"
 			(at 0 -33.274 0)
 			(effects
 				(font
@@ -33629,7 +33629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB-PD Sink IC Port Controller, QFN-16"
+		(property "Description" "USB-PD Sink IC Port Controller, VBUS = 3..48V, USB Type-C rev. 2.1, USB-PD rev. 3.1, BC1.2, QC2.0, QFN-16"
 			(at 0 -30.988 0)
 			(effects
 				(font
@@ -33638,7 +33638,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "USB-C USB-PD Sink"
+		(property "ki_keywords" "USB-C I2C USB-Power-Delivery Extended-Power-Range Quick-Charge"
 			(at 0 0 0)
 			(effects
 				(font
@@ -33647,7 +33647,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "QFN*1EP*3x3mm*P0.5mm*EP1.7x1.7mm*"
+		(property "ki_fp_filters" "*QFN*1EP*3x3mm*P0.5mm*EP1.7x1.7mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -33669,7 +33669,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 15.24 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "D+"
 					(effects
@@ -33686,7 +33686,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at 15.24 5.08 180)
 				(length 2.54)
 				(name "SCL/SNK_ISET"
@@ -33704,12 +33704,12 @@
 					)
 				)
 				(alternate "SCL" input line)
-				(alternate "SNK_ISET" output line)
+				(alternate "SNK_ISET" input line)
 			)
 			(pin open_collector line
 				(at 15.24 10.16 180)
 				(length 2.54)
-				(name "~{INT_N}"
+				(name "~{INT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33727,7 +33727,7 @@
 			(pin input line
 				(at -15.24 -12.7 0)
 				(length 2.54)
-				(name "~{EN_N}"
+				(name "~{EN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33835,7 +33835,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 12.7 0)
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "D-"
 					(effects
@@ -33853,7 +33853,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 7.62 0)
+				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "CC1"
 					(effects
@@ -33871,7 +33871,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 5.08 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "CC2"
 					(effects
@@ -33909,7 +33909,7 @@
 			(pin output line
 				(at 15.24 -12.7 180)
 				(length 2.54)
-				(name "~{DEBUG_N}"
+				(name "~{DEBUG}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33941,8 +33941,6 @@
 						)
 					)
 				)
-				(alternate "EN_HVDCP" input line)
-				(alternate "OUT1" output line)
 			)
 			(pin bidirectional line
 				(at 15.24 0 180)
@@ -33980,7 +33978,7 @@
 					)
 				)
 				(alternate "SDA" bidirectional line)
-				(alternate "SNK_VSET" output line)
+				(alternate "SNK_VSET" input line)
 			)
 		)
 	)
