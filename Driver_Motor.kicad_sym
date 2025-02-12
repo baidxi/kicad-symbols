@@ -17658,7 +17658,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -0.508 3.048 0)
+			(at -9.144 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17666,15 +17666,15 @@
 			)
 		)
 		(property "Value" "MAX22208AUU"
-			(at -0.254 -5.842 0)
+			(at 10.16 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-38-1EP_6.1x12.5mm_P0.65mm_EP5.2x12.5mm_Mask3.39x6.35mm_ThermalVias"
-			(at 4.826 -31.75 0)
+		(property "Footprint" ""
+			(at 0 -38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17683,7 +17683,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/max22208.pdf"
-			(at 10.668 -29.718 0)
+			(at 0 -36.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17691,8 +17691,26 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "65V, 3.8A Quad Half H-Bridge Drivers with Integrated Current Sense"
-			(at 0.254 -27.686 0)
+		(property "Description" "65V / 3.8A Quad Half H-Bridge Drivers with Integrated Current Sense, HTSSOP-38"
+			(at 0 -34.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Analog-Devices Maxim-Integrated"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*HTSSOP*4.4x9.7mm*P0.5mm*EP3.05x6.65mm*"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17702,8 +17720,8 @@
 		)
 		(symbol "MAX22208AUU_1_1"
 			(rectangle
-				(start -11.43 19.05)
-				(end 11.43 -21.59)
+				(start -10.16 25.4)
+				(end 10.16 -25.4)
 				(stroke
 					(width 0)
 					(type default)
@@ -17713,7 +17731,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -10.16 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
 				(name "ISEN4"
 					(effects
@@ -17731,7 +17749,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -3.81 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
 				(name "DIN3"
 					(effects
@@ -17749,7 +17767,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -7.62 0)
+				(at -12.7 -5.08 0)
 				(length 2.54)
 				(name "EN4"
 					(effects
@@ -17767,7 +17785,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -10.16 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "DIN4"
 					(effects
@@ -17784,8 +17802,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -3.81 -24.13 90)
+			(pin passive line
+				(at -2.54 -27.94 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -17802,8 +17820,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -3.81 -24.13 90)
+			(pin passive line
+				(at -2.54 -27.94 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -17820,8 +17838,8 @@
 					)
 				)
 			)
-			(pin input inverted
-				(at -13.97 -13.97 0)
+			(pin open_collector line
+				(at -12.7 -17.78 0)
 				(length 2.54)
 				(name "~{FAULT}"
 					(effects
@@ -17838,10 +17856,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at -7.62 21.59 270)
+			(pin input line
+				(at 12.7 -10.16 180)
 				(length 2.54)
-				(name "Cp1"
+				(name "C_{P1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17856,10 +17874,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 0 21.59 270)
+			(pin input line
+				(at 12.7 -15.24 180)
 				(length 2.54)
-				(name "Cp2"
+				(name "C_{P2}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17874,10 +17892,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 2.54 21.59 270)
+			(pin power_out line
+				(at 2.54 27.94 270)
 				(length 2.54)
-				(name "Vcp"
+				(name "V_{CP}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17893,9 +17911,9 @@
 				)
 			)
 			(pin power_in line
-				(at 10.16 21.59 270)
+				(at -2.54 27.94 270)
 				(length 2.54)
-				(name "Vm"
+				(name "V_{M}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17911,7 +17929,7 @@
 				)
 			)
 			(pin power_in line
-				(at -3.81 -24.13 90)
+				(at -2.54 -27.94 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -17928,8 +17946,8 @@
 					)
 				)
 			)
-			(pin input inverted
-				(at -13.97 -16.51 0)
+			(pin input line
+				(at -12.7 -10.16 0)
 				(length 2.54)
 				(name "~{SLEEP}"
 					(effects
@@ -17946,8 +17964,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -3.81 -24.13 90)
+			(pin passive line
+				(at -2.54 -27.94 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -17965,7 +17983,7 @@
 				)
 			)
 			(pin no_connect non_logic
-				(at 11.43 -13.97 180)
+				(at -10.16 -15.24 0)
 				(length 2.54) hide
 				(name "N.C."
 					(effects
@@ -17983,7 +18001,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 -24.13 90)
+				(at 2.54 -27.94 90)
 				(length 2.54)
 				(name "PGND"
 					(effects
@@ -18001,7 +18019,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 11.43 180)
+				(at 12.7 20.32 180)
 				(length 2.54)
 				(name "OUT1"
 					(effects
@@ -18018,10 +18036,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 10.16 21.59 270)
+			(pin passive line
+				(at -2.54 27.94 270)
 				(length 2.54) hide
-				(name "Vm"
+				(name "V_{M}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18036,10 +18054,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 10.16 21.59 270)
+			(pin passive line
+				(at -2.54 27.94 270)
 				(length 2.54) hide
-				(name "Vm"
+				(name "V_{M}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18055,7 +18073,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 5.08 180)
+				(at 12.7 12.7 180)
 				(length 2.54)
 				(name "OUT2"
 					(effects
@@ -18072,8 +18090,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 5.08 -24.13 90)
+			(pin passive line
+				(at 2.54 -27.94 90)
 				(length 2.54) hide
 				(name "PGND"
 					(effects
@@ -18090,8 +18108,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 5.08 -24.13 90)
+			(pin passive line
+				(at 2.54 -27.94 90)
 				(length 2.54) hide
 				(name "PGND"
 					(effects
@@ -18108,8 +18126,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -3.81 -24.13 90)
+			(pin passive line
+				(at -2.54 -27.94 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -18127,7 +18145,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -1.27 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
 				(name "OUT3"
 					(effects
@@ -18144,10 +18162,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 10.16 21.59 270)
+			(pin passive line
+				(at -2.54 27.94 270)
 				(length 2.54) hide
-				(name "Vm"
+				(name "V_{M}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18162,10 +18180,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 10.16 21.59 270)
+			(pin passive line
+				(at -2.54 27.94 270)
 				(length 2.54) hide
-				(name "Vm"
+				(name "V_{M}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18181,7 +18199,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -7.62 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(name "OUT4"
 					(effects
@@ -18198,8 +18216,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 5.08 -24.13 90)
+			(pin passive line
+				(at 2.54 -27.94 90)
 				(length 2.54) hide
 				(name "PGND"
 					(effects
@@ -18217,7 +18235,7 @@
 				)
 			)
 			(pin no_connect non_logic
-				(at 11.43 -16.51 180)
+				(at -10.16 -20.32 0)
 				(length 2.54) hide
 				(name "N.C."
 					(effects
@@ -18235,7 +18253,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 8.89 180)
+				(at 12.7 17.78 180)
 				(length 2.54)
 				(name "ISEN1"
 					(effects
@@ -18253,7 +18271,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 2.54 180)
+				(at 12.7 10.16 180)
 				(length 2.54)
 				(name "ISEN2"
 					(effects
@@ -18271,7 +18289,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -3.81 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(name "ISEN3"
 					(effects
@@ -18288,8 +18306,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -3.81 -24.13 90)
+			(pin passive line
+				(at -2.54 -27.94 90)
 				(length 2.54) hide
 				(name "GND"
 					(effects
@@ -18307,9 +18325,9 @@
 				)
 			)
 			(pin power_out line
-				(at -10.16 21.59 270)
+				(at 12.7 -20.32 180)
 				(length 2.54)
-				(name "VDD"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18325,7 +18343,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 11.43 0)
+				(at -12.7 17.78 0)
 				(length 2.54)
 				(name "EN1"
 					(effects
@@ -18343,7 +18361,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 8.89 0)
+				(at -12.7 20.32 0)
 				(length 2.54)
 				(name "DIN1"
 					(effects
@@ -18361,7 +18379,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 5.08 0)
+				(at -12.7 10.16 0)
 				(length 2.54)
 				(name "EN2"
 					(effects
@@ -18379,7 +18397,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 2.54 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "DIN2"
 					(effects
@@ -18397,7 +18415,7 @@
 				)
 			)
 			(pin input line
-				(at -13.97 -1.27 0)
+				(at -12.7 2.54 0)
 				(length 2.54)
 				(name "EN3"
 					(effects
