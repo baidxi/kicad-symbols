@@ -34146,45 +34146,27 @@
 			)
 		)
 	)
-	(symbol "TP4056"
+	(symbol "TP4056-42-ESOP8"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -6.858 10.668 0)
+			(at -6.604 11.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TP4056"
-			(at 4.572 10.668 0)
+		(property "Value" "TP4056-42-ESOP8"
+			(at 10.16 11.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm"
-			(at 0.508 -26.162 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf"
-			(at 0 -28.956 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Lithium-ion/Li-po battery charger IC"
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias"
 			(at 0.508 -22.86 0)
 			(effects
 				(font
@@ -34193,7 +34175,25 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "battery charger lithium li-po"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf"
+			(at 0 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Standalone Linear Li-ion/LiPo battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)"
+			(at 0.508 -20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "lithium-ion lithium-polymer Li-Poly"
 			(at 0 0 0)
 			(effects
 				(font
@@ -34202,7 +34202,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SOP?8?1EP?4.57x4.57mm?P1.27mm?EP4.57x4.45mm*"
+		(property "ki_fp_filters" "*SO*3.9x4.*P1.27mm*EP2.4*x3.3*mm* *SO*3.9x4.*P1.27mm*EP2.5*x3.4*mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -34211,9 +34211,9 @@
 				(hide yes)
 			)
 		)
-		(symbol "TP4056_1_0"
+		(symbol "TP4056-42-ESOP8_1_0"
 			(pin input line
-				(at 10.16 -2.54 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "TEMP"
 					(effects
@@ -34231,7 +34231,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 -5.08 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "PROG"
 					(effects
@@ -34267,9 +34267,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 10.16 270)
+				(at 0 12.7 270)
 				(length 2.54)
-				(name "VCC"
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -34357,9 +34357,9 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -12.7 90)
+				(at -2.54 -12.7 90)
 				(length 2.54)
-				(name "EP"
+				(name "EPAD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -34375,9 +34375,9 @@
 				)
 			)
 		)
-		(symbol "TP4056_1_1"
+		(symbol "TP4056-42-ESOP8_1_1"
 			(rectangle
-				(start -7.62 7.62)
+				(start -7.62 10.16)
 				(end 7.62 -10.16)
 				(stroke
 					(width 0.254)
