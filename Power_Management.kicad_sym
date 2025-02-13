@@ -18782,7 +18782,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -11.43 29.21 0)
+			(at -11.684 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18790,25 +18790,24 @@
 			)
 		)
 		(property "Value" "LTC4242xUHF"
-			(at 7.62 29.21 0)
+			(at 8.128 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-38-1EP_5x7mm_P0.5mm_EP3.15x5.15mm"
-			(at -31.75 31.75 0)
+		(property "Footprint" "Package_DFN_QFN:WQFN-38-1EP_5x7mm_P0.5mm_EP3.15x5.15mm"
+			(at 0 -38.608 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/4242f.pdf"
-			(at 17.78 -29.21 0)
+			(at 0 -36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18816,7 +18815,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Hot-Swap Power Controller, QFN-38"
+		(property "Description" "Dual Slot Hot Swap Controller for PCI Express, WQFN-38"
+			(at 0 -34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power-Controller PCIe"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18825,16 +18833,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Dual-Slot PCIe"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "QFN*1EP*5x7mm*P0.5mm*"
+		(property "ki_fp_filters" "*WQFN*5x7mm*P0.5mm*EP3.15x5.15mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18845,8 +18844,8 @@
 		)
 		(symbol "LTC4242xUHF_0_1"
 			(rectangle
-				(start -12.7 27.94)
-				(end 12.7 -27.94)
+				(start -12.7 30.48)
+				(end 12.7 -30.48)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -19182,7 +19181,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -30.48 90)
+				(at 0 -33.02 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -19434,9 +19433,9 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 -30.48 90)
+				(at -2.54 -33.02 90)
 				(length 2.54)
-				(name "EP"
+				(name "EPAD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -19506,7 +19505,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 30.48 270)
+				(at 0 33.02 270)
 				(length 2.54)
 				(name "VCC"
 					(effects
