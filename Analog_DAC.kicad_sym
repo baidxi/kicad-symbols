@@ -22132,54 +22132,57 @@
 			)
 		)
 	)
-	(symbol "DAC8532"
+	(symbol "DAC8532xDGK"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -9.652 10.668 0)
+			(at -11.684 9.144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "DAC8532"
-			(at -6.096 8.636 0)
+		(property "Value" "DAC8532xDGK"
+			(at 7.62 9.144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm"
-			(at 22.86 -8.636 0)
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+			(at 1.524 -9.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/dac8532.pdf"
-			(at 25.146 -12.7 0)
+			(at 1.524 -13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual Channel, 16-Bit, Low Power, Serial Input Digital-To-Analog Converter"
-			(at 38.862 -10.668 0)
+		(property "Description" "Dual Channel, 16-Bit, Low Power, Serial Input Digital-To-Analog Converter, VDD = 2.7..5.5V, up to 30MHz (VDD = 5V), VSSOP-8"
+			(at 1.524 -11.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Dual-channel DAC Digital-to-analog"
+		(property "ki_keywords" "SPI Microwire"
 			(at 0 0 0)
 			(effects
 				(font
@@ -22188,7 +22191,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3.0x3.0mm*P0.65mm*"
+		(property "ki_fp_filters" "*VSSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -22197,10 +22200,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "DAC8532_0_1"
+		(symbol "DAC8532xDGK_0_1"
 			(polyline
 				(pts
-					(xy 3.048 0) (xy 2.54 0)
+					(xy 3.048 1.27) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0)
@@ -22212,7 +22215,7 @@
 			)
 			(polyline
 				(pts
-					(xy 4.572 0) (xy 4.064 0)
+					(xy 4.572 1.27) (xy 4.064 1.27)
 				)
 				(stroke
 					(width 0)
@@ -22224,7 +22227,7 @@
 			)
 			(polyline
 				(pts
-					(xy 4.699 -1.651) (xy 4.699 -2.159)
+					(xy 4.699 -0.381) (xy 4.699 -0.889)
 				)
 				(stroke
 					(width 0)
@@ -22236,7 +22239,7 @@
 			)
 			(polyline
 				(pts
-					(xy 4.699 -0.127) (xy 4.699 -0.635)
+					(xy 4.699 1.143) (xy 4.699 0.635)
 				)
 				(stroke
 					(width 0)
@@ -22248,7 +22251,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy -0.508 0) (xy -1.27 1.27) (xy -4.064 1.27) (xy -4.064 -1.27) (xy -1.27 -1.27) (xy -0.508 0)
+					(xy 0 1.27) (xy -0.508 1.27) (xy -1.27 2.54) (xy -4.064 2.54) (xy -4.064 0) (xy -1.27 0) (xy -0.508 1.27)
 				)
 				(stroke
 					(width 0)
@@ -22259,7 +22262,7 @@
 				)
 			)
 			(circle
-				(center 3.048 0)
+				(center 3.048 1.27)
 				(radius 0.0001)
 				(stroke
 					(width 0)
@@ -22270,10 +22273,10 @@
 				)
 			)
 		)
-		(symbol "DAC8532_1_1"
+		(symbol "DAC8532xDGK_1_1"
 			(rectangle
-				(start -10.16 7.62)
-				(end 10.16 -7.62)
+				(start -12.7 7.62)
+				(end 12.7 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -22284,7 +22287,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.048 0) (xy 3.81 0.508)
+					(xy 3.048 1.27) (xy 3.81 1.778)
 				)
 				(stroke
 					(width 0)
@@ -22296,7 +22299,7 @@
 			)
 			(polyline
 				(pts
-					(xy 4.572 0) (xy 4.826 0)
+					(xy 4.572 1.27) (xy 4.826 1.27)
 				)
 				(stroke
 					(width 0)
@@ -22308,7 +22311,7 @@
 			)
 			(polyline
 				(pts
-					(xy 4.699 -1.651) (xy 4.191 -0.889)
+					(xy 4.699 -0.381) (xy 4.191 0.381)
 				)
 				(stroke
 					(width 0)
@@ -22320,7 +22323,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 0) (xy 0 1.27) (xy 0 -1.27) (xy 2.54 0)
+					(xy 2.54 1.27) (xy 0 2.54) (xy 0 0) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0)
@@ -22331,7 +22334,7 @@
 				)
 			)
 			(circle
-				(center 3.048 0)
+				(center 3.048 1.27)
 				(radius 0.254)
 				(stroke
 					(width 0)
@@ -22342,7 +22345,7 @@
 				)
 			)
 			(circle
-				(center 4.064 0)
+				(center 4.064 1.27)
 				(radius 0.254)
 				(stroke
 					(width 0)
@@ -22353,7 +22356,7 @@
 				)
 			)
 			(circle
-				(center 4.699 -1.651)
+				(center 4.699 -0.381)
 				(radius 0.254)
 				(stroke
 					(width 0)
@@ -22364,7 +22367,7 @@
 				)
 			)
 			(circle
-				(center 4.699 -0.635)
+				(center 4.699 0.635)
 				(radius 0.254)
 				(stroke
 					(width 0)
@@ -22372,10 +22375,18 @@
 				)
 				(fill
 					(type outline)
+				)
+			)
+			(text "..."
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
 				)
 			)
 			(text "DAC"
-				(at -2.54 0 0)
+				(at -2.54 1.27 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -22385,7 +22396,7 @@
 			(pin power_in line
 				(at 0 10.16 270)
 				(length 2.54)
-				(name "Vdd"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -22401,9 +22412,9 @@
 				)
 			)
 			(pin input line
-				(at 12.7 2.54 180)
+				(at 15.24 2.54 180)
 				(length 2.54)
-				(name "V_{ref}"
+				(name "V_{REF}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -22419,9 +22430,9 @@
 				)
 			)
 			(pin output line
-				(at 12.7 0 180)
+				(at 15.24 -2.54 180)
 				(length 2.54)
-				(name "V_{out}B"
+				(name "V_{OUT}B"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -22437,9 +22448,9 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -2.54 180)
+				(at 15.24 0 180)
 				(length 2.54)
-				(name "V_{out}A"
+				(name "V_{OUT}A"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -22455,7 +22466,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "~{SYNC}"
 					(effects
@@ -22473,7 +22484,7 @@
 				)
 			)
 			(pin input clock
-				(at -12.7 0 0)
+				(at -15.24 0 0)
 				(length 2.54)
 				(name "SCLK"
 					(effects
@@ -22491,9 +22502,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -2.54 0)
+				(at -15.24 2.54 0)
 				(length 2.54)
-				(name "DIN"
+				(name "D_{IN}"
 					(effects
 						(font
 							(size 1.27 1.27)
