@@ -31728,7 +31728,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -14.478 26.67 0)
+			(at -11.684 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31736,15 +31736,15 @@
 			)
 		)
 		(property "Value" "TMC2209-LA"
-			(at -2.032 3.81 0)
+			(at 13.208 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.75x3.75mm_ThermalVias"
-			(at -48.26 -22.86 0)
+		(property "Footprint" ""
+			(at 0 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31753,6 +31753,24 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/TMC2209_datasheet_rev1.09.pdf"
+			(at 0 -29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2-phase stepper motor driver, 256 µSteps, 2.8A peak, 2.0A RMS, VS = 4.75..29V, STEP/DIR and UART interface, VQFN-28"
+			(at 0 -32.004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ADI-Trinamic Analog-Devices"
 			(at 0 0 0)
 			(effects
 				(font
@@ -31761,25 +31779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Driver for two-phase bipolar stepper motor, 2.0A RMS total, UART, 4.75-29V, QFN-28"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "stepper motor driver"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "QFN*1EP*5x5mm*P0.5mm*"
+		(property "ki_fp_filters" "*VQFN*5x5mm*P0.5mm*EP3.7*3.7*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -31790,8 +31790,8 @@
 		)
 		(symbol "TMC2209-LA_0_1"
 			(rectangle
-				(start -15.24 25.4)
-				(end 15.24 -25.4)
+				(start -12.7 25.4)
+				(end 12.7 -22.86)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -31803,61 +31803,7 @@
 		)
 		(symbol "TMC2209-LA_1_1"
 			(pin input line
-				(at -17.78 20.32 0)
-				(length 2.54)
-				(name "VREF"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 15.24 0)
-				(length 2.54)
-				(name "ENN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 12.7 0)
-				(length 2.54)
-				(name "STDBY"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 7.62 0)
+				(at -15.24 20.32 0)
 				(length 2.54)
 				(name "STEP"
 					(effects
@@ -31875,7 +31821,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 5.08 0)
+				(at -15.24 17.78 0)
 				(length 2.54)
 				(name "DIR"
 					(effects
@@ -31893,9 +31839,45 @@
 				)
 			)
 			(pin input line
-				(at -17.78 0 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
-				(name "MS1_AD0"
+				(name "CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 7.62 0)
+				(length 2.54)
+				(name "~{PD}/UART"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 2.54 0)
+				(length 2.54)
+				(name "MS1/AD0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -31911,9 +31893,9 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -2.54 0)
+				(at -15.24 0 0)
 				(length 2.54)
-				(name "MS2_AD1"
+				(name "MS2/AD1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -31929,7 +31911,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -5.08 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "SPREAD"
 					(effects
@@ -31946,17 +31928,35 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -17.78 -7.62 0)
+			(pin input line
+				(at -15.24 -7.62 0)
 				(length 2.54)
-				(name "PDN_UART"
+				(name "~{EN}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "14"
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -10.16 0)
+				(length 2.54)
+				(name "STDBY"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -31965,7 +31965,7 @@
 				)
 			)
 			(pin output line
-				(at -17.78 -12.7 0)
+				(at -15.24 -15.24 0)
 				(length 2.54)
 				(name "DIAG"
 					(effects
@@ -31983,7 +31983,7 @@
 				)
 			)
 			(pin output line
-				(at -17.78 -15.24 0)
+				(at -15.24 -17.78 0)
 				(length 2.54)
 				(name "INDEX"
 					(effects
@@ -32000,45 +32000,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -17.78 -20.32 0)
+			(pin no_connect line
+				(at -12.7 -20.32 0)
 				(length 2.54)
-				(name "CLK_IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at -5.08 27.94 270)
-				(length 2.54)
-				(name "5VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -27.94 90)
-				(length 2.54)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -32055,7 +32020,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
+				(at -2.54 27.94 270)
 				(length 2.54)
 				(name "VCC_IO"
 					(effects
@@ -32072,64 +32037,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -27.94 90)
-				(length 2.54)
-				(hide yes)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -27.94 90)
-				(length 2.54)
-				(hide yes)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "29"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at 0 -27.94 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 27.94 270)
+				(at 0 27.94 270)
 				(length 2.54)
 				(name "VS"
 					(effects
@@ -32147,7 +32056,7 @@
 				)
 			)
 			(pin passive line
-				(at 5.08 27.94 270)
+				(at 0 27.94 270)
 				(length 2.54)
 				(hide yes)
 				(name "VS"
@@ -32166,7 +32075,63 @@
 				)
 			)
 			(pin passive line
-				(at 17.78 20.32 180)
+				(at 0 -25.4 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -25.4 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -25.4 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 5.08 27.94 270)
 				(length 2.54)
 				(name "VCP"
 					(effects
@@ -32183,8 +32148,44 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 15.24 20.32 180)
+				(length 2.54)
+				(name "5VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
-				(at 17.78 15.24 180)
+				(at 15.24 15.24 180)
+				(length 2.54)
+				(name "VREF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 10.16 180)
 				(length 2.54)
 				(name "CPO"
 					(effects
@@ -32201,8 +32202,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 17.78 10.16 180)
+			(pin input line
+				(at 15.24 5.08 180)
 				(length 2.54)
 				(name "CPI"
 					(effects
@@ -32220,7 +32221,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 2.54 180)
+				(at 15.24 0 180)
 				(length 2.54)
 				(name "OA1"
 					(effects
@@ -32238,7 +32239,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 0 180)
+				(at 15.24 -2.54 180)
 				(length 2.54)
 				(name "OA2"
 					(effects
@@ -32256,7 +32257,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 -2.54 180)
+				(at 15.24 -7.62 180)
 				(length 2.54)
 				(name "OB1"
 					(effects
@@ -32274,7 +32275,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 -5.08 180)
+				(at 15.24 -10.16 180)
 				(length 2.54)
 				(name "OB2"
 					(effects
@@ -32291,8 +32292,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 17.78 -15.24 180)
+			(pin input line
+				(at 15.24 -15.24 180)
 				(length 2.54)
 				(name "BRA"
 					(effects
@@ -32309,8 +32310,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 17.78 -17.78 180)
+			(pin input line
+				(at 15.24 -17.78 180)
 				(length 2.54)
 				(name "BRB"
 					(effects
