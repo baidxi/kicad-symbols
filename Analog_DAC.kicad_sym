@@ -22291,8 +22291,31 @@
 		(symbol "DAC8532xDGK_0_1"
 			(polyline
 				(pts
+					(xy 0 1.27) (xy -0.508 1.27) (xy -1.27 2.54) (xy -4.064 2.54) (xy -4.064 0) (xy -1.27 0) (xy -0.508 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
 					(xy 3.048 1.27) (xy 2.54 1.27)
 				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 3.048 1.27)
+				(radius 0.0001)
 				(stroke
 					(width 0)
 					(type default)
@@ -22304,18 +22327,6 @@
 			(polyline
 				(pts
 					(xy 4.572 1.27) (xy 4.064 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.699 -0.381) (xy 4.699 -0.889)
 				)
 				(stroke
 					(width 0)
@@ -22339,19 +22350,8 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.27) (xy -0.508 1.27) (xy -1.27 2.54) (xy -4.064 2.54) (xy -4.064 0) (xy -1.27 0) (xy -0.508 1.27)
+					(xy 4.699 -0.381) (xy 4.699 -0.889)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 3.048 1.27)
-				(radius 0.0001)
 				(stroke
 					(width 0)
 					(type default)
@@ -22375,43 +22375,19 @@
 			)
 			(polyline
 				(pts
-					(xy 3.048 1.27) (xy 3.81 1.778)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.572 1.27) (xy 4.826 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.699 -0.381) (xy 4.191 0.381)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 2.54 1.27) (xy 0 2.54) (xy 0 0) (xy 2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.048 1.27) (xy 3.81 1.778)
 				)
 				(stroke
 					(width 0)
@@ -22443,15 +22419,16 @@
 					(type outline)
 				)
 			)
-			(circle
-				(center 4.699 -0.381)
-				(radius 0.254)
+			(polyline
+				(pts
+					(xy 4.572 1.27) (xy 4.826 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
 				)
 				(fill
-					(type outline)
+					(type none)
 				)
 			)
 			(circle
@@ -22465,12 +22442,27 @@
 					(type outline)
 				)
 			)
-			(text "..."
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
+			(polyline
+				(pts
+					(xy 4.699 -0.381) (xy 4.191 0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 4.699 -0.381)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
 				)
 			)
 			(text "DAC"
@@ -22481,89 +22473,25 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 10.16 270)
-				(length 2.54)
-				(name "V_{DD}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
+			(text "..."
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(pin input line
-				(at 15.24 2.54 180)
+				(at -15.24 2.54 0)
 				(length 2.54)
-				(name "V_{REF}"
+				(name "D_{IN}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 -2.54 180)
-				(length 2.54)
-				(name "V_{OUT}B"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 0 180)
-				(length 2.54)
-				(name "V_{OUT}A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 -2.54 0)
-				(length 2.54)
-				(name "~{SYNC}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -22590,16 +22518,34 @@
 				)
 			)
 			(pin input line
-				(at -15.24 2.54 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
-				(name "D_{IN}"
+				(name "~{SYNC}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 10.16 270)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -22625,7 +22571,62 @@
 					)
 				)
 			)
+			(pin input line
+				(at 15.24 2.54 180)
+				(length 2.54)
+				(name "V_{REF}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 0 180)
+				(length 2.54)
+				(name "V_{OUT}A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -2.54 180)
+				(length 2.54)
+				(name "V_{OUT}B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "DAC8552"
 		(exclude_from_sim no)
