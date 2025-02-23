@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "ICS-43434"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -81,17 +81,6 @@
 					(type background)
 				)
 			)
-			(circle
-				(center -3.81 0)
-				(radius 1.27)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.08 1.27) (xy -5.08 -1.27)
@@ -104,22 +93,15 @@
 					(type none)
 				)
 			)
-			(pin input line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "WS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(circle
+				(center -3.81 0)
+				(radius 1.27)
+				(stroke
+					(width 0.254)
+					(type default)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(fill
+					(type none)
 				)
 			)
 			(pin input line
@@ -133,6 +115,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -159,6 +159,24 @@
 				)
 			)
 			(pin input line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "WS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "SCK"
@@ -169,24 +187,6 @@
 					)
 				)
 				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 7.62 270)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -213,6 +213,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IM69D120"
 		(pin_names
@@ -297,17 +298,6 @@
 					(type background)
 				)
 			)
-			(circle
-				(center -3.81 0)
-				(radius 1.27)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.08 1.27) (xy -5.08 -1.27)
@@ -320,26 +310,19 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "IM69D120_1_1"
-			(pin output line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "DATA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(circle
+				(center -3.81 0)
+				(radius 1.27)
+				(stroke
+					(width 0.254)
+					(type default)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(fill
+					(type none)
 				)
 			)
+		)
+		(symbol "IM69D120_1_1"
 			(pin power_in line
 				(at 0 7.62 270)
 				(length 2.54)
@@ -351,42 +334,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "CLOCK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "SELECT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -412,7 +359,62 @@
 					)
 				)
 			)
+			(pin input line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "SELECT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "CLOCK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "DATA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IM73A135V01"
 		(exclude_from_sim no)
@@ -491,17 +493,6 @@
 					(type background)
 				)
 			)
-			(circle
-				(center -3.81 0)
-				(radius 1.27)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.08 1.27) (xy -5.08 -1.27)
@@ -514,22 +505,15 @@
 					(type none)
 				)
 			)
-			(pin output line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "OUT+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(circle
+				(center -3.81 0)
+				(radius 1.27)
+				(stroke
+					(width 0.254)
+					(type default)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(fill
+					(type none)
 				)
 			)
 			(pin power_in line
@@ -543,24 +527,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "OUT-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -588,7 +554,8 @@
 			)
 			(pin passive line
 				(at 0 -7.62 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -604,7 +571,44 @@
 					)
 				)
 			)
+			(pin output line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "OUT+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "OUT-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "MP45DT02"
 		(exclude_from_sim no)
@@ -687,17 +691,6 @@
 					(type background)
 				)
 			)
-			(circle
-				(center -3.81 0)
-				(radius 1.27)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.08 1.27) (xy -5.08 -1.27)
@@ -710,8 +703,37 @@
 					(type none)
 				)
 			)
+			(circle
+				(center -3.81 0)
+				(radius 1.27)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
 		(symbol "MP45DT02_1_1"
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 -7.62 90)
 				(length 2.54)
@@ -730,6 +752,25 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
 				(at 10.16 2.54 180)
 				(length 2.54)
@@ -741,24 +782,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -7.62 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -802,25 +825,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 7.62 270)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPH0641LU4H-1"
 		(exclude_from_sim no)
@@ -899,17 +905,6 @@
 					(type background)
 				)
 			)
-			(circle
-				(center -3.81 0)
-				(radius 1.27)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.08 1.27) (xy -5.08 -1.27)
@@ -922,35 +917,28 @@
 					(type none)
 				)
 			)
-			(pin output line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "DATA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(circle
+				(center -3.81 0)
+				(radius 1.27)
+				(stroke
+					(width 0.254)
+					(type default)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(fill
+					(type none)
 				)
 			)
-			(pin input line
-				(at 10.16 2.54 180)
+			(pin power_in line
+				(at 0 7.62 270)
 				(length 2.54)
-				(name "SEL"
+				(name "VDD"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -977,6 +965,24 @@
 				)
 			)
 			(pin input line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "SEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "CLOCK"
@@ -994,17 +1000,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 7.62 270)
+			(pin output line
+				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "VDD"
+				(name "DATA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1013,6 +1019,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPH0645LM4H"
 		(exclude_from_sim no)
@@ -1093,17 +1100,6 @@
 					(type background)
 				)
 			)
-			(circle
-				(center -3.81 0)
-				(radius 1.27)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.08 1.27) (xy -5.08 -1.27)
@@ -1116,22 +1112,15 @@
 					(type none)
 				)
 			)
-			(pin input line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "WS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(circle
+				(center -3.81 0)
+				(radius 1.27)
+				(stroke
+					(width 0.254)
+					(type default)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(fill
+					(type none)
 				)
 			)
 			(pin input line
@@ -1145,6 +1134,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1171,6 +1178,24 @@
 				)
 			)
 			(pin input line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "WS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "BCLK"
@@ -1181,24 +1206,6 @@
 					)
 				)
 				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 7.62 270)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1225,6 +1232,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPM0687LR5H-1"
 		(exclude_from_sim no)
@@ -1303,17 +1311,6 @@
 					(type background)
 				)
 			)
-			(circle
-				(center -3.81 0)
-				(radius 1.27)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.08 1.27) (xy -5.08 -1.27)
@@ -1326,17 +1323,28 @@
 					(type none)
 				)
 			)
-			(pin output line
-				(at 10.16 2.54 180)
+			(circle
+				(center -3.81 0)
+				(radius 1.27)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
 				(length 2.54)
-				(name "OUT+"
+				(name "Vdd"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1364,7 +1372,8 @@
 			)
 			(pin passive line
 				(at 0 -7.62 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -1382,7 +1391,8 @@
 			)
 			(pin passive line
 				(at 0 -7.62 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -1398,17 +1408,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 7.62 270)
+			(pin output line
+				(at 10.16 2.54 180)
 				(length 2.54)
-				(name "Vdd"
+				(name "OUT+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1435,6 +1445,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IM69D130"
 		(extends "IM69D120")

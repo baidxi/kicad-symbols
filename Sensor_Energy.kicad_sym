@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "ATM90E26-YU"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -71,6 +71,24 @@
 		)
 		(symbol "ATM90E26-YU_1_0"
 			(pin input line
+				(at -15.24 15.24 0)
+				(length 2.54)
+				(name "MMD0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
 				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "MMD1"
@@ -81,6 +99,60 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 7.62 0)
+				(length 2.54)
+				(name "~{Reset}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 0 0)
+				(length 2.54)
+				(name "I2P"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -2.54 0)
+				(length 2.54)
+				(name "I2N"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -160,9 +232,28 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at -2.54 22.86 270)
+				(length 2.54)
+				(name "AVDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at -2.54 -22.86 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "AGND"
 					(effects
 						(font
@@ -178,17 +269,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 15.24 -15.24 180)
+			(pin power_in line
+				(at -2.54 -22.86 90)
 				(length 2.54)
-				(name "VN"
+				(name "AGND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -196,71 +287,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 15.24 -12.7 180)
+			(pin power_in line
+				(at 2.54 22.86 270)
 				(length 2.54)
-				(name "VP"
+				(name "DVDD"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 -10.16 180)
-				(length 2.54)
-				(name "WarnOut"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 -7.62 180)
-				(length 2.54)
-				(name "CF1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 -5.08 180)
-				(length 2.54)
-				(name "CF2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -286,35 +323,18 @@
 					)
 				)
 			)
-			(pin output line
-				(at 15.24 -2.54 180)
+			(pin passive line
+				(at 2.54 -22.86 90)
 				(length 2.54)
-				(name "IRQ"
+				(hide yes)
+				(name "DGND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 0 180)
-				(length 2.54)
-				(name "ZX"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -323,70 +343,16 @@
 				)
 			)
 			(pin input line
-				(at 15.24 2.54 180)
+				(at 15.24 15.24 180)
 				(length 2.54)
-				(name "OSCI"
+				(name "SDI/URX"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 5.08 180)
-				(length 2.54)
-				(name "OSCO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 15.24 7.62 180)
-				(length 2.54)
-				(name "~{CS}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 15.24 10.16 180)
-				(length 2.54)
-				(name "SCLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "25"
+				(number "27"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -413,16 +379,16 @@
 				)
 			)
 			(pin input line
-				(at 15.24 15.24 180)
+				(at 15.24 10.16 180)
 				(length 2.54)
-				(name "SDI/URX"
+				(name "SCLK"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "27"
+				(number "25"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -431,16 +397,16 @@
 				)
 			)
 			(pin input line
-				(at -15.24 15.24 0)
+				(at 15.24 7.62 180)
 				(length 2.54)
-				(name "MMD0"
+				(name "~{CS}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "28"
+				(number "24"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -448,71 +414,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 22.86 270)
+			(pin output line
+				(at 15.24 5.08 180)
 				(length 2.54)
-				(name "DVDD"
+				(name "OSCO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 7.62 0)
-				(length 2.54)
-				(name "~{Reset}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 22.86 270)
-				(length 2.54)
-				(name "AVDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 -22.86 90)
-				(length 2.54)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
+				(number "23"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -521,16 +433,106 @@
 				)
 			)
 			(pin input line
-				(at -15.24 0 0)
+				(at 15.24 2.54 180)
 				(length 2.54)
-				(name "I2P"
+				(name "OSCI"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 0 180)
+				(length 2.54)
+				(name "ZX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -2.54 180)
+				(length 2.54)
+				(name "IRQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -5.08 180)
+				(length 2.54)
+				(name "CF2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -7.62 180)
+				(length 2.54)
+				(name "CF1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -10.16 180)
+				(length 2.54)
+				(name "WarnOut"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -539,16 +541,16 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -2.54 0)
+				(at 15.24 -12.7 180)
 				(length 2.54)
-				(name "I2N"
+				(name "VP"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "16"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -556,17 +558,17 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 2.54 -22.86 90)
-				(length 2.54) hide
-				(name "DGND"
+			(pin input line
+				(at 15.24 -15.24 180)
+				(length 2.54)
+				(name "VN"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -588,6 +590,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "INA219AxD"
 		(exclude_from_sim no)
@@ -669,16 +672,16 @@
 		)
 		(symbol "INA219AxD_1_1"
 			(pin input line
-				(at 10.16 -2.54 180)
+				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "A1"
+				(name "IN+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -687,52 +690,16 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -5.08 180)
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "A0"
+				(name "IN-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 10.16 5.08 180)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -776,17 +743,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -10.16 -2.54 0)
+			(pin bidirectional line
+				(at 10.16 5.08 180)
 				(length 2.54)
-				(name "IN-"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -795,16 +762,52 @@
 				)
 			)
 			(pin input line
-				(at -10.16 2.54 0)
+				(at 10.16 2.54 180)
 				(length 2.54)
-				(name "IN+"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -813,6 +816,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "INA219AxDCN"
 		(exclude_from_sim no)
@@ -930,24 +934,6 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -10.16 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 0 10.16 270)
 				(length 2.54)
 				(name "VS"
@@ -965,17 +951,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 10.16 2.54 180)
+			(pin power_in line
+				(at 0 -10.16 90)
 				(length 2.54)
-				(name "SCL"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1002,16 +988,16 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -5.08 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
-				(name "A0"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1037,7 +1023,26 @@
 					)
 				)
 			)
+			(pin input line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "INA226"
 		(exclude_from_sim no)
@@ -1119,16 +1124,16 @@
 		)
 		(symbol "INA226_1_1"
 			(pin input line
-				(at 10.16 7.62 180)
+				(at -10.16 7.62 0)
 				(length 2.54)
-				(name "A1"
+				(name "Vbus"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1155,70 +1160,16 @@
 				)
 			)
 			(pin input line
-				(at 10.16 5.08 180)
+				(at -10.16 -5.08 0)
 				(length 2.54)
-				(name "A0"
+				(name "Vin-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
-				(at 10.16 -7.62 180)
-				(length 2.54)
-				(name "~{Alert}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1263,16 +1214,16 @@
 				)
 			)
 			(pin input line
-				(at -10.16 7.62 0)
+				(at 10.16 7.62 180)
 				(length 2.54)
-				(name "Vbus"
+				(name "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1281,16 +1232,70 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -5.08 0)
+				(at 10.16 5.08 180)
 				(length 2.54)
-				(name "Vin-"
+				(name "A0"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "~{Alert}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1299,6 +1304,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "LTC4151xMS"
 		(exclude_from_sim no)
@@ -1415,6 +1421,24 @@
 					)
 				)
 			)
+			(pin input line
+				(at -10.16 -7.62 0)
+				(length 2.54)
+				(name "ADIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 15.24 270)
 				(length 2.54)
@@ -1426,6 +1450,78 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -15.24 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "~{SHDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1469,97 +1565,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -10.16 -7.62 0)
-				(length 2.54)
-				(name "ADIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 7.62 180)
-				(length 2.54)
-				(name "~{SHDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -15.24 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "MCP39F521"
 		(exclude_from_sim no)
@@ -1640,24 +1647,6 @@
 			)
 		)
 		(symbol "MCP39F521_1_1"
-			(pin output line
-				(at 15.24 -2.54 180)
-				(length 2.54)
-				(name "EVENT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at -15.24 15.24 0)
 				(length 2.54)
@@ -1669,96 +1658,6 @@
 					)
 				)
 				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 20.32 270)
-				(length 2.54)
-				(name "AVDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 15.24 10.16 180)
-				(length 2.54)
-				(name "A0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 15.24 5.08 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 15.24 2.54 180)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 15.24 7.62 180)
-				(length 2.54)
-				(name "A1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1803,24 +1702,6 @@
 				)
 			)
 			(pin input line
-				(at -15.24 2.54 0)
-				(length 2.54)
-				(name "V1-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "V1+"
@@ -1838,143 +1719,17 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -12.7 12.7 0)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at -15.24 -10.16 0)
+				(at -15.24 2.54 0)
 				(length 2.54)
-				(name "AN_IN"
+				(name "V1-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 -22.86 90)
-				(length 2.54)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 -5.08 180)
-				(length 2.54)
-				(name "ZCD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 15.24 -10.16 180)
-				(length 2.54)
-				(name "REFIN+/OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -22.86 90)
-				(length 2.54)
-				(name "DGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 20.32 270)
-				(length 2.54)
-				(name "DVDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "25"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 15.24 15.24 180)
-				(length 2.54)
-				(name "~{MCLR}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "26"
+				(number "18"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1983,70 +1738,16 @@
 				)
 			)
 			(pin passive line
-				(at 2.54 -22.86 90)
-				(length 2.54) hide
-				(name "DGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "27"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 -15.24 180)
+				(at -15.24 -2.54 0)
 				(length 2.54)
-				(name "~{DR}"
+				(name "COMMON_A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "28"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 2.54 -22.86 90)
-				(length 2.54) hide
-				(name "DGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "29"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -12.7 0 0)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2072,17 +1773,17 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 -2.54 0)
+			(pin input line
+				(at -15.24 -10.16 0)
 				(length 2.54)
-				(name "COMMON_A"
+				(name "AN_IN"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "20"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2127,8 +1828,157 @@
 				)
 			)
 			(pin no_connect line
+				(at -12.7 12.7 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 0 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 20.32 270)
+				(length 2.54)
+				(name "AVDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -22.86 90)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 20.32 270)
+				(length 2.54)
+				(name "DVDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -22.86 90)
+				(length 2.54)
+				(name "DGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 2.54)
+				(hide yes)
+				(name "DGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 2.54)
+				(hide yes)
+				(name "DGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
 				(at 12.7 12.7 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -2146,7 +1996,8 @@
 			)
 			(pin no_connect line
 				(at 12.7 0 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -2162,7 +2013,170 @@
 					)
 				)
 			)
+			(pin input line
+				(at 15.24 15.24 180)
+				(length 2.54)
+				(name "~{MCLR}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 10.16 180)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 7.62 180)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 5.08 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 2.54 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -2.54 180)
+				(length 2.54)
+				(name "EVENT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -5.08 180)
+				(length 2.54)
+				(name "ZCD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 -10.16 180)
+				(length 2.54)
+				(name "REFIN+/OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -15.24 180)
+				(length 2.54)
+				(name "~{DR}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1931x-xJ6CX"
 		(exclude_from_sim no)
@@ -2184,7 +2198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -2220,7 +2234,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2230,17 +2244,17 @@
 			)
 		)
 		(symbol "PAC1931x-xJ6CX_0_0"
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
+			(pin input line
+				(at -12.7 12.7 0)
+				(length 2.54)
+				(name "SENSE1+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A1"
+				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2259,24 +2273,6 @@
 					)
 				)
 				(number "A2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 12.7 0)
-				(length 2.54)
-				(name "SENSE1+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2304,7 +2300,27 @@
 			)
 			(pin passive line
 				(at 0 -20.32 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -2313,42 +2329,6 @@
 					)
 				)
 				(number "B1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 5.08 20.32 270)
-				(length 2.54)
-				(name "V_{DD}IO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "~{PWRDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2376,7 +2356,8 @@
 			)
 			(pin passive line
 				(at 0 -20.32 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -2393,16 +2374,129 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 -10.16 180)
+				(at 0 -20.32 90)
 				(length 2.54)
-				(name "ADDRSEL"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 5.08 20.32 270)
+				(length 2.54)
+				(name "V_{DD}IO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_CLK" input line)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2429,97 +2523,23 @@
 				)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
+			(pin passive line
+				(at 12.7 -10.16 180)
 				(length 2.54)
-				(name "SCL"
+				(name "ADDRSEL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C4"
+				(number "C2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 12.7 7.62 180)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_DATA" bidirectional line)
 			)
 		)
 		(symbol "PAC1931x-xJ6CX_0_1"
@@ -2535,6 +2555,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1932x-xJ6CX"
 		(exclude_from_sim no)
@@ -2556,7 +2577,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -2592,7 +2613,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2603,16 +2624,16 @@
 		)
 		(symbol "PAC1932x-xJ6CX_0_0"
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
-				(name "SENSE2+"
+				(name "SENSE1+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A1"
+				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2639,34 +2660,16 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
-				(name "SENSE1+"
+				(name "SENSE2+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 20.32 270)
-				(length 2.54)
-				(name "V_{DD}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A4"
+				(number "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2692,35 +2695,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 5.08 20.32 270)
+			(pin power_in line
+				(at 0 20.32 270)
 				(length 2.54)
-				(name "V_{DD}IO"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "~{PWRDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B3"
+				(number "A4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2748,7 +2733,8 @@
 			)
 			(pin passive line
 				(at 0 -20.32 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -2765,16 +2751,129 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 -10.16 180)
+				(at 0 -20.32 90)
 				(length 2.54)
-				(name "ADDRSEL"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 5.08 20.32 270)
+				(length 2.54)
+				(name "V_{DD}IO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_CLK" input line)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2801,97 +2900,23 @@
 				)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
+			(pin passive line
+				(at 12.7 -10.16 180)
 				(length 2.54)
-				(name "SCL"
+				(name "ADDRSEL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C4"
+				(number "C2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 12.7 7.62 180)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_DATA" bidirectional line)
 			)
 		)
 		(symbol "PAC1932x-xJ6CX_0_1"
@@ -2907,6 +2932,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1932x-xJQ"
 		(exclude_from_sim no)
@@ -2975,43 +3001,6 @@
 		)
 		(symbol "PAC1932x-xJQ_0_0"
 			(pin input line
-				(at 12.7 -2.54 180)
-				(length 2.54)
-				(name "SLOW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT1}" open_collector line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "SENSE1+"
@@ -3083,17 +3072,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 5.08 20.32 270)
+			(pin power_in line
+				(at 0 20.32 270)
 				(length 2.54)
-				(name "V_{DD}IO"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3101,17 +3090,93 @@
 					)
 				)
 			)
-			(pin input line
-				(at 12.7 0 180)
+			(pin passive line
+				(at 0 -20.32 90)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3137,35 +3202,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 20.32 270)
+			(pin input line
+				(at 5.08 20.32 270)
 				(length 2.54)
-				(name "V_{DD}"
+				(name "V_{DD}IO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -20.32 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3211,6 +3258,43 @@
 				)
 				(alternate "SM_DATA" bidirectional line)
 			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SLOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{ALERT1}" open_collector line)
+			)
 			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 2.54)
@@ -3222,60 +3306,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3297,6 +3327,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1933x-xJ6CX"
 		(exclude_from_sim no)
@@ -3318,7 +3349,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -3354,7 +3385,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3365,16 +3396,16 @@
 		)
 		(symbol "PAC1933x-xJ6CX_0_0"
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
-				(name "SENSE2+"
+				(name "SENSE1+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A1"
+				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3401,34 +3432,16 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
-				(name "SENSE1+"
+				(name "SENSE2+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 20.32 270)
-				(length 2.54)
-				(name "V_{DD}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A4"
+				(number "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3455,52 +3468,16 @@
 				)
 			)
 			(pin input line
-				(at 5.08 20.32 270)
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "V_{DD}IO"
+				(name "SENSE3+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "~{PWRDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -20.32 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B4"
+				(number "D1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3526,17 +3503,147 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 12.7 -10.16 180)
+			(pin power_in line
+				(at 0 20.32 270)
 				(length 2.54)
-				(name "ADDRSEL"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 5.08 20.32 270)
+				(length 2.54)
+				(name "V_{DD}IO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_CLK" input line)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3563,97 +3670,23 @@
 				)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "SENSE3+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 12.7 7.62 180)
+				(at 12.7 -10.16 180)
 				(length 2.54)
-				(name "SDA"
+				(name "ADDRSEL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "D4"
+				(number "C2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_DATA" bidirectional line)
 			)
 		)
 		(symbol "PAC1933x-xJ6CX_0_1"
@@ -3669,6 +3702,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1933x-xJQ"
 		(exclude_from_sim no)
@@ -3737,43 +3771,6 @@
 		)
 		(symbol "PAC1933x-xJQ_0_0"
 			(pin input line
-				(at 12.7 -2.54 180)
-				(length 2.54)
-				(name "SLOW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT1}" open_collector line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "SENSE1+"
@@ -3846,16 +3843,16 @@
 				)
 			)
 			(pin input line
-				(at 5.08 20.32 270)
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "V_{DD}IO"
+				(name "SENSE3+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3864,34 +3861,16 @@
 				)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at -12.7 -5.08 0)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(name "SENSE3-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 2.54 -20.32 90)
-				(length 2.54)
-				(name "EP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3917,6 +3896,25 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 -20.32 90)
 				(length 2.54)
@@ -3928,6 +3926,61 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -20.32 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 5.08 20.32 270)
+				(length 2.54)
+				(name "V_{DD}IO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3973,6 +4026,43 @@
 				)
 				(alternate "SM_DATA" bidirectional line)
 			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SLOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{ALERT1}" open_collector line)
+			)
 			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 2.54)
@@ -3984,60 +4074,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "SENSE3-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "SENSE3+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4059,6 +4095,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1934x-xJ6CX"
 		(exclude_from_sim no)
@@ -4080,7 +4117,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -4116,7 +4153,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4127,16 +4164,16 @@
 		)
 		(symbol "PAC1934x-xJ6CX_0_0"
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
-				(name "SENSE2+"
+				(name "SENSE1+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A1"
+				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4163,34 +4200,16 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
-				(name "SENSE1+"
+				(name "SENSE2+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 20.32 270)
-				(length 2.54)
-				(name "V_{DD}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A4"
+				(number "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4217,16 +4236,16 @@
 				)
 			)
 			(pin input line
-				(at 5.08 20.32 270)
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "V_{DD}IO"
+				(name "SENSE3+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B2"
+				(number "D1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4235,16 +4254,70 @@
 				)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at -12.7 -5.08 0)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(name "SENSE3-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B3"
+				(number "C1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -10.16 0)
+				(length 2.54)
+				(name "SENSE4+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "SENSE4-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 20.32 270)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4271,16 +4344,16 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -5.08 0)
+				(at 5.08 20.32 270)
 				(length 2.54)
-				(name "SENSE3-"
+				(name "V_{DD}IO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C1"
+				(number "B2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4288,17 +4361,55 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 12.7 -10.16 180)
+			(pin input line
+				(at 12.7 10.16 180)
 				(length 2.54)
-				(name "ADDRSEL"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_CLK" input line)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4325,97 +4436,23 @@
 				)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
+			(pin passive line
+				(at 12.7 -10.16 180)
 				(length 2.54)
-				(name "SCL"
+				(name "ADDRSEL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C4"
+				(number "C2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "SENSE3+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -12.7 0)
-				(length 2.54)
-				(name "SENSE4-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -10.16 0)
-				(length 2.54)
-				(name "SENSE4+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 12.7 7.62 180)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_DATA" bidirectional line)
 			)
 		)
 		(symbol "PAC1934x-xJ6CX_0_1"
@@ -4431,6 +4468,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1934x-xJQ"
 		(exclude_from_sim no)
@@ -4499,43 +4537,6 @@
 		)
 		(symbol "PAC1934x-xJQ_0_0"
 			(pin input line
-				(at 12.7 -2.54 180)
-				(length 2.54)
-				(name "SLOW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT1}" open_collector line)
-			)
-			(pin input line
-				(at -12.7 -10.16 0)
-				(length 2.54)
-				(name "SENSE4+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "SENSE1+"
@@ -4608,16 +4609,16 @@
 				)
 			)
 			(pin input line
-				(at 5.08 20.32 270)
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "V_{DD}IO"
+				(name "SENSE3+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4626,16 +4627,16 @@
 				)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at -12.7 -5.08 0)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(name "SENSE3-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4643,17 +4644,35 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 2.54 -20.32 90)
+			(pin input line
+				(at -12.7 -10.16 0)
 				(length 2.54)
-				(name "EP"
+				(name "SENSE4+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "17"
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "SENSE4-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4690,6 +4709,42 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -20.32 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 5.08 20.32 270)
+				(length 2.54)
+				(name "V_{DD}IO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4735,6 +4790,43 @@
 				)
 				(alternate "SM_DATA" bidirectional line)
 			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SLOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{ALERT1}" open_collector line)
+			)
 			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 2.54)
@@ -4746,60 +4838,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "SENSE3-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "SENSE3+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -12.7 0)
-				(length 2.54)
-				(name "SENSE4-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4821,6 +4859,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1951x-1x-4MX"
 		(exclude_from_sim no)
@@ -4889,44 +4928,6 @@
 		)
 		(symbol "PAC1951x-1x-4MX_0_0"
 			(pin input line
-				(at 12.7 -2.54 180)
-				(length 2.54)
-				(name "SLOW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "GPIO" bidirectional line)
-				(alternate "~{ALERT1}" open_collector line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "SENSE1+"
@@ -4962,97 +4963,6 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
-				(length 2.54)
-				(name "GPIO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT2}" open_collector line)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "~{PWRDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 2.54 -20.32 90)
-				(length 2.54)
-				(name "EP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at 0 20.32 270)
 				(length 2.54)
@@ -5071,6 +4981,63 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 -20.32 90)
 				(length 2.54)
@@ -5082,6 +5049,81 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -20.32 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5127,6 +5169,63 @@
 				)
 				(alternate "SM_DATA" bidirectional line)
 			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SLOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GPIO" bidirectional line)
+				(alternate "~{ALERT1}" open_collector line)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "GPIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{ALERT2}" open_collector line)
+			)
 			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 2.54)
@@ -5138,60 +5237,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5213,6 +5258,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1951x-1x-J6CX"
 		(exclude_from_sim no)
@@ -5234,7 +5280,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -5270,7 +5316,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5280,17 +5326,17 @@
 			)
 		)
 		(symbol "PAC1951x-1x-J6CX_0_0"
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
+			(pin input line
+				(at -12.7 12.7 0)
+				(length 2.54)
+				(name "SENSE1+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A1"
+				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5309,24 +5355,6 @@
 					)
 				)
 				(number "A2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 12.7 0)
-				(length 2.54)
-				(name "SENSE1+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5354,7 +5382,27 @@
 			)
 			(pin passive line
 				(at 0 -20.32 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -5363,43 +5411,6 @@
 					)
 				)
 				(number "B1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
-				(length 2.54)
-				(name "GPIO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT2}" open_collector line)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "~{PWRDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5427,7 +5438,8 @@
 			)
 			(pin passive line
 				(at 0 -20.32 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -5444,16 +5456,111 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 -10.16 180)
+				(at 0 -20.32 90)
 				(length 2.54)
-				(name "ADDRSEL"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_CLK" input line)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5481,97 +5588,42 @@
 				(alternate "GPIO" bidirectional line)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 12.7 7.62 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
-				(name "SDA"
+				(name "GPIO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "D4"
+				(number "B2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_DATA" bidirectional line)
+				(alternate "~{ALERT2}" open_collector line)
+			)
+			(pin passive line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "ADDRSEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 			)
 		)
 		(symbol "PAC1951x-1x-J6CX_0_1"
@@ -5587,6 +5639,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1951x-2x-4MX"
 		(exclude_from_sim no)
@@ -5655,36 +5708,16 @@
 		)
 		(symbol "PAC1951x-2x-4MX_0_0"
 			(pin input line
-				(at 12.7 -2.54 180)
+				(at -12.7 12.7 0)
 				(length 2.54)
-				(name "SLOW"
+				(name "V_{BUS1+}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "GPIO" bidirectional line)
-				(alternate "~{ALERT1}" open_collector line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5729,24 +5762,6 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
-				(length 2.54)
-				(name "V_{BUS1+}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 5.08 0)
 				(length 2.54)
 				(name "V_{BUS1-}"
@@ -5757,61 +5772,6 @@
 					)
 				)
 				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
-				(length 2.54)
-				(name "GPIO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT2}" open_collector line)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "~{PWRDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 2.54 -20.32 90)
-				(length 2.54)
-				(name "EP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5837,6 +5797,25 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 -20.32 90)
 				(length 2.54)
@@ -5848,6 +5827,81 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -20.32 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5893,6 +5947,63 @@
 				)
 				(alternate "SM_DATA" bidirectional line)
 			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SLOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GPIO" bidirectional line)
+				(alternate "~{ALERT1}" open_collector line)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "GPIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{ALERT2}" open_collector line)
+			)
 			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 2.54)
@@ -5904,60 +6015,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5979,6 +6036,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1951x-2x-J6CX"
 		(exclude_from_sim no)
@@ -6000,7 +6058,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -6036,7 +6094,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6065,24 +6123,6 @@
 				)
 			)
 			(pin input line
-				(at -12.7 7.62 0)
-				(length 2.54)
-				(name "SENSE1-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 10.16 0)
 				(length 2.54)
 				(name "SENSE1+"
@@ -6100,17 +6140,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 20.32 270)
+			(pin input line
+				(at -12.7 7.62 0)
 				(length 2.54)
-				(name "V_{DD}"
+				(name "SENSE1-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A4"
+				(number "A2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6136,36 +6176,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
+			(pin power_in line
+				(at 0 20.32 270)
 				(length 2.54)
-				(name "GPIO"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT2}" open_collector line)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "~{PWRDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B3"
+				(number "A4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6193,7 +6214,8 @@
 			)
 			(pin passive line
 				(at 0 -20.32 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -6210,16 +6232,111 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 -10.16 180)
+				(at 0 -20.32 90)
 				(length 2.54)
-				(name "ADDRSEL"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_CLK" input line)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6247,97 +6364,42 @@
 				(alternate "GPIO" bidirectional line)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 12.7 7.62 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
-				(name "SDA"
+				(name "GPIO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "D4"
+				(number "B2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_DATA" bidirectional line)
+				(alternate "~{ALERT2}" open_collector line)
+			)
+			(pin passive line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "ADDRSEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 			)
 		)
 		(symbol "PAC1951x-2x-J6CX_0_1"
@@ -6353,6 +6415,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1952x-1x-4MX"
 		(exclude_from_sim no)
@@ -6421,44 +6484,6 @@
 		)
 		(symbol "PAC1952x-1x-4MX_0_0"
 			(pin input line
-				(at 12.7 -2.54 180)
-				(length 2.54)
-				(name "SLOW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "GPIO" bidirectional line)
-				(alternate "~{ALERT1}" open_collector line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "SENSE1+"
@@ -6530,61 +6555,6 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
-				(length 2.54)
-				(name "GPIO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT2}" open_collector line)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "~{PWRDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 2.54 -20.32 90)
-				(length 2.54)
-				(name "EP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at 0 20.32 270)
 				(length 2.54)
@@ -6603,6 +6573,25 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 -20.32 90)
 				(length 2.54)
@@ -6614,6 +6603,81 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -20.32 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6659,6 +6723,63 @@
 				)
 				(alternate "SM_DATA" bidirectional line)
 			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SLOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GPIO" bidirectional line)
+				(alternate "~{ALERT1}" open_collector line)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "GPIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{ALERT2}" open_collector line)
+			)
 			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 2.54)
@@ -6670,60 +6791,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6745,6 +6812,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1952x-1x-J6CX"
 		(exclude_from_sim no)
@@ -6766,7 +6834,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -6802,7 +6870,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6813,16 +6881,16 @@
 		)
 		(symbol "PAC1952x-1x-J6CX_0_0"
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
-				(name "SENSE2+"
+				(name "SENSE1+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A1"
+				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6849,34 +6917,16 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
-				(name "SENSE1+"
+				(name "SENSE2+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 20.32 270)
-				(length 2.54)
-				(name "V_{DD}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A4"
+				(number "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6902,36 +6952,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
+			(pin power_in line
+				(at 0 20.32 270)
 				(length 2.54)
-				(name "GPIO"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT2}" open_collector line)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "~{PWRDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B3"
+				(number "A4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6959,7 +6990,8 @@
 			)
 			(pin passive line
 				(at 0 -20.32 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -6976,16 +7008,111 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 -10.16 180)
+				(at 0 -20.32 90)
 				(length 2.54)
-				(name "ADDRSEL"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_CLK" input line)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7013,97 +7140,42 @@
 				(alternate "GPIO" bidirectional line)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 12.7 7.62 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
-				(name "SDA"
+				(name "GPIO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "D4"
+				(number "B2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_DATA" bidirectional line)
+				(alternate "~{ALERT2}" open_collector line)
+			)
+			(pin passive line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "ADDRSEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 			)
 		)
 		(symbol "PAC1952x-1x-J6CX_0_1"
@@ -7119,6 +7191,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1952x-2x-4MX"
 		(exclude_from_sim no)
@@ -7187,36 +7260,16 @@
 		)
 		(symbol "PAC1952x-2x-4MX_0_0"
 			(pin input line
-				(at 12.7 -2.54 180)
+				(at -12.7 12.7 0)
 				(length 2.54)
-				(name "SLOW"
+				(name "V_{BUS1+}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "GPIO" bidirectional line)
-				(alternate "~{ALERT1}" open_collector line)
-			)
-			(pin input line
-				(at -12.7 -7.62 0)
-				(length 2.54)
-				(name "SENSE2+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7261,24 +7314,6 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
-				(length 2.54)
-				(name "V_{BUS1+}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 5.08 0)
 				(length 2.54)
 				(name "V_{BUS1-}"
@@ -7296,36 +7331,35 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
+			(pin input line
+				(at -12.7 -5.08 0)
 				(length 2.54)
-				(name "GPIO"
+				(name "V_{BUS2+}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "~{ALERT2}" open_collector line)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at -12.7 -7.62 0)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(name "SENSE2+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7333,17 +7367,35 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 2.54 -20.32 90)
+			(pin input line
+				(at -12.7 -10.16 0)
 				(length 2.54)
-				(name "EP"
+				(name "SENSE2-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "17"
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "V_{BUS2-}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7380,6 +7432,24 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -20.32 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7425,6 +7495,63 @@
 				)
 				(alternate "SM_DATA" bidirectional line)
 			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SLOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GPIO" bidirectional line)
+				(alternate "~{ALERT1}" open_collector line)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "GPIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{ALERT2}" open_collector line)
+			)
 			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 2.54)
@@ -7436,60 +7563,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -12.7 0)
-				(length 2.54)
-				(name "V_{BUS2-}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "V_{BUS2+}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -10.16 0)
-				(length 2.54)
-				(name "SENSE2-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7511,6 +7584,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1952x-2x-J6CX"
 		(exclude_from_sim no)
@@ -7532,7 +7606,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -7568,7 +7642,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7597,24 +7671,6 @@
 				)
 			)
 			(pin input line
-				(at -12.7 7.62 0)
-				(length 2.54)
-				(name "SENSE1-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 10.16 0)
 				(length 2.54)
 				(name "SENSE1+"
@@ -7632,17 +7688,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 20.32 270)
+			(pin input line
+				(at -12.7 7.62 0)
 				(length 2.54)
-				(name "V_{DD}"
+				(name "SENSE1-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A4"
+				(number "A2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7668,36 +7724,89 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
+			(pin input line
+				(at -12.7 -5.08 0)
 				(length 2.54)
-				(name "GPIO"
+				(name "V_{BUS2+}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B2"
+				(number "D1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "~{ALERT2}" open_collector line)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at -12.7 -7.62 0)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(name "SENSE2+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B3"
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -10.16 0)
+				(length 2.54)
+				(name "SENSE2-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "V_{BUS2-}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 20.32 270)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7724,34 +7833,54 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -12.7 0)
+				(at 12.7 10.16 180)
 				(length 2.54)
-				(name "V_{BUS2-}"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C1"
+				(number "C4"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
+				(alternate "SM_CLK" input line)
 			)
-			(pin passive line
-				(at 12.7 -10.16 180)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
 				(length 2.54)
-				(name "ADDRSEL"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7779,97 +7908,42 @@
 				(alternate "GPIO" bidirectional line)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin input line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "V_{BUS2+}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -10.16 0)
-				(length 2.54)
-				(name "SENSE2-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -7.62 0)
-				(length 2.54)
-				(name "SENSE2+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 12.7 7.62 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
-				(name "SDA"
+				(name "GPIO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "D4"
+				(number "B2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_DATA" bidirectional line)
+				(alternate "~{ALERT2}" open_collector line)
+			)
+			(pin passive line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "ADDRSEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 			)
 		)
 		(symbol "PAC1952x-2x-J6CX_0_1"
@@ -7885,6 +7959,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1953x-x4MX"
 		(exclude_from_sim no)
@@ -7953,44 +8028,6 @@
 		)
 		(symbol "PAC1953x-x4MX_0_0"
 			(pin input line
-				(at 12.7 -2.54 180)
-				(length 2.54)
-				(name "SLOW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "GPIO" bidirectional line)
-				(alternate "~{ALERT1}" open_collector line)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "SENSE1+"
@@ -8062,54 +8099,35 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
+			(pin input line
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "GPIO"
+				(name "SENSE3+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "~{ALERT2}" open_collector line)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at -12.7 -5.08 0)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(name "SENSE3-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 2.54 -20.32 90)
-				(length 2.54)
-				(name "EP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8135,6 +8153,25 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 -20.32 90)
 				(length 2.54)
@@ -8146,6 +8183,43 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -20.32 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8191,6 +8265,63 @@
 				)
 				(alternate "SM_DATA" bidirectional line)
 			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SLOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GPIO" bidirectional line)
+				(alternate "~{ALERT1}" open_collector line)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "GPIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{ALERT2}" open_collector line)
+			)
 			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 2.54)
@@ -8202,60 +8333,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "SENSE3-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "SENSE3+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8277,6 +8354,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1953x-xJ6CX"
 		(exclude_from_sim no)
@@ -8298,7 +8376,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -8334,7 +8412,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8345,16 +8423,16 @@
 		)
 		(symbol "PAC1953x-xJ6CX_0_0"
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
-				(name "SENSE2+"
+				(name "SENSE1+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A1"
+				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8381,34 +8459,16 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
-				(name "SENSE1+"
+				(name "SENSE2+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 20.32 270)
-				(length 2.54)
-				(name "V_{DD}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A4"
+				(number "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8434,54 +8494,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
-				(length 2.54)
-				(name "GPIO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "~{ALERT2}" open_collector line)
-			)
 			(pin input line
-				(at 12.7 0 180)
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(name "SENSE3+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -20.32 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B4"
+				(number "D1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8507,17 +8530,129 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 12.7 -10.16 180)
+			(pin power_in line
+				(at 0 20.32 270)
 				(length 2.54)
-				(name "ADDRSEL"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_CLK" input line)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8545,97 +8680,42 @@
 				(alternate "GPIO" bidirectional line)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "SENSE3+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -20.32 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 12.7 7.62 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
-				(name "SDA"
+				(name "GPIO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "D4"
+				(number "B2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_DATA" bidirectional line)
+				(alternate "~{ALERT2}" open_collector line)
+			)
+			(pin passive line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "ADDRSEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 			)
 		)
 		(symbol "PAC1953x-xJ6CX_0_1"
@@ -8651,6 +8731,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1954x-x4MX"
 		(exclude_from_sim no)
@@ -8719,44 +8800,6 @@
 		)
 		(symbol "PAC1954x-x4MX_0_0"
 			(pin input line
-				(at 12.7 -2.54 180)
-				(length 2.54)
-				(name "SLOW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "GPIO" bidirectional line)
-				(alternate "~{ALERT1}" open_collector line)
-			)
-			(pin input line
-				(at -12.7 -10.16 0)
-				(length 2.54)
-				(name "SENSE4+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "SENSE1+"
@@ -8828,36 +8871,35 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
+			(pin input line
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "GPIO"
+				(name "SENSE3+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "~{ALERT2}" open_collector line)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at -12.7 -5.08 0)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(name "SENSE3-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8865,17 +8907,35 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 2.54 -20.32 90)
+			(pin input line
+				(at -12.7 -10.16 0)
 				(length 2.54)
-				(name "EP"
+				(name "SENSE4+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "17"
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "SENSE4-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8912,6 +8972,24 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -20.32 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8957,6 +9035,63 @@
 				)
 				(alternate "SM_DATA" bidirectional line)
 			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SLOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GPIO" bidirectional line)
+				(alternate "~{ALERT1}" open_collector line)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "GPIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{ALERT2}" open_collector line)
+			)
 			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 2.54)
@@ -8968,60 +9103,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "SENSE3-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "SENSE3+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -12.7 0)
-				(length 2.54)
-				(name "SENSE4-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9043,6 +9124,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PAC1954x-xJ6CX"
 		(exclude_from_sim no)
@@ -9064,7 +9146,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
 			(at 0 -33.02 0)
 			(effects
 				(font
@@ -9100,7 +9182,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9111,16 +9193,16 @@
 		)
 		(symbol "PAC1954x-xJ6CX_0_0"
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
-				(name "SENSE2+"
+				(name "SENSE1+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A1"
+				(number "A3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9147,34 +9229,16 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
-				(name "SENSE1+"
+				(name "SENSE2+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 20.32 270)
-				(length 2.54)
-				(name "V_{DD}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A4"
+				(number "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9200,36 +9264,89 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -5.08 180)
+			(pin input line
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "GPIO"
+				(name "SENSE3+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B2"
+				(number "D1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "~{ALERT2}" open_collector line)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at -12.7 -5.08 0)
 				(length 2.54)
-				(name "~{PWRDN}"
+				(name "SENSE3-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B3"
+				(number "C1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -10.16 0)
+				(length 2.54)
+				(name "SENSE4+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "SENSE4-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 20.32 270)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9256,34 +9373,54 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -5.08 0)
+				(at 12.7 10.16 180)
 				(length 2.54)
-				(name "SENSE3-"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C1"
+				(number "C4"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
+				(alternate "SM_CLK" input line)
 			)
-			(pin passive line
-				(at 12.7 -10.16 180)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
 				(length 2.54)
-				(name "ADDRSEL"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SM_DATA" bidirectional line)
+			)
+			(pin input line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{PWRDN}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9311,97 +9448,42 @@
 				(alternate "GPIO" bidirectional line)
 				(alternate "~{ALERT1}" open_collector line)
 			)
-			(pin input line
-				(at 12.7 10.16 180)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "SM_CLK" input line)
-			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "SENSE3+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -12.7 0)
-				(length 2.54)
-				(name "SENSE4-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -10.16 0)
-				(length 2.54)
-				(name "SENSE4+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 12.7 7.62 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
-				(name "SDA"
+				(name "GPIO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "D4"
+				(number "B2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "SM_DATA" bidirectional line)
+				(alternate "~{ALERT2}" open_collector line)
+			)
+			(pin passive line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "ADDRSEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 			)
 		)
 		(symbol "PAC1954x-xJ6CX_0_1"
@@ -9417,6 +9499,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "INA219BxD"
 		(extends "INA219AxD")
@@ -9546,838 +9629,6 @@
 			)
 		)
 	)
-	(symbol "INA233"
-		(extends "INA226")
-		(property "Reference" "U"
-			(at -6.35 11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "INA233"
-			(at 3.81 11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
-			(at 20.32 -11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina233.pdf"
-			(at 8.89 -2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C, SMBus-, and PMBus-Compatible Interface, VSSOP-10"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "ADC I2C 16-Bit Oversampling Current Shunt"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1941x-1x-4MX"
-		(extends "PAC1951x-1x-4MX")
-		(property "Reference" "U"
-			(at 10.16 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1941x-1x-4MX"
-			(at 10.16 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "One Channel High-side Power Monitor, 9V, I2C, VQFN-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1941x-1x-J6CX"
-		(extends "PAC1951x-1x-J6CX")
-		(property "Reference" "U"
-			(at 10.16 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1941x-1x-J6CX"
-			(at 10.16 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "One Channel High-side Power Monitor, 9V, I2C, WLCSP-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1941x-2x-4MX"
-		(extends "PAC1951x-2x-4MX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1941x-2x-4MX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "One Channel Low-side Power Monitor, 9V, I2C, VQFN-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1941x-2x-J6CX"
-		(extends "PAC1951x-2x-J6CX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1941x-2x-J6CX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "One Channel Low-side Power Monitor, 9V, I2C, WLCSP-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1942x-1x-4MX"
-		(extends "PAC1952x-1x-4MX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1942x-1x-4MX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two Channel High-side Power Monitor, 9V, I2C, VQFN-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1942x-1x-J6CX"
-		(extends "PAC1952x-1x-J6CX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1942x-1x-J6CX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two Channel High-side Power Monitor, 9V, I2C, WLCSP-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1942x-2x-4MX"
-		(extends "PAC1952x-2x-4MX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1942x-2x-4MX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two Channel Low-side Power Monitor, 9V, I2C, VQFN-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1942x-2x-J6CX"
-		(extends "PAC1952x-2x-J6CX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1942x-2x-J6CX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two Channel Low-side Power Monitor, 9V, I2C, WLCSP-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1943x-x4MX"
-		(extends "PAC1953x-x4MX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1943x-x4MX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Three Channel High-Side Power Monitor, 9V, I2C, VQFN-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1943x-xJ6CX"
-		(extends "PAC1953x-xJ6CX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1943x-xJ6CX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Three Channel High-Side Power Monitor, 9V, I2C, WLCSP-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1944x-x4MX"
-		(extends "PAC1954x-x4MX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1944x-x4MX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Four Channel High-side Power Monitor, 9V, I2C, VQFN-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "PAC1944x-xJ6CX"
-		(extends "PAC1954x-xJ6CX")
-		(property "Reference" "U"
-			(at 7.62 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAC1944x-xJ6CX"
-			(at 7.62 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_P0.5mm"
-			(at 0 -33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
-			(at 0 -35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Four Channel High-side Power Monitor, 9V, I2C, WLCSP-16"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Power Monitor I2C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(symbol "INA228"
 		(extends "INA226")
 		(property "Reference" "U"
@@ -10424,6 +9675,70 @@
 			)
 		)
 		(property "ki_keywords" "ADC I2C 20-Bit Oversampling Current Shunt"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "VSSOP*3x3mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "INA233"
+		(extends "INA226")
+		(property "Reference" "U"
+			(at -6.35 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "INA233"
+			(at 3.81 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
+			(at 20.32 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina233.pdf"
+			(at 8.89 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C, SMBus-, and PMBus-Compatible Interface, VSSOP-10"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ADC I2C 16-Bit Oversampling Current Shunt"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10561,6 +9876,774 @@
 			)
 		)
 		(property "ki_fp_filters" "VSSOP*3x3mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1941x-1x-4MX"
+		(extends "PAC1951x-1x-4MX")
+		(property "Reference" "U"
+			(at 10.16 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1941x-1x-4MX"
+			(at 10.16 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "One Channel High-side Power Monitor, 9V, I2C, VQFN-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1941x-1x-J6CX"
+		(extends "PAC1951x-1x-J6CX")
+		(property "Reference" "U"
+			(at 10.16 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1941x-1x-J6CX"
+			(at 10.16 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "One Channel High-side Power Monitor, 9V, I2C, WLCSP-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1941x-2x-4MX"
+		(extends "PAC1951x-2x-4MX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1941x-2x-4MX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "One Channel Low-side Power Monitor, 9V, I2C, VQFN-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1941x-2x-J6CX"
+		(extends "PAC1951x-2x-J6CX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1941x-2x-J6CX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "One Channel Low-side Power Monitor, 9V, I2C, WLCSP-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1942x-1x-4MX"
+		(extends "PAC1952x-1x-4MX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1942x-1x-4MX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Two Channel High-side Power Monitor, 9V, I2C, VQFN-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1942x-1x-J6CX"
+		(extends "PAC1952x-1x-J6CX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1942x-1x-J6CX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Two Channel High-side Power Monitor, 9V, I2C, WLCSP-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1942x-2x-4MX"
+		(extends "PAC1952x-2x-4MX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1942x-2x-4MX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Two Channel Low-side Power Monitor, 9V, I2C, VQFN-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1942x-2x-J6CX"
+		(extends "PAC1952x-2x-J6CX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1942x-2x-J6CX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Two Channel Low-side Power Monitor, 9V, I2C, WLCSP-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1943x-x4MX"
+		(extends "PAC1953x-x4MX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1943x-x4MX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Three Channel High-Side Power Monitor, 9V, I2C, VQFN-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1943x-xJ6CX"
+		(extends "PAC1953x-xJ6CX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1943x-xJ6CX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Three Channel High-Side Power Monitor, 9V, I2C, WLCSP-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1944x-x4MX"
+		(extends "PAC1954x-x4MX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1944x-x4MX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four Channel High-side Power Monitor, 9V, I2C, VQFN-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*EP1.1x1.1mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "PAC1944x-xJ6CX"
+		(extends "PAC1954x-xJ6CX")
+		(property "Reference" "U"
+			(at 7.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PAC1944x-xJ6CX"
+			(at 7.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_CSP:WLCSP-16_2.225x2.17mm_Layout4x4_P0.5mm"
+			(at 0 -33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/PAC194X-Data-Sheet-20006543.pdf"
+			(at 0 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four Channel High-side Power Monitor, 9V, I2C, WLCSP-16"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Power Monitor I2C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "WLCSP*2.225x2.17mm*Layout4x4*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font

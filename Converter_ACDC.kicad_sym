@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "BAC05S05DC"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -79,30 +79,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -115,10 +91,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -129,7 +117,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -153,7 +141,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -165,7 +153,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -178,6 +166,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -214,24 +214,6 @@
 		)
 		(symbol "BAC05S05DC_1_1"
 			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC/N"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "AC/L"
@@ -249,9 +231,28 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "AC/N"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin no_connect line
 				(at 7.62 0 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -260,24 +261,6 @@
 					)
 				)
 				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "-Vo"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -303,7 +286,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vo"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "HLK-12M05A"
 		(exclude_from_sim no)
@@ -382,30 +384,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -418,10 +396,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.175)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -432,31 +422,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -1.27) (xy 0 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0) (xy 0 -0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 1.27) (xy 0 0.635)
+					(xy 0 3.81) (xy 0 3.175)
 				)
 				(stroke
 					(width 0)
@@ -480,7 +446,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 3.81) (xy 0 3.175)
+					(xy 0 1.27) (xy 0 0.635)
 				)
 				(stroke
 					(width 0)
@@ -492,7 +458,31 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 0) (xy 0 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27) (xy 0 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.175)
 				)
 				(stroke
 					(width 0)
@@ -505,6 +495,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -613,6 +615,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "HLK-30M05"
 		(exclude_from_sim no)
@@ -691,30 +694,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -727,10 +706,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.175)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -741,31 +732,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -1.27) (xy 0 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0) (xy 0 -0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 1.27) (xy 0 0.635)
+					(xy 0 3.81) (xy 0 3.175)
 				)
 				(stroke
 					(width 0)
@@ -789,7 +756,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 3.81) (xy 0 3.175)
+					(xy 0 1.27) (xy 0 0.635)
 				)
 				(stroke
 					(width 0)
@@ -801,7 +768,31 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 0) (xy 0 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27) (xy 0 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.175)
 				)
 				(stroke
 					(width 0)
@@ -814,6 +805,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -886,24 +889,6 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "-Vout"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "+Vout"
@@ -921,7 +906,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "HLK-PM01"
 		(exclude_from_sim no)
@@ -1000,30 +1004,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -1036,10 +1016,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.175)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -1050,31 +1042,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -1.27) (xy 0 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0) (xy 0 -0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 1.27) (xy 0 0.635)
+					(xy 0 3.81) (xy 0 3.175)
 				)
 				(stroke
 					(width 0)
@@ -1098,7 +1066,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 3.81) (xy 0 3.175)
+					(xy 0 1.27) (xy 0 0.635)
 				)
 				(stroke
 					(width 0)
@@ -1110,7 +1078,31 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 0) (xy 0 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27) (xy 0 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.175)
 				)
 				(stroke
 					(width 0)
@@ -1123,6 +1115,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -1195,24 +1199,6 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "-Vout"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "+Vout"
@@ -1230,7 +1216,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "HS-40003"
 		(exclude_from_sim no)
@@ -1309,30 +1314,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -1345,10 +1326,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -1360,6 +1353,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -1397,7 +1402,7 @@
 		(symbol "HS-40003_1_1"
 			(polyline
 				(pts
-					(xy 0 -1.27) (xy 0 -2.54)
+					(xy 0 3.81) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1421,7 +1426,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 3.81) (xy 0 2.54)
+					(xy 0 -1.27) (xy 0 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -1429,24 +1434,6 @@
 				)
 				(fill
 					(type none)
-				)
-			)
-			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC/N"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
 				)
 			)
 			(pin power_in line
@@ -1460,6 +1447,24 @@
 					)
 				)
 				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "AC/N"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1504,6 +1509,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IRM-02-3.3"
 		(exclude_from_sim no)
@@ -1582,30 +1588,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -1618,10 +1600,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -1633,6 +1627,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -1670,7 +1676,7 @@
 		(symbol "IRM-02-3.3_1_1"
 			(polyline
 				(pts
-					(xy 0 -1.27) (xy 0 -2.54)
+					(xy 0 3.81) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1694,7 +1700,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 3.81) (xy 0 2.54)
+					(xy 0 -1.27) (xy 0 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -1702,24 +1708,6 @@
 				)
 				(fill
 					(type none)
-				)
-			)
-			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC/N"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
 				)
 			)
 			(pin power_in line
@@ -1740,17 +1728,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vo"
+				(name "AC/N"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1776,7 +1764,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vo"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IRM-02-3.3S"
 		(exclude_from_sim no)
@@ -1855,30 +1862,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -1891,9 +1874,33 @@
 					(type none)
 				)
 			)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
-					(xy 0 -1.27) (xy 0 -2.54)
+					(xy 0 3.81) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1917,19 +1924,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 3.81) (xy 0 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -1.27) (xy 0 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -1942,6 +1937,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -1993,6 +2000,24 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "AC/N"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_out line
 				(at 10.16 2.54 180)
 				(length 2.54)
@@ -2029,25 +2054,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC/N"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IRM-03-3.3"
 		(exclude_from_sim no)
@@ -2126,30 +2134,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -2162,10 +2146,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -2176,7 +2172,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -2200,7 +2196,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -2212,7 +2208,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -2225,6 +2221,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -2278,17 +2286,36 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vo"
+				(name "AC/N"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "14"
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -7.62 0 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2314,35 +2341,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -10.16 -2.54 0)
+			(pin power_out line
+				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "AC/N"
+				(name "-Vo"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -7.62 0 0)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2351,6 +2360,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IRM-03-3.3S"
 		(exclude_from_sim no)
@@ -2429,30 +2439,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -2465,10 +2451,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -2479,7 +2477,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -2503,7 +2501,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -2515,7 +2513,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -2528,6 +2526,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -2581,17 +2591,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vo"
+				(name "AC/N"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "14"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2617,17 +2627,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -10.16 -2.54 0)
+			(pin power_out line
+				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "AC/N"
+				(name "-Vo"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2636,6 +2646,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IRM-05-3.3"
 		(exclude_from_sim no)
@@ -2714,30 +2725,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -2750,10 +2737,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -2764,7 +2763,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -2788,7 +2787,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -2800,7 +2799,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -2813,6 +2812,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -2849,24 +2860,6 @@
 		)
 		(symbol "IRM-05-3.3_1_1"
 			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC/N"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "AC/L"
@@ -2884,17 +2877,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vo"
+				(name "AC/N"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2920,7 +2913,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vo"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IRM-10-3.3"
 		(exclude_from_sim no)
@@ -2999,30 +3011,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -3035,10 +3023,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -3049,7 +3049,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -3073,7 +3073,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -3085,7 +3085,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -3098,6 +3098,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -3134,24 +3146,6 @@
 		)
 		(symbol "IRM-10-3.3_1_1"
 			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC/N"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "AC/L"
@@ -3169,17 +3163,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vo"
+				(name "AC/N"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3205,7 +3199,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vo"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IRM-20-3.3"
 		(exclude_from_sim no)
@@ -3284,30 +3297,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -3320,9 +3309,33 @@
 					(type none)
 				)
 			)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
-					(xy 0 -1.27) (xy 0 -2.54)
+					(xy 0 3.81) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -3346,19 +3359,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 3.81) (xy 0 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -1.27) (xy 0 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -3371,6 +3372,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -3443,24 +3456,6 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "-Vo"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "+Vo"
@@ -3478,7 +3473,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vo"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "IRM-60-5"
 		(exclude_from_sim no)
@@ -3557,30 +3571,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -3593,10 +3583,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -3607,7 +3609,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -3631,7 +3633,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -3643,7 +3645,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -3656,6 +3658,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -3762,6 +3776,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "MFM-10-3.3"
 		(exclude_from_sim no)
@@ -3840,30 +3855,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -3876,10 +3867,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -3890,7 +3893,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -3914,7 +3917,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -3926,7 +3929,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -3939,6 +3942,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -3975,24 +3990,6 @@
 		)
 		(symbol "MFM-10-3.3_1_1"
 			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC/N"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "AC/L"
@@ -4010,17 +4007,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vo"
+				(name "AC/N"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4046,7 +4043,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vo"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "MFM-15-3.3"
 		(exclude_from_sim no)
@@ -4125,30 +4141,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -4161,10 +4153,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -4175,7 +4179,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -4199,7 +4203,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -4211,7 +4215,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -4224,6 +4228,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -4296,24 +4312,6 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "-Vo"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "+Vo"
@@ -4331,7 +4329,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vo"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "PBO-3-S3.3"
 		(exclude_from_sim no)
@@ -4410,30 +4427,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -4446,10 +4439,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -7.62) (xy 0 -8.89)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -4460,55 +4465,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -5.08) (xy 0 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0) (xy 0 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 2.54) (xy 0 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 10.16) (xy 0 8.89)
 				)
 				(stroke
 					(width 0)
@@ -4532,7 +4489,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 10.16) (xy 0 8.89)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -4544,7 +4501,55 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 2.54) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -5.08) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -7.62) (xy 0 -8.89)
 				)
 				(stroke
 					(width 0)
@@ -4557,6 +4562,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -4588,60 +4605,6 @@
 				)
 				(fill
 					(type none)
-				)
-			)
-			(pin power_in line
-				(at -12.7 -7.62 0)
-				(length 2.54)
-				(name "AC(N)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 12.7 -7.62 180)
-				(length 2.54)
-				(name "-Vo"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 12.7 7.62 180)
-				(length 2.54)
-				(name "+Vo"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
 				)
 			)
 			(pin power_in line
@@ -4698,7 +4661,62 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at -12.7 -7.62 0)
+				(length 2.54)
+				(name "AC(N)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "+Vo"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "-Vo"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RAC01-xxSGB"
 		(exclude_from_sim no)
@@ -4777,30 +4795,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -4813,10 +4807,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -4827,7 +4833,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -4851,7 +4857,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -4863,7 +4869,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -4876,6 +4882,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -4910,24 +4928,6 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC(L)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "AC(N)"
@@ -4945,17 +4945,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vout"
+				(name "AC(L)"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4981,7 +4981,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RAC04-xxSGA"
 		(exclude_from_sim no)
@@ -5060,30 +5079,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -5096,10 +5091,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -5110,7 +5117,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -5134,7 +5141,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -5146,7 +5153,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -5159,6 +5166,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -5230,7 +5249,8 @@
 			)
 			(pin no_connect line
 				(at 7.62 0 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -5239,24 +5259,6 @@
 					)
 				)
 				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "-Vout"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5282,7 +5284,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RAC04-xxSGB"
 		(exclude_from_sim no)
@@ -5361,30 +5382,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -5397,10 +5394,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -5411,7 +5420,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -5435,7 +5444,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -5447,7 +5456,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -5460,6 +5469,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -5531,7 +5552,8 @@
 			)
 			(pin no_connect line
 				(at 7.62 0 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -5540,24 +5562,6 @@
 					)
 				)
 				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "-Vout"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5583,7 +5587,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RAC05-3.3SK"
 		(exclude_from_sim no)
@@ -5662,30 +5685,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -5698,10 +5697,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -5712,7 +5723,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -5736,7 +5747,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -5748,7 +5759,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -5761,6 +5772,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -5832,7 +5855,8 @@
 			)
 			(pin no_connect line
 				(at 7.62 0 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -5841,24 +5865,6 @@
 					)
 				)
 				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "-Vout"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5884,7 +5890,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RAC20-05SK"
 		(exclude_from_sim no)
@@ -5963,30 +5988,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -5999,10 +6000,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -6013,7 +6026,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -6037,7 +6050,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -6049,7 +6062,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -6062,6 +6075,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -6096,24 +6121,6 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC(N)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "AC(L)"
@@ -6131,17 +6138,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vout"
+				(name "AC(N)"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "4"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6167,7 +6174,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RAC20-12DK"
 		(exclude_from_sim no)
@@ -6246,30 +6272,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -6282,10 +6284,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -6296,7 +6310,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -6320,7 +6334,19 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -6332,24 +6358,6 @@
 			)
 		)
 		(symbol "RAC20-12DK_1_1"
-			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC(N)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
@@ -6368,17 +6376,35 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vout"
+				(name "AC(N)"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "+Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6405,16 +6431,16 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 2.54 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "+Vout"
+				(name "-Vout"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6423,6 +6449,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TMF05105"
 		(exclude_from_sim no)
@@ -6501,30 +6528,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -6537,10 +6540,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -6551,7 +6566,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -6575,7 +6590,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -6587,7 +6602,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -6600,6 +6615,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -6670,24 +6697,6 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "-Vout"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "+Vout"
@@ -6705,7 +6714,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TMF10105"
 		(exclude_from_sim no)
@@ -6784,30 +6812,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -6820,10 +6824,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -6834,7 +6850,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -6858,7 +6874,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -6870,7 +6886,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -6883,6 +6899,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -6917,24 +6945,6 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC(N)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "AC(L)"
@@ -6945,6 +6955,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "AC(N)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6989,6 +7017,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TMF20105"
 		(exclude_from_sim no)
@@ -7067,30 +7096,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -7103,10 +7108,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -7117,7 +7134,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -7141,7 +7158,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -7153,7 +7170,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -7166,6 +7183,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -7200,24 +7229,6 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC(N)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "AC(L)"
@@ -7235,17 +7246,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vout"
+				(name "AC(N)"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7271,7 +7282,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TMF30105"
 		(exclude_from_sim no)
@@ -7350,30 +7380,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -7386,10 +7392,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -7400,7 +7418,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -7424,7 +7442,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -7436,7 +7454,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -7449,6 +7467,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -7483,24 +7513,6 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "AC(N)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "AC(L)"
@@ -7518,17 +7530,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
+			(pin power_in line
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-Vout"
+				(name "AC(N)"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7554,7 +7566,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TMLM04103"
 		(exclude_from_sim no)
@@ -7633,30 +7664,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -7669,10 +7676,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -7683,7 +7702,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -7707,7 +7726,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -7719,7 +7738,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -7732,6 +7751,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -7767,42 +7798,6 @@
 			)
 		)
 		(symbol "TMLM04103_1_1"
-			(pin power_out line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "Vout+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "Vout-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
@@ -7839,7 +7834,44 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "Vout+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "Vout-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TMLM04225"
 		(exclude_from_sim no)
@@ -7918,30 +7950,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -7.874 0.635)
-				(mid -7.239 0.2495)
-				(end -6.604 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -5.334 0.635)
-				(mid -5.969 1.0072)
-				(end -6.604 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -7.874 -0.635) (xy -5.334 -0.635)
@@ -7954,10 +7962,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -6.604 0.635)
+				(mid -7.239 0.2495)
+				(end -7.874 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -6.604 0.635)
+				(mid -5.969 1.0072)
+				(end -5.334 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -7968,7 +7988,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -7992,7 +8012,19 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -8004,6 +8036,42 @@
 			)
 		)
 		(symbol "TMLM04225_1_1"
+			(pin power_in line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "AC(L)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "AC(N)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_out line
 				(at 12.7 2.54 180)
 				(length 2.54)
@@ -8058,43 +8126,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -12.7 2.54 0)
-				(length 2.54)
-				(name "AC(L)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "AC(N)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TMLM05103"
 		(exclude_from_sim no)
@@ -8173,30 +8206,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -8209,10 +8218,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -8223,7 +8244,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -8247,7 +8268,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -8259,7 +8280,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -8272,6 +8293,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -8307,42 +8340,6 @@
 			)
 		)
 		(symbol "TMLM05103_1_1"
-			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "Vout-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "Vout+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
@@ -8379,7 +8376,44 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "Vout+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "Vout-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TMLM10103"
 		(exclude_from_sim no)
@@ -8458,30 +8492,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -8494,10 +8504,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -8509,6 +8531,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -8546,7 +8580,7 @@
 		(symbol "TMLM10103_1_1"
 			(polyline
 				(pts
-					(xy 0 -1.27) (xy 0 -2.54)
+					(xy 0 3.81) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -8570,7 +8604,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 3.81) (xy 0 2.54)
+					(xy 0 -1.27) (xy 0 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -8578,42 +8612,6 @@
 				)
 				(fill
 					(type none)
-				)
-			)
-			(pin power_out line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "Vout-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "Vout+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
 				)
 			)
 			(pin power_in line
@@ -8652,7 +8650,44 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "Vout+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "Vout-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TPP-15-103-D"
 		(exclude_from_sim no)
@@ -8731,30 +8766,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -8767,10 +8778,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy -0.254 -0.508) (xy 2.286 -0.508)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -8782,6 +8805,18 @@
 			(polyline
 				(pts
 					(xy -0.254 0.762) (xy 0.254 0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.254 -0.508) (xy 2.286 -0.508)
 				)
 				(stroke
 					(width 0)
@@ -8819,7 +8854,7 @@
 		(symbol "TPP-15-103-D_1_1"
 			(polyline
 				(pts
-					(xy -1.27 -1.27) (xy -1.27 -2.54)
+					(xy -1.27 3.81) (xy -1.27 2.54)
 				)
 				(stroke
 					(width 0)
@@ -8843,7 +8878,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 3.81) (xy -1.27 2.54)
+					(xy -1.27 -1.27) (xy -1.27 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -8851,6 +8886,24 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "AC/L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 			(pin power_in line
@@ -8871,17 +8924,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -10.16 2.54 0)
+			(pin power_out line
+				(at 10.16 2.54 180)
 				(length 2.54)
-				(name "AC/L"
+				(name "+Vo"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8925,25 +8978,8 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "+Vo"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VTX-214-010-103"
 		(exclude_from_sim no)
@@ -9022,30 +9058,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -9058,10 +9070,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -9073,6 +9097,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -9110,19 +9146,7 @@
 		(symbol "VTX-214-010-103_1_1"
 			(polyline
 				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -9146,7 +9170,19 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -9229,6 +9265,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VTX-214-015-103"
 		(exclude_from_sim no)
@@ -9307,30 +9344,6 @@
 					(type background)
 				)
 			)
-			(arc
-				(start -5.334 0.635)
-				(mid -4.699 0.2495)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.794 0.635)
-				(mid -3.429 1.0072)
-				(end -4.064 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -9343,10 +9356,22 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.794 -0.635) (xy 5.334 -0.635)
+			(arc
+				(start -4.064 0.635)
+				(mid -4.699 0.2495)
+				(end -5.334 0.635)
+				(stroke
+					(width 0)
+					(type default)
 				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -4.064 0.635)
+				(mid -3.429 1.0072)
+				(end -2.794 0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -9358,6 +9383,18 @@
 			(polyline
 				(pts
 					(xy 2.794 0.635) (xy 3.302 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.635) (xy 5.334 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -9395,19 +9432,7 @@
 		(symbol "VTX-214-015-103_1_1"
 			(polyline
 				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0) (xy 0 -1.27)
+					(xy 0 5.08) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -9431,7 +9456,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 0 3.81)
+					(xy 0 0) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -9441,17 +9466,29 @@
 					(type none)
 				)
 			)
-			(pin no_connect line
-				(at 0 -5.08 90)
-				(length 2.54) hide
-				(name "FG"
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "L"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9477,17 +9514,18 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -10.16 2.54 0)
+			(pin no_connect line
+				(at 0 -5.08 90)
 				(length 2.54)
-				(name "L"
+				(hide yes)
+				(name "FG"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9532,6 +9570,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "HLK-10M03"
 		(extends "HLK-PM01")

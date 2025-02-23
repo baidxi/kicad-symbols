@@ -1,10 +1,12 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "BT169B"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -77,10 +79,10 @@
 		(symbol "BT169B_0_1"
 			(polyline
 				(pts
-					(xy -1.27 -2.54) (xy -0.635 -1.27)
+					(xy -1.27 1.27) (xy 1.27 1.27) (xy 0 -1.27) (xy -1.27 1.27)
 				)
 				(stroke
-					(width 0)
+					(width 0.2032)
 					(type default)
 				)
 				(fill
@@ -101,7 +103,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -2.54) (xy 0 2.54)
+					(xy -1.27 -2.54) (xy -0.635 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -113,10 +115,10 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 1.27) (xy 1.27 1.27) (xy 0 -1.27) (xy -1.27 1.27)
+					(xy 0 -2.54) (xy 0 2.54)
 				)
 				(stroke
-					(width 0.2032)
+					(width 0)
 					(type default)
 				)
 				(fill
@@ -125,24 +127,6 @@
 			)
 		)
 		(symbol "BT169B_1_1"
-			(pin passive line
-				(at 0 3.81 270)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at -3.81 -2.54 0)
 				(length 2.54)
@@ -154,6 +138,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -180,6 +182,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Generic_Triac_A1A2G"
 		(pin_names
@@ -245,7 +248,7 @@
 		(symbol "Generic_Triac_A1A2G_0_1"
 			(polyline
 				(pts
-					(xy -2.54 -1.27) (xy 2.54 -1.27)
+					(xy -2.54 1.27) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -257,7 +260,19 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy 2.54 1.27)
+					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.27) (xy 2.54 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -281,18 +296,6 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 0 -1.27) (xy 1.27 1.27) (xy 2.54 -1.27)
 				)
 				(stroke
@@ -305,17 +308,17 @@
 			)
 		)
 		(symbol "Generic_Triac_A1A2G_1_1"
-			(pin passive line
-				(at 0 -3.81 90)
+			(pin input line
+				(at -3.81 -2.54 0)
 				(length 2.54)
-				(name "A1"
+				(name "G"
 					(effects
 						(font
 							(size 0.635 0.635)
 						)
 					)
 				)
-				(number "1"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -341,17 +344,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -3.81 -2.54 0)
+			(pin passive line
+				(at 0 -3.81 90)
 				(length 2.54)
-				(name "G"
+				(name "A1"
 					(effects
 						(font
 							(size 0.635 0.635)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -360,6 +363,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Generic_Triac_A1GA2"
 		(pin_names
@@ -425,7 +429,7 @@
 		(symbol "Generic_Triac_A1GA2_0_1"
 			(polyline
 				(pts
-					(xy -2.54 -1.27) (xy 2.54 -1.27)
+					(xy -2.54 1.27) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -437,7 +441,19 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy 2.54 1.27)
+					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.27) (xy 2.54 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -461,18 +477,6 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 0 -1.27) (xy 1.27 1.27) (xy 2.54 -1.27)
 				)
 				(stroke
@@ -485,24 +489,6 @@
 			)
 		)
 		(symbol "Generic_Triac_A1GA2_1_1"
-			(pin passive line
-				(at 0 -3.81 90)
-				(length 2.54)
-				(name "A1"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at -3.81 -2.54 0)
 				(length 2.54)
@@ -539,7 +525,26 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Generic_Triac_A2A1G"
 		(pin_names
@@ -605,7 +610,7 @@
 		(symbol "Generic_Triac_A2A1G_0_1"
 			(polyline
 				(pts
-					(xy -2.54 -1.27) (xy 2.54 -1.27)
+					(xy -2.54 1.27) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -617,7 +622,19 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy 2.54 1.27)
+					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.27) (xy 2.54 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -641,18 +658,6 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 0 -1.27) (xy 1.27 1.27) (xy 2.54 -1.27)
 				)
 				(stroke
@@ -665,6 +670,24 @@
 			)
 		)
 		(symbol "Generic_Triac_A2A1G_1_1"
+			(pin input line
+				(at -3.81 -2.54 0)
+				(length 2.54)
+				(name "G"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 0 3.81 270)
 				(length 2.54)
@@ -701,25 +724,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -3.81 -2.54 0)
-				(length 2.54)
-				(name "G"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Generic_Triac_A2GA1"
 		(pin_names
@@ -785,7 +791,7 @@
 		(symbol "Generic_Triac_A2GA1_0_1"
 			(polyline
 				(pts
-					(xy -2.54 -1.27) (xy 2.54 -1.27)
+					(xy -2.54 1.27) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -797,7 +803,19 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy 2.54 1.27)
+					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.27) (xy 2.54 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -821,18 +839,6 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 0 -1.27) (xy 1.27 1.27) (xy 2.54 -1.27)
 				)
 				(stroke
@@ -845,24 +851,6 @@
 			)
 		)
 		(symbol "Generic_Triac_A2GA1_1_1"
-			(pin passive line
-				(at 0 3.81 270)
-				(length 2.54)
-				(name "A2"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at -3.81 -2.54 0)
 				(length 2.54)
@@ -874,6 +862,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -900,6 +906,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Generic_Triac_GA1A2"
 		(pin_names
@@ -965,7 +972,7 @@
 		(symbol "Generic_Triac_GA1A2_0_1"
 			(polyline
 				(pts
-					(xy -2.54 -1.27) (xy 2.54 -1.27)
+					(xy -2.54 1.27) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -977,7 +984,19 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy 2.54 1.27)
+					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.27) (xy 2.54 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -993,18 +1012,6 @@
 				)
 				(stroke
 					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -1044,24 +1051,6 @@
 				)
 			)
 			(pin passive line
-				(at 0 -3.81 90)
-				(length 2.54)
-				(name "A1"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 0 3.81 270)
 				(length 2.54)
 				(name "A2"
@@ -1079,7 +1068,26 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Generic_Triac_GA2A1"
 		(pin_names
@@ -1145,7 +1153,7 @@
 		(symbol "Generic_Triac_GA2A1_0_1"
 			(polyline
 				(pts
-					(xy -2.54 -1.27) (xy 2.54 -1.27)
+					(xy -2.54 1.27) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -1157,7 +1165,19 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy 2.54 1.27)
+					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.27) (xy 2.54 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -1173,18 +1193,6 @@
 				)
 				(stroke
 					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -1260,10 +1268,13 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TIC106"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1336,10 +1347,10 @@
 		(symbol "TIC106_0_1"
 			(polyline
 				(pts
-					(xy -1.27 -2.54) (xy -0.635 -1.27)
+					(xy -1.27 1.27) (xy 1.27 1.27) (xy 0 -1.27) (xy -1.27 1.27)
 				)
 				(stroke
-					(width 0)
+					(width 0.2032)
 					(type default)
 				)
 				(fill
@@ -1360,7 +1371,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -2.54) (xy 0 2.54)
+					(xy -1.27 -2.54) (xy -0.635 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -1372,10 +1383,10 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 1.27) (xy 1.27 1.27) (xy 0 -1.27) (xy -1.27 1.27)
+					(xy 0 -2.54) (xy 0 2.54)
 				)
 				(stroke
-					(width 0.2032)
+					(width 0)
 					(type default)
 				)
 				(fill
@@ -1384,17 +1395,17 @@
 			)
 		)
 		(symbol "TIC106_1_1"
-			(pin passive line
-				(at 0 -3.81 90)
+			(pin input line
+				(at -3.81 -2.54 0)
 				(length 2.54)
-				(name "K"
+				(name "G"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1420,17 +1431,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -3.81 -2.54 0)
+			(pin passive line
+				(at 0 -3.81 90)
 				(length 2.54)
-				(name "G"
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1439,6 +1450,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "TIC226"
 		(pin_names
@@ -1516,7 +1528,7 @@
 		(symbol "TIC226_0_1"
 			(polyline
 				(pts
-					(xy -2.54 -1.27) (xy 2.54 -1.27)
+					(xy -2.54 1.27) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0.2032)
@@ -1528,7 +1540,19 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy 2.54 1.27)
+					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
+				)
+				(stroke
+					(width 0.2032)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.27) (xy 2.54 -1.27)
 				)
 				(stroke
 					(width 0.2032)
@@ -1552,18 +1576,6 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0.2032)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 0 -1.27) (xy 1.27 1.27) (xy 2.54 -1.27)
 				)
 				(stroke
@@ -1576,17 +1588,17 @@
 			)
 		)
 		(symbol "TIC226_1_1"
-			(pin passive line
-				(at 0 -3.81 90)
+			(pin input line
+				(at -3.81 -2.54 0)
 				(length 2.54)
-				(name "A1"
+				(name "G"
 					(effects
 						(font
 							(size 0.635 0.635)
 						)
 					)
 				)
-				(number "1"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1612,17 +1624,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -3.81 -2.54 0)
+			(pin passive line
+				(at 0 -3.81 90)
 				(length 2.54)
-				(name "G"
+				(name "A1"
 					(effects
 						(font
 							(size 0.635 0.635)
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1631,10 +1643,13 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "X0202MN"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1707,10 +1722,10 @@
 		(symbol "X0202MN_0_1"
 			(polyline
 				(pts
-					(xy -1.27 -2.54) (xy -0.635 -1.27)
+					(xy -1.27 1.27) (xy 1.27 1.27) (xy 0 -1.27) (xy -1.27 1.27)
 				)
 				(stroke
-					(width 0)
+					(width 0.2032)
 					(type default)
 				)
 				(fill
@@ -1731,7 +1746,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -2.54) (xy 0 2.54)
+					(xy -1.27 -2.54) (xy -0.635 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -1743,10 +1758,10 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 1.27) (xy 1.27 1.27) (xy 0 -1.27) (xy -1.27 1.27)
+					(xy 0 -2.54) (xy 0 2.54)
 				)
 				(stroke
-					(width 0.2032)
+					(width 0)
 					(type default)
 				)
 				(fill
@@ -1755,17 +1770,17 @@
 			)
 		)
 		(symbol "X0202MN_1_1"
-			(pin passive line
-				(at 0 -3.81 90)
+			(pin input line
+				(at -3.81 -2.54 0)
 				(length 2.54)
-				(name "K"
+				(name "G"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1791,27 +1806,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -3.81 -2.54 0)
-				(length 2.54)
-				(name "G"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin passive line
 				(at 0 3.81 270)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "A"
 					(effects
 						(font
@@ -1827,11 +1825,32 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Z0103MN"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1901,7 +1920,7 @@
 		(symbol "Z0103MN_0_1"
 			(polyline
 				(pts
-					(xy -2.54 -1.27) (xy 2.54 -1.27)
+					(xy -2.54 1.27) (xy 2.54 1.27)
 				)
 				(stroke
 					(width 0.2032)
@@ -1913,7 +1932,19 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy 2.54 1.27)
+					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
+				)
+				(stroke
+					(width 0.2032)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.27) (xy 2.54 -1.27)
 				)
 				(stroke
 					(width 0.2032)
@@ -1937,18 +1968,6 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy -1.27 -1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0.2032)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 0 -1.27) (xy 1.27 1.27) (xy 2.54 -1.27)
 				)
 				(stroke
@@ -1961,17 +1980,17 @@
 			)
 		)
 		(symbol "Z0103MN_1_1"
-			(pin passive line
-				(at 0 -3.81 90)
+			(pin input line
+				(at -3.81 -2.54 0)
 				(length 2.54)
-				(name "A1"
+				(name "G"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1997,27 +2016,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -3.81 -2.54 0)
-				(length 2.54)
-				(name "G"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin passive line
 				(at 0 3.81 270)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "A4"
 					(effects
 						(font
@@ -2033,7 +2035,26 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "BT136-500"
 		(extends "TIC226")
