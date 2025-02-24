@@ -14989,7 +14989,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at -14.224 17.018 0)
+			(at -14.224 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14997,7 +14997,7 @@
 			)
 		)
 		(property "Value" "Flipper_Zero"
-			(at 10.16 17.018 0)
+			(at 8.89 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15005,7 +15005,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 -25.654 0)
+			(at 0 -20.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15014,7 +15014,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.flipper.net/development"
-			(at 0 -23.368 0)
+			(at 0 -18.288 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15023,7 +15023,7 @@
 			)
 		)
 		(property "Description" "Portable multi-tool for pentesters and geeks in a toy-like body, 13 GPIO, USB to UART/SPI/I2C bridge/converter, Serial Wire Debug interface, 2.54 mm pin header connector"
-			(at 0 -21.082 0)
+			(at 0 -16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15051,25 +15051,7 @@
 		)
 		(symbol "Flipper_Zero_0_0"
 			(pin power_out line
-				(at 0 17.78 270)
-				(length 2.54)
-				(name "3.3V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 2.54 17.78 270)
+				(at 17.78 17.78 180)
 				(length 2.54)
 				(name "5V"
 					(effects
@@ -15086,10 +15068,28 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 17.78 15.24 180)
+				(length 2.54)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(symbol "Flipper_Zero_1_0"
 			(pin output line
-				(at -17.78 10.16 0)
+				(at -17.78 17.78 0)
 				(length 2.54)
 				(name "USART1.TX"
 					(effects
@@ -15112,7 +15112,7 @@
 				(alternate "PB6" bidirectional line)
 			)
 			(pin input line
-				(at -17.78 7.62 0)
+				(at -17.78 15.24 0)
 				(length 2.54)
 				(name "USART1.RX"
 					(effects
@@ -15135,7 +15135,7 @@
 				(alternate "TIM1.BKIN" input line)
 			)
 			(pin output line
-				(at -17.78 2.54 0)
+				(at -17.78 10.16 0)
 				(length 2.54)
 				(name "SWCLK"
 					(effects
@@ -15156,7 +15156,7 @@
 				(alternate "PA14" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 0 0)
+				(at -17.78 7.62 0)
 				(length 2.54)
 				(name "SWDIO"
 					(effects
@@ -15176,7 +15176,7 @@
 				(alternate "PA13" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 -5.08 0)
+				(at -17.78 2.54 0)
 				(length 2.54)
 				(name "iButton"
 					(effects
@@ -15198,7 +15198,7 @@
 				(alternate "TIM1.2N" output line)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -15217,7 +15217,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -15236,7 +15236,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -15445,8 +15445,8 @@
 		)
 		(symbol "Flipper_Zero_1_1"
 			(rectangle
-				(start -15.24 15.24)
-				(end 15.24 -12.7)
+				(start -15.24 20.32)
+				(end 15.24 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
