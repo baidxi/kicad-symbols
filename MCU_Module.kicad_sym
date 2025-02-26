@@ -14988,7 +14988,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "J"
+		(property "Reference" "A"
 			(at -14.224 16.764 0)
 			(effects
 				(font
@@ -15089,9 +15089,9 @@
 		)
 		(symbol "Flipper_Zero_1_0"
 			(pin bidirectional line
-				(at -17.78 10.16 0)
+				(at -17.78 12.7 0)
 				(length 2.54)
-				(name "PA4"
+				(name "~{SPI1.CS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15110,12 +15110,12 @@
 				(alternate "COMP2.IN-" input line)
 				(alternate "EXTI.4" input line)
 				(alternate "LPTIM2.OUT" output line)
-				(alternate "~{SPI1.CS}" bidirectional line)
+				(alternate "PA4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 7.62 0)
+				(at -17.78 10.16 0)
 				(length 2.54)
-				(name "PA6"
+				(name "SPI1.MISO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15132,14 +15132,14 @@
 				(alternate "ADC1.11" input line)
 				(alternate "EXTI.6" input line)
 				(alternate "LPUART1.CTS" input line)
-				(alternate "SPI1.MISO" bidirectional line)
+				(alternate "PA6" bidirectional line)
 				(alternate "TIM1.BKIN" input line)
 				(alternate "TIM16.1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 5.08 0)
+				(at -17.78 7.62 0)
 				(length 2.54)
-				(name "PA7"
+				(name "SPI1.MOSI"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15157,37 +15157,14 @@
 				(alternate "COMP2.OUT" output line)
 				(alternate "EXTI.7" input line)
 				(alternate "I2C3.SCL" bidirectional line)
-				(alternate "SPI1.MOSI" bidirectional line)
+				(alternate "PA7" bidirectional line)
 				(alternate "TIM1.1N" output line)
 				(alternate "TIM17.1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 2.54 0)
+				(at -17.78 5.08 0)
 				(length 2.54)
-				(name "PB2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "COMP1.IN+" input line)
-				(alternate "EXTI.2" input line)
-				(alternate "I2C3.SMBA" bidirectional line)
-				(alternate "LPTIM1.OUT" output line)
-				(alternate "~{SPI1.CS}" bidirectional line)
-			)
-			(pin bidirectional line
-				(at -17.78 0 0)
-				(length 2.54)
-				(name "PB3"
+				(name "SPI1.SCK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15203,39 +15180,38 @@
 				)
 				(alternate "COMP2.IN-" input line)
 				(alternate "EXTI.3" input line)
-				(alternate "SPI1.SCK" bidirectional line)
+				(alternate "PB3" bidirectional line)
 				(alternate "SWO" output line)
 				(alternate "TIM2.2" bidirectional line)
 				(alternate "USART1.DE/RTS" output line)
 			)
 			(pin bidirectional line
-				(at -17.78 -2.54 0)
+				(at -17.78 0 0)
 				(length 2.54)
-				(name "PC0"
+				(name "I2C3.SMBA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "ADC1.1" bidirectional line)
-				(alternate "EXTI.0" input line)
-				(alternate "I2C3.SCL" bidirectional line)
-				(alternate "LPTIM1.IN1" input line)
-				(alternate "LPTIM2.IN1" input line)
-				(alternate "LPUART1.RX" input line)
+				(alternate "COMP1.IN+" input line)
+				(alternate "EXTI.2" input line)
+				(alternate "LPTIM1.OUT" output line)
+				(alternate "PB2" bidirectional line)
+				(alternate "~{SPI1.CS}" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 -5.08 0)
+				(at -17.78 -2.54 0)
 				(length 2.54)
-				(name "PC1"
+				(name "I2C3.SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15251,12 +15227,36 @@
 				)
 				(alternate "ADC1.2" input line)
 				(alternate "EXTI.1" input line)
-				(alternate "I2C3.SDA" bidirectional line)
 				(alternate "LPTIM1.OUT" output line)
 				(alternate "LPUART1.TX" output line)
+				(alternate "PC1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 -7.62 0)
+				(at -17.78 -5.08 0)
+				(length 2.54)
+				(name "I2C3.SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1.1" bidirectional line)
+				(alternate "EXTI.0" input line)
+				(alternate "LPTIM1.IN1" input line)
+				(alternate "LPTIM2.IN1" input line)
+				(alternate "LPUART1.RX" input line)
+				(alternate "PC0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -17.78 -10.16 0)
 				(length 2.54)
 				(name "PC3"
 					(effects
