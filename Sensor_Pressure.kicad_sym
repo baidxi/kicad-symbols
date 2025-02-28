@@ -467,7 +467,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U1"
-			(at 5.08 -12.7 0)
+			(at 7.62 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -476,7 +476,7 @@
 			)
 		)
 		(property "Value" "ILPS28QSW"
-			(at 5.08 -15.24 0)
+			(at 7.62 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -485,7 +485,7 @@
 			)
 		)
 		(property "Footprint" "Package_LGA:ST_CCLGA-7L_2.8x2.8mm_P1.15mm_H1.95mm"
-			(at 0 0 0)
+			(at 1.27 -25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -495,7 +495,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/ilps28qsw.pdf"
-			(at 0 0 0)
+			(at 0 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -504,8 +504,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual full-scale, 1260 hPa and 4060 hPa, absolute digital output barometer with Qvar detection in a water-resistant package, LGA-7"
-			(at 0 0 0)
+		(property "Description" "Dual full-scale, 1260 hPa and 4060 hPa, absolute digital output barometer with Qvar detection in a water-resistant package 1.7..3.6V supply voltage, LGA-7"
+			(at 0 -30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -513,25 +513,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ILPS28QSWTR"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "ST"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "pressure sensor"
+		(property "ki_keywords" "pressure-sensor I2C  MIPI-I3C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -551,8 +533,8 @@
 		)
 		(symbol "ILPS28QSW_0_1"
 			(rectangle
-				(start -7.62 10.16)
-				(end 7.62 -10.16)
+				(start -10.16 10.16)
+				(end 10.16 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -564,7 +546,7 @@
 		)
 		(symbol "ILPS28QSW_1_1"
 			(pin bidirectional line
-				(at -10.16 2.54 0)
+				(at -12.7 2.54 0)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -582,25 +564,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "AH1/QV1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 0 0)
+				(at -12.7 0 0)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -617,35 +581,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 10.16 0 180)
+			(pin passive line
+				(at -3.81 -12.7 90)
 				(length 2.54)
-				(name "AH2/QV2"
+				(name "PAD2LID"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -12.7 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -671,17 +617,53 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -10.16 -5.08 0)
+			(pin power_in line
+				(at 0 -12.7 90)
 				(length 2.54)
-				(name "PD2LD"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "AH1/QVAR1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "AH2/QVAR2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -690,6 +672,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "LPS22DF"
 		(exclude_from_sim no)
