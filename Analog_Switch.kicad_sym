@@ -55090,8 +55090,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U?"
-			(at -8.89 15.24 0)
+		(property "Reference" "U"
+			(at -8.89 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55100,7 +55100,7 @@
 			)
 		)
 		(property "Value" "HEF4051BT"
-			(at 1.27 15.24 0)
+			(at 1.27 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55108,7 +55108,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 22.86 -25.4 0)
 			(effects
 				(font
@@ -55127,7 +55127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.0 V to 15.0 V, 8-channel analog switch multiplexer and demultiplexer, SO-16"
+		(property "Description" "8-channel analog multiplexer / demultiplexer, 3.0..15.0V supply voltage, SOIC-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -55136,7 +55136,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -55145,7 +55145,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SO?16*"
+		(property "ki_fp_filters" "*SOIC*3.9x9.9mm*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -55156,7 +55156,7 @@
 		)
 		(symbol "HEF4051BT_0_1"
 			(rectangle
-				(start -8.89 13.97)
+				(start -8.89 11.43)
 				(end 8.89 -13.97)
 				(stroke
 					(width 0.254)
@@ -55187,7 +55187,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -12.7 0 0)
 				(length 3.81)
 				(name "S1"
 					(effects
@@ -55205,7 +55205,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -12.7 -2.54 0)
 				(length 3.81)
 				(name "S2"
 					(effects
@@ -55223,7 +55223,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -2.54 0)
+				(at -12.7 -5.08 0)
 				(length 3.81)
 				(name "S3"
 					(effects
@@ -55241,7 +55241,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -7.62 0)
+				(at -12.7 -10.16 0)
 				(length 3.81)
 				(name "~{E}"
 					(effects
@@ -55259,9 +55259,9 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 -17.78 90)
+				(at -2.54 -17.78 90)
 				(length 3.81)
-				(name "GND"
+				(name "VSS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -55277,7 +55277,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 17.78 270)
+				(at 0 15.24 270)
 				(length 3.81)
 				(name "VDD"
 					(effects
@@ -55463,7 +55463,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U?"
+		(property "Reference" "U"
 			(at -8.89 15.24 0)
 			(effects
 				(font
@@ -55481,7 +55481,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 22.86 -25.4 0)
 			(effects
 				(font
@@ -55500,7 +55500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.0 V to 15.0 V, dual 4-channel analog switch multiplexer and demultiplexer, SO-16"
+		(property "Description" "Dual 4-channel analog multiplexer / demultiplexer, 3.0..15.0V supply voltage, SOIC-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -55509,7 +55509,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -55518,7 +55518,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SO?16*"
+		(property "ki_fp_filters" "*SOIC*3.9x9.9mm*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -55542,7 +55542,7 @@
 		)
 		(symbol "HEF4052BT_1_1"
 			(pin passive line
-				(at -12.7 7.62 0)
+				(at -12.7 10.16 0)
 				(length 3.81)
 				(name "1Z"
 					(effects
@@ -55560,7 +55560,7 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 5.08 0)
+				(at -12.7 7.62 0)
 				(length 3.81)
 				(name "2Z"
 					(effects
@@ -55614,7 +55614,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -7.62 0)
+				(at -12.7 -10.16 0)
 				(length 3.81)
 				(name "~{E}"
 					(effects
@@ -55632,9 +55632,9 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 -17.78 90)
+				(at -2.54 -17.78 90)
 				(length 3.81)
-				(name "GND"
+				(name "VSS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56892,8 +56892,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U?"
-			(at -8.89 25.4 0)
+		(property "Reference" "U"
+			(at -8.89 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56902,7 +56902,7 @@
 			)
 		)
 		(property "Value" "HEF4067BT"
-			(at 1.27 25.4 0)
+			(at 1.27 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56929,7 +56929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.0 V to 15.0 V, 16-channel analog switch multiplexer and demultiplexer, SO-24"
+		(property "Description" "16-channel analog switch multiplexer / demultiplexer, 3.0..15.0V supply voltage, SOIC-24"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56938,7 +56938,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56958,7 +56958,7 @@
 		)
 		(symbol "HEF4067BT_0_1"
 			(rectangle
-				(start -8.89 24.13)
+				(start -8.89 21.59)
 				(end 8.89 -24.13)
 				(stroke
 					(width 0.254)
@@ -56971,7 +56971,7 @@
 		)
 		(symbol "HEF4067BT_1_1"
 			(pin passive line
-				(at -12.7 10.16 0)
+				(at -12.7 17.78 0)
 				(length 3.81)
 				(name "Z"
 					(effects
@@ -56989,7 +56989,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -12.7 2.54 0)
 				(length 3.81)
 				(name "A0"
 					(effects
@@ -57007,7 +57007,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -12.7 0 0)
 				(length 3.81)
 				(name "A1"
 					(effects
@@ -57025,7 +57025,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -12.7 -2.54 0)
 				(length 3.81)
 				(name "A2"
 					(effects
@@ -57043,7 +57043,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -2.54 0)
+				(at -12.7 -5.08 0)
 				(length 3.81)
 				(name "A3"
 					(effects
@@ -57061,7 +57061,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -7.62 0)
+				(at -12.7 -20.32 0)
 				(length 3.81)
 				(name "~{E}"
 					(effects
@@ -57079,9 +57079,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
+				(at 0 25.4 270)
 				(length 3.81)
-				(name "VCC"
+				(name "VDD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -57099,7 +57099,7 @@
 			(pin power_in line
 				(at 0 -27.94 90)
 				(length 3.81)
-				(name "GND"
+				(name "VSS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -84239,8 +84239,8 @@
 	)
 	(symbol "HEF4051BTT"
 		(extends "HEF4051BT")
-		(property "Reference" "U?"
-			(at -8.89 13.97 0)
+		(property "Reference" "U"
+			(at -8.89 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -84249,7 +84249,7 @@
 			)
 		)
 		(property "Value" "HEF4051BTT"
-			(at 1.27 13.97 0)
+			(at 1.27 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -84276,7 +84276,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.0 V to 15.0 V, 8-channel analog switch multiplexer and demultiplexer, TSSOP-16"
+		(property "Description" "8-channel analog multiplexer / demultiplexer, 3.0..15.0V supply voltage, TSSOP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -84285,7 +84285,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -84294,7 +84294,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "TSSOP?16*"
+		(property "ki_fp_filters" "*TSSOP*4.4x5mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -84306,8 +84306,8 @@
 	)
 	(symbol "HEF4052BTT"
 		(extends "HEF4052BT")
-		(property "Reference" "U?"
-			(at -8.89 13.97 0)
+		(property "Reference" "U"
+			(at -8.89 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -84316,7 +84316,7 @@
 			)
 		)
 		(property "Value" "HEF4052BTT"
-			(at 1.27 13.97 0)
+			(at 1.27 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -84343,7 +84343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.0 V to 15.0 V, dual 4-channel analog switch multiplexer and demultiplexer, TSSOP-16"
+		(property "Description" "Dual 4-channel analog multiplexer / demultiplexer, 3.0..15.0V supply voltage, TSSOP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -84352,7 +84352,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -84361,7 +84361,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "TSSOP?16*"
+		(property "ki_fp_filters" "*TSSOP*4.4x5mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -84373,8 +84373,8 @@
 	)
 	(symbol "HEF4067BTT"
 		(extends "HEF4067BT")
-		(property "Reference" "U?"
-			(at -9.144 24.13 0)
+		(property "Reference" "U"
+			(at -8.89 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -84383,7 +84383,7 @@
 			)
 		)
 		(property "Value" "HEF4067BTT"
-			(at 1.27 24.13 0)
+			(at 1.27 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -84410,7 +84410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.0 V to 15.0 V, 16-channel analog switch multiplexer and demultiplexer, TSSOP-24"
+		(property "Description" "16-channel analog switch multiplexer / demultiplexer, 3.0..15.0V supply voltage, TSSOP-24"
 			(at 0 0 0)
 			(effects
 				(font
@@ -84419,7 +84419,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
