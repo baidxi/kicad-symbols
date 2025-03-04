@@ -8762,7 +8762,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "EA3058"
+	(symbol "EA3058QD"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -8774,7 +8774,7 @@
 				)
 			)
 		)
-		(property "Value" "EA3058"
+		(property "Value" "EA3058QD"
 			(at 6.35 24.13 0)
 			(effects
 				(font
@@ -8782,7 +8782,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm"
+		(property "Footprint" "Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias"
 			(at 0 -35.052 0)
 			(effects
 				(font
@@ -8792,7 +8792,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2006041834_Everanalog-IC-design-EA3058QDR_C575412.pdf"
-			(at 0.254 -37.592 0)
+			(at 0 -37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8800,8 +8800,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4-channel buck DC-DC, 2.7-5V input"
-			(at 0.254 -40.132 0)
+		(property "Description" "4-channel power management IC, 2.7..5.5V input, 1.5 MHz switching frequency, VQFN-24"
+			(at 0 -40.132 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8809,7 +8809,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "buck smps"
+		(property "ki_keywords" "buck-converter SMPS"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8818,7 +8818,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "QFN*1EP*4x4mm*P0.5mm*"
+		(property "ki_fp_filters" "*QFN*4x4mm*P0.5mm*EP2.5*x2.5*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8827,7 +8827,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "EA3058_1_1"
+		(symbol "EA3058QD_1_1"
 			(rectangle
 				(start -10.16 22.86)
 				(end 10.16 -22.86)
@@ -8839,26 +8839,8 @@
 					(type background)
 				)
 			)
-			(pin power_in line
-				(at -12.7 -7.62 0)
-				(length 2.54)
-				(name "PGND3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at -12.7 10.16 0)
+				(at -12.7 17.78 0)
 				(length 2.54)
 				(name "EN1"
 					(effects
@@ -8893,24 +8875,6 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 12.7 15.24 180)
-				(length 2.54)
-				(name "LX1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at -12.7 12.7 0)
 				(length 2.54)
@@ -8930,34 +8894,16 @@
 				)
 			)
 			(pin input line
-				(at 12.7 12.7 180)
+				(at -12.7 7.62 0)
 				(length 2.54)
-				(name "FB1"
+				(name "EN2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 12.7 -17.78 180)
-				(length 2.54)
-				(name "FB4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8966,88 +8912,16 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 -17.78 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
-				(name "PGND4"
+				(name "VIN2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 -20.32 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 -22.86 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 12.7 -15.24 180)
-				(length 2.54)
-				(name "LX4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 12.7 -7.62 180)
-				(length 2.54)
-				(name "FB3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9056,16 +8930,16 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 -15.24 0)
+				(at -12.7 2.54 0)
 				(length 2.54)
-				(name "VIN4"
+				(name "PGND2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "20"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9074,25 +8948,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -20.32 0)
-				(length 2.54)
-				(name "EN4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -10.16 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "EN3"
 					(effects
@@ -9127,17 +8983,35 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 12.7 -5.08 180)
+			(pin power_in line
+				(at -12.7 -7.62 0)
 				(length 2.54)
-				(name "LX3"
+				(name "PGND3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "24"
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "EN4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9146,16 +9020,16 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -25.4 90)
+				(at -12.7 -15.24 0)
 				(length 2.54)
-				(name "EPGND"
+				(name "VIN4"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "25"
+				(number "20"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9164,7 +9038,63 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 20.32 0)
+				(at -12.7 -17.78 0)
+				(length 2.54)
+				(name "PGND4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 -22.86 90)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -2.54 -22.86 90)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 25.4 270)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -9199,6 +9129,78 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 2.54 -25.4 90)
+				(length 2.54)
+				(name "EPAD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 17.78 180)
+				(length 2.54)
+				(name "LX1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 12.7 180)
+				(length 2.54)
+				(name "FB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "LX2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
 				(at 12.7 2.54 180)
 				(length 2.54)
@@ -9217,53 +9219,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -12.7 2.54 0)
-				(length 2.54)
-				(name "PGND2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_out line
-				(at 12.7 5.08 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
-				(name "LX2"
+				(name "LX3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -12.7 5.08 0)
-				(length 2.54)
-				(name "VIN2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
+				(number "24"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9272,16 +9238,52 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at 12.7 -7.62 180)
 				(length 2.54)
-				(name "EN2"
+				(name "FB3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 -12.7 180)
+				(length 2.54)
+				(name "LX4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -17.78 180)
+				(length 2.54)
+				(name "FB4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9290,6 +9292,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "FSBH0170"
 		(exclude_from_sim no)
