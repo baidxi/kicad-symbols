@@ -69436,8 +69436,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U?"
-			(at -8.89 15.24 0)
+		(property "Reference" "U"
+			(at -8.89 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -69446,7 +69446,7 @@
 			)
 		)
 		(property "Value" "NMUX1308PW"
-			(at 1.27 15.24 0)
+			(at 1.27 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -69473,7 +69473,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.5 V to 5.5 V, 8-channel analog switch multiplexer and demultiplexer with injection-current control, TSSOP-16"
+		(property "Description" "8-channel analog switch multiplexer and demultiplexer with injection-current control, 1.5..5.5V supply voltage, TSSOP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -69482,7 +69482,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -69491,7 +69491,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "TSSOP?16*"
+		(property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -69502,7 +69502,7 @@
 		)
 		(symbol "NMUX1308PW_0_1"
 			(rectangle
-				(start -8.89 13.97)
+				(start -8.89 11.43)
 				(end 8.89 -13.97)
 				(stroke
 					(width 0.254)
@@ -69586,25 +69586,6 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -12.7 -6.35 0)
-				(length 3.81)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at -12.7 -10.16 0)
 				(length 3.81)
@@ -69623,10 +69604,29 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 17.78 270)
+			(pin no_connect line
+				(at -8.89 -6.35 0)
 				(length 3.81)
-				(name "VCC"
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 15.24 270)
+				(length 3.81)
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -69810,7 +69810,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U?"
+		(property "Reference" "U"
 			(at -8.89 15.24 0)
 			(effects
 				(font
@@ -69847,7 +69847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.5 V to 5.5 V, dual 4-channel analog switch multiplexer and demultiplexer with injection-current control, TSSOP-16"
+		(property "Description" "Dual 4-channel analog switch multiplexer and demultiplexer with injection-current control, 1.5..5.5V supply voltage, TSSOP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -69856,7 +69856,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -69865,7 +69865,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "TSSOP?16*"
+		(property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -69889,7 +69889,7 @@
 		)
 		(symbol "NMUX1309PW_1_1"
 			(pin passive line
-				(at -12.7 7.62 0)
+				(at -12.7 10.16 0)
 				(length 3.81)
 				(name "1Z"
 					(effects
@@ -69907,7 +69907,7 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 5.08 0)
+				(at -12.7 7.62 0)
 				(length 3.81)
 				(name "2Z"
 					(effects
@@ -69960,25 +69960,6 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -12.7 -6.35 0)
-				(length 3.81)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at -12.7 -10.16 0)
 				(length 3.81)
@@ -69997,10 +69978,29 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at -8.89 -6.35 0)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 17.78 270)
 				(length 3.81)
-				(name "VCC"
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -70034,7 +70034,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 7.62 180)
+				(at 12.7 10.16 180)
 				(length 3.81)
 				(name "1Y0"
 					(effects
@@ -70052,7 +70052,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 5.08 180)
+				(at 12.7 7.62 180)
 				(length 3.81)
 				(name "1Y1"
 					(effects
@@ -70070,7 +70070,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 2.54 180)
+				(at 12.7 5.08 180)
 				(length 3.81)
 				(name "1Y2"
 					(effects
@@ -70088,7 +70088,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 0 180)
+				(at 12.7 2.54 180)
 				(length 3.81)
 				(name "1Y3"
 					(effects
@@ -86249,7 +86249,7 @@
 	)
 	(symbol "NMUX1308BQ"
 		(extends "NMUX1308PW")
-		(property "Reference" "U?"
+		(property "Reference" "U"
 			(at -9.144 12.7 0)
 			(effects
 				(font
@@ -86286,7 +86286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.5 V to 5.5 V, 8-channel analog switch multiplexer and demultiplexer with injection-current control, DHVQFN-16"
+		(property "Description" "8-channel analog switch multiplexer and demultiplexer with injection-current control, 1.5..5.5V supply voltage, DHVQFN-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86295,7 +86295,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86304,7 +86304,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DHVQFN?16*"
+		(property "ki_fp_filters" "DHVQFN*1EP*2.5x3.5mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86316,7 +86316,7 @@
 	)
 	(symbol "NMUX1308PW-Q100"
 		(extends "NMUX1308PW")
-		(property "Reference" "U?"
+		(property "Reference" "U"
 			(at -9.144 12.7 0)
 			(effects
 				(font
@@ -86353,7 +86353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.5 V to 5.5 V, 8-channel analog switch multiplexer and demultiplexer with injection-current control, Automotive qualified, TSSOP-16"
+		(property "Description" "8-channel analog switch multiplexer and demultiplexer with injection-current control, 1.5..5.5V supply voltage, Automotive qualified, TSSOP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86362,7 +86362,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86371,7 +86371,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "TSSOP?16*"
+		(property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86383,8 +86383,8 @@
 	)
 	(symbol "NMUX1309BQ"
 		(extends "NMUX1309PW")
-		(property "Reference" "U?"
-			(at -9.144 12.7 0)
+		(property "Reference" "U"
+			(at -8.89 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -86393,7 +86393,7 @@
 			)
 		)
 		(property "Value" "NMUX1309BQ"
-			(at 1.27 12.7 0)
+			(at 1.27 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -86420,7 +86420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.5 V to 5.5 V, dual 4-channel analog switch multiplexer and demultiplexer with injection-current control, DHVQFN-16"
+		(property "Description" "Dual 4-channel analog switch multiplexer and demultiplexer with injection-current control, 1.5..5.5V supply voltage, DHVQFN-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86429,7 +86429,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86438,7 +86438,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DHVQFN?16*"
+		(property "ki_fp_filters" "DHVQFN*1EP*2.5x3.5mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86450,8 +86450,8 @@
 	)
 	(symbol "NMUX1309PW-Q100"
 		(extends "NMUX1309PW")
-		(property "Reference" "U?"
-			(at -9.144 12.7 0)
+		(property "Reference" "U"
+			(at -8.89 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -86460,7 +86460,7 @@
 			)
 		)
 		(property "Value" "NMUX1309PW-Q100"
-			(at 1.27 12.7 0)
+			(at 1.27 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -86487,7 +86487,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.5 V to 5.5 V, dual 4-channel analog switch multiplexer and demultiplexer with injection-current control, Automotive qualified, TSSOP-16"
+		(property "Description" "Dual 4-channel analog switch multiplexer and demultiplexer with injection-current control, 1.5..5.5V supply voltage, Automotive qualified, TSSOP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86496,7 +86496,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch automotive"
 			(at 0 0 0)
 			(effects
 				(font
@@ -86505,7 +86505,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "TSSOP?16*"
+		(property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -87191,7 +87191,7 @@
 	)
 	(symbol "NMUX1308BQ-Q100"
 		(extends "NMUX1308BQ")
-		(property "Reference" "U?"
+		(property "Reference" "U"
 			(at -9.144 12.7 0)
 			(effects
 				(font
@@ -87228,7 +87228,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.5 V to 5.5 V, 8-channel analog switch multiplexer and demultiplexer with injection-current control, Automotive qualified, DHVQFN-16"
+		(property "Description" "8-channel analog switch multiplexer and demultiplexer with injection-current control, 1.5..5.5V supply voltage, Automotive qualified, DHVQFN-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -87237,7 +87237,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -87246,7 +87246,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DHVQFN?16*"
+		(property "ki_fp_filters" "DHVQFN*1EP*2.5x3.5mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -87258,8 +87258,8 @@
 	)
 	(symbol "NMUX1309BQ-Q100"
 		(extends "NMUX1309BQ")
-		(property "Reference" "U?"
-			(at -9.144 12.7 0)
+		(property "Reference" "U"
+			(at -8.89 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -87268,7 +87268,7 @@
 			)
 		)
 		(property "Value" "NMUX1309BQ-Q100"
-			(at 1.27 12.7 0)
+			(at 1.27 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -87295,7 +87295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.5 V to 5.5 V, dual 4-channel analog switch multiplexer and demultiplexer with injection-current control, Automotive qualified, DHVQFN-16"
+		(property "Description" "Dual 4-channel analog switch multiplexer and demultiplexer with injection-current control, 1.5..5.5V supply voltage, Automotive qualified, DHVQFN-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -87304,7 +87304,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "multiplexer demultiplexer mux demux"
+		(property "ki_keywords" "mux demux analog-switch automotive"
 			(at 0 0 0)
 			(effects
 				(font
@@ -87313,7 +87313,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DHVQFN?16*"
+		(property "ki_fp_filters" "DHVQFN*1EP*2.5x3.5mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
