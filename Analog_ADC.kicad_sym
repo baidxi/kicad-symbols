@@ -5990,7 +5990,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 0 0)
+			(at -14.224 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5998,7 +5998,7 @@
 			)
 		)
 		(property "Value" "AD7380-4"
-			(at 0 0 0)
+			(at 9.906 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6006,7 +6006,7 @@
 			)
 		)
 		(property "Footprint" "Package_CSP:LFCSP-24-1EP_4x4mm_P0.5mm_EP0.5x0.5mm"
-			(at 0 0 0)
+			(at 0 -29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6015,6 +6015,24 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad7380-4.pdf"
+			(at 0 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Differential Input, Quad, External Reference Simultaneous Sampling, 16-bit resolution, SAR ADC, SNR = 92 dB at VREF=3.3V, LFCSP-24"
+			(at 0 -26.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Analog-Devices SPI"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6023,25 +6041,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Differential Input, Quad, External Reference Simultaneous Sampling, 16-BIT, SAR ADC,LFCSP-24"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "analog"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "LFCSP*4x4mm*P0.5mm*"
+		(property "ki_fp_filters" "LFCSP*4x4mm*P0.5mm*EP0.5x0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6052,8 +6052,8 @@
 		)
 		(symbol "AD7380-4_1_1"
 			(rectangle
-				(start -15.24 27.94)
-				(end 15.24 -27.94)
+				(start -15.24 20.32)
+				(end 15.24 -17.78)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -6063,7 +6063,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 22.86 0)
+				(at -17.78 15.24 0)
 				(length 2.54)
 				(name "A_{IN}D-"
 					(effects
@@ -6081,7 +6081,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 20.32 0)
+				(at -17.78 12.7 0)
 				(length 2.54)
 				(name "A_{IN}D+"
 					(effects
@@ -6099,7 +6099,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 15.24 0)
+				(at -17.78 7.62 0)
 				(length 2.54)
 				(name "A_{IN}C-"
 					(effects
@@ -6117,7 +6117,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 12.7 0)
+				(at -17.78 5.08 0)
 				(length 2.54)
 				(name "A_{IN}C+"
 					(effects
@@ -6135,7 +6135,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 7.62 0)
+				(at -17.78 0 0)
 				(length 2.54)
 				(name "A_{IN}B-"
 					(effects
@@ -6153,7 +6153,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 5.08 0)
+				(at -17.78 -2.54 0)
 				(length 2.54)
 				(name "A_{IN}B+"
 					(effects
@@ -6171,7 +6171,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 0 0)
+				(at -17.78 -7.62 0)
 				(length 2.54)
 				(name "A_{IN}A-"
 					(effects
@@ -6189,7 +6189,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -2.54 0)
+				(at -17.78 -10.16 0)
 				(length 2.54)
 				(name "A_{IN}A+"
 					(effects
@@ -6206,8 +6206,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -17.78 -10.16 0)
+			(pin passive line
+				(at -17.78 -15.24 0)
 				(length 2.54)
 				(name "REFIN"
 					(effects
@@ -6224,26 +6224,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -17.78 -22.86 0)
-				(length 2.54)
-				(name "REGCAP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at -2.54 30.48 270)
+				(at -2.54 22.86 270)
 				(length 2.54)
 				(name "V_{CC}"
 					(effects
@@ -6260,27 +6242,8 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 0 0 0)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at 0 -30.48 90)
+				(at 0 -20.32 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -6298,7 +6261,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -20.32 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -6317,7 +6280,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -20.32 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -6336,7 +6299,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -20.32 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -6355,7 +6318,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -20.32 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -6374,7 +6337,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 30.48 270)
+				(at 2.54 22.86 270)
 				(length 2.54)
 				(name "V_{LOGIC}"
 					(effects
@@ -6391,8 +6354,27 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at 15.24 -12.7 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
-				(at 17.78 12.7 180)
+				(at 17.78 15.24 180)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -6410,7 +6392,7 @@
 				)
 			)
 			(pin input line
-				(at 17.78 7.62 180)
+				(at 17.78 10.16 180)
 				(length 2.54)
 				(name "SCLK"
 					(effects
@@ -6428,7 +6410,7 @@
 				)
 			)
 			(pin input line
-				(at 17.78 5.08 180)
+				(at 17.78 7.62 180)
 				(length 2.54)
 				(name "SDI"
 					(effects
@@ -6446,7 +6428,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 0 180)
+				(at 17.78 2.54 180)
 				(length 2.54)
 				(name "SDOA"
 					(effects
@@ -6464,7 +6446,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 -2.54 180)
+				(at 17.78 0 180)
 				(length 2.54)
 				(name "SDOB"
 					(effects
@@ -6482,7 +6464,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 -5.08 180)
+				(at 17.78 -2.54 180)
 				(length 2.54)
 				(name "SDOC"
 					(effects
@@ -6500,7 +6482,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 -7.62 180)
+				(at 17.78 -5.08 180)
 				(length 2.54)
 				(name "SDOD/~{ALERT}"
 					(effects
@@ -6518,6 +6500,24 @@
 				)
 				(alternate "SDOD" output line)
 				(alternate "~{ALERT}" output line)
+			)
+			(pin passive line
+				(at 17.78 -15.24 180)
+				(length 2.54)
+				(name "REGCAP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 			)
 		)
 		(embedded_fonts no)
