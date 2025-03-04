@@ -203,7 +203,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:DFN-6-1EP_2x2mm_P0.5mm_EP0.7x1.6mm"
-			(at -2.54 -10.16 0)
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -212,7 +212,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.junmintech.com/UploadFiles/Product/20211129145204_37021.pdf"
-			(at -2.54 0 0)
+			(at 0 -14.224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -220,8 +220,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Relative Humidity and Temperature Sensor with I2C Interface"
-			(at -2.54 0 0)
+		(property "Description" "Relative Humidity and Temperature Sensor, I2C Interface, 1.62..5.5V supply, DFN-6"
+			(at 0 -12.192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -229,7 +229,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "relative humidity temperature i2c pre-calibrated"
+		(property "ki_keywords" "GXCAS pre-calibrated"
 			(at 0 0 0)
 			(effects
 				(font
@@ -238,7 +238,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DFN*EP*2x2mm*P0.5mm*"
+		(property "ki_fp_filters" "*DFN*2x2mm*P0.5mm*0.7x1.6mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -261,43 +261,7 @@
 			)
 		)
 		(symbol "GXHTC3_1_1"
-			(pin power_in line
-				(at 0 7.62 270)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 2.54 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
+			(pin bidirectional line
 				(at -12.7 2.54 0)
 				(length 2.54)
 				(name "SCL"
@@ -333,24 +297,6 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 10.16 -2.54 180)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at -2.54 -7.62 90)
 				(length 2.54)
@@ -369,10 +315,28 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 2.54 -7.62 90)
 				(length 2.54)
-				(name "PAD"
+				(name "EPAD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -387,7 +351,46 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "HDC1080"
 		(exclude_from_sim no)
