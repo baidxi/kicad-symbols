@@ -17765,7 +17765,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -14.732 21.336 0)
+			(at -14.224 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17773,7 +17773,7 @@
 			)
 		)
 		(property "Value" "ES8388"
-			(at 8.89 21.336 0)
+			(at 9.144 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17781,7 +17781,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_4x4mm_P0.45mm_EP2.6x2.6mm"
-			(at -38.354 -21.59 0)
+			(at 0 -33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17790,7 +17790,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.everest-semi.com/pdf/ES8388%20DS.pdf"
-			(at -0.254 35.814 0)
+			(at 0 -30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17798,8 +17798,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low Power Stereo Audio CODEC With Headphone Amplifier, 24-bit, 8-96kHz ADC / DAC sampling frequency, 1.8-3.3V supply, WQFN-28"
-			(at 0 38.354 0)
+		(property "Description" "Low Power Stereo Audio CODEC With Headphone Amplifier, 24-bit, 8kHz - 96kHz ADC / DAC sampling frequency, 1.8V - 3.3V supply, WQFN-28"
+			(at 0 -28.194 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17827,8 +17827,8 @@
 		)
 		(symbol "ES8388_1_1"
 			(rectangle
-				(start -15.24 20.32)
-				(end 15.24 -20.32)
+				(start -15.24 22.86)
+				(end 12.7 -20.32)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -17999,27 +17999,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -17.78 -10.16 0)
-				(length 2.54)
-				(name "CE"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "26"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "AD0" input line)
-			)
 			(pin bidirectional line
-				(at -17.78 -12.7 0)
+				(at -17.78 -10.16 0)
 				(length 2.54)
 				(name "CDATA"
 					(effects
@@ -18036,9 +18017,10 @@
 					)
 				)
 				(alternate "SDA" bidirectional line)
+				(alternate "SPI_DIN" input line)
 			)
 			(pin input line
-				(at -17.78 -15.24 0)
+				(at -17.78 -12.7 0)
 				(length 2.54)
 				(name "CCLK"
 					(effects
@@ -18055,9 +18037,30 @@
 					)
 				)
 				(alternate "SCL" input line)
+				(alternate "SPI_CLK" input line)
+			)
+			(pin input line
+				(at -17.78 -15.24 0)
+				(length 2.54)
+				(name "CE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD0" input line)
+				(alternate "~{SPI_CS}" input line)
 			)
 			(pin power_in line
-				(at -5.08 22.86 270)
+				(at -5.08 25.4 270)
 				(length 2.54)
 				(name "DVDD"
 					(effects
@@ -18093,7 +18096,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 22.86 270)
+				(at -2.54 25.4 270)
 				(length 2.54)
 				(name "PVDD"
 					(effects
@@ -18129,7 +18132,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 22.86 270)
+				(at 0 25.4 270)
 				(length 2.54)
 				(name "AVDD"
 					(effects
@@ -18165,7 +18168,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 22.86 270)
+				(at 2.54 25.4 270)
 				(length 2.54)
 				(name "HPVDD"
 					(effects
@@ -18182,7 +18185,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 2.54 -22.86 90)
 				(length 2.54)
 				(name "EPAD"
@@ -18201,7 +18204,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 5.08 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -18220,7 +18223,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 2.54 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -18239,7 +18242,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 17.78 180)
+				(at 15.24 17.78 180)
 				(length 2.54)
 				(name "LOUT1"
 					(effects
@@ -18257,7 +18260,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 15.24 180)
+				(at 15.24 15.24 180)
 				(length 2.54)
 				(name "ROUT1"
 					(effects
@@ -18275,7 +18278,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 12.7 180)
+				(at 15.24 12.7 180)
 				(length 2.54)
 				(name "LOUT2"
 					(effects
@@ -18293,7 +18296,7 @@
 				)
 			)
 			(pin output line
-				(at 17.78 10.16 180)
+				(at 15.24 10.16 180)
 				(length 2.54)
 				(name "ROUT2"
 					(effects
@@ -18311,7 +18314,7 @@
 				)
 			)
 			(pin input line
-				(at 17.78 -12.7 180)
+				(at 15.24 -10.16 180)
 				(length 2.54)
 				(name "VREF"
 					(effects
@@ -18329,7 +18332,7 @@
 				)
 			)
 			(pin input line
-				(at 17.78 -15.24 180)
+				(at 15.24 -12.7 180)
 				(length 2.54)
 				(name "ADCVREF"
 					(effects
@@ -18347,7 +18350,7 @@
 				)
 			)
 			(pin input line
-				(at 17.78 -17.78 180)
+				(at 15.24 -15.24 180)
 				(length 2.54)
 				(name "VMID"
 					(effects
