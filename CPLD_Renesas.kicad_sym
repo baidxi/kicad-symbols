@@ -24,7 +24,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DFN_QFN:Renesas_UQFN-20_2x3mm_P0.4mm_LayoutBorder4x6y"
 			(at 0 -26.416 0)
 			(effects
 				(font
@@ -476,7 +476,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -5.08 28.575 0)
+			(at -16.002 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -485,7 +485,7 @@
 			)
 		)
 		(property "Value" "SLG46582"
-			(at -5.08 26.67 0)
+			(at 17.272 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -493,27 +493,34 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Renesas_STQFN-20_2x3mm_LayoutBorder4x6y"
-			(at 3.81 -26.67 0)
+		(property "Footprint" "Package_DFN_QFN:Renesas_UQFN-20_2x3mm_P0.4mm_LayoutBorder4x6y"
+			(at 0 -26.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.renesas.com/us/en/document/dst/slg465808283-datasheet?r=1563546"
-			(at 3.81 -29.21 0)
+		(property "Datasheet" "https://www.renesas.com/en/document/dst/slg465808283-datasheet"
+			(at 0 -28.448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" "2 LDO, 9-GPIO, 4 ACMPs, 8-State ASM, I2C, 16 LUTs (max.), 5 CNT/DLY (max.), 9 DFF/LATCH (max.)"
+		(property "Description" "GreenPAK Programmable Mixed-signal Matrix with Asynchronous State Machine and LDOs, UQFN-20"
+			(at 0 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Renesas Dialog-Semiconductor Silego-Technology LDO GPIO ACMP ASM LUT CNT DLY DFF LATCH I2C NVM"
 			(at 0 0 0)
 			(effects
 				(font
@@ -522,16 +529,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "renesas dialog silego greenpak ldo"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "Renesas*STQFN*2x3mm*LayoutBorder4x6y*"
+		(property "ki_fp_filters" "*QFN*2x3mm*P0.4mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -542,8 +540,8 @@
 		)
 		(symbol "SLG46582_0_1"
 			(rectangle
-				(start -15.24 25.4)
-				(end 15.24 -25.4)
+				(start -17.78 17.78)
+				(end 17.78 -20.32)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -554,242 +552,8 @@
 			)
 		)
 		(symbol "SLG46582_1_1"
-			(pin bidirectional line
-				(at -17.78 10.16 0)
-				(length 2.54)
-				(name "IO0/EXT_CLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 7.62 0)
-				(length 2.54)
-				(name "IO1/ACMP0+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 5.08 0)
-				(length 2.54)
-				(name "IO2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 2.54 0)
-				(length 2.54)
-				(name "IO3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 0 0)
-				(length 2.54)
-				(name "IO4/ACMP1+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 -2.54 0)
-				(length 2.54)
-				(name "IO5/Vpp"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 -5.08 0)
-				(length 2.54)
-				(name "IO6/EXT_VREF"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 -7.62 0)
-				(length 2.54)
-				(name "IO7/ACMP2+/PROG_MODE"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 -10.16 0)
-				(length 2.54)
-				(name "IO8/ACMP3+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 -15.24 0)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 -17.78 0)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at -2.54 27.94 270)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 -27.94 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 27.94 270)
+				(at -20.32 12.7 0)
 				(length 2.54)
 				(name "LDO0_VIN"
 					(effects
@@ -805,27 +569,10 @@
 						)
 					)
 				)
+				(alternate "ACMP0+" input line)
 			)
 			(pin power_in line
-				(at 2.54 -27.94 90)
-				(length 2.54)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 27.94 270)
+				(at -20.32 10.16 0)
 				(length 2.54)
 				(name "LDO1_VIN"
 					(effects
@@ -841,169 +588,10 @@
 						)
 					)
 				)
+				(alternate "ACMP1+" input line)
 			)
-			(pin power_out line
-				(at 17.78 10.16 180)
-				(length 2.54)
-				(name "LDO0_VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 17.78 10.16 180)
-				(length 2.54)
-				(hide yes)
-				(name "LDO0_VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 17.78 7.62 180)
-				(length 2.54)
-				(name "LDO1_VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 17.78 7.62 180)
-				(length 2.54)
-				(hide yes)
-				(name "LDO1_VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "SLG46583"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "U"
-			(at -5.08 28.575 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SLG46583"
-			(at -5.08 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:Renesas_STQFN-20_2x3mm_LayoutBorder4x6y"
-			(at 3.81 -26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.renesas.com/us/en/document/dst/slg465808283-datasheet?r=1563546"
-			(at 3.81 -29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "1 LDO, 9-GPIO, 4 ACMPs, 8-State ASM, I2C, 16 LUTs (max.), 5 CNT/DLY (max.), 9 DFF/LATCH (max.)"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "renesas dialog silego greenpak ldo"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "Renesas*STQFN*2x3mm*LayoutBorder4x6y*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "SLG46583_0_1"
-			(rectangle
-				(start -15.24 25.4)
-				(end 15.24 -25.4)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "SLG46583_1_1"
 			(pin bidirectional line
-				(at -17.78 10.16 0)
+				(at -20.32 5.08 0)
 				(length 2.54)
 				(name "IO0/EXT_CLK"
 					(effects
@@ -1019,9 +607,11 @@
 						)
 					)
 				)
+				(alternate "EXT_CLK" input line)
+				(alternate "IO0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 7.62 0)
+				(at -20.32 2.54 0)
 				(length 2.54)
 				(name "IO1/ACMP0+"
 					(effects
@@ -1037,9 +627,11 @@
 						)
 					)
 				)
+				(alternate "ACMP0+" input line)
+				(alternate "IO1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 5.08 0)
+				(at -20.32 0 0)
 				(length 2.54)
 				(name "IO2"
 					(effects
@@ -1057,7 +649,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -17.78 2.54 0)
+				(at -20.32 -2.54 0)
 				(length 2.54)
 				(name "IO3"
 					(effects
@@ -1075,7 +667,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -17.78 0 0)
+				(at -20.32 -5.08 0)
 				(length 2.54)
 				(name "IO4/ACMP1+"
 					(effects
@@ -1091,11 +683,13 @@
 						)
 					)
 				)
+				(alternate "ACMP1+" input line)
+				(alternate "IO4" bidirectional line)
 			)
 			(pin input line
-				(at -17.78 -2.54 0)
+				(at -20.32 -7.62 0)
 				(length 2.54)
-				(name "IO5/Vpp"
+				(name "IO5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1109,9 +703,12 @@
 						)
 					)
 				)
+				(alternate "IO5" input line)
+				(alternate "RESET" input line)
+				(alternate "V_{PP}" input line)
 			)
 			(pin bidirectional line
-				(at -17.78 -5.08 0)
+				(at -20.32 -10.16 0)
 				(length 2.54)
 				(name "IO6/EXT_VREF"
 					(effects
@@ -1127,11 +724,13 @@
 						)
 					)
 				)
+				(alternate "EXT_VREF" input line)
+				(alternate "IO6" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 -7.62 0)
+				(at -20.32 -12.7 0)
 				(length 2.54)
-				(name "IO7/ACMP2+/PROG_MODE"
+				(name "IO7/ACMP2+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1145,9 +744,12 @@
 						)
 					)
 				)
+				(alternate "ACMP2+" input line)
+				(alternate "IO7" bidirectional line)
+				(alternate "PROGRAMMING_MODE_CONTROL" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -17.78 -10.16 0)
+				(at -20.32 -15.24 0)
 				(length 2.54)
 				(name "IO8/ACMP3+"
 					(effects
@@ -1163,45 +765,11 @@
 						)
 					)
 				)
-			)
-			(pin input line
-				(at -17.78 -15.24 0)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 -17.78 0)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
+				(alternate "ACMP3+" input line)
+				(alternate "IO8" bidirectional line)
 			)
 			(pin power_in line
-				(at -2.54 27.94 270)
+				(at 0 20.32 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -1217,9 +785,14 @@
 						)
 					)
 				)
+				(alternate "VDD/ACMP0+" power_in line)
+				(alternate "VDD/ACMP0-" power_in line)
+				(alternate "VDD/ACMP1-" power_in line)
+				(alternate "VDD/ACMP2-" power_in line)
+				(alternate "VDD/ACMP3-" power_in line)
 			)
 			(pin power_in line
-				(at -2.54 -27.94 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1237,44 +810,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 27.94 270)
-				(length 2.54)
-				(name "LDO_VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 2.54 27.94 270)
-				(length 2.54)
-				(hide yes)
-				(name "LDO_VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -27.94 90)
+				(at 2.54 -22.86 90)
 				(length 2.54)
 				(name "AGND"
 					(effects
@@ -1292,7 +828,480 @@
 				)
 			)
 			(pin power_out line
-				(at 17.78 10.16 180)
+				(at 20.32 12.7 180)
+				(length 2.54)
+				(name "LDO0_VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACMP3+" input line)
+			)
+			(pin passive line
+				(at 20.32 12.7 180)
+				(length 2.54)
+				(hide yes)
+				(name "LDO0_VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 20.32 7.62 180)
+				(length 2.54)
+				(name "LDO1_VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACMP3+" input line)
+			)
+			(pin passive line
+				(at 20.32 7.62 180)
+				(length 2.54)
+				(hide yes)
+				(name "LDO1_VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 0 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 -2.54 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "SLG46583"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -16.002 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SLG46583"
+			(at 17.272 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Renesas_UQFN-20_2x3mm_P0.4mm_LayoutBorder4x6y"
+			(at 0 -26.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.renesas.com/en/document/dst/slg465808283-datasheet"
+			(at 0 -28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "GreenPAK Programmable Mixed-signal Matrix with Asynchronous State Machine and LDOs, UQFN-20"
+			(at 0 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Renesas Dialog-Semiconductor Silego-Technology LDO GPIO ACMP ASM LUT CNT DLY DFF LATCH I2C NVM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*QFN*2x3mm*P0.4mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SLG46583_0_1"
+			(rectangle
+				(start -17.78 17.78)
+				(end 17.78 -20.32)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "SLG46583_1_1"
+			(pin power_in line
+				(at -20.32 12.7 0)
+				(length 2.54)
+				(name "LDO_VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACMP0+" input line)
+				(alternate "ACMP1+" power_in line)
+			)
+			(pin passive line
+				(at -20.32 12.7 0)
+				(length 2.54)
+				(hide yes)
+				(name "LDO_VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACMP1+" input line)
+			)
+			(pin bidirectional line
+				(at -20.32 5.08 0)
+				(length 2.54)
+				(name "IO0/EXT_CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "EXT_CLK" input line)
+				(alternate "IO0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 2.54 0)
+				(length 2.54)
+				(name "IO1/ACMP0+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACMP0+" input line)
+				(alternate "IO1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 0 0)
+				(length 2.54)
+				(name "IO2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -20.32 -2.54 0)
+				(length 2.54)
+				(name "IO3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -20.32 -5.08 0)
+				(length 2.54)
+				(name "IO4/ACMP1+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACMP1+" input line)
+				(alternate "IO4" bidirectional line)
+			)
+			(pin input line
+				(at -20.32 -7.62 0)
+				(length 2.54)
+				(name "IO5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "IO5" input line)
+				(alternate "RESET" input line)
+				(alternate "V_{PP}" input line)
+			)
+			(pin bidirectional line
+				(at -20.32 -10.16 0)
+				(length 2.54)
+				(name "IO6/EXT_VREF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "EXT_VREF" input line)
+				(alternate "IO6" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -12.7 0)
+				(length 2.54)
+				(name "IO7/ACMP2+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACMP2+" input line)
+				(alternate "IO7" bidirectional line)
+				(alternate "PROGRAMMING_MODE_CONTROL" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -15.24 0)
+				(length 2.54)
+				(name "IO8/ACMP3+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACMP3+" input line)
+				(alternate "IO8" bidirectional line)
+			)
+			(pin power_in line
+				(at 0 20.32 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "VDD/ACMP0+" power_in line)
+				(alternate "VDD/ACMP0-" power_in line)
+				(alternate "VDD/ACMP1-" power_in line)
+				(alternate "VDD/ACMP2-" power_in line)
+				(alternate "VDD/ACMP3-" power_in line)
+			)
+			(pin power_in line
+				(at 0 -22.86 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -22.86 90)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 20.32 12.7 180)
 				(length 2.54)
 				(name "LDO_VOUT"
 					(effects
@@ -1308,9 +1317,10 @@
 						)
 					)
 				)
+				(alternate "ACMP3+" input line)
 			)
 			(pin passive line
-				(at 17.78 10.16 180)
+				(at 20.32 12.7 180)
 				(length 2.54)
 				(hide yes)
 				(name "LDO_VOUT"
@@ -1329,7 +1339,7 @@
 				)
 			)
 			(pin passive line
-				(at 17.78 10.16 180)
+				(at 20.32 12.7 180)
 				(length 2.54)
 				(hide yes)
 				(name "LDO_VOUT"
@@ -1348,7 +1358,7 @@
 				)
 			)
 			(pin passive line
-				(at 17.78 10.16 180)
+				(at 20.32 12.7 180)
 				(length 2.54)
 				(hide yes)
 				(name "LDO_VOUT"
@@ -1359,6 +1369,42 @@
 					)
 				)
 				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 0 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 -2.54 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
