@@ -417,7 +417,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 8.89 6.35 0)
+			(at 6.35 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -426,7 +426,7 @@
 			)
 		)
 		(property "Value" "A1369xUA-10"
-			(at 8.89 3.81 0)
+			(at 6.35 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -435,18 +435,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
-			(at 8.89 -2.54 0)
+			(at -2.54 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1369-Datasheet.ashx?la=en"
-			(at 0 0 0)
+			(at -2.54 -13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -455,7 +454,7 @@
 			)
 		)
 		(property "Description" "Customer-Programmable Linear Hall Effect Sensor, -8.5 to -12.5mV/G, TO-92S (3-pin SIP)"
-			(at 0 0 0)
+			(at -2.54 -15.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -483,8 +482,8 @@
 		)
 		(symbol "A1369xUA-10_0_1"
 			(rectangle
-				(start -5.08 5.08)
-				(end 7.62 -5.08)
+				(start -6.35 7.62)
+				(end 5.08 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -493,12 +492,108 @@
 					(type background)
 				)
 			)
+			(polyline
+				(pts
+					(xy -4.699 0.381) (xy -4.953 0.127)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -4.699 0.381) (xy -4.445 0.127)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -0.635 0.381)
+				(mid -2.667 -1.651)
+				(end -4.699 0.381)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0.381) (xy -0.889 0.127)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0.381) (xy -0.381 0.127)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
 		(symbol "A1369xUA-10_1_1"
+			(polyline
+				(pts
+					(xy -3.2004 1.0922) (xy -2.6162 0.508) (xy -2.8702 0.254) (xy -3.3274 0.7112) (xy -3.4544 0.8382)
+					(xy -3.2004 1.0922) (xy -3.2004 1.0922)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center -2.667 0.381)
+				(radius 1.524)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.5908 0.4826) (xy -1.9304 -0.1778) (xy -2.1844 -0.4318) (xy -2.8448 0.2286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin power_in line
-				(at 0 7.62 270)
+				(at -2.54 10.16 270)
 				(length 2.54)
-				(name "VCC"
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -514,7 +609,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -7.62 90)
+				(at -2.54 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -531,10 +626,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 10.16 0 180)
+			(pin bidirectional line
+				(at 7.62 0 180)
 				(length 2.54)
-				(name "VOUT"
+				(name "V_{OUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9782,18 +9877,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
-			(at 8.89 -2.54 0)
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1369-Datasheet.ashx?la=en"
-			(at 0 0 0)
+			(at 0 -13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9802,7 +9896,7 @@
 			)
 		)
 		(property "Description" "Customer-Programmable Linear Hall Effect Sensor, -22 to -26mV/G, TO-92S (3-pin SIP)"
-			(at 0 0 0)
+			(at 0 -15.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9918,18 +10012,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
-			(at 8.89 -2.54 0)
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/ACS73369-Datasheet.ashx?la=en"
-			(at 0 0 0)
+			(at 0 -13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9938,7 +10031,7 @@
 			)
 		)
 		(property "Description" "Customer-Programmable Linear Hall Effect Sensor, +9 to +13.5mV/G, TO-92S (3-pin SIP)"
-			(at 0 0 0)
+			(at 0 -15.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
