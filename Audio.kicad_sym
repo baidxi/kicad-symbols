@@ -43767,7 +43767,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Yamaha 6-channel FM synthesizer (with built-in 9-bit DAC), sine-wave LFO, 8-bit PCM channel (DAC mode), DIP-24 (600 mil)"
+		(property "Description" "Yamaha 6-channel, 4-OP, FM sound generator (with built-in 9-bit DAC), sine-wave LFO, 8-bit PCM channel (DAC mode), DIP-24 (600 mil)"
 			(at 0 -23.876 0)
 			(effects
 				(font
@@ -43776,7 +43776,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "OPN2 NMOS stereo sound-chip low-frequency-oscillator"
+		(property "ki_keywords" "FM-synthesizer OPN2 NMOS stereo sound-chip low-frequency-oscillator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -43797,7 +43797,7 @@
 		(symbol "YM2612_0_0"
 			(rectangle
 				(start -10.16 17.78)
-				(end 10.16 -17.78)
+				(end 10.16 -15.24)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -43952,17 +43952,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -12.7 -10.16 0)
+			(pin input line
+				(at -12.7 -7.62 0)
 				(length 2.54)
-				(name "~{TEST}"
+				(name "~{IC}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -43970,17 +43970,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -12.7 -15.24 0)
+			(pin open_collector line
+				(at -12.7 -12.7 0)
 				(length 2.54)
-				(name "ΦM"
+				(name "~{IRQ}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "24"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -44007,7 +44007,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -20.32 90)
+				(at 0 -17.78 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -44025,7 +44025,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -20.32 90)
+				(at 0 -17.78 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -44062,7 +44062,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -20.32 90)
+				(at 2.54 -17.78 90)
 				(length 2.54)
 				(name "AGND"
 					(effects
@@ -44115,26 +44115,8 @@
 					)
 				)
 			)
-			(pin open_collector line
-				(at 12.7 7.62 180)
-				(length 2.54)
-				(name "~{IRQ}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at 12.7 2.54 180)
+				(at 12.7 7.62 180)
 				(length 2.54)
 				(name "A_{0}"
 					(effects
@@ -44152,7 +44134,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
 				(name "A_{1}"
 					(effects
@@ -44170,7 +44152,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -5.08 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -44188,7 +44170,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -7.62 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "~{RD}"
 					(effects
@@ -44206,7 +44188,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -10.16 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(name "~{WR}"
 					(effects
@@ -44224,16 +44206,34 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -15.24 180)
+				(at 12.7 -7.62 180)
 				(length 2.54)
-				(name "~{IC}"
+				(name "ΦM"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "11"
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -12.7 180)
+				(length 2.54)
+				(name "~{TEST}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -46109,6 +46109,70 @@
 			)
 		)
 		(property "ki_fp_filters" "QFN*1EP*5x5mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "YM3438"
+		(extends "YM2612")
+		(property "Reference" "U"
+			(at -9.398 19.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "YM3438"
+			(at 8.382 19.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-24_W15.24mm"
+			(at 0 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://retrocdn.net/images/7/76/YM3438_JP_Application_Manual.pdf"
+			(at 0 -25.908 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Yamaha 6-channel, 4-OP, FM sound generator (with built-in 9-bit DAC), sine-wave LFO, 8-bit PCM channel (DAC mode), CMOS version of YM2612, DIP-24 (600 mil)"
+			(at 0 -23.876 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "FM-synthesizer OPN2C stereo sound-chip low-frequency-oscillator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "DIP*W15.24mm*"
 			(at 0 0 0)
 			(effects
 				(font
