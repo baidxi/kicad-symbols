@@ -47,3 +47,10 @@ X2 in2+ in2- vcc vee out2 kicad_builtin_opamp POLE={POLE} GAIN={GAIN} VOFF={VOFF
 X3 in3+ in3- vcc vee out3 kicad_builtin_opamp POLE={POLE} GAIN={GAIN} VOFF={VOFF} ROUT={ROUT}
 X4 in4+ in4- vcc vee out4 kicad_builtin_opamp POLE={POLE} GAIN={GAIN} VOFF={VOFF} ROUT={ROUT}
 .ends
+
+* Potentiometer model
+* Symbol pins 1 2 3
+.subckt pot1 r1 w r0 params: Rtot=1k wpos=0.4
+Apot r0 w r1 potmod
+.model potmod potentiometer(position={wpos} r={Rtot})
+.ends
