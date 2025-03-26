@@ -90782,7 +90782,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 11.43 0)
+			(at -7.62 13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90791,7 +90791,7 @@
 			)
 		)
 		(property "Value" "TPS51396A"
-			(at -3.81 11.43 0)
+			(at -3.048 13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90826,7 +90826,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Synchronous switching step-down DC-DC regulator"
+		(property "ki_keywords" "Integrated switch DC-DC converter"
 			(at 0 0 0)
 			(effects
 				(font
@@ -90846,7 +90846,7 @@
 		)
 		(symbol "TPS51396A_0_0"
 			(pin power_in line
-				(at -10.16 7.62 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -90881,8 +90881,26 @@
 					)
 				)
 			)
+			(pin open_collector line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "PGOOD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
-				(at -10.16 -2.54 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "MODE"
 					(effects
@@ -90900,7 +90918,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -12.7 90)
+				(at 0 -15.24 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -90918,25 +90936,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 7.62 180)
-				(length 2.54)
-				(name "BST"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 -2.54 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "FB"
 					(effects
@@ -90953,28 +90953,10 @@
 					)
 				)
 			)
-			(pin open_collector line
-				(at 10.16 -7.62 180)
-				(length 2.54)
-				(name "PGOOD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 		(symbol "TPS51396A_1_0"
 			(pin passive line
-				(at -10.16 7.62 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(hide yes)
 				(name "VIN"
@@ -90993,7 +90975,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 7.62 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(hide yes)
 				(name "VIN"
@@ -91012,7 +90994,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 7.62 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(hide yes)
 				(name "VIN"
@@ -91030,8 +91012,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -10.16 2.54 0)
+			(pin power_out line
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -91049,7 +91031,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 -7.62 0)
+				(at -10.16 -10.16 0)
 				(length 2.54)
 				(name "SS"
 					(effects
@@ -91067,9 +91049,8 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 90)
+				(at -2.54 -15.24 90)
 				(length 2.54)
-				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -91086,26 +91067,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 90)
-				(length 2.54)
-				(hide yes)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -12.7 90)
+				(at -2.54 -15.24 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -91124,7 +91086,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 90)
+				(at 0 -15.24 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -91143,7 +91105,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 90)
+				(at 0 -15.24 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -91162,7 +91124,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 90)
+				(at 0 -15.24 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -91180,8 +91142,26 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 2.54 -15.24 90)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
-				(at 10.16 2.54 180)
+				(at 10.16 10.16 180)
 				(length 2.54)
 				(hide yes)
 				(name "SW"
@@ -91200,7 +91180,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 2.54 180)
+				(at 10.16 10.16 180)
 				(length 2.54)
 				(hide yes)
 				(name "SW"
@@ -91219,7 +91199,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 2.54 180)
+				(at 10.16 10.16 180)
 				(length 2.54)
 				(name "SW"
 					(effects
@@ -91236,11 +91216,29 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "BST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(symbol "TPS51396A_1_1"
 			(rectangle
-				(start -7.62 10.16)
-				(end 7.62 -10.16)
+				(start -7.62 12.7)
+				(end 7.62 -12.7)
 				(stroke
 					(width 0.254)
 					(type solid)
