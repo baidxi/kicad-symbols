@@ -74444,7 +74444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low Capacitance, 2-Channel, 3 to 1 Switch, VQFN-12"
+		(property "Description" "Low Capacitance, R_{on} 5.5Ω, 2-Channel, 3:1 Switch, 2.5-4.3V, WQFN-12"
 			(at 0 30.48 0)
 			(effects
 				(font
@@ -74453,7 +74453,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "3 to 1 Switch 2-Channel"
+		(property "ki_keywords" "3:1 mux dual"
 			(at 0 0 0)
 			(effects
 				(font
@@ -75411,26 +75411,8 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -15.24 -7.62 0)
-				(length 2.54)
-				(name "SEL1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 -10.16 0)
 				(length 2.54)
 				(name "SEL0"
 					(effects
@@ -75447,10 +75429,28 @@
 					)
 				)
 			)
+			(pin input line
+				(at -15.24 -10.16 0)
+				(length 2.54)
+				(name "SEL1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 17.78 270)
 				(length 2.54)
-				(name "VCC"
+				(name "VDD"
 					(effects
 						(font
 							(size 1.27 1.27)
