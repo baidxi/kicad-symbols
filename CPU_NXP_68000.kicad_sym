@@ -40,7 +40,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16/32-bit microprocessor, 16-bit data bus, 24-bit address bus, PLCC-68 (case 779-01)"
+		(property "Description" "16/32-bit microprocessor, 16-bit external data bus, 24-bit address bus, PLCC-68 (case 779-01)"
 			(at 0 -56.642 0)
 			(effects
 				(font
@@ -243,116 +243,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -15.24 12.7 0)
-				(length 2.54)
-				(name "~{IPL0}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "27"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 10.16 0)
-				(length 2.54)
-				(name "~{IPL1}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "26"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 7.62 0)
-				(length 2.54)
-				(name "~{IPL2}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "25"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 -10.16 0)
-				(length 2.54)
-				(name "~{BERR}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -15.24 -12.7 0)
-				(length 2.54)
-				(name "~{HALT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -15.24 -15.24 0)
-				(length 2.54)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at -15.24 -25.4 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "E"
 					(effects
@@ -370,7 +262,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -15.24 -27.94 0)
+				(at -15.24 10.16 0)
 				(length 2.54)
 				(name "~{VMA}"
 					(effects
@@ -388,7 +280,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -30.48 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "~{VPA}"
 					(effects
@@ -406,7 +298,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -15.24 -38.1 0)
+				(at -15.24 -10.16 0)
 				(length 2.54)
 				(name "FC0"
 					(effects
@@ -424,7 +316,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -15.24 -40.64 0)
+				(at -15.24 -12.7 0)
 				(length 2.54)
 				(name "FC1"
 					(effects
@@ -442,7 +334,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -15.24 -43.18 0)
+				(at -15.24 -15.24 0)
 				(length 2.54)
 				(name "FC2"
 					(effects
@@ -452,6 +344,114 @@
 					)
 				)
 				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -22.86 0)
+				(length 2.54)
+				(name "~{IPL0}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -25.4 0)
+				(length 2.54)
+				(name "~{IPL1}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -27.94 0)
+				(length 2.54)
+				(name "~{IPL2}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -40.64 0)
+				(length 2.54)
+				(name "~{BERR}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -43.18 0)
+				(length 2.54)
+				(name "~{HALT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -48.26 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1352,7 +1352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16/32-bit microprocessor, 16-bit data bus, 24-bit address bus, DIP-64 (900 mil, case 754-01)"
+		(property "Description" "16/32-bit microprocessor, 16-bit external data bus, 24-bit address bus, DIP-64 (900 mil, case 754-01)"
 			(at 0 -56.642 0)
 			(effects
 				(font
@@ -1555,116 +1555,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -15.24 12.7 0)
-				(length 2.54)
-				(name "~{IPL0}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "25"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 10.16 0)
-				(length 2.54)
-				(name "~{IPL1}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 7.62 0)
-				(length 2.54)
-				(name "~{IPL2}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 -10.16 0)
-				(length 2.54)
-				(name "~{BERR}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -15.24 -12.7 0)
-				(length 2.54)
-				(name "~{HALT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -15.24 -15.24 0)
-				(length 2.54)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at -15.24 -25.4 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "E"
 					(effects
@@ -1682,7 +1574,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -15.24 -27.94 0)
+				(at -15.24 10.16 0)
 				(length 2.54)
 				(name "~{VMA}"
 					(effects
@@ -1700,7 +1592,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -30.48 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "~{VPA}"
 					(effects
@@ -1718,7 +1610,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -15.24 -38.1 0)
+				(at -15.24 -10.16 0)
 				(length 2.54)
 				(name "FC0"
 					(effects
@@ -1736,7 +1628,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -15.24 -40.64 0)
+				(at -15.24 -12.7 0)
 				(length 2.54)
 				(name "FC1"
 					(effects
@@ -1754,7 +1646,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -15.24 -43.18 0)
+				(at -15.24 -15.24 0)
 				(length 2.54)
 				(name "FC2"
 					(effects
@@ -1764,6 +1656,114 @@
 					)
 				)
 				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -22.86 0)
+				(length 2.54)
+				(name "~{IPL0}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -25.4 0)
+				(length 2.54)
+				(name "~{IPL1}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -27.94 0)
+				(length 2.54)
+				(name "~{IPL2}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -40.64 0)
+				(length 2.54)
+				(name "~{BERR}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -43.18 0)
+				(length 2.54)
+				(name "~{HALT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -48.26 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5996,7 +5996,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16/32-bit microprocessor, 16-bit data bus, 24-bit address bus, virtual memory support, loop mode, DIP-64 (900 mil, case 754-01)"
+		(property "Description" "16/32-bit microprocessor, 16-bit external data bus, 24-bit address bus, virtual memory support, loop mode, DIP-64 (900 mil, case 754-01)"
 			(at 0 0 0)
 			(effects
 				(font
