@@ -6602,7 +6602,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at -8.89 -1.27 0)
+			(at 0 -11.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6610,8 +6610,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.fujitsu.com/downloads/MICRO/fsa/pdf/products/memory/fram/MB85RS16-DS501-00014-6v0-E.pdf"
-			(at -8.89 -1.27 0)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/1113/MB85RS2MT_DS501_00023_5v0_E-2515390.pdf"
+			(at 0 -14.224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6619,7 +6619,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FRAM memory with SPI interface, SOIC-8 SON-8"
+		(property "Description" "FeRAM memory with SPI interface, 2Mbit (256K x 8), 1.8V to 3.6V supply, DIP-8 / SOIC-8 (SOP-8, 208 mil)"
+			(at 0 -16.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "FRAM Ferroelectric-RAM 3.3V 2-Mbit MB85RS2MTPH MB85RS2MTPF Fujitsu Obsolete"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6628,7 +6637,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "FRAM SPI 3.3V"
+		(property "ki_fp_filters" "*SOIC*5.3x5.3mm*P1.27mm* DIP?8?W7.62mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6637,7 +6646,64 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SOIC*3.9x5.05mm*P1.27mm* *SON*2x3mm*P0.50mm*"
+	)
+	(symbol "MB85RS2MTAPNF"
+		(extends "MB85RS16")
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MB85RS2MTAPNF"
+			(at 1.27 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-8_3.9x4.9mm_P1.27mm"
+			(at 0 -11.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/1113/MB85RS2MTA_DS6v0_E-3538530.pdf"
+			(at 0 -14.224 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "FeRAM memory with SPI interface, 2Mbit (256K x 8), 1.7V to 3.6V supply, SOIC-8 (SOP-8, 150 mil)"
+			(at 0 -16.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "FRAM Ferroelectric-RAM 3.3V 2-Mbit RAMXEED"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*SO*3.9x4.9*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
