@@ -49,7 +49,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "MCU PWM WDT USART CAN-interface C166 SAF-C167CR-LM SAK-C167CR-4RM SAB-C167CR-4R33M"
+		(property "ki_keywords" "MCU PWM WDT USART SPI CAN-interface C166 SAF-C167CR-LM SAK-C167CR-4RM SAB-C167CR-4R33M"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2367,26 +2367,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 30.48 -35.56 180)
-				(length 3.81)
-				(name "~{READY}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "97"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 30.48 -38.1 180)
+				(at 30.48 -35.56 180)
 				(length 3.81)
 				(name "P3.12/~{BHE}/~{WRH}"
 					(effects
@@ -2396,6 +2378,24 @@
 					)
 				)
 				(number "79"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 30.48 -38.1 180)
+				(length 3.81)
+				(name "~{READY}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "97"
 					(effects
 						(font
 							(size 1.27 1.27)
