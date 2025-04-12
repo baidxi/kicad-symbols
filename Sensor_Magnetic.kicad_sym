@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "A1101ELHL"
+	(symbol "A1101xLH"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -15,7 +15,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1101ELHL"
+		(property "Value" "A1101xLH"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -25,18 +25,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
+			(at 0 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"
-			(at 0 16.51 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,8 +43,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Hall effect switch, unipolar, Bop=100G, Brp=45G, -40C to +85C, SOT-23W"
-			(at 0 0 0)
+		(property "Description" "Hall effect switch, unipolar (south-polarity), Bop=100G, Brp=45G, 3.8-24V supply, SOT-23W"
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53,7 +52,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_keywords" "A3141"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71,7 +70,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A1101ELHL_0_1"
+		(symbol "A1101xLH_0_1"
 			(rectangle
 				(start -5.08 7.62)
 				(end 5.08 -7.62)
@@ -84,11 +83,11 @@
 				)
 			)
 		)
-		(symbol "A1101ELHL_1_1"
+		(symbol "A1101xLH_1_1"
 			(pin power_in line
 				(at -2.54 10.16 270)
 				(length 2.54)
-				(name "VCC"
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -124,7 +123,7 @@
 			(pin open_collector line
 				(at 7.62 0 180)
 				(length 2.54)
-				(name "VOUT"
+				(name "V_{OUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -142,7 +141,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A1301KLHLT-T"
+	(symbol "A1101xUA"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -155,7 +154,146 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1301KLHLT-T"
+		(property "Value" "A1101xUA"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
+			(at 0 -17.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hall effect switch, unipolar (south-polarity), Bop=100G, Brp=45G, 3.8-24V supply, TO-92S (3-pin SIP)"
+			(at 0 -14.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "A3141"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*TO?92S*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "A1101xUA_0_1"
+			(rectangle
+				(start -5.08 7.62)
+				(end 5.08 -7.62)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "A1101xUA_1_1"
+			(pin power_in line
+				(at -2.54 10.16 270)
+				(length 2.54)
+				(name "V_{CC}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "V_{OUT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "A1301xLH"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "A1301xLH"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -165,18 +303,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
+			(at 0 -17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx"
-			(at -2.54 0 0)
+			(at 0 -12.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -184,8 +321,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Linear Hall Effect Sensor, SOT-23W"
-			(at 0 0 0)
+		(property "Description" "Linear Hall Effect Sensor, 2.5 mV/G, 4.5-6.0V supply, SOT-23W"
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -193,7 +330,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_keywords" "ratiometric Obsolete"
 			(at 0 0 0)
 			(effects
 				(font
@@ -211,9 +348,9 @@
 				(hide yes)
 			)
 		)
-		(symbol "A1301KLHLT-T_0_1"
+		(symbol "A1301xLH_0_1"
 			(rectangle
-				(start -5.08 7.62)
+				(start -6.35 7.62)
 				(end 5.08 -7.62)
 				(stroke
 					(width 0.254)
@@ -223,12 +360,107 @@
 					(type background)
 				)
 			)
+			(polyline
+				(pts
+					(xy -4.699 0.381) (xy -4.953 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -4.699 0.381) (xy -4.445 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.4544 0.8382) (xy -2.8702 0.254) (xy -2.6162 0.508) (xy -3.2004 1.0922) (xy -3.4544 0.8382)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(arc
+				(start -0.635 0.381)
+				(mid -2.667 -1.651)
+				(end -4.699 0.381)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0.381) (xy -0.889 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0.381) (xy -0.381 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
-		(symbol "A1301KLHLT-T_1_1"
+		(symbol "A1301xLH_1_1"
+			(circle
+				(center -2.667 0.381)
+				(radius 1.524)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.6162 0.508) (xy -1.9304 -0.1778) (xy -2.1844 -0.4318) (xy -2.8702 0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin power_in line
 				(at -2.54 10.16 270)
 				(length 2.54)
-				(name "VCC"
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -264,7 +496,7 @@
 			(pin output line
 				(at 7.62 0 180)
 				(length 2.54)
-				(name "VOUT"
+				(name "V_{OUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -282,7 +514,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A1301KUA-T"
+	(symbol "A1301xUA"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -295,7 +527,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1301KUA-T"
+		(property "Value" "A1301xUA"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -304,19 +536,18 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 -8.89 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
+			(at 0 -17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx"
-			(at -2.54 0 0)
+			(at 0 -12.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -324,7 +555,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Linear Hall Effect Sensor, SIP 3pin"
+		(property "Description" "Linear Hall Effect Sensor, 2.5 mV/G, 4.5-6.0V supply, TO-92S (3-pin SIP)"
+			(at 0 -14.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ratiometric Obsolete"
 			(at 0 0 0)
 			(effects
 				(font
@@ -333,7 +573,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_fp_filters" "*TO?92S*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -342,9 +582,9 @@
 				(hide yes)
 			)
 		)
-		(symbol "A1301KUA-T_0_1"
+		(symbol "A1301xUA_0_1"
 			(rectangle
-				(start -5.08 7.62)
+				(start -6.35 7.62)
 				(end 5.08 -7.62)
 				(stroke
 					(width 0.254)
@@ -354,12 +594,107 @@
 					(type background)
 				)
 			)
+			(polyline
+				(pts
+					(xy -4.699 0.381) (xy -4.953 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -4.699 0.381) (xy -4.445 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.4544 0.8382) (xy -2.8702 0.254) (xy -2.6162 0.508) (xy -3.2004 1.0922) (xy -3.4544 0.8382)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(arc
+				(start -0.635 0.381)
+				(mid -2.667 -1.651)
+				(end -4.699 0.381)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0.381) (xy -0.889 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0.381) (xy -0.381 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
-		(symbol "A1301KUA-T_1_1"
+		(symbol "A1301xUA_1_1"
+			(circle
+				(center -2.667 0.381)
+				(radius 1.524)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.6162 0.508) (xy -1.9304 -0.1778) (xy -2.1844 -0.4318) (xy -2.8702 0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin power_in line
 				(at -2.54 10.16 270)
 				(length 2.54)
-				(name "VCC"
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -395,7 +730,241 @@
 			(pin output line
 				(at 7.62 0 180)
 				(length 2.54)
-				(name "VOUT"
+				(name "V_{OUT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "A1369xUA-10"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 6.35 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "A1369xUA-10"
+			(at 6.35 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
+			(at -2.54 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1369-Datasheet.ashx?la=en"
+			(at -2.54 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Customer-Programmable Linear Hall Effect Sensor, -8.5 to -12.5mV/G, TO-92S (3-pin SIP)"
+			(at -2.54 -15.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "current-sensing monitor ratiometric Obsolete"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*TO?92S*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "A1369xUA-10_0_1"
+			(rectangle
+				(start -6.35 7.62)
+				(end 5.08 -7.62)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -4.699 0.381) (xy -4.953 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -4.699 0.381) (xy -4.445 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.4544 0.8382) (xy -2.8702 0.254) (xy -2.6162 0.508) (xy -3.2004 1.0922) (xy -3.4544 0.8382)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(arc
+				(start -0.635 0.381)
+				(mid -2.667 -1.651)
+				(end -4.699 0.381)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0.381) (xy -0.889 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0.381) (xy -0.381 0.127)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "A1369xUA-10_1_1"
+			(circle
+				(center -2.667 0.381)
+				(radius 1.524)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.6162 0.508) (xy -1.9304 -0.1778) (xy -2.1844 -0.4318) (xy -2.8702 0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at -2.54 10.16 270)
+				(length 2.54)
+				(name "V_{CC}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "V_{OUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5885,6 +6454,408 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "MLX90395xLW"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -9.906 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MLX90395xLW"
+			(at 1.27 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.675x1.675mm"
+			(at 0 -20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.melexis.com/en/documents/documentation/datasheets/datasheet-mlx90395"
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3-axis Magnetometer Node, SPI / I2C interface, VQFN-16"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Melexis Triaxis Hall-Sensor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*QFN*3x3mm*P0.5mm*EP1.675x1.675mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MLX90395xLW_0_1"
+			(rectangle
+				(start -10.16 10.16)
+				(end 10.16 -10.16)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "MLX90395xLW_1_1"
+			(pin input line
+				(at -12.7 7.62 0)
+				(length 2.54)
+				(name "~{CS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "MS" input line)
+			)
+			(pin input line
+				(at -12.7 5.08 0)
+				(length 2.54)
+				(name "SCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SCL" input line)
+			)
+			(pin input line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "MOSI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SDA" bidirectional line)
+			)
+			(pin output line
+				(at -12.7 0 0)
+				(length 2.54)
+				(name "MISO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -5.08 0)
+				(length 2.54)
+				(name "INT/TRG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "INT" output line)
+				(alternate "TRG" input line)
+			)
+			(pin output line
+				(at -12.7 -7.62 0)
+				(length 2.54)
+				(name "INT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 12.7 270)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "MMC5633NJL"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9100,8 +10071,8 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A1101LLHL"
-		(extends "A1101ELHL")
+	(symbol "A1102xLH"
+		(extends "A1101xLH")
 		(property "Reference" "U"
 			(at 0 11.43 0)
 			(effects
@@ -9111,7 +10082,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1101LLHL"
+		(property "Value" "A1102xLH"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -9121,18 +10092,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
+			(at 0 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"
-			(at 0 16.51 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9140,8 +10110,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Hall effect switch, unipolar, Bop=100G, Brp=45G, -40C to +125C, SOT-23W"
-			(at 0 0 0)
+		(property "Description" "Hall effect switch, unipolar (south-polarity), Bop=180G, Brp=125G, 3.8-24V supply, SOT-23W"
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9149,7 +10119,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_keywords" "A3142"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9168,8 +10138,8 @@
 			)
 		)
 	)
-	(symbol "A1102ELHL"
-		(extends "A1101ELHL")
+	(symbol "A1103xLH"
+		(extends "A1101xLH")
 		(property "Reference" "U"
 			(at 0 11.43 0)
 			(effects
@@ -9179,7 +10149,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1102ELHL"
+		(property "Value" "A1103xLH"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -9189,18 +10159,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
+			(at 0 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"
-			(at 0 16.51 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9208,8 +10177,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Hall effect switch, unipolar, Bop=180G, Brp=125G, -40C to +85C, SOT-23W"
-			(at 0 0 0)
+		(property "Description" "Hall effect switch, unipolar (south-polarity), Bop=280G, Brp=225G, 3.8-24V supply, SOT-23W"
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9217,7 +10186,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_keywords" "A3143"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9236,8 +10205,8 @@
 			)
 		)
 	)
-	(symbol "A1102LLHL"
-		(extends "A1101ELHL")
+	(symbol "A1104xLH"
+		(extends "A1101xLH")
 		(property "Reference" "U"
 			(at 0 11.43 0)
 			(effects
@@ -9247,7 +10216,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1102LLHL"
+		(property "Value" "A1104xLH"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -9257,18 +10226,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
+			(at 0 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"
-			(at 0 16.51 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9276,8 +10244,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Hall effect switch, unipolar, Bop=180G, Brp=125G, -40C to +125C, SOT-23W"
-			(at 0 0 0)
+		(property "Description" "Hall effect switch, unipolar (south-polarity), Bop=70-350G, Brp=50-330G, 3.8-24V supply, SOT-23W"
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9285,7 +10253,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_keywords" "A3144"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9304,8 +10272,8 @@
 			)
 		)
 	)
-	(symbol "A1103ELHL"
-		(extends "A1101ELHL")
+	(symbol "A1106xLH"
+		(extends "A1101xLH")
 		(property "Reference" "U"
 			(at 0 11.43 0)
 			(effects
@@ -9315,7 +10283,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1103ELHL"
+		(property "Value" "A1106xLH"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -9325,18 +10293,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
+			(at 0 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"
-			(at 0 16.51 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9344,8 +10311,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Hall effect switch, unipolar, Bop=280G, Brp=225G, -40C to +85C, SOT-23W"
-			(at 0 0 0)
+		(property "Description" "Hall effect switch, unipolar (south-polarity), Bop=340G, Brp=240G, 3.8-24V supply, SOT-23W"
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9353,7 +10320,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_keywords" "Allegro"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9372,8 +10339,8 @@
 			)
 		)
 	)
-	(symbol "A1103LLHL"
-		(extends "A1101ELHL")
+	(symbol "A1302xLH"
+		(extends "A1301xLH")
 		(property "Reference" "U"
 			(at 0 11.43 0)
 			(effects
@@ -9383,7 +10350,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1103LLHL"
+		(property "Value" "A1302xLH"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -9393,222 +10360,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
+			(at 0 -17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"
-			(at 0 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hall effect switch, unipolar, Bop=280G, Brp=225G, -40C to +125C, SOT-23W"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "hall switch"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOT?23*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "A1104LLHL"
-		(extends "A1101ELHL")
-		(property "Reference" "U"
-			(at 0 11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "A1104LLHL"
-			(at 0 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"
-			(at 0 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hall effect switch, unipolar, Bop=240G, Brp=200G, -40C to +125C, SOT-23W"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "hall switch"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOT?23*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "A1106LLHL"
-		(extends "A1101ELHL")
-		(property "Reference" "U"
-			(at 0 11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "A1106LLHL"
-			(at 0 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"
-			(at 0 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hall effect switch, unipolar, Bop=340G, Brp=240G, -40C to +125C, SOT-23W"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "hall switch"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOT?23*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "A1301EUA-T"
-		(extends "A1301KUA-T")
-		(property "Reference" "U"
-			(at 0 11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "A1301EUA-T"
-			(at 0 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 -8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx"
-			(at -2.54 0 0)
+			(at 0 -12.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9616,8 +10378,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Linear Hall Effect Sensor, SIP 3pin"
-			(at 0 0 0)
+		(property "Description" "Linear Hall Effect Sensor, 1.3 mV/G, 4.5-6.0V supply, SOT-23W"
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9625,66 +10387,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "A1302ELHLT-T"
-		(extends "A1301KLHLT-T")
-		(property "Reference" "U"
-			(at 0 11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "A1302ELHLT-T"
-			(at 0 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx"
-			(at -2.54 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Linear Hall Effect Sensor, SOT-23W"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_keywords" "ratiometric Obsolete"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9703,8 +10406,8 @@
 			)
 		)
 	)
-	(symbol "A1302KLHLT-T"
-		(extends "A1301KLHLT-T")
+	(symbol "A1302xUA"
+		(extends "A1301xUA")
 		(property "Reference" "U"
 			(at 0 11.43 0)
 			(effects
@@ -9714,7 +10417,74 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1302KLHLT-T"
+		(property "Value" "A1302xUA"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
+			(at 0 -17.018 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx"
+			(at 0 -12.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Linear Hall Effect Sensor, 1.3 mV/G, 4.5-6.0V supply, TO-92S (3-pin SIP)"
+			(at 0 -14.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ratiometric Obsolete"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*TO?92S*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "A1308xLHxx-2"
+		(extends "A1301xLH")
+		(property "Reference" "U"
+			(at 0 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "A1308xLHxx-2"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -9724,18 +10494,17 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
+			(at 0 -17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx"
-			(at -2.54 0 0)
+		(property "Datasheet" "https://www.allegromicro.com/~/media/files/datasheets/a1308-9-datasheet.ashx"
+			(at 0 -12.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9743,8 +10512,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Linear Hall Effect Sensor, SOT-23W"
-			(at 0 0 0)
+		(property "Description" "Linear Hall Effect Sensor ICs with Analog Output, 2.5 mV/G, 4.5-5.5V supply, SOT-23W"
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9752,7 +10521,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_keywords" "ratiometric A1301"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9771,8 +10540,8 @@
 			)
 		)
 	)
-	(symbol "A1302KUA-T"
-		(extends "A1301KUA-T")
+	(symbol "A1309xLHxx-9"
+		(extends "A1301xLH")
 		(property "Reference" "U"
 			(at 0 11.43 0)
 			(effects
@@ -9782,66 +10551,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A1302KUA-T"
-			(at 0 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 -8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx"
-			(at -2.54 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Linear Hall Effect Sensor, SIP 3pin"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "hall switch"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "A3214ELHLT-T"
-		(extends "A1301KLHLT-T")
-		(property "Reference" "U"
-			(at 0 11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "A3214ELHLT-T"
+		(property "Value" "A1309xLHxx-9"
 			(at 0 8.89 0)
 			(effects
 				(font
@@ -9851,18 +10561,151 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
-			(at 0 -8.89 0)
+			(at 0 -17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.allegromicro.com/~/media/files/datasheets/a1308-9-datasheet.ashx"
+			(at 0 -12.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Linear Hall Effect Sensor ICs with Analog Output, 9 mV/G, 4.5-5.5V supply, SOT-23W"
+			(at 0 -14.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ratiometric"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23W*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "A1369xUA-24"
+		(extends "A1369xUA-10")
+		(property "Reference" "U"
+			(at 8.89 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(justify left)
+			)
+		)
+		(property "Value" "A1369xUA-24"
+			(at 8.89 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1369-Datasheet.ashx?la=en"
+			(at 0 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Customer-Programmable Linear Hall Effect Sensor, -22 to -26mV/G, TO-92S (3-pin SIP)"
+			(at 0 -15.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "current-sensing monitor ratiometric Obsolete"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*TO?92S*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "A3214xLH"
+		(extends "A1101xLH")
+		(property "Reference" "U"
+			(at 0 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "A3214xLH"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
+			(at 0 -11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A3213-4-Datasheet.ashx"
-			(at -2.54 0 0)
+			(at 0 -15.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9870,8 +10713,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Linear Hall Effect Sensor, SOT-23W"
-			(at 0 0 0)
+		(property "Description" "Hall Effect Switch, bipolar, Bop = -48 or +42G, Brp = -38 or 32G, 2.4-5.5V supply, SOT-23W"
+			(at 0 -13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9879,7 +10722,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "hall switch"
+		(property "ki_keywords" "Allegro"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9889,6 +10732,140 @@
 			)
 		)
 		(property "ki_fp_filters" "SOT?23W*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "ACS73369xUAA-010B5"
+		(extends "A1369xUA-10")
+		(property "Reference" "U"
+			(at 8.89 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ACS73369xUAA-010B5"
+			(at 8.89 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/ACS73369-Datasheet.ashx?la=en"
+			(at 0 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Customer-Programmable Linear Hall Effect Sensor, +9 to +13.5mV/G, TO-92S (3-pin SIP)"
+			(at 0 -15.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "A1369 current-sensing monitor ratiometric"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*TO?92S*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "AH452UA"
+		(extends "A1101xUA")
+		(property "Reference" "U"
+			(at 0 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AH452UA"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
+			(at 0 -17.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet4u.com/pdf-down/A/H/4/AH452-AlfaElectronics.pdf"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "High sensitivity omnipolar Hall effect switch, Bop=±50G, Brp=±30G, TO-92S (3-pin SIP)"
+			(at 0 -14.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Alfa-Electronics"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*TO?92S*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11482,6 +12459,73 @@
 			)
 		)
 		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "A1308xLHxx-1"
+		(extends "A1302xLH")
+		(property "Reference" "U"
+			(at 0 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "A1308xLHxx-1"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W"
+			(at 0 -17.018 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.allegromicro.com/~/media/files/datasheets/a1308-9-datasheet.ashx"
+			(at 0 -12.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Linear Hall Effect Sensor ICs with Analog Output, 1.3 mV/G, 4.5-5.5V supply, SOT-23W"
+			(at 0 -14.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ratiometric A1302"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23W*"
 			(at 0 0 0)
 			(effects
 				(font
