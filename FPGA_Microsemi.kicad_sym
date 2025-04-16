@@ -34640,7 +34640,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:TQFP-100_14x14mm_P0.5mm"
+		(property "Footprint" "Package_QFP:LQFP-100_14x14mm_P0.5mm"
 			(at 13.97 40.64 0)
 			(effects
 				(font
@@ -34651,7 +34651,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.microsemi.com/document-portal/doc_download/130687-ex-datasheet"
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/268/eX_DS-1593985.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -34660,7 +34660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Actel eX Family FPGA, 100pin QFP"
+		(property "Description" "Actel eX Family FPGA, LQFP-100 (case TQ100)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -34678,7 +34678,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*QFP*14x14mm*P0.5mm*"
+		(property "ki_fp_filters" "*LQFP*14x14mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -35223,27 +35223,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -12.7 43.18 270)
+			(pin passive line
+				(at -2.54 43.18 270)
 				(length 3.81)
-				(name "VCCI"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -10.16 43.18 270)
-				(length 3.81)
+				(hide yes)
 				(name "VCCI"
 					(effects
 						(font
@@ -35259,27 +35242,10 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at -10.16 -43.18 90)
+			(pin passive line
+				(at -2.54 43.18 270)
 				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -7.62 43.18 270)
-				(length 3.81)
+				(hide yes)
 				(name "VCCI"
 					(effects
 						(font
@@ -35295,27 +35261,10 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at -7.62 -43.18 90)
+			(pin passive line
+				(at -2.54 43.18 270)
 				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -5.08 43.18 270)
-				(length 3.81)
+				(hide yes)
 				(name "VCCI"
 					(effects
 						(font
@@ -35324,24 +35273,6 @@
 					)
 				)
 				(number "58"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at -5.08 -43.18 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "36"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -35359,6 +35290,25 @@
 						)
 					)
 				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 43.18 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCCI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 				(number "82"
 					(effects
 						(font
@@ -35367,9 +35317,47 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at -2.54 -43.18 90)
 				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 -43.18 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 -43.18 90)
+				(length 3.81)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -35385,9 +35373,10 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 0 -43.18 90)
+			(pin passive line
+				(at -2.54 -43.18 90)
 				(length 3.81)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -35403,17 +35392,18 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 43.18 270)
+			(pin passive line
+				(at -2.54 -43.18 90)
 				(length 3.81)
-				(name "VCCA"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "35"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -35421,9 +35411,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 -43.18 90)
+			(pin passive line
+				(at -2.54 -43.18 90)
 				(length 3.81)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -35440,8 +35431,27 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 43.18 270)
+				(at 0 43.18 270)
 				(length 3.81)
+				(name "VCCA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 43.18 270)
+				(length 3.81)
+				(hide yes)
 				(name "VCCA"
 					(effects
 						(font
@@ -35457,9 +35467,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 7.62 43.18 270)
+			(pin passive line
+				(at 0 43.18 270)
 				(length 3.81)
+				(hide yes)
 				(name "VCCA"
 					(effects
 						(font
@@ -35475,9 +35486,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 10.16 43.18 270)
+			(pin passive line
+				(at 0 43.18 270)
 				(length 3.81)
+				(hide yes)
 				(name "VCCA"
 					(effects
 						(font
@@ -35494,7 +35506,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 -43.18 90)
+				(at 0 -43.18 90)
 				(length 3.81)
 				(name "GND/LP"
 					(effects
@@ -36008,6 +36020,519 @@
 					)
 				)
 				(number "55"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -39.37 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -41.91 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -44.45 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -46.99 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -49.53 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -52.07 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -54.61 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -60.96 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -63.5 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -66.04 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -68.58 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 34.29 -71.12 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 -59.69 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 -62.23 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 -64.77 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 -67.31 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "53"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 -69.85 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "54"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 -76.2 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "59"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 -78.74 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "61"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 -81.28 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "63"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 53.34 -83.82 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "65"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 74.93 -59.69 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "72"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 74.93 -62.23 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "73"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 74.93 -64.77 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "74"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 74.93 -67.31 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "75"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 74.93 -69.85 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "76"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 74.93 -72.39 180)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "89"
 					(effects
 						(font
 							(size 1.27 1.27)
