@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "A3P030-VQG100"
+	(symbol "A3P030-xVQx100"
 		(pin_names
 			(offset 1.016)
 		)
@@ -10,7 +10,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 30.48 60.96 0)
+			(at 28.194 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18,8 +18,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A3P030-VQG100"
-			(at 30.48 58.42 0)
+		(property "Value" "A3P030-xVQx100"
+			(at 28.194 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27,8 +27,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:VQFP-100_14x14mm_P0.5mm"
-			(at 30.48 55.88 0)
+		(property "Footprint" "Package_QFP:TQFP-100_14x14mm_P0.5mm"
+			(at 28.194 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38,8 +38,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.microsemi.com/document-portal/doc_download/130704-proasic3-flash-family-fpgas-datasheet"
-			(at 0 5.08 0)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/268/ProASIC_c2_ae3_Flash_Family_FPGAs_with_Optimal_Sof-3082432.pdf"
+			(at 0 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -47,7 +47,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Actel ProASIC3 Flash Family FPGAs, 256 MCLB, 100pin QFP100"
+		(property "Description" "ProASIC3 Flash Family FPGAs, 256 MCLB / macrocells, TQFP-100 (VQ100)"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ProASIC3 ACTEL FLASH A3P030-VQ100 A3P030-VQG100 A3P030-2VQG100"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56,7 +65,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ProASIC3 ACTEL FLASH"
+		(property "ki_fp_filters" "*TQFP*14x14mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -65,19 +74,10 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*QFP*14x14mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "A3P030-VQG100_0_1"
+		(symbol "A3P030-xVQx100_0_1"
 			(rectangle
-				(start -29.21 62.23)
-				(end 29.21 -62.23)
+				(start -26.67 57.15)
+				(end 26.67 -57.15)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -87,27 +87,9 @@
 				)
 			)
 		)
-		(symbol "A3P030-VQG100_1_1"
-			(pin bidirectional line
-				(at -33.02 58.42 0)
-				(length 3.81)
-				(name "VJTAG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "56"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 55.88 0)
+		(symbol "A3P030-xVQx100_1_1"
+			(pin input line
+				(at -30.48 50.8 0)
 				(length 3.81)
 				(name "TCK"
 					(effects
@@ -124,8 +106,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 53.34 0)
+			(pin input line
+				(at -30.48 48.26 0)
 				(length 3.81)
 				(name "TDI"
 					(effects
@@ -142,26 +124,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 50.8 0)
-				(length 3.81)
-				(name "TMS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "49"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 48.26 0)
+			(pin output line
+				(at -30.48 45.72 0)
 				(length 3.81)
 				(name "TDO"
 					(effects
@@ -178,8 +142,26 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 45.72 0)
+			(pin input line
+				(at -30.48 43.18 0)
+				(length 3.81)
+				(name "TMS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -30.48 40.64 0)
 				(length 3.81)
 				(name "TRST"
 					(effects
@@ -197,7 +179,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 40.64 0)
+				(at -30.48 35.56 0)
 				(length 3.81)
 				(name "IO82RSB1"
 					(effects
@@ -215,7 +197,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 38.1 0)
+				(at -30.48 33.02 0)
 				(length 3.81)
 				(name "IO81RSB1"
 					(effects
@@ -233,7 +215,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 35.56 0)
+				(at -30.48 30.48 0)
 				(length 3.81)
 				(name "IO80RSB1"
 					(effects
@@ -251,7 +233,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 33.02 0)
+				(at -30.48 27.94 0)
 				(length 3.81)
 				(name "IO79RSB1"
 					(effects
@@ -269,7 +251,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 30.48 0)
+				(at -30.48 25.4 0)
 				(length 3.81)
 				(name "IO78RSB1"
 					(effects
@@ -286,8 +268,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -33.02 27.94 0)
+			(pin bidirectional line
+				(at -30.48 22.86 0)
 				(length 3.81)
 				(name "IO77RSB1"
 					(effects
@@ -305,7 +287,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 25.4 0)
+				(at -30.48 20.32 0)
 				(length 3.81)
 				(name "IO76RSB1"
 					(effects
@@ -323,7 +305,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 22.86 0)
+				(at -30.48 17.78 0)
 				(length 3.81)
 				(name "IO75RSB1"
 					(effects
@@ -341,7 +323,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 20.32 0)
+				(at -30.48 15.24 0)
 				(length 3.81)
 				(name "IO74RSB1"
 					(effects
@@ -359,7 +341,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 17.78 0)
+				(at -30.48 12.7 0)
 				(length 3.81)
 				(name "IO73RSB1/GEC0"
 					(effects
@@ -377,7 +359,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 15.24 0)
+				(at -30.48 10.16 0)
 				(length 3.81)
 				(name "IO72RSB1/GEA0"
 					(effects
@@ -395,7 +377,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 12.7 0)
+				(at -30.48 7.62 0)
 				(length 3.81)
 				(name "IO71RSB1/GEB0"
 					(effects
@@ -413,7 +395,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 10.16 0)
+				(at -30.48 5.08 0)
 				(length 3.81)
 				(name "IO70RSB1"
 					(effects
@@ -431,7 +413,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 7.62 0)
+				(at -30.48 2.54 0)
 				(length 3.81)
 				(name "IO69RSB1"
 					(effects
@@ -449,7 +431,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 5.08 0)
+				(at -30.48 0 0)
 				(length 3.81)
 				(name "IO68RSB1"
 					(effects
@@ -467,7 +449,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 2.54 0)
+				(at -30.48 -2.54 0)
 				(length 3.81)
 				(name "IO67RSB1"
 					(effects
@@ -485,7 +467,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 0 0)
+				(at -30.48 -5.08 0)
 				(length 3.81)
 				(name "IO66RSB1"
 					(effects
@@ -503,7 +485,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -2.54 0)
+				(at -30.48 -7.62 0)
 				(length 3.81)
 				(name "IO65RSB1"
 					(effects
@@ -521,7 +503,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -5.08 0)
+				(at -30.48 -10.16 0)
 				(length 3.81)
 				(name "IO64RSB1"
 					(effects
@@ -539,7 +521,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -7.62 0)
+				(at -30.48 -12.7 0)
 				(length 3.81)
 				(name "IO63RSB1"
 					(effects
@@ -557,7 +539,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -10.16 0)
+				(at -30.48 -15.24 0)
 				(length 3.81)
 				(name "IO62RSB1"
 					(effects
@@ -575,7 +557,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -12.7 0)
+				(at -30.48 -17.78 0)
 				(length 3.81)
 				(name "IO61RSB1"
 					(effects
@@ -593,7 +575,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -15.24 0)
+				(at -30.48 -20.32 0)
 				(length 3.81)
 				(name "IO60RSB1"
 					(effects
@@ -611,7 +593,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -17.78 0)
+				(at -30.48 -22.86 0)
 				(length 3.81)
 				(name "IO59RSB1"
 					(effects
@@ -629,7 +611,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -20.32 0)
+				(at -30.48 -25.4 0)
 				(length 3.81)
 				(name "IO58RSB1"
 					(effects
@@ -647,7 +629,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -22.86 0)
+				(at -30.48 -27.94 0)
 				(length 3.81)
 				(name "IO57RSB1"
 					(effects
@@ -665,7 +647,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -25.4 0)
+				(at -30.48 -30.48 0)
 				(length 3.81)
 				(name "IO56RSB1"
 					(effects
@@ -683,7 +665,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -27.94 0)
+				(at -30.48 -33.02 0)
 				(length 3.81)
 				(name "IO55RSB1"
 					(effects
@@ -701,7 +683,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -30.48 0)
+				(at -30.48 -35.56 0)
 				(length 3.81)
 				(name "IO54RSB1"
 					(effects
@@ -719,7 +701,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -33.02 0)
+				(at -30.48 -38.1 0)
 				(length 3.81)
 				(name "IO53RSB1"
 					(effects
@@ -737,7 +719,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -35.56 0)
+				(at -30.48 -40.64 0)
 				(length 3.81)
 				(name "IO52RSB1"
 					(effects
@@ -755,7 +737,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -38.1 0)
+				(at -30.48 -43.18 0)
 				(length 3.81)
 				(name "IO51RSB1"
 					(effects
@@ -773,7 +755,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -40.64 0)
+				(at -30.48 -45.72 0)
 				(length 3.81)
 				(name "IO49RSB1"
 					(effects
@@ -791,7 +773,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -43.18 0)
+				(at -30.48 -48.26 0)
 				(length 3.81)
 				(name "IO47RSB1"
 					(effects
@@ -809,7 +791,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -45.72 0)
+				(at -30.48 -50.8 0)
 				(length 3.81)
 				(name "IO46RSB1"
 					(effects
@@ -827,7 +809,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -48.26 0)
+				(at -30.48 -53.34 0)
 				(length 3.81)
 				(name "IO45RSB1"
 					(effects
@@ -844,53 +826,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 -50.8 0)
+			(pin power_in line
+				(at -17.78 60.96 270)
 				(length 3.81)
-				(name "IO44RSB1"
+				(name "VJTAG"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "44"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 -53.34 0)
-				(length 3.81)
-				(name "IO43RSB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "45"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 -55.88 0)
-				(length 3.81)
-				(name "IO42RSB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "46"
+				(number "56"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -899,259 +845,7 @@
 				)
 			)
 			(pin power_in line
-				(at -15.24 66.04 270)
-				(length 3.81)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -12.7 66.04 270)
-				(length 3.81)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "37"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -10.16 66.04 270)
-				(length 3.81)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "68"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -7.62 66.04 270)
-				(length 3.81)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "89"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -7.62 -66.04 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -5.08 -66.04 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 66.04 270)
-				(length 3.81)
-				(name "VCCIB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 -66.04 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "38"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 66.04 270)
-				(length 3.81)
-				(name "VCCIB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "39"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -66.04 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "51"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 66.04 270)
-				(length 3.81)
-				(name "VCCIB0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "66"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -66.04 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "67"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 66.04 270)
-				(length 3.81)
-				(name "VCCIB0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "87"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 -66.04 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "88"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 20.32 66.04 270)
+				(at -15.24 60.96 270)
 				(length 3.81)
 				(name "VPUMP"
 					(effects
@@ -1168,8 +862,308 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 0 60.96 270)
+				(length 3.81)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "68"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "89"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "51"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "67"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "88"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 5.08 60.96 270)
+				(length 3.81)
+				(name "VCCIB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCCIB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 5.08 -57.15 90)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "53"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 7.62 -57.15 90)
+				(length 3.81)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 60.96 270)
+				(length 3.81)
+				(name "VCCIB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "66"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCCIB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "87"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
-				(at 33.02 40.64 180)
+				(at 30.48 48.26 180)
 				(length 3.81)
 				(name "IO00RSB0"
 					(effects
@@ -1187,7 +1181,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 38.1 180)
+				(at 30.48 45.72 180)
 				(length 3.81)
 				(name "IO01RSB0"
 					(effects
@@ -1205,7 +1199,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 35.56 180)
+				(at 30.48 43.18 180)
 				(length 3.81)
 				(name "IO02RSB0"
 					(effects
@@ -1223,7 +1217,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 33.02 180)
+				(at 30.48 40.64 180)
 				(length 3.81)
 				(name "IO03RSB0"
 					(effects
@@ -1241,7 +1235,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 30.48 180)
+				(at 30.48 38.1 180)
 				(length 3.81)
 				(name "IO04RSB0"
 					(effects
@@ -1259,7 +1253,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 27.94 180)
+				(at 30.48 35.56 180)
 				(length 3.81)
 				(name "IO05RSB0"
 					(effects
@@ -1277,7 +1271,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 25.4 180)
+				(at 30.48 33.02 180)
 				(length 3.81)
 				(name "IO06RSB0"
 					(effects
@@ -1295,7 +1289,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 22.86 180)
+				(at 30.48 30.48 180)
 				(length 3.81)
 				(name "IO07RSB0"
 					(effects
@@ -1313,7 +1307,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 20.32 180)
+				(at 30.48 27.94 180)
 				(length 3.81)
 				(name "IO08RSB0"
 					(effects
@@ -1331,7 +1325,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 17.78 180)
+				(at 30.48 25.4 180)
 				(length 3.81)
 				(name "IO10RSB0"
 					(effects
@@ -1348,8 +1342,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 33.02 15.24 180)
+			(pin bidirectional line
+				(at 30.48 22.86 180)
 				(length 3.81)
 				(name "IO12RSB0"
 					(effects
@@ -1367,7 +1361,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 12.7 180)
+				(at 30.48 20.32 180)
 				(length 3.81)
 				(name "IO14RSB0"
 					(effects
@@ -1385,7 +1379,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 10.16 180)
+				(at 30.48 17.78 180)
 				(length 3.81)
 				(name "IO15RSB0"
 					(effects
@@ -1403,7 +1397,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 7.62 180)
+				(at 30.48 15.24 180)
 				(length 3.81)
 				(name "IO16RSB0"
 					(effects
@@ -1421,7 +1415,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 5.08 180)
+				(at 30.48 12.7 180)
 				(length 3.81)
 				(name "IO17RSB0"
 					(effects
@@ -1439,7 +1433,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 2.54 180)
+				(at 30.48 10.16 180)
 				(length 3.81)
 				(name "IO18RSB0"
 					(effects
@@ -1457,7 +1451,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 0 180)
+				(at 30.48 7.62 180)
 				(length 3.81)
 				(name "IO19RSB0"
 					(effects
@@ -1475,7 +1469,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -2.54 180)
+				(at 30.48 5.08 180)
 				(length 3.81)
 				(name "IO20RSB0"
 					(effects
@@ -1493,7 +1487,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -5.08 180)
+				(at 30.48 2.54 180)
 				(length 3.81)
 				(name "IO21RSB0"
 					(effects
@@ -1511,7 +1505,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -7.62 180)
+				(at 30.48 0 180)
 				(length 3.81)
 				(name "IO22RSB0"
 					(effects
@@ -1529,7 +1523,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -10.16 180)
+				(at 30.48 -2.54 180)
 				(length 3.81)
 				(name "IO23RSB0"
 					(effects
@@ -1547,7 +1541,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -12.7 180)
+				(at 30.48 -5.08 180)
 				(length 3.81)
 				(name "IO24RSB0"
 					(effects
@@ -1565,7 +1559,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -15.24 180)
+				(at 30.48 -7.62 180)
 				(length 3.81)
 				(name "IO25RSB0"
 					(effects
@@ -1583,7 +1577,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -17.78 180)
+				(at 30.48 -10.16 180)
 				(length 3.81)
 				(name "IO26RSB0"
 					(effects
@@ -1601,7 +1595,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -20.32 180)
+				(at 30.48 -12.7 180)
 				(length 3.81)
 				(name "IO27RSB0"
 					(effects
@@ -1619,7 +1613,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -22.86 180)
+				(at 30.48 -15.24 180)
 				(length 3.81)
 				(name "IO28RSB0"
 					(effects
@@ -1637,7 +1631,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -25.4 180)
+				(at 30.48 -17.78 180)
 				(length 3.81)
 				(name "IO29RSB0"
 					(effects
@@ -1655,7 +1649,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -27.94 180)
+				(at 30.48 -20.32 180)
 				(length 3.81)
 				(name "IO30RSB0"
 					(effects
@@ -1673,7 +1667,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -30.48 180)
+				(at 30.48 -22.86 180)
 				(length 3.81)
 				(name "IO31RSB0"
 					(effects
@@ -1691,7 +1685,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -33.02 180)
+				(at 30.48 -25.4 180)
 				(length 3.81)
 				(name "GDC0/IO32RSB0"
 					(effects
@@ -1709,7 +1703,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -35.56 180)
+				(at 30.48 -27.94 180)
 				(length 3.81)
 				(name "GDA0/IO33RSB0"
 					(effects
@@ -1727,7 +1721,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -38.1 180)
+				(at 30.48 -30.48 180)
 				(length 3.81)
 				(name "GDB0/IO34RSB0"
 					(effects
@@ -1745,7 +1739,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -40.64 180)
+				(at 30.48 -33.02 180)
 				(length 3.81)
 				(name "IO36RSB0"
 					(effects
@@ -1763,7 +1757,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -43.18 180)
+				(at 30.48 -35.56 180)
 				(length 3.81)
 				(name "IO37RSB0"
 					(effects
@@ -1781,7 +1775,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -45.72 180)
+				(at 30.48 -38.1 180)
 				(length 3.81)
 				(name "IO38RSB0"
 					(effects
@@ -1799,7 +1793,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -48.26 180)
+				(at 30.48 -40.64 180)
 				(length 3.81)
 				(name "IO39RSB0"
 					(effects
@@ -1817,7 +1811,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -50.8 180)
+				(at 30.48 -43.18 180)
 				(length 3.81)
 				(name "IO40RSB0"
 					(effects
@@ -1835,7 +1829,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -53.34 180)
+				(at 30.48 -45.72 180)
 				(length 3.81)
 				(name "IO41RSB0"
 					(effects
@@ -1852,10 +1846,64 @@
 					)
 				)
 			)
+			(pin bidirectional line
+				(at 30.48 -48.26 180)
+				(length 3.81)
+				(name "IO42RSB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 30.48 -50.8 180)
+				(length 3.81)
+				(name "IO43RSB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "45"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 30.48 -53.34 180)
+				(length 3.81)
+				(name "IO44RSB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A3P060-VQG100"
+	(symbol "A3P060-xVQx100"
 		(pin_names
 			(offset 1.016)
 		)
@@ -1863,7 +1911,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 30.48 53.34 0)
+			(at 28.194 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1871,8 +1919,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A3P060-VQG100"
-			(at 30.48 50.8 0)
+		(property "Value" "A3P060-xVQx100"
+			(at 28.194 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1880,8 +1928,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:VQFP-100_14x14mm_P0.5mm"
-			(at 30.48 48.26 0)
+		(property "Footprint" "Package_QFP:TQFP-100_14x14mm_P0.5mm"
+			(at 28.194 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1891,7 +1939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.microsemi.com/document-portal/doc_download/130704-proasic3-flash-family-fpgas-datasheet"
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/268/ProASIC_c2_ae3_Flash_Family_FPGAs_with_Optimal_Sof-3082432.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1900,7 +1948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Actel ProASIC3 Flash Family FPGAs, 512 MCLB, 100pin QFP100"
+		(property "Description" "ProASIC3 Flash Family FPGAs, 512 MCLB / macrocells, TQFP-100 (VQ100)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1909,7 +1957,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ProASIC3 ACTEL FLASH"
+		(property "ki_keywords" "ProASIC3 ACTEL FLASH A3P060-VQ100 A3P060-VQG100 A3P060-2VQG100"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1918,7 +1966,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*QFP*14x14mm*P0.5mm*"
+		(property "ki_fp_filters" "*TQFP*14x14mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1927,10 +1975,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "A3P060-VQG100_0_1"
+		(symbol "A3P060-xVQx100_0_1"
 			(rectangle
-				(start -29.21 54.61)
-				(end 29.21 -54.61)
+				(start -26.67 57.15)
+				(end 26.67 -57.15)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1940,27 +1988,9 @@
 				)
 			)
 		)
-		(symbol "A3P060-VQG100_1_1"
-			(pin bidirectional line
-				(at -33.02 53.34 0)
-				(length 3.81)
-				(name "VJTAG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "56"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 50.8 0)
+		(symbol "A3P060-xVQx100_1_1"
+			(pin input line
+				(at -30.48 50.8 0)
 				(length 3.81)
 				(name "TCK"
 					(effects
@@ -1977,8 +2007,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 48.26 0)
+			(pin input line
+				(at -30.48 48.26 0)
 				(length 3.81)
 				(name "TDI"
 					(effects
@@ -1995,26 +2025,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 45.72 0)
-				(length 3.81)
-				(name "TMS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "49"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 43.18 0)
+			(pin output line
+				(at -30.48 45.72 0)
 				(length 3.81)
 				(name "TDO"
 					(effects
@@ -2031,8 +2043,26 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 40.64 0)
+			(pin input line
+				(at -30.48 43.18 0)
+				(length 3.81)
+				(name "TMS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -30.48 40.64 0)
 				(length 3.81)
 				(name "TRST"
 					(effects
@@ -2050,7 +2080,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 35.56 0)
+				(at -30.48 35.56 0)
 				(length 3.81)
 				(name "IO95RSB1"
 					(effects
@@ -2068,7 +2098,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 33.02 0)
+				(at -30.48 33.02 0)
 				(length 3.81)
 				(name "IO94RSB1/GAC2"
 					(effects
@@ -2085,8 +2115,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -33.02 30.48 0)
+			(pin bidirectional line
+				(at -30.48 30.48 0)
 				(length 3.81)
 				(name "IO93RSB1"
 					(effects
@@ -2104,7 +2134,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 27.94 0)
+				(at -30.48 27.94 0)
 				(length 3.81)
 				(name "IO92RSB1"
 					(effects
@@ -2122,7 +2152,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 25.4 0)
+				(at -30.48 25.4 0)
 				(length 3.81)
 				(name "IO87RSB1/GFB1"
 					(effects
@@ -2140,7 +2170,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 22.86 0)
+				(at -30.48 22.86 0)
 				(length 3.81)
 				(name "IO86RSB1/GFB0"
 					(effects
@@ -2158,7 +2188,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 20.32 0)
+				(at -30.48 20.32 0)
 				(length 3.81)
 				(name "IO85RSB1/GFA0"
 					(effects
@@ -2176,7 +2206,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 17.78 0)
+				(at -30.48 17.78 0)
 				(length 3.81)
 				(name "IO84RSB1/GFA1"
 					(effects
@@ -2194,7 +2224,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 15.24 0)
+				(at -30.48 15.24 0)
 				(length 3.81)
 				(name "IO83RSB1/GFA2"
 					(effects
@@ -2212,7 +2242,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 12.7 0)
+				(at -30.48 12.7 0)
 				(length 3.81)
 				(name "IO77RSB1/GEC1"
 					(effects
@@ -2230,7 +2260,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 10.16 0)
+				(at -30.48 10.16 0)
 				(length 3.81)
 				(name "IO74RSB1/GEB0"
 					(effects
@@ -2248,7 +2278,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 7.62 0)
+				(at -30.48 7.62 0)
 				(length 3.81)
 				(name "IO75RSB1/GEB1"
 					(effects
@@ -2266,7 +2296,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 5.08 0)
+				(at -30.48 5.08 0)
 				(length 3.81)
 				(name "IO73RSB1/GEA1"
 					(effects
@@ -2284,7 +2314,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 2.54 0)
+				(at -30.48 2.54 0)
 				(length 3.81)
 				(name "IO72RSB1/GEA0"
 					(effects
@@ -2302,7 +2332,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 0 0)
+				(at -30.48 0 0)
 				(length 3.81)
 				(name "IO71RSB1/GEA2"
 					(effects
@@ -2320,7 +2350,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -2.54 0)
+				(at -30.48 -2.54 0)
 				(length 3.81)
 				(name "IO70RSB1/GEB2"
 					(effects
@@ -2338,7 +2368,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -5.08 0)
+				(at -30.48 -5.08 0)
 				(length 3.81)
 				(name "IO69RSB1/GEC2"
 					(effects
@@ -2356,7 +2386,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -7.62 0)
+				(at -30.48 -7.62 0)
 				(length 3.81)
 				(name "IO68RSB1"
 					(effects
@@ -2374,7 +2404,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -10.16 0)
+				(at -30.48 -10.16 0)
 				(length 3.81)
 				(name "IO67RSB1"
 					(effects
@@ -2392,7 +2422,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -12.7 0)
+				(at -30.48 -12.7 0)
 				(length 3.81)
 				(name "IO66RSB1"
 					(effects
@@ -2410,7 +2440,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -15.24 0)
+				(at -30.48 -15.24 0)
 				(length 3.81)
 				(name "IO65RSB1"
 					(effects
@@ -2428,7 +2458,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -17.78 0)
+				(at -30.48 -17.78 0)
 				(length 3.81)
 				(name "IO64RSB1"
 					(effects
@@ -2446,7 +2476,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -20.32 0)
+				(at -30.48 -20.32 0)
 				(length 3.81)
 				(name "IO63RSB1"
 					(effects
@@ -2464,7 +2494,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -22.86 0)
+				(at -30.48 -22.86 0)
 				(length 3.81)
 				(name "IO62RSB1"
 					(effects
@@ -2482,7 +2512,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -25.4 0)
+				(at -30.48 -25.4 0)
 				(length 3.81)
 				(name "IO61RSB1"
 					(effects
@@ -2500,7 +2530,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -27.94 0)
+				(at -30.48 -27.94 0)
 				(length 3.81)
 				(name "IO60RSB1"
 					(effects
@@ -2518,7 +2548,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -30.48 0)
+				(at -30.48 -30.48 0)
 				(length 3.81)
 				(name "IO59RSB1"
 					(effects
@@ -2536,7 +2566,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -33.02 0)
+				(at -30.48 -33.02 0)
 				(length 3.81)
 				(name "IO58RSB1"
 					(effects
@@ -2554,7 +2584,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -35.56 0)
+				(at -30.48 -35.56 0)
 				(length 3.81)
 				(name "IO57RSB1"
 					(effects
@@ -2572,7 +2602,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -38.1 0)
+				(at -30.48 -38.1 0)
 				(length 3.81)
 				(name "IO56RSB1/GDC2"
 					(effects
@@ -2590,7 +2620,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -40.64 0)
+				(at -30.48 -40.64 0)
 				(length 3.81)
 				(name "IO55RSB1/GDB2"
 					(effects
@@ -2608,7 +2638,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -43.18 0)
+				(at -30.48 -43.18 0)
 				(length 3.81)
 				(name "IO54RSB1/GDA2"
 					(effects
@@ -2626,7 +2656,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -45.72 0)
+				(at -30.48 -45.72 0)
 				(length 3.81)
 				(name "IO53RSB1/GAB2"
 					(effects
@@ -2644,7 +2674,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -48.26 0)
+				(at -30.48 -48.26 0)
 				(length 3.81)
 				(name "IO52RSB1"
 					(effects
@@ -2662,7 +2692,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -50.8 0)
+				(at -30.48 -50.8 0)
 				(length 3.81)
 				(name "IO51RSB1/GAA2"
 					(effects
@@ -2680,7 +2710,43 @@
 				)
 			)
 			(pin power_in line
-				(at -20.32 58.42 270)
+				(at -17.78 60.96 270)
+				(length 3.81)
+				(name "VJTAG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 60.96 270)
+				(length 3.81)
+				(name "VPUMP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 60.96 270)
 				(length 3.81)
 				(name "VCCPLF"
 					(effects
@@ -2698,43 +2764,7 @@
 				)
 			)
 			(pin power_in line
-				(at -15.24 58.42 270)
-				(length 3.81)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -12.7 58.42 270)
-				(length 3.81)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "37"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -12.7 -58.42 90)
+				(at -2.54 -60.96 90)
 				(length 3.81)
 				(name "VCOMPLF"
 					(effects
@@ -2752,8 +2782,46 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 58.42 270)
+				(at 0 60.96 270)
 				(length 3.81)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 60.96 270)
+				(length 3.81)
+				(hide yes)
 				(name "VCC"
 					(effects
 						(font
@@ -2769,9 +2837,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -7.62 58.42 270)
+			(pin passive line
+				(at 0 60.96 270)
 				(length 3.81)
+				(hide yes)
 				(name "VCC"
 					(effects
 						(font
@@ -2788,7 +2857,7 @@
 				)
 			)
 			(pin power_in line
-				(at -7.62 -58.42 90)
+				(at 0 -60.96 90)
 				(length 3.81)
 				(name "GND"
 					(effects
@@ -2805,9 +2874,86 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 -58.42 90)
+			(pin passive line
+				(at 0 -60.96 90)
 				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "51"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "67"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "88"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -2824,169 +2970,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 58.42 270)
-				(length 3.81)
-				(name "VCCIB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 -58.42 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "38"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 58.42 270)
-				(length 3.81)
-				(name "VCCIB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "39"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -58.42 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "51"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 58.42 270)
-				(length 3.81)
-				(name "VCCIB0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "66"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -58.42 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "67"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 58.42 270)
-				(length 3.81)
-				(name "VCCIB0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "87"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 -58.42 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "88"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 10.16 58.42 270)
-				(length 3.81)
-				(name "VMV1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 10.16 -58.42 90)
+				(at 2.54 -60.96 90)
 				(length 3.81)
 				(name "GNDQ"
 					(effects
@@ -3003,27 +2987,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 12.7 58.42 270)
+			(pin passive line
+				(at 2.54 -60.96 90)
 				(length 3.81)
-				(name "VMV1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "50"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 12.7 -58.42 90)
-				(length 3.81)
+				(hide yes)
 				(name "GNDQ"
 					(effects
 						(font
@@ -3040,7 +3007,118 @@
 				)
 			)
 			(pin power_in line
-				(at 15.24 58.42 270)
+				(at 5.08 60.96 270)
+				(length 3.81)
+				(name "VCCIB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCCIB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 7.62 60.96 270)
+				(length 3.81)
+				(name "VMV1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VMV1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 60.96 270)
+				(length 3.81)
+				(name "VCCIB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "66"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCCIB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "87"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 15.24 60.96 270)
 				(length 3.81)
 				(name "VMV0"
 					(effects
@@ -3057,17 +3135,18 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 20.32 58.42 270)
+			(pin no_connect line
+				(at 26.67 45.72 180)
 				(length 3.81)
-				(name "VPUMP"
+				(hide yes)
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "52"
+				(number "53"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3076,7 +3155,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 38.1 180)
+				(at 30.48 38.1 180)
 				(length 3.81)
 				(name "IO00RSB0"
 					(effects
@@ -3094,7 +3173,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 35.56 180)
+				(at 30.48 35.56 180)
 				(length 3.81)
 				(name "IO01RSB0"
 					(effects
@@ -3112,7 +3191,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 33.02 180)
+				(at 30.48 33.02 180)
 				(length 3.81)
 				(name "GAA0/IO02RSB0"
 					(effects
@@ -3130,7 +3209,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 30.48 180)
+				(at 30.48 30.48 180)
 				(length 3.81)
 				(name "GAA1/IO03RSB0"
 					(effects
@@ -3148,7 +3227,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 27.94 180)
+				(at 30.48 27.94 180)
 				(length 3.81)
 				(name "GAB0/IO04RSB0"
 					(effects
@@ -3166,7 +3245,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 25.4 180)
+				(at 30.48 25.4 180)
 				(length 3.81)
 				(name "GAB1/IO05RSB0"
 					(effects
@@ -3184,7 +3263,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 22.86 180)
+				(at 30.48 22.86 180)
 				(length 3.81)
 				(name "GAC1/IO06RSB0"
 					(effects
@@ -3202,7 +3281,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 20.32 180)
+				(at 30.48 20.32 180)
 				(length 3.81)
 				(name "GAC1/IO07RSB0"
 					(effects
@@ -3220,7 +3299,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 17.78 180)
+				(at 30.48 17.78 180)
 				(length 3.81)
 				(name "IO08RSB0"
 					(effects
@@ -3238,7 +3317,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 15.24 180)
+				(at 30.48 15.24 180)
 				(length 3.81)
 				(name "IO09RSB0"
 					(effects
@@ -3255,8 +3334,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 33.02 12.7 180)
+			(pin bidirectional line
+				(at 30.48 12.7 180)
 				(length 3.81)
 				(name "IO10RSB0"
 					(effects
@@ -3274,7 +3353,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 10.16 180)
+				(at 30.48 10.16 180)
 				(length 3.81)
 				(name "IO11RSB0"
 					(effects
@@ -3292,7 +3371,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 7.62 180)
+				(at 30.48 7.62 180)
 				(length 3.81)
 				(name "IO13RSB0"
 					(effects
@@ -3310,7 +3389,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 5.08 180)
+				(at 30.48 5.08 180)
 				(length 3.81)
 				(name "IO15RSB0"
 					(effects
@@ -3328,7 +3407,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 2.54 180)
+				(at 30.48 2.54 180)
 				(length 3.81)
 				(name "IO17RSB0"
 					(effects
@@ -3346,7 +3425,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 0 180)
+				(at 30.48 0 180)
 				(length 3.81)
 				(name "IO18RSB0"
 					(effects
@@ -3364,7 +3443,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -2.54 180)
+				(at 30.48 -2.54 180)
 				(length 3.81)
 				(name "GBC0/IO19RSB0"
 					(effects
@@ -3382,7 +3461,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -5.08 180)
+				(at 30.48 -5.08 180)
 				(length 3.81)
 				(name "GBC1/IO20RSB0"
 					(effects
@@ -3400,7 +3479,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -7.62 180)
+				(at 30.48 -7.62 180)
 				(length 3.81)
 				(name "GBB0/IO21RSB0"
 					(effects
@@ -3418,7 +3497,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -10.16 180)
+				(at 30.48 -10.16 180)
 				(length 3.81)
 				(name "GBB1/IO22RSB0"
 					(effects
@@ -3436,7 +3515,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -12.7 180)
+				(at 30.48 -12.7 180)
 				(length 3.81)
 				(name "GBA0/IO23RSB0"
 					(effects
@@ -3454,7 +3533,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -15.24 180)
+				(at 30.48 -15.24 180)
 				(length 3.81)
 				(name "GBA1/IO24RSB0"
 					(effects
@@ -3472,7 +3551,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -17.78 180)
+				(at 30.48 -17.78 180)
 				(length 3.81)
 				(name "GBA2/IO25RSB0"
 					(effects
@@ -3490,7 +3569,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -20.32 180)
+				(at 30.48 -20.32 180)
 				(length 3.81)
 				(name "IO26RSB0"
 					(effects
@@ -3508,7 +3587,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -22.86 180)
+				(at 30.48 -22.86 180)
 				(length 3.81)
 				(name "GBB2/IO27RSB0"
 					(effects
@@ -3526,7 +3605,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -25.4 180)
+				(at 30.48 -25.4 180)
 				(length 3.81)
 				(name "GBC2/IO29RSB0"
 					(effects
@@ -3544,7 +3623,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -27.94 180)
+				(at 30.48 -27.94 180)
 				(length 3.81)
 				(name "IO31RSB0"
 					(effects
@@ -3562,7 +3641,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -30.48 180)
+				(at 30.48 -30.48 180)
 				(length 3.81)
 				(name "GCC1/IO35RSB0"
 					(effects
@@ -3580,7 +3659,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -33.02 180)
+				(at 30.48 -33.02 180)
 				(length 3.81)
 				(name "GCC0/IO36RSB0"
 					(effects
@@ -3598,7 +3677,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -35.56 180)
+				(at 30.48 -35.56 180)
 				(length 3.81)
 				(name "GCA1/IO39RSB0"
 					(effects
@@ -3616,7 +3695,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -38.1 180)
+				(at 30.48 -38.1 180)
 				(length 3.81)
 				(name "GCA0/IO40RSB0"
 					(effects
@@ -3634,7 +3713,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -40.64 180)
+				(at 30.48 -40.64 180)
 				(length 3.81)
 				(name "GCB2/IO42RSB0"
 					(effects
@@ -3652,7 +3731,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -43.18 180)
+				(at 30.48 -43.18 180)
 				(length 3.81)
 				(name "GCC2/IO43RSB0"
 					(effects
@@ -3670,7 +3749,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -45.72 180)
+				(at 30.48 -45.72 180)
 				(length 3.81)
 				(name "GDC1/IO45RSB0"
 					(effects
@@ -3688,7 +3767,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -48.26 180)
+				(at 30.48 -48.26 180)
 				(length 3.81)
 				(name "GDC0/IO46RSB0"
 					(effects
@@ -3706,7 +3785,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -50.8 180)
+				(at 30.48 -50.8 180)
 				(length 3.81)
 				(name "GDA1/IO49RSB0"
 					(effects
@@ -10924,7 +11003,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A3P125-VQG100"
+	(symbol "A3P125-xVQx100"
 		(pin_names
 			(offset 1.016)
 		)
@@ -10932,7 +11011,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 30.48 55.88 0)
+			(at 28.194 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10940,8 +11019,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A3P125-VQG100"
-			(at 30.48 53.34 0)
+		(property "Value" "A3P125-xVQx100"
+			(at 28.194 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10949,8 +11028,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:VQFP-100_14x14mm_P0.5mm"
-			(at 30.48 50.8 0)
+		(property "Footprint" "Package_QFP:TQFP-100_14x14mm_P0.5mm"
+			(at 28.194 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10960,7 +11039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.microsemi.com/document-portal/doc_download/130704-proasic3-flash-family-fpgas-datasheet"
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/268/ProASIC_c2_ae3_Flash_Family_FPGAs_with_Optimal_Sof-3082432.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10969,7 +11048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Actel ProASIC3 Flash Family FPGAs, 1024 MCLB, 100pin QFP100"
+		(property "Description" "ProASIC3 Flash Family FPGAs, 1024 MCLB / macrocells, TQFP-100 (VQ100)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10978,7 +11057,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ProASIC3 ACTEL FLASH"
+		(property "ki_keywords" "ProASIC3 ACTEL FLASH A3P125-VQ100 A3P125-VQG100 A3P125-2VQG100"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10987,7 +11066,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*QFP*14x14mm*P0.5mm*"
+		(property "ki_fp_filters" "*TQFP*14x14mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10996,10 +11075,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "A3P125-VQG100_0_1"
+		(symbol "A3P125-xVQx100_0_1"
 			(rectangle
-				(start -29.21 57.15)
-				(end 29.21 -57.15)
+				(start -26.67 57.15)
+				(end 26.67 -57.15)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -11009,27 +11088,9 @@
 				)
 			)
 		)
-		(symbol "A3P125-VQG100_1_1"
-			(pin bidirectional line
-				(at -33.02 53.34 0)
-				(length 3.81)
-				(name "VJTAG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "56"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 50.8 0)
+		(symbol "A3P125-xVQx100_1_1"
+			(pin input line
+				(at -30.48 50.8 0)
 				(length 3.81)
 				(name "TCK"
 					(effects
@@ -11046,8 +11107,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 48.26 0)
+			(pin input line
+				(at -30.48 48.26 0)
 				(length 3.81)
 				(name "TDI"
 					(effects
@@ -11064,26 +11125,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 45.72 0)
-				(length 3.81)
-				(name "TMS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "49"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 43.18 0)
+			(pin output line
+				(at -30.48 45.72 0)
 				(length 3.81)
 				(name "TDO"
 					(effects
@@ -11100,8 +11143,26 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 40.64 0)
+			(pin input line
+				(at -30.48 43.18 0)
+				(length 3.81)
+				(name "TMS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -30.48 40.64 0)
 				(length 3.81)
 				(name "TRST"
 					(effects
@@ -11119,7 +11180,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 35.56 0)
+				(at -30.48 35.56 0)
 				(length 3.81)
 				(name "IO132RSB1"
 					(effects
@@ -11137,7 +11198,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 33.02 0)
+				(at -30.48 33.02 0)
 				(length 3.81)
 				(name "IO131RSB1/GAC2"
 					(effects
@@ -11154,8 +11215,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -33.02 30.48 0)
+			(pin bidirectional line
+				(at -30.48 30.48 0)
 				(length 3.81)
 				(name "IO130RSB1"
 					(effects
@@ -11173,7 +11234,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 27.94 0)
+				(at -30.48 27.94 0)
 				(length 3.81)
 				(name "IO129RSB1"
 					(effects
@@ -11191,7 +11252,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 25.4 0)
+				(at -30.48 25.4 0)
 				(length 3.81)
 				(name "IO124RSB1/GFB1"
 					(effects
@@ -11209,7 +11270,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 22.86 0)
+				(at -30.48 22.86 0)
 				(length 3.81)
 				(name "IO123RSB1/GFB0"
 					(effects
@@ -11227,7 +11288,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 20.32 0)
+				(at -30.48 20.32 0)
 				(length 3.81)
 				(name "IO122RSB1/GFA0"
 					(effects
@@ -11245,7 +11306,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 17.78 0)
+				(at -30.48 17.78 0)
 				(length 3.81)
 				(name "IO121RSB1/GFA1"
 					(effects
@@ -11263,7 +11324,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 15.24 0)
+				(at -30.48 15.24 0)
 				(length 3.81)
 				(name "IO120RSB1/GFA2"
 					(effects
@@ -11281,7 +11342,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 12.7 0)
+				(at -30.48 12.7 0)
 				(length 3.81)
 				(name "IO111RSB1/GEC0"
 					(effects
@@ -11299,7 +11360,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 10.16 0)
+				(at -30.48 10.16 0)
 				(length 3.81)
 				(name "IO109RSB1/GEB1"
 					(effects
@@ -11317,7 +11378,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 7.62 0)
+				(at -30.48 7.62 0)
 				(length 3.81)
 				(name "IO110RSB1/GEB1"
 					(effects
@@ -11335,7 +11396,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 5.08 0)
+				(at -30.48 5.08 0)
 				(length 3.81)
 				(name "IO108RSB1/GEA1"
 					(effects
@@ -11353,7 +11414,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 2.54 0)
+				(at -30.48 2.54 0)
 				(length 3.81)
 				(name "IO107RSB1/GEA0"
 					(effects
@@ -11371,7 +11432,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 0 0)
+				(at -30.48 0 0)
 				(length 3.81)
 				(name "IO106RSB1/GEA2"
 					(effects
@@ -11389,7 +11450,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -2.54 0)
+				(at -30.48 -2.54 0)
 				(length 3.81)
 				(name "IO105RSB1/GEB2"
 					(effects
@@ -11407,7 +11468,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -5.08 0)
+				(at -30.48 -5.08 0)
 				(length 3.81)
 				(name "IO104RSB1/GEC2"
 					(effects
@@ -11425,7 +11486,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -7.62 0)
+				(at -30.48 -7.62 0)
 				(length 3.81)
 				(name "IO102RSB1"
 					(effects
@@ -11443,7 +11504,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -10.16 0)
+				(at -30.48 -10.16 0)
 				(length 3.81)
 				(name "IO100RSB1"
 					(effects
@@ -11461,7 +11522,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -12.7 0)
+				(at -30.48 -12.7 0)
 				(length 3.81)
 				(name "IO99RSB1"
 					(effects
@@ -11479,7 +11540,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -15.24 0)
+				(at -30.48 -15.24 0)
 				(length 3.81)
 				(name "IO97RSB1"
 					(effects
@@ -11497,7 +11558,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -17.78 0)
+				(at -30.48 -17.78 0)
 				(length 3.81)
 				(name "IO96RSB1"
 					(effects
@@ -11515,7 +11576,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -20.32 0)
+				(at -30.48 -20.32 0)
 				(length 3.81)
 				(name "IO95RSB1"
 					(effects
@@ -11533,7 +11594,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -22.86 0)
+				(at -30.48 -22.86 0)
 				(length 3.81)
 				(name "IO94RSB1"
 					(effects
@@ -11551,7 +11612,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -25.4 0)
+				(at -30.48 -25.4 0)
 				(length 3.81)
 				(name "IO93RSB1"
 					(effects
@@ -11569,7 +11630,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -27.94 0)
+				(at -30.48 -27.94 0)
 				(length 3.81)
 				(name "IO87RSB1"
 					(effects
@@ -11587,7 +11648,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -30.48 0)
+				(at -30.48 -30.48 0)
 				(length 3.81)
 				(name "IO84RSB1"
 					(effects
@@ -11605,7 +11666,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -33.02 0)
+				(at -30.48 -33.02 0)
 				(length 3.81)
 				(name "IO81RSB1"
 					(effects
@@ -11623,7 +11684,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -35.56 0)
+				(at -30.48 -35.56 0)
 				(length 3.81)
 				(name "IO75RSB1"
 					(effects
@@ -11641,7 +11702,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -38.1 0)
+				(at -30.48 -38.1 0)
 				(length 3.81)
 				(name "IO72RSB1/GDC2"
 					(effects
@@ -11659,7 +11720,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -40.64 0)
+				(at -30.48 -40.64 0)
 				(length 3.81)
 				(name "IO71RSB1/GDB2"
 					(effects
@@ -11677,7 +11738,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -43.18 0)
+				(at -30.48 -43.18 0)
 				(length 3.81)
 				(name "IO70RSB1/GDA2"
 					(effects
@@ -11695,7 +11756,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -45.72 0)
+				(at -30.48 -45.72 0)
 				(length 3.81)
 				(name "IO69RSB1/GAB2"
 					(effects
@@ -11713,7 +11774,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -48.26 0)
+				(at -30.48 -48.26 0)
 				(length 3.81)
 				(name "IO68RSB1"
 					(effects
@@ -11731,7 +11792,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -50.8 0)
+				(at -30.48 -50.8 0)
 				(length 3.81)
 				(name "IO67RSB1/GAA2"
 					(effects
@@ -11749,7 +11810,43 @@
 				)
 			)
 			(pin power_in line
-				(at -20.32 60.96 270)
+				(at -17.78 60.96 270)
+				(length 3.81)
+				(name "VJTAG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 60.96 270)
+				(length 3.81)
+				(name "VPUMP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 60.96 270)
 				(length 3.81)
 				(name "VCCPLF"
 					(effects
@@ -11767,43 +11864,7 @@
 				)
 			)
 			(pin power_in line
-				(at -15.24 60.96 270)
-				(length 3.81)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -12.7 60.96 270)
-				(length 3.81)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "37"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -12.7 -60.96 90)
+				(at -2.54 -60.96 90)
 				(length 3.81)
 				(name "VCOMPLF"
 					(effects
@@ -11821,8 +11882,46 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 60.96 270)
+				(at 0 60.96 270)
 				(length 3.81)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 60.96 270)
+				(length 3.81)
+				(hide yes)
 				(name "VCC"
 					(effects
 						(font
@@ -11838,9 +11937,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -7.62 60.96 270)
+			(pin passive line
+				(at 0 60.96 270)
 				(length 3.81)
+				(hide yes)
 				(name "VCC"
 					(effects
 						(font
@@ -11849,96 +11949,6 @@
 					)
 				)
 				(number "89"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -7.62 -60.96 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -5.08 -60.96 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 60.96 270)
-				(length 3.81)
-				(name "VCCIB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 -60.96 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "38"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 60.96 270)
-				(length 3.81)
-				(name "VCCIB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "39"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11956,6 +11966,44 @@
 						)
 					)
 				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 				(number "51"
 					(effects
 						(font
@@ -11964,27 +12012,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 60.96 270)
+			(pin passive line
+				(at 0 -60.96 90)
 				(length 3.81)
-				(name "VCCIB0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "66"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -60.96 90)
-				(length 3.81)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -12000,27 +12031,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 5.08 60.96 270)
+			(pin passive line
+				(at 0 -60.96 90)
 				(length 3.81)
-				(name "VCCIB0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "87"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 -60.96 90)
-				(length 3.81)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -12036,17 +12050,18 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 10.16 60.96 270)
+			(pin passive line
+				(at 0 -60.96 90)
 				(length 3.81)
-				(name "VMV1"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "24"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12055,7 +12070,7 @@
 				)
 			)
 			(pin power_in line
-				(at 10.16 -60.96 90)
+				(at 2.54 -60.96 90)
 				(length 3.81)
 				(name "GNDQ"
 					(effects
@@ -12072,9 +12087,84 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 12.7 60.96 270)
+			(pin passive line
+				(at 2.54 -60.96 90)
 				(length 3.81)
+				(hide yes)
+				(name "GNDQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "75"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 5.08 60.96 270)
+				(length 3.81)
+				(name "VCCIB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCCIB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 7.62 60.96 270)
+				(length 3.81)
+				(name "VMV1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 60.96 270)
+				(length 3.81)
+				(hide yes)
 				(name "VMV1"
 					(effects
 						(font
@@ -12091,16 +12181,35 @@
 				)
 			)
 			(pin power_in line
-				(at 12.7 -60.96 90)
+				(at 12.7 60.96 270)
 				(length 3.81)
-				(name "GNDQ"
+				(name "VCCIB0"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "75"
+				(number "66"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 60.96 270)
+				(length 3.81)
+				(hide yes)
+				(name "VCCIB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "87"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12126,17 +12235,18 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 20.32 60.96 270)
+			(pin no_connect line
+				(at 26.67 45.72 180)
 				(length 3.81)
-				(name "VPUMP"
+				(hide yes)
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "52"
+				(number "53"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12145,7 +12255,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 38.1 180)
+				(at 30.48 38.1 180)
 				(length 3.81)
 				(name "GAA0/IO00RSB0"
 					(effects
@@ -12163,7 +12273,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 35.56 180)
+				(at 30.48 35.56 180)
 				(length 3.81)
 				(name "GAA1/IO01RSB0"
 					(effects
@@ -12181,7 +12291,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 33.02 180)
+				(at 30.48 33.02 180)
 				(length 3.81)
 				(name "GAB0/IO02RSB0"
 					(effects
@@ -12199,7 +12309,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 30.48 180)
+				(at 30.48 30.48 180)
 				(length 3.81)
 				(name "GAB1/IO03RSB0"
 					(effects
@@ -12217,7 +12327,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 27.94 180)
+				(at 30.48 27.94 180)
 				(length 3.81)
 				(name "GAC0/IO04RSB0"
 					(effects
@@ -12235,7 +12345,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 25.4 180)
+				(at 30.48 25.4 180)
 				(length 3.81)
 				(name "GAC1/IO05RSB0"
 					(effects
@@ -12253,7 +12363,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 22.86 180)
+				(at 30.48 22.86 180)
 				(length 3.81)
 				(name "IO07RSB0"
 					(effects
@@ -12271,7 +12381,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 20.32 180)
+				(at 30.48 20.32 180)
 				(length 3.81)
 				(name "IO09RSB0"
 					(effects
@@ -12289,7 +12399,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 17.78 180)
+				(at 30.48 17.78 180)
 				(length 3.81)
 				(name "IO11RSB0"
 					(effects
@@ -12307,7 +12417,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 15.24 180)
+				(at 30.48 15.24 180)
 				(length 3.81)
 				(name "IO13RSB0"
 					(effects
@@ -12324,8 +12434,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 33.02 12.7 180)
+			(pin bidirectional line
+				(at 30.48 12.7 180)
 				(length 3.81)
 				(name "IO15RSB0"
 					(effects
@@ -12343,7 +12453,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 10.16 180)
+				(at 30.48 10.16 180)
 				(length 3.81)
 				(name "IO19RSB0"
 					(effects
@@ -12361,7 +12471,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 7.62 180)
+				(at 30.48 7.62 180)
 				(length 3.81)
 				(name "IO22RSB0"
 					(effects
@@ -12379,7 +12489,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 5.08 180)
+				(at 30.48 5.08 180)
 				(length 3.81)
 				(name "IO25RSB0"
 					(effects
@@ -12397,7 +12507,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 2.54 180)
+				(at 30.48 2.54 180)
 				(length 3.81)
 				(name "IO28RSB0"
 					(effects
@@ -12415,7 +12525,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 0 180)
+				(at 30.48 0 180)
 				(length 3.81)
 				(name "IO32RSB0"
 					(effects
@@ -12433,7 +12543,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -2.54 180)
+				(at 30.48 -2.54 180)
 				(length 3.81)
 				(name "GBC0/IO35RSB0"
 					(effects
@@ -12451,7 +12561,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -5.08 180)
+				(at 30.48 -5.08 180)
 				(length 3.81)
 				(name "GBC1/IO36RSB0"
 					(effects
@@ -12469,7 +12579,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -7.62 180)
+				(at 30.48 -7.62 180)
 				(length 3.81)
 				(name "GBB0/IO37RSB0"
 					(effects
@@ -12487,7 +12597,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -10.16 180)
+				(at 30.48 -10.16 180)
 				(length 3.81)
 				(name "GBB1/IO38RSB0"
 					(effects
@@ -12505,7 +12615,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -12.7 180)
+				(at 30.48 -12.7 180)
 				(length 3.81)
 				(name "GBA0/IO39RSB0"
 					(effects
@@ -12523,7 +12633,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -15.24 180)
+				(at 30.48 -15.24 180)
 				(length 3.81)
 				(name "GBA1/IO40RSB0"
 					(effects
@@ -12541,7 +12651,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -17.78 180)
+				(at 30.48 -17.78 180)
 				(length 3.81)
 				(name "GBA2/IO41RSB0"
 					(effects
@@ -12559,7 +12669,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -20.32 180)
+				(at 30.48 -20.32 180)
 				(length 3.81)
 				(name "IO42RSB0"
 					(effects
@@ -12577,7 +12687,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -22.86 180)
+				(at 30.48 -22.86 180)
 				(length 3.81)
 				(name "GBB2/IO43RSB0"
 					(effects
@@ -12595,7 +12705,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -25.4 180)
+				(at 30.48 -25.4 180)
 				(length 3.81)
 				(name "GBC2/IO45RSB0"
 					(effects
@@ -12613,7 +12723,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -27.94 180)
+				(at 30.48 -27.94 180)
 				(length 3.81)
 				(name "IO47RSB1"
 					(effects
@@ -12631,7 +12741,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -30.48 180)
+				(at 30.48 -30.48 180)
 				(length 3.81)
 				(name "GCC1/IO51RSB0"
 					(effects
@@ -12649,7 +12759,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -33.02 180)
+				(at 30.48 -33.02 180)
 				(length 3.81)
 				(name "GCC0/IO52RSB0"
 					(effects
@@ -12667,7 +12777,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -35.56 180)
+				(at 30.48 -35.56 180)
 				(length 3.81)
 				(name "GCA1/IO55RSB0"
 					(effects
@@ -12685,7 +12795,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -38.1 180)
+				(at 30.48 -38.1 180)
 				(length 3.81)
 				(name "GCA0/IO56RSB0"
 					(effects
@@ -12703,7 +12813,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -40.64 180)
+				(at 30.48 -40.64 180)
 				(length 3.81)
 				(name "GCB2/IO58RSB0"
 					(effects
@@ -12721,7 +12831,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -43.18 180)
+				(at 30.48 -43.18 180)
 				(length 3.81)
 				(name "GCC2/IO59RSB0"
 					(effects
@@ -12739,7 +12849,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -45.72 180)
+				(at 30.48 -45.72 180)
 				(length 3.81)
 				(name "GDC1/IO61RSB0"
 					(effects
@@ -12757,7 +12867,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -48.26 180)
+				(at 30.48 -48.26 180)
 				(length 3.81)
 				(name "GDC0/IO62RSB0"
 					(effects
@@ -12775,7 +12885,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -50.8 180)
+				(at 30.48 -50.8 180)
 				(length 3.81)
 				(name "GDA1/IO65RSB0"
 					(effects
@@ -16502,7 +16612,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A3P250-VQG100"
+	(symbol "A3P250-xVQx100"
 		(pin_names
 			(offset 1.016)
 		)
@@ -16510,7 +16620,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 30.48 55.88 0)
+			(at 28.194 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16518,8 +16628,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A3P250-VQG100"
-			(at 30.48 53.34 0)
+		(property "Value" "A3P250-xVQx100"
+			(at 28.194 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16527,8 +16637,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:VQFP-100_14x14mm_P0.5mm"
-			(at 30.48 50.8 0)
+		(property "Footprint" "Package_QFP:TQFP-100_14x14mm_P0.5mm"
+			(at 28.194 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16538,7 +16648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.microsemi.com/document-portal/doc_download/130704-proasic3-flash-family-fpgas-datasheet"
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/268/ProASIC_c2_ae3_Flash_Family_FPGAs_with_Optimal_Sof-3082432.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16547,7 +16657,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Actel ProASIC3 Flash Family FPGAs, 2048 MCLB, 100pin QFP100"
+		(property "Description" "ProASIC3 Flash Family FPGAs, 2048 MCLB / macrocells, TQFP-100 (VQ100)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16556,7 +16666,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ProASIC3 ACTEL FLASH"
+		(property "ki_keywords" "ProASIC3 ACTEL FLASH A3P250-VQ100 A3P250-VQG100 A3P250-2VQG100"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16565,7 +16675,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*QFP*14x14mm*P0.5mm*"
+		(property "ki_fp_filters" "*TQFP*14x14mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16574,10 +16684,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "A3P250-VQG100_0_1"
+		(symbol "A3P250-xVQx100_0_1"
 			(rectangle
-				(start -29.21 57.15)
-				(end 29.21 -57.15)
+				(start -26.67 57.15)
+				(end 26.67 -57.15)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -16587,27 +16697,9 @@
 				)
 			)
 		)
-		(symbol "A3P250-VQG100_1_1"
-			(pin bidirectional line
-				(at -33.02 53.34 0)
-				(length 3.81)
-				(name "VJTAG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "56"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 50.8 0)
+		(symbol "A3P250-xVQx100_1_1"
+			(pin input line
+				(at -30.48 50.8 0)
 				(length 3.81)
 				(name "TCK"
 					(effects
@@ -16624,8 +16716,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 48.26 0)
+			(pin input line
+				(at -30.48 48.26 0)
 				(length 3.81)
 				(name "TDI"
 					(effects
@@ -16642,26 +16734,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 45.72 0)
-				(length 3.81)
-				(name "TMS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "49"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -33.02 43.18 0)
+			(pin output line
+				(at -30.48 45.72 0)
 				(length 3.81)
 				(name "TDO"
 					(effects
@@ -16678,8 +16752,26 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -33.02 40.64 0)
+			(pin input line
+				(at -30.48 43.18 0)
+				(length 3.81)
+				(name "TMS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -30.48 40.64 0)
 				(length 3.81)
 				(name "TRST"
 					(effects
@@ -16697,7 +16789,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 35.56 0)
+				(at -30.48 35.56 0)
 				(length 3.81)
 				(name "IO118UDB3/GAA2"
 					(effects
@@ -16715,7 +16807,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 33.02 0)
+				(at -30.48 33.02 0)
 				(length 3.81)
 				(name "IO118VDB3"
 					(effects
@@ -16733,7 +16825,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 30.48 0)
+				(at -30.48 30.48 0)
 				(length 3.81)
 				(name "IO117UDB3/GAB2"
 					(effects
@@ -16751,7 +16843,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 27.94 0)
+				(at -30.48 27.94 0)
 				(length 3.81)
 				(name "IO117VDB3"
 					(effects
@@ -16769,7 +16861,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 25.4 0)
+				(at -30.48 25.4 0)
 				(length 3.81)
 				(name "IO116UDB3/GAC2"
 					(effects
@@ -16786,8 +16878,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -33.02 22.86 0)
+			(pin bidirectional line
+				(at -30.48 22.86 0)
 				(length 3.81)
 				(name "IO116VDB3"
 					(effects
@@ -16805,7 +16897,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 20.32 0)
+				(at -30.48 20.32 0)
 				(length 3.81)
 				(name "IO112PSB3"
 					(effects
@@ -16823,7 +16915,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 17.78 0)
+				(at -30.48 17.78 0)
 				(length 3.81)
 				(name "IO109PDB3/GFB1"
 					(effects
@@ -16841,7 +16933,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 15.24 0)
+				(at -30.48 15.24 0)
 				(length 3.81)
 				(name "IO109NDB3/GFB0"
 					(effects
@@ -16859,7 +16951,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 12.7 0)
+				(at -30.48 12.7 0)
 				(length 3.81)
 				(name "IO108NPB3/GFA0"
 					(effects
@@ -16877,7 +16969,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 10.16 0)
+				(at -30.48 10.16 0)
 				(length 3.81)
 				(name "IO108PPB3/GFA1"
 					(effects
@@ -16895,7 +16987,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 7.62 0)
+				(at -30.48 7.62 0)
 				(length 3.81)
 				(name "IO107PSB3/GFA2"
 					(effects
@@ -16913,7 +17005,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 5.08 0)
+				(at -30.48 5.08 0)
 				(length 3.81)
 				(name "IO105PSB3/GFC2"
 					(effects
@@ -16931,7 +17023,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 2.54 0)
+				(at -30.48 2.54 0)
 				(length 3.81)
 				(name "IO100NDB3/GEC0"
 					(effects
@@ -16949,7 +17041,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 0 0)
+				(at -30.48 0 0)
 				(length 3.81)
 				(name "IO100PDB3/GEC1"
 					(effects
@@ -16967,7 +17059,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -2.54 0)
+				(at -30.48 -2.54 0)
 				(length 3.81)
 				(name "IO98PDB3/GEA1"
 					(effects
@@ -16985,7 +17077,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -5.08 0)
+				(at -30.48 -5.08 0)
 				(length 3.81)
 				(name "IO98NDB3/GEA0"
 					(effects
@@ -17003,7 +17095,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -10.16 0)
+				(at -30.48 -10.16 0)
 				(length 3.81)
 				(name "IO97RSB2/GEA2"
 					(effects
@@ -17021,7 +17113,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -12.7 0)
+				(at -30.48 -12.7 0)
 				(length 3.81)
 				(name "IO96RSB2/GEB2"
 					(effects
@@ -17039,7 +17131,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -15.24 0)
+				(at -30.48 -15.24 0)
 				(length 3.81)
 				(name "IO95RSB2/GEC2"
 					(effects
@@ -17057,7 +17149,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -17.78 0)
+				(at -30.48 -17.78 0)
 				(length 3.81)
 				(name "IO93RSB2"
 					(effects
@@ -17075,7 +17167,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -20.32 0)
+				(at -30.48 -20.32 0)
 				(length 3.81)
 				(name "IO92RSB2"
 					(effects
@@ -17093,7 +17185,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -22.86 0)
+				(at -30.48 -22.86 0)
 				(length 3.81)
 				(name "IO91RSB2"
 					(effects
@@ -17111,7 +17203,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -25.4 0)
+				(at -30.48 -25.4 0)
 				(length 3.81)
 				(name "IO90RSB2"
 					(effects
@@ -17129,7 +17221,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -27.94 0)
+				(at -30.48 -27.94 0)
 				(length 3.81)
 				(name "IO88RSB2"
 					(effects
@@ -17147,7 +17239,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -30.48 0)
+				(at -30.48 -30.48 0)
 				(length 3.81)
 				(name "IO86RSB2"
 					(effects
@@ -17165,7 +17257,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -33.02 0)
+				(at -30.48 -33.02 0)
 				(length 3.81)
 				(name "IO85RSB2"
 					(effects
@@ -17183,7 +17275,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -35.56 0)
+				(at -30.48 -35.56 0)
 				(length 3.81)
 				(name "IO84RSB2"
 					(effects
@@ -17201,7 +17293,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -38.1 0)
+				(at -30.48 -38.1 0)
 				(length 3.81)
 				(name "IO77RSB2"
 					(effects
@@ -17219,7 +17311,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -40.64 0)
+				(at -30.48 -40.64 0)
 				(length 3.81)
 				(name "IO74RSB2"
 					(effects
@@ -17237,7 +17329,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -43.18 0)
+				(at -30.48 -43.18 0)
 				(length 3.81)
 				(name "IO71RSB2"
 					(effects
@@ -17255,7 +17347,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -45.72 0)
+				(at -30.48 -45.72 0)
 				(length 3.81)
 				(name "IO63RSB2/GDC2"
 					(effects
@@ -17273,7 +17365,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -48.26 0)
+				(at -30.48 -48.26 0)
 				(length 3.81)
 				(name "IO62RSB2/GDB2"
 					(effects
@@ -17291,7 +17383,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -33.02 -50.8 0)
+				(at -30.48 -50.8 0)
 				(length 3.81)
 				(name "IO61RSB2/GDA2"
 					(effects
@@ -17309,7 +17401,43 @@
 				)
 			)
 			(pin power_in line
-				(at -20.32 60.96 270)
+				(at -17.78 60.96 270)
+				(length 3.81)
+				(name "VJTAG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 60.96 270)
+				(length 3.81)
+				(name "VPUMP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 60.96 270)
 				(length 3.81)
 				(name "VCCPLF"
 					(effects
@@ -17327,7 +17455,7 @@
 				)
 			)
 			(pin power_in line
-				(at -15.24 60.96 270)
+				(at -7.62 60.96 270)
 				(length 3.81)
 				(name "VCC"
 					(effects
@@ -17344,9 +17472,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -12.7 60.96 270)
+			(pin passive line
+				(at -7.62 60.96 270)
 				(length 3.81)
+				(hide yes)
 				(name "VCC"
 					(effects
 						(font
@@ -17362,9 +17491,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -10.16 60.96 270)
+			(pin passive line
+				(at -7.62 60.96 270)
 				(length 3.81)
+				(hide yes)
 				(name "VCC"
 					(effects
 						(font
@@ -17380,27 +17510,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -10.16 -60.96 90)
-				(length 3.81)
-				(name "VCOMPLF"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
+			(pin passive line
 				(at -7.62 60.96 270)
 				(length 3.81)
+				(hide yes)
 				(name "VCC"
 					(effects
 						(font
@@ -17409,24 +17522,6 @@
 					)
 				)
 				(number "89"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at -5.08 -60.96 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17452,17 +17547,17 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at -2.54 -60.96 90)
 				(length 3.81)
-				(name "GND"
+				(name "VCOMPLF"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17472,132 +17567,6 @@
 			)
 			(pin power_in line
 				(at 0 60.96 270)
-				(length 3.81)
-				(name "VCCIB2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "39"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 0 -60.96 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "38"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 2.54 60.96 270)
-				(length 3.81)
-				(name "VCCIB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "66"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 2.54 -60.96 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "51"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 60.96 270)
-				(length 3.81)
-				(name "VCCIB0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "87"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 5.08 -60.96 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "67"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 7.62 -60.96 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "88"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 10.16 60.96 270)
 				(length 3.81)
 				(name "VMV3"
 					(effects
@@ -17615,16 +17584,16 @@
 				)
 			)
 			(pin power_in line
-				(at 12.7 60.96 270)
+				(at 0 -60.96 90)
 				(length 3.81)
-				(name "VMV2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "50"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17632,8 +17601,103 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 -60.96 90)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "51"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "67"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "88"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -60.96 90)
 				(length 3.81)
 				(name "GNDQ"
 					(effects
@@ -17650,7 +17714,118 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
+				(at 2.54 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GNDQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GNDQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "75"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -60.96 90)
+				(length 3.81)
+				(hide yes)
+				(name "GNDQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "99"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 5.08 60.96 270)
+				(length 3.81)
+				(name "VCCIB2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 7.62 60.96 270)
+				(length 3.81)
+				(name "VMV2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 60.96 270)
+				(length 3.81)
+				(name "VCCIB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "66"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
 				(at 15.24 60.96 270)
 				(length 3.81)
 				(name "VMV1"
@@ -17668,17 +17843,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 15.24 -60.96 90)
+			(pin power_in line
+				(at 20.32 60.96 270)
 				(length 3.81)
-				(name "GNDQ"
+				(name "VCCIB0"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "46"
+				(number "87"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17687,7 +17862,7 @@
 				)
 			)
 			(pin power_in line
-				(at 17.78 60.96 270)
+				(at 22.86 60.96 270)
 				(length 3.81)
 				(name "VMV0"
 					(effects
@@ -17704,53 +17879,18 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 17.78 -60.96 90)
+			(pin no_connect line
+				(at 26.67 45.72 180)
 				(length 3.81)
-				(name "GNDQ"
+				(hide yes)
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "75"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 20.32 -60.96 90)
-				(length 3.81)
-				(name "GNDQ"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "99"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 22.86 60.96 270)
-				(length 3.81)
-				(name "VPUMP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "52"
+				(number "53"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17759,7 +17899,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 40.64 180)
+				(at 30.48 40.64 180)
 				(length 3.81)
 				(name "GAA0/IO00RSB0"
 					(effects
@@ -17777,7 +17917,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 38.1 180)
+				(at 30.48 38.1 180)
 				(length 3.81)
 				(name "GAA1/IO01RSB0"
 					(effects
@@ -17795,7 +17935,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 35.56 180)
+				(at 30.48 35.56 180)
 				(length 3.81)
 				(name "GAB0/IO02RSB0"
 					(effects
@@ -17813,7 +17953,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 33.02 180)
+				(at 30.48 33.02 180)
 				(length 3.81)
 				(name "GAB1/IO03RSB0"
 					(effects
@@ -17831,7 +17971,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 30.48 180)
+				(at 30.48 30.48 180)
 				(length 3.81)
 				(name "GAC0/IO04RSB0"
 					(effects
@@ -17849,7 +17989,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 27.94 180)
+				(at 30.48 27.94 180)
 				(length 3.81)
 				(name "GAC1/IO05RSB0"
 					(effects
@@ -17867,7 +18007,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 25.4 180)
+				(at 30.48 25.4 180)
 				(length 3.81)
 				(name "IO11RSB0"
 					(effects
@@ -17885,7 +18025,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 22.86 180)
+				(at 30.48 22.86 180)
 				(length 3.81)
 				(name "IO13RSB0"
 					(effects
@@ -17902,8 +18042,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 33.02 20.32 180)
+			(pin bidirectional line
+				(at 30.48 20.32 180)
 				(length 3.81)
 				(name "IO15RSB0"
 					(effects
@@ -17921,7 +18061,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 17.78 180)
+				(at 30.48 17.78 180)
 				(length 3.81)
 				(name "IO21RSB0"
 					(effects
@@ -17939,7 +18079,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 15.24 180)
+				(at 30.48 15.24 180)
 				(length 3.81)
 				(name "IO23RSB0"
 					(effects
@@ -17957,7 +18097,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 12.7 180)
+				(at 30.48 12.7 180)
 				(length 3.81)
 				(name "IO25RSB0"
 					(effects
@@ -17975,7 +18115,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 10.16 180)
+				(at 30.48 10.16 180)
 				(length 3.81)
 				(name "IO27RSB0"
 					(effects
@@ -17993,7 +18133,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 7.62 180)
+				(at 30.48 7.62 180)
 				(length 3.81)
 				(name "IO29RSB0"
 					(effects
@@ -18011,7 +18151,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 5.08 180)
+				(at 30.48 5.08 180)
 				(length 3.81)
 				(name "GBC0/IO35RSB0"
 					(effects
@@ -18029,7 +18169,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 2.54 180)
+				(at 30.48 2.54 180)
 				(length 3.81)
 				(name "GBC1/IO36RSB0"
 					(effects
@@ -18047,7 +18187,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 0 180)
+				(at 30.48 0 180)
 				(length 3.81)
 				(name "GBB0/IO37RSB0"
 					(effects
@@ -18065,7 +18205,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -2.54 180)
+				(at 30.48 -2.54 180)
 				(length 3.81)
 				(name "GBB1/IO38RSB0"
 					(effects
@@ -18083,7 +18223,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -5.08 180)
+				(at 30.48 -5.08 180)
 				(length 3.81)
 				(name "GBA0/IO39RSB0"
 					(effects
@@ -18101,7 +18241,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -7.62 180)
+				(at 30.48 -10.16 180)
 				(length 3.81)
 				(name "GBA1/IO40RSB0"
 					(effects
@@ -18119,7 +18259,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -12.7 180)
+				(at 30.48 -12.7 180)
 				(length 3.81)
 				(name "GBA2/IO41PDB1"
 					(effects
@@ -18137,7 +18277,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -15.24 180)
+				(at 30.48 -15.24 180)
 				(length 3.81)
 				(name "IO41NDB1"
 					(effects
@@ -18155,7 +18295,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -17.78 180)
+				(at 30.48 -17.78 180)
 				(length 3.81)
 				(name "GBB2/IO42PSB1"
 					(effects
@@ -18173,7 +18313,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -20.32 180)
+				(at 30.48 -20.32 180)
 				(length 3.81)
 				(name "GBC2/IO43PDB1"
 					(effects
@@ -18191,7 +18331,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -22.86 180)
+				(at 30.48 -22.86 180)
 				(length 3.81)
 				(name "IO43NDB1"
 					(effects
@@ -18209,7 +18349,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -25.4 180)
+				(at 30.48 -25.4 180)
 				(length 3.81)
 				(name "GCC1/IO48PDB1"
 					(effects
@@ -18227,7 +18367,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -27.94 180)
+				(at 30.48 -27.94 180)
 				(length 3.81)
 				(name "GCC0/IO48NDB1"
 					(effects
@@ -18245,7 +18385,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -30.48 180)
+				(at 30.48 -30.48 180)
 				(length 3.81)
 				(name "GCA0/IO50NDB1"
 					(effects
@@ -18263,7 +18403,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -33.02 180)
+				(at 30.48 -33.02 180)
 				(length 3.81)
 				(name "GCA1/IO50PDB1"
 					(effects
@@ -18281,7 +18421,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -35.56 180)
+				(at 30.48 -35.56 180)
 				(length 3.81)
 				(name "GCB2/IO52PDB1"
 					(effects
@@ -18299,7 +18439,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -38.1 180)
+				(at 30.48 -38.1 180)
 				(length 3.81)
 				(name "IO52NDB1"
 					(effects
@@ -18317,7 +18457,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -40.64 180)
+				(at 30.48 -40.64 180)
 				(length 3.81)
 				(name "GDC1/IO58UDB1"
 					(effects
@@ -18335,7 +18475,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -43.18 180)
+				(at 30.48 -43.18 180)
 				(length 3.81)
 				(name "GDC0/IO58VDB1"
 					(effects
@@ -18353,7 +18493,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 33.02 -45.72 180)
+				(at 30.48 -45.72 180)
 				(length 3.81)
 				(name "GDA1/IO60USB1"
 					(effects
