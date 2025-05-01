@@ -35418,7 +35418,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 11.43 0)
+			(at -7.62 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35427,16 +35427,16 @@
 			)
 		)
 		(property "Value" "UCC27524D"
-			(at 12.7 11.43 0)
+			(at 1.27 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 0 0 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35445,6 +35445,15 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc27524.pdf"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5A MOSFET driver, 4.5V..18V supply, non-inverting, SOIC-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -35453,7 +35462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual 5A MOSFET driver, 4.5V...18V supply, non-inverting, SOIC-8"
+		(property "ki_keywords" "high-speed low-side negative-input-voltage-capability"
 			(at 0 0 0)
 			(effects
 				(font
@@ -35462,16 +35471,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "high-speed low-side negative input"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOIC?8?3.9x4.9mm*P1.27mm*"
+		(property "ki_fp_filters" "*SOIC*3.9x4.9mm*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -35482,8 +35482,8 @@
 		)
 		(symbol "UCC27524D_0_1"
 			(rectangle
-				(start -7.62 -10.16)
-				(end 7.62 10.16)
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -35533,24 +35533,6 @@
 			(pin input line
 				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "ENB"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 -5.08 0)
-				(length 2.54)
 				(name "INB"
 					(effects
 						(font
@@ -35566,221 +35548,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 12.7 270)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -12.7 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "OUTA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "OUTB"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "UCC27524DGN"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "U"
-			(at -7.62 11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UCC27524DGN"
-			(at 14.986 11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:Texas_DGN0008G_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.846x2.15mm"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc27524.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5A MOSFET driver, 4.5V...18V supply, non-inverting, VSSOP-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "high-speed low-side negative input"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "*DGN0008G*VSSOP?8?1EP*3x3mm*P0.65mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "UCC27524DGN_0_1"
-			(rectangle
-				(start -7.62 -10.16)
-				(end 7.62 10.16)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "UCC27524DGN_1_0"
-			(pin passive line
-				(at 0 -12.7 90)
-				(length 2.54)
-				(hide yes)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "UCC27524DGN_1_1"
 			(pin input line
-				(at -10.16 5.08 0)
-				(length 2.54)
-				(name "ENA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 2.54 0)
-				(length 2.54)
-				(name "INA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 -2.54 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "ENB"
 					(effects
@@ -35797,28 +35566,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -10.16 -5.08 0)
-				(length 2.54)
-				(name "INB"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at 0 12.7 270)
+				(at 0 10.16 270)
 				(length 2.54)
-				(name "VDD"
+				(name "V+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -35834,7 +35585,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -12.7 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -43031,6 +42782,72 @@
 			)
 		)
 		(property "ki_fp_filters" "SOIC*7.5x10.3mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "UCC27524DGN"
+		(extends "MCP14A0304xMNY")
+		(property "Reference" "U"
+			(at -7.62 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "UCC27524DGN"
+			(at 1.27 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:Texas_DGN0008G_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.846x2.15mm_ThermalVias"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc27524.pdf"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5A MOSFET driver, 4.5V..18V supply, non-inverting, HTSSOP-8/MSOP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "high-speed low-side negative-input-voltage-capability"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*EP2x*Mask1.846x2.15mm*"
 			(at 0 0 0)
 			(effects
 				(font
