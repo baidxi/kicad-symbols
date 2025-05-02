@@ -26433,7 +26433,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Driver, Dual MOSFET"
+		(property "ki_keywords" "high-speed"
 			(at 0 0 0)
 			(effects
 				(font
@@ -26540,7 +26540,7 @@
 			(pin power_in line
 				(at 0 10.16 270)
 				(length 2.54)
-				(name "V+"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -26680,7 +26680,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Driver, Dual MOSFET"
+		(property "ki_keywords" "high-speed"
 			(at 0 0 0)
 			(effects
 				(font
@@ -26787,7 +26787,7 @@
 			(pin power_in line
 				(at 0 10.16 270)
 				(length 2.54)
-				(name "V+"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -26927,7 +26927,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Driver, Dual MOSFET"
+		(property "ki_keywords" "high-speed"
 			(at 0 0 0)
 			(effects
 				(font
@@ -27034,7 +27034,7 @@
 			(pin power_in line
 				(at 0 10.16 270)
 				(length 2.54)
-				(name "V+"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -30356,7 +30356,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 11.43 0)
+			(at -7.62 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30365,12 +30365,12 @@
 			)
 		)
 		(property "Value" "PM8834"
-			(at 12.7 11.43 0)
+			(at 1.27 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
@@ -30420,8 +30420,8 @@
 		)
 		(symbol "PM8834_0_1"
 			(rectangle
-				(start -7.62 -10.16)
-				(end 7.62 10.16)
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -30433,7 +30433,7 @@
 		)
 		(symbol "PM8834_1_1"
 			(pin input line
-				(at -10.16 7.62 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "EN1"
 					(effects
@@ -30451,7 +30451,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 5.08 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "PWM1"
 					(effects
@@ -30461,24 +30461,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 0 0)
-				(length 2.54)
-				(name "EN2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -30504,8 +30486,26 @@
 					)
 				)
 			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "EN2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at 0 12.7 270)
+				(at 0 10.16 270)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -30523,7 +30523,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -12.7 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -30584,7 +30584,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 11.43 0)
+			(at -7.62 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30593,12 +30593,12 @@
 			)
 		)
 		(property "Value" "PM8834M"
-			(at 12.7 11.43 0)
+			(at 1.27 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.95x2.15mm"
@@ -30648,8 +30648,8 @@
 		)
 		(symbol "PM8834M_0_1"
 			(rectangle
-				(start -7.62 -10.16)
-				(end 7.62 10.16)
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -30661,7 +30661,7 @@
 		)
 		(symbol "PM8834M_1_1"
 			(pin input line
-				(at -10.16 7.62 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "EN1"
 					(effects
@@ -30679,7 +30679,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 5.08 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "PWM1"
 					(effects
@@ -30689,24 +30689,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 0 0)
-				(length 2.54)
-				(name "EN2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -30732,17 +30714,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -2.54 -12.7 90)
+			(pin input line
+				(at -10.16 -5.08 0)
 				(length 2.54)
-				(name "GND"
+				(name "EN2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -30751,7 +30733,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 12.7 270)
+				(at 0 10.16 270)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -30769,7 +30751,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -12.7 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -30779,6 +30761,25 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -10.16 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -35569,7 +35570,7 @@
 			(pin power_in line
 				(at 0 10.16 270)
 				(length 2.54)
-				(name "V+"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
