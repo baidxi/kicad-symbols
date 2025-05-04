@@ -23530,75 +23530,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "IRF7311PBF"
-		(extends "FDS6890A")
-		(property "Reference" "Q"
-			(at 5.08 1.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRF7311PBF"
-			(at 5.08 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 5.08 -1.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irf7311pbf.pdf?fileId=5546d462533600a4015355f551ed1b22"
-			(at 5.08 -3.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "6.6A Id, 20V Vds, Dual N-Channel MOSFET, HEXFET, SOIC-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "N-Channel fully-avalanche-rated"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(symbol "IRF7324"
 		(pin_names
 			(hide yes)
@@ -66009,8 +65940,8 @@
 			)
 		)
 	)
-	(symbol "IRF7341PBF"
-		(extends "IRF7311PBF")
+	(symbol "IRF7311PBF"
+		(extends "FDS6890A")
 		(property "Reference" "Q"
 			(at 5.08 1.905 0)
 			(effects
@@ -66020,7 +65951,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRF7341PBF"
+		(property "Value" "IRF7311PBF"
 			(at 5.08 0 0)
 			(effects
 				(font
@@ -66040,7 +65971,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irf7341pbf.pdf?fileId=5546d462533600a4015355f64f031b63"
+		(property "Datasheet" "https://www.infineon.com/dgdl/irf7311pbf.pdf?fileId=5546d462533600a4015355f551ed1b22"
 			(at 5.08 -3.81 0)
 			(effects
 				(font
@@ -66050,7 +65981,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4.7A Id, 55V Vds, Dual N-Channel MOSFET, HEXFET, SOIC-8"
+		(property "Description" "6.6A Id, 20V Vdss, Dual N-Channel MOSFET, HEXFET, 0.029 ohms Rds(on), SOIC-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -66059,7 +65990,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "N-Channel fully-avalanche-rated"
+		(property "ki_keywords" "fully-avalanche-rated"
 			(at 0 0 0)
 			(effects
 				(font
@@ -66068,7 +65999,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+		(property "ki_fp_filters" "*SOIC*3.9x4.9mm*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -74738,6 +74669,75 @@
 			)
 		)
 		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "IRF7341PBF"
+		(extends "IRF7311PBF")
+		(property "Reference" "Q"
+			(at 5.08 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRF7341PBF"
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 5.08 -1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/irf7341pbf.pdf?fileId=5546d462533600a4015355f64f031b63"
+			(at 5.08 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7A Id, 55V Vdss, Dual N-Channel MOSFET, HEXFET, 0.050 ohms Rds(on), SOIC-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "fully-avalanche-rated"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*SOIC*3.9x4.9mm*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
