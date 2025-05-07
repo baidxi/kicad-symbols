@@ -5967,20 +5967,20 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "FAN3122"
+	(symbol "FAN3121xMX"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -6.858 11.43 0)
+			(at -6.35 6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "FAN3122"
-			(at 9.652 11.176 0)
+		(property "Value" "FAN3121xMX"
+			(at 8.89 6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5988,7 +5988,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 0 -27.178 0)
+			(at 0 -21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5997,7 +5997,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fan3121-d.pdf"
-			(at 2.794 -29.972 0)
+			(at 2.794 -24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6005,8 +6005,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "High-Current Non-Inverting Low-Side Gate Driver, 18V Vs, 9A sink, SOIC-8"
-			(at 0 -24.13 0)
+		(property "Description" "High-Current Inverting Low-Side Gate Driver, 18V Vs, 9.7A sink, 7.1A source, SOIC-8"
+			(at 0 -18.796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6014,7 +6014,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "low-side gate driver"
+		(property "ki_keywords" "onsemi"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6032,10 +6032,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "FAN3122_0_1"
+		(symbol "FAN3121xMX_0_1"
 			(rectangle
-				(start -5.08 10.16)
-				(end 5.08 -10.16)
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -6045,9 +6045,9 @@
 				)
 			)
 		)
-		(symbol "FAN3122_1_1"
+		(symbol "FAN3121xMX_1_1"
 			(pin input line
-				(at -7.62 2.54 0)
+				(at -7.62 0 0)
 				(length 2.54)
 				(name "IN"
 					(effects
@@ -6083,9 +6083,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 12.7 270)
+				(at 0 7.62 270)
 				(length 2.54)
-				(name "VDD"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6100,8 +6100,27 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 7.62 270)
+				(length 2.54)
+				(hide yes)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at 0 -12.7 90)
+				(at 0 -7.62 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -6118,27 +6137,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 12.7 270)
+			(pin passive line
+				(at 0 -7.62 90)
 				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -12.7 90)
-				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -6155,9 +6157,28 @@
 				)
 			)
 			(pin output line
-				(at 7.62 2.54 180)
+				(at 7.62 0 180)
 				(length 2.54)
-				(name "OUT"
+				(name "~{OUT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 2.54)
+				(hide yes)
+				(name "~{OUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6172,7 +6193,199 @@
 					)
 				)
 			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "FAN3122xMX"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -6.35 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FAN3122xMX"
+			(at 8.89 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 0 -21.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fan3121-d.pdf"
+			(at 2.794 -24.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "High-Current Non-Inverting Low-Side Gate Driver, 18V Vs, 9.7A sink, 7.1A source, SOIC-8"
+			(at 0 -18.796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "onsemi"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "FAN3122xMX_0_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "FAN3122xMX_1_1"
+			(pin input line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
+				(at 0 7.62 270)
+				(length 2.54)
+				(hide yes)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
 				(at 7.62 0 180)
 				(length 2.54)
 				(name "OUT"
@@ -6183,6 +6396,25 @@
 					)
 				)
 				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 2.54)
+				(hide yes)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
