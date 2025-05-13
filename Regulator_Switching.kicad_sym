@@ -94583,29 +94583,32 @@
 			)
 		)
 		(property "Footprint" "Package_SO:Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"
-			(at 0 2.54 0)
+			(at 2.54 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps54560b.pdf"
-			(at 0 2.54 0)
+			(at 2.54 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Description" "5A, Step Down DC-DC Converter, 4.5-60V Input Voltage, Texas R-PDSO-G8"
-			(at 0 0 0)
+			(at 2.54 -20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -94630,13 +94633,51 @@
 		(symbol "TPS54560BDDA_0_1"
 			(rectangle
 				(start -10.16 7.62)
-				(end 10.16 -7.62)
+				(end 10.16 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
 				)
 				(fill
 					(type background)
+				)
+			)
+		)
+		(symbol "TPS54560BDDA_1_0"
+			(pin output line
+				(at -12.7 -5.08 0)
+				(length 2.54)
+				(name "SS/TR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "PWRGD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)
@@ -94677,26 +94718,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "COMP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin passive line
-				(at -12.7 -5.08 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "RT/CLK"
 					(effects
@@ -94705,7 +94728,7 @@
 						)
 					)
 				)
-				(number "4"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -94713,10 +94736,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -10.16 90)
+			(pin output line
+				(at -12.7 -7.62 0)
 				(length 2.54)
-				(name "GND"
+				(name "COMP"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -94732,7 +94755,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -10.16 90)
+				(at 0 -12.7 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -94742,7 +94765,25 @@
 						)
 					)
 				)
-				(number "9"
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -94778,7 +94819,7 @@
 						)
 					)
 				)
-				(number "8"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -94796,7 +94837,7 @@
 						)
 					)
 				)
-				(number "5"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -94812,7 +94853,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 13.97 0)
+			(at -10.16 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -94821,7 +94862,7 @@
 			)
 		)
 		(property "Value" "TPS54561"
-			(at 5.08 13.97 0)
+			(at 5.08 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -94829,33 +94870,36 @@
 			)
 		)
 		(property "Footprint" "Package_SON:WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias"
-			(at 21.59 -13.97 0)
+			(at 5.08 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps54561.pdf"
-			(at -7.62 13.97 0)
+			(at 5.08 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Description" "5A non-synchronous Buck Converter, 4.5..60V input, 100kHz..2.5MHz switching frequency, WSON-10"
-			(at 0 0 0)
+			(at 5.08 -20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "step-down adjustable"
+		(property "ki_keywords" "step-down adjustable texas"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94875,8 +94919,8 @@
 		)
 		(symbol "TPS54561_0_1"
 			(rectangle
-				(start -7.62 12.7)
-				(end 7.62 -12.7)
+				(start -10.16 10.16)
+				(end 10.16 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -94886,83 +94930,11 @@
 				)
 			)
 		)
-		(symbol "TPS54561_1_1"
-			(pin power_in line
-				(at -10.16 10.16 0)
+		(symbol "TPS54561_1_0"
+			(pin output line
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -10.16 7.62 0)
-				(length 2.54)
-				(name "VINA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 5.08 0)
-				(length 2.54)
-				(name "EN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 2.54 0)
-				(length 2.54)
-				(name "PS/SYNC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 0 0)
-				(length 2.54)
-				(name "L1"
+				(name "SS/TR"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -94977,10 +94949,30 @@
 					)
 				)
 			)
-			(pin input line
-				(at -10.16 -10.16 0)
+			(pin open_collector line
+				(at 12.7 0 180)
 				(length 2.54)
-				(name "L2"
+				(name "PWRGD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TPS54561_1_1"
+			(pin power_in line
+				(at -12.7 7.62 0)
+				(length 2.54)
+				(name "VIN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -94995,17 +94987,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -2.54 -15.24 90)
+			(pin input line
+				(at -12.7 2.54 0)
 				(length 2.54)
-				(name "GND"
+				(name "EN"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -95014,10 +95006,46 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at -12.7 0 0)
+				(length 2.54)
+				(name "RT/CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -5.08 0)
+				(length 2.54)
+				(name "COMP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -10.16 90)
 				(length 2.54)
 				(hide yes)
-				(name "PGND"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -95033,16 +95061,16 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -15.24 90)
+				(at 0 -10.16 90)
 				(length 2.54)
-				(name "PGND"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -95050,10 +95078,10 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 10.16 180)
+			(pin passive line
+				(at 12.7 7.62 180)
 				(length 2.54)
-				(name "VOUT"
+				(name "BOOT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -95068,8 +95096,26 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
-				(at 10.16 2.54 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(name "FB"
 					(effects
@@ -95078,7 +95124,7 @@
 						)
 					)
 				)
-				(number "10"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
