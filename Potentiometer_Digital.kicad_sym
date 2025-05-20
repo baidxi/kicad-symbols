@@ -42,7 +42,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Digital potentiometer, 256 position, single output, SPI interface"
+		(property "Description" "Digital potentiometer, 256 position, single output, SPI interface, SOT-23-8"
 			(at 0 -24.638 0)
 			(effects
 				(font
@@ -71,8 +71,8 @@
 		)
 		(symbol "AD5160_0_1"
 			(rectangle
-				(start -10.16 10.16)
-				(end 10.16 -10.16)
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -83,8 +83,8 @@
 			)
 			(polyline
 				(pts
-					(xy 6.985 7.62) (xy 5.715 7.62) (xy 5.08 6.985) (xy 5.715 6.35) (xy 5.08 5.715) (xy 5.715 5.08)
-					(xy 5.08 4.445) (xy 5.715 3.81) (xy 5.08 3.175) (xy 5.715 2.54) (xy 6.985 2.54)
+					(xy 4.445 2.54) (xy 3.175 2.54) (xy 2.54 1.905) (xy 3.175 1.27) (xy 2.54 0.635) (xy 3.175 0) (xy 2.54 -0.635)
+					(xy 3.175 -1.27) (xy 2.54 -1.905) (xy 3.175 -2.54) (xy 4.445 -2.54)
 				)
 				(stroke
 					(width 0.254)
@@ -96,7 +96,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.985 5.08) (xy 6.35 5.08) (xy 5.715 5.08) (xy 6.35 5.715) (xy 6.35 4.445) (xy 5.715 5.08)
+					(xy 4.445 0) (xy 3.81 0) (xy 3.175 0) (xy 3.81 0.635) (xy 3.81 -0.635) (xy 3.175 0)
 				)
 				(stroke
 					(width 0.254)
@@ -109,7 +109,7 @@
 		)
 		(symbol "AD5160_1_1"
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "CLK"
 					(effects
@@ -127,7 +127,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "SDI"
 					(effects
@@ -145,7 +145,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -5.08 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -163,9 +163,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 12.7 270)
+				(at 0 10.16 270)
 				(length 2.54)
-				(name "VDD"
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -181,7 +181,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -12.7 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -199,7 +199,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 7.62 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "A"
 					(effects
@@ -217,7 +217,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 5.08 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "W"
 					(effects
@@ -235,7 +235,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 2.54 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "B"
 					(effects
