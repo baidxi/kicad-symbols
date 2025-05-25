@@ -123,7 +123,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BSOURCE"
+		(property "Value" "${SIM.PARAMS}"
 			(at 2.54 0 0)
 			(effects
 				(font
@@ -159,7 +159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SPICE"
+		(property "Sim.Device" "V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -168,13 +168,31 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "type=\"B\" model=\"v=1\""
+		(property "Sim.Params" "v=1"
 			(at 2.54 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "="
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "simulation dependent"
@@ -518,7 +536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SPICE"
+		(property "Sim.Device" "E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -527,13 +545,22 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "type=\"E\" model=\"1\""
+		(property "Sim.Params" "gain=1"
 			(at 2.54 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=- 3=C+ 4=C-"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "simulation vcvs dependent"
@@ -782,7 +809,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SPICE"
+		(property "Sim.Device" "G"
 			(at 0 0 0)
 			(effects
 				(font
@@ -791,13 +818,22 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "type=\"G\" model=\"1\""
+		(property "Sim.Params" "gain=1"
 			(at 2.54 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=- 3=C+ 4=C-"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "simulation vccs dependent"
@@ -1033,7 +1069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=1 2=2"
+		(property "Sim.Pins" "1=+ 2=-"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1042,7 +1078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SPICE"
+		(property "Sim.Device" "I"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1051,13 +1087,22 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "type=\"I\" model=\"am(1 0 1k 100k 1n)\" lib=\"\""
+		(property "Sim.Params" "vo=0 vmo=1 vma=1 fm=1k fc=100k"
 			(at 2.54 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Sim.Type" "AM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "simulation amplitude modulated"
@@ -2889,7 +2934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=1 2=2"
+		(property "Sim.Pins" "1=+ 2=-"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2898,7 +2943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SPICE"
+		(property "Sim.Device" "I"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2908,13 +2953,22 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "type=\"I\" model=\"sffm(0 1 100k 5 1k)\" lib=\"\""
+		(property "Sim.Params" "vo=0 va=1 fm=1k mdi=90 fc=100k"
 			(at 2.54 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Sim.Type" "SFFM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "simulation frequency modulated"
@@ -7178,7 +7232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=1 2=2"
+		(property "Sim.Pins" "1=+ 2=-"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7187,7 +7241,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SPICE"
+		(property "Sim.Device" "V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7197,13 +7251,22 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "type=\"V\" model=\"am(1 0 1k 100k 1n)\" lib=\"\""
+		(property "Sim.Params" "vo=0 vmo=1 vma=1 fm=1k fc=100k"
 			(at 2.54 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Sim.Type" "AM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "simulation amplitude modulated"
@@ -8425,7 +8488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=1 2=2"
+		(property "Sim.Pins" "1=+ 2=-"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8434,7 +8497,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SPICE"
+		(property "Sim.Device" "V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8444,13 +8507,22 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "type=\"V\" model=\"sffm(0 1 100k 5 1k)\" lib=\"\""
+		(property "Sim.Params" "vo=0 va=1 fm=1k mdi=90 fc=100k"
 			(at 2.54 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Sim.Type" "SFFM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "simulation frequency modulated"
