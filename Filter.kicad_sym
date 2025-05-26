@@ -5795,17 +5795,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5th-Order Active Low Pass Filter, 0.3 to 50kHz, Clock Tunable, 100:1 Clock to Cutoff Frequency, Low DC offset, 8V Max dual supply, DIP-8"
+		(property "Description" "5th-Order Active Low Pass Filter, 0.3 to 50kHz, Bessel Response, Clock Tunable, 100:1 Clock to Cutoff Frequency, Low DC offset, 8V Max dual supply, DIP-8"
 			(at 0 -22.606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Bessel"
-			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5835,9 +5826,9 @@
 				)
 			)
 			(pin input line
-				(at -10.16 2.54 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
-				(name "Vin"
+				(name "V_{IN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5855,7 +5846,7 @@
 			(pin input line
 				(at -10.16 0 0)
 				(length 2.54)
-				(name "CLK_in"
+				(name "CLK_{IN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5943,9 +5934,9 @@
 				)
 			)
 			(pin output line
-				(at 10.16 2.54 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
-				(name "Vout"
+				(name "V_{OUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5963,7 +5954,7 @@
 			(pin output line
 				(at 10.16 0 180)
 				(length 2.54)
-				(name "CLK_out"
+				(name "CLK_{OUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6024,17 +6015,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5th-Order Active Low Pass Filter, 0.3 to 50kHz, Clock Tunable, 100:1 Clock to Cutoff Frequency, Low DC offset, 8V Max dual supply, SOIC-16"
+		(property "Description" "5th-Order Active Low Pass Filter, 0.3 to 50kHz, Bessel Response, Clock Tunable, 100:1 Clock to Cutoff Frequency, Low DC offset, 8V Max dual supply, SOIC-16"
 			(at 0 -22.606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Bessel"
-			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6064,9 +6046,9 @@
 				)
 			)
 			(pin input line
-				(at -10.16 2.54 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
-				(name "Vin"
+				(name "V_{IN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6084,7 +6066,7 @@
 			(pin input line
 				(at -10.16 0 0)
 				(length 2.54)
-				(name "CLK_in"
+				(name "CLK_{IN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6118,9 +6100,8 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -10.16 90)
+				(at -5.08 -10.16 90)
 				(length 2.54)
-				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -6137,7 +6118,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -10.16 90)
+				(at -5.08 -10.16 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -6156,7 +6137,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -10.16 90)
+				(at -5.08 -10.16 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -6175,7 +6156,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -10.16 90)
+				(at -5.08 -10.16 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -6194,7 +6175,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -10.16 90)
+				(at -5.08 -10.16 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -6212,26 +6193,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -2.54 -10.16 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin passive line
-				(at -2.54 -10.16 90)
+				(at -5.08 -10.16 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -6250,7 +6213,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -10.16 90)
+				(at -5.08 -10.16 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -6269,7 +6232,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -10.16 90)
+				(at -5.08 -10.16 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -6280,6 +6243,24 @@
 					)
 				)
 				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6324,9 +6305,9 @@
 				)
 			)
 			(pin output line
-				(at 10.16 2.54 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
-				(name "Vout"
+				(name "V_{OUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6344,7 +6325,7 @@
 			(pin output line
 				(at 10.16 0 180)
 				(length 2.54)
-				(name "CLK_out"
+				(name "CLK_{OUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9898,7 +9879,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LTC1065xN8"
+		(property "Value" "LTC1063xN8"
 			(at 0.762 8.636 0)
 			(effects
 				(font
@@ -9925,17 +9906,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5th-Order Active Low Pass Filter, 0.3 to 50kHz, Clock Tunable, 100:1 Clock to Cutoff Frequency, Low DC offset, 8V Max dual supply, DIP-8"
+		(property "Description" "5th-Order Active Low Pass Filter, 0.3 to 50kHz, Butterworth Response, Clock Tunable, 100:1 Clock to Cutoff Frequency, Low DC offset, 8V Max dual supply, DIP-8"
 			(at 0 -22.606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Butterworth"
-			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9964,7 +9936,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LTC1065xSW"
+		(property "Value" "LTC1063xSW"
 			(at 0.762 8.636 0)
 			(effects
 				(font
@@ -9991,17 +9963,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5th-Order Active Low Pass Filter, 0.3 to 50kHz, Clock Tunable, 100:1 Clock to Cutoff Frequency, Low DC offset, 8V Max dual supply, SOIC-16"
+		(property "Description" "5th-Order Active Low Pass Filter, 0.3 to 50kHz, Butterworth Response, Clock Tunable, 100:1 Clock to Cutoff Frequency, Low DC offset, 8V Max dual supply, SOIC-16"
 			(at 0 -22.606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Butterworth"
-			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
