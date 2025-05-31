@@ -76997,12 +76997,10 @@
 			)
 		)
 	)
-(symbol "AZ1117CH2-1.2"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+	(symbol "AZ1117CH2-1.2"
+		(extends "L7805")
 		(property "Reference" "U"
-			(at -3.81 3.556 0)
+			(at -3.81 3.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -77010,7 +77008,7 @@
 			)
 		)
 		(property "Value" "AZ1117CH2-1.2"
-			(at 0 3.556 0)
+			(at 0 3.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -77019,16 +77017,26 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 0 6.35 0)
+			(at 0.635 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117C.pdf"
+			(at 0 -1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Fixed 1.2V LDO Linear Regulator, 15V Max Input, SOT-223"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77037,7 +77045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1A 15V Fixed LDO Linear Regulator, 1.2V, SOT-223"
+		(property "ki_keywords" "low-dropout positive"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77046,7 +77054,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "low-dropout regulator ldo positiv fixed"
+		(property "ki_fp_filters" "SOT?223*TabPin2*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77055,226 +77063,9 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SOT?223*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "AZ1117CH2-1.2_0_1"
-			(rectangle
-				(start -5.08 2.54)
-				(end 5.08 -2.54)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "AZ1117CH2-1.2_1_1"
-			(pin power_in line
-				(at -7.62 0 0)
-				(length 2.54)
-				(name "VI"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -5.08 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 7.62 0 180)
-				(length 2.54)
-				(name "VO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
 	)
-	(symbol "AZ1117CH2-ADJ"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "U"
-			(at -3.556 3.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AZ1117CH2-ADJ"
-			(at 0.254 3.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 0 6.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117C.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A 15V Adjustable LDO Linear Regulator, SOT-223"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "low-dropout regulator ldo positiv adjustable"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOT?223*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "AZ1117CH2-ADJ_0_1"
-			(rectangle
-				(start -5.08 2.54)
-				(end 5.08 -2.54)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "AZ1117CH2-ADJ_1_1"
-			(pin power_in line
-				(at -7.62 0 0)
-				(length 2.54)
-				(name "VI"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 0 -5.08 90)
-				(length 2.54)
-				(name "ADJ"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 7.62 0 180)
-				(length 2.54)
-				(name "VO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)	
 	(symbol "AZ1117CH2-1.5"
-		(extends "AZ1117CH2-1.2")
+		(extends "L7805")
 		(property "Reference" "U"
 			(at -3.81 3.556 0)
 			(effects
@@ -77311,7 +77102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1A 15V Fixed LDO Linear Regulator, 1.5V, SOT-223"
+		(property "Description" "1A Fixed 1.5V LDO Linear Regulator, 15V Max Input, SOT-223"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77320,7 +77111,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "low-dropout regulator ldo positiv fixed"
+		(property "ki_keywords" "low-dropout positive"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77340,7 +77131,7 @@
 		)
 	)
 	(symbol "AZ1117CH2-1.8"
-		(extends "AZ1117CH2-1.2")
+		(extends "L7805")
 		(property "Reference" "U"
 			(at -3.81 3.556 0)
 			(effects
@@ -77377,7 +77168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1A 15V Fixed LDO Linear Regulator, 1.8V, SOT-223"
+		(property "Description" "1A Fixed 1.8V LDO Linear Regulator, 15V Max Input, SOT-223"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77386,7 +77177,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "low-dropout regulator ldo positiv fixed"
+		(property "ki_keywords" "low-dropout positive"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77406,7 +77197,7 @@
 		)
 	)
 	(symbol "AZ1117CH2-2.5"
-		(extends "AZ1117CH2-1.2")
+		(extends "L7805")
 		(property "Reference" "U"
 			(at -3.81 3.556 0)
 			(effects
@@ -77443,7 +77234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1A 15V Fixed LDO Linear Regulator, 2.5V, SOT-223"
+		(property "Description" "1A Fixed 2.5V LDO Linear Regulator, 15V Max Input, SOT-223"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77452,7 +77243,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "low-dropout regulator ldo positiv fixed"
+		(property "ki_keywords" "low-dropout positive"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77472,7 +77263,7 @@
 		)
 	)
 	(symbol "AZ1117CH2-3.3"
-		(extends "AZ1117CH2-1.2")
+		(extends "L7805")
 		(property "Reference" "U"
 			(at -3.81 3.556 0)
 			(effects
@@ -77509,7 +77300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1A 15V Fixed LDO Linear Regulator, 3.3V, SOT-223"
+		(property "Description" "1A Fixed 3.3V LDO Linear Regulator, 15V Max Input, SOT-223"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77518,7 +77309,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "low-dropout regulator ldo positiv fixed"
+		(property "ki_keywords" "low-dropout positive"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77538,7 +77329,7 @@
 		)
 	)
 	(symbol "AZ1117CH2-5.0"
-		(extends "AZ1117CH2-1.2")
+		(extends "L7805")
 		(property "Reference" "U"
 			(at -3.81 3.556 0)
 			(effects
@@ -77575,7 +77366,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1A 15V Fixed LDO Linear Regulator, 5V, SOT-223"
+		(property "Description" "1A Fixed 5.0V LDO Linear Regulator, 15V Max Input, SOT-223"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77584,7 +77375,73 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "low-dropout regulator ldo positiv fixed"
+		(property "ki_keywords" "low-dropout positive"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOT?223*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "AZ1117CH2-ADJ"
+		(extends "LM317_TO39")
+		(property "Reference" "U"
+			(at -3.81 3.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AZ1117CH2-ADJ"
+			(at 0 3.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 0 5.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117C.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Adjustable LDO Linear Regulator, 15V Max Input, SOT-223"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "low-dropout positive"
 			(at 0 0 0)
 			(effects
 				(font
