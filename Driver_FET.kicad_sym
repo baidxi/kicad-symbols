@@ -10635,7 +10635,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "ICL7667"
+	(symbol "ICL7667xPA"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -10648,7 +10648,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ICL7667"
+		(property "Value" "ICL7667xPA"
 			(at 1.27 8.89 0)
 			(effects
 				(font
@@ -10657,7 +10657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 0 -18.288 0)
 			(effects
 				(font
@@ -10675,7 +10675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual Power MOSFET Driver, V+ = 4.5..15V, V- = -15..0V, TTL/CMOS compatible inputs, DIP-8 / SOIC-8"
+		(property "Description" "Dual Power MOSFET Driver, V+ = 4.5..15V, V- = -15..0V, TTL/CMOS compatible inputs, DIP-8"
 			(at 0 -16.256 0)
 			(effects
 				(font
@@ -10684,7 +10684,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Intersil clock-driver clock-buffer DS0026 driver-array"
+		(property "ki_keywords" "Intersil clock-driver clock-buffer DS0026 driver-array ICL7667CPAZ"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10693,7 +10693,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP?8?W7.62mm* *SOIC*3.9x4.9mm*P1.27mm*"
+		(property "ki_fp_filters" "DIP?8?W7.62mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10702,7 +10702,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "ICL7667_0_1"
+		(symbol "ICL7667xPA_0_1"
 			(rectangle
 				(start -7.62 -7.62)
 				(end 7.62 7.62)
@@ -10715,7 +10715,7 @@
 				)
 			)
 		)
-		(symbol "ICL7667_1_1"
+		(symbol "ICL7667xPA_1_1"
 			(pin input line
 				(at -10.16 2.54 0)
 				(length 2.54)
@@ -35080,7 +35080,7 @@
 		)
 	)
 	(symbol "DS0026"
-		(extends "ICL7667")
+		(extends "ICL7667xPA")
 		(property "Reference" "U"
 			(at -7.62 8.89 0)
 			(effects
@@ -35792,6 +35792,72 @@
 			)
 		)
 		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "ICL7667xBA"
+		(extends "ICL7667xPA")
+		(property "Reference" "U"
+			(at -7.62 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ICL7667xBA"
+			(at 1.27 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 0 -18.288 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.renesas.com/en/document/dst/icl7667-datasheet"
+			(at 0 -14.224 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Power MOSFET Driver, V+ = 4.5..15V, V- = -15..0V, TTL/CMOS compatible inputs, SOIC-8"
+			(at 0 -16.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Intersil clock-driver clock-buffer DS0026 driver-array ICL7667CBAZA-T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*SOIC*3.9x4.9mm*P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
