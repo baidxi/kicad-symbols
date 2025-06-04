@@ -12054,7 +12054,7 @@
 		(symbol "MCP25625x-x-ML_0_1"
 			(rectangle
 				(start -12.7 25.4)
-				(end 12.7 -25.4)
+				(end 12.7 -22.86)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -12066,7 +12066,7 @@
 		)
 		(symbol "MCP25625x-x-ML_1_0"
 			(pin passive line
-				(at 5.08 -27.94 90)
+				(at 5.08 -25.4 90)
 				(length 2.54)
 				(name "EP"
 					(effects
@@ -12088,24 +12088,6 @@
 			(pin input line
 				(at -15.24 20.32 0)
 				(length 2.54)
-				(name "STBY"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 15.24 0)
-				(length 2.54)
 				(name "SCK"
 					(effects
 						(font
@@ -12122,7 +12104,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 12.7 0)
+				(at -15.24 17.78 0)
 				(length 2.54)
 				(name "SI"
 					(effects
@@ -12140,7 +12122,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 10.16 0)
+				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "SO"
 					(effects
@@ -12158,7 +12140,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 7.62 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -12176,25 +12158,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 2.54 0)
-				(length 2.54)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 -2.54 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "~{Tx0RTS}"
 					(effects
@@ -12212,7 +12176,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -5.08 0)
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "~{Tx1RTS}"
 					(effects
@@ -12230,7 +12194,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -7.62 0)
+				(at -15.24 2.54 0)
 				(length 2.54)
 				(name "~{Tx2RTS}"
 					(effects
@@ -12248,7 +12212,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 -12.7 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "~{Rx0BF}"
 					(effects
@@ -12266,7 +12230,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 -15.24 0)
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "~{Rx1BF}"
 					(effects
@@ -12284,7 +12248,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 -20.32 0)
+				(at -15.24 -10.16 0)
 				(length 2.54)
 				(name "~{INT}"
 					(effects
@@ -12294,6 +12258,42 @@
 					)
 				)
 				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -15.24 0)
+				(length 2.54)
+				(name "STBY"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -17.78 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12338,7 +12338,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -27.94 90)
+				(at -2.54 -25.4 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -12356,25 +12356,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -27.94 90)
-				(length 2.54)
-				(name "V_{SS}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 27.94 270)
+				(at 2.54 27.94 270)
 				(length 2.54)
 				(name "V_{DDA}"
 					(effects
@@ -12391,8 +12373,26 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 2.54 -25.4 90)
+				(length 2.54)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin no_connect line
-				(at 12.7 -5.08 180)
+				(at 12.7 -17.78 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -12411,7 +12411,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 12.7 -7.62 180)
+				(at 12.7 -20.32 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -12430,7 +12430,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 17.78 180)
+				(at 15.24 20.32 180)
 				(length 2.54)
 				(name "CANH"
 					(effects
@@ -12448,7 +12448,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 15.24 180)
+				(at 15.24 17.78 180)
 				(length 2.54)
 				(name "CANL"
 					(effects
@@ -12466,7 +12466,7 @@
 				)
 			)
 			(pin output line
-				(at 15.24 10.16 180)
+				(at 15.24 12.7 180)
 				(length 2.54)
 				(name "R_{XD}"
 					(effects
@@ -12484,7 +12484,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 7.62 180)
+				(at 15.24 10.16 180)
 				(length 2.54)
 				(name "T_{XD}"
 					(effects
@@ -12502,7 +12502,7 @@
 				)
 			)
 			(pin output line
-				(at 15.24 2.54 180)
+				(at 15.24 5.08 180)
 				(length 2.54)
 				(name "TxCAN"
 					(effects
@@ -12520,7 +12520,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 0 180)
+				(at 15.24 2.54 180)
 				(length 2.54)
 				(name "RxCAN"
 					(effects
@@ -12530,6 +12530,24 @@
 					)
 				)
 				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -2.54 180)
+				(length 2.54)
+				(name "OSC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12555,26 +12573,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 15.24 -17.78 180)
-				(length 2.54)
-				(name "OSC1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at 15.24 -20.32 180)
+				(at 15.24 -15.24 180)
 				(length 2.54)
 				(name "CLKOUT"
 					(effects
@@ -12662,7 +12662,7 @@
 		(symbol "MCP25625x-x-SS_0_1"
 			(rectangle
 				(start -12.7 25.4)
-				(end 12.7 -25.4)
+				(end 12.7 -22.86)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -12675,24 +12675,6 @@
 		(symbol "MCP25625x-x-SS_1_1"
 			(pin input line
 				(at -15.24 20.32 0)
-				(length 2.54)
-				(name "STBY"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "SCK"
 					(effects
@@ -12710,7 +12692,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 12.7 0)
+				(at -15.24 17.78 0)
 				(length 2.54)
 				(name "SI"
 					(effects
@@ -12728,7 +12710,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 10.16 0)
+				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "SO"
 					(effects
@@ -12746,7 +12728,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 7.62 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -12764,25 +12746,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 2.54 0)
-				(length 2.54)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 -2.54 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "~{Tx0RTS}"
 					(effects
@@ -12800,7 +12764,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -5.08 0)
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "~{Tx1RTS}"
 					(effects
@@ -12818,7 +12782,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -7.62 0)
+				(at -15.24 2.54 0)
 				(length 2.54)
 				(name "~{Tx2RTS}"
 					(effects
@@ -12836,7 +12800,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 -12.7 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "~{Rx0BF}"
 					(effects
@@ -12854,7 +12818,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 -15.24 0)
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "~{Rx1BF}"
 					(effects
@@ -12872,7 +12836,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 -20.32 0)
+				(at -15.24 -10.16 0)
 				(length 2.54)
 				(name "~{INT}"
 					(effects
@@ -12882,6 +12846,42 @@
 					)
 				)
 				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -15.24 0)
+				(length 2.54)
+				(name "STBY"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -17.78 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12926,7 +12926,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -27.94 90)
+				(at -2.54 -25.4 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -12944,25 +12944,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -27.94 90)
-				(length 2.54)
-				(name "V_{SS}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "26"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 5.08 27.94 270)
+				(at 2.54 27.94 270)
 				(length 2.54)
 				(name "V_{DDA}"
 					(effects
@@ -12979,8 +12961,26 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 2.54 -25.4 90)
+				(length 2.54)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin no_connect line
-				(at 12.7 -5.08 180)
+				(at 12.7 -17.78 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -12999,7 +12999,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 12.7 -7.62 180)
+				(at 12.7 -20.32 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -13018,7 +13018,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 17.78 180)
+				(at 15.24 20.32 180)
 				(length 2.54)
 				(name "CANH"
 					(effects
@@ -13036,7 +13036,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 15.24 180)
+				(at 15.24 17.78 180)
 				(length 2.54)
 				(name "CANL"
 					(effects
@@ -13054,7 +13054,7 @@
 				)
 			)
 			(pin output line
-				(at 15.24 10.16 180)
+				(at 15.24 12.7 180)
 				(length 2.54)
 				(name "R_{XD}"
 					(effects
@@ -13072,7 +13072,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 7.62 180)
+				(at 15.24 10.16 180)
 				(length 2.54)
 				(name "T_{XD}"
 					(effects
@@ -13090,7 +13090,7 @@
 				)
 			)
 			(pin output line
-				(at 15.24 2.54 180)
+				(at 15.24 5.08 180)
 				(length 2.54)
 				(name "TxCAN"
 					(effects
@@ -13108,7 +13108,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 0 180)
+				(at 15.24 2.54 180)
 				(length 2.54)
 				(name "RxCAN"
 					(effects
@@ -13118,6 +13118,24 @@
 					)
 				)
 				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -2.54 180)
+				(length 2.54)
+				(name "OSC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -13143,26 +13161,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 15.24 -17.78 180)
-				(length 2.54)
-				(name "OSC1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at 15.24 -20.32 180)
+				(at 15.24 -15.24 180)
 				(length 2.54)
 				(name "CLKOUT"
 					(effects
