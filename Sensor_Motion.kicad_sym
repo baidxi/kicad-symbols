@@ -11299,7 +11299,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "3-axis inclinometer, angle output"
+		(property "ki_keywords" "inclinometer angle output"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11320,7 +11320,7 @@
 		(symbol "SCL3300-D01_1_1"
 			(rectangle
 				(start -10.16 12.7)
-				(end 12.7 -12.7)
+				(end 10.16 -12.7)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -11366,6 +11366,24 @@
 				)
 			)
 			(pin power_in line
+				(at -2.54 15.24 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
 				(at -2.54 -15.24 90)
 				(length 2.54)
 				(name "AVSS"
@@ -11386,14 +11404,14 @@
 			(pin power_in line
 				(at 0 15.24 270)
 				(length 2.54)
-				(name "VDD"
+				(name "DVIO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "4"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11412,24 +11430,6 @@
 					)
 				)
 				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 15.24 270)
-				(length 2.54)
-				(name "DVIO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11474,7 +11474,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 5.08 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
 				(name "CSB"
 					(effects
@@ -11492,7 +11492,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 2.54 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(name "MOSI"
 					(effects
@@ -11510,7 +11510,7 @@
 				)
 			)
 			(pin output line
-				(at 15.24 0 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "MISO"
 					(effects
@@ -11528,7 +11528,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 -2.54 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(name "SCK"
 					(effects
