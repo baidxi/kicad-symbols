@@ -17839,7 +17839,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:HVQFN-16-1EP_3x3mm_P0.5mm_EP1.5x1.5mm"
+		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17857,7 +17857,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IO expander 8 GPIO, I2C 400kHz, Interrupt, 1.65 - 5.5V, TSSOP-24"
+		(property "Description" "8-bit I2C-bus/SMBus I/O-expander, 400kHz, Interrupt, 1.65 - 5.5V supply, HVQFN-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17875,7 +17875,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "HVQFN?16?1EP?3x3mm?P0.5mm?EP1.5x1.5mm*"
+		(property "ki_fp_filters" "*VQFN*1EP*3x3mm*P0.5mm*EP1.6x1.6mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17901,14 +17901,14 @@
 			(pin bidirectional line
 				(at -12.7 10.16 0)
 				(length 2.54)
-				(name "SDA"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "13"
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17919,14 +17919,14 @@
 			(pin bidirectional line
 				(at -12.7 7.62 0)
 				(length 2.54)
-				(name "SCL"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "12"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17991,7 +17991,7 @@
 			(pin power_in line
 				(at -2.54 17.78 270)
 				(length 2.54)
-				(name "VDD_I2C"
+				(name "V_{DD(I2C)}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18006,10 +18006,29 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -17.78 270)
+				(length 2.54)
+				(hide yes)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 0 -17.78 90)
 				(length 2.54)
-				(name "VSS"
+				(name "V_{SS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18027,7 +18046,7 @@
 			(pin power_in line
 				(at 2.54 17.78 270)
 				(length 2.54)
-				(name "VDD_P"
+				(name "V_{DD(P)}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18209,7 +18228,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-16-1EP_1.8x2.6mm_P0.4mm_EP0.7x1.5mm"
+		(property "Footprint" "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18227,7 +18246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IO expander 8 GPIO, I2C 400kHz, Interrupt, 1.65 - 5.5V, TSSOP-24"
+		(property "Description" "8-bit I2C-bus/SMBus I/O-expander, 400kHz, Interrupt, 1.65 - 5.5V supply, QFN-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18245,7 +18264,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*QFN?16?1EP?1.8x2.6mm?P0.4mm?EP0.7x1.5mm*"
+		(property "ki_fp_filters" "*QFN*1.8x2.6mm*P0.4mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18271,14 +18290,14 @@
 			(pin bidirectional line
 				(at -12.7 10.16 0)
 				(length 2.54)
-				(name "SDA"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "13"
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18289,14 +18308,14 @@
 			(pin bidirectional line
 				(at -12.7 7.62 0)
 				(length 2.54)
-				(name "SCL"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "12"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18361,7 +18380,7 @@
 			(pin power_in line
 				(at -2.54 17.78 270)
 				(length 2.54)
-				(name "VDD_I2C"
+				(name "V_{DD(I2C)}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18379,7 +18398,7 @@
 			(pin power_in line
 				(at 0 -17.78 90)
 				(length 2.54)
-				(name "VSS"
+				(name "V_{SS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18397,7 +18416,7 @@
 			(pin power_in line
 				(at 2.54 17.78 270)
 				(length 2.54)
-				(name "VDD_P"
+				(name "V_{DD(P)}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18597,7 +18616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IO expander 8 GPIO, I2C 400kHz, Interrupt, 1.65 - 5.5V, TSSOP-24"
+		(property "Description" "8-bit I2C-bus/SMBus I/O-expander, 400kHz, Interrupt, 1.65 - 5.5V supply, TSSOP-24"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -18615,7 +18634,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*TSSOP?16*4.4x5mm*P0.65mm*"
+		(property "ki_fp_filters" "*TSSOP*4.4x5mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18641,14 +18660,14 @@
 			(pin bidirectional line
 				(at -12.7 10.16 0)
 				(length 2.54)
-				(name "SDA"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18659,14 +18678,14 @@
 			(pin bidirectional line
 				(at -12.7 7.62 0)
 				(length 2.54)
-				(name "SCL"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "14"
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18731,7 +18750,7 @@
 			(pin power_in line
 				(at -2.54 17.78 270)
 				(length 2.54)
-				(name "VDD_I2C"
+				(name "V_{DD(I2C)}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18749,7 +18768,7 @@
 			(pin power_in line
 				(at 0 -17.78 90)
 				(length 2.54)
-				(name "VSS"
+				(name "V_{SS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18767,7 +18786,7 @@
 			(pin power_in line
 				(at 2.54 17.78 270)
 				(length 2.54)
-				(name "VDD_P"
+				(name "V_{DD(P)}"
 					(effects
 						(font
 							(size 1.27 1.27)
