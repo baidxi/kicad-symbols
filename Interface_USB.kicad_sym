@@ -33612,7 +33612,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm"
-			(at 0.254 -45.72 0)
+			(at 0 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33621,7 +33621,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2410121440_Genesys-Logic-GL3224-ONY04_C157358.pdf"
-			(at 0.254 -48.006 0)
+			(at 0 -48.006 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33630,7 +33630,7 @@
 			)
 		)
 		(property "Description" "USB 3.0 Dual LUN Memory Card Reader Controller, external firmware support (SPI Flash Memory), WQFN-48"
-			(at -19.304 32.258 0)
+			(at 0 -43.434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33848,17 +33848,17 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at -22.86 -5.08 0)
 				(length 2.54)
-				(name "SPI_MISO"
+				(name "SPI_CS"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "17"
+				(number "20"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -33868,24 +33868,6 @@
 			)
 			(pin output line
 				(at -22.86 -7.62 0)
-				(length 2.54)
-				(name "SPI_MOSI"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -22.86 -10.16 0)
 				(length 2.54)
 				(name "SPI_CK"
 					(effects
@@ -33903,16 +33885,34 @@
 				)
 			)
 			(pin output line
-				(at -22.86 -12.7 0)
+				(at -22.86 -10.16 0)
 				(length 2.54)
-				(name "SPI_CS"
+				(name "SPI_MOSI"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "20"
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -22.86 -12.7 0)
+				(length 2.54)
+				(name "SPI_MISO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
