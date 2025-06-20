@@ -5893,184 +5893,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "INA280A1"
-		(pin_names
-			(offset 0.127)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "U"
-			(at 3.81 3.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "INA280A1"
-			(at 3.81 -2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
-			(at 1.27 1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina280.pdf"
-			(at 3.81 3.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 20 V/V, SC-70"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "current monitor shunt sensor"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOT?353*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "INA280A1_0_1"
-			(polyline
-				(pts
-					(xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "INA280A1_1_1"
-			(pin input line
-				(at -7.62 2.54 0)
-				(length 2.54)
-				(name "+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -7.62 -2.54 0)
-				(length 2.54)
-				(name "-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 7.62 270)
-				(length 3.81)
-				(name "V+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 -7.62 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 7.62 0 180)
-				(length 2.54)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
 	(symbol "INA282"
 		(pin_names
 			(offset 0.127)
@@ -14480,8 +14302,8 @@
 			)
 		)
 	)
-	(symbol "INA280A2"
-		(extends "INA280A1")
+	(symbol "INA280A1IDCK"
+		(extends "INA196")
 		(property "Reference" "U"
 			(at 3.81 3.81 0)
 			(effects
@@ -14491,7 +14313,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA280A2"
+		(property "Value" "INA280A1IDCK"
 			(at 3.81 -2.54 0)
 			(effects
 				(font
@@ -14518,7 +14340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 50 V/V, SC-70"
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Gain 20 V/V, SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14527,7 +14349,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "current monitor shunt sensor"
+		(property "ki_keywords" "monitor shunt sensor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14546,8 +14368,8 @@
 			)
 		)
 	)
-	(symbol "INA280A3"
-		(extends "INA280A1")
+	(symbol "INA280A2DCK"
+		(extends "INA196")
 		(property "Reference" "U"
 			(at 3.81 3.81 0)
 			(effects
@@ -14557,7 +14379,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA280A3"
+		(property "Value" "INA280A2DCK"
 			(at 3.81 -2.54 0)
 			(effects
 				(font
@@ -14584,7 +14406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 100 V/V, SC-70"
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Gain 50 V/V, SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14593,7 +14415,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "current monitor shunt sensor"
+		(property "ki_keywords" "monitor shunt sensor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14612,8 +14434,8 @@
 			)
 		)
 	)
-	(symbol "INA280A4"
-		(extends "INA280A1")
+	(symbol "INA280A3DCK"
+		(extends "INA196")
 		(property "Reference" "U"
 			(at 3.81 3.81 0)
 			(effects
@@ -14623,7 +14445,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA280A4"
+		(property "Value" "INA280A3DCK"
 			(at 3.81 -2.54 0)
 			(effects
 				(font
@@ -14650,7 +14472,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 200 V/V, SC-70"
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Gain 100 V/V, SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14659,7 +14481,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "current monitor shunt sensor"
+		(property "ki_keywords" "monitor shunt sensor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14678,8 +14500,8 @@
 			)
 		)
 	)
-	(symbol "INA280A5"
-		(extends "INA280A1")
+	(symbol "INA280A4DCK"
+		(extends "INA196")
 		(property "Reference" "U"
 			(at 3.81 3.81 0)
 			(effects
@@ -14689,7 +14511,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA280A5"
+		(property "Value" "INA280A4DCK"
 			(at 3.81 -2.54 0)
 			(effects
 				(font
@@ -14716,7 +14538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 500 V/V, SC-70"
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Gain 200 V/V, SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14725,7 +14547,73 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "current monitor shunt sensor"
+		(property "ki_keywords" "monitor shunt sensor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOT?353*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "INA280A5DCK"
+		(extends "INA196")
+		(property "Reference" "U"
+			(at 3.81 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "INA280A5DCK"
+			(at 3.81 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+			(at 1.27 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina280.pdf"
+			(at 3.81 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Gain 500 V/V, SC-70"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "monitor shunt sensor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15074,8 +14962,8 @@
 			)
 		)
 	)
-	(symbol "INA290A1"
-		(extends "INA280A1")
+	(symbol "INA290A1IDCK"
+		(extends "INA196")
 		(property "Reference" "U"
 			(at 3.81 3.81 0)
 			(effects
@@ -15085,7 +14973,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA290A1"
+		(property "Value" "INA290A1IDCK"
 			(at 3.81 -2.54 0)
 			(effects
 				(font
@@ -15112,7 +15000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 20 V/V, SC-70"
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Ultra Precise, Gain 20 V/V, SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15121,7 +15009,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "current monitor shunt sensor"
+		(property "ki_keywords" "monitor shunt sensor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15140,8 +15028,8 @@
 			)
 		)
 	)
-	(symbol "INA290A2"
-		(extends "INA280A1")
+	(symbol "INA290A2IDCK"
+		(extends "INA196")
 		(property "Reference" "U"
 			(at 3.81 3.81 0)
 			(effects
@@ -15151,7 +15039,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA290A2"
+		(property "Value" "INA290A2IDCK"
 			(at 3.81 -2.54 0)
 			(effects
 				(font
@@ -15178,7 +15066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 50 V/V, SC-70"
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Ultra Precise, Gain 50 V/V, SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15187,7 +15075,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "current monitor shunt sensor"
+		(property "ki_keywords" "monitor shunt sensor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15206,8 +15094,8 @@
 			)
 		)
 	)
-	(symbol "INA290A3"
-		(extends "INA280A1")
+	(symbol "INA290A3IDCK"
+		(extends "INA196")
 		(property "Reference" "U"
 			(at 3.81 3.81 0)
 			(effects
@@ -15217,7 +15105,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA290A3"
+		(property "Value" "INA290A3IDCK"
 			(at 3.81 -2.54 0)
 			(effects
 				(font
@@ -15244,7 +15132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 100 V/V, SC-70"
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Ultra Precise, Gain 100 V/V, SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15253,7 +15141,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "current monitor shunt sensor"
+		(property "ki_keywords" "monitor shunt sensor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15272,8 +15160,8 @@
 			)
 		)
 	)
-	(symbol "INA290A4"
-		(extends "INA280A1")
+	(symbol "INA290A4IDCK"
+		(extends "INA196")
 		(property "Reference" "U"
 			(at 3.81 3.81 0)
 			(effects
@@ -15283,7 +15171,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA290A4"
+		(property "Value" "INA290A4IDCK"
 			(at 3.81 -2.54 0)
 			(effects
 				(font
@@ -15310,7 +15198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 200 V/V, SC-70"
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Ultra Precise, Gain 200 V/V, SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15319,7 +15207,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "current monitor shunt sensor"
+		(property "ki_keywords" "monitor shunt sensor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15338,8 +15226,8 @@
 			)
 		)
 	)
-	(symbol "INA290A5"
-		(extends "INA280A1")
+	(symbol "INA290A5IDCK"
+		(extends "INA196")
 		(property "Reference" "U"
 			(at 3.81 3.81 0)
 			(effects
@@ -15349,7 +15237,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "INA290A5"
+		(property "Value" "INA290A5IDCK"
 			(at 3.81 -2.54 0)
 			(effects
 				(font
@@ -15376,7 +15264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V, 1.1-MHz, Gain 500 V/V, SC-70"
+		(property "Description" "Current Sense Amplifier, 2.7-V to 120-V Common Mode, 1.1-MHz, Ultra Precise, Gain 500 V/V, SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15385,7 +15273,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "current monitor shunt sensor"
+		(property "ki_keywords" "monitor shunt sensor"
 			(at 0 0 0)
 			(effects
 				(font
