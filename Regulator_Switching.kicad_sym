@@ -46568,23 +46568,25 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -3.81 -11.43 0)
+			(at -5.08 9.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "LTC3221EDC"
-			(at 7.62 -11.43 0)
+			(at 0 9.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:DFN-6-1EP_2x2mm_P0.5mm_EP0.61x1.42mm"
-			(at 0 17.78 0)
+			(at 0 -18.542 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46593,7 +46595,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/3221f.pdf"
-			(at 0 20.32 0)
+			(at 0 -16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46601,8 +46603,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Micropower, Regulated Charge Pump, input 1.8V to 5.5V, 60mA DFN-6"
-			(at 0 22.86 0)
+		(property "Description" "Micropower, Regulated Charge Pump, 1.8..5.5V input supply, adjustable Vout (FB pin), output current up to 60mA, DFN-6 (WSON-6)"
+			(at 0 -13.462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46610,7 +46612,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "DC-DC Charge Pump"
+		(property "ki_keywords" "Linear-Technology Analog-Devices DC-DC-converter"
 			(at 0 0 0)
 			(effects
 				(font
@@ -46619,7 +46621,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DFN*1EP*2x2mm*P0.5mm*EP0.61x1.42mm*"
+		(property "ki_fp_filters" "*DFN*2x2mm*P0.5mm*EP0.61x1.42mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -46630,8 +46632,8 @@
 		)
 		(symbol "LTC3221EDC_1_1"
 			(rectangle
-				(start -5.08 10.16)
-				(end 5.08 -10.16)
+				(start -5.08 7.62)
+				(end 5.08 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -46659,9 +46661,9 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 12.7 270)
+				(at -7.62 0 0)
 				(length 2.54)
-				(name "C+"
+				(name "C^{+}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -46676,8 +46678,26 @@
 					)
 				)
 			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "C^{-}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at 0 -12.7 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -46695,7 +46715,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -46706,24 +46726,6 @@
 					)
 				)
 				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 3.81 12.7 270)
-				(length 2.54)
-				(name "C-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -46750,7 +46752,7 @@
 				)
 			)
 			(pin input line
-				(at 7.62 -7.62 180)
+				(at 7.62 -2.54 180)
 				(length 2.54)
 				(name "FB"
 					(effects
