@@ -25074,7 +25074,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -11.938 27.432 0)
+			(at -12.192 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25083,7 +25083,7 @@
 			)
 		)
 		(property "Value" "PCM1862DBT"
-			(at 7.874 27.432 0)
+			(at 7.62 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25120,7 +25120,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Texas-Instruments PCM PGA audio-front-end analog-MUX mixer energysense PCM1863DBT"
+		(property "ki_keywords" "Texas-Instruments PCM PGA GPIO audio-front-end analog-MUX mixer energysense PCM1863DBT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -25140,7 +25140,7 @@
 		)
 		(symbol "PCM1862DBT_0_0"
 			(pin input line
-				(at -15.24 2.54 0)
+				(at -15.24 10.16 0)
 				(length 2.54)
 				(name "VINL3/VIN4P"
 					(effects
@@ -25158,16 +25158,16 @@
 				)
 			)
 			(pin input line
-				(at -15.24 0 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
-				(name "VINR3/VIN3P"
+				(name "VINL4/VIN4M"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "30"
+				(number "27"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -25178,14 +25178,14 @@
 			(pin input line
 				(at -15.24 -2.54 0)
 				(length 2.54)
-				(name "VINL4/VIN4M"
+				(name "VINR3/VIN3P"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "27"
+				(number "30"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -25212,7 +25212,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 5.08 180)
+				(at 15.24 2.54 180)
 				(length 2.54)
 				(name "MD0"
 					(effects
@@ -25230,7 +25230,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 0 180)
+				(at 15.24 -2.54 180)
 				(length 2.54)
 				(name "MS/AD"
 					(effects
@@ -25250,8 +25250,8 @@
 		)
 		(symbol "PCM1862DBT_0_1"
 			(rectangle
-				(start -12.7 25.4)
-				(end 12.7 -25.4)
+				(start -12.7 27.94)
+				(end 12.7 -27.94)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -25263,7 +25263,7 @@
 		)
 		(symbol "PCM1862DBT_1_1"
 			(pin power_out line
-				(at -15.24 17.78 0)
+				(at -15.24 20.32 0)
 				(length 2.54)
 				(name "Mic_Bias"
 					(effects
@@ -25281,7 +25281,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 12.7 0)
+				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "VINL1/VIN1P"
 					(effects
@@ -25299,25 +25299,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 10.16 0)
-				(length 2.54)
-				(name "VINR1/VIN2P"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 7.62 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "VINL2/VIN1M"
 					(effects
@@ -25335,7 +25317,25 @@
 				)
 			)
 			(pin input line
-				(at -15.24 5.08 0)
+				(at -15.24 2.54 0)
+				(length 2.54)
+				(name "VINR1/VIN2P"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 0 0)
 				(length 2.54)
 				(name "VINR2/VIN2M"
 					(effects
@@ -25407,7 +25407,7 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 27.94 270)
+				(at -5.08 30.48 270)
 				(length 2.54)
 				(name "AVDD"
 					(effects
@@ -25425,7 +25425,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 27.94 270)
+				(at -2.54 30.48 270)
 				(length 2.54)
 				(name "DVDD"
 					(effects
@@ -25443,7 +25443,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -27.94 90)
+				(at -2.54 -30.48 90)
 				(length 2.54)
 				(name "AGND"
 					(effects
@@ -25461,7 +25461,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
+				(at 0 30.48 270)
 				(length 2.54)
 				(name "IOVDD"
 					(effects
@@ -25479,7 +25479,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -27.94 90)
+				(at 2.54 -30.48 90)
 				(length 2.54)
 				(name "DGND"
 					(effects
@@ -25497,7 +25497,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 27.94 270)
+				(at 5.08 30.48 270)
 				(length 2.54)
 				(name "LDO"
 					(effects
@@ -25587,7 +25587,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 -2.54 180)
+				(at 15.24 -5.08 180)
 				(length 2.54)
 				(name "MC/SCL"
 					(effects
@@ -25605,7 +25605,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -5.08 180)
+				(at 15.24 -7.62 180)
 				(length 2.54)
 				(name "MOSI/SDA"
 					(effects
@@ -25623,7 +25623,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -7.62 180)
+				(at 15.24 -10.16 180)
 				(length 2.54)
 				(name "MISO/GPIO0"
 					(effects
@@ -25641,7 +25641,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -12.7 180)
+				(at 15.24 -15.24 180)
 				(length 2.54)
 				(name "GPIO1/INTA/DMIN"
 					(effects
@@ -25659,7 +25659,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -15.24 180)
+				(at 15.24 -17.78 180)
 				(length 2.54)
 				(name "GPIO2/INTB/DMCLK"
 					(effects
@@ -25677,7 +25677,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -17.78 180)
+				(at 15.24 -20.32 180)
 				(length 2.54)
 				(name "GPIO3/INTC"
 					(effects
@@ -25702,7 +25702,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -11.938 27.432 0)
+			(at -12.192 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25711,7 +25711,7 @@
 			)
 		)
 		(property "Value" "PCM1864DBT"
-			(at 7.874 27.432 0)
+			(at 7.62 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25729,7 +25729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/pcm1862.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/pcm1864.pdf"
 			(at 5.334 -34.29 0)
 			(effects
 				(font
@@ -25748,7 +25748,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Texas-Instruments PCM PGA audio-front-end analog-MUX mixer energysense PCM1865DBT"
+		(property "ki_keywords" "Texas-Instruments PCM PGA GPIO audio-front-end analog-MUX mixer energysense PCM1865DBT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -25768,7 +25768,7 @@
 		)
 		(symbol "PCM1864DBT_0_0"
 			(pin input line
-				(at -15.24 2.54 0)
+				(at -15.24 10.16 0)
 				(length 2.54)
 				(name "VINL3/VIN4P"
 					(effects
@@ -25786,16 +25786,16 @@
 				)
 			)
 			(pin input line
-				(at -15.24 0 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
-				(name "VINR3/VIN3P"
+				(name "VINL4/VIN4M"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "30"
+				(number "27"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -25806,14 +25806,14 @@
 			(pin input line
 				(at -15.24 -2.54 0)
 				(length 2.54)
-				(name "VINL4/VIN4M"
+				(name "VINR3/VIN3P"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "27"
+				(number "30"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -25840,7 +25840,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 5.08 180)
+				(at 15.24 2.54 180)
 				(length 2.54)
 				(name "MD0"
 					(effects
@@ -25858,7 +25858,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 0 180)
+				(at 15.24 -2.54 180)
 				(length 2.54)
 				(name "MS/AD"
 					(effects
@@ -25878,8 +25878,8 @@
 		)
 		(symbol "PCM1864DBT_0_1"
 			(rectangle
-				(start -12.7 25.4)
-				(end 12.7 -25.4)
+				(start -12.7 27.94)
+				(end 12.7 -27.94)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -25891,7 +25891,7 @@
 		)
 		(symbol "PCM1864DBT_1_1"
 			(pin power_out line
-				(at -15.24 17.78 0)
+				(at -15.24 20.32 0)
 				(length 2.54)
 				(name "Mic_Bias"
 					(effects
@@ -25909,7 +25909,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 12.7 0)
+				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "VINL1/VIN1P"
 					(effects
@@ -25927,25 +25927,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 10.16 0)
-				(length 2.54)
-				(name "VINR1/VIN2P"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 7.62 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "VINL2/VIN1M"
 					(effects
@@ -25963,7 +25945,25 @@
 				)
 			)
 			(pin input line
-				(at -15.24 5.08 0)
+				(at -15.24 2.54 0)
+				(length 2.54)
+				(name "VINR1/VIN2P"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 0 0)
 				(length 2.54)
 				(name "VINR2/VIN2M"
 					(effects
@@ -26035,7 +26035,7 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 27.94 270)
+				(at -5.08 30.48 270)
 				(length 2.54)
 				(name "AVDD"
 					(effects
@@ -26053,7 +26053,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 27.94 270)
+				(at -2.54 30.48 270)
 				(length 2.54)
 				(name "DVDD"
 					(effects
@@ -26071,7 +26071,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -27.94 90)
+				(at -2.54 -30.48 90)
 				(length 2.54)
 				(name "AGND"
 					(effects
@@ -26089,7 +26089,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
+				(at 0 30.48 270)
 				(length 2.54)
 				(name "IOVDD"
 					(effects
@@ -26107,7 +26107,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -27.94 90)
+				(at 2.54 -30.48 90)
 				(length 2.54)
 				(name "DGND"
 					(effects
@@ -26125,7 +26125,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 27.94 270)
+				(at 5.08 30.48 270)
 				(length 2.54)
 				(name "LDO"
 					(effects
@@ -26215,7 +26215,7 @@
 				)
 			)
 			(pin input line
-				(at 15.24 -2.54 180)
+				(at 15.24 -5.08 180)
 				(length 2.54)
 				(name "MC/SCL"
 					(effects
@@ -26233,7 +26233,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -5.08 180)
+				(at 15.24 -7.62 180)
 				(length 2.54)
 				(name "MOSI/SDA"
 					(effects
@@ -26251,7 +26251,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -7.62 180)
+				(at 15.24 -10.16 180)
 				(length 2.54)
 				(name "MISO/GPIO0/DMIN2"
 					(effects
@@ -26269,7 +26269,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -12.7 180)
+				(at 15.24 -15.24 180)
 				(length 2.54)
 				(name "GPIO1/INTA/DMIN"
 					(effects
@@ -26287,7 +26287,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -15.24 180)
+				(at 15.24 -17.78 180)
 				(length 2.54)
 				(name "GPIO2/INTB/DMCLK"
 					(effects
@@ -26305,7 +26305,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 15.24 -17.78 180)
+				(at 15.24 -20.32 180)
 				(length 2.54)
 				(name "GPIO3/INTC"
 					(effects
