@@ -10610,9 +10610,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "LM1881"
-		(pin_names
-			(offset 1.016)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -10633,6 +10630,33 @@
 			)
 		)
 		(property "Footprint" ""
+			(at 0 -16.002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm1881.pdf"
+			(at 0 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Video Sync Separator, composite sync and vertical sync outputs, DIP-8 / SOIC-8"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "National-Semiconductor Texas-Instruments NTSC PAL SECAM composite-video CVBS LM1881MX/NOPB LM1881N"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10641,16 +10665,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
+		(property "ki_fp_filters" "*SO*3.9x4.9mm*P1.27mm* DIP?8?W7.62mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10676,7 +10691,7 @@
 			(pin input line
 				(at -12.7 2.54 0)
 				(length 2.54)
-				(name "VIDEO"
+				(name "CVIN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10692,9 +10707,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "INT"
+				(name "RSET"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10748,7 +10763,7 @@
 			(pin output line
 				(at 12.7 5.08 180)
 				(length 2.54)
-				(name "CSYNC"
+				(name "CSOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10766,7 +10781,7 @@
 			(pin output line
 				(at 12.7 2.54 180)
 				(length 2.54)
-				(name "FRAME"
+				(name "VSOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10784,7 +10799,7 @@
 			(pin output line
 				(at 12.7 0 180)
 				(length 2.54)
-				(name "BURST"
+				(name "BPOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10802,7 +10817,7 @@
 			(pin output line
 				(at 12.7 -2.54 180)
 				(length 2.54)
-				(name "O/E"
+				(name "OEOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
