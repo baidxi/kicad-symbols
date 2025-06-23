@@ -14621,9 +14621,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "L298HN"
-		(pin_names
-			(offset 1.016)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14813,7 +14810,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at -7.62 -17.78 90)
 				(length 2.54)
 				(name "SENSE_A"
@@ -14831,7 +14828,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at -5.08 -17.78 90)
 				(length 2.54)
 				(name "SENSE_B"
@@ -14979,9 +14976,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "L298P"
-		(pin_names
-			(offset 1.016)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14994,14 +14988,14 @@
 			)
 		)
 		(property "Value" "L298P"
-			(at 10.16 -16.51 0)
+			(at 15.24 -17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:HSOP-20-1EP_11.0x15.9mm_P1.27mm_SlugDown"
 			(at 3.81 6.35 0)
 			(effects
 				(font
@@ -15029,6 +15023,15 @@
 			)
 		)
 		(property "ki_keywords" "H-bridge motor driver"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Package*SO:HSOP*1EP*11.0x15.9mm*P1.27mm*SlugDown*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15159,7 +15162,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at -10.16 -17.78 90)
 				(length 2.54)
 				(name "SENSE_A"
@@ -15177,7 +15180,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at -7.62 -17.78 90)
 				(length 2.54)
 				(name "SENSE_B"
@@ -15296,6 +15299,24 @@
 					)
 				)
 				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 -17.78 90)
+				(length 2.54)
+				(name "PAD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -40575,7 +40596,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-15_P2.54x5.08mm_StaggerOdd_Lead4.58mm_Vertical"
 			(at 1.27 -16.51 0)
 			(effects
 				(font

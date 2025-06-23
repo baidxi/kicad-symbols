@@ -12053,7 +12053,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 5.08 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "OTG"
 					(effects
@@ -12071,7 +12071,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 2.54 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "~{CE}"
 					(effects
@@ -12089,16 +12089,16 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 -5.08 0)
+				(at -10.16 -12.7 0)
 				(length 2.54)
-				(name "ILIM"
+				(name "ICHGSET"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12107,7 +12107,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 -7.62 0)
+				(at -10.16 -15.24 0)
 				(length 2.54)
 				(name "VSET"
 					(effects
@@ -12125,16 +12125,16 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 -10.16 0)
+				(at -10.16 -17.78 0)
 				(length 2.54)
-				(name "ICHGSET"
+				(name "ILIM"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12458,28 +12458,28 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "BQ25887"
+	(symbol "BQ25887RGE"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 6.985 16.51 0)
+			(at -6.604 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "BQ25887"
-			(at -3.175 16.51 0)
+		(property "Value" "BQ25887RGE"
+			(at 3.556 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm"
-			(at 0 2.54 0)
+		(property "Footprint" "Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
+			(at 0 -29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12488,7 +12488,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq25887.pdf"
-			(at 0 2.54 0)
+			(at 0 -27.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12496,7 +12496,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "I2C Controller 2-Cell 2A Boost mode LiIon Charger with cell balancing"
+		(property "Description" "I2C Controlled 2-Cell (Li-Ion / Li-Polymer), 2A boost-mode battery charger with cell balancing for USB input, 3.9..6.2V VBUS, 3.4..4.6V charge voltage regulation range (per cell), 1.5 MHz, VQFN-24"
+			(at 0 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Texas-Instruments"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12505,7 +12514,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "LiIon Charger Boost"
+		(property "ki_fp_filters" "*VQFN*4x4mm*P0.5mm*EP2.7*x2.7*mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12514,21 +12523,12 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VQFN*4x4mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "BQ25887_1_1"
+		(symbol "BQ25887RGE_1_1"
 			(rectangle
-				(start -7.62 15.24)
-				(end 7.62 -15.24)
+				(start -7.62 20.32)
+				(end 7.62 -20.32)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -12536,7 +12536,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 12.7 0)
+				(at -10.16 17.78 0)
 				(length 2.54)
 				(name "VBUS"
 					(effects
@@ -12553,17 +12553,35 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -10.16 7.62 0)
+			(pin open_collector line
+				(at -10.16 12.7 0)
 				(length 2.54)
-				(name "SDA"
+				(name "STAT"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "4"
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "~{PG}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12589,8 +12607,26 @@
 					)
 				)
 			)
-			(pin open_collector line
+			(pin bidirectional line
 				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "~{INT}"
 					(effects
@@ -12600,42 +12636,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
-				(at -10.16 0 0)
-				(length 2.54)
-				(name "~{PG}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "CD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12661,17 +12661,17 @@
 					)
 				)
 			)
-			(pin open_collector line
+			(pin input line
 				(at -10.16 -7.62 0)
 				(length 2.54)
-				(name "STAT"
+				(name "CD"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12679,8 +12679,45 @@
 					)
 				)
 			)
-			(pin input line
-				(at -10.16 -12.7 0)
+			(pin output line
+				(at -10.16 -15.24 0)
+				(length 2.54)
+				(name "SNS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 -15.24 0)
+				(length 2.54)
+				(hide yes)
+				(name "SNS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 -17.78 0)
 				(length 2.54)
 				(name "ILIM"
 					(effects
@@ -12698,7 +12735,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -17.78 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -12716,7 +12753,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -17.78 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -12734,8 +12771,27 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -22.86 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_out line
-				(at 10.16 12.7 180)
+				(at 10.16 17.78 180)
 				(length 2.54)
 				(name "PMID"
 					(effects
@@ -12753,7 +12809,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 12.7 180)
+				(at 10.16 17.78 180)
 				(length 2.54)
 				(hide yes)
 				(name "PMID"
@@ -12772,7 +12828,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 10.16 180)
+				(at 10.16 12.7 180)
 				(length 2.54)
 				(name "SW"
 					(effects
@@ -12790,7 +12846,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 10.16 180)
+				(at 10.16 12.7 180)
 				(length 2.54)
 				(hide yes)
 				(name "SW"
@@ -12808,7 +12864,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "BTST"
@@ -12827,7 +12883,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 5.08 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "BAT"
 					(effects
@@ -12845,7 +12901,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 5.08 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(hide yes)
 				(name "BAT"
@@ -12864,7 +12920,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 2.54 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "MID"
 					(effects
@@ -12882,7 +12938,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 0 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "CBSET"
 					(effects
@@ -12899,45 +12955,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 10.16 -5.08 180)
-				(length 2.54)
-				(name "SNS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 10.16 -5.08 180)
-				(length 2.54)
-				(hide yes)
-				(name "SNS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_out line
-				(at 10.16 -7.62 180)
+				(at 10.16 -12.7 180)
 				(length 2.54)
 				(name "REGN"
 					(effects
@@ -12955,7 +12974,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -12.7 180)
+				(at 10.16 -17.78 180)
 				(length 2.54)
 				(name "TS"
 					(effects
@@ -12980,7 +12999,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -5.08 22.86 0)
+			(at -6.604 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12988,7 +13007,7 @@
 			)
 		)
 		(property "Value" "BQ25895RTW"
-			(at 5.08 22.86 0)
+			(at 3.556 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12996,7 +13015,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias"
-			(at -2.54 25.4 0)
+			(at 0 -29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13005,7 +13024,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/bq25895.pdf"
-			(at -5.08 20.32 0)
+			(at 0 -27.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13013,7 +13032,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Controlled Single Cell 5A Fast Charger with MaxCharge, WQFN-24"
+		(property "Description" "I2C Controlled Single Cell (Li-Ion / Li-Polymer) 5A Fast Charger with MaxCharge, USB BC1.2 Detection, 3.9..14V VBUS, 3.840..4.608V charge voltage range, 1.5 MHz (buck mode) and 500 kHz /1.5 MHz (boost mode), WQFN-24"
+			(at 0 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "1-cell Battery-Charger Power-Path-Management OTG"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13022,16 +13050,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Battery Charger and Power Path Management"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "Texas*RTW*EP2.7x2.7mm*"
+		(property "ki_fp_filters" "*WQFN*4x4mm*P0.5mm*EP2.7*x2.7*mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13108,62 +13127,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -10.16 5.08 0)
-				(length 2.54)
-				(name "ILIM"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
-				(at -10.16 0 0)
-				(length 2.54)
-				(name "STAT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -10.16 -5.08 0)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at -10.16 -7.62 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -13180,10 +13145,28 @@
 					)
 				)
 			)
-			(pin open_collector line
-				(at -10.16 -10.16 0)
+			(pin bidirectional line
+				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "INT"
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "~{INT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -13199,7 +13182,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -12.7 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "OTG"
 					(effects
@@ -13217,7 +13200,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -15.24 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "~{CE}"
 					(effects
@@ -13235,7 +13218,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -17.78 0)
+				(at -10.16 -12.7 0)
 				(length 2.54)
 				(name "~{QON}"
 					(effects
@@ -13245,6 +13228,24 @@
 					)
 				)
 				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 -17.78 0)
+				(length 2.54)
+				(name "ILIM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -13308,8 +13309,44 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin open_collector line
 				(at 10.16 17.78 180)
+				(length 2.54)
+				(name "STAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 15.24 180)
+				(length 2.54)
+				(name "DSEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 10.16 180)
 				(length 2.54)
 				(name "PMID"
 					(effects
@@ -13327,7 +13364,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 12.7 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "SW"
 					(effects
@@ -13345,7 +13382,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 12.7 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
 				(hide yes)
 				(name "SW"
@@ -13364,7 +13401,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 5.08 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "BTST"
 					(effects
@@ -13382,7 +13419,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 2.54 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "SYS"
 					(effects
@@ -13400,7 +13437,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 2.54 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(hide yes)
 				(name "SYS"
@@ -13419,7 +13456,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 0 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "BAT"
 					(effects
@@ -13437,7 +13474,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 0 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
 				(hide yes)
 				(name "BAT"
@@ -13455,25 +13492,7 @@
 					)
 				)
 			)
-			(pin open_collector line
-				(at 10.16 -10.16 180)
-				(length 2.54)
-				(name "DSEL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
+			(pin power_out line
 				(at 10.16 -12.7 180)
 				(length 2.54)
 				(name "REGN"
