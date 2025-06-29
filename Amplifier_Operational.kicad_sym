@@ -3368,6 +3368,9 @@
 		(embedded_fonts no)
 	)
 	(symbol "ADA4691-2ACBZ"
+		(pin_names
+			(offset 0.127)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3407,7 +3410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual 2.7V..5V/±1.35V..±2.5V supply, 3.6 MHz, 1.1V/µs slew rate, ±500 µV offset, shutdown, RRO Op Amp, WLCSP-9"
+		(property "Description" "Dual RRO Op Amp, 2.7V to 5V single supply / ±1.35V to ±2.5V dual supply, 3.6 MHz bandwidth, 1.1V/µs slew rate, 500 µV offset, 1 shutdown pin, FBGA-9 (Analog Device WLCSP-9)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3424,7 +3427,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "analog-devices adi operational amplifier"
+		(property "ki_keywords" "analog-devices ADI operational-amplifier"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3492,19 +3495,19 @@
 				)
 			)
 			(pin input line
-				(at 0 -5.08 90)
-				(length 2.54)
-				(name "~{SHDN}"
+				(at 0 -7.62 90)
+				(length 5.08)
+				(name "~{SD_A/B}"
 					(effects
 						(font
-							(size 0.508 0.508)
+							(size 0.762 0.762)
 						)
 					)
 				)
 				(number "B2"
 					(effects
 						(font
-							(size 0.635 0.635)
+							(size 1.27 1.27)
 						)
 					)
 				)
@@ -3534,7 +3537,7 @@
 					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
