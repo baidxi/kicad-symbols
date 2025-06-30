@@ -7189,1114 +7189,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "MCP23018_SO"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "U"
-			(at -11.43 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP23018_SO"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm"
-			(at 5.08 -25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23018-Data-Sheet-DS20002103.pdf"
-			(at 5.08 -27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, open-drain outpus, SOIC-28"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "I2C parallel port expander Microchip SO"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOIC*7.5x17.9mm*P1.27mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "MCP23018_SO_0_1"
-			(rectangle
-				(start -12.7 22.86)
-				(end 12.7 -22.86)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "MCP23018_SO_1_1"
-			(pin input line
-				(at -17.78 20.32 0)
-				(length 5.08)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 17.78 0)
-				(length 5.08)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -17.78 5.08 0)
-				(length 5.08)
-				(name "INTA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -17.78 2.54 0)
-				(length 5.08)
-				(name "INTB"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 -2.54 0)
-				(length 5.08)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -17.78 -7.62 0)
-				(length 5.08)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -17.78 -10.16 0)
-				(length 5.08)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -17.78 -12.7 0)
-				(length 5.08)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -17.78 -15.24 0)
-				(length 5.08)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "28"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 -20.32 0)
-				(length 5.08)
-				(name "ADDR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 27.94 270)
-				(length 5.08)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -27.94 90)
-				(length 5.08)
-				(name "VSS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 20.32 180)
-				(length 5.08)
-				(name "GPA0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 17.78 180)
-				(length 5.08)
-				(name "GPA1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 15.24 180)
-				(length 5.08)
-				(name "GPA2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 12.7 180)
-				(length 5.08)
-				(name "GPA3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 10.16 180)
-				(length 5.08)
-				(name "GPA4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 7.62 180)
-				(length 5.08)
-				(name "GPA5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "25"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 5.08 180)
-				(length 5.08)
-				(name "GPA6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "26"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 2.54 180)
-				(length 5.08)
-				(name "GPA7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "27"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -2.54 180)
-				(length 5.08)
-				(name "GPB0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -5.08 180)
-				(length 5.08)
-				(name "GPB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -7.62 180)
-				(length 5.08)
-				(name "GPB2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -10.16 180)
-				(length 5.08)
-				(name "GPB3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -12.7 180)
-				(length 5.08)
-				(name "GPB4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -15.24 180)
-				(length 5.08)
-				(name "GPB5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -17.78 180)
-				(length 5.08)
-				(name "GPB6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -20.32 180)
-				(length 5.08)
-				(name "GPB7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "MCP23018_SS"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "U"
-			(at -11.43 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP23018_SS"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm"
-			(at 5.08 -25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23018-Data-Sheet-DS20002103.pdf"
-			(at 5.08 -27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, open-drain outpus, SSOP-24"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "I2C parallel port expander Microchip SS"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SSOP*5.3x8.2mm*P0.65mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "MCP23018_SS_0_1"
-			(rectangle
-				(start -12.7 22.86)
-				(end 12.7 -22.86)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "MCP23018_SS_1_1"
-			(pin input line
-				(at -17.78 20.32 0)
-				(length 5.08)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 17.78 0)
-				(length 5.08)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -17.78 5.08 0)
-				(length 5.08)
-				(name "INTA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -17.78 2.54 0)
-				(length 5.08)
-				(name "INTB"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 -2.54 0)
-				(length 5.08)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 -20.32 0)
-				(length 5.08)
-				(name "ADDR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 27.94 270)
-				(length 5.08)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -27.94 90)
-				(length 5.08)
-				(name "VSS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 20.32 180)
-				(length 5.08)
-				(name "GPA0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 17.78 180)
-				(length 5.08)
-				(name "GPA1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 15.24 180)
-				(length 5.08)
-				(name "GPA2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 12.7 180)
-				(length 5.08)
-				(name "GPA3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 10.16 180)
-				(length 5.08)
-				(name "GPA4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 7.62 180)
-				(length 5.08)
-				(name "GPA5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 5.08 180)
-				(length 5.08)
-				(name "GPA6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 2.54 180)
-				(length 5.08)
-				(name "GPA7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -2.54 180)
-				(length 5.08)
-				(name "GPB0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -5.08 180)
-				(length 5.08)
-				(name "GPB1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -7.62 180)
-				(length 5.08)
-				(name "GPB2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -10.16 180)
-				(length 5.08)
-				(name "GPB3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -12.7 180)
-				(length 5.08)
-				(name "GPB4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -15.24 180)
-				(length 5.08)
-				(name "GPB5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -17.78 180)
-				(length 5.08)
-				(name "GPB6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 17.78 -20.32 180)
-				(length 5.08)
-				(name "GPB7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
 	(symbol "MCP23018x-x-MJ"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8415,7 +7307,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
+				(at -12.7 15.24 0)
 				(length 2.54)
 				(name "ADDR"
 					(effects
@@ -8433,7 +7325,7 @@
 				)
 			)
 			(pin output line
-				(at -12.7 5.08 0)
+				(at -12.7 0 0)
 				(length 2.54)
 				(name "INTA"
 					(effects
@@ -8451,7 +7343,7 @@
 				)
 			)
 			(pin output line
-				(at -12.7 2.54 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "INTB"
 					(effects
@@ -8469,7 +7361,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -2.54 0)
+				(at -12.7 -15.24 0)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
@@ -8821,6 +7713,1114 @@
 					)
 				)
 				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "MCP23018x-x-SO"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -11.43 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP23018x-x-SO"
+			(at 10.16 24.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23018-Data-Sheet-DS20002103.pdf"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "16-bit I/O expander, I2C interface, open-drain outpus (with configurable pull-up resistors), 2 interrupt outputs, SOIC-28"
+			(at 0 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Microchip port-expander GPIO MCP23018-E/SO MCP23018T-E/SO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOIC*7.5x17.9mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MCP23018x-x-SO_0_1"
+			(rectangle
+				(start -10.16 22.86)
+				(end 10.16 -22.86)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "MCP23018x-x-SO_1_1"
+			(pin input line
+				(at -12.7 20.32 0)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 17.78 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 15.24 0)
+				(length 2.54)
+				(name "ADDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 0 0)
+				(length 2.54)
+				(name "INTA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "INTB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -15.24 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 11.43 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 8.89 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 6.35 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 3.81 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 25.4 270)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -25.4 90)
+				(length 2.54)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 20.32 180)
+				(length 2.54)
+				(name "GPA0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 17.78 180)
+				(length 2.54)
+				(name "GPA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 15.24 180)
+				(length 2.54)
+				(name "GPA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 12.7 180)
+				(length 2.54)
+				(name "GPA3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "GPA4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "GPA5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "GPA6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "GPA7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "GPB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "GPB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "GPB2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "GPB3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -12.7 180)
+				(length 2.54)
+				(name "GPB4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -15.24 180)
+				(length 2.54)
+				(name "GPB5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -17.78 180)
+				(length 2.54)
+				(name "GPB6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -20.32 180)
+				(length 2.54)
+				(name "GPB7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "MCP23018x-x-SS"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -11.43 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP23018x-x-SS"
+			(at 10.16 24.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm"
+			(at 5.08 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23018-Data-Sheet-DS20002103.pdf"
+			(at 5.08 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "16-bit I/O expander, I2C interface, open-drain outpus (with configurable pull-up resistors), 2 interrupt outputs, SSOP-24"
+			(at 0 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Microchip port-expander GPIO MCP23018-E/SS MCP23018T-E/SS MCP23018-E/SSVAO MCP23018T-E/SSVAO"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SSOP*5.3x8.2mm*P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MCP23018x-x-SS_0_1"
+			(rectangle
+				(start -10.16 22.86)
+				(end 10.16 -22.86)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "MCP23018x-x-SS_1_1"
+			(pin input line
+				(at -12.7 20.32 0)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 17.78 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 15.24 0)
+				(length 2.54)
+				(name "ADDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 0 0)
+				(length 2.54)
+				(name "INTA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "INTB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -15.24 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 25.4 270)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -25.4 90)
+				(length 2.54)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 20.32 180)
+				(length 2.54)
+				(name "GPA0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 17.78 180)
+				(length 2.54)
+				(name "GPA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 15.24 180)
+				(length 2.54)
+				(name "GPA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 12.7 180)
+				(length 2.54)
+				(name "GPA3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "GPA4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "GPA5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "GPA6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "GPA7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "GPB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "GPB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "GPB2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "GPB3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -12.7 180)
+				(length 2.54)
+				(name "GPB4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -15.24 180)
+				(length 2.54)
+				(name "GPB5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -17.78 180)
+				(length 2.54)
+				(name "GPB6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -20.32 180)
+				(length 2.54)
+				(name "GPB7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11213,7 +11213,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "MCP23S18_MJ"
+	(symbol "MCP23S18x-x-MJ"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -11225,15 +11225,15 @@
 				)
 			)
 		)
-		(property "Value" "MCP23S18_MJ"
-			(at 0 0 0)
+		(property "Value" "MCP23S18x-x-MJ"
+			(at 7.62 24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias"
+		(property "Footprint" "Package_DFN_QFN:HVQFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias"
 			(at 5.08 -25.4 0)
 			(effects
 				(font
@@ -11253,7 +11253,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16-bit I/O expander, SPI, interrupts, w pull-ups, open-drain outpus, QFN-24"
+		(property "Description" "16-bit I/O expander, SPI interface, open-drain outpus (with configurable pull-up resistors), 1 interrupt output, VQFN-24"
+			(at 0 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Microchip port-expander GPIO MCP23S18-E/MJ"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11262,7 +11271,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "SPI parallel port expander Microchip MJ"
+		(property "ki_fp_filters" "*QFN*4x4mm*P0.5mm*EP2.6x2.6*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11271,19 +11280,10 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "QFN*4x4mm*P0.5mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "MCP23S18_MJ_0_1"
+		(symbol "MCP23S18x-x-MJ_0_1"
 			(rectangle
-				(start -12.7 22.86)
-				(end 12.7 -22.86)
+				(start -10.16 22.86)
+				(end 10.16 -22.86)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -11293,10 +11293,10 @@
 				)
 			)
 		)
-		(symbol "MCP23S18_MJ_1_1"
+		(symbol "MCP23S18x-x-MJ_1_1"
 			(pin input line
-				(at -17.78 20.32 0)
-				(length 5.08)
+				(at -12.7 20.32 0)
+				(length 2.54)
 				(name "~{CS}"
 					(effects
 						(font
@@ -11313,8 +11313,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 17.78 0)
-				(length 5.08)
+				(at -12.7 17.78 0)
+				(length 2.54)
 				(name "SCK"
 					(effects
 						(font
@@ -11331,8 +11331,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 15.24 0)
-				(length 5.08)
+				(at -12.7 15.24 0)
+				(length 2.54)
 				(name "SI"
 					(effects
 						(font
@@ -11349,8 +11349,8 @@
 				)
 			)
 			(pin output line
-				(at -17.78 12.7 0)
-				(length 5.08)
+				(at -12.7 12.7 0)
+				(length 2.54)
 				(name "SO"
 					(effects
 						(font
@@ -11367,8 +11367,8 @@
 				)
 			)
 			(pin output line
-				(at -17.78 2.54 0)
-				(length 5.08)
+				(at -12.7 0 0)
+				(length 2.54)
 				(name "INTA"
 					(effects
 						(font
@@ -11385,8 +11385,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -2.54 0)
-				(length 5.08)
+				(at -12.7 -15.24 0)
+				(length 2.54)
 				(name "~{RESET}"
 					(effects
 						(font
@@ -11403,8 +11403,8 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -27.94 90)
-				(length 5.08)
+				(at -2.54 -25.4 90)
+				(length 2.54)
 				(name "EP"
 					(effects
 						(font
@@ -11421,9 +11421,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
-				(length 5.08)
-				(name "VDD"
+				(at 0 25.4 270)
+				(length 2.54)
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11439,9 +11439,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -27.94 90)
-				(length 5.08)
-				(name "VSS"
+				(at 0 -25.4 90)
+				(length 2.54)
+				(name "V_{SS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11457,8 +11457,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 20.32 180)
-				(length 5.08)
+				(at 12.7 20.32 180)
+				(length 2.54)
 				(name "GPA0"
 					(effects
 						(font
@@ -11475,8 +11475,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 17.78 180)
-				(length 5.08)
+				(at 12.7 17.78 180)
+				(length 2.54)
 				(name "GPA1"
 					(effects
 						(font
@@ -11493,8 +11493,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 15.24 180)
-				(length 5.08)
+				(at 12.7 15.24 180)
+				(length 2.54)
 				(name "GPA2"
 					(effects
 						(font
@@ -11511,8 +11511,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 12.7 180)
-				(length 5.08)
+				(at 12.7 12.7 180)
+				(length 2.54)
 				(name "GPA3"
 					(effects
 						(font
@@ -11529,8 +11529,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 10.16 180)
-				(length 5.08)
+				(at 12.7 10.16 180)
+				(length 2.54)
 				(name "GPA4"
 					(effects
 						(font
@@ -11547,8 +11547,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 7.62 180)
-				(length 5.08)
+				(at 12.7 7.62 180)
+				(length 2.54)
 				(name "GPA5"
 					(effects
 						(font
@@ -11565,8 +11565,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 5.08 180)
-				(length 5.08)
+				(at 12.7 5.08 180)
+				(length 2.54)
 				(name "GPA6"
 					(effects
 						(font
@@ -11583,8 +11583,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 2.54 180)
-				(length 5.08)
+				(at 12.7 2.54 180)
+				(length 2.54)
 				(name "GPA7"
 					(effects
 						(font
@@ -11601,8 +11601,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -2.54 180)
-				(length 5.08)
+				(at 12.7 -2.54 180)
+				(length 2.54)
 				(name "GPB0"
 					(effects
 						(font
@@ -11619,8 +11619,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -5.08 180)
-				(length 5.08)
+				(at 12.7 -5.08 180)
+				(length 2.54)
 				(name "GPB1"
 					(effects
 						(font
@@ -11637,8 +11637,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -7.62 180)
-				(length 5.08)
+				(at 12.7 -7.62 180)
+				(length 2.54)
 				(name "GPB2"
 					(effects
 						(font
@@ -11655,8 +11655,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -10.16 180)
-				(length 5.08)
+				(at 12.7 -10.16 180)
+				(length 2.54)
 				(name "GPB3"
 					(effects
 						(font
@@ -11673,8 +11673,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -12.7 180)
-				(length 5.08)
+				(at 12.7 -12.7 180)
+				(length 2.54)
 				(name "GPB4"
 					(effects
 						(font
@@ -11691,8 +11691,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -15.24 180)
-				(length 5.08)
+				(at 12.7 -15.24 180)
+				(length 2.54)
 				(name "GPB5"
 					(effects
 						(font
@@ -11709,8 +11709,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -17.78 180)
-				(length 5.08)
+				(at 12.7 -17.78 180)
+				(length 2.54)
 				(name "GPB6"
 					(effects
 						(font
@@ -11727,8 +11727,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -20.32 180)
-				(length 5.08)
+				(at 12.7 -20.32 180)
+				(length 2.54)
 				(name "GPB7"
 					(effects
 						(font
@@ -11747,7 +11747,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "MCP23S18_SO"
+	(symbol "MCP23S18x-x-SO"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -11759,8 +11759,8 @@
 				)
 			)
 		)
-		(property "Value" "MCP23S18_SO"
-			(at 0 0 0)
+		(property "Value" "MCP23S18x-x-SO"
+			(at 10.16 24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11787,8 +11787,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16-bit I/O expander, SPI, interrupts, w pull-ups, open-drain outpus, SOIC-28"
-			(at 0 0 0)
+		(property "Description" "16-bit I/O expander, SPI interface, open-drain outpus (with configurable pull-up resistors), 2 interrupt outputs, SOIC-28"
+			(at 0 -30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11796,7 +11796,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "SPI parallel port expander Microchip SO"
+		(property "ki_keywords" "Microchip port-expander GPIO MCP23S18-E/SO MCP23S18T-E/SO"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11814,10 +11814,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "MCP23S18_SO_0_1"
+		(symbol "MCP23S18x-x-SO_0_1"
 			(rectangle
-				(start -12.7 22.86)
-				(end 12.7 -22.86)
+				(start -10.16 22.86)
+				(end 10.16 -22.86)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -11827,10 +11827,10 @@
 				)
 			)
 		)
-		(symbol "MCP23S18_SO_1_1"
+		(symbol "MCP23S18x-x-SO_1_1"
 			(pin input line
-				(at -17.78 20.32 0)
-				(length 5.08)
+				(at -12.7 20.32 0)
+				(length 2.54)
 				(name "~{CS}"
 					(effects
 						(font
@@ -11847,8 +11847,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 17.78 0)
-				(length 5.08)
+				(at -12.7 17.78 0)
+				(length 2.54)
 				(name "SCK"
 					(effects
 						(font
@@ -11865,8 +11865,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 15.24 0)
-				(length 5.08)
+				(at -12.7 15.24 0)
+				(length 2.54)
 				(name "SI"
 					(effects
 						(font
@@ -11883,8 +11883,8 @@
 				)
 			)
 			(pin output line
-				(at -17.78 12.7 0)
-				(length 5.08)
+				(at -12.7 12.7 0)
+				(length 2.54)
 				(name "SO"
 					(effects
 						(font
@@ -11901,8 +11901,8 @@
 				)
 			)
 			(pin output line
-				(at -17.78 5.08 0)
-				(length 5.08)
+				(at -12.7 0 0)
+				(length 2.54)
 				(name "INTA"
 					(effects
 						(font
@@ -11919,8 +11919,8 @@
 				)
 			)
 			(pin output line
-				(at -17.78 2.54 0)
-				(length 5.08)
+				(at -12.7 -2.54 0)
+				(length 2.54)
 				(name "INTB"
 					(effects
 						(font
@@ -11937,8 +11937,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -2.54 0)
-				(length 5.08)
+				(at -12.7 -15.24 0)
+				(length 2.54)
 				(name "~{RESET}"
 					(effects
 						(font
@@ -11955,8 +11955,8 @@
 				)
 			)
 			(pin no_connect line
-				(at -17.78 -7.62 0)
-				(length 5.08)
+				(at -10.16 8.89 0)
+				(length 2.54)
 				(hide yes)
 				(name "NC"
 					(effects
@@ -11974,8 +11974,8 @@
 				)
 			)
 			(pin no_connect line
-				(at -17.78 -12.7 0)
-				(length 5.08)
+				(at -10.16 6.35 0)
+				(length 2.54)
 				(hide yes)
 				(name "NC"
 					(effects
@@ -11993,8 +11993,8 @@
 				)
 			)
 			(pin no_connect line
-				(at -17.78 -15.24 0)
-				(length 5.08)
+				(at -10.16 3.81 0)
+				(length 2.54)
 				(hide yes)
 				(name "NC"
 					(effects
@@ -12012,9 +12012,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
-				(length 5.08)
-				(name "VDD"
+				(at 0 25.4 270)
+				(length 2.54)
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12030,9 +12030,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -27.94 90)
-				(length 5.08)
-				(name "VSS"
+				(at 0 -25.4 90)
+				(length 2.54)
+				(name "V_{SS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12048,8 +12048,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 20.32 180)
-				(length 5.08)
+				(at 12.7 20.32 180)
+				(length 2.54)
 				(name "GPA0"
 					(effects
 						(font
@@ -12066,8 +12066,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 17.78 180)
-				(length 5.08)
+				(at 12.7 17.78 180)
+				(length 2.54)
 				(name "GPA1"
 					(effects
 						(font
@@ -12084,8 +12084,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 15.24 180)
-				(length 5.08)
+				(at 12.7 15.24 180)
+				(length 2.54)
 				(name "GPA2"
 					(effects
 						(font
@@ -12102,8 +12102,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 12.7 180)
-				(length 5.08)
+				(at 12.7 12.7 180)
+				(length 2.54)
 				(name "GPA3"
 					(effects
 						(font
@@ -12120,8 +12120,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 10.16 180)
-				(length 5.08)
+				(at 12.7 10.16 180)
+				(length 2.54)
 				(name "GPA4"
 					(effects
 						(font
@@ -12138,8 +12138,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 7.62 180)
-				(length 5.08)
+				(at 12.7 7.62 180)
+				(length 2.54)
 				(name "GPA5"
 					(effects
 						(font
@@ -12156,8 +12156,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 5.08 180)
-				(length 5.08)
+				(at 12.7 5.08 180)
+				(length 2.54)
 				(name "GPA6"
 					(effects
 						(font
@@ -12174,8 +12174,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 2.54 180)
-				(length 5.08)
+				(at 12.7 2.54 180)
+				(length 2.54)
 				(name "GPA7"
 					(effects
 						(font
@@ -12192,8 +12192,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -2.54 180)
-				(length 5.08)
+				(at 12.7 -2.54 180)
+				(length 2.54)
 				(name "GPB0"
 					(effects
 						(font
@@ -12210,8 +12210,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -5.08 180)
-				(length 5.08)
+				(at 12.7 -5.08 180)
+				(length 2.54)
 				(name "GPB1"
 					(effects
 						(font
@@ -12228,8 +12228,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -7.62 180)
-				(length 5.08)
+				(at 12.7 -7.62 180)
+				(length 2.54)
 				(name "GPB2"
 					(effects
 						(font
@@ -12246,8 +12246,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -10.16 180)
-				(length 5.08)
+				(at 12.7 -10.16 180)
+				(length 2.54)
 				(name "GPB3"
 					(effects
 						(font
@@ -12264,8 +12264,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -12.7 180)
-				(length 5.08)
+				(at 12.7 -12.7 180)
+				(length 2.54)
 				(name "GPB4"
 					(effects
 						(font
@@ -12282,8 +12282,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -15.24 180)
-				(length 5.08)
+				(at 12.7 -15.24 180)
+				(length 2.54)
 				(name "GPB5"
 					(effects
 						(font
@@ -12300,8 +12300,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -17.78 180)
-				(length 5.08)
+				(at 12.7 -17.78 180)
+				(length 2.54)
 				(name "GPB6"
 					(effects
 						(font
@@ -12318,8 +12318,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -20.32 180)
-				(length 5.08)
+				(at 12.7 -20.32 180)
+				(length 2.54)
 				(name "GPB7"
 					(effects
 						(font
@@ -33197,8 +33197,8 @@
 			)
 		)
 	)
-	(symbol "MCP23018_SP"
-		(extends "MCP23018_SO")
+	(symbol "MCP23018x-x-SP"
+		(extends "MCP23018x-x-SO")
 		(property "Reference" "U"
 			(at -11.43 24.13 0)
 			(effects
@@ -33207,8 +33207,8 @@
 				)
 			)
 		)
-		(property "Value" "MCP23018_SP"
-			(at 0 0 0)
+		(property "Value" "MCP23018x-x-SP"
+			(at 10.16 24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33235,7 +33235,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, open-drain outpus, SPDIP-28"
+		(property "Description" "16-bit I/O expander, I2C interface, open-drain outpus (with configurable pull-up resistors), 2 interrupt outputs, DIP-28"
+			(at 0 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Microchip port-expander GPIO MCP23018-E/SP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -33244,16 +33253,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "I2C parallel port expander Microchip SP"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "*P?DIP*7.62mm*"
+		(property "ki_fp_filters" "DIP*7.62mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -33263,8 +33263,8 @@
 			)
 		)
 	)
-	(symbol "MCP23S18_SP"
-		(extends "MCP23S18_SO")
+	(symbol "MCP23S18x-x-SP"
+		(extends "MCP23S18x-x-SO")
 		(property "Reference" "U"
 			(at -11.43 24.13 0)
 			(effects
@@ -33273,8 +33273,8 @@
 				)
 			)
 		)
-		(property "Value" "MCP23S18_SP"
-			(at 0 0 0)
+		(property "Value" "MCP23S18x-x-SP"
+			(at 10.16 24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33301,7 +33301,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16-bit I/O expander, SPI, interrupts, w pull-ups, open-drain outpus, SPDIP-28"
+		(property "Description" "16-bit I/O expander, SPI interface, open-drain outpus (with configurable pull-up resistors), 2 interrupt outputs, DIP-28"
+			(at 0 -30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Microchip port-expander GPIO MCP23S18-E/SP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -33310,16 +33319,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "SPI parallel port expander Microchip SP"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "*P?DIP*7.62mm*"
+		(property "ki_fp_filters" "DIP*7.62mm*"
 			(at 0 0 0)
 			(effects
 				(font
