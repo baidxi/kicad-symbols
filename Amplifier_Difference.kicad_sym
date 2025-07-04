@@ -3592,13 +3592,13 @@
 	)
 	(symbol "AMC1100DWV"
 		(pin_names
-			(offset 0.127)
+			(hide yes)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 7.62 8.89 0)
+			(at -7.112 9.144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3607,7 +3607,7 @@
 			)
 		)
 		(property "Value" "AMC1100DWV"
-			(at 1.27 6.35 0)
+			(at 4.318 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3616,7 +3616,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_7.5x5.85mm_P1.27mm"
-			(at 0 0 0)
+			(at 0 -28.448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3625,7 +3625,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/amc1100.pdf"
-			(at 16.51 -17.78 0)
+			(at 0.254 -22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3634,7 +3634,7 @@
 			)
 		)
 		(property "Description" "Fully-differential isolated amplifier, fixed gain = 8, peak isolation voltage 4250V, transient immunity 2.5kV/us, UL1577/IEC60747-5-2 approved, SOIC-8"
-			(at 0 0 0)
+			(at 0.254 -25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3661,10 +3661,9 @@
 			)
 		)
 		(symbol "AMC1100DWV_0_1"
-			(polyline
-				(pts
-					(xy -7.62 -7.62) (xy -7.62 7.62) (xy 7.62 0) (xy -7.62 -7.62)
-				)
+			(rectangle
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -3675,7 +3674,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 4.445) (xy -1.27 3.175)
+					(xy -7.62 5.08) (xy -4.318 5.08)
 				)
 				(stroke
 					(width 0)
@@ -3687,7 +3686,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 1.905) (xy -1.27 0.635)
+					(xy -7.62 -5.08) (xy -4.318 -5.08)
 				)
 				(stroke
 					(width 0)
@@ -3699,7 +3698,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 -0.635) (xy -1.27 -1.905)
+					(xy -4.318 -6.35) (xy -0.762 -2.794) (xy -0.762 2.794) (xy -4.318 6.35) (xy -4.318 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -3711,7 +3710,175 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 -3.175) (xy -1.27 -4.445)
+					(xy -4.064 5.08) (xy -3.556 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -4.064 -5.08) (xy -3.556 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 5.334) (xy -3.81 4.826)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 7.62) (xy -2.54 4.572)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -7.62) (xy -2.54 -4.572)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.381 0.508) (xy 0.889 0.508) (xy 0.508 0.381) (xy 0.508 0.635) (xy 0.889 0.508)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.381 -0.508) (xy 0.889 -0.508) (xy 0.508 -0.635) (xy 0.508 -0.381) (xy 0.889 -0.508)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 7.62) (xy 2.54 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -7.62) (xy 2.54 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 2.794) (xy 2.794 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.048 2.54) (xy 2.54 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.048 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.35 0) (xy 1.524 -4.826) (xy 1.524 4.826) (xy 6.35 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 2.54) (xy 3.81 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -2.54) (xy 3.81 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -3724,9 +3891,9 @@
 		)
 		(symbol "AMC1100DWV_1_1"
 			(pin input line
-				(at -10.16 2.54 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
-				(name "+"
+				(name "VINP"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3742,9 +3909,9 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -2.54 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
-				(name "-"
+				(name "VINN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3760,9 +3927,9 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 7.62 270)
+				(at -2.54 10.16 270)
 				(length 2.54)
-				(name "V+"
+				(name "VDD1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3778,9 +3945,9 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -7.62 90)
+				(at -2.54 -10.16 90)
 				(length 2.54)
-				(name "V-"
+				(name "GND1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3796,9 +3963,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 7.62 270)
-				(length 3.81)
-				(name "V+"
+				(at 2.54 10.16 270)
+				(length 2.54)
+				(name "VDD2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3814,9 +3981,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -7.62 90)
-				(length 3.81)
-				(name "V-"
+				(at 2.54 -10.16 90)
+				(length 2.54)
+				(name "GND2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3832,9 +3999,9 @@
 				)
 			)
 			(pin output line
-				(at 7.62 2.54 180)
-				(length 5.08)
-				(name "+"
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "VOUTP"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3850,9 +4017,9 @@
 				)
 			)
 			(pin output line
-				(at 7.62 -2.54 180)
-				(length 5.08)
-				(name "-"
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "VOUTN"
 					(effects
 						(font
 							(size 1.27 1.27)
