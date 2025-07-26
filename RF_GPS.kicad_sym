@@ -3752,7 +3752,7 @@
 			)
 		)
 		(property "Datasheet" "https://content.u-blox.com/sites/default/files/documents/MIA-M10Q_DataSheet_UBX-22015849.pdf"
-			(at -0.254 0 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3761,7 +3761,7 @@
 			)
 		)
 		(property "Description" "GNSS receiver module (GPS, Galileo, GLONASS, BeiDou), I2C / UART interface, LGA-53 (MIA M-LGA53)"
-			(at -0.254 -0.254 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3790,7 +3790,7 @@
 		(symbol "MIA-M10Q_0_1"
 			(rectangle
 				(start -12.7 27.94)
-				(end 12.7 -27.94)
+				(end 12.7 -25.4)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -3802,115 +3802,7 @@
 		)
 		(symbol "MIA-M10Q_1_1"
 			(pin input line
-				(at -15.24 20.32 0)
-				(length 2.54)
-				(name "RTC_I"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -15.24 17.78 0)
-				(length 2.54)
-				(name "RTC_O"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -15.24 12.7 0)
-				(length 2.54)
-				(name "EXTINT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 10.16 0)
-				(length 2.54)
-				(name "~{SAFEBOOT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 7.62 0)
-				(length 2.54)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -15.24 2.54 0)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 0 0)
+				(at -15.24 22.86 0)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -3928,16 +3820,16 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 -5.08 0)
+				(at -15.24 20.32 0)
 				(length 2.54)
-				(name "PIO6"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "F7"
+				(number "D1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3946,7 +3838,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 -10.16 0)
+				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "TX"
 					(effects
@@ -3964,7 +3856,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -12.7 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "RX"
 					(effects
@@ -3981,8 +3873,98 @@
 					)
 				)
 			)
+			(pin bidirectional line
+				(at -15.24 7.62 0)
+				(length 2.54)
+				(name "EXTINT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -15.24 5.08 0)
+				(length 2.54)
+				(name "TIMEPULSE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 2.54 0)
+				(length 2.54)
+				(name "PIO6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
-				(at -15.24 -17.78 0)
+				(at -15.24 -2.54 0)
+				(length 2.54)
+				(name "~{SAFEBOOT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -7.62 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -12.7 0)
 				(length 2.54)
 				(name "VIO_SEL"
 					(effects
@@ -3992,6 +3974,42 @@
 					)
 				)
 				(number "J6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -17.78 0)
+				(length 2.54)
+				(name "RTC_I"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -15.24 -20.32 0)
+				(length 2.54)
+				(name "RTC_O"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4054,7 +4072,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -4072,7 +4090,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4091,7 +4109,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4110,7 +4128,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4129,7 +4147,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4148,7 +4166,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4167,7 +4185,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4186,7 +4204,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4205,7 +4223,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4224,7 +4242,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4243,7 +4261,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4262,7 +4280,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4281,7 +4299,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4300,7 +4318,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4319,7 +4337,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4338,7 +4356,26 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4357,7 +4394,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4376,7 +4413,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4395,7 +4432,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4414,7 +4451,26 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4433,7 +4489,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4452,7 +4508,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -4488,62 +4544,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 15.24 17.78 180)
-				(length 2.54)
-				(name "TIMEPULSE"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 15.24 12.7 180)
-				(length 2.54)
-				(name "RF_IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 10.16 180)
-				(length 2.54)
-				(name "LNA_EN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "H9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin no_connect line
-				(at 15.24 5.08 180)
+				(at 12.7 7.62 180)
 				(length 2.54)
 				(hide yes)
 				(name "Reserved"
@@ -4562,7 +4564,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 2.54 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
 				(hide yes)
 				(name "Reserved"
@@ -4581,26 +4583,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 0 180)
-				(length 2.54)
-				(hide yes)
-				(name "Reserved"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "D2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 15.24 -2.54 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(hide yes)
 				(name "Reserved"
@@ -4619,26 +4602,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 -5.08 180)
-				(length 2.54)
-				(hide yes)
-				(name "Reserved"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "E2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 15.24 -7.62 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(hide yes)
 				(name "Reserved"
@@ -4657,45 +4621,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 -10.16 180)
-				(length 2.54)
-				(hide yes)
-				(name "Reserved"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "F9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 15.24 -12.7 180)
-				(length 2.54)
-				(hide yes)
-				(name "Reserved"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "G7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 15.24 -15.24 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(hide yes)
 				(name "Reserved"
@@ -4714,7 +4640,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 -17.78 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
 				(hide yes)
 				(name "Reserved"
@@ -4733,7 +4659,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 -20.32 180)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(hide yes)
 				(name "Reserved"
@@ -4752,7 +4678,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 -22.86 180)
+				(at 12.7 -10.16 180)
 				(length 2.54)
 				(hide yes)
 				(name "Reserved"
@@ -4771,7 +4697,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 15.24 -25.4 180)
+				(at 12.7 -12.7 180)
 				(length 2.54)
 				(hide yes)
 				(name "Reserved"
@@ -4782,6 +4708,78 @@
 					)
 				)
 				(number "J7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 17.78 180)
+				(length 2.54)
+				(name "RF_IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 12.7 180)
+				(length 2.54)
+				(name "LNA_EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -17.78 180)
+				(length 2.54)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -20.32 180)
+				(length 2.54)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E2"
 					(effects
 						(font
 							(size 1.27 1.27)
