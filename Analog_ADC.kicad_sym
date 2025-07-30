@@ -19192,7 +19192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2 channel, SPI-Compatible, 8-Bit Analog-to-Digital Converter, 50 to 200 ksps, 2.7-V to 5.25-V Power Supply Voltage, VSSOP-8"
+		(property "Description" "2 channel, 50 - 200 ksps, 8-Bit ADC, 2.7 - 5.25V supply, TSSOP-8 (MSOP-8, Texas VSSOP-8)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -19201,7 +19201,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADC Texas-Instruments"
+		(property "ki_keywords" "ADC Texas-Instruments Analog-to-Digital-Converter QSPI SPI MICROWIRE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -19210,7 +19210,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -19234,16 +19234,34 @@
 		)
 		(symbol "ADC082S021_1_1"
 			(pin input line
-				(at 10.16 -5.08 180)
+				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "~{CS}"
+				(name "IN1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "IN2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -19288,43 +19306,43 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "IN2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 2.54 0)
-				(length 2.54)
-				(name "IN1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "SCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "~{CS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "DIN"
 					(effects
@@ -19342,7 +19360,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 0 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "DOUT"
 					(effects
@@ -19359,25 +19377,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "SCLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "ADC0832"
 		(pin_names
@@ -51746,7 +51747,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s021.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s051.pdf"
 			(at 0 2.54 0)
 			(effects
 				(font
@@ -51755,7 +51756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2 channel, SPI-Compatible, 8-Bit Analog-to-Digital Converter, 200 to 500 ksps, 2.7-V to 5.25-V Power Supply Voltage, VSSOP-8"
+		(property "Description" "2 channel, 200 - 500 ksps, 8-Bit ADC, 2.7 - 5.25V supply, TSSOP-8 (MSOP-8, Texas VSSOP-8)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51764,7 +51765,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADC Texas-Instruments"
+		(property "ki_keywords" "ADC Texas-Instruments Analog-to-Digital-Converter QSPI SPI MICROWIRE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51773,7 +51774,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51812,7 +51813,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s021.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s101.pdf"
 			(at 0 2.54 0)
 			(effects
 				(font
@@ -51821,7 +51822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2 channel, SPI-Compatible, 8-Bit Analog-to-Digital Converter, 500 to 1000 ksps, 2.7-V to 5.25-V Power Supply Voltage, VSSOP-8"
+		(property "Description" "2 channel, 500 - 1000 ksps, 8-Bit ADC, 2.7 - 5.25V supply, TSSOP-8 (MSOP-8, Texas VSSOP-8)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51830,7 +51831,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADC Texas-Instruments"
+		(property "ki_keywords" "ADC Texas-Instruments Analog-to-Digital-Converter QSPI SPI MICROWIRE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51839,7 +51840,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51942,7 +51943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s021.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc102s021.pdf"
 			(at 0 2.54 0)
 			(effects
 				(font
@@ -51951,7 +51952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2 channel, SPI-Compatible, 10-Bit Analog-to-Digital Converter, 50 to 200 ksps, 2.7-V to 5.25-V Power Supply Voltage, VSSOP-8"
+		(property "Description" "2 channel, 50 - 200 ksps, 10-Bit ADC, 2.7 - 5.25V supply, TSSOP-8 (MSOP-8, Texas VSSOP-8)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51960,7 +51961,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADC Texas-Instruments"
+		(property "ki_keywords" "ADC Texas-Instruments Analog-to-Digital-Converter QSPI SPI MICROWIRE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51969,7 +51970,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52072,7 +52073,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s021.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc122s021.pdf"
 			(at 0 2.54 0)
 			(effects
 				(font
@@ -52081,7 +52082,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2 channel, SPI-Compatible, 12-Bit Analog-to-Digital Converter, 50 to 200 ksps, 2.7-V to 5.25-V Power Supply Voltage, VSSOP-8"
+		(property "Description" "2 channel, 50 - 200 ksps, 12-Bit ADC, 2.7 - 5.25V supply, TSSOP-8 (MSOP-8, Texas VSSOP-8)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52090,7 +52091,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADC Texas-Instruments"
+		(property "ki_keywords" "ADC Texas-Instruments Analog-to-Digital-Converter QSPI SPI MICROWIRE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52099,7 +52100,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56015,7 +56016,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s021.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc102s051.pdf"
 			(at 0 2.54 0)
 			(effects
 				(font
@@ -56024,7 +56025,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2 channel, SPI-Compatible, 10-Bit Analog-to-Digital Converter, 200 to 500 ksps, 2.7-V to 5.25-V Power Supply Voltage, VSSOP-8"
+		(property "Description" "2 channel, 200 - 500 ksps, 10-Bit ADC, 2.7 - 5.25V supply, TSSOP-8 (MSOP-8, Texas VSSOP-8)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56033,7 +56034,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADC Texas-Instruments"
+		(property "ki_keywords" "ADC Texas-Instruments Analog-to-Digital-Converter QSPI SPI MICROWIRE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56042,7 +56043,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56081,7 +56082,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s021.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc102s101.pdf"
 			(at 0 2.54 0)
 			(effects
 				(font
@@ -56090,7 +56091,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2 channel, SPI-Compatible, 10-Bit Analog-to-Digital Converter, 500 to 1000 ksps, 2.7-V to 5.25-V Power Supply Voltage, VSSOP-8"
+		(property "Description" "2 channel, 500 - 1000 ksps, 10-Bit ADC, 2.7 - 5.25V supply, TSSOP-8 (MSOP-8, Texas VSSOP-8)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56099,7 +56100,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADC Texas-Instruments"
+		(property "ki_keywords" "ADC Texas-Instruments Analog-to-Digital-Converter QSPI SPI MICROWIRE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56108,7 +56109,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56147,7 +56148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s021.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc122s051.pdf"
 			(at 0 2.54 0)
 			(effects
 				(font
@@ -56156,7 +56157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2 channel, SPI-Compatible, 12-Bit Analog-to-Digital Converter, 200 to 500 ksps, 2.7-V to 5.25-V Power Supply Voltage, VSSOP-8"
+		(property "Description" "2 channel, 200 - 500 ksps, 12-Bit ADC, 2.7 - 5.25V supply, TSSOP-8 (MSOP-8, Texas VSSOP-8)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56165,7 +56166,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADC Texas-Instruments"
+		(property "ki_keywords" "ADC Texas-Instruments Analog-to-Digital-Converter QSPI SPI MICROWIRE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56174,7 +56175,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56213,7 +56214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc082s021.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/adc122s101.pdf"
 			(at 0 2.54 0)
 			(effects
 				(font
@@ -56222,7 +56223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2 channel, SPI-Compatible, 12-Bit Analog-to-Digital Converter, 500 to 1000 ksps, 2.7-V to 5.25-V Power Supply Voltage, VSSOP-8"
+		(property "Description" "2 channel, 500 - 1000 ksps, 12-Bit ADC, 2.7 - 5.25V supply, TSSOP-8 (MSOP-8, Texas VSSOP-8)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56231,7 +56232,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADC Texas-Instruments"
+		(property "ki_keywords" "ADC Texas-Instruments Analog-to-Digital-Converter QSPI SPI MICROWIRE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -56240,7 +56241,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*SSOP*3x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
