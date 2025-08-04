@@ -26282,20 +26282,12 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TCA6408ARGT"
+	(symbol "TCA6408APW"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TCA6408ARGT"
-			(at 1.524 -12.446 0)
+			(at -9.652 11.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26303,8 +26295,17 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.45x1.45mm"
-			(at 26.67 -86.106 0)
+		(property "Value" "TCA6408APW"
+			(at 5.08 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+			(at -23.114 1.016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26314,7 +26315,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/tca6408a"
-			(at 26.67 -185.928 0)
+			(at -17.018 0.762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26323,8 +26324,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Voltage 8-Bit I2C and SMBus I/O Expander"
-			(at 0 1.27 0)
+		(property "Description" "Low-Voltage 8-bit I2C and SMBus I/O Expander, TSSOP-16"
+			(at -1.27 0.254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26332,7 +26333,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "I2C expander SMbus I/O"
+		(property "ki_keywords" "Texas-Instruments"
 			(at 0 0 0)
 			(effects
 				(font
@@ -26341,10 +26342,19 @@
 				(hide yes)
 			)
 		)
-		(symbol "TCA6408ARGT_1_1"
+		(property "ki_fp_filters" "TSSOP*4.4x5mm?P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TCA6408APW_1_1"
 			(rectangle
-				(start -10.16 13.97)
-				(end 10.16 -11.43)
+				(start -7.62 10.16)
+				(end 10.16 -12.7)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -26353,155 +26363,10 @@
 					(type background)
 				)
 			)
-			(pin bidirectional line
-				(at -12.7 7.62 0)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
-				(at -12.7 2.54 0)
-				(length 2.54)
-				(name "~{INT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 -7.62 0)
-				(length 2.54)
-				(name "ADDR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -3.81 16.51 270)
-				(length 2.54)
-				(name "V_{CCI}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -13.97 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 2.54 -11.43 90)
-				(length 2.54)
-				(hide yes)
-				(name "EP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 3.81 16.51 270)
-				(length 2.54)
-				(name "V_{CCP}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -26517,16 +26382,16 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 10.16 180)
+				(at -10.16 5.08 0)
 				(length 2.54)
-				(name "P0"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -26534,10 +26399,28 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 7.62 180)
+			(pin open_collector line
+				(at -10.16 0 0)
 				(length 2.54)
-				(name "P1"
+				(name "~{INT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "~{RESET}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -26552,10 +26435,82 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 5.08 180)
+			(pin input line
+				(at -10.16 -10.16 0)
 				(length 2.54)
-				(name "P2"
+				(name "ADDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 12.7 270)
+				(length 2.54)
+				(name "V_{CCI}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 12.7 270)
+				(length 2.54)
+				(name "V_{CCP}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -15.24 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "P0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -26571,9 +26526,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 2.54 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
-				(name "P3"
+				(name "P1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -26589,9 +26544,27 @@
 				)
 			)
 			(pin bidirectional line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "P2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
 				(at 12.7 0 180)
 				(length 2.54)
-				(name "P4"
+				(name "P3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -26609,6 +26582,414 @@
 			(pin bidirectional line
 				(at 12.7 -2.54 180)
 				(length 2.54)
+				(name "P4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "P5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "P6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "P7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "TCA6408ARGT"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -9.652 11.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "TCA6408ARGT"
+			(at 5.08 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.45x1.45mm"
+			(at -23.114 1.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/tca6408a"
+			(at -17.018 0.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Voltage 8-bit I2C and SMBus I/O Expander, VQFN-16"
+			(at -1.27 0.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Texas-Instruments"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*VQFN*3x3mm?P0.5mm?EP1.45x1.45mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TCA6408ARGT_1_1"
+			(rectangle
+				(start -7.62 10.16)
+				(end 10.16 -12.7)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "~{INT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -10.16 0)
+				(length 2.54)
+				(name "ADDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 12.7 270)
+				(length 2.54)
+				(name "V_{CCI}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -15.24 90)
+				(length 2.54)
+				(name "EPAD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 12.7 270)
+				(length 2.54)
+				(name "V_{CCP}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -15.24 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "P0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "P1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "P2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "P3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "P4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -5.08 180)
+				(length 2.54)
 				(name "P5"
 					(effects
 						(font
@@ -26625,7 +27006,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -5.08 180)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(name "P6"
 					(effects
@@ -26643,7 +27024,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -7.62 180)
+				(at 12.7 -10.16 180)
 				(length 2.54)
 				(name "P7"
 					(effects
@@ -26668,15 +27049,16 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 -1.27 0)
+			(at -9.652 11.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
 		(property "Value" "TCA6408ARSV"
-			(at 1.524 -14.986 0)
+			(at 5.08 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26685,7 +27067,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm"
-			(at 26.67 -88.646 0)
+			(at -23.114 1.016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26695,7 +27077,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/tca6408a"
-			(at 26.67 -188.468 0)
+			(at -17.018 0.762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26704,8 +27086,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Voltage 8-Bit I2C and SMBus I/O Expander"
-			(at 0 -1.27 0)
+		(property "Description" "Low-Voltage 8-bit I2C and SMBus I/O Expander, UQFN-16"
+			(at -1.27 0.254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26713,7 +27095,16 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "I2C expander SMbus I/O"
+		(property "ki_keywords" "Texas-Instruments"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*UQFN*1.8x2.6mm?P0.4mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -26724,8 +27115,8 @@
 		)
 		(symbol "TCA6408ARSV_1_1"
 			(rectangle
-				(start -10.16 11.43)
-				(end 10.16 -13.97)
+				(start -7.62 10.16)
+				(end 10.16 -12.7)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -26734,26 +27125,8 @@
 					(type background)
 				)
 			)
-			(pin bidirectional line
-				(at -12.7 5.08 0)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -26770,8 +27143,26 @@
 					)
 				)
 			)
+			(pin bidirectional line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin open_collector line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "~{INT}"
 					(effects
@@ -26789,7 +27180,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -7.62 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
@@ -26807,7 +27198,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -10.16 0)
+				(at -10.16 -10.16 0)
 				(length 2.54)
 				(name "ADDR"
 					(effects
@@ -26825,7 +27216,7 @@
 				)
 			)
 			(pin power_in line
-				(at -3.81 13.97 270)
+				(at 0 12.7 270)
 				(length 2.54)
 				(name "V_{CCI}"
 					(effects
@@ -26843,25 +27234,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -16.51 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 3.81 13.97 270)
+				(at 2.54 12.7 270)
 				(length 2.54)
 				(name "V_{CCP}"
 					(effects
@@ -26871,6 +27244,24 @@
 					)
 				)
 				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -15.24 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -35399,64 +35790,6 @@
 			)
 		)
 		(property "ki_fp_filters" "SOIC*7.5x10.3mm*P1.27mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "TCA6408APW"
-		(extends "TCA6408ARSV")
-		(property "Reference" "U"
-			(at 0 -1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TCA6408APW"
-			(at 1.524 -14.986 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
-			(at 26.67 -88.646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/tca6408a"
-			(at 26.67 -188.468 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Voltage 8-Bit I2C and SMBus I/O Expander"
-			(at 0 -1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "I2C expander SMbus IO"
 			(at 0 0 0)
 			(effects
 				(font
