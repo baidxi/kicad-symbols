@@ -25866,7 +25866,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -8.89 16.51 0)
+			(at -7.112 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25875,7 +25875,7 @@
 			)
 		)
 		(property "Value" "PCF8574TS"
-			(at 3.81 16.51 0)
+			(at 3.302 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25884,6 +25884,33 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SSOP-20_4.4x6.5mm_P0.65mm"
+			(at 0 -19.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SSOP-20"
+			(at 0 -17.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "NXP Port-Expander"
 			(at 0 0 0)
 			(effects
 				(font
@@ -25892,34 +25919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "8 Bit Port/Expander to I2C Bus, SSOP-20"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "I2C Expander"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SSOP*4.4x6.5mm*P0.65mm*"
+		(property "ki_fp_filters" "SSOP*4.4x6.5mm?P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -25930,8 +25930,8 @@
 		)
 		(symbol "PCF8574TS_0_1"
 			(rectangle
-				(start -10.16 15.24)
-				(end 10.16 -15.24)
+				(start -7.62 12.7)
+				(end 7.62 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -25943,7 +25943,7 @@
 		)
 		(symbol "PCF8574TS_1_1"
 			(pin input line
-				(at -12.7 10.16 0)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -25961,7 +25961,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 7.62 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -25978,8 +25978,26 @@
 					)
 				)
 			)
+			(pin open_collector line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "~{INT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "A0"
 					(effects
@@ -25997,7 +26015,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "A1"
 					(effects
@@ -26015,7 +26033,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -2.54 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "A2"
 					(effects
@@ -26032,100 +26050,8 @@
 					)
 				)
 			)
-			(pin open_collector output_low
-				(at -12.7 -10.16 0)
-				(length 2.54)
-				(name "~{INT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin no_connect line
-				(at -10.16 -5.08 0)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -10.16 -7.62 0)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 17.78 270)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -17.78 90)
-				(length 2.54)
-				(name "VSS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 -10.16 180)
+				(at -7.62 5.08 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -26144,7 +26070,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 10.16 -12.7 180)
+				(at -7.62 0 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -26162,8 +26088,82 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at -2.54 -10.16 90)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 15.24 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 2.54 -10.16 90)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
-				(at 12.7 10.16 180)
+				(at 10.16 10.16 180)
 				(length 2.54)
 				(name "P0"
 					(effects
@@ -26181,7 +26181,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 7.62 180)
+				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "P1"
 					(effects
@@ -26199,7 +26199,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 5.08 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "P2"
 					(effects
@@ -26217,7 +26217,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 2.54 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "P3"
 					(effects
@@ -26235,7 +26235,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 0 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "P4"
 					(effects
@@ -26253,7 +26253,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -2.54 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "P5"
 					(effects
@@ -26271,7 +26271,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -5.08 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "P6"
 					(effects
@@ -26289,7 +26289,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -7.62 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "P7"
 					(effects
@@ -30036,7 +30036,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -6.35 12.7 0)
+			(at -7.112 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30045,7 +30045,7 @@
 			)
 		)
 		(property "Value" "TCA9534"
-			(at 2.54 12.7 0)
+			(at 3.302 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30054,7 +30054,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 24.13 -13.97 0)
+			(at 0 -16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30063,7 +30063,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tca9534.pdf"
-			(at 2.54 -2.54 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30071,7 +30071,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8 Bit Port/Expander, I2C SMBUS, Interrupt output, TSSOP-16, SOIC-16"
+		(property "Description" "8-bit I/O Expander, I2C / SMBus interface, interrupt output, fixed address bits 0b0100xxx, TSSOP-16 / SOIC-16"
+			(at 0 -14.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Texas-Instruments Port-Expander TCA9534DWR TCA9534DWT TCA9534PWR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -30080,16 +30089,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "SMBUS I2C Expander"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm* SOIC*7.5x10.3mm*P1.27mm*"
+		(property "ki_fp_filters" "TSSOP*4.4x5mm?P0.65mm* *SOIC*7.5x10.3mm?P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -30100,8 +30100,8 @@
 		)
 		(symbol "TCA9534_0_1"
 			(rectangle
-				(start -6.35 -13.97)
-				(end 6.35 11.43)
+				(start -7.62 12.7)
+				(end 7.62 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -30113,8 +30113,8 @@
 		)
 		(symbol "TCA9534_1_1"
 			(pin input line
-				(at -10.16 7.62 0)
-				(length 3.81)
+				(at -10.16 10.16 0)
+				(length 2.54)
 				(name "SCL"
 					(effects
 						(font
@@ -30131,8 +30131,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 5.08 0)
-				(length 3.81)
+				(at -10.16 7.62 0)
+				(length 2.54)
 				(name "SDA"
 					(effects
 						(font
@@ -30150,7 +30150,7 @@
 			)
 			(pin open_collector line
 				(at -10.16 2.54 0)
-				(length 3.81)
+				(length 2.54)
 				(name "~{INT}"
 					(effects
 						(font
@@ -30167,8 +30167,8 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -5.08 0)
-				(length 3.81)
+				(at -10.16 -2.54 0)
+				(length 2.54)
 				(name "A0"
 					(effects
 						(font
@@ -30185,8 +30185,8 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -7.62 0)
-				(length 3.81)
+				(at -10.16 -5.08 0)
+				(length 2.54)
 				(name "A1"
 					(effects
 						(font
@@ -30203,8 +30203,8 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -10.16 0)
-				(length 3.81)
+				(at -10.16 -7.62 0)
+				(length 2.54)
 				(name "A2"
 					(effects
 						(font
@@ -30222,7 +30222,7 @@
 			)
 			(pin power_in line
 				(at 0 15.24 270)
-				(length 3.81)
+				(length 2.54)
 				(name "VDD"
 					(effects
 						(font
@@ -30239,8 +30239,8 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -17.78 90)
-				(length 3.81)
+				(at 0 -12.7 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -30257,8 +30257,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 7.62 180)
-				(length 3.81)
+				(at 10.16 10.16 180)
+				(length 2.54)
 				(name "P0"
 					(effects
 						(font
@@ -30275,8 +30275,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 5.08 180)
-				(length 3.81)
+				(at 10.16 7.62 180)
+				(length 2.54)
 				(name "P1"
 					(effects
 						(font
@@ -30293,8 +30293,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 2.54 180)
-				(length 3.81)
+				(at 10.16 5.08 180)
+				(length 2.54)
 				(name "P2"
 					(effects
 						(font
@@ -30311,8 +30311,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 0 180)
-				(length 3.81)
+				(at 10.16 2.54 180)
+				(length 2.54)
 				(name "P3"
 					(effects
 						(font
@@ -30329,8 +30329,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -2.54 180)
-				(length 3.81)
+				(at 10.16 0 180)
+				(length 2.54)
 				(name "P4"
 					(effects
 						(font
@@ -30347,8 +30347,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -5.08 180)
-				(length 3.81)
+				(at 10.16 -2.54 180)
+				(length 2.54)
 				(name "P5"
 					(effects
 						(font
@@ -30365,8 +30365,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -7.62 180)
-				(length 3.81)
+				(at 10.16 -5.08 180)
+				(length 2.54)
 				(name "P6"
 					(effects
 						(font
@@ -30383,8 +30383,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -10.16 180)
-				(length 3.81)
+				(at 10.16 -7.62 180)
+				(length 2.54)
 				(name "P7"
 					(effects
 						(font
@@ -38218,7 +38218,7 @@
 	(symbol "PCF8574AP"
 		(extends "TCA9534")
 		(property "Reference" "U"
-			(at -6.35 12.954 0)
+			(at -7.112 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38227,7 +38227,7 @@
 			)
 		)
 		(property "Value" "PCF8574AP"
-			(at 3.048 12.954 0)
+			(at 3.302 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38244,7 +38244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38253,7 +38253,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8 Bit Port/Expander to I2C Bus, fixed address bits 0b0111, DIP-16"
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0111xxx, DIP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38262,7 +38262,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "I2C Expander"
+		(property "ki_keywords" "NXP Port-Expander"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38284,7 +38284,7 @@
 	(symbol "PCF8574AT"
 		(extends "TCA9534")
 		(property "Reference" "U"
-			(at -6.35 12.954 0)
+			(at -7.112 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38293,7 +38293,7 @@
 			)
 		)
 		(property "Value" "PCF8574AT"
-			(at 3.048 12.954 0)
+			(at 3.302 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38310,7 +38310,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38319,7 +38319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8 Bit Port/Expander to I2C Bus, fixed address bits 0b0111, SOIC-16"
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0111xxx, SOIC-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38328,7 +38328,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "I2C Expander"
+		(property "ki_keywords" "NXP Port-Expander"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38337,7 +38337,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SOIC*7.5x10.3mm*P1.27mm*"
+		(property "ki_fp_filters" "SOIC*7.5x10.3mm?P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38350,7 +38350,7 @@
 	(symbol "PCF8574ATS"
 		(extends "PCF8574TS")
 		(property "Reference" "U"
-			(at -8.89 16.51 0)
+			(at -7.112 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38359,7 +38359,7 @@
 			)
 		)
 		(property "Value" "PCF8574ATS"
-			(at 3.81 16.51 0)
+			(at 3.302 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38376,7 +38376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38385,7 +38385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8 Bit Port/Expander to I2C Bus, SSOP-20"
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0111xxx, SSOP-20"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38394,7 +38394,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "I2C Expander"
+		(property "ki_keywords" "NXP Port-Expander"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38403,7 +38403,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SSOP*4.4x6.5mm*P0.65mm*"
+		(property "ki_fp_filters" "SSOP*4.4x6.5mm?P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38416,7 +38416,7 @@
 	(symbol "PCF8574P"
 		(extends "TCA9534")
 		(property "Reference" "U"
-			(at -6.35 12.954 0)
+			(at -7.112 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38425,7 +38425,7 @@
 			)
 		)
 		(property "Value" "PCF8574P"
-			(at 3.048 12.954 0)
+			(at 3.302 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38442,7 +38442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38451,7 +38451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8 Bit Port/Expander to I2C Bus, fixed address bits 0b0100, DIP-16"
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, DIP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38460,7 +38460,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "I2C Expander"
+		(property "ki_keywords" "NXP Port-Expander"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38482,7 +38482,7 @@
 	(symbol "PCF8574T"
 		(extends "TCA9534")
 		(property "Reference" "U"
-			(at -6.35 12.954 0)
+			(at -7.112 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38491,7 +38491,7 @@
 			)
 		)
 		(property "Value" "PCF8574T"
-			(at 3.048 12.954 0)
+			(at 3.302 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38508,7 +38508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38517,7 +38517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8 Bit Port/Expander to I2C Bus, fixed address bits 0b0100, SOIC-16"
+		(property "Description" "8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38526,7 +38526,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "I2C Expander"
+		(property "ki_keywords" "NXP Port-Expander"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38535,7 +38535,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SOIC*7.5x10.3mm*P1.27mm*"
+		(property "ki_fp_filters" "*SOIC*7.5x10.3mm?P1.27mm*"
 			(at 0 0 0)
 			(effects
 				(font
