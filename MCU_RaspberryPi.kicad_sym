@@ -2314,7 +2314,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 17.526 70.104 0)
+			(at 17.526 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2323,7 +2323,7 @@
 			)
 		)
 		(property "Value" "RP2350B"
-			(at 17.526 67.564 0)
+			(at 17.526 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2332,7 +2332,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm"
-			(at -0.254 0.508 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2341,7 +2341,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf"
-			(at -0.254 0.254 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2350,7 +2350,7 @@
 			)
 		)
 		(property "Description" "A microcontroller by Raspberry Pi, dual CPU architecture (ARM Cortex-M33 / RISC-V Hazard3), 150MHz, no flash, 520KB SRAM, 12 PIO state machines, VQFN-80"
-			(at 0.508 0.508 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2378,8 +2378,8 @@
 		)
 		(symbol "RP2350B_0_1"
 			(rectangle
-				(start -21.59 64.77)
-				(end 21.59 -64.77)
+				(start -21.59 52.07)
+				(end 21.59 -54.61)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -2390,8 +2390,152 @@
 			)
 		)
 		(symbol "RP2350B_1_0"
+			(pin bidirectional line
+				(at -25.4 -33.02 0)
+				(length 3.81)
+				(name "GPIO40_ADC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -35.56 0)
+				(length 3.81)
+				(name "GPIO41_ADC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -38.1 0)
+				(length 3.81)
+				(name "GPIO42_ADC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "53"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -40.64 0)
+				(length 3.81)
+				(name "GPIO43_ADC3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "54"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -43.18 0)
+				(length 3.81)
+				(name "GPIO44_ADC4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "55"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -45.72 0)
+				(length 3.81)
+				(name "GPIO45_ADC5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -48.26 0)
+				(length 3.81)
+				(name "GPIO46_ADC6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "57"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -25.4 -50.8 0)
+				(length 3.81)
+				(name "GPIO47_ADC7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "58"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at -17.78 68.58 270)
+				(at -17.78 55.88 270)
 				(length 3.81)
 				(name "VREG_AVDD"
 					(effects
@@ -2409,7 +2553,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 68.58 270)
+				(at -12.7 55.88 270)
 				(length 3.81)
 				(name "USB_OTP_VDD"
 					(effects
@@ -2427,7 +2571,7 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 68.58 270)
+				(at -5.08 55.88 270)
 				(length 3.81)
 				(name "QSPI_IOVDD"
 					(effects
@@ -2445,7 +2589,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 68.58 270)
+				(at -2.54 55.88 270)
 				(length 3.81)
 				(hide yes)
 				(name "IOVDD"
@@ -2464,7 +2608,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 68.58 270)
+				(at -2.54 55.88 270)
 				(length 3.81)
 				(hide yes)
 				(name "IOVDD"
@@ -2483,7 +2627,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 68.58 270)
+				(at -2.54 55.88 270)
 				(length 3.81)
 				(hide yes)
 				(name "IOVDD"
@@ -2502,7 +2646,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -68.58 90)
+				(at -2.54 -58.42 90)
 				(length 3.81)
 				(name "VREG_PGND"
 					(effects
@@ -2520,7 +2664,7 @@
 				)
 			)
 			(pin power_in line
-				(at 12.7 68.58 270)
+				(at 12.7 55.88 270)
 				(length 3.81)
 				(name "DVDD"
 					(effects
@@ -2538,7 +2682,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 68.58 270)
+				(at 12.7 55.88 270)
 				(length 3.81)
 				(hide yes)
 				(name "DVDD"
@@ -2557,7 +2701,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -15.24 180)
+				(at 25.4 -27.94 180)
 				(length 3.81)
 				(name "GPIO30"
 					(effects
@@ -2575,7 +2719,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -17.78 180)
+				(at 25.4 -30.48 180)
 				(length 3.81)
 				(name "GPIO31"
 					(effects
@@ -2593,7 +2737,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -20.32 180)
+				(at 25.4 -33.02 180)
 				(length 3.81)
 				(name "GPIO32"
 					(effects
@@ -2611,7 +2755,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -22.86 180)
+				(at 25.4 -35.56 180)
 				(length 3.81)
 				(name "GPIO33"
 					(effects
@@ -2629,7 +2773,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -25.4 180)
+				(at 25.4 -38.1 180)
 				(length 3.81)
 				(name "GPIO34"
 					(effects
@@ -2647,7 +2791,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -27.94 180)
+				(at 25.4 -40.64 180)
 				(length 3.81)
 				(name "GPIO35"
 					(effects
@@ -2665,7 +2809,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -30.48 180)
+				(at 25.4 -43.18 180)
 				(length 3.81)
 				(name "GPIO36"
 					(effects
@@ -2683,7 +2827,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -33.02 180)
+				(at 25.4 -45.72 180)
 				(length 3.81)
 				(name "GPIO37"
 					(effects
@@ -2701,7 +2845,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -35.56 180)
+				(at 25.4 -48.26 180)
 				(length 3.81)
 				(name "GPIO38"
 					(effects
@@ -2719,7 +2863,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -38.1 180)
+				(at 25.4 -50.8 180)
 				(length 3.81)
 				(name "GPIO39"
 					(effects
@@ -2736,154 +2880,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 25.4 -43.18 180)
-				(length 3.81)
-				(name "GPIO40_ADC0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "49"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 25.4 -45.72 180)
-				(length 3.81)
-				(name "GPIO41_ADC1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "52"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 25.4 -48.26 180)
-				(length 3.81)
-				(name "GPIO42_ADC2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "53"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 25.4 -50.8 180)
-				(length 3.81)
-				(name "GPIO43_ADC3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "54"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 25.4 -53.34 180)
-				(length 3.81)
-				(name "GPIO44_ADC4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "55"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 25.4 -55.88 180)
-				(length 3.81)
-				(name "GPIO45_ADC5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "56"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 25.4 -58.42 180)
-				(length 3.81)
-				(name "GPIO46_ADC6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "57"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 25.4 -60.96 180)
-				(length 3.81)
-				(name "GPIO47_ADC7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "58"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 		(symbol "RP2350B_1_1"
 			(pin input line
-				(at -25.4 45.72 0)
+				(at -25.4 33.02 0)
 				(length 3.81)
 				(name "RUN"
 					(effects
@@ -2901,7 +2901,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 38.1 0)
+				(at -25.4 25.4 0)
 				(length 3.81)
 				(name "USB_DM"
 					(effects
@@ -2919,7 +2919,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 35.56 0)
+				(at -25.4 22.86 0)
 				(length 3.81)
 				(name "USB_DP"
 					(effects
@@ -2937,7 +2937,7 @@
 				)
 			)
 			(pin output line
-				(at -25.4 27.94 0)
+				(at -25.4 15.24 0)
 				(length 3.81)
 				(name "QSPI_SCLK"
 					(effects
@@ -2955,7 +2955,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 25.4 0)
+				(at -25.4 12.7 0)
 				(length 3.81)
 				(name "QSPI_SD0"
 					(effects
@@ -2973,7 +2973,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 22.86 0)
+				(at -25.4 10.16 0)
 				(length 3.81)
 				(name "QSPI_SD1"
 					(effects
@@ -2991,7 +2991,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 20.32 0)
+				(at -25.4 7.62 0)
 				(length 3.81)
 				(name "QSPI_SD2"
 					(effects
@@ -3009,7 +3009,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 17.78 0)
+				(at -25.4 5.08 0)
 				(length 3.81)
 				(name "QSPI_SD3"
 					(effects
@@ -3027,7 +3027,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 15.24 0)
+				(at -25.4 2.54 0)
 				(length 3.81)
 				(name "QSPI_SS"
 					(effects
@@ -3045,7 +3045,7 @@
 				)
 			)
 			(pin input line
-				(at -25.4 7.62 0)
+				(at -25.4 -5.08 0)
 				(length 3.81)
 				(name "XIN"
 					(effects
@@ -3063,7 +3063,7 @@
 				)
 			)
 			(pin output line
-				(at -25.4 -2.54 0)
+				(at -25.4 -15.24 0)
 				(length 3.81)
 				(name "XOUT"
 					(effects
@@ -3081,7 +3081,7 @@
 				)
 			)
 			(pin input line
-				(at -25.4 -10.16 0)
+				(at -25.4 -22.86 0)
 				(length 3.81)
 				(name "SWCLK"
 					(effects
@@ -3099,7 +3099,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -25.4 -12.7 0)
+				(at -25.4 -25.4 0)
 				(length 3.81)
 				(name "SWDIO"
 					(effects
@@ -3117,7 +3117,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 68.58 270)
+				(at -10.16 55.88 270)
 				(length 3.81)
 				(name "ADC_AVDD"
 					(effects
@@ -3135,7 +3135,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 68.58 270)
+				(at -2.54 55.88 270)
 				(length 3.81)
 				(hide yes)
 				(name "IOVDD"
@@ -3154,7 +3154,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 68.58 270)
+				(at -2.54 55.88 270)
 				(length 3.81)
 				(hide yes)
 				(name "IOVDD"
@@ -3173,7 +3173,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 68.58 270)
+				(at -2.54 55.88 270)
 				(length 3.81)
 				(hide yes)
 				(name "IOVDD"
@@ -3192,7 +3192,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 68.58 270)
+				(at -2.54 55.88 270)
 				(length 3.81)
 				(hide yes)
 				(name "IOVDD"
@@ -3211,7 +3211,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 68.58 270)
+				(at -2.54 55.88 270)
 				(length 3.81)
 				(name "IOVDD"
 					(effects
@@ -3229,7 +3229,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -68.58 90)
+				(at 0 -58.42 90)
 				(length 3.81)
 				(name "GND"
 					(effects
@@ -3247,7 +3247,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 68.58 270)
+				(at 2.54 55.88 270)
 				(length 3.81)
 				(name "VREG_VIN"
 					(effects
@@ -3265,7 +3265,7 @@
 				)
 			)
 			(pin power_out line
-				(at 5.08 68.58 270)
+				(at 5.08 55.88 270)
 				(length 3.81)
 				(name "VREG_LX"
 					(effects
@@ -3283,7 +3283,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 68.58 270)
+				(at 7.62 55.88 270)
 				(length 3.81)
 				(name "VREG_FB"
 					(effects
@@ -3301,7 +3301,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 68.58 270)
+				(at 12.7 55.88 270)
 				(length 3.81)
 				(hide yes)
 				(name "DVDD"
@@ -3320,7 +3320,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 60.96 180)
+				(at 25.4 48.26 180)
 				(length 3.81)
 				(name "GPIO0"
 					(effects
@@ -3338,7 +3338,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 58.42 180)
+				(at 25.4 45.72 180)
 				(length 3.81)
 				(name "GPIO1"
 					(effects
@@ -3356,7 +3356,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 55.88 180)
+				(at 25.4 43.18 180)
 				(length 3.81)
 				(name "GPIO2"
 					(effects
@@ -3374,7 +3374,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 53.34 180)
+				(at 25.4 40.64 180)
 				(length 3.81)
 				(name "GPIO3"
 					(effects
@@ -3392,7 +3392,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 50.8 180)
+				(at 25.4 38.1 180)
 				(length 3.81)
 				(name "GPIO4"
 					(effects
@@ -3410,7 +3410,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 48.26 180)
+				(at 25.4 35.56 180)
 				(length 3.81)
 				(name "GPIO5"
 					(effects
@@ -3428,7 +3428,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 45.72 180)
+				(at 25.4 33.02 180)
 				(length 3.81)
 				(name "GPIO6"
 					(effects
@@ -3446,7 +3446,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 43.18 180)
+				(at 25.4 30.48 180)
 				(length 3.81)
 				(name "GPIO7"
 					(effects
@@ -3464,7 +3464,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 40.64 180)
+				(at 25.4 27.94 180)
 				(length 3.81)
 				(name "GPIO8"
 					(effects
@@ -3482,7 +3482,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 38.1 180)
+				(at 25.4 25.4 180)
 				(length 3.81)
 				(name "GPIO9"
 					(effects
@@ -3500,7 +3500,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 35.56 180)
+				(at 25.4 22.86 180)
 				(length 3.81)
 				(name "GPIO10"
 					(effects
@@ -3518,7 +3518,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 33.02 180)
+				(at 25.4 20.32 180)
 				(length 3.81)
 				(name "GPIO11"
 					(effects
@@ -3536,7 +3536,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 30.48 180)
+				(at 25.4 17.78 180)
 				(length 3.81)
 				(name "GPIO12"
 					(effects
@@ -3554,7 +3554,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 27.94 180)
+				(at 25.4 15.24 180)
 				(length 3.81)
 				(name "GPIO13"
 					(effects
@@ -3572,7 +3572,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 25.4 180)
+				(at 25.4 12.7 180)
 				(length 3.81)
 				(name "GPIO14"
 					(effects
@@ -3590,7 +3590,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 22.86 180)
+				(at 25.4 10.16 180)
 				(length 3.81)
 				(name "GPIO15"
 					(effects
@@ -3608,7 +3608,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 20.32 180)
+				(at 25.4 7.62 180)
 				(length 3.81)
 				(name "GPIO16"
 					(effects
@@ -3626,7 +3626,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 17.78 180)
+				(at 25.4 5.08 180)
 				(length 3.81)
 				(name "GPIO17"
 					(effects
@@ -3644,7 +3644,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 15.24 180)
+				(at 25.4 2.54 180)
 				(length 3.81)
 				(name "GPIO18"
 					(effects
@@ -3662,7 +3662,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 12.7 180)
+				(at 25.4 0 180)
 				(length 3.81)
 				(name "GPIO19"
 					(effects
@@ -3680,7 +3680,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 10.16 180)
+				(at 25.4 -2.54 180)
 				(length 3.81)
 				(name "GPIO20"
 					(effects
@@ -3698,7 +3698,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 7.62 180)
+				(at 25.4 -5.08 180)
 				(length 3.81)
 				(name "GPIO21"
 					(effects
@@ -3716,7 +3716,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 5.08 180)
+				(at 25.4 -7.62 180)
 				(length 3.81)
 				(name "GPIO22"
 					(effects
@@ -3734,7 +3734,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 2.54 180)
+				(at 25.4 -10.16 180)
 				(length 3.81)
 				(name "GPIO23"
 					(effects
@@ -3752,7 +3752,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 0 180)
+				(at 25.4 -12.7 180)
 				(length 3.81)
 				(name "GPIO24"
 					(effects
@@ -3770,7 +3770,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -2.54 180)
+				(at 25.4 -15.24 180)
 				(length 3.81)
 				(name "GPIO25"
 					(effects
@@ -3788,7 +3788,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -5.08 180)
+				(at 25.4 -17.78 180)
 				(length 3.81)
 				(name "GPIO26"
 					(effects
@@ -3806,7 +3806,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -7.62 180)
+				(at 25.4 -20.32 180)
 				(length 3.81)
 				(name "GPIO27"
 					(effects
@@ -3824,7 +3824,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -10.16 180)
+				(at 25.4 -22.86 180)
 				(length 3.81)
 				(name "GPIO28"
 					(effects
@@ -3842,7 +3842,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -12.7 180)
+				(at 25.4 -25.4 180)
 				(length 3.81)
 				(name "GPIO29"
 					(effects
@@ -3931,7 +3931,7 @@
 	(symbol "RP2354B"
 		(extends "RP2350B")
 		(property "Reference" "U"
-			(at 17.526 70.104 0)
+			(at 17.526 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3940,7 +3940,7 @@
 			)
 		)
 		(property "Value" "RP2354B"
-			(at 17.526 67.564 0)
+			(at 17.526 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3949,7 +3949,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm"
-			(at -0.254 0.508 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3958,7 +3958,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf"
-			(at -0.254 0.254 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3967,7 +3967,7 @@
 			)
 		)
 		(property "Description" "A microcontroller by Raspberry Pi, dual CPU architecture (ARM Cortex-M33 / RISC-V Hazard3), 150MHz, 2MB flash, 520KB SRAM, 12 PIO state machines, VQFN-80"
-			(at 0.508 0.508 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
