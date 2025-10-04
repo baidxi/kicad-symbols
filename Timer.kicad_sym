@@ -4466,7 +4466,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "LM555xMM"
+	(symbol "LM555xMM-not-derived"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4479,7 +4479,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LM555xMM"
+		(property "Value" "LM555xMM-not-derived"
 			(at 2.54 8.89 0)
 			(effects
 				(font
@@ -4533,25 +4533,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "LM555xMM_0_0"
-			(pin power_in line
-				(at 0 10.16 270)
-				(length 2.54)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
+		(symbol "LM555xMM-not-derived_0_0"
 			(pin power_in line
 				(at 0 -10.16 90)
 				(length 2.54)
@@ -4570,11 +4552,65 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 2.54 45.72 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 25.4 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 10.16 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
-		(symbol "LM555xMM_0_1"
+		(symbol "LM555xMM-not-derived_0_1"
 			(rectangle
-				(start -8.89 -7.62)
-				(end 8.89 7.62)
+				(start -7.62 43.18)
+				(end 7.62 27.94)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -4584,8 +4620,8 @@
 				)
 			)
 			(rectangle
-				(start -8.89 -7.62)
-				(end 8.89 7.62)
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -4595,28 +4631,10 @@
 				)
 			)
 		)
-		(symbol "LM555xMM_1_1"
-			(pin input line
-				(at -12.7 5.08 0)
-				(length 3.81)
-				(name "TR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
+		(symbol "LM555xMM-not-derived_1_1"
 			(pin input line
 				(at -12.7 0 0)
-				(length 3.81)
+				(length 2.54)
 				(name "CV"
 					(effects
 						(font
@@ -4632,10 +4650,10 @@
 					)
 				)
 			)
-			(pin input inverted
-				(at -12.7 -5.08 0)
-				(length 3.81)
-				(name "R"
+			(pin input line
+				(at -10.16 40.64 0)
+				(length 2.54)
+				(name "~{RST}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4650,9 +4668,153 @@
 					)
 				)
 			)
+			(pin input line
+				(at -10.16 38.1 0)
+				(length 2.54)
+				(name "DISCH"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 33.02 0)
+				(length 2.54)
+				(name "THRES"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 30.48 0)
+				(length 2.54)
+				(name "TRIG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "~{RST}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "THRES"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "TRIG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 0 45.72 270)
+				(length 2.54)
+				(name "CONT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 35.56 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output line
 				(at 12.7 5.08 180)
-				(length 3.81)
+				(length 2.54)
 				(name "Q"
 					(effects
 						(font
@@ -4670,7 +4832,7 @@
 			)
 			(pin input line
 				(at 12.7 0 180)
-				(length 3.81)
+				(length 2.54)
 				(name "DIS"
 					(effects
 						(font
@@ -4679,24 +4841,6 @@
 					)
 				)
 				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 12.7 -5.08 180)
-				(length 3.81)
-				(name "THR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4738,7 +4882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm556.pdf"
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/405/lm556-405954.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4776,24 +4920,6 @@
 		)
 		(symbol "LM556_0_0"
 			(pin power_in line
-				(at 0 10.16 270)
-				(length 2.54)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
@@ -4811,22 +4937,29 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 2.54 10.16 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(symbol "LM556_0_1"
 			(rectangle
-				(start -8.89 -7.62)
-				(end 8.89 7.62)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(rectangle
-				(start -8.89 -7.62)
-				(end 8.89 7.62)
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -4838,45 +4971,9 @@
 		)
 		(symbol "LM556_1_1"
 			(pin input line
-				(at -12.7 5.08 0)
-				(length 3.81)
-				(name "TR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 0 0)
-				(length 3.81)
-				(name "CV"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input inverted
-				(at -12.7 -5.08 0)
-				(length 3.81)
-				(name "R"
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "~{RST}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4891,28 +4988,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 5.08 180)
-				(length 3.81)
-				(name "Q"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at 12.7 0 180)
-				(length 3.81)
-				(name "DIS"
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "DISCH"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4928,9 +5007,9 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -5.08 180)
-				(length 3.81)
-				(name "THR"
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "THRES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4945,48 +5024,66 @@
 					)
 				)
 			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "TRIG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 10.16 270)
+				(length 2.54)
+				(name "CONT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(symbol "LM556_2_1"
 			(pin input line
-				(at -12.7 5.08 0)
-				(length 3.81)
-				(name "TR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 0 0)
-				(length 3.81)
-				(name "CV"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input inverted
-				(at -12.7 -5.08 0)
-				(length 3.81)
-				(name "R"
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "~{RST}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5001,28 +5098,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 5.08 180)
-				(length 3.81)
-				(name "Q"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at 12.7 0 180)
-				(length 3.81)
-				(name "DIS"
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "DISCH"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5038,9 +5117,9 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -5.08 180)
-				(length 3.81)
-				(name "THR"
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "THRES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5048,6 +5127,60 @@
 					)
 				)
 				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "TRIG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 10.16 270)
+				(length 2.54)
+				(name "CONT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5127,24 +5260,6 @@
 		)
 		(symbol "LMC555xTP_0_0"
 			(pin power_in line
-				(at 0 10.16 270)
-				(length 2.54)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
@@ -5162,22 +5277,29 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 2.54 10.16 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(symbol "LMC555xTP_0_1"
 			(rectangle
-				(start -8.89 -7.62)
-				(end 8.89 7.62)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(rectangle
-				(start -8.89 -7.62)
-				(end 8.89 7.62)
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -5189,45 +5311,9 @@
 		)
 		(symbol "LMC555xTP_1_1"
 			(pin input line
-				(at -12.7 5.08 0)
-				(length 3.81)
-				(name "TR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 0 0)
-				(length 3.81)
-				(name "CV"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input inverted
-				(at -12.7 -5.08 0)
-				(length 3.81)
-				(name "R"
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "~{RST}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5242,28 +5328,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 5.08 180)
-				(length 3.81)
-				(name "Q"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "C3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at 12.7 0 180)
-				(length 3.81)
-				(name "DIS"
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "DISCH"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5279,9 +5347,9 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -5.08 180)
-				(length 3.81)
-				(name "THR"
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "THRES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5289,6 +5357,60 @@
 					)
 				)
 				(number "B1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "TRIG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 10.16 270)
+				(length 2.54)
+				(name "CONT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7032,6 +7154,24 @@
 		)
 		(symbol "NE555D_0_0"
 			(pin power_in line
+				(at 0 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
 				(at 2.54 10.16 270)
 				(length 2.54)
 				(name "VCC"
@@ -7042,24 +7182,6 @@
 					)
 				)
 				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -10.16 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8998,7 +9120,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 0 0 0)
+			(at 0 -26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9007,7 +9129,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlc555.pdf"
-			(at 0 0 0)
+			(at 0 -24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9016,7 +9138,7 @@
 			)
 		)
 		(property "Description" "Single LinCMOS Timer, TSSOP-14"
-			(at 0 0 0)
+			(at 0 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9044,24 +9166,6 @@
 		)
 		(symbol "TLC555xPW_0_0"
 			(pin power_in line
-				(at 0 10.16 270)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
@@ -9079,22 +9183,29 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 2.54 10.16 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(symbol "TLC555xPW_0_1"
 			(rectangle
-				(start -8.89 -7.62)
-				(end 8.89 7.62)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(rectangle
-				(start -8.89 -7.62)
-				(end 8.89 7.62)
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -9106,9 +9217,82 @@
 		)
 		(symbol "TLC555xPW_1_1"
 			(pin input line
-				(at -12.7 5.08 0)
-				(length 3.81)
-				(name "TR"
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "~{RST}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "DISCH"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 0 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "THRES"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "TRIG"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9124,8 +9308,8 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
-				(length 3.81)
+				(at 0 10.16 270)
+				(length 2.54)
 				(name "CONT"
 					(effects
 						(font
@@ -9141,64 +9325,8 @@
 					)
 				)
 			)
-			(pin input inverted
-				(at -12.7 -5.08 0)
-				(length 3.81)
-				(name "RESET"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin no_connect line
-				(at -2.54 5.08 270)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -2.54 0 270)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 0 5.08 270)
+				(at 7.62 5.08 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -9217,7 +9345,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 0 270)
+				(at 7.62 2.54 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -9236,7 +9364,45 @@
 				)
 			)
 			(pin no_connect line
-				(at 2.54 5.08 270)
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 7.62 -5.08 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 7.62 -7.62 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -9254,28 +9420,9 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 2.54 0 270)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at 12.7 5.08 180)
-				(length 3.81)
+				(at 10.16 0 180)
+				(length 2.54)
 				(name "OUT"
 					(effects
 						(font
@@ -9284,42 +9431,6 @@
 					)
 				)
 				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 12.7 0 180)
-				(length 3.81)
-				(name "DISCH"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 12.7 -5.08 180)
-				(length 3.81)
-				(name "THRES"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10557,7 +10668,7 @@
 		)
 	)
 	(symbol "LMC555xMM"
-		(extends "LM555xMM")
+		(extends "NE555D")
 		(property "Reference" "U"
 			(at -10.16 8.89 0)
 			(effects
@@ -10577,7 +10688,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
-			(at 16.51 -10.16 0)
+			(at 0 -24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10585,8 +10696,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmc555.pdf"
-			(at 21.59 -10.16 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm555.pdf"
+			(at 0 -26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10594,8 +10705,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CMOS Timer, 555 compatible, VSSOP-8"
-			(at 0 0 0)
+		(property "Description" "Precision Timers, 555 compatible, SOIC-8"
+			(at 0 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12387,7 +12498,7 @@
 		)
 	)
 	(symbol "TLC555xPS"
-		(extends "LM555xMM")
+		(extends "LM555xMM-not-derived")
 		(property "Reference" "U"
 			(at -10.16 8.89 0)
 			(effects
