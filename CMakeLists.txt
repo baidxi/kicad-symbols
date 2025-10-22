@@ -1,6 +1,6 @@
-project( kicad-symbols NONE )
-
 cmake_minimum_required( VERSION 3.10 FATAL_ERROR )
+
+project( kicad-symbols NONE )
 
 #================================================
 # Locations for install targets.
@@ -39,14 +39,11 @@ add_custom_target( uninstall
 # Installed files.
 #================================================
 
-# Install all of the symbol library (.kicad_sym) files in this folder.
-file(GLOB dcm_files "*.kicad_sym")
+# Install all of the symbol library (.kicad_sym) and simulation model (.sp)
+# files in this folder.
+file(GLOB sym_and_sim_lib_files "*.kicad_sym" "*.sp")
 
-install(FILES ${dcm_files}
-        DESTINATION ${KICAD_LIBRARY}
-        COMPONENT resources)
-
-install(FILES ${lib_files}
+install(FILES ${sym_and_sim_lib_files}
         DESTINATION ${KICAD_LIBRARY}
         COMPONENT resources)
 
