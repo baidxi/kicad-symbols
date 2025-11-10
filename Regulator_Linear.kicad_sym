@@ -54680,6 +54680,179 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "TPS77012PDBV"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -3.81 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS77012PDBV"
+			(at 6.35 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps770.pdf"
+			(at 0 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50-mA fixed LDO, 1.2V, active output discharge, 55dB@1MHz PSRR, 1.42..5.5Vin, 45mV dropout, SOT-23-5"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Single-Output power-supply-rejection-ration low-dropout-regulator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TPS77012PDBV_0_1"
+			(rectangle
+				(start -5.08 -5.08)
+				(end 5.08 5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin power_in line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TPS77012PDBV_1_1"
+			(pin no_connect line
+				(at 5.08 0 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC/FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "TPS77701_HTSSOP20"
 		(pin_names
 			(offset 1.016)
@@ -143154,72 +143327,8 @@
 			)
 		)
 	)
-	(symbol "TPS77012PDBV"
-		(extends "TPS78233DDC")
-		(property "Reference" "U"
-			(at -3.81 6.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS77012PDBV"
-			(at 6.35 6.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 0 -25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv770.pdf"
-			(at 0 -22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "50-mA fixed LDO, 1.2V, active output discharge, 55dB@1MHz PSRR, 1.42..5.5Vin, 45mV dropout, SOT-23-5"
-			(at 1.27 -27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Single-Output power-supply-rejection-ration low-dropout-regulator"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOT?23*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(symbol "TPS77018PDBV"
-		(extends "TPS78233DDC")
+		(extends "TPS77012PDBV")
 		(property "Reference" "U"
 			(at -3.81 6.35 0)
 			(effects
@@ -143245,7 +143354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv770.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps770.pdf"
 			(at 0 -22.86 0)
 			(effects
 				(font
@@ -143283,7 +143392,7 @@
 		)
 	)
 	(symbol "TPS77025PDBV"
-		(extends "TPS78233DDC")
+		(extends "TPS77012PDBV")
 		(property "Reference" "U"
 			(at -3.81 6.35 0)
 			(effects
@@ -143309,7 +143418,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv770.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps770.pdf"
 			(at 0 -22.86 0)
 			(effects
 				(font
@@ -143347,7 +143456,7 @@
 		)
 	)
 	(symbol "TPS77028PDBV"
-		(extends "TPS78233DDC")
+		(extends "TPS77012PDBV")
 		(property "Reference" "U"
 			(at -3.81 6.35 0)
 			(effects
@@ -143373,7 +143482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv770.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps770.pdf"
 			(at 0 -22.86 0)
 			(effects
 				(font
@@ -143411,7 +143520,7 @@
 		)
 	)
 	(symbol "TPS77033PDBV"
-		(extends "TPS78233DDC")
+		(extends "TPS77012PDBV")
 		(property "Reference" "U"
 			(at -3.81 6.35 0)
 			(effects
@@ -143437,7 +143546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv770.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps770.pdf"
 			(at 0 -22.86 0)
 			(effects
 				(font
