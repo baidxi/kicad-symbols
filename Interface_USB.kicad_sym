@@ -36137,6 +36137,14 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
+			(at 0 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HUSB238_002DD"
 			(at 0 12.7 0)
 			(effects
 				(font
@@ -36144,16 +36152,8 @@
 				)
 			)
 		)
-		(property "Value" "HUSB238"
-			(at 0 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias"
-			(at -6.35 3.81 0)
+			(at -6.35 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36162,7 +36162,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf"
-			(at -6.35 3.81 0)
+			(at -6.35 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36170,8 +36170,26 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB-PD Sink IC Port Controller, VBUS = 3..48V, USB Type-C rev. 2.1, USB-PD rev. 3.1, BC1.2, QC2.0, WQFN-16"
-			(at -6.35 3.81 0)
+		(property "Description" "USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WQFN-16"
+			(at -6.35 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "USB-C I2C USB-Power-Delivery Quick-Charge"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*DFN*10*1EP*3x3mm*P0.5mm*EP1.65x2.38mm*"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36181,18 +36199,18 @@
 		)
 		(symbol "HUSB238_002DD_1_1"
 			(rectangle
-				(start -6.35 7.62)
-				(end 6.35 -12.7)
+				(start -7.62 10.16)
+				(end 7.62 -10.16)
 				(stroke
-					(width 0)
-					(type default)
+					(width 0.254)
+					(type solid)
 				)
 				(fill
 					(type background)
 				)
 			)
 			(pin power_in line
-				(at -8.89 5.08 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -36210,7 +36228,7 @@
 				)
 			)
 			(pin input line
-				(at -8.89 0 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "CC1"
 					(effects
@@ -36228,7 +36246,7 @@
 				)
 			)
 			(pin input line
-				(at -8.89 -2.54 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "CC2"
 					(effects
@@ -36246,7 +36264,7 @@
 				)
 			)
 			(pin input line
-				(at -8.89 -7.62 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "D+"
 					(effects
@@ -36264,7 +36282,7 @@
 				)
 			)
 			(pin input line
-				(at -8.89 -10.16 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "D-"
 					(effects
@@ -36282,7 +36300,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -36300,7 +36318,7 @@
 				)
 			)
 			(pin input line
-				(at 8.89 5.08 180)
+				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "Gate"
 					(effects
@@ -36318,7 +36336,7 @@
 				)
 			)
 			(pin input line
-				(at 8.89 0 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -36335,8 +36353,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 8.89 -2.54 180)
+			(pin bidirectional line
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -36354,7 +36372,7 @@
 				)
 			)
 			(pin input line
-				(at 8.89 -7.62 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "VSET"
 					(effects
@@ -36372,7 +36390,7 @@
 				)
 			)
 			(pin input line
-				(at 8.89 -10.16 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "ISET"
 					(effects
