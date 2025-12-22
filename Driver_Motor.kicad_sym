@@ -3885,7 +3885,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -7.62 0)
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "GAIN"
 					(effects
@@ -3903,7 +3903,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -10.16 0)
+				(at -15.24 -7.62 0)
 				(length 2.54)
 				(name "SLEW"
 					(effects
@@ -3921,7 +3921,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -12.7 0)
+				(at -15.24 -10.16 0)
 				(length 2.54)
 				(name "MODE"
 					(effects
@@ -3957,24 +3957,6 @@
 				)
 			)
 			(pin power_in line
-				(at -1.27 -22.86 90)
-				(length 2.54)
-				(name "PGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 0 22.86 270)
 				(length 2.54)
 				(name "CSAREF"
@@ -3985,6 +3967,24 @@
 					)
 				)
 				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -22.86 90)
+				(length 2.54)
+				(name "PGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4121,7 +4121,7 @@
 		)
 		(symbol "DRV8317H_1_0"
 			(pin input line
-				(at -15.24 -17.78 0)
+				(at -15.24 -15.24 0)
 				(length 2.54)
 				(name "~{SLEEP}"
 					(effects
@@ -4131,6 +4131,24 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -15.24 -17.78 0)
+				(length 2.54)
+				(name "~{FAULT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4177,7 +4195,7 @@
 				)
 			)
 			(pin power_in line
-				(at -1.27 -22.86 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(hide yes)
 				(name "PGND"
@@ -4196,7 +4214,7 @@
 				)
 			)
 			(pin passive line
-				(at -1.27 -22.86 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(hide yes)
 				(name "PGND"
@@ -4215,7 +4233,7 @@
 				)
 			)
 			(pin passive line
-				(at -1.27 -22.86 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(hide yes)
 				(name "PGND"
@@ -4226,43 +4244,6 @@
 					)
 				)
 				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 1.27 -22.86 90)
-				(length 2.54)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 1.27 -22.86 90)
-				(length 2.54)
-				(hide yes)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "37"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4301,6 +4282,43 @@
 					)
 				)
 				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -22.86 90)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 2.54)
+				(hide yes)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4430,24 +4448,6 @@
 					)
 				)
 				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
-				(at 15.24 -17.78 180)
-				(length 2.54)
-				(name "~{FAULT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4664,24 +4664,6 @@
 				)
 			)
 			(pin power_in line
-				(at -1.27 -22.86 90)
-				(length 2.54)
-				(name "PGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 0 22.86 270)
 				(length 2.54)
 				(name "CSAREF"
@@ -4692,6 +4674,24 @@
 					)
 				)
 				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -22.86 90)
+				(length 2.54)
+				(name "PGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4913,7 +4913,7 @@
 		)
 		(symbol "DRV8317S_1_0"
 			(pin input line
-				(at -15.24 -5.08 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "SCLK"
 					(effects
@@ -4931,7 +4931,7 @@
 				)
 			)
 			(pin output line
-				(at -15.24 -7.62 0)
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "CIPO"
 					(effects
@@ -4949,7 +4949,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -10.16 0)
+				(at -15.24 -7.62 0)
 				(length 2.54)
 				(name "COPI"
 					(effects
@@ -4967,7 +4967,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -12.7 0)
+				(at -15.24 -10.16 0)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -4985,7 +4985,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -17.78 0)
+				(at -15.24 -15.24 0)
 				(length 2.54)
 				(name "~{SLEEP}"
 					(effects
@@ -4995,6 +4995,24 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -15.24 -17.78 0)
+				(length 2.54)
+				(name "~{FAULT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5022,7 +5040,7 @@
 				)
 			)
 			(pin passive line
-				(at -1.27 -22.86 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(hide yes)
 				(name "PGND"
@@ -5041,7 +5059,7 @@
 				)
 			)
 			(pin passive line
-				(at -1.27 -22.86 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(hide yes)
 				(name "PGND"
@@ -5060,7 +5078,7 @@
 				)
 			)
 			(pin passive line
-				(at -1.27 -22.86 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(hide yes)
 				(name "PGND"
@@ -5071,43 +5089,6 @@
 					)
 				)
 				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 1.27 -22.86 90)
-				(length 2.54)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 1.27 -22.86 90)
-				(length 2.54)
-				(hide yes)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "37"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5146,6 +5127,43 @@
 					)
 				)
 				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -22.86 90)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -22.86 90)
+				(length 2.54)
+				(hide yes)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5203,24 +5221,6 @@
 					)
 				)
 				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
-				(at 15.24 -17.78 180)
-				(length 2.54)
-				(name "~{FAULT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
