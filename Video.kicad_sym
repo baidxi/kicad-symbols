@@ -3311,7 +3311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "High Performance 10-Bit Display Interface 140/170MSPS LQFP"
+		(property "Description" "High Performance 10-Bit Display Interface 140/170MSPS, LQFP-80"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3329,7 +3329,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "LQFP*"
+		(property "ki_fp_filters" "*LQFP*14x14mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7543,30 +7543,54 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "HD63484"
-		(pin_names
-			(offset 1.016)
-		)
+	(symbol "HD63484P"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 2.54 0)
+			(at -13.716 55.118 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "HD63484"
-			(at 0 -2.54 0)
+		(property "Value" "HD63484P"
+			(at 9.906 55.118 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-64_W22.86mm"
+			(at 0 -66.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.alldatasheet.com/datasheet-pdf/view/144378/HITACHI/HD63484.html"
+			(at 0 -64.008 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Advanced CRT Controller (ACRTC), DIP-64"
+			(at 0 -61.722 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Hitachi DMA CMOS Obsolete"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7575,7 +7599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "ki_fp_filters" "DIP*W22.86mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7584,19 +7608,10 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "HD63484_0_1"
+		(symbol "HD63484P_0_1"
 			(rectangle
-				(start -20.32 -50.8)
-				(end 20.32 50.8)
+				(start -15.24 53.34)
+				(end 15.24 -55.88)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -7606,82 +7621,10 @@
 				)
 			)
 		)
-		(symbol "HD63484_1_1"
-			(pin output inverted
-				(at -27.94 48.26 0)
-				(length 7.62)
-				(name "DREQ"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input inverted
-				(at -27.94 45.72 0)
-				(length 7.62)
-				(name "DACK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input inverted
-				(at -27.94 43.18 0)
-				(length 7.62)
-				(name "DONE"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at -27.94 38.1 0)
-				(length 7.62)
-				(name "IRQ"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin tri_state line
-				(at -27.94 33.02 0)
-				(length 7.62)
+		(symbol "HD63484P_1_1"
+			(pin bidirectional line
+				(at -17.78 50.8 0)
+				(length 2.54)
 				(name "D0"
 					(effects
 						(font
@@ -7697,9 +7640,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 30.48 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 48.26 0)
+				(length 2.54)
 				(name "D1"
 					(effects
 						(font
@@ -7715,9 +7658,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 27.94 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 45.72 0)
+				(length 2.54)
 				(name "D2"
 					(effects
 						(font
@@ -7733,9 +7676,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 25.4 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 43.18 0)
+				(length 2.54)
 				(name "D3"
 					(effects
 						(font
@@ -7751,9 +7694,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 22.86 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 40.64 0)
+				(length 2.54)
 				(name "D4"
 					(effects
 						(font
@@ -7769,9 +7712,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 20.32 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 38.1 0)
+				(length 2.54)
 				(name "D5"
 					(effects
 						(font
@@ -7787,9 +7730,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 17.78 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 35.56 0)
+				(length 2.54)
 				(name "D6"
 					(effects
 						(font
@@ -7805,9 +7748,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 15.24 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 33.02 0)
+				(length 2.54)
 				(name "D7"
 					(effects
 						(font
@@ -7823,9 +7766,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 12.7 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 27.94 0)
+				(length 2.54)
 				(name "D8"
 					(effects
 						(font
@@ -7841,9 +7784,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 10.16 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 25.4 0)
+				(length 2.54)
 				(name "D9"
 					(effects
 						(font
@@ -7859,9 +7802,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 7.62 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 22.86 0)
+				(length 2.54)
 				(name "D10"
 					(effects
 						(font
@@ -7877,9 +7820,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 5.08 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 20.32 0)
+				(length 2.54)
 				(name "D11"
 					(effects
 						(font
@@ -7895,9 +7838,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 2.54 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 17.78 0)
+				(length 2.54)
 				(name "D12"
 					(effects
 						(font
@@ -7913,9 +7856,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 0 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 15.24 0)
+				(length 2.54)
 				(name "D13"
 					(effects
 						(font
@@ -7931,9 +7874,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 -2.54 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 12.7 0)
+				(length 2.54)
 				(name "D14"
 					(effects
 						(font
@@ -7949,9 +7892,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at -27.94 -5.08 0)
-				(length 7.62)
+			(pin bidirectional line
+				(at -17.78 10.16 0)
+				(length 2.54)
 				(name "D15"
 					(effects
 						(font
@@ -7967,10 +7910,82 @@
 					)
 				)
 			)
-			(pin input inverted
-				(at -27.94 -10.16 0)
-				(length 7.62)
-				(name "CS"
+			(pin output line
+				(at -17.78 2.54 0)
+				(length 2.54)
+				(name "~{DREQ}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 0 0)
+				(length 2.54)
+				(name "~{DACK}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -17.78 -2.54 0)
+				(length 2.54)
+				(name "~{DONE}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 -10.16 0)
+				(length 2.54)
+				(name "R/~{W}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 -12.7 0)
+				(length 2.54)
+				(name "~{CS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7986,8 +8001,8 @@
 				)
 			)
 			(pin input line
-				(at -27.94 -15.24 0)
-				(length 7.62)
+				(at -17.78 -15.24 0)
+				(length 2.54)
 				(name "RS"
 					(effects
 						(font
@@ -8003,28 +8018,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -27.94 -20.32 0)
-				(length 7.62)
-				(name "R/W"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at -27.94 -25.4 0)
-				(length 7.62)
-				(name "DTACK"
+			(pin tri_state line
+				(at -17.78 -17.78 0)
+				(length 2.54)
+				(name "~{DTACK}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8039,17 +8036,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -27.94 -30.48 0)
-				(length 7.62)
-				(name "LPSTB"
+			(pin open_collector line
+				(at -17.78 -22.86 0)
+				(length 2.54)
+				(name "~{IRQ}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "64"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8057,10 +8054,10 @@
 					)
 				)
 			)
-			(pin input inverted
-				(at -27.94 -38.1 0)
-				(length 7.62)
-				(name "RESET"
+			(pin input line
+				(at -17.78 -27.94 0)
+				(length 2.54)
+				(name "~{RES}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8076,8 +8073,26 @@
 				)
 			)
 			(pin input line
-				(at -5.08 58.42 270)
-				(length 7.62)
+				(at -17.78 -53.34 0)
+				(length 2.54)
+				(name "2CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 55.88 270)
+				(length 2.54)
 				(name "VCC"
 					(effects
 						(font
@@ -8093,27 +8108,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -5.08 -58.42 90)
-				(length 7.62)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -2.54 58.42 270)
-				(length 7.62)
+			(pin passive line
+				(at 0 55.88 270)
+				(length 2.54)
+				(hide yes)
 				(name "VCC"
 					(effects
 						(font
@@ -8129,10 +8127,29 @@
 					)
 				)
 			)
-			(pin input line
-				(at -2.54 -58.42 90)
-				(length 7.62)
-				(name "GND"
+			(pin power_in line
+				(at 0 -58.42 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -58.42 90)
+				(length 2.54)
+				(hide yes)
+				(name "VSS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8147,45 +8164,9 @@
 					)
 				)
 			)
-			(pin output inverted
-				(at 27.94 48.26 180)
-				(length 7.62)
-				(name "DRAW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "54"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 27.94 45.72 180)
-				(length 7.62)
-				(name "MRD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "55"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin tri_state line
-				(at 27.94 40.64 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 50.8 180)
+				(length 2.54)
 				(name "MAD0"
 					(effects
 						(font
@@ -8201,9 +8182,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 38.1 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 48.26 180)
+				(length 2.54)
 				(name "MAD1"
 					(effects
 						(font
@@ -8219,9 +8200,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 35.56 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 45.72 180)
+				(length 2.54)
 				(name "MAD2"
 					(effects
 						(font
@@ -8237,9 +8218,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 33.02 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 43.18 180)
+				(length 2.54)
 				(name "MAD3"
 					(effects
 						(font
@@ -8255,9 +8236,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 30.48 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 40.64 180)
+				(length 2.54)
 				(name "MAD4"
 					(effects
 						(font
@@ -8273,9 +8254,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 27.94 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 38.1 180)
+				(length 2.54)
 				(name "MAD5"
 					(effects
 						(font
@@ -8291,9 +8272,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 25.4 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 35.56 180)
+				(length 2.54)
 				(name "MAD6"
 					(effects
 						(font
@@ -8309,9 +8290,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 22.86 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 33.02 180)
+				(length 2.54)
 				(name "MAD7"
 					(effects
 						(font
@@ -8327,9 +8308,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 20.32 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 27.94 180)
+				(length 2.54)
 				(name "MAD8"
 					(effects
 						(font
@@ -8345,9 +8326,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 17.78 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 25.4 180)
+				(length 2.54)
 				(name "MAD9"
 					(effects
 						(font
@@ -8363,9 +8344,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 15.24 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 22.86 180)
+				(length 2.54)
 				(name "MAD10"
 					(effects
 						(font
@@ -8381,9 +8362,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 12.7 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 20.32 180)
+				(length 2.54)
 				(name "MAD11"
 					(effects
 						(font
@@ -8399,9 +8380,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 10.16 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 17.78 180)
+				(length 2.54)
 				(name "MAD12"
 					(effects
 						(font
@@ -8417,9 +8398,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 7.62 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 15.24 180)
+				(length 2.54)
 				(name "MAD13"
 					(effects
 						(font
@@ -8435,9 +8416,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 5.08 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 12.7 180)
+				(length 2.54)
 				(name "MAD14"
 					(effects
 						(font
@@ -8453,9 +8434,9 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 27.94 2.54 180)
-				(length 7.62)
+			(pin bidirectional line
+				(at 17.78 10.16 180)
+				(length 2.54)
 				(name "MAD15"
 					(effects
 						(font
@@ -8472,8 +8453,8 @@
 				)
 			)
 			(pin output line
-				(at 27.94 0 180)
-				(length 7.62)
+				(at 17.78 5.08 180)
+				(length 2.54)
 				(name "MA16/RA0"
 					(effects
 						(font
@@ -8490,8 +8471,8 @@
 				)
 			)
 			(pin output line
-				(at 27.94 -2.54 180)
-				(length 7.62)
+				(at 17.78 2.54 180)
+				(length 2.54)
 				(name "MA17/RA1"
 					(effects
 						(font
@@ -8508,8 +8489,8 @@
 				)
 			)
 			(pin output line
-				(at 27.94 -5.08 180)
-				(length 7.62)
+				(at 17.78 0 180)
+				(length 2.54)
 				(name "MA18/RA2"
 					(effects
 						(font
@@ -8526,8 +8507,8 @@
 				)
 			)
 			(pin output line
-				(at 27.94 -7.62 180)
-				(length 7.62)
+				(at 17.78 -2.54 180)
+				(length 2.54)
 				(name "MA19/RA3"
 					(effects
 						(font
@@ -8544,8 +8525,8 @@
 				)
 			)
 			(pin output line
-				(at 27.94 -10.16 180)
-				(length 7.62)
+				(at 17.78 -5.08 180)
+				(length 2.54)
 				(name "RA4"
 					(effects
 						(font
@@ -8562,142 +8543,16 @@
 				)
 			)
 			(pin output line
-				(at 27.94 -15.24 180)
-				(length 7.62)
-				(name "CHR"
+				(at 17.78 -10.16 180)
+				(length 2.54)
+				(name "~{AS}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "56"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at 27.94 -17.78 180)
-				(length 7.62)
-				(name "CUD1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at 27.94 -20.32 180)
-				(length 7.62)
-				(name "CUD2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at 27.94 -25.4 180)
-				(length 7.62)
-				(name "HSYNC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at 27.94 -27.94 180)
-				(length 7.62)
-				(name "VSYNC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input inverted
-				(at 27.94 -30.48 180)
-				(length 7.62)
-				(name "EXTSYNC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at 27.94 -35.56 180)
-				(length 7.62)
-				(name "DISP1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "63"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at 27.94 -38.1 180)
-				(length 7.62)
-				(name "DISP2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "62"
+				(number "53"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8706,8 +8561,8 @@
 				)
 			)
 			(pin output line
-				(at 27.94 -43.18 180)
-				(length 7.62)
+				(at 17.78 -12.7 180)
+				(length 2.54)
 				(name "MCYC"
 					(effects
 						(font
@@ -8723,17 +8578,17 @@
 					)
 				)
 			)
-			(pin output inverted
-				(at 27.94 -45.72 180)
-				(length 7.62)
-				(name "AS"
+			(pin output line
+				(at 17.78 -17.78 180)
+				(length 2.54)
+				(name "MRD"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "53"
+				(number "55"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8741,17 +8596,179 @@
 					)
 				)
 			)
-			(pin input clock
-				(at 27.94 -48.26 180)
-				(length 7.62)
-				(name "2CLK"
+			(pin output line
+				(at 17.78 -20.32 180)
+				(length 2.54)
+				(name "~{DRAW}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "50"
+				(number "54"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 17.78 -22.86 180)
+				(length 2.54)
+				(name "CHR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 17.78 -27.94 180)
+				(length 2.54)
+				(name "~{HSYNC}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 17.78 -30.48 180)
+				(length 2.54)
+				(name "~{VSYNC}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 17.78 -33.02 180)
+				(length 2.54)
+				(name "~{EXTSYNC}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -38.1 180)
+				(length 2.54)
+				(name "LPSTB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "64"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 17.78 -43.18 180)
+				(length 2.54)
+				(name "~{CUD1}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 17.78 -45.72 180)
+				(length 2.54)
+				(name "~{CUD2}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 17.78 -50.8 180)
+				(length 2.54)
+				(name "~{DISP1}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "63"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 17.78 -53.34 180)
+				(length 2.54)
+				(name "~{DISP2}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "62"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10610,9 +10627,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "LM1881"
-		(pin_names
-			(offset 1.016)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -10633,6 +10647,33 @@
 			)
 		)
 		(property "Footprint" ""
+			(at 0 -16.002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm1881.pdf"
+			(at 0 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Video Sync Separator, composite sync and vertical sync outputs, DIP-8 / SOIC-8"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "National-Semiconductor Texas-Instruments NTSC PAL SECAM composite-video CVBS LM1881MX/NOPB LM1881N"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10641,16 +10682,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
+		(property "ki_fp_filters" "*SO*3.9x4.9mm*P1.27mm* DIP?8?W7.62mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10676,7 +10708,7 @@
 			(pin input line
 				(at -12.7 2.54 0)
 				(length 2.54)
-				(name "VIDEO"
+				(name "CVIN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10692,9 +10724,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "INT"
+				(name "RSET"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10748,7 +10780,7 @@
 			(pin output line
 				(at 12.7 5.08 180)
 				(length 2.54)
-				(name "CSYNC"
+				(name "CSOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10766,7 +10798,7 @@
 			(pin output line
 				(at 12.7 2.54 180)
 				(length 2.54)
-				(name "FRAME"
+				(name "VSOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10784,7 +10816,7 @@
 			(pin output line
 				(at 12.7 0 180)
 				(length 2.54)
-				(name "BURST"
+				(name "BPOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10802,7 +10834,7 @@
 			(pin output line
 				(at 12.7 -2.54 180)
 				(length 2.54)
-				(name "O/E"
+				(name "OEOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18021,7 +18053,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:HTQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask4.4x4.4mm_ThermalVias"
+		(property "Footprint" "Package_QFP:Texas_TQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask5x5mm_ThermalVias"
 			(at 1.27 -60.96 0)
 			(effects
 				(font
@@ -18039,7 +18071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Digital Visual Interface Compliant PanelBus Digital Transmitter, HTQFP-64"
+		(property "Description" "Digital Visual Interface Compliant PanelBus Digital Transmitter, TQFP-64"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18048,7 +18080,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "DVI Encoder Driver"
+		(property "ki_keywords" "DVI Encoder Driver I2C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18057,7 +18089,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "HTQFP*1EP*10x10mm*P0.5mm*"
+		(property "ki_fp_filters" "*TQFP*1EP?10x10mm?P0.5mm*Mask5x5mm*"
 			(at 0 0 0)
 			(effects
 				(font

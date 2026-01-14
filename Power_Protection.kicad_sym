@@ -2214,7 +2214,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm"
+		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1x2.5mm_P0.5mm"
 			(at -24.13 -10.16 0)
 			(effects
 				(font
@@ -2232,7 +2232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4-Channel Low Capacitance TVS Diode Array, DFN-10"
+		(property "Description" "4-Channel Low Capacitance TVS Diode Array, DFN-10 / USON-10"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2250,7 +2250,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Diodes*UDFN*1.0x2.5mm*P0.5mm*"
+		(property "ki_fp_filters" "Diodes*UDFN*1x2.5mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5129,7 +5129,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm"
+		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1x2.5mm_P0.5mm"
 			(at -0.635 -11.43 0)
 			(effects
 				(font
@@ -5147,7 +5147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4-Channel Low Capacitance TVS Diode Array, USON-10"
+		(property "Description" "4-Channel Low Capacitance TVS Diode Array, DFN-10 / USON-10"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5165,7 +5165,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Diodes*UDFN*1.0x2.5mm*P0.5mm*"
+		(property "ki_fp_filters" "Diodes*UDFN*1x2.5mm*P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -20828,7 +20828,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TBU-CA-025-050-WH"
+	(symbol "TBU-CA025-050-WH"
 		(pin_numbers
 			(hide yes)
 		)
@@ -20846,7 +20846,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-025-050-WH"
+		(property "Value" "TBU-CA025-050-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -20900,7 +20900,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "TBU-CA-025-050-WH_0_1"
+		(symbol "TBU-CA025-050-WH_0_1"
 			(polyline
 				(pts
 					(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
@@ -20937,7 +20937,7 @@
 				)
 			)
 		)
-		(symbol "TBU-CA-025-050-WH_1_1"
+		(symbol "TBU-CA025-050-WH_1_1"
 			(pin no_connect line
 				(at -1.27 2.54 270)
 				(length 1.27)
@@ -32331,6 +32331,73 @@
 			)
 		)
 	)
+	(symbol "ESDS304"
+		(extends "SP0504BAHT")
+		(property "Reference" "D"
+			(at 7.62 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESDS304"
+			(at 7.62 0.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at -13.97 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/esds304.pdf"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-channel 1Gbps TVS Diode Array, 2.3pF, 4.5V breakdown, 30kV contact & air gap, SOT-23-5"
+			(at 1.27 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "usb ethernet esd protection suppression transient transient-voltage low-capacitance texas"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "IP4251CZ8-4-TTL"
 		(extends "NUF4401MN")
 		(property "Reference" "U"
@@ -33562,8 +33629,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-025-100-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA025-100-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -33572,7 +33639,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-025-100-WH"
+		(property "Value" "TBU-CA025-100-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -33627,8 +33694,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-025-200-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA025-200-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -33637,7 +33704,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-025-200-WH"
+		(property "Value" "TBU-CA025-200-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -33692,8 +33759,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-025-300-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA025-300-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -33702,7 +33769,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-025-300-WH"
+		(property "Value" "TBU-CA025-300-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -33757,8 +33824,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-025-500-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA025-500-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -33767,7 +33834,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-025-500-WH"
+		(property "Value" "TBU-CA025-500-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -33822,8 +33889,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-040-050-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA040-050-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -33832,7 +33899,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-040-050-WH"
+		(property "Value" "TBU-CA040-050-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -33887,8 +33954,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-040-100-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA040-100-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -33897,7 +33964,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-040-100-WH"
+		(property "Value" "TBU-CA040-100-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -33952,8 +34019,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-040-200-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA040-200-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -33962,7 +34029,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-040-200-WH"
+		(property "Value" "TBU-CA040-200-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34017,8 +34084,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-040-300-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA040-300-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34027,7 +34094,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-040-300-WH"
+		(property "Value" "TBU-CA040-300-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34082,8 +34149,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-040-500-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA040-500-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34092,7 +34159,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-040-500-WH"
+		(property "Value" "TBU-CA040-500-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34147,8 +34214,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-050-050-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA050-050-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34157,7 +34224,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-050-050-WH"
+		(property "Value" "TBU-CA050-050-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34212,8 +34279,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-050-100-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA050-100-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34222,7 +34289,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-050-100-WH"
+		(property "Value" "TBU-CA050-100-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34277,8 +34344,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-050-200-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA050-200-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34287,7 +34354,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-050-200-WH"
+		(property "Value" "TBU-CA050-200-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34342,8 +34409,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-050-300-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA050-300-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34352,7 +34419,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-050-300-WH"
+		(property "Value" "TBU-CA050-300-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34407,8 +34474,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-050-500-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA050-500-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34417,7 +34484,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-050-500-WH"
+		(property "Value" "TBU-CA050-500-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34472,8 +34539,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-065-050-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA065-050-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34482,7 +34549,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-065-050-WH"
+		(property "Value" "TBU-CA065-050-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34537,8 +34604,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-065-100-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA065-100-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34547,7 +34614,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-065-100-WH"
+		(property "Value" "TBU-CA065-100-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34602,8 +34669,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-065-200-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA065-200-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34612,7 +34679,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-065-200-WH"
+		(property "Value" "TBU-CA065-200-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34667,8 +34734,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-065-300-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA065-300-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34677,7 +34744,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-065-300-WH"
+		(property "Value" "TBU-CA065-300-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34732,8 +34799,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-065-500-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA065-500-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34742,7 +34809,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-065-500-WH"
+		(property "Value" "TBU-CA065-500-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34797,8 +34864,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-085-050-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA085-050-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34807,7 +34874,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-085-050-WH"
+		(property "Value" "TBU-CA085-050-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34862,8 +34929,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-085-100-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA085-100-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34872,7 +34939,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-085-100-WH"
+		(property "Value" "TBU-CA085-100-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34927,8 +34994,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-085-200-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA085-200-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -34937,7 +35004,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-085-200-WH"
+		(property "Value" "TBU-CA085-200-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -34992,8 +35059,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-085-300-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA085-300-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -35002,7 +35069,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-085-300-WH"
+		(property "Value" "TBU-CA085-300-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
@@ -35057,8 +35124,8 @@
 			)
 		)
 	)
-	(symbol "TBU-CA-085-500-WH"
-		(extends "TBU-CA-025-050-WH")
+	(symbol "TBU-CA085-500-WH"
+		(extends "TBU-CA025-050-WH")
 		(property "Reference" "F"
 			(at -2.54 0 90)
 			(effects
@@ -35067,7 +35134,7 @@
 				)
 			)
 		)
-		(property "Value" "TBU-CA-085-500-WH"
+		(property "Value" "TBU-CA085-500-WH"
 			(at 2.54 0 90)
 			(effects
 				(font
