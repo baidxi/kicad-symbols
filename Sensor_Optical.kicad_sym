@@ -4543,7 +4543,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "D4"
-			(at 2.54 3.81 0)
+			(at 2.54 5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4551,7 +4551,7 @@
 			)
 		)
 		(property "Value" "D_SiPM_OnSemi_MicroFJ-300xx"
-			(at 16.51 -3.81 0)
+			(at 16.51 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4559,7 +4559,7 @@
 			)
 		)
 		(property "Footprint" "Package_CSP:OnSemi_ODCSP8_BGA-8_3.16x3.16mm_Layout3x3_P1.26mm"
-			(at 2.54 -8.89 0)
+			(at 2.54 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4569,7 +4569,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/microj-series-d.pdf"
-			(at 2.54 -13.97 0)
+			(at 2.54 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4579,7 +4579,7 @@
 			)
 		)
 		(property "Description" "SiPM, OnSemi J-Series 3x3mm with fast output, 20/35um microcell size, 24.2..24.7Vbr, ODCSP-8"
-			(at 2.54 -11.43 0)
+			(at 2.54 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4609,7 +4609,7 @@
 		(symbol "D_SiPM_OnSemi_MicroFJ-300xx_0_1"
 			(polyline
 				(pts
-					(xy -3.81 3.81) (xy -2.286 2.286) (xy -2.794 2.286) (xy -2.286 2.286) (xy -2.286 2.794)
+					(xy -3.81 5.08) (xy -2.286 3.556) (xy -2.794 3.556) (xy -2.286 3.556) (xy -2.286 4.064)
 				)
 				(stroke
 					(width 0)
@@ -4621,7 +4621,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.81 2.54) (xy -2.286 1.016) (xy -2.794 1.016)
+					(xy -3.81 3.81) (xy -2.286 2.286) (xy -2.794 2.286)
 				)
 				(stroke
 					(width 0)
@@ -4633,7 +4633,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.286 1.016) (xy -2.286 1.524)
+					(xy -2.286 2.286) (xy -2.286 2.794)
 				)
 				(stroke
 					(width 0)
@@ -4645,7 +4645,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 1.27) (xy 1.27 1.27)
+					(xy -1.27 2.54) (xy 1.27 2.54)
 				)
 				(stroke
 					(width 0.254)
@@ -4657,7 +4657,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27)
+					(xy -1.27 2.54) (xy 0 0) (xy 1.27 2.54)
 				)
 				(stroke
 					(width 0.254)
@@ -4669,7 +4669,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 -1.27) (xy 1.27 -1.27)
+					(xy -1.27 0) (xy 1.27 0)
 				)
 				(stroke
 					(width 0.254)
@@ -4681,7 +4681,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.27) (xy 0 2.54)
+					(xy 1.27 1.27) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -4693,7 +4693,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -2.54) (xy 0 -1.27)
+					(xy 1.27 0.762) (xy 1.27 1.778)
 				)
 				(stroke
 					(width 0)
@@ -4705,31 +4705,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 0) (xy 0.762 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 -0.508) (xy 1.27 0.508)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.524 -0.508) (xy 1.524 0.508)
+					(xy 1.524 0.762) (xy 1.524 1.778)
 				)
 				(stroke
 					(width 0)
@@ -4760,7 +4736,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 90)
+				(at 0 -2.54 90)
 				(length 2.54)
 				(name "C"
 					(effects
@@ -4778,7 +4754,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 90)
+				(at 0 -3.81 90)
 				(length 2.54)
 				(hide yes)
 				(name "C"
@@ -4797,7 +4773,7 @@
 				)
 			)
 			(pin passive line
-				(at 2.54 0 180)
+				(at 2.54 1.27 180)
 				(length 1.016)
 				(name "F"
 					(effects
