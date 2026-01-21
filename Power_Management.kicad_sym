@@ -37630,8 +37630,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TI_SO-PowerPAD-8"
-			(at 0 -22.606 0)
+		(property "Footprint" "Package_SO:TI_SO-PowerPAD-8_ThermalVias"
+			(at 0 -14.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37640,7 +37640,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2596.pdf"
-			(at 0 -26.162 0)
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37648,8 +37648,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2V7 - 19V eFuse Protection Switch"
-			(at 0 14.224 0)
+		(property "Description" "2V7 - 19V, 0.125A - 2A eFuse Protection Switch, SO-8"
+			(at 0 13.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37657,7 +37657,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "efuse protection switch Texas Instruments"
+		(property "ki_keywords" "TPS259620 TPS259621 TPS259630 TPS259631 Texas Instruments"
 			(at 0 0 0)
 			(effects
 				(font
@@ -37675,18 +37675,20 @@
 				(hide yes)
 			)
 		)
-		(symbol "TPS2596xx_1_1"
+		(symbol "TPS2596xx_0_1"
 			(rectangle
 				(start -7.62 10.16)
-				(end 7.62 -12.7)
+				(end 7.62 -10.16)
 				(stroke
 					(width 0.254)
-					(type solid)
+					(type default)
 				)
 				(fill
 					(type background)
 				)
 			)
+		)
+		(symbol "TPS2596xx_1_1"
 			(pin power_in line
 				(at -10.16 7.62 0)
 				(length 2.54)
@@ -37741,8 +37743,26 @@
 					)
 				)
 			)
+			(pin passive line
+				(at -10.16 -7.62 0)
+				(length 2.54)
+				(name "dV/dT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -37760,7 +37780,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at 0 -12.7 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -37796,28 +37816,10 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 10.16 2.54 180)
 				(length 2.54)
-				(name "dV/dT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at 10.16 -5.08 180)
-				(length 2.54)
-				(name "FLT"
+				(name "~{FLT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -37833,7 +37835,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 -10.16 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "ILM"
 					(effects
