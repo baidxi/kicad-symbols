@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "A_DiffGain"
+	(symbol "Analogue_DiffGain"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -15,7 +15,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "A_DiffGain"
+		(property "Value" "Analogue_DiffGain"
 			(at 3.81 -3.175 0)
 			(effects
 				(font
@@ -105,7 +105,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A_DiffGain_0_1"
+		(symbol "Analogue_DiffGain_0_1"
 			(polyline
 				(pts
 					(xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)
@@ -119,7 +119,7 @@
 				)
 			)
 		)
-		(symbol "A_DiffGain_1_1"
+		(symbol "Analogue_DiffGain_1_1"
 			(pin input line
 				(at -7.62 2.54 0)
 				(length 2.54)
@@ -177,7 +177,159 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A_Int"
+	(symbol "Analogue_Gain"
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "U"
+			(at 0 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Analogue_Gain"
+			(at 0 -1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Analog_Models"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Analog gain cell, single input"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_XSPICE.sp"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "A_sigain"
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in 2=out"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "gain=5"
+			(at 3.81 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "XSPICE analog gain cell, single input"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Analogue_Gain_1_0"
+			(polyline
+				(pts
+					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -7.62 0 0)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Analogue_Integrator"
 		(pin_names
 			(offset 0.254)
 		)
@@ -192,7 +344,7 @@
 				)
 			)
 		)
-		(property "Value" "A_Int"
+		(property "Value" "Analogue_Integrator"
 			(at 0 10.16 0)
 			(effects
 				(font
@@ -281,7 +433,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A_Int_0_1"
+		(symbol "Analogue_Integrator_0_1"
 			(polyline
 				(pts
 					(xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)
@@ -295,7 +447,7 @@
 				)
 			)
 		)
-		(symbol "A_Int_1_0"
+		(symbol "Analogue_Integrator_1_0"
 			(polyline
 				(pts
 					(xy -1.27 2.54) (xy -1.2527 2.5378) (xy -1.2357 2.5344) (xy -1.2189 2.5299) (xy -1.2026 2.5243)
@@ -358,7 +510,7 @@
 				)
 			)
 		)
-		(symbol "A_Int_1_1"
+		(symbol "Analogue_Integrator_1_1"
 			(text "dt"
 				(at -0.254 0 0)
 				(effects
@@ -424,7 +576,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A_MULTIPLIER"
+	(symbol "Analogue_Multiplier"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -436,7 +588,7 @@
 				)
 			)
 		)
-		(property "Value" "A_MULTIPLIER"
+		(property "Value" "Analogue_Multiplier"
 			(at 0 -3.81 0)
 			(effects
 				(font
@@ -525,7 +677,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A_MULTIPLIER_0_0"
+		(symbol "Analogue_Multiplier_0_0"
 			(polyline
 				(pts
 					(xy -2.54 2.54) (xy -1.905 1.905)
@@ -559,7 +711,7 @@
 				)
 			)
 		)
-		(symbol "A_MULTIPLIER_0_1"
+		(symbol "Analogue_Multiplier_0_1"
 			(circle
 				(center 0 0)
 				(radius 2.54)
@@ -572,7 +724,7 @@
 				)
 			)
 		)
-		(symbol "A_MULTIPLIER_1_1"
+		(symbol "Analogue_Multiplier_1_1"
 			(pin input line
 				(at -5.08 2.54 0)
 				(length 2.54)
@@ -630,7 +782,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A_RPOT_TRIM"
+	(symbol "Analogue_RPOT_TRIM"
 		(pin_names
 			(hide yes)
 		)
@@ -646,7 +798,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "A_RPOT_TRIM"
+		(property "Value" "Analogue_RPOT_TRIM"
 			(at -2.54 -1.2699 0)
 			(effects
 				(font
@@ -745,7 +897,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A_RPOT_TRIM_0_1"
+		(symbol "Analogue_RPOT_TRIM_0_1"
 			(rectangle
 				(start 1.016 2.54)
 				(end -1.016 -2.54)
@@ -782,7 +934,7 @@
 				)
 			)
 		)
-		(symbol "A_RPOT_TRIM_1_1"
+		(symbol "Analogue_RPOT_TRIM_1_1"
 			(pin passive line
 				(at 0 3.81 270)
 				(length 1.27)
@@ -840,7 +992,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A_Schmitt"
+	(symbol "Analogue_SchmittTrigger"
 		(pin_names
 			(hide yes)
 		)
@@ -855,7 +1007,7 @@
 				)
 			)
 		)
-		(property "Value" "A_Schmitt"
+		(property "Value" "Analogue_SchmittTrigger"
 			(at 0 6.35 0)
 			(effects
 				(font
@@ -908,7 +1060,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A_Schmitt_1_0"
+		(symbol "Analogue_SchmittTrigger_1_0"
 			(polyline
 				(pts
 					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
@@ -984,159 +1136,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A_SiGain"
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(property "Reference" "U"
-			(at 0 1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "A_SiGain"
-			(at 0 -1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Analog_Models"
-			(at 0 7.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Analog gain cell, single input"
-			(at 0 -10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_XSPICE.sp"
-			(at 0 -6.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "A_sigain"
-			(at 0 -17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=in 2=out"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "gain=5"
-			(at 3.81 3.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "XSPICE analog gain cell, single input"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "A_SiGain_1_0"
-			(polyline
-				(pts
-					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(pin input line
-				(at -7.62 0 0)
-				(length 3.81)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 7.62 0 180)
-				(length 3.81)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "A_SumGain"
+	(symbol "Analogue_SumGain"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -1148,7 +1148,7 @@
 				)
 			)
 		)
-		(property "Value" "A_SumGain"
+		(property "Value" "Analogue_SumGain"
 			(at 0 10.16 0)
 			(effects
 				(font
@@ -1237,7 +1237,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A_SumGain_0_1"
+		(symbol "Analogue_SumGain_0_1"
 			(polyline
 				(pts
 					(xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)
@@ -1251,7 +1251,7 @@
 				)
 			)
 		)
-		(symbol "A_SumGain_1_1"
+		(symbol "Analogue_SumGain_1_1"
 			(text "SUM"
 				(at -0.762 0 0)
 				(effects
@@ -1317,7 +1317,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A_VC_OSC_SIN"
+	(symbol "Analogue_VC_Oscillator_Sinus"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -1329,7 +1329,7 @@
 				)
 			)
 		)
-		(property "Value" "A_VC_OSC_SIN"
+		(property "Value" "Analogue_VC_Oscillator_Sinus"
 			(at -6.35 -7.62 0)
 			(effects
 				(font
@@ -1409,7 +1409,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A_VC_OSC_SIN_1_0"
+		(symbol "Analogue_VC_Oscillator_Sinus_1_0"
 			(pin input line
 				(at -10.16 2.54 0)
 				(length 2.54)
@@ -1483,7 +1483,7 @@
 				)
 			)
 		)
-		(symbol "A_VC_OSC_SIN_1_1"
+		(symbol "Analogue_VC_Oscillator_Sinus_1_1"
 			(rectangle
 				(start -7.62 5.08)
 				(end 7.62 -5.08)
@@ -1506,7 +1506,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A_VC_OSC_SQU"
+	(symbol "Analogue_VC_Oscillator_Square"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -1518,7 +1518,7 @@
 				)
 			)
 		)
-		(property "Value" "A_VC_OSC_SQU"
+		(property "Value" "Analogue_VC_Oscillator_Square"
 			(at -6.35 -7.62 0)
 			(effects
 				(font
@@ -1598,7 +1598,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A_VC_OSC_SQU_1_0"
+		(symbol "Analogue_VC_Oscillator_Square_1_0"
 			(pin input line
 				(at -10.16 2.54 0)
 				(length 2.54)
@@ -1672,7 +1672,7 @@
 				)
 			)
 		)
-		(symbol "A_VC_OSC_SQU_1_1"
+		(symbol "Analogue_VC_Oscillator_Square_1_1"
 			(rectangle
 				(start -7.62 5.08)
 				(end 7.62 -5.08)
@@ -1695,7 +1695,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "A_VC_OSC_TRI"
+	(symbol "Analogue_VC_Oscillator_Triangle"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -1707,7 +1707,7 @@
 				)
 			)
 		)
-		(property "Value" "A_VC_OSC_TRI"
+		(property "Value" "Analogue_VC_Oscillator_Triangle"
 			(at -6.35 -7.62 0)
 			(effects
 				(font
@@ -1787,7 +1787,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "A_VC_OSC_TRI_1_0"
+		(symbol "Analogue_VC_Oscillator_Triangle_1_0"
 			(pin input line
 				(at -10.16 2.54 0)
 				(length 2.54)
@@ -1861,7 +1861,7 @@
 				)
 			)
 		)
-		(symbol "A_VC_OSC_TRI_1_1"
+		(symbol "Analogue_VC_Oscillator_Triangle_1_1"
 			(rectangle
 				(start -7.62 5.08)
 				(end 7.62 -5.08)
@@ -1884,7 +1884,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_AND2"
+	(symbol "Digital_AND"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -1896,7 +1896,7 @@
 				)
 			)
 		)
-		(property "Value" "AND"
+		(property "Value" "Digital_AND"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -1985,7 +1985,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_AND2_1_1"
+		(symbol "Digital_AND_1_1"
 			(arc
 				(start 0 3.81)
 				(mid 3.7934 0)
@@ -2067,7 +2067,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_Buffer"
+	(symbol "Digital_Buffer"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -2079,7 +2079,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Buffer"
+		(property "Value" "Digital_Buffer"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -2159,7 +2159,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_Buffer_1_0"
+		(symbol "Digital_Buffer_1_0"
 			(polyline
 				(pts
 					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
@@ -2211,177 +2211,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_DIVIDE"
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(property "Reference" "U"
-			(at -7.62 6.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_DIVIDE"
-			(at -6.35 -6.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 -2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Hybrid_Models"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Digital divide by n"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_XSPICE.sp"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "D_DIVIDE"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=in 2=out"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "n=5 hc=3 ico=4"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "XSPICE PWM"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "DIP*W7.62mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D_DIVIDE_1_0"
-			(pin input line
-				(at -8.89 0 0)
-				(length 2.54)
-				(name "in"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 8.89 0 180)
-				(length 2.54)
-				(name "out"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "D_DIVIDE_1_1"
-			(rectangle
-				(start -6.35 3.81)
-				(end 6.35 -3.81)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(text "f/n"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "D_D_Flip_Flop"
+	(symbol "Digital_D-FlipFlop"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -2393,7 +2223,7 @@
 				)
 			)
 		)
-		(property "Value" "DFF"
+		(property "Value" "Digital_D-FlipFlop"
 			(at -7.62 -8.89 0)
 			(effects
 				(font
@@ -2464,7 +2294,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "XSPICE DFF"
+		(property "ki_keywords" "XSPICE Digital D Flip-flop"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2473,7 +2303,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_D_Flip_Flop_1_0"
+		(symbol "Digital_D-FlipFlop_1_0"
 			(pin input line
 				(at -7.62 2.54 0)
 				(length 2.54)
@@ -2583,7 +2413,7 @@
 				)
 			)
 		)
-		(symbol "D_D_Flip_Flop_1_1"
+		(symbol "Digital_D-FlipFlop_1_1"
 			(rectangle
 				(start -5.08 5.08)
 				(end 5.08 -5.08)
@@ -2598,7 +2428,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_D_Latch"
+	(symbol "Digital_D-Latch"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -2610,7 +2440,7 @@
 				)
 			)
 		)
-		(property "Value" "D_D_Latch"
+		(property "Value" "Digital_D-Latch"
 			(at -7.62 -8.89 0)
 			(effects
 				(font
@@ -2699,7 +2529,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_D_Latch_1_0"
+		(symbol "Digital_D-Latch_1_0"
 			(pin input line
 				(at -7.62 2.54 0)
 				(length 2.54)
@@ -2809,7 +2639,7 @@
 				)
 			)
 		)
-		(symbol "D_D_Latch_1_1"
+		(symbol "Digital_D-Latch_1_1"
 			(rectangle
 				(start -5.08 5.08)
 				(end 5.08 -5.08)
@@ -2824,7 +2654,177 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_INV"
+	(symbol "Digital_Divide"
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Digital_Divide"
+			(at -6.35 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Digital_Models"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Digital divide by n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_XSPICE.sp"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "D_DIVIDE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in 2=out"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "n=5 hc=3 ico=4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "XSPICE Divide"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "DIP*W7.62mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Digital_Divide_1_0"
+			(pin input line
+				(at -8.89 0 0)
+				(length 2.54)
+				(name "in"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 8.89 0 180)
+				(length 2.54)
+				(name "out"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Digital_Divide_1_1"
+			(rectangle
+				(start -6.35 3.81)
+				(end 6.35 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "f/n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Digital_Inverter"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -2925,7 +2925,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_INV_1_0"
+		(symbol "Digital_Inverter_1_0"
 			(polyline
 				(pts
 					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
@@ -2977,7 +2977,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_JKFF"
+	(symbol "Digital_JK-FlipFlop"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -2989,7 +2989,7 @@
 				)
 			)
 		)
-		(property "Value" "D_JKFF"
+		(property "Value" "Digital_JK-FlipFlop"
 			(at -7.62 -8.89 0)
 			(effects
 				(font
@@ -3078,7 +3078,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_JKFF_1_0"
+		(symbol "Digital_JK-FlipFlop_1_0"
 			(pin input line
 				(at -7.62 2.54 0)
 				(length 2.54)
@@ -3206,7 +3206,7 @@
 				)
 			)
 		)
-		(symbol "D_JKFF_1_1"
+		(symbol "Digital_JK-FlipFlop_1_1"
 			(rectangle
 				(start -5.08 5.08)
 				(end 5.08 -5.08)
@@ -3221,7 +3221,181 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_NAN13"
+	(symbol "Digital_NAND"
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "U"
+			(at -0.0083 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Digital_NAND"
+			(at -0.0083 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Digital_Models"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2-input NAND gate"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_XSPICE.sp"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "D_nand2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2 3=3"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "XSPICE NAND 2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Digital_NAND_1_1"
+			(arc
+				(start 0 3.81)
+				(mid 3.7934 0)
+				(end 0 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.81) (xy -3.81 3.81) (xy -3.81 -3.81) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output inverted
+				(at 7.62 0 180)
+				(length 3.81)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Digital_NAND-13"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -3233,7 +3407,7 @@
 				)
 			)
 		)
-		(property "Value" "D_NAN13"
+		(property "Value" "Digital_NAND-13"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -3322,7 +3496,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_NAN13_1_1"
+		(symbol "Digital_NAND-13_1_1"
 			(polyline
 				(pts
 					(xy -3.81 15.24) (xy -3.81 -15.24)
@@ -3614,7 +3788,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_NAND2"
+	(symbol "Digital_NAND-3"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -3626,7 +3800,7 @@
 				)
 			)
 		)
-		(property "Value" "D_NAND2"
+		(property "Value" "Digital_NAND-3"
 			(at -0.0083 6.35 0)
 			(effects
 				(font
@@ -3652,181 +3826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2-input NAND gate"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_XSPICE.sp"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "D_nand2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=1 2=2 3=3"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "XSPICE NAND 2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D_NAND2_1_1"
-			(arc
-				(start 0 3.81)
-				(mid 3.7934 0)
-				(end 0 -3.81)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 3.81) (xy -3.81 3.81) (xy -3.81 -3.81) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(pin input line
-				(at -7.62 2.54 0)
-				(length 3.81)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -7.62 -2.54 0)
-				(length 3.81)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output inverted
-				(at 7.62 0 180)
-				(length 3.81)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "D_NAND3"
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(property "Reference" "U"
-			(at -0.0083 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_NAND3"
-			(at -0.0083 6.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Digital_Models"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3-input NAND"
+		(property "Description" "3-input NAND gate"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3880,7 +3880,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_NAND3_1_1"
+		(symbol "Digital_NAND-3_1_1"
 			(arc
 				(start 0 3.81)
 				(mid 3.7934 0)
@@ -3980,7 +3980,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_NAND4"
+	(symbol "Digital_NAND-4"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -3992,7 +3992,7 @@
 				)
 			)
 		)
-		(property "Value" "D_NAND4"
+		(property "Value" "Digital_NAND-4"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -4018,7 +4018,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4-input NAND"
+		(property "Description" "4-input NAND gate"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4081,7 +4081,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_NAND4_1_1"
+		(symbol "Digital_NAND-4_1_1"
 			(arc
 				(start -0.635 4.445)
 				(mid 3.7907 0)
@@ -4199,7 +4199,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_NAND8"
+	(symbol "Digital_NAND-8"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -4211,7 +4211,7 @@
 				)
 			)
 		)
-		(property "Value" "D_NAND8"
+		(property "Value" "Digital_NAND-8"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -4300,7 +4300,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_NAND8_1_1"
+		(symbol "Digital_NAND-8_1_1"
 			(polyline
 				(pts
 					(xy -3.81 7.62) (xy -3.81 -10.16)
@@ -4502,7 +4502,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_NOR2"
+	(symbol "Digital_NOR"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -4514,7 +4514,7 @@
 				)
 			)
 		)
-		(property "Value" "D_NOR2"
+		(property "Value" "Digital_NOR"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -4603,7 +4603,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_NOR2_1_1"
+		(symbol "Digital_NOR_1_1"
 			(arc
 				(start -3.81 3.81)
 				(mid -2.589 0)
@@ -4735,7 +4735,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_NOR3"
+	(symbol "Digital_NOR-3"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -4747,7 +4747,7 @@
 				)
 			)
 		)
-		(property "Value" "D_NOR3"
+		(property "Value" "Digital_NOR-3"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -4836,7 +4836,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_NOR3_1_1"
+		(symbol "Digital_NOR-3_1_1"
 			(arc
 				(start -3.81 3.81)
 				(mid -2.589 0)
@@ -4986,7 +4986,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_OR2"
+	(symbol "Digital_OR"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -4998,7 +4998,7 @@
 				)
 			)
 		)
-		(property "Value" "D_OR2"
+		(property "Value" "Digital_OR"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -5051,7 +5051,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_OR2_1_1"
+		(symbol "Digital_OR_1_1"
 			(arc
 				(start -3.81 3.81)
 				(mid -2.589 0)
@@ -5183,7 +5183,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_SRFF"
+	(symbol "Digital_SR-FlipFlop"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -5195,7 +5195,7 @@
 				)
 			)
 		)
-		(property "Value" "D_SRFF"
+		(property "Value" "Digital_SR-FlipFlop"
 			(at -7.62 -8.89 0)
 			(effects
 				(font
@@ -5284,7 +5284,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_SRFF_1_0"
+		(symbol "Digital_SR-FlipFlop_1_0"
 			(pin input line
 				(at -7.62 2.54 0)
 				(length 2.54)
@@ -5412,7 +5412,7 @@
 				)
 			)
 		)
-		(symbol "D_SRFF_1_1"
+		(symbol "Digital_SR-FlipFlop_1_1"
 			(rectangle
 				(start -5.08 5.08)
 				(end 5.08 -5.08)
@@ -5427,7 +5427,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_Tri_State"
+	(symbol "Digital_Tri-State"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -5439,7 +5439,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Tri_State"
+		(property "Value" "Digital_Tri-State"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -5528,7 +5528,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_Tri_State_1_0"
+		(symbol "Digital_Tri-State_1_0"
 			(polyline
 				(pts
 					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
@@ -5598,7 +5598,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_XNOR2"
+	(symbol "Digital_XNOR"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -5610,7 +5610,7 @@
 				)
 			)
 		)
-		(property "Value" "D_XNOR2"
+		(property "Value" "Digital_XNOR"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -5699,7 +5699,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_XNOR2_1_0"
+		(symbol "Digital_XNOR_1_0"
 			(arc
 				(start -4.4196 3.81)
 				(mid -3.2033 0)
@@ -5841,7 +5841,7 @@
 				)
 			)
 		)
-		(symbol "D_XNOR2_1_1"
+		(symbol "Digital_XNOR_1_1"
 			(polyline
 				(pts
 					(xy -3.81 2.54) (xy -3.175 2.54)
@@ -5869,7 +5869,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "D_XOR2"
+	(symbol "Digital_XOR"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -5881,7 +5881,7 @@
 				)
 			)
 		)
-		(property "Value" "D_XOR2"
+		(property "Value" "Digital_XOR"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -5970,7 +5970,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_XOR2_1_0"
+		(symbol "Digital_XOR_1_0"
 			(arc
 				(start -4.4196 3.81)
 				(mid -3.2033 0)
@@ -6111,7 +6111,7 @@
 				)
 			)
 		)
-		(symbol "D_XOR2_1_1"
+		(symbol "Digital_XOR_1_1"
 			(polyline
 				(pts
 					(xy -3.81 2.54) (xy -3.175 2.54)
@@ -6139,7 +6139,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "H_AD"
+	(symbol "Hybrid_AD-Converter"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -6151,7 +6151,7 @@
 				)
 			)
 		)
-		(property "Value" "H_AD"
+		(property "Value" "Hybrid_AD-Converter"
 			(at 0 6.35 0)
 			(effects
 				(font
@@ -6168,7 +6168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Digital_Models"
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Hybrid_Models"
 			(at -0.508 7.874 0)
 			(effects
 				(font
@@ -6231,7 +6231,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "H_AD_0_1"
+		(symbol "Hybrid_AD-Converter_0_1"
 			(rectangle
 				(start -3.81 3.81)
 				(end 3.81 -3.81)
@@ -6244,7 +6244,7 @@
 				)
 			)
 		)
-		(symbol "H_AD_1_0"
+		(symbol "Hybrid_AD-Converter_1_0"
 			(pin input line
 				(at -7.62 2.54 0)
 				(length 3.81)
@@ -6300,7 +6300,7 @@
 				)
 			)
 		)
-		(symbol "H_AD_1_1"
+		(symbol "Hybrid_AD-Converter_1_1"
 			(text "AD"
 				(at -1.016 0 0)
 				(effects
@@ -6312,7 +6312,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "H_DA"
+	(symbol "Hybrid_DA-Converter"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -6324,7 +6324,7 @@
 				)
 			)
 		)
-		(property "Value" "H_DA"
+		(property "Value" "Hybrid_DA-Converter"
 			(at 0 6.35 0)
 			(effects
 				(font
@@ -6341,7 +6341,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Digital_Models"
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_XSPICE_Hybrid_Models"
 			(at -0.508 7.874 0)
 			(effects
 				(font
@@ -6413,7 +6413,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "H_DA_0_1"
+		(symbol "Hybrid_DA-Converter_0_1"
 			(rectangle
 				(start -3.81 3.81)
 				(end 3.81 -3.81)
@@ -6426,7 +6426,7 @@
 				)
 			)
 		)
-		(symbol "H_DA_1_0"
+		(symbol "Hybrid_DA-Converter_1_0"
 			(pin input line
 				(at -7.62 0 0)
 				(length 3.81)
@@ -6482,7 +6482,7 @@
 				)
 			)
 		)
-		(symbol "H_DA_1_1"
+		(symbol "Hybrid_DA-Converter_1_1"
 			(text "DA"
 				(at 0.762 0 0)
 				(effects
@@ -6494,7 +6494,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "H_VC_OSC"
+	(symbol "Hybrid_VC_Oscillator"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -6506,7 +6506,7 @@
 				)
 			)
 		)
-		(property "Value" "H_VC_OSC"
+		(property "Value" "Hybrid_VC_Oscillator"
 			(at -6.35 -7.62 0)
 			(effects
 				(font
@@ -6594,7 +6594,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "H_VC_OSC_0_1"
+		(symbol "Hybrid_VC_Oscillator_0_1"
 			(polyline
 				(pts
 					(xy -3.81 -1.27) (xy -2.54 -1.27) (xy -2.54 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -6609,7 +6609,7 @@
 				)
 			)
 		)
-		(symbol "H_VC_OSC_1_0"
+		(symbol "Hybrid_VC_Oscillator_1_0"
 			(pin input line
 				(at -8.89 2.54 0)
 				(length 2.54)
@@ -6665,7 +6665,7 @@
 				)
 			)
 		)
-		(symbol "H_VC_OSC_1_1"
+		(symbol "Hybrid_VC_Oscillator_1_1"
 			(rectangle
 				(start -6.35 5.08)
 				(end 6.35 -5.08)
@@ -6680,7 +6680,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "H_VC_PWM"
+	(symbol "Hybrid_VC_PWM"
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
@@ -6692,7 +6692,7 @@
 				)
 			)
 		)
-		(property "Value" "H_VC_PWM"
+		(property "Value" "Hybrid_VC_PWM"
 			(at -6.35 -7.62 0)
 			(effects
 				(font
@@ -6780,7 +6780,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "H_VC_PWM_0_1"
+		(symbol "Hybrid_VC_PWM_0_1"
 			(polyline
 				(pts
 					(xy -3.81 -1.27) (xy -2.54 -1.27) (xy -2.54 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -6795,7 +6795,7 @@
 				)
 			)
 		)
-		(symbol "H_VC_PWM_1_0"
+		(symbol "Hybrid_VC_PWM_1_0"
 			(pin input line
 				(at -8.89 2.54 0)
 				(length 2.54)
@@ -6851,7 +6851,7 @@
 				)
 			)
 		)
-		(symbol "H_VC_PWM_1_1"
+		(symbol "Hybrid_VC_PWM_1_1"
 			(rectangle
 				(start -6.35 5.08)
 				(end 6.35 -5.08)
