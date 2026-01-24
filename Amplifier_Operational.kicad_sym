@@ -7025,7 +7025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
+		(property "Footprint" "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
 			(at 15.24 -41.91 0)
 			(effects
 				(font
@@ -7045,7 +7045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Logarithmic difference amplifer, Transimpedance input, 100pA to 10mA, integrated 2.5V reference, single or dual supply: +-5V, +5V, VQFN-16"
+		(property "Description" "160 dB range, 100pA to 10mA, Logarithmic Converter, integrated 2.0V reference, 3.0 .. 5.5V supply, WQFN-16 (Analog Devices LFCSP-16 / CP-16-22)"
 			(at 14.986 -36.83 0)
 			(effects
 				(font
@@ -7055,7 +7055,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "logamp texas ti tia"
+		(property "ki_keywords" "LogAmp Logarithmic-Amplifier Log-Converter"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7064,7 +7064,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*QFN*P0.5mm*EP1.6x1.6mm*"
+		(property "ki_fp_filters" "*3x3mm?P0.5mm?EP1.6x1.6mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7074,17 +7074,71 @@
 			)
 		)
 		(symbol "ADL5303ACP_0_0"
-			(pin passive line
-				(at 2.54 -17.78 90)
+			(pin input line
+				(at -20.32 0 0)
 				(length 2.54)
-				(name "NC/GND"
+				(name "INPT"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -17.78 90)
+				(length 2.54)
+				(name "ACOM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 20.32 12.7 180)
+				(length 2.54)
+				(name "VREF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7128,78 +7182,6 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -17.78 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -20.32 0 0)
-				(length 2.54)
-				(name "INPT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 20.32 12.7 180)
-				(length 2.54)
-				(name "VREF"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 -17.78 90)
-				(length 2.54)
-				(name "ACOM"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
 				(at 20.32 -5.08 180)
 				(length 2.54)
@@ -7218,26 +7200,20 @@
 					)
 				)
 			)
-			(pin output line
-				(at 20.32 -2.54 180)
-				(length 2.54)
-				(name "BFIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 		(symbol "ADL5303ACP_0_1"
+			(polyline
+				(pts
+					(xy -7.62 0) (xy -7.62 -3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(rectangle
 				(start -7.112 7.112)
 				(end -8.128 4.572)
@@ -7251,7 +7227,43 @@
 			)
 			(polyline
 				(pts
-					(xy -7.62 0) (xy -7.62 -3.048)
+					(xy -6.35 -6.604) (xy -6.858 -6.096) (xy -7.112 -6.858) (xy -6.35 -6.604) (xy -6.604 -6.604)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.842 -3.81) (xy -5.842 -6.35)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.842 -4.699) (xy -7.62 -3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.842 -5.08) (xy 0.762 -5.08) (xy 0.762 1.27) (xy 0 1.27)
 				)
 				(stroke
 					(width 0)
@@ -7273,85 +7285,19 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy -5.842 -4.699) (xy -7.62 -3.048)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.842 -3.81) (xy -5.842 -6.35)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.842 -5.08) (xy 0.762 -5.08) (xy 0.762 1.27) (xy 0 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -6.35 -6.604) (xy -6.858 -6.096) (xy -7.112 -6.858) (xy -6.35 -6.604) (xy -6.604 -6.604)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type outline)
-				)
-			)
 		)
 		(symbol "ADL5303ACP_1_0"
-			(pin power_in line
-				(at 0 17.78 270)
+			(pin output line
+				(at -20.32 10.16 0)
 				(length 2.54)
-				(name "VPS2"
+				(name "VPDB"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 17.78 270)
-				(length 2.54)
-				(name "VPS1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7360,45 +7306,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -17.78 90)
-				(length 2.54) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -20.32 -5.08 0)
-				(length 2.54)
-				(name "PWDN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -20.32 5.08 0)
 				(length 2.54)
-				(name "EP/VSUM"
+				(name "EPAD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7433,7 +7343,8 @@
 			)
 			(pin passive line
 				(at -20.32 2.54 0)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "VSUM"
 					(effects
 						(font
@@ -7449,17 +7360,108 @@
 					)
 				)
 			)
-			(pin output line
-				(at -20.32 7.62 0)
+			(pin input line
+				(at -20.32 -5.08 0)
 				(length 2.54)
-				(name "VPDB"
+				(name "~{PWDN}"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 17.78 270)
+				(length 2.54)
+				(name "VPS1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 17.78 270)
+				(length 2.54)
+				(name "VPS2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -17.78 90)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -2.54 180)
+				(length 2.54)
+				(name "BFIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7478,39 +7480,6 @@
 				)
 				(fill
 					(type background)
-				)
-			)
-			(circle
-				(center -7.62 0)
-				(radius 0.1796)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(circle
-				(center -7.62 2.54)
-				(radius 0.1796)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(rectangle
-				(start -4.826 8.636)
-				(end -10.414 10.16)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
 				)
 			)
 			(polyline
@@ -7551,19 +7520,7 @@
 			)
 			(polyline
 				(pts
-					(xy -7.62 -11.938) (xy -7.62 -11.938)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -7.62 -7.366) (xy -7.62 -10.414)
+					(xy -7.62 8.636) (xy -7.62 7.112)
 				)
 				(stroke
 					(width 0)
@@ -7585,9 +7542,43 @@
 					(type none)
 				)
 			)
+			(circle
+				(center -7.62 2.54)
+				(radius 0.1796)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center -7.62 0)
+				(radius 0.1796)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
 			(polyline
 				(pts
-					(xy -7.62 8.636) (xy -7.62 7.112)
+					(xy -7.62 -7.366) (xy -7.62 -10.414)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -7.62 -11.938) (xy -7.62 -11.938)
 				)
 				(stroke
 					(width 0)
@@ -7623,10 +7614,56 @@
 			)
 			(polyline
 				(pts
+					(xy -5.715 -1.778) (xy -5.715 4.318) (xy 0 1.27) (xy -5.715 -1.778)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -4.826 8.636)
+				(end -10.414 10.16)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
 					(xy 0.762 -5.08) (xy 11.938 -5.08)
 				)
 				(stroke
 					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0.762 -5.08)
+				(radius 0.1796)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 10.668) (xy 5.08 4.572) (xy 10.795 7.62) (xy 5.08 10.668)
+				)
+				(stroke
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -7639,30 +7676,6 @@
 				)
 				(stroke
 					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.715 -1.778) (xy -5.715 4.318) (xy 0 1.27) (xy -5.715 -1.778)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 10.668) (xy 5.08 4.572) (xy 10.795 7.62) (xy 5.08 10.668)
-				)
-				(stroke
-					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -7705,15 +7718,28 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 0.762 -5.08)
-				(radius 0.1796)
-				(stroke
-					(width 0)
-					(type default)
+			(text "V_{REF}"
+				(at -7.62 9.398 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
 				)
-				(fill
-					(type outline)
+			)
+			(text "0.5V"
+				(at -6.096 7.874 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "-"
+				(at -4.699 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(text "+"
@@ -7733,26 +7759,10 @@
 				)
 			)
 			(text "-"
-				(at -4.699 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "-"
 				(at 6.096 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "0.5V"
-				(at -6.096 7.874 0)
-				(effects
-					(font
-						(size 0.762 0.762)
 					)
 				)
 			)
@@ -7764,15 +7774,8 @@
 					)
 				)
 			)
-			(text "V_{REF}"
-				(at -7.62 9.398 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "AS13704"
 		(pin_names
@@ -56149,6 +56152,138 @@
 			)
 		)
 	)
+	(symbol "TLC27M2xPS"
+		(extends "TLC272")
+		(property "Reference" "U"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TLC27M2xPS"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_5.3x6.2mm_P1.27mm"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc27m2.pdf"
+			(at 0 -8.128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LinCMOS Precision Dual Operational Amplifiers, VIO_max = 10mV (at 25°C), VDD = 3..16V (C suffix) / VDD = 4..16V (I / M suffix), 525kHz unity-gain bandwidth (VDD = 5V, TA = 25°C), SOIC-8 (208 mil)"
+			(at 0 -12.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "opamp operational-amplifier"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*SOIC*5.3x6.2mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TLC27M2xPW"
+		(extends "TLC272")
+		(property "Reference" "U"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TLC27M2xPW"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc27m2.pdf"
+			(at 0 -8.128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LinCMOS Precision Dual Operational Amplifiers, VIO_max = 10mV (at 25°C), VDD = 3..16V (C suffix) / VDD = 4..16V (I / M suffix), 525kHz unity-gain bandwidth (VDD = 5V, TA = 25°C), TSSOP-8"
+			(at 0 -12.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "opamp operational-amplifier"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TSSOP*4.4x3mm*P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TLC27M7xD"
 		(extends "TLC277")
 		(property "Reference" "U"
@@ -56404,138 +56539,6 @@
 			)
 		)
 		(property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "TLC27M2xPS"
-		(extends "TLC27M2xD")
-		(property "Reference" "U"
-			(at 0 5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TLC27M2xPS"
-			(at 0 -5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x6.2mm_P1.27mm"
-			(at 0 -10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc27m2.pdf"
-			(at 0 -8.128 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "LinCMOS Precision Dual Operational Amplifiers, VIO_max = 10mV (at 25°C), VDD = 3..16V (C suffix) / VDD = 4..16V (I / M suffix), 525kHz unity-gain bandwidth (VDD = 5V, TA = 25°C), SOIC-8 (208 mil)"
-			(at 0 -12.192 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "opamp operational-amplifier"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "*SOIC*5.3x6.2mm*P1.27mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "TLC27M2xPW"
-		(extends "TLC27M2xD")
-		(property "Reference" "U"
-			(at 0 5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TLC27M2xPW"
-			(at 0 -5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
-			(at 0 -10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc27m2.pdf"
-			(at 0 -8.128 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "LinCMOS Precision Dual Operational Amplifiers, VIO_max = 10mV (at 25°C), VDD = 3..16V (C suffix) / VDD = 4..16V (I / M suffix), 525kHz unity-gain bandwidth (VDD = 5V, TA = 25°C), TSSOP-8"
-			(at 0 -12.192 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "opamp operational-amplifier"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "TSSOP*4.4x3mm*P0.65mm*"
 			(at 0 0 0)
 			(effects
 				(font
