@@ -14779,7 +14779,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "BQ29330"
+	(symbol "BQ29330DBT"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14791,7 +14791,7 @@
 				)
 			)
 		)
-		(property "Value" "BQ29330"
+		(property "Value" "BQ29330DBT"
 			(at 6.35 23.876 0)
 			(effects
 				(font
@@ -14826,7 +14826,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Li-ion Li-poly LiPo Texas-Instruments"
+		(property "ki_keywords" "Li-ion Li-poly LiPo Texas-Instruments balancing"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14844,9 +14844,27 @@
 				(hide yes)
 			)
 		)
-		(symbol "BQ29330_0_0"
+		(symbol "BQ29330DBT_0_0"
 			(pin output line
 				(at -12.7 20.32 0)
+				(length 2.54)
+				(name "TOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "CELL+"
 					(effects
@@ -14864,7 +14882,7 @@
 				)
 			)
 			(pin output line
-				(at -12.7 17.78 0)
+				(at -12.7 10.16 0)
 				(length 2.54)
 				(name "CELL-"
 					(effects
@@ -14874,42 +14892,6 @@
 					)
 				)
 				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -12.7 10.16 0)
-				(length 2.54)
-				(name "GPOD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
-				(at -12.7 5.08 0)
-				(length 2.54)
-				(name "~{XRST}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14964,24 +14946,6 @@
 					)
 				)
 				(number "29"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
-				(at -12.7 -12.7 0)
-				(length 2.54)
-				(name "XALERT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "30"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15152,7 +15116,7 @@
 				)
 			)
 			(pin power_in line
-				(at 12.7 2.54 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "BAT"
 					(effects
@@ -15170,7 +15134,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 0 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(name "VC1"
 					(effects
@@ -15188,7 +15152,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -2.54 180)
+				(at 12.7 -5.08 180)
 				(length 2.54)
 				(name "VC2"
 					(effects
@@ -15206,7 +15170,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -5.08 180)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(name "VC3"
 					(effects
@@ -15224,7 +15188,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -7.62 180)
+				(at 12.7 -10.16 180)
 				(length 2.54)
 				(name "VC4"
 					(effects
@@ -15242,7 +15206,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -10.16 180)
+				(at 12.7 -12.7 180)
 				(length 2.54)
 				(name "VC5"
 					(effects
@@ -15252,24 +15216,6 @@
 					)
 				)
 				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 12.7 -12.7 180)
-				(length 2.54)
-				(name "TOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "25"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15314,7 +15260,7 @@
 				)
 			)
 		)
-		(symbol "BQ29330_0_1"
+		(symbol "BQ29330DBT_0_1"
 			(rectangle
 				(start -10.16 22.86)
 				(end 10.16 -22.86)
@@ -15327,9 +15273,45 @@
 				)
 			)
 		)
-		(symbol "BQ29330_1_0"
+		(symbol "BQ29330DBT_1_0"
+			(pin output line
+				(at -12.7 5.08 0)
+				(length 2.54)
+				(name "~{XRST}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "~{XALERT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin no_connect line
-				(at -12.7 15.24 0)
+				(at -10.16 15.24 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -15348,7 +15330,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -12.7 7.62 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -15386,7 +15368,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 12.7 5.08 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -15397,6 +15379,24 @@
 					)
 				)
 				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_emitter line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "GPOD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
 					(effects
 						(font
 							(size 1.27 1.27)
