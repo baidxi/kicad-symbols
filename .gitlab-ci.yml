@@ -4,3 +4,48 @@
 # related things are.
 include:
   - remote: 'https://gitlab.com/kicad/libraries/kicad-library-utils/-/raw/master/tools/gitlabci/gitlab-ci-symbols.yml'
+
+pack-and-push:
+  stage: .post
+  image: python:3-slim
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+  before_script:
+    - apt-get update -qq && apt-get install -y -qq git >/dev/null 2>&1
+  script:
+    - MASTER_SHA=$(git rev-parse HEAD)
+
+    # Pack symbols and stage the results in /tmp so they survive branch switching
+    - python3 scripts/pack_symbols.py . --output-dir /tmp/packed
+    - cp sym-lib-table /tmp/packed/
+    - sed -i 's/\.kicad_symdir/.kicad_sym/g' /tmp/packed/sym-lib-table
+    - cp *.sp /tmp/packed/ 2>/dev/null || true
+    - cp LICENSE.md README.md CONTRIBUTING.md /tmp/packed/ 2>/dev/null || true
+
+    # Set up git for pushing
+    - git config user.email "ci@kicad.org"
+    - git config user.name "KiCad CI"
+    - git remote set-url origin "https://gitlab-ci-token:${PACKED_BRANCH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+
+    # Fetch the existing packed branch, or create an orphan if it doesn't exist yet
+    - |
+      if git fetch origin packed; then
+        git checkout packed
+      else
+        git checkout --orphan packed
+        git rm -rf .
+      fi
+
+    # Replace all tracked content with the new packed output
+    - git rm -rf . || true
+    - cp /tmp/packed/* .
+    - git add -A
+
+    # Commit and push (skip if nothing changed)
+    - |
+      if git diff --cached --quiet; then
+        echo "Packed branch already up to date"
+      else
+        git commit -m "Packed symbols from master@${MASTER_SHA:0:8}"
+        git push origin packed
+      fi
