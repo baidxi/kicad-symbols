@@ -7,8 +7,8 @@ This repository contains the official KiCad schematic symbol libraries.
 Each symbol library is stored *unpacked* as a `.kicad_symdir` directory, each
 containing multiple symbol files (also ending in `.kicad_sym`).
 
-Contribution guidelines can be found at http://kicad.org/libraries/contribute
-The library convention can be found at http://kicad.org/libraries/klc/
+Contribution guidelines can be found at https://kicad.org/libraries/contribute
+The library convention can be found at https://kicad.org/libraries/klc/
 
 Other KiCad library repositories are located:
 
