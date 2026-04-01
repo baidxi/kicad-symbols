@@ -85,7 +85,7 @@
 		)
 		(symbol "ICE40LP384-SG32_1_0"
 			(pin power_in line
-				(at 2.54 -27.94 90)
+				(at 0 -27.94 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -210,10 +210,10 @@
 					)
 				)
 			)
-			(pin input inverted
+			(pin input line
 				(at -22.86 12.7 0)
 				(length 2.54)
-				(name "CRESET_B"
+				(name "~{CRESET_B}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -282,10 +282,10 @@
 					)
 				)
 			)
-			(pin bidirectional inverted
+			(pin bidirectional line
 				(at -22.86 -17.78 0)
 				(length 2.54)
-				(name "SPI_SS"
+				(name "~{SPI_SS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -390,9 +390,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -2.54 -27.94 90)
+			(pin passive line
+				(at 0 -27.94 90)
 				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -534,9 +535,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 0 -27.94 90)
 				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
