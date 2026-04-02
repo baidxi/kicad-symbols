@@ -85,7 +85,7 @@
 		)
 		(symbol "ICE40LP384-SG32_1_0"
 			(pin power_in line
-				(at 0 -27.94 90)
+				(at 0 -25.4 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -103,7 +103,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 27.94 270)
+				(at 2.54 25.4 270)
 				(length 2.54)
 				(name "VCCIO_3"
 					(effects
@@ -121,7 +121,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 17.78 180)
+				(at 22.86 7.62 180)
 				(length 2.54)
 				(name "IOL_4A"
 					(effects
@@ -139,9 +139,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 15.24 180)
+				(at 22.86 5.08 180)
 				(length 2.54)
-				(name "IOL_4B_GBIN7"
+				(name "IOL_4B"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -155,9 +155,10 @@
 						)
 					)
 				)
+				(alternate "GBIN7" input line)
 			)
 			(pin bidirectional line
-				(at 22.86 12.7 180)
+				(at 22.86 0 180)
 				(length 2.54)
 				(name "IOL_5B"
 					(effects
@@ -175,9 +176,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 10.16 180)
+				(at 22.86 2.54 180)
 				(length 2.54)
-				(name "IOL_5A_GBIN6"
+				(name "IOL_5A"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -191,9 +192,10 @@
 						)
 					)
 				)
+				(alternate "GBIN6" input line)
 			)
 			(pin power_in line
-				(at 5.08 27.94 270)
+				(at 5.08 25.4 270)
 				(length 2.54)
 				(name "VCCIO_2"
 					(effects
@@ -211,7 +213,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 12.7 0)
+				(at -22.86 15.24 0)
 				(length 2.54)
 				(name "~{CRESET_B}"
 					(effects
@@ -229,7 +231,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 10.16 0)
+				(at -22.86 12.7 0)
 				(length 2.54)
 				(name "CDONE"
 					(effects
@@ -247,9 +249,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -12.7 0)
+				(at -22.86 -10.16 0)
 				(length 2.54)
-				(name "SPI_SDO"
+				(name "IOB_24"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -263,11 +265,12 @@
 						)
 					)
 				)
+				(alternate "SPI_SDO" output line)
 			)
 			(pin bidirectional line
-				(at -22.86 -15.24 0)
+				(at -22.86 -12.7 0)
 				(length 2.54)
-				(name "SPI_SDI"
+				(name "IOB_25"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -281,11 +284,12 @@
 						)
 					)
 				)
+				(alternate "SPI_SDI" input line)
 			)
 			(pin bidirectional line
 				(at -22.86 -17.78 0)
 				(length 2.54)
-				(name "~{SPI_SS}"
+				(name "IOB_27"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -299,11 +303,12 @@
 						)
 					)
 				)
+				(alternate "~{SPI_SS}" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -10.16 0)
+				(at -22.86 -15.24 0)
 				(length 2.54)
-				(name "SPI_SCK"
+				(name "IOB_26"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -317,9 +322,10 @@
 						)
 					)
 				)
+				(alternate "SPI_SCK" bidirectional line)
 			)
 			(pin power_in line
-				(at -2.54 27.94 270)
+				(at -2.54 25.4 270)
 				(length 2.54)
 				(name "VCC_SPI"
 					(effects
@@ -337,7 +343,7 @@
 				)
 			)
 			(pin power_in line
-				(at 7.62 27.94 270)
+				(at 7.62 25.4 270)
 				(length 2.54)
 				(name "VCCIO_1"
 					(effects
@@ -355,9 +361,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 2.54 180)
+				(at 22.86 -7.62 180)
 				(length 2.54)
-				(name "IOR_35_GBIN3"
+				(name "IOR_35"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -371,11 +377,12 @@
 						)
 					)
 				)
+				(alternate "GBIN3" input line)
 			)
 			(pin bidirectional line
-				(at 22.86 0 180)
+				(at 22.86 -10.16 180)
 				(length 2.54)
-				(name "IOR_36_GBIN2"
+				(name "IOR_36"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -389,9 +396,10 @@
 						)
 					)
 				)
+				(alternate "GBIN2" input line)
 			)
 			(pin passive line
-				(at 0 -27.94 90)
+				(at 0 -25.4 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -410,7 +418,7 @@
 				)
 			)
 			(pin power_in line
-				(at -7.62 27.94 270)
+				(at -7.62 25.4 270)
 				(length 2.54)
 				(name "VPP_2V5"
 					(effects
@@ -428,7 +436,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 27.94 270)
+				(at -12.7 25.4 270)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -446,7 +454,7 @@
 				)
 			)
 			(pin power_in line
-				(at 10.16 27.94 270)
+				(at 10.16 25.4 270)
 				(length 2.54)
 				(name "VCCIO_0"
 					(effects
@@ -464,9 +472,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -15.24 180)
+				(at -22.86 2.54 0)
 				(length 2.54)
-				(name "IOT_49_GBIN0"
+				(name "IOT_49"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -480,11 +488,12 @@
 						)
 					)
 				)
+				(alternate "GBIN0" input line)
 			)
 			(pin bidirectional line
-				(at 22.86 -17.78 180)
+				(at -22.86 0 0)
 				(length 2.54)
-				(name "IOT_50_GBIN1"
+				(name "IOT_50"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -498,9 +507,10 @@
 						)
 					)
 				)
+				(alternate "GBIN1" input line)
 			)
 			(pin bidirectional line
-				(at 22.86 -22.86 180)
+				(at -22.86 -5.08 0)
 				(length 2.54)
 				(name "IOT_53"
 					(effects
@@ -518,7 +528,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -20.32 180)
+				(at -22.86 -2.54 0)
 				(length 2.54)
 				(name "IOT_52"
 					(effects
@@ -536,7 +546,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 90)
+				(at 0 -25.4 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -557,8 +567,8 @@
 		)
 		(symbol "ICE40LP384-SG32_1_1"
 			(rectangle
-				(start -20.32 25.4)
-				(end 20.32 -25.4)
+				(start -20.32 22.86)
+				(end 20.32 -22.86)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -568,7 +578,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 20.32 180)
+				(at 22.86 10.16 180)
 				(length 2.54)
 				(name "IOL_2B"
 					(effects
@@ -586,7 +596,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 22.86 180)
+				(at 22.86 12.7 180)
 				(length 2.54)
 				(name "IOL_2A"
 					(effects
@@ -604,7 +614,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 5.08 180)
+				(at 22.86 -5.08 180)
 				(length 2.54)
 				(name "IOR_34"
 					(effects
@@ -622,7 +632,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -2.54 180)
+				(at 22.86 -12.7 180)
 				(length 2.54)
 				(name "IOR_38"
 					(effects
@@ -640,7 +650,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -5.08 180)
+				(at 22.86 -15.24 180)
 				(length 2.54)
 				(name "IOR_39"
 					(effects
@@ -658,7 +668,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -10.16 180)
+				(at -22.86 7.62 0)
 				(length 2.54)
 				(name "IOT_45"
 					(effects
@@ -676,7 +686,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -12.7 180)
+				(at -22.86 5.08 0)
 				(length 2.54)
 				(name "IOT_47"
 					(effects
