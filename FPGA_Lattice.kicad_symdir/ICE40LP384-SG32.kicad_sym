@@ -248,10 +248,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -22.86 -10.16 0)
+			(pin output line
+				(at -22.86 -12.7 0)
 				(length 2.54)
-				(name "IOB_24"
+				(name "SPI_SDO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -265,12 +265,12 @@
 						)
 					)
 				)
-				(alternate "SPI_SDO" output line)
+				(alternate "IOB_24" bidirectional line)
 			)
-			(pin bidirectional line
-				(at -22.86 -12.7 0)
+			(pin input line
+				(at -22.86 -15.24 0)
 				(length 2.54)
-				(name "IOB_25"
+				(name "SPI_SDI"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -284,12 +284,12 @@
 						)
 					)
 				)
-				(alternate "SPI_SDI" input line)
+				(alternate "IOB_25" bidirectional line)
 			)
 			(pin bidirectional line
 				(at -22.86 -17.78 0)
 				(length 2.54)
-				(name "IOB_27"
+				(name "~{SPI_SS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -303,12 +303,12 @@
 						)
 					)
 				)
-				(alternate "~{SPI_SS}" bidirectional line)
+				(alternate "IOB_27" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -15.24 0)
+				(at -22.86 -10.16 0)
 				(length 2.54)
-				(name "IOB_26"
+				(name "SPI_SCK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -322,7 +322,7 @@
 						)
 					)
 				)
-				(alternate "SPI_SCK" bidirectional line)
+				(alternate "IOB_26" bidirectional line)
 			)
 			(pin power_in line
 				(at -2.54 25.4 270)
