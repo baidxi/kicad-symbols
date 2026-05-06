@@ -19,7 +19,7 @@
 			)
 		)
 		(property "Value" "CP2105-F01-GM"
-			(at 8.89 26.67 0)
+			(at 12.7 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -113,24 +113,6 @@
 					)
 				)
 				(alternate "~{SUSPEND}" output line)
-			)
-			(pin power_in line
-				(at 0 -27.94 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
 			)
 			(pin bidirectional line
 				(at -15.24 2.54 0)
@@ -536,10 +518,9 @@
 				)
 				(alternate "GPIO.0_SCI" bidirectional line)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 0 -27.94 90)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -547,7 +528,7 @@
 						)
 					)
 				)
-				(number "25"
+				(number "[2,25]"
 					(effects
 						(font
 							(size 1.27 1.27)
