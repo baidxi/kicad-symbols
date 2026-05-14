@@ -9,7 +9,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -8.89 13.97 0)
+			(at -10.16 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20,17 +20,17 @@
 			)
 		)
 		(property "Value" "PCA2131"
-			(at 0 5.08 90)
+			(at -10.16 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SON:NXP_LSON-16-1EP_3.5x4.5mm_P0.5mm_EP2x3.8mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76,10 +76,21 @@
 				)
 			)
 		)
+		(property "ki_fp_filters" "*LSON*3.5x4.5mm?P0.5mm?EP2x3.8mm*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "PCA2131_1_1"
 			(rectangle
 				(start -10.16 12.7)
-				(end 10.16 -12.7)
+				(end 12.7 -20.32)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -89,8 +100,8 @@
 				)
 			)
 			(pin input line
-				(at -15.24 10.16 0)
-				(length 5.08)
+				(at -12.7 -10.16 0)
+				(length 2.54)
 				(name "IFS"
 					(effects
 						(font
@@ -107,8 +118,8 @@
 				)
 			)
 			(pin input line
-				(at -15.24 7.62 0)
-				(length 5.08)
+				(at -12.7 7.62 0)
+				(length 2.54)
 				(name "SCL"
 					(effects
 						(font
@@ -125,8 +136,8 @@
 				)
 			)
 			(pin input line
-				(at -15.24 5.08 0)
-				(length 5.08)
+				(at -12.7 5.08 0)
+				(length 2.54)
 				(name "SDI"
 					(effects
 						(font
@@ -143,8 +154,8 @@
 				)
 			)
 			(pin output line
-				(at -15.24 2.54 0)
-				(length 5.08)
+				(at -12.7 2.54 0)
+				(length 2.54)
 				(name "SDO"
 					(effects
 						(font
@@ -161,8 +172,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at -15.24 0 0)
-				(length 5.08)
+				(at -12.7 0 0)
+				(length 2.54)
 				(name "SDA/~{CE}"
 					(effects
 						(font
@@ -180,7 +191,7 @@
 			)
 			(pin output line
 				(at 15.24 5.08 180)
-				(length 5.08)
+				(length 2.54)
 				(name "CLKOUT"
 					(effects
 						(font
@@ -197,9 +208,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -17.78 90)
-				(length 5.08)
-				(name "VSS"
+				(at 0 -22.86 90)
+				(length 2.54)
+				(name "V_{SS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -215,8 +226,8 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -2.54 0)
-				(length 5.08)
+				(at 15.24 -2.54 180)
+				(length 2.54)
 				(name "~{TS1}"
 					(effects
 						(font
@@ -233,8 +244,8 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -5.08 0)
-				(length 5.08)
+				(at 15.24 -5.08 180)
+				(length 2.54)
 				(name "~{TS2}"
 					(effects
 						(font
@@ -251,8 +262,8 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -7.62 0)
-				(length 5.08)
+				(at 15.24 -7.62 180)
+				(length 2.54)
 				(name "~{TS3}"
 					(effects
 						(font
@@ -269,8 +280,8 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -10.16 0)
-				(length 5.08)
+				(at 15.24 -10.16 180)
+				(length 2.54)
 				(name "~{TS4}"
 					(effects
 						(font
@@ -286,9 +297,9 @@
 					)
 				)
 			)
-			(pin output line
-				(at 15.24 0 180)
-				(length 5.08)
+			(pin open_collector line
+				(at -12.7 -7.62 0)
+				(length 2.54)
 				(name "~{INTB}"
 					(effects
 						(font
@@ -304,9 +315,9 @@
 					)
 				)
 			)
-			(pin output line
-				(at 15.24 -2.54 180)
-				(length 5.08)
+			(pin open_collector line
+				(at -12.7 -5.08 0)
+				(length 2.54)
 				(name "~{INTA}"
 					(effects
 						(font
@@ -322,9 +333,9 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 15.24 -5.08 180)
-				(length 5.08)
+			(pin power_out line
+				(at 5.08 15.24 270)
+				(length 2.54)
 				(name "BBS"
 					(effects
 						(font
@@ -341,9 +352,9 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 17.78 270)
-				(length 5.08)
-				(name "VDD"
+				(at -5.08 15.24 270)
+				(length 2.54)
+				(name "V_{DD}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -359,9 +370,9 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 17.78 270)
-				(length 5.08)
-				(name "VBAT"
+				(at 0 15.24 270)
+				(length 2.54)
+				(name "V_{BAT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -369,6 +380,24 @@
 					)
 				)
 				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -22.86 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
