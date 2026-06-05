@@ -2,12 +2,16 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-    (symbol "MSPM0C110xSDDF"
+	(symbol "MSPM0C110xSDDF"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16,6 +20,8 @@
 		)
 		(property "Value" "MSPM0C110xSDDF"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24,47 +30,57 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Texas_DDF0008A_SOT-8_1.6x2.9mm_P0.65mm"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/mspm0c1104"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "ARM Cortex-M0+ MCU, 16/8kB flash, 1kB SRAM, 24MHz, SOT-23-8"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_keywords" "texas"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_fp_filters" "*Texas*DDF0008A*SOT*8*1.6x2.9mm*P0.65mm*"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "MSPM0C110xSDDF_1_1"
@@ -79,23 +95,52 @@
 					(type background)
 				)
 			)
-			(pin power_in line
-				(at 0 15.24 270)
+			(pin bidirectional line
+				(at 12.7 -7.62 180)
 				(length 2.54)
-				(name "VDD"
+				(name "PA27"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "4"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
+				(alternate "A0" input line)
+				(alternate "SPI0_CS3" bidirectional line)
+				(alternate "SPI0_POCI" bidirectional line)
+				(alternate "TIMA0_C0N" bidirectional line)
+				(alternate "TIMA_FAL2" bidirectional line)
+				(alternate "TIMG8_C1" bidirectional line)
+				(alternate "UART0_TX" output line)
+			)
+			(pin bidirectional line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "PA1/NRST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "HFCLK_IN" input line)
+				(alternate "I2C0_SCL" bidirectional line)
+				(alternate "TIM8_C0" bidirectional line)
+				(alternate "TIMA0_C1" bidirectional line)
 			)
 			(pin power_in line
 				(at 0 -15.24 90)
@@ -108,6 +153,24 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 15.24 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -138,28 +201,6 @@
 				(alternate "SPI0_CS1" bidirectional line)
 				(alternate "TIMA_FAL1" bidirectional line)
 				(alternate "TIMG8_C0" bidirectional line)
-			)
-			(pin bidirectional line
-				(at 12.7 2.54 180)
-				(length 2.54)
-				(name "PA1/NRST"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "HFCLK_IN" input line)
-				(alternate "I2C0_SCL" bidirectional line)
-				(alternate "TIM8_C0" bidirectional line)
-				(alternate "TIMA0_C1" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 12.7 0 180)
@@ -233,31 +274,6 @@
 				(alternate "TIMG14_C2" bidirectional line)
 				(alternate "UART0_RTS" output line)
 				(alternate "UART0_RX" input line)
-			)
-			(pin bidirectional line
-				(at 12.7 -7.62 180)
-				(length 2.54)
-				(name "PA27"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "A0" input line)
-				(alternate "SPI0_CS3" bidirectional line)
-				(alternate "SPI0_POCI" bidirectional line)
-				(alternate "TIMA0_C0N" bidirectional line)
-				(alternate "TIMA_FAL2" bidirectional line)
-				(alternate "TIMG8_C1" bidirectional line)
-				(alternate "UART0_TX" output line)
 			)
 		)
 		(embedded_fonts no)
