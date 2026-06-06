@@ -143,24 +143,6 @@
 				(alternate "TIMA0_C1" bidirectional line)
 			)
 			(pin power_in line
-				(at 0 -15.24 90)
-				(length 2.54)
-				(name "VSS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 0 15.24 270)
 				(length 2.54)
 				(name "VDD"
@@ -275,10 +257,9 @@
 				(alternate "UART0_RTS" output line)
 				(alternate "UART0_RX" input line)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 0 -15.24 90)
 				(length 2.54)
-				(hide yes)
 				(name "VSS"
 					(effects
 						(font
@@ -286,7 +267,7 @@
 						)
 					)
 				)
-				(number "9"
+				(number "[3,9]"
 					(effects
 						(font
 							(size 1.27 1.27)
