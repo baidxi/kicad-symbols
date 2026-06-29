@@ -2,7 +2,7 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "LT4231xUF"
+	(symbol "LT4321xUF"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -18,7 +18,7 @@
 				)
 			)
 		)
-		(property "Value" "LT4231xUF"
+		(property "Value" "LT4321xUF"
 			(at 1.27 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84,7 +84,7 @@
 				)
 			)
 		)
-		(symbol "LT4231xUF_0_1"
+		(symbol "LT4321xUF_0_1"
 			(rectangle
 				(start -7.62 12.7)
 				(end 7.62 -12.7)
@@ -97,7 +97,7 @@
 				)
 			)
 		)
-		(symbol "LT4231xUF_1_1"
+		(symbol "LT4321xUF_1_1"
 			(pin output line
 				(at -10.16 7.62 0)
 				(length 2.54)
@@ -242,24 +242,6 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -15.24 90)
-				(length 2.54)
-				(name "OUTN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
 				(at 10.16 10.16 180)
 				(length 2.54)
@@ -386,10 +368,9 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 0 -15.24 90)
 				(length 2.54)
-				(hide yes)
 				(name "OUTN"
 					(effects
 						(font
@@ -397,7 +378,7 @@
 						)
 					)
 				)
-				(number "17"
+				(number "[9,17]"
 					(effects
 						(font
 							(size 1.27 1.27)
