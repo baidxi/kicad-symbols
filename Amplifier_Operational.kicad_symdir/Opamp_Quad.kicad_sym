@@ -2,7 +2,7 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "Opamp_Dual"
+	(symbol "Opamp_Quad"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -19,7 +19,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Opamp_Dual"
+		(property "Value" "Opamp_Quad"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52,7 +52,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual operational amplifier"
+		(property "Description" "Quad operational amplifier"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -63,7 +63,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
+		(property "Sim.Library" "${KICAD10_SYMBOL_DIR}/Simulation_SPICE.sp"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74,7 +74,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
+		(property "Sim.Name" "kicad_builtin_opamp_quad"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -96,7 +96,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vcc 5=in2+ 6=in2- 7=out2 8=out3 9=in3- 10=in3+ 11=vee 12=in4+ 13=in4- 14=out4"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -117,7 +117,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "dual opamp"
+		(property "ki_keywords" "quad opamp"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -128,7 +128,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*"
+		(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -139,7 +139,7 @@
 				)
 			)
 		)
-		(symbol "Opamp_Dual_1_1"
+		(symbol "Opamp_Quad_1_1"
 			(polyline
 				(pts
 					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -207,7 +207,7 @@
 				)
 			)
 		)
-		(symbol "Opamp_Dual_2_1"
+		(symbol "Opamp_Quad_2_1"
 			(polyline
 				(pts
 					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -275,11 +275,147 @@
 				)
 			)
 		)
-		(symbol "Opamp_Dual_3_1"
+		(symbol "Opamp_Quad_3_1"
+			(polyline
+				(pts
+					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Opamp_Quad_4_1"
+			(polyline
+				(pts
+					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Opamp_Quad_5_1"
 			(pin power_in line
-				(at -2.54 -7.62 90)
+				(at -2.54 7.62 270)
 				(length 3.81)
-				(name "V-"
+				(name "V+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -295,16 +431,16 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 7.62 270)
+				(at -2.54 -7.62 90)
 				(length 3.81)
-				(name "V+"
+				(name "V-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
