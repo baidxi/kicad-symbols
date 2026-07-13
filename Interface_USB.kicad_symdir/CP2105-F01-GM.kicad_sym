@@ -114,6 +114,24 @@
 				)
 				(alternate "~{SUSPEND}" output line)
 			)
+			(pin power_in line
+				(at 0 -27.94 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
 				(at -15.24 2.54 0)
 				(length 2.54)
@@ -151,7 +169,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 27.94 270)
+				(at 0 27.94 270)
 				(length 2.54)
 				(name "V_{IO}"
 					(effects
@@ -169,7 +187,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
+				(at 2.54 27.94 270)
 				(length 2.54)
 				(name "V_{DD}"
 					(effects
@@ -185,6 +203,7 @@
 						)
 					)
 				)
+				(alternate "V_{DD}" power_out line)
 			)
 			(pin power_in line
 				(at -2.54 27.94 270)
@@ -519,16 +538,16 @@
 				(alternate "GPIO.0_SCI" bidirectional line)
 			)
 			(pin power_in line
-				(at 0 -27.94 90)
+				(at 2.54 -27.94 90)
 				(length 2.54)
-				(name "GND"
+				(name "EP"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "[2,25]"
+				(number "25"
 					(effects
 						(font
 							(size 1.27 1.27)
