@@ -3,6 +3,9 @@
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
 	(symbol "INA2180AxxDSG"
+		(pin_names
+			(offset 0.127)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -28,7 +31,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+		(property "Footprint" "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -231,25 +234,7 @@
 		)
 		(symbol "INA2180AxxDSG_3_1"
 			(pin power_in line
-				(at 0 -7.62 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 7.62 270)
+				(at -2.54 7.62 270)
 				(length 3.81)
 				(name "VS"
 					(effects
@@ -259,6 +244,24 @@
 					)
 				)
 				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -7.62 90)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "[4,9]"
 					(effects
 						(font
 							(size 1.27 1.27)
