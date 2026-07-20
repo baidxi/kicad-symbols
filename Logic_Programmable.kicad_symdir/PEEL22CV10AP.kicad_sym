@@ -3,13 +3,14 @@
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
 	(symbol "PEEL22CV10AP"
+		(body_styles "PEEL_layout" "PAL_layout")
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 0 0 0)
+			(at -6.35 17.272 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19,7 +20,7 @@
 			)
 		)
 		(property "Value" "PEEL22CV10AP"
-			(at 0 0 0)
+			(at 11.176 17.272 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29,7 +30,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
-			(at 0 0 0)
+			(at -0.254 -25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -40,7 +41,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.alldatasheet.com/datasheet-pdf/pdf/149182/ANACHIP/PEEL22CV10AP-15L.html"
-			(at 0 0 0)
+			(at 0 -20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -51,7 +52,7 @@
 			)
 		)
 		(property "Description" "Not in Production, CMOS Programmable Electrically Erasable Logic Device, DIP-24"
-			(at 0 0 0)
+			(at 0.254 -22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -61,7 +62,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "PLD"
+		(property "ki_keywords" "Obsolete ICT International-CMOS-Technology PLD 22V10"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -86,7 +87,7 @@
 		(symbol "PEEL22CV10AP_1_0"
 			(pin power_in line
 				(at 0 -20.32 90)
-				(length 3.81)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -103,9 +104,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 20.32 270)
-				(length 3.81)
-				(name "VCC"
+				(at 0 17.78 270)
+				(length 2.54)
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -123,8 +124,8 @@
 		)
 		(symbol "PEEL22CV10AP_1_1"
 			(rectangle
-				(start -11.43 16.51)
-				(end 11.43 -16.51)
+				(start -7.62 15.24)
+				(end 7.62 -17.78)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -134,9 +135,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 12.7 0)
-				(length 3.81)
-				(name "I1/CLK"
+				(at -10.16 12.7 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -150,11 +151,12 @@
 						)
 					)
 				)
+				(alternate "CLK" input line)
 			)
 			(pin input line
-				(at -15.24 10.16 0)
-				(length 3.81)
-				(name "I2"
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -170,9 +172,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 7.62 0)
-				(length 3.81)
-				(name "I3"
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -188,9 +190,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 5.08 0)
-				(length 3.81)
-				(name "I4"
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -206,9 +208,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 2.54 0)
-				(length 3.81)
-				(name "I5"
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -224,9 +226,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 0 0)
-				(length 3.81)
-				(name "I6"
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -242,9 +244,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -2.54 0)
-				(length 3.81)
-				(name "I7"
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -260,9 +262,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -5.08 0)
-				(length 3.81)
-				(name "I8"
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -278,9 +280,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -7.62 0)
-				(length 3.81)
-				(name "I9"
+				(at -10.16 -7.62 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -296,9 +298,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -10.16 0)
-				(length 3.81)
-				(name "I10"
+				(at -10.16 -10.16 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -314,9 +316,9 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -12.7 0)
-				(length 3.81)
-				(name "I11"
+				(at -10.16 -12.7 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -332,9 +334,9 @@
 				)
 			)
 			(pin input line
-				(at 15.24 -12.7 180)
-				(length 3.81)
-				(name "I13"
+				(at -10.16 -15.24 0)
+				(length 2.54)
+				(name "I"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -349,10 +351,10 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 -10.16 180)
-				(length 3.81)
-				(name "IO14"
+			(pin bidirectional line
+				(at 10.16 12.7 180)
+				(length 2.54)
+				(name "I/O"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -367,10 +369,10 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 -7.62 180)
-				(length 3.81)
-				(name "IO15"
+			(pin bidirectional line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(name "I/O"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -385,10 +387,10 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 -5.08 180)
-				(length 3.81)
-				(name "IO16"
+			(pin bidirectional line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "I/O"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -403,10 +405,10 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 -2.54 180)
-				(length 3.81)
-				(name "IO17"
+			(pin bidirectional line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "I/O"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -421,10 +423,10 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 0 180)
-				(length 3.81)
-				(name "IO18"
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "I/O"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -439,10 +441,10 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 2.54 180)
-				(length 3.81)
-				(name "IO19"
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "I/O"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -457,10 +459,10 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 5.08 180)
-				(length 3.81)
-				(name "IO20"
+			(pin bidirectional line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "I/O"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -475,10 +477,10 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 7.62 180)
-				(length 3.81)
-				(name "IO21"
+			(pin bidirectional line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "I/O"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -493,10 +495,10 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 10.16 180)
-				(length 3.81)
-				(name "IO22"
+			(pin bidirectional line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "I/O"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -511,10 +513,420 @@
 					)
 				)
 			)
-			(pin tri_state line
-				(at 15.24 12.7 180)
-				(length 3.81)
-				(name "IO23"
+			(pin bidirectional line
+				(at 10.16 -10.16 180)
+				(length 2.54)
+				(name "I/O"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PEEL22CV10AP_1_2"
+			(rectangle
+				(start -7.62 15.24)
+				(end 7.62 -17.78)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -10.16 12.7 0)
+				(length 2.54)
+				(name "I_{0}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CLK" input line)
+			)
+			(pin input line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "I_{1}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "I_{2}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "I_{3}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "I_{4}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "I_{5}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "I_{6}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "I_{7}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -7.62 0)
+				(length 2.54)
+				(name "I_{8}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -10.16 0)
+				(length 2.54)
+				(name "I_{9}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -12.7 0)
+				(length 2.54)
+				(name "I_{10}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -15.24 0)
+				(length 2.54)
+				(name "I_{11}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 12.7 180)
+				(length 2.54)
+				(name "I/O_{0}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(name "I/O_{1}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "I/O_{2}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "I/O_{3}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "I/O_{4}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "I/O_{5}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "I/O_{6}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "I/O_{7}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "I/O_{8}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -10.16 180)
+				(length 2.54)
+				(name "I/O_{9}"
 					(effects
 						(font
 							(size 1.27 1.27)
