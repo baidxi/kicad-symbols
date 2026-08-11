@@ -9,12 +9,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 0 0 0)
+			(at -1.27 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -29,7 +29,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
-			(at 0 -28.194 0)
+			(at 0 -23.876 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -40,7 +40,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/cd4009ub.pdf"
-			(at 0 -25.908 0)
+			(at 0 -21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -51,7 +51,7 @@
 			)
 		)
 		(property "Description" "Hex Inverting Buffer, Unbufferd inputs and outputs, High sink current, 3-18V operation, VDD>VI>VCC!, DIP-16"
-			(at 0 -23.368 0)
+			(at 0 -19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -94,21 +94,9 @@
 			)
 		)
 		(symbol "CD4009UBE_1_0"
-			(polyline
-				(pts
-					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(pin output inverted
-				(at 7.62 0 180)
-				(length 3.81)
+			(pin output line
+				(at 6.35 0 180)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -125,8 +113,8 @@
 				)
 			)
 			(pin input line
-				(at -7.62 0 0)
-				(length 3.81)
+				(at -6.35 0 0)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -143,22 +131,35 @@
 				)
 			)
 		)
-		(symbol "CD4009UBE_2_0"
+		(symbol "CD4009UBE_1_1"
 			(polyline
 				(pts
-					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					(xy -3.81 3.175) (xy -3.81 -3.175) (xy 2.54 0) (xy -3.81 3.175)
 				)
 				(stroke
 					(width 0.254)
-					(type default)
+					(type solid)
 				)
 				(fill
 					(type background)
 				)
 			)
-			(pin output inverted
-				(at 7.62 0 180)
-				(length 3.81)
+			(circle
+				(center 3.175 0)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CD4009UBE_2_0"
+			(pin output line
+				(at 6.35 0 180)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -175,8 +176,8 @@
 				)
 			)
 			(pin input line
-				(at -7.62 0 0)
-				(length 3.81)
+				(at -6.35 0 0)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -193,22 +194,35 @@
 				)
 			)
 		)
-		(symbol "CD4009UBE_3_0"
+		(symbol "CD4009UBE_2_1"
 			(polyline
 				(pts
-					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					(xy -3.81 3.175) (xy -3.81 -3.175) (xy 2.54 0) (xy -3.81 3.175)
 				)
 				(stroke
 					(width 0.254)
-					(type default)
+					(type solid)
 				)
 				(fill
 					(type background)
 				)
 			)
-			(pin output inverted
-				(at 7.62 0 180)
-				(length 3.81)
+			(circle
+				(center 3.175 0)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CD4009UBE_3_0"
+			(pin output line
+				(at 6.35 0 180)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -225,8 +239,8 @@
 				)
 			)
 			(pin input line
-				(at -7.62 0 0)
-				(length 3.81)
+				(at -6.35 0 0)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -243,22 +257,35 @@
 				)
 			)
 		)
-		(symbol "CD4009UBE_4_0"
+		(symbol "CD4009UBE_3_1"
 			(polyline
 				(pts
-					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					(xy -3.81 3.175) (xy -3.81 -3.175) (xy 2.54 0) (xy -3.81 3.175)
 				)
 				(stroke
 					(width 0.254)
-					(type default)
+					(type solid)
 				)
 				(fill
 					(type background)
 				)
 			)
+			(circle
+				(center 3.175 0)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CD4009UBE_4_0"
 			(pin input line
-				(at -7.62 0 0)
-				(length 3.81)
+				(at -6.35 0 0)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -274,9 +301,9 @@
 					)
 				)
 			)
-			(pin output inverted
-				(at 7.62 0 180)
-				(length 3.81)
+			(pin output line
+				(at 6.35 0 180)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -293,22 +320,35 @@
 				)
 			)
 		)
-		(symbol "CD4009UBE_5_0"
+		(symbol "CD4009UBE_4_1"
 			(polyline
 				(pts
-					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					(xy -3.81 3.175) (xy -3.81 -3.175) (xy 2.54 0) (xy -3.81 3.175)
 				)
 				(stroke
 					(width 0.254)
-					(type default)
+					(type solid)
 				)
 				(fill
 					(type background)
 				)
 			)
+			(circle
+				(center 3.175 0)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CD4009UBE_5_0"
 			(pin input line
-				(at -7.62 0 0)
-				(length 3.81)
+				(at -6.35 0 0)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -324,9 +364,9 @@
 					)
 				)
 			)
-			(pin output inverted
-				(at 7.62 0 180)
-				(length 3.81)
+			(pin output line
+				(at 6.35 0 180)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -343,22 +383,35 @@
 				)
 			)
 		)
-		(symbol "CD4009UBE_6_0"
+		(symbol "CD4009UBE_5_1"
 			(polyline
 				(pts
-					(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					(xy -3.81 3.175) (xy -3.81 -3.175) (xy 2.54 0) (xy -3.81 3.175)
 				)
 				(stroke
 					(width 0.254)
-					(type default)
+					(type solid)
 				)
 				(fill
 					(type background)
 				)
 			)
+			(circle
+				(center 3.175 0)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CD4009UBE_6_0"
 			(pin input line
-				(at -7.62 0 0)
-				(length 3.81)
+				(at -6.35 0 0)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -374,9 +427,9 @@
 					)
 				)
 			)
-			(pin output inverted
-				(at 7.62 0 180)
-				(length 3.81)
+			(pin output line
+				(at 6.35 0 180)
+				(length 2.54)
 				(name ""
 					(effects
 						(font
@@ -393,10 +446,35 @@
 				)
 			)
 		)
+		(symbol "CD4009UBE_6_1"
+			(polyline
+				(pts
+					(xy -3.81 3.175) (xy -3.81 -3.175) (xy 2.54 0) (xy -3.81 3.175)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center 3.175 0)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
 		(symbol "CD4009UBE_7_0"
 			(pin power_in line
-				(at 2.54 12.7 270)
-				(length 5.08)
+				(at 2.54 7.62 270)
+				(length 2.54)
 				(name "VCC"
 					(effects
 						(font
@@ -413,8 +491,8 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -12.7 90)
-				(length 5.08)
+				(at 0 -7.62 90)
+				(length 2.54)
 				(name "VSS"
 					(effects
 						(font
@@ -431,8 +509,8 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 12.7 270)
-				(length 5.08)
+				(at -2.54 7.62 270)
+				(length 2.54)
 				(name "VDD"
 					(effects
 						(font
@@ -451,8 +529,8 @@
 		)
 		(symbol "CD4009UBE_7_1"
 			(rectangle
-				(start -5.08 7.62)
-				(end 5.08 -7.62)
+				(start -3.81 5.08)
+				(end 3.81 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -462,7 +540,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -5.08 0 0)
+				(at -2.54 0 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
