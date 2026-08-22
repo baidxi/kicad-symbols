@@ -34,7 +34,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
 			(at 0 -4.318 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58,7 +58,7 @@
 				)
 			)
 		)
-		(property "Description" "Shunt Regulator, TSSOP-8"
+		(property "Description" "Shunt Regulator, TSSOP-8 (Texas PW0008A)"
 			(at 0 -8.382 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -80,7 +80,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "TSSOP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*TSSOP*4.4x3mm?P0.65mm*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -118,7 +118,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.254 -0.762) (xy 0.762 -0.762) (xy 0.762 0.762) (xy 0.762 0.762)
+					(xy 0.254 -0.762) (xy 0.762 -0.762) (xy 0.762 0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -189,6 +189,25 @@
 					)
 				)
 				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -1.27 1.27 90)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "[2,3,4,5,7]"
 					(effects
 						(font
 							(size 1.27 1.27)
