@@ -2,17 +2,14 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "PAL20RS10"
-		(pin_names
-			(offset 1.016)
-		)
+	(symbol "PAL20RS10xNS"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -8.89 19.05 0)
+			(at -7.366 19.558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22,8 +19,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PAL20RS10"
-			(at 5.08 19.05 0)
+		(property "Value" "PAL20RS10xNS"
+			(at 3.81 19.558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +30,40 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+			(at 0 -25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://bitsavers.org/components/amd/_dataBooks/1988_AMD_PAL_Device_Data_Book.pdf#page=573"
+			(at 0 -20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Programmable Array Logic (PAL), 20 array inputs (10 dedicated inputs), 10 registered outputs (programmable polarity), product-term steering, DIP-24 (300 mils)"
+			(at 0 -22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Obsolete Monolithic-Memories AMD PLD Large-24RS-Series PAL20RS10CNS"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44,7 +74,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "ki_fp_filters" "DIP*W7.62mm*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55,43 +85,10 @@
 				)
 			)
 		)
-		(property "Description" "Programmable Logic Array, DIP-24 (Narrow)"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "PAL PLD 20RS10"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_fp_filters" "DIP* PDIP*"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "PAL20RS10_0_1"
+		(symbol "PAL20RS10xNS_0_1"
 			(rectangle
-				(start -8.89 -16.51)
-				(end 8.89 16.51)
+				(start -7.62 17.78)
+				(end 7.62 -15.24)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -101,10 +98,10 @@
 				)
 			)
 		)
-		(symbol "PAL20RS10_1_1"
-			(pin input clock
-				(at -12.7 -12.7 0)
-				(length 3.81)
+		(symbol "PAL20RS10xNS_1_1"
+			(pin input line
+				(at -10.16 15.24 0)
+				(length 2.54)
 				(name "CLK"
 					(effects
 						(font
@@ -121,9 +118,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 15.24 0)
-				(length 3.81)
-				(name "I0"
+				(at -10.16 12.7 0)
+				(length 2.54)
+				(name "I_{1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -139,9 +136,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
-				(length 3.81)
-				(name "I1"
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "I_{2}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -157,9 +154,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 10.16 0)
-				(length 3.81)
-				(name "I2"
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "I_{3}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -175,9 +172,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 7.62 0)
-				(length 3.81)
-				(name "I3"
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "I_{4}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -193,9 +190,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 5.08 0)
-				(length 3.81)
-				(name "I4"
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "I_{5}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -211,9 +208,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 2.54 0)
-				(length 3.81)
-				(name "I5"
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "I_{6}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -229,9 +226,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
-				(length 3.81)
-				(name "I6"
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "I_{7}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -247,9 +244,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -2.54 0)
-				(length 3.81)
-				(name "I7"
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "I_{8}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -265,9 +262,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -5.08 0)
-				(length 3.81)
-				(name "I8"
+				(at -10.16 -7.62 0)
+				(length 2.54)
+				(name "I_{9}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -283,9 +280,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -7.62 0)
-				(length 3.81)
-				(name "I9"
+				(at -10.16 -10.16 0)
+				(length 2.54)
+				(name "I_{10}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -301,8 +298,8 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -20.32 90)
-				(length 3.81)
+				(at 0 -17.78 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -318,9 +315,9 @@
 					)
 				)
 			)
-			(pin input inverted
-				(at -12.7 -15.24 0)
-				(length 3.81)
+			(pin input line
+				(at -10.16 -12.7 0)
+				(length 2.54)
 				(name "~{OE}"
 					(effects
 						(font
@@ -336,10 +333,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 -7.62 180)
-				(length 3.81)
-				(name "O9"
+			(pin bidirectional line
+				(at 10.16 15.24 180)
+				(length 2.54)
+				(name "I/~{O_{1}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -354,10 +351,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 -5.08 180)
-				(length 3.81)
-				(name "O8"
+			(pin bidirectional line
+				(at 10.16 12.7 180)
+				(length 2.54)
+				(name "I/~{O_{2}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -372,10 +369,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 -2.54 180)
-				(length 3.81)
-				(name "O7"
+			(pin bidirectional line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(name "I/~{O_{3}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -390,10 +387,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 0 180)
-				(length 3.81)
-				(name "O6"
+			(pin bidirectional line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "I/~{O_{4}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -408,10 +405,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 2.54 180)
-				(length 3.81)
-				(name "O5"
+			(pin bidirectional line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "I/~{O_{5}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -426,10 +423,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 5.08 180)
-				(length 3.81)
-				(name "O4"
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "I/~{O_{6}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -444,10 +441,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 7.62 180)
-				(length 3.81)
-				(name "O3"
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "I/~{O_{7}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -462,10 +459,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 10.16 180)
-				(length 3.81)
-				(name "O2"
+			(pin bidirectional line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "I/~{O_{8}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -480,10 +477,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 12.7 180)
-				(length 3.81)
-				(name "O1"
+			(pin bidirectional line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "I/~{O_{9}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -498,10 +495,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 15.24 180)
-				(length 3.81)
-				(name "O0"
+			(pin bidirectional line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "I/~{O_{10}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -518,8 +515,8 @@
 			)
 			(pin power_in line
 				(at 0 20.32 270)
-				(length 3.81)
-				(name "VCC"
+				(length 2.54)
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
