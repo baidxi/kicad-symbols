@@ -9,7 +9,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -21.59 26.924 0)
+			(at 8.636 27.432 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19,7 +19,7 @@
 			)
 		)
 		(property "Value" "CH32V208GBU6"
-			(at 15.748 26.67 0)
+			(at 15.24 24.638 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28,7 +28,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_4x4mm_P0.4mm_EP2.7x2.7mm"
+		(property "Footprint" "Package_DFN_QFN:WQFN-28-1EP_4x4mm_P0.4mm_EP2.7x2.7mm"
 			(at -33.274 -29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -72,7 +72,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "*WQFN*4x4mm?P0.4mm?EP2.7*x2.7*mm"
+		(property "ki_fp_filters" "*QFN*4x4mm*P0.4mm*EP2.7x2.7*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -85,8 +85,8 @@
 		)
 		(symbol "CH32V208GBU6_1_1"
 			(rectangle
-				(start -20.32 25.4)
-				(end 20.32 -22.86)
+				(start -12.7 22.86)
+				(end 12.7 -22.86)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -96,9 +96,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -12.7 180)
+				(at 15.24 -15.24 180)
 				(length 2.54)
-				(name "PC15/OSC32OUT"
+				(name "PC15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -112,9 +112,10 @@
 						)
 					)
 				)
+				(alternate "OSC32OUT" output line)
 			)
 			(pin input line
-				(at -22.86 -15.24 0)
+				(at -15.24 -15.24 0)
 				(length 2.54)
 				(name "OSC_IN"
 					(effects
@@ -132,7 +133,7 @@
 				)
 			)
 			(pin output line
-				(at -22.86 -17.78 0)
+				(at -15.24 -17.78 0)
 				(length 2.54)
 				(name "OSC_OUT"
 					(effects
@@ -150,7 +151,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 27.94 270)
+				(at 5.08 25.4 270)
 				(length 2.54)
 				(name "VDDA"
 					(effects
@@ -168,7 +169,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 17.78 0)
+				(at -15.24 17.78 0)
 				(length 2.54)
 				(name "PA0"
 					(effects
@@ -193,7 +194,7 @@
 				(alternate "WKUP" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 15.24 0)
+				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "PA1"
 					(effects
@@ -216,7 +217,7 @@
 				(alternate "USART2_RTS" output line)
 			)
 			(pin bidirectional line
-				(at -22.86 12.7 0)
+				(at -15.24 12.7 0)
 				(length 2.54)
 				(name "PA2"
 					(effects
@@ -240,7 +241,7 @@
 				(alternate "USART2_TX" output line)
 			)
 			(pin bidirectional line
-				(at -22.86 10.16 0)
+				(at -15.24 10.16 0)
 				(length 2.54)
 				(name "PA3"
 					(effects
@@ -264,7 +265,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 7.62 0)
+				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "PA4"
 					(effects
@@ -286,7 +287,7 @@
 				(alternate "USART2_CK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 5.08 0)
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "PA5"
 					(effects
@@ -309,7 +310,7 @@
 				(alternate "USART1_CTS_2" input line)
 			)
 			(pin bidirectional line
-				(at -22.86 2.54 0)
+				(at -15.24 2.54 0)
 				(length 2.54)
 				(name "PA6"
 					(effects
@@ -333,7 +334,7 @@
 				(alternate "USART1_TX_3" output line)
 			)
 			(pin bidirectional line
-				(at -22.86 0 0)
+				(at -15.24 0 0)
 				(length 2.54)
 				(name "PA7"
 					(effects
@@ -357,7 +358,7 @@
 				(alternate "USART1_RX_3" input line)
 			)
 			(pin power_in line
-				(at -2.54 27.94 270)
+				(at 0 25.4 270)
 				(length 2.54)
 				(name "VDD_VIO_1"
 					(effects
@@ -375,9 +376,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 2.54 180)
+				(at 15.24 2.54 180)
 				(length 2.54)
-				(name "PC6/RXP"
+				(name "PC6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -395,9 +396,9 @@
 				(alternate "TIM3_CH1_3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 0 180)
+				(at 15.24 0 180)
 				(length 2.54)
-				(name "PC7/RXN"
+				(name "PC7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -415,9 +416,9 @@
 				(alternate "TIM3_CH2_3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -2.54 180)
+				(at 15.24 -2.54 180)
 				(length 2.54)
-				(name "PC8/TXP"
+				(name "PC8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -435,9 +436,9 @@
 				(alternate "TIM3_CH3_3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -5.08 180)
+				(at 15.24 -5.08 180)
 				(length 2.54)
-				(name "PC9/TXN"
+				(name "PC9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -455,7 +456,7 @@
 				(alternate "TIM3_CH4_3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -2.54 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "PA11"
 					(effects
@@ -479,7 +480,7 @@
 				(alternate "USBDM" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -5.08 0)
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "PA12"
 					(effects
@@ -503,9 +504,9 @@
 				(alternate "USBDP" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -7.62 0)
+				(at -15.24 -7.62 0)
 				(length 2.54)
-				(name "PA13/SWDIO"
+				(name "PA13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -522,7 +523,7 @@
 				(alternate "SWDIO" bidirectional line)
 			)
 			(pin power_in line
-				(at -5.08 27.94 270)
+				(at -2.54 25.4 270)
 				(length 2.54)
 				(name "VINTA"
 					(effects
@@ -540,7 +541,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 17.78 180)
+				(at 15.24 17.78 180)
 				(length 2.54)
 				(name "ANT"
 					(effects
@@ -558,9 +559,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -10.16 0)
+				(at -15.24 -10.16 0)
 				(length 2.54)
-				(name "PA14/SWCLK"
+				(name "PA14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -577,7 +578,7 @@
 				(alternate "SWCLK" input line)
 			)
 			(pin bidirectional line
-				(at 22.86 12.7 180)
+				(at 15.24 12.7 180)
 				(length 2.54)
 				(name "PB6"
 					(effects
@@ -599,7 +600,7 @@
 				(alternate "USBFS_DM" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 10.16 180)
+				(at 15.24 10.16 180)
 				(length 2.54)
 				(name "PB7"
 					(effects
@@ -621,7 +622,7 @@
 				(alternate "USBFS_DP" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 7.62 180)
+				(at 15.24 7.62 180)
 				(length 2.54)
 				(name "BOOT0/PB8"
 					(effects
@@ -642,7 +643,7 @@
 				(alternate "TIM4_CH3" bidirectional line)
 			)
 			(pin power_in line
-				(at 0 27.94 270)
+				(at 2.54 25.4 270)
 				(length 2.54)
 				(name "VDD_VIO_3"
 					(effects
@@ -660,9 +661,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -10.16 180)
+				(at 15.24 -12.7 180)
 				(length 2.54)
-				(name "PC14/OSC32IN"
+				(name "PC14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -676,6 +677,7 @@
 						)
 					)
 				)
+				(alternate "OSC32IN" input line)
 			)
 			(pin power_in line
 				(at 0 -25.4 90)
