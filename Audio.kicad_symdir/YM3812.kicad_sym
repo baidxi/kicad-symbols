@@ -9,7 +9,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -6.858 19.812 0)
+			(at -6.858 22.352 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19,7 +19,7 @@
 			)
 		)
 		(property "Value" "YM3812"
-			(at 8.128 19.812 0)
+			(at 8.128 22.352 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29,7 +29,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-24_W15.24mm"
-			(at 0 -25.4 0)
+			(at 0 -30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -40,7 +40,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.datasheetarchive.com/datasheet/YM3812/Yamaha"
-			(at 0 -22.86 0)
+			(at 0 -27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -51,7 +51,7 @@
 			)
 		)
 		(property "Description" "FM Operator Type-LII / OPLII, DIP-24"
-			(at 0 -20.32 0)
+			(at 0 -25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -85,8 +85,8 @@
 		)
 		(symbol "YM3812_0_0"
 			(rectangle
-				(start -7.62 17.78)
-				(end 7.62 -15.24)
+				(start -7.62 20.32)
+				(end 7.62 -20.32)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -98,7 +98,7 @@
 		)
 		(symbol "YM3812_1_1"
 			(pin power_in line
-				(at 0 20.32 270)
+				(at 0 22.86 270)
 				(length 2.54)
 				(name "V_{CC}"
 					(effects
@@ -116,7 +116,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 10.16 0 180)
+				(at 10.16 -17.78 180)
 				(length 2.54)
 				(name "~{IRQ}"
 					(effects
@@ -134,7 +134,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 -12.7 0)
+				(at -10.16 17.78 0)
 				(length 2.54)
 				(name "~{IC}"
 					(effects
@@ -152,7 +152,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -5.08 180)
+				(at -10.16 12.7 0)
 				(length 2.54)
 				(name "A0"
 					(effects
@@ -170,7 +170,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -12.7 180)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "~{WR}"
 					(effects
@@ -188,7 +188,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -10.16 180)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "~{RD}"
 					(effects
@@ -206,7 +206,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -7.62 180)
+				(at -10.16 10.16 0)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -224,7 +224,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 10.16 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "D0"
 					(effects
@@ -242,7 +242,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 7.62 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "D1"
 					(effects
@@ -260,7 +260,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -17.78 90)
+				(at 0 -22.86 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -278,7 +278,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 5.08 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "D2"
 					(effects
@@ -296,7 +296,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 2.54 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "D3"
 					(effects
@@ -314,7 +314,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 0 0)
+				(at -10.16 -10.16 0)
 				(length 2.54)
 				(name "D4"
 					(effects
@@ -332,7 +332,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 -2.54 0)
+				(at -10.16 -12.7 0)
 				(length 2.54)
 				(name "D5"
 					(effects
@@ -350,7 +350,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 -5.08 0)
+				(at -10.16 -15.24 0)
 				(length 2.54)
 				(name "D6"
 					(effects
@@ -368,7 +368,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -10.16 -7.62 0)
+				(at -10.16 -17.78 0)
 				(length 2.54)
 				(name "D7"
 					(effects
@@ -386,7 +386,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 12.7 180)
+				(at 10.16 10.16 180)
 				(length 2.54)
 				(name "SH"
 					(effects
@@ -404,7 +404,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 7.62 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "MO"
 					(effects
@@ -422,7 +422,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 15.24 180)
+				(at 10.16 12.7 180)
 				(length 2.54)
 				(name "ΦSY"
 					(effects
@@ -440,7 +440,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 15.24 0)
+				(at 10.16 17.78 180)
 				(length 2.54)
 				(name "ΦM"
 					(effects
@@ -458,7 +458,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 7.62 2.54 180)
+				(at 7.62 -5.08 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
