@@ -2,7 +2,7 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "nRF52840"
+	(symbol "nRF52840_QIxx"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -18,7 +18,7 @@
 				)
 			)
 		)
-		(property "Value" "nRF52840"
+		(property "Value" "nRF52840_QIxx"
 			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39,7 +39,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.nrf52/dita/nrf52/chips/nrf52840.html"
+		(property "Datasheet" "https://docs-be.nordicsemi.com/bundle/ps_nrf52840/attach/nRF52840_PS_v1.11.pdf"
 			(at -16.51 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50,7 +50,7 @@
 				)
 			)
 		)
-		(property "Description" "Multiprotocol BLE/ANT/2.4 GHz/802.15.4 Cortex-M4F SoC, AQFN-73"
+		(property "Description" "Multiprotocol Bluetooth SoC supporting Bluetooth LE, Bluetooth Mesh, NFC, Thread and Zigbee, AFQN-73"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -83,7 +83,7 @@
 				)
 			)
 		)
-		(symbol "nRF52840_0_1"
+		(symbol "nRF52840_QIxx_0_1"
 			(rectangle
 				(start -27.94 66.04)
 				(end 27.94 -66.04)
@@ -96,7 +96,7 @@
 				)
 			)
 		)
-		(symbol "nRF52840_1_1"
+		(symbol "nRF52840_QIxx_1_1"
 			(pin bidirectional line
 				(at 33.02 -12.7 180)
 				(length 5.08)
@@ -216,25 +216,6 @@
 					)
 				)
 				(number "A20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 71.12 270)
-				(length 5.08)
-				(hide yes)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -566,25 +547,6 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 71.12 270)
-				(length 5.08)
-				(hide yes)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "AD14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 33.02 15.24 180)
 				(length 5.08)
@@ -657,43 +619,6 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 71.12 270)
-				(length 5.08)
-				(hide yes)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "AD23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 71.12 270)
-				(length 5.08)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_out line
 				(at 10.16 71.12 270)
 				(length 5.08)
@@ -723,24 +648,6 @@
 					)
 				)
 				(number "B5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -71.12 90)
-				(length 5.08)
-				(name "VSS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -939,25 +846,6 @@
 					)
 				)
 				(number "E24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -71.12 90)
-				(length 5.08)
-				(hide yes)
-				(name "VSS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "EP"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1361,25 +1249,6 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 71.12 270)
-				(length 5.08)
-				(hide yes)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "W1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 33.02 -22.86 180)
 				(length 5.08)
@@ -1427,6 +1296,42 @@
 					)
 				)
 				(number "Y23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 71.12 270)
+				(length 5.08)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "[A22,AD14,AD23,B1,W1]"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -71.12 90)
+				(length 5.08)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "[B7,EP]"
 					(effects
 						(font
 							(size 1.27 1.27)
